@@ -62,7 +62,7 @@ class RootIndex extends React.Component {
 														<h6>{el.name.name}</h6>
 														<p>{el.position.position}</p>
 														<div className="ca_social">
-															{el.links.map((link, num) => {
+															{el.links && el.links.map((link, num) => {
 																return <a key={num} href={link.url} target="_blank" className={link.extraClass}></a>
 															})}
 														</div>
