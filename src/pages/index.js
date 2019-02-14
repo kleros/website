@@ -44,10 +44,8 @@ class RootIndex extends React.Component {
 								<a href={theMeta(top, 'Homepage > Top > Button > Left').referenceData[0].url} className="ca_button ca_solid_blue" target={"_"+theMeta(top, 'Homepage > Top > Button > Left').referenceData[0].target}>{theMeta(top, 'Homepage > Top > Button > Left').referenceData[0].text.text}</a>
 								<a href={theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].url} className="ca_button ca_transparent_blue" target={"_"+theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].target}>{theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].text.text}</a>
 							</div>
-							<div className="col-12 col-md-6">
-								<div className="ca_illustration_holder">
-									<img src="img/homepage/animation_placeholder.png" alt="Kleros" />
-								</div>
+							<div className="col-12 col-md-6 illustration_holder">
+								<img src='img/homepage/logo.svg' className="illustration_holder_img" />
 							</div>
 						</div>
 					</div>
@@ -58,7 +56,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiTwitter.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/twt.png" alt="Icon" /></span><span>Twitter Update</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/twt.png" alt="Icon" /></span><span>Twitter</span></h3>
 									<p>{apiTwitter.full_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}>Go to Twitter</a>
 									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}></a>
@@ -67,7 +65,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiBlog.post_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/blg.png" alt="Icon" /></span><span>Blog Update</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/blg.png" alt="Icon" /></span><span>Blog</span></h3>
 									<p>{apiBlog.post_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}>Go to Blog</a>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}></a>
@@ -76,7 +74,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiGit.commit_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/gth.png" alt="Icon" /></span><span>Github Update</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/gth.png" alt="Icon" /></span><span>Github</span></h3>
 									<p>{apiGit.commit_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={apiGit.commit_url}>Go to Github</a>
 									<a target="_blank" href={apiGit.commit_url}></a>
@@ -85,7 +83,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiForum.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/frm.png" alt="Icon" /></span><span>Forum Update</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/frm.png" alt="Icon" /></span><span>Forum</span></h3>
 									<p>{apiForum.topic_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}>Go to Forum</a>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}></a>
@@ -286,7 +284,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-2"></div>
 							<div className="col-12 col-md-8">
 								<h2 className="ca_underlined">{theMeta(contact, 'Homepage > Contact > Title').data.data}</h2>
-								<h6>{theBrs(theMeta(contact, 'Homepage > Contact > Sub Title').data.data)}</h6>
+								<h6>{theMeta(contact, 'Homepage > Contact > Sub Title').data.data}</h6>
 							</div>
 							<div className="col-12 col-md-2"></div>
 						</div>

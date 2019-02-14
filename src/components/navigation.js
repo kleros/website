@@ -16,7 +16,7 @@ export default function(menu) {
             <ul>
               {
                 data.map(function(edge, num) {
-                  return <li key={num}><a href={edge.node.url}>{edge.node.text}</a></li>
+                  return <li key={num}><a href={edge.node.url} className="hamburger-a">{edge.node.text}</a></li>
                 })
               }
             </ul>

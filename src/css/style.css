@@ -93,6 +93,23 @@ h6 {
   line-height: 3rem;
   color: #8593d3; }
 
+.illustration_holder {
+  height: 60vh; }
+  .illustration_holder_img {
+    margin-right: -10rem;
+    margin-top: -5rem;
+    width: 100vw;
+    overflow: hidden; }
+
+.hamburger-a {
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.hamburger-a:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  text-decoration: none; }
+
 .ca_no_margin {
   margin: 0 !important; }
 
@@ -437,7 +454,6 @@ h6 {
         vertical-align: middle; }
       .ca_header .row nav:last-child ul li {
         display: inline-block;
-        margin-left: 3.75rem;
         vertical-align: middle; }
         .ca_header .row nav:last-child ul li a {
           color: #fff;
@@ -545,6 +561,7 @@ h6 {
   background-repeat: no-repeat;
   padding-top: 5.83333rem;
   padding-bottom: 7.5rem;
+  min-height: 60vh;
   overflow: hidden; }
   .ca_home_top:before {
     content: '';
