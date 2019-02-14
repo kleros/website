@@ -192,16 +192,16 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-8">
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
-								<div className="ca_form">
+								<div className="ca_form" name="contact" method="POST" data-netlify="true">
 									<form action="">
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
-												<input type="text" id="ca_name" />
+												<input type="text" id="ca_name" name="first-name" />
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_lname">Last Name</label>
-												<input type="text" id="ca_lname" />
+												<input type="text" id="ca_lname" name="last-name" />
 											</div>
 										</div>
 										<div className="ca_line">
@@ -211,13 +211,13 @@ class RootIndex extends React.Component {
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_company">Company Name</label>
-												<input type="text" id="ca_company" />
+												<input type="text" id="ca_company" name="company-name" />
 											</div>
 										</div>
 										<div className="ca_line">
 											<div className="ca_full">
 												<label htmlFor="ca_text">Write your message</label>
-												<textarea id="ca_text"></textarea>
+												<textarea id="ca_text" name="message"></textarea>
 											</div>
 										</div>
 										<div className="ca_line">

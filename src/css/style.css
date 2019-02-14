@@ -110,6 +110,10 @@ h6 {
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
   text-decoration: none; }
 
+.links a:hover {
+  text-decoration: none;
+  color: #14b3ff; }
+
 .ca_no_margin {
   margin: 0 !important; }
 
@@ -405,7 +409,16 @@ h6 {
       color: #fff;
       border-color: #11b3ff;
       background: #11b3ff; }
+  .ca_button.ca_transparent_gray-solid {
+    padding: 0 2em !important;
+    color: #7c81a2;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #7c81a2; }
+    .ca_button.ca_transparent_gray-solid:hover {
+      color: #d8d8d8;
+      border-color: #d8d8d8; }
   .ca_button.ca_transparent_gray {
+    padding: 0 2em !important;
     color: #7c81a2;
     border-color: #7c81a2; }
     .ca_button.ca_transparent_gray:hover {

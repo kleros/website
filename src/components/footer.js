@@ -38,7 +38,7 @@ export default function(menu) {
 						</nav>
 					</div>
 					<div className="col-12 col-md-4">
-						<a href={settings.footerButtonsLeft.url} className="ca_button ca_transparent_gray">{settings.footerButtonsLeft.text.text}</a>
+						<a href={settings.footerButtonsLeft.url} className="ca_button ca_transparent_gray-solid">{settings.footerButtonsLeft.text.text}</a>
 						<a href={settings.footerButtonsRight.url} className="ca_button ca_transparent_gray">{settings.footerButtonsRight.text.text}</a>
 					</div>
 					<div className="col-12 col-md-3">
