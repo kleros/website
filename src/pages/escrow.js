@@ -192,8 +192,8 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-8">
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
-								<div className="ca_form" name="contact" method="POST" data-netlify="true">
-									<form action="">
+								<div className="ca_form">
+									<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
@@ -220,6 +220,7 @@ class RootIndex extends React.Component {
 												<textarea id="ca_text" name="message"></textarea>
 											</div>
 										</div>
+										<input type="hidden" name="form-name" value="contact" />
 										<div className="ca_line">
 											<input type="submit" value="Send" className="ca_button ca_solid_blue" />
 										</div>
