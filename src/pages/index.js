@@ -59,17 +59,23 @@ class RootIndex extends React.Component {
 						<div className="row ca_social">
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
-									<div className="ca_date">{(new Date(apiTwitter.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/twt.png" alt="Icon" /></span><span>{twitter}</span></h3>
+									<div className="card_header">
+										<div><img src="img/homepage/twt.png"  className="card_header_icon" alt="Icon" /></div>
+										<div className="card_header_title">Twitter</div>
+										<div className="card_header_date">{(new Date(apiTwitter.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
+									</div>
 									<p>{apiTwitter.full_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
-									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}>Go to Twitter wd</a>
+									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}>Go to Twitter</a>
 									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}></a>
 								</div>
 							</div>
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
-									<div className="ca_date">{(new Date(apiBlog.post_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/blg.png" alt="Icon" /></span><span>{blog}</span></h3>
+									<div className="card_header">
+										<div><img src="img/homepage/blg.png"  className="card_header_icon" alt="Icon" /></div>
+										<div className="card_header_title">Blog</div>
+										<div className="card_header_date">{(new Date(apiBlog.post_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
+									</div>
 									<p>{apiBlog.post_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}>Go to Blog</a>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}></a>
@@ -77,8 +83,11 @@ class RootIndex extends React.Component {
 							</div>
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
-									<div className="ca_date">{(new Date(apiGit.commit_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/gth.png" alt="Icon" /></span><span>{github}</span></h3>
+									<div className="card_header">
+										<div><img src="img/homepage/gth.png"  className="card_header_icon" alt="Icon" /></div>
+										<div className="card_header_title">Github</div>
+										<div className="card_header_date">{(new Date(apiGit.commit_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
+									</div>
 									<p>{apiGit.commit_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={apiGit.commit_url}>Go to Github</a>
 									<a target="_blank" href={apiGit.commit_url}></a>
@@ -86,8 +95,11 @@ class RootIndex extends React.Component {
 							</div>
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
-									<div className="ca_date">{(new Date(apiForum.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/frm.png" alt="Icon" /></span><span>{forum}</span></h3>
+									<div className="card_header">
+										<div><img src="img/homepage/frm.png"  className="card_header_icon" alt="Icon" /></div>
+										<div className="card_header_title">Forum</div>
+										<div className="card_header_date">{(new Date(apiForum.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
+									</div>
 									<p>{apiForum.topic_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}>Go to Forum</a>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}></a>

@@ -114,6 +114,23 @@ h6 {
   text-decoration: none;
   color: #14b3ff; }
 
+.card_header {
+  display: flex;
+  flex-direction: row;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  padding-top: 2px;
+  margin-bottom: 2em; }
+  .card_header_icon {
+    width: 22px; }
+  .card_header_title {
+    flex: 1;
+    color: #fff;
+    padding-left: 0.7em; }
+  .card_header_date {
+    color: #7c81a2; }
+
 .ca_no_margin {
   margin: 0 !important; }
 
