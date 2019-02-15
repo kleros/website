@@ -20,6 +20,10 @@ class RootIndex extends React.Component {
 		const join = data.joinBlock;
 		const partners = data.partnersBlock;
 		const contact = data.contactBlock;
+		const twitter = 'Twitter'
+		const blog = 'Blog'
+		const github = 'Github'
+		const forum = 'Forum'
 
 		var theSubtitle = function(subTitle) {
 			return subTitle.split("\n").map((el, num) => {
@@ -56,16 +60,16 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiTwitter.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/twt.png" alt="Icon" /></span><span>Twitter</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/twt.png" alt="Icon" /></span><span>{twitter}</span></h3>
 									<p>{apiTwitter.full_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
-									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}>Go to Twitter</a>
+									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}>Go to Twitter wd</a>
 									<a target="_blank" href={"https://twitter.com/Kleros_io/status/"+apiTwitter.id_str}></a>
 								</div>
 							</div>
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiBlog.post_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/blg.png" alt="Icon" /></span><span>Blog</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/blg.png" alt="Icon" /></span><span>{blog}</span></h3>
 									<p>{apiBlog.post_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}>Go to Blog</a>
 									<a target="_blank" href={"https://blog.kleros.io/"+apiBlog.post_url}></a>
@@ -74,7 +78,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiGit.commit_date)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/gth.png" alt="Icon" /></span><span>Github</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/gth.png" alt="Icon" /></span><span>{github}</span></h3>
 									<p>{apiGit.commit_text.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={apiGit.commit_url}>Go to Github</a>
 									<a target="_blank" href={apiGit.commit_url}></a>
@@ -83,7 +87,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div className="ca_social_holder">
 									<div className="ca_date">{(new Date(apiForum.created_at)).toLocaleDateString("en-US", {year: 'numeric', month: 'short', day: 'numeric'})}</div>
-									<h3><span className="ca_icon"><img src="img/homepage/frm.png" alt="Icon" /></span><span>Forum</span></h3>
+									<h3><span className="ca_icon"><img src="img/homepage/frm.png" alt="Icon" /></span><span>{forum}</span></h3>
 									<p>{apiForum.topic_title.replace(/<(?:.|\n)*?>/gm, '').trim().split(' ').slice(0, 7).join(' ') + '...'}</p>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}>Go to Forum</a>
 									<a target="_blank" href={'https://forum.kleros.io/t/' + apiForum.topic_slug + '/' + apiForum.topic_id}></a>

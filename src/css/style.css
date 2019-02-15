@@ -2055,6 +2055,8 @@ h6 {
   h6 {
     font-size: 20px;
     line-height: 36px; }
+  .illustration_holder {
+    display: none; }
   .ca_paralax_background_illustration {
     font-size: 9px; }
   .ca_button {
