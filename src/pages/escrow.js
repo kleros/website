@@ -27,9 +27,7 @@ class RootIndex extends React.Component {
 								<a href={theMeta(top, 'Escrow Top Button').referenceData[0].url} target={'_' + theMeta(top, 'Escrow Top Button').referenceData[0].target} className="ca_button ca_solid_blue">{theMeta(top, 'Escrow Top Button').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-6">
-								<div className="ca_illustration_holder">
-									<img src="/img/homepage/animation_placeholder.png" alt="Kleros" />
-								</div>
+								<img src="/img/escrow/escrow.png" className="illustration_escrow" alt="Kleros" />
 							</div>
 						</div>
 					</div>

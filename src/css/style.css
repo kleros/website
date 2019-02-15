@@ -101,6 +101,10 @@ h6 {
     width: 100vw;
     overflow: hidden; }
 
+.illustration_escrow {
+  margin-top: 9rem;
+  width: 30vw; }
+
 .hamburger-a {
   padding: 0 1em;
   box-sizing: border-box;
@@ -2074,6 +2078,10 @@ h6 {
     line-height: 36px; }
   .illustration_holder {
     display: none; }
+  .illustration_escrow {
+    margin-top: 3rem;
+    margin-bottom: -10rem;
+    width: 70vw; }
   .ca_paralax_background_illustration {
     font-size: 9px; }
   .ca_button {
