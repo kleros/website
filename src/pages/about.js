@@ -39,8 +39,8 @@ class RootIndex extends React.Component {
 								}}></div>
 							</div>
 							<div className="col-12 col-md-5">
-								<div className="ca_illustration_holder">
-									<img src="/img/homepage/animation_placeholder.png" alt="Kleros" />
+								<div className="illustration">
+									<img className="illustration-about-who" src="/img/about/desc.png" alt="Kleros - Decentralized team" />
 								</div>
 							</div>
 						</div>

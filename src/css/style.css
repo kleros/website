@@ -105,6 +105,11 @@ h6 {
   margin-top: 9rem;
   width: 30vw; }
 
+.illustration-about-who {
+  margin-top: -2rem;
+  padding-bottom: 6rem;
+  width: 30vw; }
+
 .hamburger-a {
   padding: 0 1em;
   box-sizing: border-box;
@@ -546,7 +551,7 @@ h6 {
 .ca_footer {
   background: #01030b;
   border-top: solid 2px #11b3ff;
-  padding-top: 4.83333rem; }
+  padding: 10rem 0 3rem 0; }
   .ca_footer .ca_logo img {
     width: 5.41667rem; }
   .ca_footer nav ul {
@@ -570,7 +575,7 @@ h6 {
       font-size: 1.33333rem;
       margin-left: 2.33333rem; }
   .ca_footer .ca_copyright {
-    margin-top: 8.08333rem;
+    margin-top: 4rem;
     text-align: center; }
     .ca_footer .ca_copyright ul {
       list-style: none;
@@ -2082,6 +2087,8 @@ h6 {
     margin-top: 3rem;
     margin-bottom: -10rem;
     width: 70vw; }
+  .illustration-about-who {
+    display: none; }
   .ca_paralax_background_illustration {
     font-size: 9px; }
   .ca_button {
@@ -2167,7 +2174,6 @@ h6 {
   .ca_header.ca_menu_opened nav:last-child ul {
     top: 0; }
   .ca_footer {
-    padding-top: 58px;
     text-align: center; }
     .ca_footer .ca_logo {
       text-align: center;
