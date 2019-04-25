@@ -3,7 +3,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { navigateTo } from "gatsby-link"
 import Modal from 'react-responsive-modal'
-import queryString from 'query-string'
 import theMeta from '../js/helpers.js'
 
 const encode = data => {
@@ -58,8 +57,8 @@ class RootIndex extends React.Component {
 			open
 		} = this.state;
 
-		if(queryString.parse(
-			this.props.location.search).isMsgSent !== undefined && this.state.open === null
+		if(
+			this.props.location.search === '?isMsgSent' && this.state.open === null
 		)
 			this.onOpenModal()
 
@@ -80,7 +79,7 @@ class RootIndex extends React.Component {
             modal: 'customModal'
           }}
 				>
-						<h2 style={{color: '#000', fontSize: '30px'}}>Message sent!</h2>
+						<h2>Message sent!</h2>
 						<p>
 							We will answer you as soon as possible.
 						</p>
@@ -266,7 +265,7 @@ class RootIndex extends React.Component {
 									<form 
 										name="escrow"
 										method="post"
-										action="/escrow?isMsgSent=true"
+										action="/escrow?isMsgSent"
 										data-netlify="true"
 										data-netlify-honeypot="bot-field"
 										onSubmit={this.handleSubmit}>
