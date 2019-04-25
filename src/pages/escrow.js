@@ -261,7 +261,7 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form onSubmit={this.handleSubmit} netlify>
+									<form name="escrow" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
 										{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
 										<input type="hidden" name="form-name" value="escrow" />
 										<div className="ca_line">
