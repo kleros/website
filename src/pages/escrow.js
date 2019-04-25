@@ -10,13 +10,17 @@ const encode = data => {
 }
 
 class RootIndex extends React.Component {
-	state = {
-		firstname: "",
-		lastname: "",
-		companyEmail: "",
-		companyName: "",
-		message: ""
-	}
+	state = this.getInitialState()
+
+	getInitialState = () => (
+		{
+			firstname: "",
+			lastname: "",
+			companyEmail: "",
+			companyName: "",
+			message: ""
+		}
+	)
 
 	handleSubmit = e => {
 		fetch("/", {
@@ -24,7 +28,10 @@ class RootIndex extends React.Component {
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: encode({ "form-name": "escrow", ...this.state })
 		})
-			.then(() => alert("Your message has been sent."))
+			.then(() => {
+				alert("Your message has been sent.");
+				this.setState(this.getInitialState());
+			})
 			.catch(error => alert(error));
 
 		e.preventDefault();
