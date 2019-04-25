@@ -27,7 +27,7 @@ class RootIndex extends React.Component {
 			body: encode({ "form-name": "escrow", ...this.state })
 		})
 			.then(() => {
-				alert("Your message has been sent.");
+				alert("Success! Your message has been sent.");
 				this.setState(getInitialState());
 			})
 			.catch(error => alert(error));
@@ -232,7 +232,7 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form onSubmit={this.handleSubmit}>
+									<form onSubmit={this.handleSubmit} data-netlify="true">
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
@@ -272,7 +272,7 @@ class RootIndex extends React.Component {
 													type="text" 
 													id="ca_company" 
 													name="companyName" 
-													value={companyEmail} 
+													value={companyName} 
 													onChange={this.handleChange}
 												/>
 											</div>
