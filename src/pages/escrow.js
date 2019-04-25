@@ -89,7 +89,6 @@ class RootIndex extends React.Component {
 						</p>
 					</Modal>
 				<section className="ca_home_top ca_escrow_top">
-
 					<div className="container">
 						<div className="row ca_txt">
 							<div className="col-12 col-md-6">
@@ -262,21 +261,9 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form 
-										name="escrow"
-										method="post"
-										action="/escrow?isMsgSent"
-										data-netlify="true"
-										data-netlify-honeypot="bot-field"
-										onSubmit={this.handleSubmit}>
+									<form onSubmit={this.handleSubmit}>
 										{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-										<input type="hidden" name="form-name" value="contact" />
-										<p hidden>
-											<label>
-												Don’t fill this out:{" "}
-												<input name="bot-field" onChange={this.handleChange} />
-											</label>
-										</p>
+										<input type="hidden" name="form-name" value="escrow" />
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
