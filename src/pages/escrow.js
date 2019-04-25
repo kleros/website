@@ -4,7 +4,37 @@ import Helmet from 'react-helmet'
 import theMeta from '../js/helpers.js'
 
 class RootIndex extends React.Component {
+	state = {
+		firstname: "",
+		lastname: "",
+		companyEmail: "",
+		companyName: "",
+		message: ""
+	}
+
+	handleSubmit = e => {
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "escrow", ...this.state })
+		})
+			.then(() => alert("Your message has been sent."))
+			.catch(error => alert(error));
+
+		e.preventDefault();
+	};
+
+	handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
 	render() {
+		const { 
+			firstname,
+			lastname,
+			companyEmail,
+			companyName,
+			message
+		} = this.state;
+
 		const siteTitle = "Kleros"
 		const data = get(this, 'props.data.allContentfulEscrowPage.edges')[0].node;
 		const top = data.top;
@@ -195,30 +225,58 @@ class RootIndex extends React.Component {
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
-												<input type="text" id="ca_name" name="first-name" />
+												<input 
+													type="text" 
+													id="ca_name" 
+													name="firstname" 
+													value={firstname} 
+													onChange={this.handleChange} 
+												/>
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_lname">Last Name</label>
-												<input type="text" id="ca_lname" name="last-name" />
+												<input 
+													type="text" 
+													id="ca_lname" 
+													name="lastname" 
+													value={lastname} 
+													onChange={this.handleChange}
+												/>
 											</div>
 										</div>
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_email">Company Email</label>
-												<input type="email" id="ca_email" />
+												<input 
+													type="email" 
+													id="ca_email" 
+													name="companyEmail" 
+													value={companyEmail} 
+													onChange={this.handleChange}
+												/>
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_company">Company Name</label>
-												<input type="text" id="ca_company" name="company-name" />
+												<input 
+													type="text" 
+													id="ca_company" 
+													name="companyName" 
+													value={companyEmail} 
+													onChange={this.handleChange}
+												/>
 											</div>
 										</div>
 										<div className="ca_line">
 											<div className="ca_full">
 												<label htmlFor="ca_text">Write your message</label>
-												<textarea id="ca_text" name="message"></textarea>
+												<textarea 
+													id="ca_text" 
+													name="message"
+													value={message} 
+													onChange={this.handleChange}
+												/>
 											</div>
 										</div>
-										<input type="hidden" name="form-name" value="contact" />
 										<div className="ca_line">
 											<input type="submit" value="Send" className="ca_button ca_solid_blue" />
 										</div>
