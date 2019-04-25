@@ -1,6 +1,7 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { navigateTo } from "gatsby-link"
 import theMeta from '../js/helpers.js'
 
 const encode = data => {
@@ -22,16 +23,17 @@ class RootIndex extends React.Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
+		const form = e.target;
 
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "escrow", ...this.state })
-		})
-			.then(() => {
-				alert("Success! Your message has been sent.");
-				this.setState(getInitialState());
+			body: encode({ 
+				"form-name": form.getAttribute("name"), 
+				...this.state 
 			})
+		})
+			.then(() => navigateTo(form.getAttribute("action")))
 			.catch(error => alert(error));
 	};
 
@@ -232,7 +234,21 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form onSubmit={this.handleSubmit}>
+									<form 
+										name="escrow"
+										method="post"
+										action="/escrow?isMsgSent=true"
+										data-netlify="true"
+										data-netlify-honeypot="bot-field"
+										onSubmit={this.handleSubmit}>
+										{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+										<input type="hidden" name="form-name" value="contact" />
+										<p hidden>
+											<label>
+												Don’t fill this out:{" "}
+												<input name="bot-field" onChange={this.handleChange} />
+											</label>
+										</p>
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
