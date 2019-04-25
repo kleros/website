@@ -21,10 +21,6 @@ class RootIndex extends React.Component {
 		open: false
 	}
 
-	onOpenModal = () => {
-    this.setState({ open: true });
-  };
-
   onCloseModal = () => {
     this.setState({ open: false });
   };
@@ -41,7 +37,7 @@ class RootIndex extends React.Component {
 				...this.state 
 			})
 		})
-			.then(() => onOpenModal())
+			.then(() => this.setState({ open: true }))
 			.catch(error => alert(error));
 	};
 
