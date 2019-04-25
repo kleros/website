@@ -9,18 +9,16 @@ const encode = data => {
 			.join("&");
 }
 
-class RootIndex extends React.Component {
-	state = this.getInitialState()
+const getInitialState = () => ({
+	firstname: "",
+	lastname: "",
+	companyEmail: "",
+	companyName: "",
+	message: ""
+})
 
-	getInitialState = () => (
-		{
-			firstname: "",
-			lastname: "",
-			companyEmail: "",
-			companyName: "",
-			message: ""
-		}
-	)
+class RootIndex extends React.Component {
+  state = getInitialState()
 
 	handleSubmit = e => {
 		fetch("/", {
@@ -30,7 +28,7 @@ class RootIndex extends React.Component {
 		})
 			.then(() => {
 				alert("Your message has been sent.");
-				this.setState(this.getInitialState());
+				this.setState(getInitialState());
 			})
 			.catch(error => alert(error));
 
