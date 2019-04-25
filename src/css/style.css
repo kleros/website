@@ -2809,6 +2809,21 @@ h6 {
           .ca_about_vacancies ul li span + span {
             font-size: 15px; } }
 
+.customModal {
+  max-width: 700px;
+  padding: 30px;
+  width: 100%;
+}
+
+.customModal h2 {
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.customModal p {
+  font-size: 20px;
+}
+
 @media (max-width: 767px) {
   .ca_escrow_top h6 {
     padding: 0; }

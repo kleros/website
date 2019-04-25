@@ -2,6 +2,8 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { navigateTo } from "gatsby-link"
+import Modal from 'react-responsive-modal'
+import queryString from 'query-string'
 import theMeta from '../js/helpers.js'
 
 const encode = data => {
@@ -10,16 +12,23 @@ const encode = data => {
 			.join("&");
 }
 
-const getInitialState = () => ({
-	firstname: "",
-	lastname: "",
-	companyEmail: "",
-	companyName: "",
-	message: ""
-})
-
 class RootIndex extends React.Component {
-  state = getInitialState()
+  state = {
+		firstname: "",
+		lastname: "",
+		companyEmail: "",
+		companyName: "",
+		message: "",
+		open: null
+	}
+
+	onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
 
 	handleSubmit = e => {
 		e.preventDefault();
@@ -40,13 +49,19 @@ class RootIndex extends React.Component {
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
-		const { 
+		const {
 			firstname,
 			lastname,
 			companyEmail,
 			companyName,
-			message
+			message,
+			open
 		} = this.state;
+
+		if(queryString.parse(
+			this.props.location.search).isMsgSent !== undefined && this.state.open === null
+		)
+			this.onOpenModal()
 
 		const siteTitle = "Kleros"
 		const data = get(this, 'props.data.allContentfulEscrowPage.edges')[0].node;
@@ -61,7 +76,21 @@ class RootIndex extends React.Component {
 		return (
 			<div>
 				<Helmet><html lang="en" /><title>{siteTitle}</title></Helmet>
+				<Modal open={open} onClose={this.onCloseModal} center classNames={{
+            modal: 'customModal'
+          }}
+				>
+						<h2 style={{color: '#000', fontSize: '30px'}}>Message sent!</h2>
+						<p>
+							We will answer you as soon as possible.
+						</p>
+						<p>
+							While waiting for an answer you can join our{' '}
+							<a href="https://t.me/kleros" target="_blank">Telegram</a>.
+						</p>
+					</Modal>
 				<section className="ca_home_top ca_escrow_top">
+
 					<div className="container">
 						<div className="row ca_txt">
 							<div className="col-12 col-md-6">
