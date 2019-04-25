@@ -21,6 +21,8 @@ class RootIndex extends React.Component {
   state = getInitialState()
 
 	handleSubmit = e => {
+		e.preventDefault();
+
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -31,8 +33,6 @@ class RootIndex extends React.Component {
 				this.setState(getInitialState());
 			})
 			.catch(error => alert(error));
-
-		e.preventDefault();
 	};
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -232,7 +232,7 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form onSubmit={this.handleSubmit} data-netlify="true">
+									<form onSubmit={this.handleSubmit}>
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
