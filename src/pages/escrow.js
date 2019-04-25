@@ -3,6 +3,12 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import theMeta from '../js/helpers.js'
 
+const encode = data => {
+	return Object.keys(data)
+			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+			.join("&");
+}
+
 class RootIndex extends React.Component {
 	state = {
 		firstname: "",
@@ -221,7 +227,7 @@ class RootIndex extends React.Component {
 								<h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
 								<h6>{theMeta(contact, 'Escrow Contact Sub Title').data.data}</h6>
 								<div className="ca_form">
-									<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+									<form onSubmit={this.handleSubmit}>
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
