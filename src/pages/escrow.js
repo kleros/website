@@ -18,7 +18,7 @@ class RootIndex extends React.Component {
 		companyEmail: "",
 		companyName: "",
 		message: "",
-		open: null
+		open: false
 	}
 
 	onOpenModal = () => {
@@ -41,7 +41,7 @@ class RootIndex extends React.Component {
 				...this.state 
 			})
 		})
-			.then(() => navigateTo(form.getAttribute("action")))
+			.then(() => onOpenModal())
 			.catch(error => alert(error));
 	};
 
@@ -56,11 +56,6 @@ class RootIndex extends React.Component {
 			message,
 			open
 		} = this.state;
-
-		if(
-			this.props.location.search === '?isMsgSent' && this.state.open === null
-		)
-			this.onOpenModal()
 
 		const siteTitle = "Kleros"
 		const data = get(this, 'props.data.allContentfulEscrowPage.edges')[0].node;
