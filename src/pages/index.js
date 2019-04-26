@@ -265,12 +265,12 @@ class RootIndex extends React.Component {
 							</div>
 							<div className="col-12 col-md-4">
 								<div className="ca_img">
-									<img src={theMeta(join, 'Homepage > Join > Left > Image').mediaData[0].file.url} alt={theMeta(join, 'Homepage > Join > Left > Title').data.data} />
+									<img src={theMeta(join, 'Homepage > Join > Right > Image').mediaData[0].file.url} alt={theMeta(join, 'Homepage > Join > Right > Title').data.data} />
 								</div>
 								<div className="ca_txt">
-									<h6>{theMeta(join, 'Homepage > Join > Left > Title').data.data}</h6>
-									<p>{theMeta(join, 'Homepage > Join > Left > Text').data.data}</p>
-									<a href={theMeta(join, 'Homepage > Join > Left > Button').referenceData[0].url} className="ca_button ca_transparent_blue">{theMeta(join, 'Homepage > Join > Left > Button').referenceData[0].text.text}</a>
+									<h6>{theMeta(join, 'Homepage > Join > Right > Title').data.data}</h6>
+									<p>{theMeta(join, 'Homepage > Join > Right > Text').data.data}</p>
+									<a href={theMeta(join, 'Homepage > Join > Right > Button').referenceData[0].url} className="ca_button ca_transparent_blue">{theMeta(join, 'Homepage > Join > Right > Button').referenceData[0].text.text}</a>
 								</div>
 							</div>
 							<div className="col-12 col-md-2"></div>
