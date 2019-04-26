@@ -301,7 +301,7 @@ class RootIndex extends React.Component {
 										</div>
 										<div className="ca_line">
 											<div className="ca_full">
-												<label htmlFor="ca_text">Write your message</label>
+												<label htmlFor="ca_text">Write your message.</label>
 												<textarea 
 													id="ca_text" 
 													name="message"
