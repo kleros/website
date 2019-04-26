@@ -29,7 +29,7 @@ class RootIndex extends React.Component {
 								<h1>{theMeta(top, 'Juror > Top > Title').data.data}</h1>
 								<h6>{theMeta(top, 'Juror > Top > Sub Title').data.data}</h6>
 								<p>{theMeta(top, 'Juror > Top > Description').data.data}</p>
-								<a href={theMeta(top, 'Juror > Top > Button').referenceData[0].url} target={'_' + theMeta(top, 'Juror > Top > Button').referenceData[0].target} className="ca_button ca_solid_blue">{theMeta(top, 'Juror > Top > Button').referenceData[0].text.text}</a>
+								<a href={theMeta(beJuror, 'Juror > Be Juror > Button').referenceData[0].url} target={'_' + theMeta(top, 'Juror > Top > Button').referenceData[0].target} className="ca_button ca_solid_blue">{theMeta(top, 'Juror > Top > Button').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-3"></div>
 						</div>

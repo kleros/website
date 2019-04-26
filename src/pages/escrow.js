@@ -37,7 +37,16 @@ class RootIndex extends React.Component {
 				...this.state 
 			})
 		})
-			.then(() => this.setState({ open: true }))
+			.then(() => this.setState(
+				{
+					firstname: "",
+					lastname: "",
+					companyEmail: "",
+					companyName: "",
+					message: "",
+					open: true
+				}
+			))
 			.catch(error => alert(error));
 	};
 
@@ -70,15 +79,15 @@ class RootIndex extends React.Component {
             modal: 'customModal'
           }}
 				>
-						<h2>Message sent!</h2>
-						<p>
-							We will answer you as soon as possible.
-						</p>
-						<p>
-							While waiting for an answer you can join our{' '}
-							<a href="https://t.me/kleros" target="_blank">Telegram</a>.
-						</p>
-					</Modal>
+					<h2>Message sent!</h2>
+					<p>
+						We will answer you as soon as possible.
+					</p>
+					<p>
+						While waiting for an answer you can join our{' '}
+						<a href="https://t.me/kleros" target="_blank">Telegram</a>.
+					</p>
+				</Modal>
 				<section className="ca_home_top ca_escrow_top">
 					<div className="container">
 						<div className="row ca_txt">
@@ -301,7 +310,7 @@ class RootIndex extends React.Component {
 										</div>
 										<div className="ca_line">
 											<div className="ca_full">
-												<label htmlFor="ca_text">Write your message.</label>
+												<label htmlFor="ca_text">Write your message</label>
 												<textarea 
 													id="ca_text" 
 													name="message"
