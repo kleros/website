@@ -81,7 +81,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-2">
 								<ul>
 									{cats.map((el, num) => {
-										return <li key={num}><a href="#" className={el.node.title.title === this.state.faqFilter.value ? "ca_selected" : ""} onClick={(e) => this.categoryChange(el.node.title.title, e)}>{el.node.title.title}</a></li>
+										return (<li key={num}><a href="#" className={el.node.title.title === this.state.faqFilter.value ? "ca_selected" : ""} onClick={(e) => this.categoryChange(el.node.title.title, e)}>{el.node.title.title}</a></li>)
 									})}
 								</ul>
 							</div>

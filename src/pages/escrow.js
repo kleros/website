@@ -7,8 +7,8 @@ import theMeta from '../js/helpers.js'
 
 const encode = data => {
 	return Object.keys(data)
-			.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-			.join("&");
+		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&");
 }
 
 class RootIndex extends React.Component {
@@ -104,7 +104,7 @@ class RootIndex extends React.Component {
 								}}></div>
 								{
 									[theMeta(escrow, 'Escrow Button').referenceData[0]].map((el, num) => {
-										return <a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>
+										return (<a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>)
 									})
 								}
 							</div>
@@ -130,7 +130,7 @@ class RootIndex extends React.Component {
 								}}></div>
 								{
 									[theMeta(why, 'Escrow Why Button').referenceData[0]].map((el, num) => {
-										return <a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>
+										return (<a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>)
 									})
 								}
 							</div>
