@@ -59,7 +59,7 @@ class RootIndex extends React.Component {
 			message,
 			open
 		} = this.state;
-		
+
 		const siteTitle = "Kleros"
 		const data = get(this, 'props.data.allContentfulCuratedListPage.edges')[0].node;
 		const contentMain = data.contentMain;
@@ -77,6 +77,13 @@ class RootIndex extends React.Component {
 		const whyMatters = data.whyMatters;
 		const contactUsTitle = data.contactUsTitle;
 		const contactUs = data.contactUs;
+		const trustlessPath1 = data.trustlessPath1;
+		const trustlessPath2 = data.trustlessPath2;
+		const trustlessPath3 = data.trustlessPath3;
+		const trustlessPath4 = data.trustlessPath4;
+		const trustlessPath5 = data.trustlessPath5;
+
+		console.log(data)
 
 		return (
 			<div>
@@ -186,6 +193,62 @@ class RootIndex extends React.Component {
 								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
+						</div>
+						<div className="row ca_escrow_path">
+							<div className="col-12 col-md-1"></div>
+							<div className="col-12 col-md-3">
+								<div>
+									<div className="ca_img ca_underlined ca_stroke ca_stroke_1">
+										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+									</div>
+									<div className="ca_txt">
+										<p>{trustlessPath1}</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-12 col-md-4">
+								<div>
+									<div className="ca_img ca_underlined ca_stroke ca_stroke_2">
+										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+									</div>
+									<div className="ca_txt">
+										<p>{trustlessPath2}</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-12 col-md-3">
+								<div>
+									<div className="ca_img ca_underlined ca_stroke ca_stroke_3">
+										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+									</div>
+									<div className="ca_txt">
+										<p>{trustlessPath3}</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-12 col-md-1"></div>
+							<div className="col-12 col-md-2"></div>
+							<div className="col-12 col-md-4">
+								<div>
+									<div className="ca_img ca_underlined ca_stroke ca_stroke_4">
+										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+									</div>
+									<div className="ca_txt">
+										<p>{trustlessPath4}</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-12 col-md-4">
+										<div>
+											<div className="ca_img ca_underlined ca_stroke ca_stroke_5">
+												<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+											</div>
+											<div className="ca_txt">
+												<p>{trustlessPath5}</p>
+											</div>
+										</div>
+							</div>
+							<div className="col-12 col-md-2"></div>
 						</div>
 					</div>
 				</section>
@@ -338,6 +401,11 @@ query curatedListQuery {
 						html
 					}
 				}
+				trustlessPath1
+				trustlessPath2
+				trustlessPath3
+				trustlessPath4
+				trustlessPath5
       }
     }
 	}
