@@ -1,15 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from 'gatsby-link'
+import Modal from 'react-responsive-modal'
 
-export default function(menu) {
-	const leftMenu = menu.menu.left;
-	const rightMenu = menu.menu.right;
-	const socialMenu = menu.menu.social;
-	const copyrightMenu = menu.menu.copyright;
-	const settings = menu.menu.settings[0].node;
+export default function({menu, onCloseModal, onOpenModal, open}) {
+	const leftMenu = menu.left;
+	const rightMenu = menu.right;
+	const socialMenu = menu.social;
+	const copyrightMenu = menu.copyright;
+	const settings = menu.settings[0].node;
 
 	return (
 		<footer className="ca_footer">
+			<Modal open={open} onClose={onCloseModal} center classNames={{
+					modal: 'customModal'
+				}}
+			>
+				<h2>Download Book</h2>
+				<div className="ca_book">
+					<a href="/book/Dispute-Resolution-Kleros.epub" target="_blank">EPUP FORMAT</a>
+					<a href="/book/Dispute-Resolution-Kleros.pdf" target="_blank">PDF FORMAT</a>
+					<a href="/book/Dispute-Resolution-Kleros.mobi" target="_blank">MOBI FORMAT</a>
+				</div>
+			</Modal>
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-1">
@@ -34,6 +46,7 @@ export default function(menu) {
 										return <li key={num}><a href={edge.node.url}>{edge.node.text}</a></li>
 									})
 								}
+								<li><button className="ca_link_book" onClick={onOpenModal}>Book</button></li>
 							</ul>
 						</nav>
 					</div>

@@ -9,6 +9,18 @@ import '../css/slick.css'
 import '../css/style.css'
 
 class Template extends React.Component {
+	state = {
+		open: false
+	}
+
+	onCloseModal = () => {
+    this.setState({ open: false });
+	};
+	
+	onOpenModal = () => {
+    this.setState({ open: true });
+	};
+
 	render() {
 		var menu = get(this, 'props.data.allContentfulMenu.edges');
 		const settings = get(this, 'props.data.allContentfulGeneralSettings.edges');
@@ -45,7 +57,7 @@ class Template extends React.Component {
 				</Helmet>
 				<Navigation menu={data} />
 				{children()}
-				<Footer menu={data} />
+				<Footer menu={data} onCloseModal={this.onCloseModal} onOpenModal={this.onOpenModal} open={this.state.open} />
 			</div>
 		)
 	}

@@ -574,6 +574,30 @@ h6 {
       color: #7c81a2;
       font-size: 1.33333rem;
       margin-left: 2.33333rem; }
+  .ca_footer .ca_link_book {
+    font-size: 1.33rem;
+    color: #fff;
+    padding: 0;
+    border: 0;
+    background: transparent; }
+  .ca_footer .ca_link_book:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .ca_book a {
+    text-decoration: none;
+    display: block;
+    background: #8A2BE2;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  .ca_book a:hover {
+    background: rgb(138,43,226, 0.8)
+  }
   .ca_footer .ca_copyright {
     margin-top: 4rem;
     text-align: center; }
