@@ -91,7 +91,7 @@ class RootIndex extends React.Component {
 						<div className="row ca_txt">
 							<div className="col-12 col-md-6">
 								<h1>{contentMain[0].title}</h1>
-								<div style={{color: '#fff', fontSize: '2em', padding: '2em'}} dangerouslySetInnerHTML={{
+								<div style={{color: '#fff', fontSize: '2em', paddingTop: '2em'}} dangerouslySetInnerHTML={{
 									__html: contentMain[0].data.childMarkdownRemark.html
 								}}></div>
 							</div>

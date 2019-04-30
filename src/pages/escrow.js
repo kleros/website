@@ -111,11 +111,6 @@ class RootIndex extends React.Component {
 								<div dangerouslySetInnerHTML={{
 									__html: theMeta(escrow, 'Escrow Text').data.childMarkdownRemark.html
 								}}></div>
-								{
-									[theMeta(escrow, 'Escrow Button').referenceData[0]].map((el, num) => {
-										return (<a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>)
-									})
-								}
 							</div>
 							<div className="col-12 col-md-1"></div>
 							<div className="col-12 col-md-5">
@@ -137,11 +132,7 @@ class RootIndex extends React.Component {
 								<div dangerouslySetInnerHTML={{
 									__html: theMeta(why, 'Escrow Why Text').data.childMarkdownRemark.html
 								}}></div>
-								{
-									[theMeta(why, 'Escrow Why Button').referenceData[0]].map((el, num) => {
-										return (<a key={num} href={el.url} target={"_"+el.target} className="ca_button ca_transparent_blue">{el.text.text}</a>)
-									})
-								}
+									<a href="https://escrow.kleros.io" target="_blank" className="ca_button ca_transparent_blue">Kleros Escrow</a>
 							</div>
 							<div className="col-12 col-md-1"></div>
 						</div>
