@@ -62,7 +62,7 @@ class RootIndex extends React.Component {
 			open
 		} = this.state;
 
-		const siteTitle = "Kleros"
+		const siteTitle = "Kleros - Escrow Blockchain"
 		const data = get(this, 'props.data.allContentfulEscrowPage.edges')[0].node;
 		const top = data.top;
 		const escrow = data.escrow;

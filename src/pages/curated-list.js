@@ -60,7 +60,7 @@ class RootIndex extends React.Component {
 			open
 		} = this.state;
 
-		const siteTitle = "Kleros"
+		const siteTitle = "Kleros - Curated List"
 		const data = get(this, 'props.data.allContentfulCuratedListPage.edges')[0].node;
 		const contentMain = data.contentMain;
 		const descriptionTitle = data.descriptionTitle;
@@ -82,8 +82,6 @@ class RootIndex extends React.Component {
 		const trustlessPath3 = data.trustlessPath3;
 		const trustlessPath4 = data.trustlessPath4;
 		const trustlessPath5 = data.trustlessPath5;
-
-		console.log(data)
 
 		return (
 			<div>
