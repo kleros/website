@@ -94,7 +94,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-6">
 								<h1>{theMeta(top, 'Escrow Top Title').data.data}</h1>
 								<h6>{theMeta(top, 'Escrow Top Sub Title').data.data}</h6>
-								<a href={theMeta(top, 'Escrow Top Button').referenceData[0].url} target={'_' + theMeta(top, 'Escrow Top Button').referenceData[0].target} className="ca_button ca_solid_blue">{theMeta(top, 'Escrow Top Button').referenceData[0].text.text}</a>
+								<a href={theMeta(top, 'Escrow Top Button').referenceData[0].url} className="ca_button ca_solid_blue">{theMeta(top, 'Escrow Top Button').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-6">
 								<img src="/img/escrow/escrow.png" className="illustration_escrow" alt="Kleros" />
@@ -102,7 +102,7 @@ class RootIndex extends React.Component {
 						</div>
 					</div>
 				</section>
-				<section className="ca_escrow_description ca_wave_top_inverted">
+				<section id="more" className="ca_escrow_description ca_wave_top_inverted">
 					<div className="container">
 						<div className="row">
 							<div className="col-12 col-md-1"></div>
