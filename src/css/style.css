@@ -435,6 +435,13 @@ h6 {
       color: #fff;
       border-color: #11b3ff;
       background: #11b3ff; }
+  .ca_button_book {
+    color: #11b3ff !important;
+  }
+  .ca_button_book:hover {
+    color: #fff !important;
+    cursor: pointer;
+  }
   .ca_button.ca_transparent_gray-solid {
     padding: 0 2em !important;
     color: #7c81a2;
