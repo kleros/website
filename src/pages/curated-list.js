@@ -161,7 +161,7 @@ class RootIndex extends React.Component {
 								</div>
 							</div>
 							<div className="col-12 col-md-5 three">
-								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+								<img src={contentMain[0].mediaData[4].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
 						</div>
@@ -175,7 +175,7 @@ class RootIndex extends React.Component {
 								</div>
 							</div>
 							<div className="col-12 col-md-5 three">
-								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+								<img src={contentMain[0].mediaData[5].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
 						</div>
@@ -189,7 +189,7 @@ class RootIndex extends React.Component {
 								</div>
 							</div>
 							<div className="col-12 col-md-5 three">
-								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+								<img src={contentMain[0].mediaData[6].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
 						</div>
@@ -198,7 +198,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div>
 									<div className="ca_img ca_underlined ca_stroke ca_stroke_1">
-										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+										<img src={contentMain[0].mediaData[7].file.url} alt="Illustration" />
 									</div>
 									<div className="ca_txt">
 										<p>{trustlessPath1}</p>
@@ -208,7 +208,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-4">
 								<div>
 									<div className="ca_img ca_underlined ca_stroke ca_stroke_2">
-										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+										<img src={contentMain[0].mediaData[8].file.url} alt="Illustration" />
 									</div>
 									<div className="ca_txt">
 										<p>{trustlessPath2}</p>
@@ -218,7 +218,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-3">
 								<div>
 									<div className="ca_img ca_underlined ca_stroke ca_stroke_3">
-										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+										<img src={contentMain[0].mediaData[9].file.url} alt="Illustration" />
 									</div>
 									<div className="ca_txt">
 										<p>{trustlessPath3}</p>
@@ -230,7 +230,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-4">
 								<div>
 									<div className="ca_img ca_underlined ca_stroke ca_stroke_4">
-										<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+										<img src={contentMain[0].mediaData[10].file.url} alt="Illustration" />
 									</div>
 									<div className="ca_txt">
 										<p>{trustlessPath4}</p>
@@ -240,7 +240,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-4">
 										<div>
 											<div className="ca_img ca_underlined ca_stroke ca_stroke_5">
-												<img src={contentMain[0].mediaData[3].file.url} alt="Illustration" />
+												<img src={contentMain[0].mediaData[11].file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
 												<p>{trustlessPath5}</p>

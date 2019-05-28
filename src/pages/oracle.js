@@ -160,7 +160,7 @@ class RootIndex extends React.Component {
 								</div>
 							</div>
 							<div className="col-12 col-md-5 three">
-								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+								<img src={contentMain[0].mediaData[4].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
 						</div>
@@ -175,7 +175,7 @@ class RootIndex extends React.Component {
 								</div>
 							</div>
 							<div className="col-12 col-md-5 three">
-								<img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+								<img src={contentMain[0].mediaData[5].file.url} alt="Kleros" />
 							</div>
 							<div className="col-12 col-md-1 four"></div>
 						</div>
