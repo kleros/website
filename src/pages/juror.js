@@ -13,8 +13,6 @@ class RootIndex extends React.Component {
 		const how = data.howBlock;
 		const howCards = data.howBlockCards;
 		const getStarted = data.getStartedBlock;
-		const testimonials = data.testimonialsBlock;
-		const testimonialsList = data.testimonialsBlockList;
 		const beJuror = data.beJurorBlock;
 
 		return (
@@ -28,7 +26,6 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-6">
 								<h1>{theMeta(top, 'Juror > Top > Title').data.data}</h1>
 								<h6>{theMeta(top, 'Juror > Top > Sub Title').data.data}</h6>
-								<p>{theMeta(top, 'Juror > Top > Description').data.data}</p>
 								<a href={theMeta(beJuror, 'Juror > Be Juror > Button').referenceData[0].url} target={'_' + theMeta(top, 'Juror > Top > Button').referenceData[0].target} className="ca_button ca_solid_blue">{theMeta(top, 'Juror > Top > Button').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-3"></div>
@@ -147,50 +144,12 @@ class RootIndex extends React.Component {
 						</div>
 					</div>
 				</section>
-				{/*<section className="ca_juror_testimonials">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<h2 className="ca_underlined">{theMeta(testimonials, 'Juror > Testimonials > Title').data.data}</h2>
-							</div>
-						</div>
-						{
-							testimonialsList.filter((el, num) => (!((num + 2) % 2))).map((el, num) => {
-								return (
-									<div key={num} className={"row " + ((num + 2) % 2 ? 'ca_right' : 'ca_left')}>
-										<div className="col-12 col-md-1"></div>
-										{testimonialsList.map((el, index) => {
-												if(index >= num && index <= num + 1)
-													return (
-														<div key={index} className="col-12 col-md-4">
-															<div className="ca_img">
-																<img src={el.photo.file.url} alt={el.person.person} />
-															</div>
-															<div className="ca_txt">
-																<p>{el.quote.quote}</p>
-																<p><strong>{el.person.person}</strong></p>
-															</div>
-														</div>
-													)
-											}
-										)}
-										<div className="col-12 col-md-3"></div>
-									</div>
-								)
-							})
-						}
-					</div>
-				</section>*/}
-				{/*<section className="ca_juror_now ca_wave_top">*/}
 				<section className="ca_juror_now ca_wave_bottom ca_no_padding_top">
 					<div className="container">
 						<div className="row">
 							<div className="col-12 col-md-1"></div>
 							<div className="col-12 col-md-10">
 								<h2 className="ca_underlined">{theMeta(beJuror, 'Juror > Be Juror > Title').data.data}</h2>
-								<div dangerouslySetInnerHTML={{
-									__html: theMeta(beJuror, 'Juror > Be Juror > Text').data.childMarkdownRemark.html,
-								}}></div>
 								<a target={'_' + theMeta(beJuror, 'Juror > Be Juror > Button').referenceData[0].target} href={theMeta(beJuror, 'Juror > Be Juror > Button').referenceData[0].url} className="ca_button ca_solid_blue">{theMeta(beJuror, 'Juror > Be Juror > Button').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-1"></div>
@@ -302,32 +261,6 @@ query jurorQuery {
 								}
 							}
 						}
-					}
-					testimonialsBlock {
-						title
-						data {data childMarkdownRemark {html}}
-						mediaData {file{url}}
-						referenceData {
-							__typename
-							... on Node {
-								... on ContentfulLink {
-									text {text}
-									url
-									extraClass
-									target
-								}
-								... on ContentfulHomepageHowSteps {
-									title {title}
-									text {text}
-									image {file{url}}
-								}
-							}
-						}
-					}
-					testimonialsBlockList {
-						person {person}
-						quote {quote childMarkdownRemark {html}}
-						photo {file{url}}
 					}
 					beJurorBlock {
 						title

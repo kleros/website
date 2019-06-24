@@ -11,8 +11,6 @@ class RootIndex extends React.Component {
 		const benefitsText = data.benefitsText;
 		const benefitsCards = data.benefitsCards;
 		const integration = data.integration;
-		const testimonialsText = data.testimonialsText;
-		const testimonialsCards = data.testimonialCards;
 		const partner = data.partner;
 
 		return (
@@ -102,39 +100,6 @@ class RootIndex extends React.Component {
 						</div>
 					</div>
 				</section>
-				{/*<section className="ca_juror_testimonials ca_partner_testimonials ca_wave_bottom_dark">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<h2 className="ca_underlined">{theMeta(testimonialsText, 'Juror > Testimonials > Title').data.data}</h2>
-							</div>
-						</div>
-						{testimonialsCards.filter((el, num) => {return !(num % 2) == 0}).map((el, index) => {
-							return (
-								<div key={index} className={"row "+(index%2==0 ? 'ca_left' : 'ca_right')}>
-									<div className="col-12 col-md-1"></div>
-									{
-										testimonialsCards.map((el, num) => {
-											if((num >= (index * 2)) && (num <= ((index * 2) + 1)))
-												return (
-													<div key={num} className="col-12 col-md-4">
-														<div className="ca_img">
-															<img src={el.photo.file.url} alt={el.person.person} />
-														</div>
-														<div className="ca_txt">
-															<p>{el.quote.quote}</p>
-															<p><strong>{el.person.person}</strong></p>
-														</div>
-													</div>
-												)
-										})
-									}
-									<div className="col-12 col-md-3"></div>
-								</div>
-							)
-						})}
-					</div>
-				</section>*/}
 				<section className="ca_juror_now ca_partner_now ca_no_margin">
 					<div className="container">
 						<div className="row">
@@ -229,32 +194,6 @@ query partnerQuery {
 							}
 						}
 					}
-				}
-				testimonialsText {
-					title
-					data {data childMarkdownRemark {html}}
-					mediaData {file{url}}
-					referenceData {
-						__typename
-						... on Node {
-							... on ContentfulLink {
-								text {text}
-								url
-								extraClass
-								target
-							}
-							... on ContentfulHomepageHowSteps {
-								title {title}
-								text {text}
-								image {file{url}}
-							}
-						}
-					}
-				}
-				testimonialCards {
-					person {person}
-					quote {quote childMarkdownRemark {html}}
-					photo {file{url}}
 				}
 				partner {
 					title

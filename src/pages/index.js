@@ -114,7 +114,6 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-1"></div>
 							<div className="col-12 col-md-10">
 								<h2>{theMeta(why, 'Homepage > Why > Title').data.data}</h2>
-								{theSubtitle(theMeta(why, 'Homepage > Why > Sub Title').data.data)}
 							</div>
 							<div className="col-12 col-md-1"></div>
 						</div>
@@ -220,7 +219,6 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-2"></div>
 							<div className="col-12 col-md-8">
 								<h2 className="ca_underlined">{theMeta(how, 'Homepage > How > Title').data.data}</h2>
-								<h6>{theMeta(how, 'Homepage > How > Sub Title').data.data}</h6>
 							</div>
 							<div className="col-12 col-md-2"></div>
 						</div>
