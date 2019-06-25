@@ -86,6 +86,19 @@ class RootIndex extends React.Component {
 		return (
 			<div>
 				<Helmet><html lang="en" /><title>{siteTitle}</title></Helmet>
+				<Modal open={open} onClose={this.onCloseModal} center classNames={{
+            modal: 'customModal'
+          }}
+				>
+					<h2>Message sent!</h2>
+					<p>
+						We will answer you as soon as possible.
+					</p>
+					<p>
+						While waiting for an answer you can join our{' '}
+						<a href="https://t.me/kleros" target="_blank">Telegram</a>.
+					</p>
+				</Modal>
 				<section className="ca_home_top ca_escrow_top">
 					<div className="container">
 						<div className="row ca_txt">
