@@ -194,7 +194,11 @@ class RootIndex extends React.Component {
 							</div>
 							<div className="col-12 col-md-4">
 								<h6>{theMeta(solution, 'Homepage > Solution > Second > Title').data.data}</h6>
-								<p>{theMeta(solution, 'Homepage > Solution > Second > Text').data.data}</p>
+								<p>
+									<span className="links" dangerouslySetInnerHTML={{
+										__html: theMeta(solution, 'Homepage > Solution > Second > Text').data.childMarkdownRemark.html
+									}}></span>
+								</p>
 								<a target={"_" + theMeta(solution, 'Homepage > Solution > Second > Buttons > Left').referenceData[0].target} href={theMeta(solution, 'Homepage > Solution > Second > Buttons > Left').referenceData[0].url} className="ca_button ca_solid_blue">{theMeta(solution, 'Homepage > Solution > Second > Buttons > Left').referenceData[0].text.text}</a>
 								<a target={"_" + theMeta(solution, 'Homepage > Solution > Second > Buttons > Right').referenceData[0].target} href={theMeta(solution, 'Homepage > Solution > Second > Buttons > Right').referenceData[0].url} className="ca_button ca_transparent_blue">{theMeta(solution, 'Homepage > Solution > Second > Buttons > Right').referenceData[0].text.text}</a>
 							</div>
@@ -207,7 +211,11 @@ class RootIndex extends React.Component {
 							</div>
 							<div className="col-12 col-md-4">
 								<h6>{theMeta(solution, 'Homepage > Solution > Third > Title').data.data}</h6>
-								<p>{theMeta(solution, 'Homepage > Solution > Third > Text').data.data}</p>
+								<p>
+									<span className="links" dangerouslySetInnerHTML={{
+										__html: theMeta(solution, 'Homepage > Solution > Third > Text').data.childMarkdownRemark.html
+									}}></span>
+								</p>
 							</div>
 							<div className="col-12 col-md-1"></div>
 						</div>
