@@ -6,7 +6,6 @@ class RootIndex extends React.Component {
 	constructor() {
 		super();
 		var cat = get(this, 'props.data.allContentfulFaqCategory.edges');
-		console.log(cat)
 		this.state = {
 			faqFilter: {
 				value: '',
@@ -19,7 +18,6 @@ class RootIndex extends React.Component {
 				value: 0
 			}
 		}
-		//this.someName = this.someName.bind(this);
 	}
 	doSearch = (e = null) => {
 		if(e) e.preventDefault();
@@ -31,6 +29,8 @@ class RootIndex extends React.Component {
 		});
 	}
 	questionChange = (num, e = null) => {
+		console.log(num)
+		console.log(e)
 		if(e) e.preventDefault();
 		num = num === this.state.openedQuestion.value ? num = -1 : num = num;
 		this.setState({
@@ -57,7 +57,11 @@ class RootIndex extends React.Component {
 		var cats = get(this, 'props.data.allContentfulFaqCategory.edges');
 		if(this.state.faqFilter.value == '') this.categoryChange(cats[0].node.title.title);
 		else {
-			questions = questions.filter(({node}) => ((node.category.title.title === this.state.faqFilter.value) && (node.question.question.toLowerCase().indexOf(this.state.faqSearch.value.toLowerCase()) >= 0)));
+			questions = questions.filter(({node}) => {
+				if (!node.category) return false
+				return node.category.title.title === this.state.faqFilter.value &&
+					node.question.question.toLowerCase().indexOf(this.state.faqSearch.value.toLowerCase()) >= 0;
+			})
 		}
 		return (
 			<div>
