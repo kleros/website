@@ -49,7 +49,7 @@ class RootIndex extends React.Component {
 								<a href={theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].url} className="ca_button ca_transparent_blue" target={"_"+theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].target}>{theMeta(top, 'Homepage > Top > Button > Right').referenceData[0].text.text}</a>
 							</div>
 							<div className="col-12 col-md-6 illustration_holder">
-								<img src='img/homepage/logo.svg' className="illustration_holder_img" />
+								<img src={theMeta(top, 'Homepage > Top > Title').mediaData[0].file.url} className="illustration_holder_img" />
 							</div>
 						</div>
 					</div>

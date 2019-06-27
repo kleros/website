@@ -96,10 +96,11 @@ h6 {
 .illustration_holder {
   height: 60vh; }
   .illustration_holder_img {
-    margin-right: -10rem;
-    margin-top: -5rem;
-    width: 100vw;
-    overflow: hidden; }
+    margin-right: 0rem;
+    margin-top: 5rem;
+    opacity: 0.8;
+    width: 40vw;
+    overflow: hidden;}
 
 .illustration_escrow {
   margin-top: 9rem;
