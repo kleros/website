@@ -32,9 +32,9 @@ class RootIndex extends React.Component {
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ 
-				"form-name": form.getAttribute("name"), 
-				...this.state 
+			body: encode({
+				"form-name": form.getAttribute("name"),
+				...this.state
 			})
 		})
 			.then(() => this.setState(
@@ -176,7 +176,9 @@ class RootIndex extends React.Component {
 												<img src={el.image.file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
-												<p>{el.text.text}</p>
+												<div dangerouslySetInnerHTML={{
+													__html: el.text.childMarkdownRemark.html
+												}}></div>
 											</div>
 										</div>
 									)
@@ -190,7 +192,9 @@ class RootIndex extends React.Component {
 												<img src={el.image.file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
-												<p>{el.text.text}</p>
+												<div dangerouslySetInnerHTML={{
+													__html: el.text.childMarkdownRemark.html
+												}}></div>
 											</div>
 										</div>
 									)
@@ -204,7 +208,9 @@ class RootIndex extends React.Component {
 												<img src={el.image.file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
-												<p>{el.text.text}</p>
+												<div dangerouslySetInnerHTML={{
+													__html: el.text.childMarkdownRemark.html
+												}}></div>
 											</div>
 										</div>
 									)
@@ -220,7 +226,9 @@ class RootIndex extends React.Component {
 												<img src={el.image.file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
-												<p>{el.text.text}</p>
+												<div dangerouslySetInnerHTML={{
+													__html: el.text.childMarkdownRemark.html
+												}}></div>
 											</div>
 										</div>
 									)
@@ -234,7 +242,9 @@ class RootIndex extends React.Component {
 												<img src={el.image.file.url} alt="Illustration" />
 											</div>
 											<div className="ca_txt">
-												<p>{el.text.text}</p>
+												<div dangerouslySetInnerHTML={{
+													__html: el.text.childMarkdownRemark.html
+												}}></div>
 											</div>
 										</div>
 									)
@@ -258,21 +268,21 @@ class RootIndex extends React.Component {
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_name">First Name</label>
-												<input 
-													type="text" 
-													id="ca_name" 
-													name="firstname" 
-													value={firstname} 
-													onChange={this.handleChange} 
+												<input
+													type="text"
+													id="ca_name"
+													name="firstname"
+													value={firstname}
+													onChange={this.handleChange}
 												/>
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_lname">Last Name</label>
-												<input 
-													type="text" 
-													id="ca_lname" 
-													name="lastname" 
-													value={lastname} 
+												<input
+													type="text"
+													id="ca_lname"
+													name="lastname"
+													value={lastname}
 													onChange={this.handleChange}
 												/>
 											</div>
@@ -280,21 +290,21 @@ class RootIndex extends React.Component {
 										<div className="ca_line">
 											<div className="ca_half">
 												<label htmlFor="ca_email">Company Email</label>
-												<input 
-													type="email" 
-													id="ca_email" 
-													name="companyEmail" 
-													value={companyEmail} 
+												<input
+													type="email"
+													id="ca_email"
+													name="companyEmail"
+													value={companyEmail}
 													onChange={this.handleChange}
 												/>
 											</div>
 											<div className="ca_half">
 												<label htmlFor="ca_company">Company Name</label>
-												<input 
-													type="text" 
-													id="ca_company" 
-													name="companyName" 
-													value={companyName} 
+												<input
+													type="text"
+													id="ca_company"
+													name="companyName"
+													value={companyName}
 													onChange={this.handleChange}
 												/>
 											</div>
@@ -302,10 +312,10 @@ class RootIndex extends React.Component {
 										<div className="ca_line">
 											<div className="ca_full">
 												<label htmlFor="ca_text">Write your message</label>
-												<textarea 
-													id="ca_text" 
+												<textarea
+													id="ca_text"
 													name="message"
-													value={message} 
+													value={message}
 													onChange={this.handleChange}
 												/>
 											</div>

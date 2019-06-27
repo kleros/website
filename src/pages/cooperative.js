@@ -20,7 +20,7 @@ class RootIndex extends React.Component {
 							<div className="col-12 col-md-2"></div>
 							<div className="col-12 col-md-8">
 								<h2>{theMeta(header, 'Cooperative Title').data.data}</h2>
-								<h2 className="ca_underlined">{theMeta(header, 'Cooperative Sub Title').data.data}</h2>
+								<p className="ca_underlined">{theMeta(header, 'Cooperative Sub Title').data.data}</p>
 							</div>
 							<div className="col-12 col-md-2"></div>
 						</div>
