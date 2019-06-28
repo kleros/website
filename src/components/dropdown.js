@@ -6,11 +6,13 @@ class Dropdown extends Component {
   }
 
   componentWillMount() {
-    document.addEventListener('mousedown', this.handleClick.bind(this), false)
+    if (typeof document !== 'undefined')
+      document.addEventListener('mousedown', this.handleClick.bind(this), false)
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousedown', this.handleClick.bind(this), false)
+    if (typeof document !== 'undefined')
+      document.removeEventListener('mousedown', this.handleClick.bind(this), false)
   }
 
   handleClick (e) {
