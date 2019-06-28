@@ -16,7 +16,7 @@ class Template extends React.Component {
 	onCloseModal = () => {
     this.setState({ open: false });
 	};
-	
+
 	onOpenModal = () => {
     this.setState({ open: true });
 	};
@@ -75,6 +75,15 @@ export const menuTopQuery = graphql`
 					url
 					iconClass
 					menuTag
+					dropdownOptions {
+						__typename
+						... on Node {
+							... on ContentfulMenu {
+								text
+								url
+							}
+						}
+					}
 				}
 			}
 		}

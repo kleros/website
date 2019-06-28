@@ -120,6 +120,40 @@ h6 {
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
   text-decoration: none; }
 
+.dropdown {
+  background: #050f2c;
+  position: absolute;
+  right: 15px;
+  text-align: left;
+  width: 200px; }
+
+.dropdown-root {
+  cursor: pointer; }
+
+.dropdown-root.selected {
+  background: #1E2741; }
+
+.dropdown-root:after {
+  content: '';
+  border: 4px solid transparent;
+  border-top: 4px solid white;
+  margin-left: 5px;
+  margin-top: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dropdown-item {
+  background: #050f2c;
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+
+.dropdown-item:hover {
+  background: #1E2741; }
+
+.dropdown-item a {
+  text-align: left;
+  text-decoration: none; }
+
 .links a:hover {
   text-decoration: none;
   color: #14b3ff; }

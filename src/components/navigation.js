@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Dropdown from './dropdown'
+
 export default function(menu) {
   const data = menu.menu.top;
   const settings = menu.menu.settings[0].node;
@@ -16,6 +18,9 @@ export default function(menu) {
             <ul>
               {
                 data.map(function(edge, num) {
+                  if (edge.node.dropdownOptions) {
+                    return <Dropdown data={edge.node} />
+                  }
                   return <li key={num}><a href={edge.node.url} className="hamburger-a">{edge.node.text}</a></li>
                 })
               }
