@@ -1664,7 +1664,7 @@ h6 {
     line-height: 4.25rem;
     letter-spacing: -0.00833333rem;
     margin-bottom: 2.91667rem; }
-    .ca_cooperative_content p.ca_underlined {
+    .ca_cooperative_content span.ca_underlined p {
       color: #fff;
       font-size: 1.5rem;
       margin-bottom: 3.83333rem;
