@@ -17,7 +17,7 @@ export default function({menu, onCloseModal, onOpenModal, open}) {
 			>
 				<h2>Download Book</h2>
 				<div className="ca_book">
-					<a href="/book/Dispute-Resolution-Kleros.epub" target="_blank">EPUP FORMAT</a>
+					<a href="/book/Dispute-Resolution-Kleros.epub" target="_blank">EPUB FORMAT</a>
 					<a href="https://ipfs.kleros.io/ipfs/QmZeV32S2VoyUnqJsRRCh75F1fP2AeomVq2Ury2fTt9V4z/Dispute-Resolution-Kleros.pdf" target="_blank">PDF FORMAT</a>
 					<a href="/book/Dispute-Resolution-Kleros.mobi" target="_blank">MOBI FORMAT</a>
 				</div>
