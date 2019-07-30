@@ -1,11 +1,11 @@
 {
-  "name": "contentful-starter-gatsby-blog",
-  "description": "Contentful Gatsby Starter Blog",
+  "name": "Kleros Website",
+  "description": "The Blockchain Dispute Resolution Layer",
   "private": true,
-  "version": "0.0.1",
-  "author": "Contentful <opensource@contentful.com>",
+  "version": "1.0.0",
+  "author": "Kleros",
   "bugs": {
-    "url": "https://github.com/contentful/starter-gatsby-blog/issues"
+    "url": "https://github.com/kleros/website/issues"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -23,17 +23,18 @@
     "p5": "^0.7.2",
     "react-responsive-modal": "^3.6.0"
   },
-  "homepage": "https://github.com/contentful/starter-gatsby-blog#readme",
+  "homepage": "https://kleros.io",
   "keywords": [
-    "gatsby",
-    "contentful",
-    "starter"
+    "kleros",
+    "dispute resolution",
+    "blockchain",
+    "ethereum"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
+    "url": "git+https://github.com/kleros/website.git"
   },
   "scripts": {
     "dev": "gatsby develop",
