@@ -692,7 +692,12 @@ class RootIndex extends React.Component {
                   ).mediaData.map(function(logo, num) {
                     if (num == 0)
                       return (
-                        <a href={logo.description}>
+                        <a
+                          href={
+                            theMeta(partners, 'Homepage > Partners > Logos')
+                              .referenceData[num].url
+                          }
+                        >
                           <img
                             key={num}
                             src={logo.file.url}
@@ -712,14 +717,21 @@ class RootIndex extends React.Component {
                   ).mediaData.map(function(logo, num) {
                     if (num != 0)
                       return (
-                        <img
-                          key={num}
-                          src={logo.file.url}
-                          alt={
-                            theMeta(partners, 'Homepage > Partners > Title')
-                              .data.data
+                        <a
+                          href={
+                            theMeta(partners, 'Homepage > Partners > Logos')
+                              .referenceData[num].url
                           }
-                        />
+                        >
+                          <img
+                            key={num}
+                            src={logo.file.url}
+                            alt={
+                              theMeta(partners, 'Homepage > Partners > Title')
+                                .data.data
+                            }
+                          />
+                        </a>
                       )
                   })}
                 </div>
