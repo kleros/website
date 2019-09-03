@@ -98,32 +98,26 @@ class RootIndex extends React.Component {
             .
           </p>
         </Modal>
-
-        <section
-          id="more"
-          className="ca_escrow_description ca_wave_top_inverted"
-        >
+        <section className="ca_home_top ca_escrow_top">
           <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-4">
-                <h1 style={{ marginTop: '30%', fontSize: '400%' }}>
-                  {theMeta(escrow, 'Token Title').data.data}
+            <div className="row ca_txt">
+              <div className="col-12 col-md-6 text-center">
+                <h1 style={{ marginTop: '10%' }}>
+                  {theMeta(top, 'Token Page Top Title').data.data}
                 </h1>
               </div>
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-5">
+              <div className="col-12 col-md-6">
                 <img
-                  src={theMeta(escrow, 'Token Image').mediaData[0].file.url}
+                  src={theMeta(top, 'Token Page Image').mediaData[0].file.url}
+                  className="illustration_escrow"
                   alt="Kleros"
                 />
               </div>
-              <div className="col-12 col-md-1" />
             </div>
           </div>
         </section>
 
-        <section className="ca_escrow_content ca_wave_bottom">
+        <section className="ca_escrow_content ca_wave_top_inverted">
           <div className="container">
             {contentCards.map((el, num) => {
               return (
@@ -146,101 +140,46 @@ class RootIndex extends React.Component {
                 </div>
               )
             })}
-            <div className="row ca_escrow_path">
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-3">
-                {[contentPath[0]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_1">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        />
-                      </div>
+          </div>
+        </section>
+
+        <section className="ca_escrow_contact">
+          <div className="container" style={{ height: '200px' }}>
+            <div className="row d-flex justify-content-center">
+              <div
+                className="card w-100 "
+                style={{
+                  borderRadius: '12px',
+                  background:
+                    'linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)',
+                  marginTop: '4%'
+                }}
+              >
+                <div className="card-body" style={{ color: 'white' }}>
+                  <div className="row">
+                    <div className="col-12 col-md-1">
+                      <img src="/img/stake_icon.svg" />
                     </div>
-                  )
-                })}
-              </div>
-              <div className="col-12 col-md-4">
-                {[contentPath[1]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_2">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        />
-                      </div>
+                    <div className="col-12 col-md-8">
+                      <h3 className="card-title">
+                        If you are interested in acquiring PNK token OTC, get in
+                        touch
+                      </h3>
+
+                      <p className="card-text ca-text">
+                        Note that in order to ensure fairness in token
+                        distribution, tokens are sold to buyers at prices
+                        reflected by the market.
+                      </p>
                     </div>
-                  )
-                })}
-              </div>
-              <div className="col-12 col-md-3">
-                {[contentPath[2]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_3">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        />
-                      </div>
+                    <div className="col-12 col-md-3 mt-4 text-center">
+                      <a href="#" className="btn btn-lg btn-primary btn-lg">
+                        Get in touch here
+                      </a>
                     </div>
-                  )
-                })}
+                  </div>
+                </div>
               </div>
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-2" />
-              <div className="col-12 col-md-4">
-                {[contentPath[3]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_4">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-              <div className="col-12 col-md-4">
-                {[contentPath[4]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_5">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-              <div className="col-12 col-md-2" />
             </div>
           </div>
         </section>
