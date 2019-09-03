@@ -62,11 +62,12 @@ class RootIndex extends React.Component {
       open
     } = this.state
 
-    const siteTitle = 'Kleros - Escrow Blockchain'
-    // console.log(get(this, 'props.data.allContentfulTokenPage.edges'))
-    // console.log('HERE')
-    const data = get(this, 'props.data.allContentfulTokenPage')
+    const siteTitle = 'Kleros - Token Page'
+    const data = get(this, 'props.data.allContentfulTokenPage.edges')[0].node
+    console.log(data)
     const top = data.top
+    console.log(theMeta(top, 'Token Page Top Button'))
+
     const escrow = data.escrow
     const why = data.why
     const contentMain = data.contentMain
@@ -102,13 +103,18 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{theMeta(top, 'Escrow Top Title').data.data}</h1>
-                <h6>{theMeta(top, 'Escrow Top Sub Title').data.data}</h6>
+                <h1>{theMeta(top, 'Token Page Top Title').data.data}</h1>
+                <h6>{theMeta(top, 'Token Page Sub Title').data.data}</h6>
                 <a
-                  href={theMeta(top, 'Escrow Top Button').referenceData[0].url}
+                  href={
+                    theMeta(top, 'Token Page Top Button').referenceData[0].url
+                  }
                   className="ca_button ca_solid_blue"
                 >
-                  {theMeta(top, 'Escrow Top Button').referenceData[0].text.text}
+                  {
+                    theMeta(top, 'Token Page Top Button').referenceData[0].text
+                      .text
+                  }
                 </a>
               </div>
               <div className="col-12 col-md-6">
@@ -129,10 +135,10 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-4">
-                <h2>{theMeta(escrow, 'Escrow Title').data.data}</h2>
+                <h2>{theMeta(escrow, 'Token Title').data.data}</h2>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: theMeta(escrow, 'Escrow Text').data
+                    __html: theMeta(escrow, 'Token Text').data
                       .childMarkdownRemark.html
                   }}
                 />
@@ -140,7 +146,7 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-5">
                 <img
-                  src={theMeta(escrow, 'Escrow Image').mediaData[0].file.url}
+                  src={theMeta(escrow, 'Token Image').mediaData[0].file.url}
                   alt="Kleros"
                 />
               </div>
@@ -154,15 +160,15 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-5">
                 <img
-                  src={theMeta(why, 'Escrow Why Image').mediaData[0].file.url}
+                  src={theMeta(why, 'Token Why Image').mediaData[0].file.url}
                   alt="Kleros"
                 />
               </div>
               <div className="col-12 col-md-5">
-                <h2>{theMeta(why, 'Escrow Why Title').data.data}</h2>
+                <h2>{theMeta(why, 'Token Why Title').data.data}</h2>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: theMeta(why, 'Escrow Why Text').data
+                    __html: theMeta(why, 'Token Why Text').data
                       .childMarkdownRemark.html
                   }}
                 />
@@ -183,15 +189,13 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
-                <h2>
-                  {theMeta(contentMain, 'Escrow Content Title').data.data}
-                </h2>
+                <h2>{theMeta(contentMain, 'Token Content Title').data.data}</h2>
                 <h6>
-                  {theMeta(contentMain, 'Escrow Content Sub Title').data.data}
+                  {theMeta(contentMain, 'Token Content Sub Title').data.data}
                 </h6>
                 <img
                   src={
-                    theMeta(contentMain, 'Escrow Content Image').mediaData[0]
+                    theMeta(contentMain, 'Token Content Image').mediaData[0]
                       .file.url
                   }
                   alt="Kleros"
@@ -324,10 +328,8 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-8">
-                <h2>{theMeta(contact, 'Escrow Contact Title').data.data}</h2>
-                <h6>
-                  {theMeta(contact, 'Escrow Contact Sub Title').data.data}
-                </h6>
+                <h2>{theMeta(contact, 'Token Contact Title').data.data}</h2>
+                <h6>{theMeta(contact, 'Token Contact Sub Title').data.data}</h6>
                 <div className="ca_form">
                   <form
                     name="escrow"
