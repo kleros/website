@@ -173,7 +173,10 @@ class RootIndex extends React.Component {
                       </p>
                     </div>
                     <div className="col-12 col-md-3 mt-4 text-center">
-                      <a href="#" className="btn btn-lg btn-primary btn-lg">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
+                        className="btn btn-lg btn-primary btn-lg"
+                      >
                         Get in touch here
                       </a>
                     </div>
