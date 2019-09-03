@@ -70,7 +70,6 @@ class RootIndex extends React.Component {
 
     const escrow = data.escrow
     const why = data.why
-    const contentMain = data.contentMain
     const contentCards = data.contentCards
     const contentPath = data.contentPath
     const contact = data.contact
@@ -99,34 +98,7 @@ class RootIndex extends React.Component {
             .
           </p>
         </Modal>
-        <section className="ca_home_top ca_escrow_top">
-          <div className="container">
-            <div className="row ca_txt">
-              <div className="col-12 col-md-6">
-                <h1>{theMeta(top, 'Token Page Top Title').data.data}</h1>
-                <h6>{theMeta(top, 'Token Page Sub Title').data.data}</h6>
-                <a
-                  href={
-                    theMeta(top, 'Token Page Top Button').referenceData[0].url
-                  }
-                  className="ca_button ca_solid_blue"
-                >
-                  {
-                    theMeta(top, 'Token Page Top Button').referenceData[0].text
-                      .text
-                  }
-                </a>
-              </div>
-              <div className="col-12 col-md-6">
-                <img
-                  src="/img/escrow/escrow.png"
-                  className="illustration_escrow"
-                  alt="Kleros"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+
         <section
           id="more"
           className="ca_escrow_description ca_wave_top_inverted"
@@ -186,23 +158,6 @@ class RootIndex extends React.Component {
         </section>
         <section className="ca_escrow_content ca_wave_bottom">
           <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-2" />
-              <div className="col-12 col-md-8">
-                <h2>{theMeta(contentMain, 'Token Content Title').data.data}</h2>
-                <h6>
-                  {theMeta(contentMain, 'Token Content Sub Title').data.data}
-                </h6>
-                <img
-                  src={
-                    theMeta(contentMain, 'Token Content Image').mediaData[0]
-                      .file.url
-                  }
-                  alt="Kleros"
-                />
-              </div>
-              <div className="col-12 col-md-2" />
-            </div>
             {contentCards.map((el, num) => {
               return (
                 <div
@@ -211,7 +166,6 @@ class RootIndex extends React.Component {
                 >
                   <div className="col-12 col-md-1 one" />
                   <div className="col-12 col-md-5 two">
-                    <h6>{el.title.title}</h6>
                     <div
                       dangerouslySetInnerHTML={{
                         __html: el.text.childMarkdownRemark.html
@@ -320,91 +274,6 @@ class RootIndex extends React.Component {
                 })}
               </div>
               <div className="col-12 col-md-2" />
-            </div>
-          </div>
-        </section>
-        <section className="ca_escrow_contact">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-8">
-                <h2>{theMeta(contact, 'Token Contact Title').data.data}</h2>
-                <h6>{theMeta(contact, 'Token Contact Sub Title').data.data}</h6>
-                <div className="ca_form">
-                  <form
-                    name="escrow"
-                    method="post"
-                    data-netlify="true"
-                    onSubmit={this.handleSubmit}
-                  >
-                    {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                    <input type="hidden" name="form-name" value="escrow" />
-                    <div className="ca_line">
-                      <div className="ca_half">
-                        <label htmlFor="ca_name">First Name</label>
-                        <input
-                          type="text"
-                          id="ca_name"
-                          name="firstname"
-                          value={firstname}
-                          onChange={this.handleChange}
-                        />
-                      </div>
-                      <div className="ca_half">
-                        <label htmlFor="ca_lname">Last Name</label>
-                        <input
-                          type="text"
-                          id="ca_lname"
-                          name="lastname"
-                          value={lastname}
-                          onChange={this.handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div className="ca_line">
-                      <div className="ca_half">
-                        <label htmlFor="ca_email">Company Email</label>
-                        <input
-                          type="email"
-                          id="ca_email"
-                          name="companyEmail"
-                          value={companyEmail}
-                          onChange={this.handleChange}
-                        />
-                      </div>
-                      <div className="ca_half">
-                        <label htmlFor="ca_company">Company Name</label>
-                        <input
-                          type="text"
-                          id="ca_company"
-                          name="companyName"
-                          value={companyName}
-                          onChange={this.handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div className="ca_line">
-                      <div className="ca_full">
-                        <label htmlFor="ca_text">Write your message</label>
-                        <textarea
-                          id="ca_text"
-                          name="message"
-                          value={message}
-                          onChange={this.handleChange}
-                        />
-                      </div>
-                    </div>
-                    <div className="ca_line">
-                      <input
-                        type="submit"
-                        value="Send"
-                        className="ca_button ca_solid_blue"
-                      />
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div className="col-12 col-md-3" />
             </div>
           </div>
         </section>
@@ -540,46 +409,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          contentMain {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
+
           contentCards {
             title {
               title
