@@ -107,13 +107,9 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-4">
-                <h2>{theMeta(escrow, 'Token Title').data.data}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(escrow, 'Token Text').data
-                      .childMarkdownRemark.html
-                  }}
-                />
+                <h1 style={{ marginTop: '30%', fontSize: '400%' }}>
+                  {theMeta(escrow, 'Token Title').data.data}
+                </h1>
               </div>
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-5">
@@ -126,36 +122,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-        <section className="ca_escrow_why">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-5">
-                <img
-                  src={theMeta(why, 'Token Why Image').mediaData[0].file.url}
-                  alt="Kleros"
-                />
-              </div>
-              <div className="col-12 col-md-5">
-                <h2>{theMeta(why, 'Token Why Title').data.data}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(why, 'Token Why Text').data
-                      .childMarkdownRemark.html
-                  }}
-                />
-                <a
-                  href="https://escrow.kleros.io"
-                  target="_blank"
-                  className="ca_button ca_transparent_blue"
-                >
-                  Kleros Escrow
-                </a>
-              </div>
-              <div className="col-12 col-md-1" />
-            </div>
-          </div>
-        </section>
+
         <section className="ca_escrow_content ca_wave_bottom">
           <div className="container">
             {contentCards.map((el, num) => {
@@ -330,46 +297,6 @@ export const pageQuery = graphql`
             }
           }
           escrow {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          why {
             title
             data {
               data
