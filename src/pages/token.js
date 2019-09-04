@@ -162,23 +162,29 @@ class RootIndex extends React.Component {
                 }}
               >
                 <div className="card-body" style={{ color: 'white' }}>
-                  <div className="row">
+                  <div className="row" style={{ alignItems: 'center' }}>
                     <div className="col-12 col-md-1">
                       <img src="/img/stake_icon.svg" />
                     </div>
                     <div className="col-12 col-md-8">
-                      <h3 className="card-title">
+                      <h3
+                        className="card-title"
+                        style={{ lineHeight: 'normal', marginBottom: '0' }}
+                      >
                         If you are interested in acquiring PNK token OTC, get in
                         touch
                       </h3>
 
-                      <p className="card-text ca-text">
+                      <p
+                        className="card-text ca-text"
+                        style={{ fontSize: '130%' }}
+                      >
                         Note that in order to ensure fairness in token
                         distribution, tokens are sold to buyers at prices
                         reflected by the market.
                       </p>
                     </div>
-                    <div className="col-12 col-md-3 mt-4 text-center">
+                    <div className="col-12 col-md-3 text-center">
                       <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
                         className="btn btn-lg btn-primary btn-lg"
