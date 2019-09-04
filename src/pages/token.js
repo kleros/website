@@ -98,11 +98,14 @@ class RootIndex extends React.Component {
             .
           </p>
         </Modal>
-        <section className="ca_home_top ca_escrow_top">
+        <section
+          className="ca_home_top ca_escrow_top"
+          style={{ minHeight: '10vh' }}
+        >
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6 text-center">
-                <h1 style={{ marginTop: '10%' }}>
+                <h1 style={{ marginTop: '15%', fontSize: '420%' }}>
                   {theMeta(top, 'Token Page Top Title').data.data}
                 </h1>
               </div>
