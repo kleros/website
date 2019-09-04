@@ -120,7 +120,10 @@ class RootIndex extends React.Component {
           </div>
         </section>
 
-        <section className="ca_escrow_content ca_wave_top_inverted">
+        <section
+          className="ca_escrow_content ca_wave_top_inverted"
+          style={{ paddingTop: '26rem' }}
+        >
           <div className="container">
             {contentCards.map((el, num) => {
               return (
