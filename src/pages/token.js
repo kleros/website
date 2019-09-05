@@ -140,7 +140,11 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="col-12 col-md-5 three">
-                    <img src={el.image.file.url} alt="Kleros" />
+                    <img
+                      style={{ width: '100%', marginLeft: '0' }}
+                      src={el.image.file.url}
+                      alt="Kleros"
+                    />
                   </div>
                   <div className="col-12 col-md-1 four" />
                 </div>
