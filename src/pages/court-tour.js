@@ -109,7 +109,7 @@ class RootIndex extends React.Component {
         >
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-12 text-left">
+              <div className="col-12 col-md-12 text-left p-0">
                 <h2>Enter fullscreen mode for best experience.</h2>
                 <h5>
                   Click on fullscreen at the top right corner of the image below
@@ -135,6 +135,25 @@ class RootIndex extends React.Component {
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOWLtvy6EdqqIEKxRLqQ7XF%2FKleros-2%3Fnode-id%3D14%253A4486%26viewport%3D319%252C405%252C0.015625%26scaling%3Dscale-down-width"
                   allowfullscreen
                 />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-6  text-left p-0">
+                <h3>
+                  Liked the tour and want to test the real product, but never
+                  used crypto? Not to worry, click on Crypto Beginner’s Guide.
+                </h3>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-6  text-left pl-0 pt-4">
+                <a
+                  href="https://metamask.zendesk.com"
+                  target=""
+                  className="ca_button ca_solid_blue"
+                >
+                  Crypto Beginner's Guide
+                </a>
               </div>
             </div>
           </div>
