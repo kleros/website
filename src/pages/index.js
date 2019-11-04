@@ -1,45 +1,45 @@
-import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import theMeta from '../js/helpers.js'
+import React from "react";
+import get from "lodash/get";
+import Helmet from "react-helmet";
+import theMeta from "../js/helpers.js";
 
 class RootIndex extends React.Component {
   render() {
-    const siteTitle = 'Kleros'
-    const apiTwitter = get(this, 'props.data.allTweet.edges')[0].node
-    const apiBlog = get(this, 'props.data.allKlerosBlogPosts.edges')[0].node
-    const apiGit = get(this, 'props.data.allKlerosGitCommits.edges')[0].node
-    const apiForum = get(this, 'props.data.allKlerosForumTopic.edges')[0].node
+    const siteTitle = "Kleros";
+    const apiTwitter = get(this, "props.data.allTweet.edges")[0].node;
+    const apiBlog = get(this, "props.data.allKlerosBlogPosts.edges")[0].node;
+    const apiGit = get(this, "props.data.allKlerosGitCommits.edges")[0].node;
+    const apiForum = get(this, "props.data.allKlerosForumTopic.edges")[0].node;
 
-    const data = get(this, 'props.data.allContentfulHomepage.edges')[0].node
-    const top = data.topBlock
-    const why = data.whyBlock
-    const problem = data.problemBlock
-    const solution = data.solutionBlock
-    const how = data.howBlock
-    const join = data.joinBlock
-    const partners = data.partnersBlock
-    const contact = data.contactBlock
-    const twitter = 'Twitter'
-    const blog = 'Blog'
-    const github = 'Github'
-    const forum = 'Forum'
+    const data = get(this, "props.data.allContentfulHomepage.edges")[0].node;
+    const top = data.topBlock;
+    const why = data.whyBlock;
+    const problem = data.problemBlock;
+    const solution = data.solutionBlock;
+    const how = data.howBlock;
+    const join = data.joinBlock;
+    const partners = data.partnersBlock;
+    const contact = data.contactBlock;
+    const twitter = "Twitter";
+    const blog = "Blog";
+    const github = "Github";
+    const forum = "Forum";
 
     var theSubtitle = function(subTitle) {
-      return subTitle.split('\n').map((el, num) => {
-        return <h6 key={num}>{el}</h6>
-      })
-    }
+      return subTitle.split("\n").map((el, num) => {
+        return <h6 key={num}>{el}</h6>;
+      });
+    };
     var theBrs = function(text) {
-      return text.split('\n').map(function(el, num) {
+      return text.split("\n").map(function(el, num) {
         return (
           <span key={num}>
             {el}
             <br />
           </span>
-        )
-      })
-    }
+        );
+      });
+    };
 
     return (
       <div>
@@ -51,47 +51,54 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{theMeta(top, 'Homepage > Top > Title').data.data}</h1>
-                <h6>{theMeta(top, 'Homepage > Top > Sub Title').data.data}</h6>
+                <h1>{theMeta(top, "Homepage > Top > Title").data.data}</h1>
+                <h6>{theMeta(top, "Homepage > Top > Sub Title").data.data}</h6>
                 <a
                   href={
-                    theMeta(top, 'Homepage > Top > Button > Left')
+                    theMeta(top, "Homepage > Top > Button > Left")
                       .referenceData[0].url
                   }
                   className="ca_button ca_solid_blue"
                   target={
-                    '_' +
-                    theMeta(top, 'Homepage > Top > Button > Left')
+                    "_" +
+                    theMeta(top, "Homepage > Top > Button > Left")
                       .referenceData[0].target
                   }
                 >
                   {
-                    theMeta(top, 'Homepage > Top > Button > Left')
+                    theMeta(top, "Homepage > Top > Button > Left")
                       .referenceData[0].text.text
                   }
                 </a>
                 <a
                   href={
-                    theMeta(top, 'Homepage > Top > Button > Right')
+                    theMeta(top, "Homepage > Top > Button > Right")
                       .referenceData[0].url
                   }
                   className="ca_button ca_transparent_blue"
                   target={
-                    '_' +
-                    theMeta(top, 'Homepage > Top > Button > Right')
+                    "_" +
+                    theMeta(top, "Homepage > Top > Button > Right")
                       .referenceData[0].target
                   }
                 >
                   {
-                    theMeta(top, 'Homepage > Top > Button > Right')
+                    theMeta(top, "Homepage > Top > Button > Right")
                       .referenceData[0].text.text
                   }
+                </a>
+                <a
+                  href="/court-tour"
+                  className="ca_button ca_transparent_blue"
+                  target="_blank"
+                >
+                  Court Tour
                 </a>
               </div>
               <div className="col-12 col-md-6 illustration_holder">
                 <img
                   src={
-                    theMeta(top, 'Homepage > Top > Title').mediaData[0].file.url
+                    theMeta(top, "Homepage > Top > Title").mediaData[0].file.url
                   }
                   className="illustration_holder_img"
                 />
@@ -115,23 +122,23 @@ class RootIndex extends React.Component {
                     <div className="card_header_title">Twitter</div>
                     <div className="card_header_date">
                       {new Date(apiTwitter.created_at).toLocaleDateString(
-                        'en-US',
-                        { year: 'numeric', month: 'short', day: 'numeric' }
+                        "en-US",
+                        { year: "numeric", month: "short", day: "numeric" }
                       )}
                     </div>
                   </div>
                   <p>
                     {apiTwitter.full_text
-                      .replace(/<(?:.|\n)*?>/gm, '')
+                      .replace(/<(?:.|\n)*?>/gm, "")
                       .trim()
-                      .split(' ')
+                      .split(" ")
                       .slice(0, 7)
-                      .join(' ') + '...'}
+                      .join(" ") + "..."}
                   </p>
                   <a
                     target="_blank"
                     href={
-                      'https://twitter.com/Kleros_io/status/' +
+                      "https://twitter.com/Kleros_io/status/" +
                       apiTwitter.id_str
                     }
                   >
@@ -140,7 +147,7 @@ class RootIndex extends React.Component {
                   <a
                     target="_blank"
                     href={
-                      'https://twitter.com/Kleros_io/status/' +
+                      "https://twitter.com/Kleros_io/status/" +
                       apiTwitter.id_str
                     }
                   />
@@ -158,30 +165,30 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="card_header_title">Blog</div>
                     <div className="card_header_date">
-                      {new Date(apiBlog.post_date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric'
+                      {new Date(apiBlog.post_date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric"
                       })}
                     </div>
                   </div>
                   <p>
                     {apiBlog.post_title
-                      .replace(/<(?:.|\n)*?>/gm, '')
+                      .replace(/<(?:.|\n)*?>/gm, "")
                       .trim()
-                      .split(' ')
+                      .split(" ")
                       .slice(0, 7)
-                      .join(' ') + '...'}
+                      .join(" ") + "..."}
                   </p>
                   <a
                     target="_blank"
-                    href={'https://blog.kleros.io/' + apiBlog.post_url}
+                    href={"https://blog.kleros.io/" + apiBlog.post_url}
                   >
                     Go to Blog
                   </a>
                   <a
                     target="_blank"
-                    href={'https://blog.kleros.io/' + apiBlog.post_url}
+                    href={"https://blog.kleros.io/" + apiBlog.post_url}
                   />
                 </div>
               </div>
@@ -198,18 +205,18 @@ class RootIndex extends React.Component {
                     <div className="card_header_title">Github</div>
                     <div className="card_header_date">
                       {new Date(apiGit.commit_date).toLocaleDateString(
-                        'en-US',
-                        { year: 'numeric', month: 'short', day: 'numeric' }
+                        "en-US",
+                        { year: "numeric", month: "short", day: "numeric" }
                       )}
                     </div>
                   </div>
                   <p>
                     {apiGit.commit_text
-                      .replace(/<(?:.|\n)*?>/gm, '')
+                      .replace(/<(?:.|\n)*?>/gm, "")
                       .trim()
-                      .split(' ')
+                      .split(" ")
                       .slice(0, 7)
-                      .join(' ') + '...'}
+                      .join(" ") + "..."}
                   </p>
                   <a target="_blank" href={apiGit.commit_url}>
                     Go to Github
@@ -230,25 +237,25 @@ class RootIndex extends React.Component {
                     <div className="card_header_title">Forum</div>
                     <div className="card_header_date">
                       {new Date(apiForum.created_at).toLocaleDateString(
-                        'en-US',
-                        { year: 'numeric', month: 'short', day: 'numeric' }
+                        "en-US",
+                        { year: "numeric", month: "short", day: "numeric" }
                       )}
                     </div>
                   </div>
                   <p>
                     {apiForum.topic_title
-                      .replace(/<(?:.|\n)*?>/gm, '')
+                      .replace(/<(?:.|\n)*?>/gm, "")
                       .trim()
-                      .split(' ')
+                      .split(" ")
                       .slice(0, 7)
-                      .join(' ') + '...'}
+                      .join(" ") + "..."}
                   </p>
                   <a
                     target="_blank"
                     href={
-                      'https://forum.kleros.io/t/' +
+                      "https://forum.kleros.io/t/" +
                       apiForum.topic_slug +
-                      '/' +
+                      "/" +
                       apiForum.topic_id
                     }
                   >
@@ -257,9 +264,9 @@ class RootIndex extends React.Component {
                   <a
                     target="_blank"
                     href={
-                      'https://forum.kleros.io/t/' +
+                      "https://forum.kleros.io/t/" +
                       apiForum.topic_slug +
-                      '/' +
+                      "/" +
                       apiForum.topic_id
                     }
                   />
@@ -273,7 +280,7 @@ class RootIndex extends React.Component {
             <div className="row ca_text">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-10">
-                <h2>{theMeta(why, 'Homepage > Why > Title').data.data}</h2>
+                <h2>{theMeta(why, "Homepage > Why > Title").data.data}</h2>
               </div>
               <div className="col-12 col-md-1" />
             </div>
@@ -283,69 +290,69 @@ class RootIndex extends React.Component {
                 <div className="ca_why_block">
                   <img
                     src={
-                      theMeta(why, 'Homepage > Why > First Image').mediaData[0]
+                      theMeta(why, "Homepage > Why > First Image").mediaData[0]
                         .file.url
                     }
-                    alt={theMeta(why, 'Homepage > Why > Title').data.data}
+                    alt={theMeta(why, "Homepage > Why > Title").data.data}
                   />
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 1').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 1").data.data}
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 2').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 2").data.data}
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 3').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 3").data.data}
                     </p>
                   </div>
                 </div>
                 <div className="ca_why_block">
                   <img
                     src={
-                      theMeta(why, 'Homepage > Why > Second Image').mediaData[0]
+                      theMeta(why, "Homepage > Why > Second Image").mediaData[0]
                         .file.url
                     }
-                    alt={theMeta(why, 'Homepage > Why > Title').data.data}
+                    alt={theMeta(why, "Homepage > Why > Title").data.data}
                   />
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 4').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 4").data.data}
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 5').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 5").data.data}
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, 'Homepage > Why > Steps > 6').data.data}
+                      {theMeta(why, "Homepage > Why > Steps > 6").data.data}
                     </p>
                   </div>
                 </div>
                 <div className="ca_why_block">
                   <a
                     href={
-                      theMeta(why, 'Homepage > Why > Button').referenceData[0]
+                      theMeta(why, "Homepage > Why > Button").referenceData[0]
                         .url
                     }
                     className={
-                      'ca_button ca_solid_blue ' +
-                      theMeta(why, 'Homepage > Why > Button').referenceData[0]
+                      "ca_button ca_solid_blue " +
+                      theMeta(why, "Homepage > Why > Button").referenceData[0]
                         .extraClass
                     }
                     data-video-url={
-                      theMeta(why, 'Homepage > Why > Button').referenceData[0]
+                      theMeta(why, "Homepage > Why > Button").referenceData[0]
                         .url
                     }
                   >
                     {
-                      theMeta(why, 'Homepage > Why > Button').referenceData[0]
+                      theMeta(why, "Homepage > Why > Button").referenceData[0]
                         .text.text
                     }
                   </a>
@@ -361,10 +368,10 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {theMeta(problem, 'Homepage > Problem > Title').data.data}
+                  {theMeta(problem, "Homepage > Problem > Title").data.data}
                 </h2>
                 {theSubtitle(
-                  theMeta(problem, 'Homepage > Problem > Sub Title').data.data
+                  theMeta(problem, "Homepage > Problem > Sub Title").data.data
                 )}
               </div>
               <div className="col-12 col-md-2" />
@@ -376,7 +383,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {theMeta(solution, 'Homepage > Solution > Title').data.data}
+                  {theMeta(solution, "Homepage > Solution > Title").data.data}
                 </h2>
               </div>
             </div>
@@ -386,19 +393,19 @@ class RootIndex extends React.Component {
                 <div className="ca_solution_slider">
                   {theMeta(
                     solution,
-                    'Homepage > Solution > First > Images'
+                    "Homepage > Solution > First > Images"
                   ).mediaData.map(function(el, num) {
                     return (
                       <div key={num} className="ca_slide">
                         <img
                           src={el.file.url}
                           alt={
-                            theMeta(solution, 'Homepage > Solution > Title')
+                            theMeta(solution, "Homepage > Solution > Title")
                               .data.data
                           }
                         />
                       </div>
-                    )
+                    );
                   })}
                 </div>
                 <div className="ca_solution_slider_dots" />
@@ -406,13 +413,13 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-4">
                 <h6>
                   {
-                    theMeta(solution, 'Homepage > Solution > First > Title')
+                    theMeta(solution, "Homepage > Solution > First > Title")
                       .data.data
                   }
                 </h6>
                 <p>
                   {
-                    theMeta(solution, 'Homepage > Solution > First > Text').data
+                    theMeta(solution, "Homepage > Solution > First > Text").data
                       .data
                   }
                 </p>
@@ -424,18 +431,18 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-6">
                 <img
                   src={
-                    theMeta(solution, 'Homepage > Solution > Second > Image')
+                    theMeta(solution, "Homepage > Solution > Second > Image")
                       .mediaData[0].file.url
                   }
                   alt={
-                    theMeta(solution, 'Homepage > Solution > Title').data.data
+                    theMeta(solution, "Homepage > Solution > Title").data.data
                   }
                 />
               </div>
               <div className="col-12 col-md-4">
                 <h6>
                   {
-                    theMeta(solution, 'Homepage > Solution > Second > Title')
+                    theMeta(solution, "Homepage > Solution > Second > Title")
                       .data.data
                   }
                 </h6>
@@ -445,23 +452,23 @@ class RootIndex extends React.Component {
                     dangerouslySetInnerHTML={{
                       __html: theMeta(
                         solution,
-                        'Homepage > Solution > Second > Text'
+                        "Homepage > Solution > Second > Text"
                       ).data.childMarkdownRemark.html
                     }}
                   />
                 </p>
                 <a
                   target={
-                    '_' +
+                    "_" +
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Left'
+                      "Homepage > Solution > Second > Buttons > Left"
                     ).referenceData[0].target
                   }
                   href={
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Left'
+                      "Homepage > Solution > Second > Buttons > Left"
                     ).referenceData[0].url
                   }
                   className="ca_button ca_solid_blue"
@@ -469,22 +476,22 @@ class RootIndex extends React.Component {
                   {
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Left'
+                      "Homepage > Solution > Second > Buttons > Left"
                     ).referenceData[0].text.text
                   }
                 </a>
                 <a
                   target={
-                    '_' +
+                    "_" +
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Right'
+                      "Homepage > Solution > Second > Buttons > Right"
                     ).referenceData[0].target
                   }
                   href={
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Right'
+                      "Homepage > Solution > Second > Buttons > Right"
                     ).referenceData[0].url
                   }
                   className="ca_button ca_transparent_blue"
@@ -492,7 +499,7 @@ class RootIndex extends React.Component {
                   {
                     theMeta(
                       solution,
-                      'Homepage > Solution > Second > Buttons > Right'
+                      "Homepage > Solution > Second > Buttons > Right"
                     ).referenceData[0].text.text
                   }
                 </a>
@@ -504,11 +511,11 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-6">
                 <img
                   src={
-                    theMeta(solution, 'Homepage > Solution > Third > Image')
+                    theMeta(solution, "Homepage > Solution > Third > Image")
                       .mediaData[0].file.url
                   }
                   alt={
-                    theMeta(solution, 'Homepage > Solution > Third > Title')
+                    theMeta(solution, "Homepage > Solution > Third > Title")
                       .data.data
                   }
                 />
@@ -516,7 +523,7 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-4">
                 <h6>
                   {
-                    theMeta(solution, 'Homepage > Solution > Third > Title')
+                    theMeta(solution, "Homepage > Solution > Third > Title")
                       .data.data
                   }
                 </h6>
@@ -526,7 +533,7 @@ class RootIndex extends React.Component {
                     dangerouslySetInnerHTML={{
                       __html: theMeta(
                         solution,
-                        'Homepage > Solution > Third > Text'
+                        "Homepage > Solution > Third > Text"
                       ).data.childMarkdownRemark.html
                     }}
                   />
@@ -542,19 +549,19 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {theMeta(how, 'Homepage > How > Title').data.data}
+                  {theMeta(how, "Homepage > How > Title").data.data}
                 </h2>
               </div>
               <div className="col-12 col-md-2" />
             </div>
-            {theMeta(how, 'Homepage > How > Steps').referenceData.map(function(
+            {theMeta(how, "Homepage > How > Steps").referenceData.map(function(
               step,
               num
             ) {
               return (
                 <div
                   key={num}
-                  className={'row ' + (num % 2 ? 'ca_right' : 'ca_left')}
+                  className={"row " + (num % 2 ? "ca_right" : "ca_left")}
                 >
                   <div className="col-12 col-md-2" />
                   <div className="col-12 col-md-4 ca_img">
@@ -566,25 +573,25 @@ class RootIndex extends React.Component {
                   </div>
                   <div className="col-12 col-md-2" />
                 </div>
-              )
+              );
             })}
             <div className="row ca_for_button">
               <div className="col-12">
                 <a
                   href={
-                    theMeta(how, 'Homepage > How > Button').referenceData[0].url
+                    theMeta(how, "Homepage > How > Button").referenceData[0].url
                   }
                   className={
-                    'ca_button ca_solid_blue ' +
-                    theMeta(how, 'Homepage > How > Button').referenceData[0]
+                    "ca_button ca_solid_blue " +
+                    theMeta(how, "Homepage > How > Button").referenceData[0]
                       .extraClass
                   }
                   data-video-url={
-                    theMeta(how, 'Homepage > How > Button').referenceData[0].url
+                    theMeta(how, "Homepage > How > Button").referenceData[0].url
                   }
                 >
                   {
-                    theMeta(how, 'Homepage > How > Button').referenceData[0]
+                    theMeta(how, "Homepage > How > Button").referenceData[0]
                       .text.text
                   }
                 </a>
@@ -597,7 +604,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {theMeta(join, 'Homepage > Join > Title').data.data}
+                  {theMeta(join, "Homepage > Join > Title").data.data}
                 </h2>
               </div>
               <div className="col-12 col-md-2" />
@@ -605,30 +612,30 @@ class RootIndex extends React.Component {
                 <div className="ca_img">
                   <img
                     src={
-                      theMeta(join, 'Homepage > Join > Left > Image')
+                      theMeta(join, "Homepage > Join > Left > Image")
                         .mediaData[0].file.url
                     }
                     alt={
-                      theMeta(join, 'Homepage > Join > Left > Title').data.data
+                      theMeta(join, "Homepage > Join > Left > Title").data.data
                     }
                   />
                 </div>
                 <div className="ca_txt">
                   <h6>
-                    {theMeta(join, 'Homepage > Join > Left > Title').data.data}
+                    {theMeta(join, "Homepage > Join > Left > Title").data.data}
                   </h6>
                   <p>
-                    {theMeta(join, 'Homepage > Join > Left > Text').data.data}
+                    {theMeta(join, "Homepage > Join > Left > Text").data.data}
                   </p>
                   <a
                     href={
-                      theMeta(join, 'Homepage > Join > Left > Button')
+                      theMeta(join, "Homepage > Join > Left > Button")
                         .referenceData[0].url
                     }
                     className="ca_button ca_transparent_blue"
                   >
                     {
-                      theMeta(join, 'Homepage > Join > Left > Button')
+                      theMeta(join, "Homepage > Join > Left > Button")
                         .referenceData[0].text.text
                     }
                   </a>
@@ -638,30 +645,30 @@ class RootIndex extends React.Component {
                 <div className="ca_img">
                   <img
                     src={
-                      theMeta(join, 'Homepage > Join > Right > Image')
+                      theMeta(join, "Homepage > Join > Right > Image")
                         .mediaData[0].file.url
                     }
                     alt={
-                      theMeta(join, 'Homepage > Join > Right > Title').data.data
+                      theMeta(join, "Homepage > Join > Right > Title").data.data
                     }
                   />
                 </div>
                 <div className="ca_txt">
                   <h6>
-                    {theMeta(join, 'Homepage > Join > Right > Title').data.data}
+                    {theMeta(join, "Homepage > Join > Right > Title").data.data}
                   </h6>
                   <p>
-                    {theMeta(join, 'Homepage > Join > Right > Text').data.data}
+                    {theMeta(join, "Homepage > Join > Right > Text").data.data}
                   </p>
                   <a
                     href={
-                      theMeta(join, 'Homepage > Join > Right > Button')
+                      theMeta(join, "Homepage > Join > Right > Button")
                         .referenceData[0].url
                     }
                     className="ca_button ca_transparent_blue"
                   >
                     {
-                      theMeta(join, 'Homepage > Join > Right > Button')
+                      theMeta(join, "Homepage > Join > Right > Button")
                         .referenceData[0].text.text
                     }
                   </a>
@@ -677,24 +684,24 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {theMeta(partners, 'Homepage > Partners > Title').data.data}
+                  {theMeta(partners, "Homepage > Partners > Title").data.data}
                 </h2>
                 <h6>
                   {
-                    theMeta(partners, 'Homepage > Partners > Sub Title').data
+                    theMeta(partners, "Homepage > Partners > Sub Title").data
                       .data
                   }
                 </h6>
                 <div className="ca_logos">
                   {theMeta(
                     partners,
-                    'Homepage > Partners > Logos'
+                    "Homepage > Partners > Logos"
                   ).mediaData.map(function(logo, num) {
                     if (num == 0)
                       return (
                         <a
                           href={
-                            theMeta(partners, 'Homepage > Partners > Logos')
+                            theMeta(partners, "Homepage > Partners > Logos")
                               .referenceData[num].url
                           }
                         >
@@ -702,24 +709,24 @@ class RootIndex extends React.Component {
                             key={num}
                             src={logo.file.url}
                             alt={
-                              theMeta(partners, 'Homepage > Partners > Title')
+                              theMeta(partners, "Homepage > Partners > Title")
                                 .data.data
                             }
                           />
                         </a>
-                      )
+                      );
                   })}
                 </div>
                 <div className="ca_logos">
                   {theMeta(
                     partners,
-                    'Homepage > Partners > Logos'
+                    "Homepage > Partners > Logos"
                   ).mediaData.map(function(logo, num) {
                     if (num != 0)
                       return (
                         <a
                           href={
-                            theMeta(partners, 'Homepage > Partners > Logos')
+                            theMeta(partners, "Homepage > Partners > Logos")
                               .referenceData[num].url
                           }
                         >
@@ -727,12 +734,12 @@ class RootIndex extends React.Component {
                             key={num}
                             src={logo.file.url}
                             alt={
-                              theMeta(partners, 'Homepage > Partners > Title')
+                              theMeta(partners, "Homepage > Partners > Title")
                                 .data.data
                             }
                           />
                         </a>
-                      )
+                      );
                   })}
                 </div>
               </div>
@@ -746,13 +753,13 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {theMeta(contact, 'Homepage > Contact > Title').data.data}
+                  {theMeta(contact, "Homepage > Contact > Title").data.data}
                 </h2>
                 <h6>
                   <span
                     className="links"
                     dangerouslySetInnerHTML={{
-                      __html: theMeta(contact, 'Homepage > Contact > Sub Title')
+                      __html: theMeta(contact, "Homepage > Contact > Sub Title")
                         .data.childMarkdownRemark.html
                     }}
                   />
@@ -779,11 +786,11 @@ class RootIndex extends React.Component {
           </div>
         </section>
       </div>
-    )
+    );
   }
 }
 
-export default RootIndex
+export default RootIndex;
 
 export const pageQuery = graphql`
   query homeQuery {
@@ -1152,4 +1159,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
