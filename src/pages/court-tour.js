@@ -95,7 +95,7 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-12 text-left">
-                <h1 style={{ marginTop: "15%", fontSize: "420%" }}>
+                <h1 style={{ fontSize: "3.16666rem" }}>
                   {"Kleros Court Tour"}
                 </h1>
               </div>
@@ -110,7 +110,6 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-12 text-left p-0">
-                <h2>Enter fullscreen mode for best experience.</h2>
                 <h5>
                   Click on fullscreen at the top right corner of the image below
                   to start
