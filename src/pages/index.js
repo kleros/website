@@ -87,11 +87,7 @@ class RootIndex extends React.Component {
                       .referenceData[0].text.text
                   }
                 </a>
-                <a
-                  href="/court-tour"
-                  className="ca_button ca_transparent_blue"
-                  target="_blank"
-                >
+                <a href="/court-tour" className="ca_button ca_transparent_blue">
                   Court Tour
                 </a>
               </div>
