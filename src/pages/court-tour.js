@@ -88,36 +88,17 @@ class RootIndex extends React.Component {
             .
           </p>
         </Modal>
-        <section
-          className="ca_home_top ca_escrow_top"
-          style={{ minHeight: "10vh" }}
-        >
+        <section className="ca_home_top ca_escrow_top">
           <div className="container">
             <div className="row ca_txt">
-              <div className="col-12 col-md-12 text-left">
-                <h1 style={{ fontSize: "3.16666rem" }}>
-                  {"Kleros Court Tour"}
-                </h1>
+              <div className="col-12 ">
+                <h1>Kleros Court Tour</h1>
+                <div
+                  style={{ color: "#fff", fontSize: "2em", paddingTop: "2em" }}
+                />
               </div>
             </div>
-          </div>
-        </section>
-
-        <section
-          className="ca_escrow_content ca_wave_top_inverted"
-          style={{ paddingTop: "26rem" }}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-12 text-left p-0">
-                <h5>
-                  Click on fullscreen at the top right corner of the image below
-                  to start
-                </h5>
-              </div>
-            </div>
-
-            <div className="row">
+            <div className="row ca_txt">
               <div
                 className="col-12 col-md-12 one"
                 style={{ position: "relative", paddingTop: "56.25%" }}
@@ -136,16 +117,21 @@ class RootIndex extends React.Component {
                 />
               </div>
             </div>
-            <div className="row">
-              <div className="col-12 col-md-6  text-left p-0">
-                <h3>
+          </div>
+        </section>
+
+        <section className="ca_escrow_content ca_wave_top_inverted">
+          <div className="container">
+            <div className="row ca_left">
+              <div className="col-12 col-md-12  text-center">
+                <p>
                   Liked the tour and want to test the real product, but never
                   used crypto? Not to worry, click on Crypto Beginner’s Guide.
-                </h3>
+                </p>
               </div>
             </div>
             <div className="row">
-              <div className="col-12 col-md-6  text-left pl-0 pt-4">
+              <div className="col-12 col-md-12  text-center">
                 <a
                   href="https://metamask.zendesk.com"
                   target=""
