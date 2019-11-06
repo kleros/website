@@ -603,6 +603,9 @@ h6 {
       .ca_footer nav ul li a {
         font-size: 1.33333rem;
         color: #fff; }
+        .ca_footer nav ul li button {
+          font-size: 1.33333rem;
+          color: #fff; }
   .ca_footer .ca_button {
     margin-top: 5rem;
     padding: 0 1.66667rem; }
@@ -617,7 +620,6 @@ h6 {
       font-size: 1.33333rem;
       margin-left: 2.33333rem; }
   .ca_footer .ca_link_book {
-    font-size: 1.33rem;
     color: #fff;
     padding: 0;
     border: 0;
@@ -2256,6 +2258,8 @@ h6 {
         margin-bottom: 20px; }
         .ca_footer nav ul li a {
           font-size: 16px; }
+          .ca_footer nav ul li button {
+            font-size: 16px; }
     .ca_footer .ca_button {
       margin-top: 0;
       padding: 0 20px; }
