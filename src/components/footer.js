@@ -54,8 +54,8 @@ export default function({menu, onCloseModal, onOpenModal, open}) {
 						<a href={settings.footerButtonsLeft.url} className="ca_button ca_transparent_gray-solid">{settings.footerButtonsLeft.text.text}</a>
 						<a href={settings.footerButtonsRight.url} className="ca_button ca_transparent_gray">{settings.footerButtonsRight.text.text}</a>
 					</div>
-					<div className="col-12 col-md-3">
-						<div className="ca_social">
+					<div className="col-12 col-md-3" style={{textAlign: '-webkit-center'}}>
+						<div className="ca_social" >
 							{
 								socialMenu.map(function(edge, num) {
 									return <a key={num} href={edge.node.url} className={"fab " + edge.node.iconClass}></a>
