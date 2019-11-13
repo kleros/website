@@ -148,7 +148,7 @@ class RootIndex extends React.Component {
                   })}
                 </div>
                 {this.assets[mediaFilter.value][1].length != 0 && (
-                  <hr style={{ borderColor: "#11b3ff" }} />
+                  <hr style={{ borderColor: "#11b3ff1a" }} />
                 )}
                 <div className="row">
                   {this.assets[mediaFilter.value][1].map((el, num) => {
@@ -167,7 +167,7 @@ class RootIndex extends React.Component {
                 </div>
                 )
                 {this.assets[mediaFilter.value][2].length != 0 && (
-                  <hr style={{ borderColor: "#11b3ff" }} />
+                  <hr style={{ borderColor: "#11b3ff1a" }} />
                 )}
                 <div className="row">
                   {this.assets[mediaFilter.value][2].map((el, num) => {
