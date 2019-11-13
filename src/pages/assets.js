@@ -96,7 +96,7 @@ class RootIndex extends React.Component {
             </a>
           </div>
         </Modal>
-        <section className="ca_juror_top ca_media_top">
+        <section className="ca_juror_top ca_media_top ">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7">
@@ -106,7 +106,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-        <section className="ca_media_content ca_wave_bottom_inverted">
+        <section className="ca_media_content ca_wave_bottom_mid">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-3">
