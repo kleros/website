@@ -165,7 +165,7 @@ class RootIndex extends React.Component {
                     );
                   })}
                 </div>
-                )
+
                 {this.assets[mediaFilter.value][2].length != 0 && (
                   <hr style={{ borderColor: "#11b3ff1a" }} />
                 )}
@@ -185,7 +185,6 @@ class RootIndex extends React.Component {
                   })}
                 </div>
               </div>
-              )}
             </div>
           </div>
         </section>
