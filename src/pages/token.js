@@ -181,51 +181,44 @@ class RootIndex extends React.Component {
           </div>
         </section>
 
-        <section className="ca_escrow_contact">
-          <div className="container" style={{ height: "200px" }}>
-            <div className="row d-flex justify-content-center">
-              <div
-                className="card w-100 "
-                style={{
-                  borderRadius: "12px",
-                  background:
-                    "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-                  marginTop: "4%"
-                }}
-              >
-                <div className="card-body" style={{ color: "white" }}>
-                  <div className="row" style={{ alignItems: "center" }}>
-                    <div className="col-12 col-md-1">
-                      <img src="/img/stake_icon.svg" />
-                    </div>
-                    <div className="col-12 col-md-8">
-                      <h3
-                        className="card-title"
-                        style={{ lineHeight: "normal", marginBottom: "0" }}
-                      >
-                        If you are interested in acquiring PNK token OTC, get in
-                        touch
-                      </h3>
-
-                      <p
-                        className="card-text ca-text"
-                        style={{ fontSize: "130%" }}
-                      >
-                        Note that in order to ensure fairness in token
-                        distribution, tokens are sold to buyers at prices
-                        reflected by the market.
-                      </p>
-                    </div>
-                    <div className="col-12 col-md-3 text-center">
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
-                        className="btn btn-lg btn-primary btn-lg"
-                      >
-                        Get in touch here
-                      </a>
-                    </div>
-                  </div>
-                </div>
+        <section className="ca_home_contancts">
+          <div className="container">
+            <div
+              className="row p-3 m-2"
+              style={{
+                background:
+                  "linear-gradient(111.31deg, #4D00B4 19.55%, #6500B4 40.51%)",
+                borderRadius: "12px",
+                alignItems: "center"
+              }}
+            >
+              <div className="col-2 p-2">
+                <img src="/img/stake_icon.svg" />
+              </div>
+              <div className="col-8 p-2">
+                {" "}
+                <h1
+                  style={{
+                    fontSize: "2vmax",
+                    lineHeight: "normal",
+                    marginBottom: "0",
+                    textOverflow: "clip"
+                  }}
+                >
+                  If you are interested in acquiring PNK token OTC, get in touch
+                </h1>
+                <p style={{ fontSize: "1vmax", color: "white" }}>
+                  Note that in order to ensure fairness in token distribution,
+                  tokens are sold to buyers at prices reflected by the market.
+                </p>
+              </div>
+              <div className="col-2 p-2">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
+                  className="btn btn-lg btn-primary btn-lg"
+                >
+                  Get in touch here
+                </a>
               </div>
             </div>
           </div>
