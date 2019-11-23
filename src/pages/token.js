@@ -21,6 +21,15 @@ class RootIndex extends React.Component {
     open: false
   };
 
+  componentDidMount() {
+    this.setState({
+      biggerThan768px: window.matchMedia("(min-width: 768px)").matches
+    });
+    window
+      .matchMedia("(min-width: 768px)")
+      .addListener(e => this.setState({ biggerThan768px: e.matches }));
+  }
+
   contentCards = [
     {
       title: "Stake as a Juror",
@@ -92,6 +101,9 @@ class RootIndex extends React.Component {
       message,
       open
     } = this.state;
+
+    const biggerThan768px = this.state.biggerThan768px || false;
+    console.log(this.state);
 
     const siteTitle = "Kleros - Token Page";
     const data = get(this, "props.data.allContentfulTokenPage.edges")[0].node;
@@ -181,55 +193,66 @@ class RootIndex extends React.Component {
           </div>
         </section>
 
-        <section className="ca_escrow_contact">
-          <div className="container" style={{ height: "200px" }}>
-            <div className="row d-flex justify-content-center">
-              <div
-                className="card w-100 "
-                style={{
-                  borderRadius: "12px",
-                  background:
-                    "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-                  marginTop: "4%"
-                }}
-              >
-                <div className="card-body" style={{ color: "white" }}>
-                  <div className="row" style={{ alignItems: "center" }}>
-                    <div className="col-12 col-md-1">
-                      <img src="/img/stake_icon.svg" />
-                    </div>
-                    <div className="col-12 col-md-8">
-                      <h3
-                        className="card-title"
-                        style={{ lineHeight: "normal", marginBottom: "0" }}
-                      >
-                        If you are interested in acquiring PNK token OTC, get in
-                        touch
-                      </h3>
-
-                      <p
-                        className="card-text ca-text"
-                        style={{ fontSize: "130%" }}
-                      >
-                        Note that in order to ensure fairness in token
-                        distribution, tokens are sold to buyers at prices
-                        reflected by the market.
-                      </p>
-                    </div>
-                    <div className="col-12 col-md-3 text-center">
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
-                        className="btn btn-lg btn-primary btn-lg"
-                      >
-                        Get in touch here
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div
+          style={{
+            borderRadius: "12px",
+            background:
+              "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
+            margin: "6rem",
+            padding: "1.5rem",
+            display: "grid",
+            grid: biggerThan768px
+              ? "1fr / 1fr [logo] 24fr [text] 4fr [button]"
+              : "2fr [text] 1fr [button] / 1fr",
+            alignItems: "center"
+          }}
+        >
+          <div
+            style={{
+              display: biggerThan768px ? "initial" : "none",
+              grid: "logo"
+            }}
+          >
+            <img src="/img/stake_icon.svg" />
           </div>
-        </section>
+          <div style={{ grid: "text", textAlign: "center" }}>
+            <h3
+              className=""
+              style={{
+                lineHeight: "normal",
+                marginBottom: "0",
+                fontSize: biggerThan768px ? "2.5rem" : "4rem"
+              }}
+            >
+              If you are interested in acquiring PNK token OTC, get in touch
+            </h3>
+
+            <p
+              className=""
+              style={{
+                fontSize: biggerThan768px ? "1.3rem" : "2.2rem",
+                color: "white"
+              }}
+            >
+              Note that in order to ensure fairness in token distribution,
+              tokens are sold to buyers at prices reflected by the market.
+            </p>
+          </div>
+          <div style={{ grid: "button", textAlign: "center" }}>
+            <a
+              style={{
+                borderRadius: "4px",
+                fontSize: biggerThan768px ? "2.2rem" : "3rem",
+                background: "#009AFF",
+                margin: "2rem"
+              }}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
+              className="btn btn-lg btn-primary btn-lg"
+            >
+              Get in touch here
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
