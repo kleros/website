@@ -196,63 +196,68 @@ class RootIndex extends React.Component {
         <section>
           <div
             className="container"
-            style={{
-              borderRadius: "12px",
-              background:
-                "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-              marginTop: "20px",
-              padding: "5px",
-              paddingLeft: "15px",
-              paddingRight: "15px",
-              marginBottom: "20px",
-              display: "grid",
-              grid: biggerThan768px
-                ? "1fr / 3fr [logo] 20fr [text] 7fr [button]"
-                : "2fr [text] 1fr [button] / 1fr",
-              alignItems: "center"
-            }}
+            style={{ marginTop: "30px", marginBottom: "30px" }}
           >
             <div
               style={{
-                display: biggerThan768px ? "initial" : "none",
-                grid: "logo"
+                borderRadius: "12px",
+                background:
+                  "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
+                marginTop: "20px",
+                padding: "10px",
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                marginBottom: "20px",
+                display: "grid",
+                grid: biggerThan768px
+                  ? "1fr / 3fr [logo] 20fr [text] 7fr [button]"
+                  : "2fr [text] 1fr [button] / 1fr",
+                alignItems: "center"
               }}
             >
-              <img src="/img/stake_icon.svg" />
-            </div>
-            <div style={{ grid: "text", textAlign: "start" }}>
-              <h3
-                className=""
+              <div
                 style={{
-                  lineHeight: "normal",
-                  marginBottom: "0",
-                  fontSize: biggerThan768px ? "2.5rem" : "4rem"
+                  display: biggerThan768px ? "initial" : "none",
+                  grid: "logo"
                 }}
               >
-                If you are interested in acquiring PNK token OTC, get in touch
-              </h3>
+                <img src="/img/stake_icon.svg" />
+              </div>
+              <div style={{ grid: "text", textAlign: "start" }}>
+                <h3
+                  className=""
+                  style={{
+                    lineHeight: "normal",
+                    marginBottom: "0",
+                    fontSize: biggerThan768px ? "2rem" : "4rem"
+                  }}
+                >
+                  If you are interested in acquiring PNK token OTC, get in touch
+                </h3>
 
-              <p
-                className=""
-                style={{
-                  fontSize: biggerThan768px ? "1.3rem" : "2.2rem",
-                  color: "white"
-                }}
-              >
-                Note that in order to ensure fairness in token distribution,
-                tokens are sold to buyers at prices reflected by the market.
-              </p>
-            </div>
-            <div style={{ grid: "button", textAlign: "center" }}>
-              <a
-                style={{
-                  width: biggerThan768px ? "" : "-webkit-fill-available"
-                }}
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
-                className="ca_button ca_solid_blue"
-              >
-                Get in touch here
-              </a>
+                <p
+                  className=""
+                  style={{
+                    fontSize: biggerThan768px ? "1.3rem" : "2.2rem",
+                    color: "white"
+                  }}
+                >
+                  Note that in order to ensure fairness in token distribution,
+                  tokens are sold to buyers at prices reflected by the market.
+                </p>
+              </div>
+              <div style={{ grid: "button", textAlign: "center" }}>
+                <a
+                  style={{
+                    width: biggerThan768px ? "" : "-webkit-fill-available",
+                    marginTop: biggerThan768px ? "" : "8px"
+                  }}
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
+                  className="ca_button ca_solid_blue"
+                >
+                  Get in touch here
+                </a>
+              </div>
             </div>
           </div>
         </section>
