@@ -198,11 +198,14 @@ class RootIndex extends React.Component {
             borderRadius: "12px",
             background:
               "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-            margin: "6rem",
-            padding: "1.5rem",
+            marginLeft: "15%",
+            marginRight: "15%",
+            marginTop: "3%",
+            padding: "5px",
+            marginBottom: "3%",
             display: "grid",
             grid: biggerThan768px
-              ? "1fr / 1fr [logo] 24fr [text] 4fr [button]"
+              ? "1fr / 3fr [logo] 20fr [text] 4fr [button]"
               : "2fr [text] 1fr [button] / 1fr",
             alignItems: "center"
           }}
@@ -210,7 +213,8 @@ class RootIndex extends React.Component {
           <div
             style={{
               display: biggerThan768px ? "initial" : "none",
-              grid: "logo"
+              grid: "logo",
+              textAlign: "-webkit-center"
             }}
           >
             <img src="/img/stake_icon.svg" />
