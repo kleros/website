@@ -193,18 +193,18 @@ class RootIndex extends React.Component {
           </div>
         </section>
 
-        <section style={{ paddingLeft: "15px", paddingRight: "15px" }}>
+        <section>
           <div
             className="container"
             style={{
               borderRadius: "12px",
               background:
                 "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-              marginTop: "3%",
+              marginTop: "20px",
               padding: "5px",
               paddingLeft: "15px",
               paddingRight: "15px",
-              marginBottom: "3%",
+              marginBottom: "20px",
               display: "grid",
               grid: biggerThan768px
                 ? "1fr / 3fr [logo] 20fr [text] 7fr [button]"
