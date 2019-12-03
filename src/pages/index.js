@@ -132,7 +132,7 @@ class RootIndex extends React.Component {
                       .join(" ") + "..."}
                   </p>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={
                       "https://twitter.com/Kleros_io/status/" +
                       apiTwitter.id_str
@@ -141,7 +141,7 @@ class RootIndex extends React.Component {
                     Go to Twitter
                   </a>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={
                       "https://twitter.com/Kleros_io/status/" +
                       apiTwitter.id_str
@@ -177,13 +177,13 @@ class RootIndex extends React.Component {
                       .join(" ") + "..."}
                   </p>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={"https://blog.kleros.io/" + apiBlog.post_url}
                   >
                     Go to Blog
                   </a>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={"https://blog.kleros.io/" + apiBlog.post_url}
                   />
                 </div>
@@ -214,10 +214,10 @@ class RootIndex extends React.Component {
                       .slice(0, 7)
                       .join(" ") + "..."}
                   </p>
-                  <a target="_blank" href={apiGit.commit_url}>
+                  <a rel="noopener noreferrer" target="_blank" href={apiGit.commit_url}>
                     Go to Github
                   </a>
-                  <a target="_blank" href={apiGit.commit_url} />
+                  <a rel="noopener noreferrer" target="_blank" href={apiGit.commit_url} />
                 </div>
               </div>
               <div className="col-12 col-md-3">
@@ -247,7 +247,7 @@ class RootIndex extends React.Component {
                       .join(" ") + "..."}
                   </p>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={
                       "https://forum.kleros.io/t/" +
                       apiForum.topic_slug +
@@ -258,7 +258,7 @@ class RootIndex extends React.Component {
                     Go to Forum
                   </a>
                   <a
-                    target="_blank"
+                    rel="noopener noreferrer" target="_blank"
                     href={
                       "https://forum.kleros.io/t/" +
                       apiForum.topic_slug +
