@@ -19,10 +19,11 @@ class RootIndex extends React.Component {
     companyName: "",
     message: "",
     open: false,
-    biggerThan768px: window.matchMedia("(min-width: 768px)").matches
+    biggerThan768px: window && window.matchMedia("(min-width: 768px)").matches
   };
 
   componentDidMount() {
+    window && 
     window
       .matchMedia("(min-width: 768px)")
       .addListener(e => this.setState({ biggerThan768px: e.matches }));
