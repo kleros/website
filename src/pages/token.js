@@ -23,7 +23,7 @@ class RootIndex extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({biggerThan768px:  window.matchMedia("(min-width: 768px)").matches})
+    this.setState({biggerThan768px: window.matchMedia("(min-width: 768px)").matches})
     window
       .matchMedia("(min-width: 768px)")
       .addListener(e => this.setState({ biggerThan768px: e.matches }));
