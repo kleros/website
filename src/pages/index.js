@@ -51,41 +51,26 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{theMeta(top, "Homepage > Top > Title").data.data}</h1>
-                <h6>{theMeta(top, "Homepage > Top > Sub Title").data.data}</h6>
+                <h1>Decentralized Courts</h1>
+                <h6>
+                  The blockchain dispute resolution layer. Fast, open and
+                  affordable justice for all.
+                </h6>
                 <a
-                  href={
-                    theMeta(top, "Homepage > Top > Button > Left")
-                      .referenceData[0].url
-                  }
+                  href="
+                    /juror
+                  "
                   className="ca_button ca_solid_blue"
-                  target={
-                    "_" +
-                    theMeta(top, "Homepage > Top > Button > Left")
-                      .referenceData[0].target
-                  }
+                  target="_self"
                 >
-                  {
-                    theMeta(top, "Homepage > Top > Button > Left")
-                      .referenceData[0].text.text
-                  }
+                  Join as a Juror
                 </a>
                 <a
-                  href={
-                    theMeta(top, "Homepage > Top > Button > Right")
-                      .referenceData[0].url
-                  }
+                  href="/partner"
                   className="ca_button ca_transparent_blue"
-                  target={
-                    "_" +
-                    theMeta(top, "Homepage > Top > Button > Right")
-                      .referenceData[0].target
-                  }
+                  target="_self"
                 >
-                  {
-                    theMeta(top, "Homepage > Top > Button > Right")
-                      .referenceData[0].text.text
-                  }
+                  Become a Partner
                 </a>
                 <a
                   href="https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/"
@@ -293,7 +278,7 @@ class RootIndex extends React.Component {
             <div className="row ca_text">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-10">
-                <h2>{theMeta(why, "Homepage > Why > Title").data.data}</h2>
+                <h2>A Common Dispute in the New Economy</h2>
               </div>
               <div className="col-12 col-md-1" />
             </div>
@@ -302,72 +287,49 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-8">
                 <div className="ca_why_block">
                   <img
-                    src={
-                      theMeta(why, "Homepage > Why > First Image").mediaData[0]
-                        .file.url
-                    }
-                    alt={theMeta(why, "Homepage > Why > Title").data.data}
+                    src="/img/homepage/why1.png"
+                    alt="A Common Dispute in the New Economy"
                   />
                   <div className="ca_txt">
-                    <p>
-                      {theMeta(why, "Homepage > Why > Steps > 1").data.data}
-                    </p>
+                    <p>Alice hires Bob to build her a website.</p>
                   </div>
                   <div className="ca_txt">
-                    <p>
-                      {theMeta(why, "Homepage > Why > Steps > 2").data.data}
-                    </p>
+                    <p>Alice pays Bob in advance.</p>
                   </div>
                   <div className="ca_txt">
-                    <p>
-                      {theMeta(why, "Homepage > Why > Steps > 3").data.data}
-                    </p>
+                    <p>The site takes Bob longer than expected.</p>
                   </div>
                 </div>
                 <div className="ca_why_block">
                   <img
-                    src={
-                      theMeta(why, "Homepage > Why > Second Image").mediaData[0]
-                        .file.url
-                    }
-                    alt={theMeta(why, "Homepage > Why > Title").data.data}
+                    src="/img/homepage/why2.png"
+                    alt="A Common Dispute in the New Economy"
                   />
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, "Homepage > Why > Steps > 4").data.data}
+                      When he finally delivers the site, Alice is not satisfied.
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, "Homepage > Why > Steps > 5").data.data}
+                      A debate starts. Alice requests a refund. Bob claims the
+                      specifications weren't clear.
                     </p>
                   </div>
                   <div className="ca_txt">
                     <p>
-                      {theMeta(why, "Homepage > Why > Steps > 6").data.data}
+                      Alice and Bob are both left at a loss with no clear
+                      outcome of their dispute.
                     </p>
                   </div>
                 </div>
                 <div className="ca_why_block">
                   <a
-                    href={
-                      theMeta(why, "Homepage > Why > Button").referenceData[0]
-                        .url
-                    }
-                    className={
-                      "ca_button ca_solid_blue " +
-                      theMeta(why, "Homepage > Why > Button").referenceData[0]
-                        .extraClass
-                    }
-                    data-video-url={
-                      theMeta(why, "Homepage > Why > Button").referenceData[0]
-                        .url
-                    }
+                    href="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
+                    className="ca_button ca_solid_blue ca_open_video_popup"
+                    data-video-url="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
                   >
-                    {
-                      theMeta(why, "Homepage > Why > Button").referenceData[0]
-                        .text.text
-                    }
+                    Watch Video
                   </a>
                 </div>
               </div>
@@ -380,11 +342,9 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
-                <h2 className="ca_underlined">
-                  {theMeta(problem, "Homepage > Problem > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">The Internet Economy</h2>
                 {theSubtitle(
-                  theMeta(problem, "Homepage > Problem > Sub Title").data.data
+                  "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
                 )}
               </div>
               <div className="col-12 col-md-2" />
@@ -395,46 +355,34 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h2 className="ca_underlined">
-                  {theMeta(solution, "Homepage > Solution > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">Why Kleros?</h2>
               </div>
             </div>
             <div className="row ca_left">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-6">
                 <div className="ca_solution_slider">
-                  {theMeta(
-                    solution,
-                    "Homepage > Solution > First > Images"
-                  ).mediaData.map(function(el, num) {
-                    return (
-                      <div key={num} className="ca_slide">
-                        <img
-                          src={el.file.url}
-                          alt={
-                            theMeta(solution, "Homepage > Solution > Title")
-                              .data.data
-                          }
-                        />
-                      </div>
-                    );
-                  })}
+                  <div key="1" className="ca_slide">
+                    <img src="/img/homepage/welcome.png" alt="Why Kleros?" />
+                  </div>
+                  <div key="2" className="ca_slide">
+                    <img
+                      src="/img/homepage/athena_home.jpg"
+                      alt="Why Kleros?"
+                    />
+                  </div>
+                  <div key="3" className="ca_slide">
+                    <img src="/img/homepage/Escrow.jpg" alt="Why Kleros?" />
+                  </div>
                 </div>
                 <div className="ca_solution_slider_dots" />
               </div>
               <div className="col-12 col-md-4">
-                <h6>
-                  {
-                    theMeta(solution, "Homepage > Solution > First > Title")
-                      .data.data
-                  }
-                </h6>
+                <h6>Peer-to-Peer Justice</h6>
                 <p>
-                  {
-                    theMeta(solution, "Homepage > Solution > First > Text").data
-                      .data
-                  }
+                  A peer to peer platform that uses crowdsourcing and blockchain
+                  to put the dispute resolution process in the hands of the
+                  community.
                 </p>
               </div>
               <div className="col-12 col-md-1" />
@@ -442,79 +390,29 @@ class RootIndex extends React.Component {
             <div className="row ca_right">
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-6">
-                <img
-                  src={
-                    theMeta(solution, "Homepage > Solution > Second > Image")
-                      .mediaData[0].file.url
-                  }
-                  alt={
-                    theMeta(solution, "Homepage > Solution > Title").data.data
-                  }
-                />
+                <img src="/img/homepage/solution1.png" alt="Why Kleros?" />
               </div>
               <div className="col-12 col-md-4">
-                <h6>
-                  {
-                    theMeta(solution, "Homepage > Solution > Second > Title")
-                      .data.data
-                  }
-                </h6>
+                <h6>What's the Secret Sauce?</h6>
                 <p>
-                  <span
-                    className="links"
-                    dangerouslySetInnerHTML={{
-                      __html: theMeta(
-                        solution,
-                        "Homepage > Solution > Second > Text"
-                      ).data.childMarkdownRemark.html
-                    }}
-                  />
+                  Kleros uses advanced cryptoeconomics coupled with a global
+                  community of jurors to adjudicate disputes in a fast,
+                  affordable and open way. Read the{" "}
+                  <a href="https://kleros.io/whitepaper_en.pdf">white paper</a>.
                 </p>
                 <a
-                  target={
-                    "_" +
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Left"
-                    ).referenceData[0].target
-                  }
-                  href={
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Left"
-                    ).referenceData[0].url
-                  }
+                  target="_self"
+                  href="/juror"
                   className="ca_button ca_solid_blue"
                 >
-                  {
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Left"
-                    ).referenceData[0].text.text
-                  }
+                  Join as a Juror
                 </a>
                 <a
-                  target={
-                    "_" +
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Right"
-                    ).referenceData[0].target
-                  }
-                  href={
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Right"
-                    ).referenceData[0].url
-                  }
+                  target="_self"
+                  href="/partner"
                   className="ca_button ca_transparent_blue"
                 >
-                  {
-                    theMeta(
-                      solution,
-                      "Homepage > Solution > Second > Buttons > Right"
-                    ).referenceData[0].text.text
-                  }
+                  Become a Partner
                 </a>
               </div>
               <div className="col-12 col-md-1" />
@@ -523,33 +421,20 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-6">
                 <img
-                  src={
-                    theMeta(solution, "Homepage > Solution > Third > Image")
-                      .mediaData[0].file.url
-                  }
-                  alt={
-                    theMeta(solution, "Homepage > Solution > Third > Title")
-                      .data.data
-                  }
+                  src="/img/homepage/solution2.png"
+                  alt="Why Does Kleros Need a Token?"
                 />
               </div>
               <div className="col-12 col-md-4">
-                <h6>
-                  {
-                    theMeta(solution, "Homepage > Solution > Third > Title")
-                      .data.data
-                  }
-                </h6>
+                <h6>Why Does Kleros Need a Token?</h6>
                 <p>
-                  <span
-                    className="links"
-                    dangerouslySetInnerHTML={{
-                      __html: theMeta(
-                        solution,
-                        "Homepage > Solution > Third > Text"
-                      ).data.childMarkdownRemark.html
-                    }}
-                  />
+                  The Pinakion (PNK) token protects the system from attacks,
+                  while also providing jurors with a financial incentive to
+                  resolve cases coherently. Learn more{" "}
+                  <a href="https://medium.com/kleros/why-kleros-needs-a-native-token-5c6c6e39cdfe">
+                    here
+                  </a>
+                  .
                 </p>
               </div>
               <div className="col-12 col-md-1" />
@@ -561,52 +446,73 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
-                <h2 className="ca_underlined">
-                  {theMeta(how, "Homepage > How > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">How Does It Work?</h2>
               </div>
               <div className="col-12 col-md-2" />
             </div>
-            {theMeta(how, "Homepage > How > Steps").referenceData.map(function(
-              step,
-              num
-            ) {
-              return (
-                <div
-                  key={num}
-                  className={"row " + (num % 2 ? "ca_right" : "ca_left")}
-                >
-                  <div className="col-12 col-md-2" />
-                  <div className="col-12 col-md-4 ca_img">
-                    <img src={step.image.file.url} alt={step.title.title} />
-                  </div>
-                  <div className="col-12 col-md-4">
-                    <h6>{step.title.title}</h6>
-                    <p>{step.text.text}</p>
-                  </div>
-                  <div className="col-12 col-md-2" />
-                </div>
-              );
-            })}
+
+            <div key={0} className={"row " + (0 % 2 ? "ca_right" : "ca_left")}>
+              <div className="col-12 col-md-2" />
+              <div className="col-12 col-md-4 ca_img">
+                <img src="/img/homepage/solve1.png" alt="Contract" />
+              </div>
+              <div className="col-12 col-md-4">
+                <h6>Contract</h6>
+                <p>
+                  Alice hires Bob to build a website for her. They agree to use
+                  Kleros should a dispute occur.{" "}
+                </p>
+              </div>
+              <div className="col-12 col-md-2" />
+            </div>
+            <div key={1} className={"row " + (1 % 2 ? "ca_right" : "ca_left")}>
+              <div className="col-12 col-md-2" />
+              <div className="col-12 col-md-4 ca_img">
+                <img src="/img/homepage/solve2.png" alt="Dispute" />
+              </div>
+              <div className="col-12 col-md-4">
+                <h6>Dispute</h6>
+                <p>
+                  Alice is not satisfied with Bob's work and raises a dispute.
+                </p>
+              </div>
+              <div className="col-12 col-md-2" />
+            </div>
+            <div key={2} className={"row " + (0 % 2 ? "ca_right" : "ca_left")}>
+              <div className="col-12 col-md-2" />
+              <div className="col-12 col-md-4 ca_img">
+                <img src="/img/homepage/solve3.png" alt="Selection" />
+              </div>
+              <div className="col-12 col-md-4">
+                <h6>Selection</h6>
+                <p>Users are randomly selected as jurors for the dispute. </p>
+              </div>
+              <div className="col-12 col-md-2" />
+            </div>
+            <div key={3} className={"row " + (1 % 2 ? "ca_right" : "ca_left")}>
+              <div className="col-12 col-md-2" />
+              <div className="col-12 col-md-4 ca_img">
+                <img src="/img/homepage/solve4.png" alt="Enforcement" />
+              </div>
+              <div className="col-12 col-md-4">
+                <h6>Enforcement</h6>
+                <p>
+                  Jurors evaluate the evidence and vote Alice as the winner. She
+                  is reimbursed and honest jurors are compensated for their
+                  work.
+                </p>
+              </div>
+              <div className="col-12 col-md-2" />
+            </div>
+
             <div className="row ca_for_button">
               <div className="col-12">
                 <a
-                  href={
-                    theMeta(how, "Homepage > How > Button").referenceData[0].url
-                  }
-                  className={
-                    "ca_button ca_solid_blue " +
-                    theMeta(how, "Homepage > How > Button").referenceData[0]
-                      .extraClass
-                  }
-                  data-video-url={
-                    theMeta(how, "Homepage > How > Button").referenceData[0].url
-                  }
+                  href="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
+                  className="ca_button ca_solid_blue ca_open_video_popup"
+                  data-video-url="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
                 >
-                  {
-                    theMeta(how, "Homepage > How > Button").referenceData[0]
-                      .text.text
-                  }
+                  Watch Video
                 </a>
               </div>
             </div>
@@ -616,74 +522,33 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h2 className="ca_underlined">
-                  {theMeta(join, "Homepage > Join > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">Join The Justice Revolution</h2>
               </div>
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-4">
                 <div className="ca_img">
-                  <img
-                    src={
-                      theMeta(join, "Homepage > Join > Left > Image")
-                        .mediaData[0].file.url
-                    }
-                    alt={
-                      theMeta(join, "Homepage > Join > Left > Title").data.data
-                    }
-                  />
+                  <img src="/img/homepage/join1.png" alt="Join as a Juror" />
                 </div>
                 <div className="ca_txt">
-                  <h6>
-                    {theMeta(join, "Homepage > Join > Left > Title").data.data}
-                  </h6>
-                  <p>
-                    {theMeta(join, "Homepage > Join > Left > Text").data.data}
-                  </p>
-                  <a
-                    href={
-                      theMeta(join, "Homepage > Join > Left > Button")
-                        .referenceData[0].url
-                    }
-                    className="ca_button ca_transparent_blue"
-                  >
-                    {
-                      theMeta(join, "Homepage > Join > Left > Button")
-                        .referenceData[0].text.text
-                    }
+                  <h6>Join as a Juror</h6>
+                  <p>Become a juror, earn and bring justice to the world.</p>
+                  <a href="/juror" className="ca_button ca_transparent_blue">
+                    Join as a Juror
                   </a>
                 </div>
               </div>
               <div className="col-12 col-md-4">
                 <div className="ca_img">
-                  <img
-                    src={
-                      theMeta(join, "Homepage > Join > Right > Image")
-                        .mediaData[0].file.url
-                    }
-                    alt={
-                      theMeta(join, "Homepage > Join > Right > Title").data.data
-                    }
-                  />
+                  <img src="/img/homepage/join2.png" alt="Become a Partner" />
                 </div>
                 <div className="ca_txt">
-                  <h6>
-                    {theMeta(join, "Homepage > Join > Right > Title").data.data}
-                  </h6>
+                  <h6>Become a Partner</h6>
                   <p>
-                    {theMeta(join, "Homepage > Join > Right > Text").data.data}
+                    Integrate Kleros powerful dispute resolution technology in
+                    your platform. For free.
                   </p>
-                  <a
-                    href={
-                      theMeta(join, "Homepage > Join > Right > Button")
-                        .referenceData[0].url
-                    }
-                    className="ca_button ca_transparent_blue"
-                  >
-                    {
-                      theMeta(join, "Homepage > Join > Right > Button")
-                        .referenceData[0].text.text
-                    }
+                  <a href="/partner" className="ca_button ca_transparent_blue">
+                    Become a Partner
                   </a>
                 </div>
               </div>
@@ -696,64 +561,50 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
-                <h2 className="ca_underlined">
-                  {theMeta(partners, "Homepage > Partners > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">Our Partners</h2>
                 <h6>
-                  {
-                    theMeta(partners, "Homepage > Partners > Sub Title").data
-                      .data
-                  }
+                  Collaboration makes Kleros. We can integrate with your
+                  platform securely and at no cost. If this sounds like
+                  something you could use in your blockchain project, just ask.
                 </h6>
                 <div className="ca_logos">
-                  {theMeta(
-                    partners,
-                    "Homepage > Partners > Logos"
-                  ).mediaData.map(function(logo, num) {
-                    if (num == 0)
-                      return (
-                        <a
-                          href={
-                            theMeta(partners, "Homepage > Partners > Logos")
-                              .referenceData[num].url
-                          }
-                        >
-                          <img
-                            key={num}
-                            src={logo.file.url}
-                            alt={
-                              theMeta(partners, "Homepage > Partners > Title")
-                                .data.data
-                            }
-                          />
-                        </a>
-                      );
-                  })}
+                  <a href="https://innovation.thomsonreuters.com/en/labs/incubator.html">
+                    <img
+                      key={1}
+                      src="/img/homepage/thomsonreuters.png"
+                      alt="Thomson Reuters"
+                    />
+                  </a>
                 </div>
                 <div className="ca_logos">
-                  {theMeta(
-                    partners,
-                    "Homepage > Partners > Logos"
-                  ).mediaData.map(function(logo, num) {
-                    if (num != 0)
-                      return (
-                        <a
-                          href={
-                            theMeta(partners, "Homepage > Partners > Logos")
-                              .referenceData[num].url
-                          }
-                        >
-                          <img
-                            key={num}
-                            src={logo.file.url}
-                            alt={
-                              theMeta(partners, "Homepage > Partners > Title")
-                                .data.data
-                            }
-                          />
-                        </a>
-                      );
-                  })}
+                  <a href="https://www.blue-frontiers.com/en/">
+                    <img
+                      key={2}
+                      src="/img/homepage/bluefrontiers.png"
+                      alt="Blue Frontiers"
+                    />
+                  </a>
+                  <a href="https://paywithink.com/">
+                    <img
+                      key={3}
+                      src="/img/homepage/inkprotocol.png"
+                      alt="Ink Protocol"
+                    />
+                  </a>
+                  <a href="https://www.deversifi.com/">
+                    <img
+                      key={4}
+                      src="/img/homepage/deversifi.png"
+                      alt="DeversiFi"
+                    />
+                  </a>
+                  <a href="https://marketprotocol.io/">
+                    <img
+                      key={5}
+                      src="/img/homepage/marketprotocol.png"
+                      alt="Market Protocol"
+                    />
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-md-2" />
@@ -765,17 +616,32 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2" />
               <div className="col-12 col-md-8">
-                <h2 className="ca_underlined">
-                  {theMeta(contact, "Homepage > Contact > Title").data.data}
-                </h2>
+                <h2 className="ca_underlined">Get in touch</h2>
                 <h6>
-                  <span
-                    className="links"
-                    dangerouslySetInnerHTML={{
-                      __html: theMeta(contact, "Homepage > Contact > Sub Title")
-                        .data.childMarkdownRemark.html
-                    }}
-                  />
+                  <p>
+                    Looking to find out more? We’re open to all proposals,
+                    suggestions and requests.
+                  </p>
+                  <p>
+                    Message us via{" "}
+                    <a
+                      href="https://t.me/kleros"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Telegram
+                    </a>{" "}
+                    or{" "}
+                    <a
+                      href="mailto:contact@kleros.io"
+                      title="contact@kleros.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      contact@kleros.io
+                    </a>
+                    .
+                  </p>
                 </h6>
               </div>
               <div className="col-12 col-md-2" />
