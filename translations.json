@@ -85,7 +85,57 @@
         "title": "Check our open positions below and join the justice revolution!"
       }
     },
-    "faq": {},
+    // https://kleros.io/faq/
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "search-bar-placeholder": "Search your question",
+      "faq-section": {
+        "general": {
+          "q-1": "Can you really trust a decision made by a bunch of anonymous people on the Internet_",
+          "a-1": "Satoshi Nakamoto taught us that a number of anonymous computers who do not trust each can still reach consensus, provided incentives are correctly structured. Kleros extends this principle to human decision making. A number of anonymous jurors who do not trust each other can reach consensus on a right decision, provided incentives are correctly structured. To learn more about the incentive system, read our white paper.",
+          "q-2": "How many pinakion will exist?",
+          "a-2": "The supply of pinakion is fixed at one billion units.",
+          "q-3": "Does a party who wants to have a case adjudicated need to have pinakion?",
+          "a-3": "No, only jurors will need pinakion in order to be drawn. Parties don’t even need to know what a pinakion is.",
+          "q-4": "Is the identity of jurors revealed?",
+          "a-4": "Since decisions made in Kleros affect the allocation of resources, there is an incentive for parties to try to bribe or intimidate the tribunal. Anonimity is intended to protect jurors from intimidation and retaliation. It also simplifies the process of users becoming jurors and avoids the costs of identity verification. By providing a secure environment and simplifying the selection process, Kleros greatly enlarges the pool of potential jurors. This results in lower arbitration costs and the democratization of access to justice.",
+          "q-5": "What is Kleros token allocation?",
+          "a-5": "Team Members: 18% First Round of Token Sale: 16% Airdrop: 4% Subsequent Rounds and Juror Incentive Program: 50% Kleros Cooperative Development Reserve: 12%",
+          "q-6": "Could Kleros become a platform used by mainstream online retailers such as eBay or Amazon?",
+          "a-6": "Yes, by adopting Kleros, any mainstream e-commerce platform could enjoy a fast, affordable and transparent dispute resolution method. If you want to learn more, contact us."
+        },
+        "integration&partners": {
+          "q-1": "We are from organization X and would like to use Kleros. However, for XYZ reasons, we can't use anonymous jurors. Can we tweak Kleros in order to only select jurors from a pre-vetted pool?",
+          "a-1": "At this point, it is not possible to select jurors from a pre-defined pool. Anyone having tokens can self-select to be drawn randomly as a juror. However, we understand that selecting jurors from a pre-vetted pool is important in many use cases. If this is your situation, please contact us on contact@kleros.io. We would like to know more about your use case."
+        },
+        "jurors": {
+          "q-1": "Can appeals be managed outside of Kleros?",
+          "a-1": "Yes, it’s possible to create an arbitrable smart contract which uses Kleros for solving first instance disputes and allows appeals to be handled outside of Kleros.",
+          "q-2": "Do you have sample contracts that show what type of disputes could be adjudicated by Kleros?",
+          "a-2": "While at this point there are some sample smart contracts, this is an area that requires further development. Kleros focuses on the dispute resolution process, not on the contract drafting itself. Other companies in the ecosystem will focus on drafting contracts. In order to be arbitrable by Kleros, a smart contract needs to follow the smart contract standard we have developed. Check out our GitHub repository for more information and join our discussion on Telegram if you're interested in following the development.",
+          "q-3": "Have you considered how jurors might be vetted, as well as their experience and expertise, to enable them to participate in specific courts/disputes?",
+          "a-3": "In decentralized systems, the main problem of vetting jurors is: `Who vets the vetters?`, which is a chicken and the egg problem. One of the most attractive features of public blockchains is that anyone can join, so nobody gets to monopolize the ledger.",
+          "q-4": "How is evidence presented and managed by the system?",
+          "a-4": "The way in which evidence is presented depends on the type of dispute. A freelancing dispute will require different evidence than an insurance or a payment dispute. Kleros Cooperative provides a back end for jurors to arbitrate disputes. The way in which it is built makes it possible for anyone to develop their own front end. The logic is similar to the Ethereum Wallet. The Ethereum Core Team provide a wallet to users, but anyone can build an Ethereum wallet. This means, for example, that an e-commerce platform could build a front end on which users could arbitrate disputes without leaving the platform. The front end would tap into Kleros' juror network. We expect many companies from the ecosystem to build interfaces based on our platform. To learn more, read this article about the evolution of Kleros Cooperative's ecosystem.",
+          "q-5": "Since jurors are drawn from a global pool, how would you make sure that they all speak the language the dispute is called in?",
+          "a-5": "Kleros is made of subcourts specializing in different types of disputes. Language is one of the specialization parameters. For example, there could be a “website dispute court in English”, a “website dispute court in Spanish”, “website dispute court in French”, etc.",
+          "q-6": "How do you know that jurors reviewed the evidence instead of just voting randomly?",
+          "a-6": "leros does not have a specific way to make sure that jurors reviewed the evidence. The way to make sure that jurors act honestly is through the creation of right economic incentives. Jurors who vote randomly without reviewing the evidence are more likely to vote incoherently with the majority and lose the token they staked to be drawn. Hence, they lose money on average. Over time, this would make dishonest jurors leave the court. To learn more about how incentives work in Kleros, read the white paper.",
+          "q-7": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to others jurors?",
+          "a-7": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete.",
+          "q-8": "Are there time limits for disputes? Do jurors have to respond withing a given period of time?",
+          "a-8": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution.",
+          "q-9": "What happens to jurors who don't respond or review the evidence within the set time frame?",
+          "a-9": "Jurors who don't give their ruling before the deadline are penalized by losing some of some of their staked tokens and by not receiving the arbitration fee."
+        },
+        "legal": {
+          "q-1": "In legal systems such as the United States, judges are responsible for instructing jurors and explaining legal nuances. How does Kleros address questions of interpretation of legal terms in the contract?",
+          "a-1": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros is intended be used for simpler cases, where legal nuances are not as important.",
+          "q-2": "Which are the main legal and regulatory hurdles in setting up Kleros?",
+          "a-2": "Because of its innovative practice based on cryptoeconomics, Kleros is not recognized as arbitration according to international agreements. This could be an obstacle for adoption in “mainstream” use cases (e.g., a government regulator could not use Kleros for settling disputes between, say, a credit card company its users). However, this should not be an obstacle to adoption in other use cases (especially those within the crypto industry). As Kleros is able to prove that it can solve disputes in non-mainstream use cases, we expect interest to arise in mainstream use cases. Eventually, arbitration associations will accept the Kleros approach to dispute resolution. The Kleros platform is an 'opt-in' system meaning the enforcement is automatic and pre-accepted by contracting parties agreeing on using Kleros as an arbitrator."
+        }
+      }
+    },
     "media": {},
     "assets": {},
     "escrow": {},
