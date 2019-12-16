@@ -68,7 +68,23 @@
         "paragraph": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io."
       }
     },
-    "about": {},
+    // https://kleros.io/about/
+    "about": {
+      "title": "About Us",
+      "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
+      "who-are-we-section": {
+        "heading": "Who are we?",
+        "paragraph": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance. Kleros' vision is to build open technology empowering the courts of the future."
+      },
+      "meet-our-team-section": {
+        "heading": "Meet Our Team",
+        "paragraph": "Kleros is comprised of a high quality team covering all required disciplines for decentralized justice: smart contract security, computer science, cryptoeconomics, business, marketing and communications."
+      },
+      "join-our-team-section": {
+        "heading": "Join Our Team",
+        "title": "Check our open positions below and join the justice revolution!"
+      }
+    },
     "faq": {},
     "media": {},
     "assets": {},
