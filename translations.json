@@ -1,0 +1,86 @@
+{
+  "en": {
+    "header": {
+      "partner-button": "Become a Partner",
+      "juror-button": "Become a Juror",
+      "dapps-button": "DApps",
+      "white-paper-button": "White Paper",
+      "use-cases-button": "Use Cases",
+      "about-button": "About"
+    },
+    // https://kleros.io/index
+    "index": {
+      "title": "Decentralized Courts",
+      "subtitle": "The blockchain dispute resolution layer. Fast, open and affordable justice for all",
+      "juror-button": "Join as a Juror",
+      "partner-button": "Become a Partner",
+      "token-sale-button": "Token Sale",
+      "example-dispute-section": {
+        "heading": "A Common Dispute in the New Economy",
+        "illustration-1": "Alice hires Bob to build her a website.",
+        "illustration-2": "Alice pays Bob in advance.",
+        "illustration-3": "The site takes Bob longer than expected.",
+        "illustration-4": "When he finally delivers the site, Alice is not satisfied.",
+        "illustration-5": "A debate starts. Alice requests a refund. Bob claims the specifications weren't clear.",
+        "illustration-6": "Alice and Bob are both left at a loss with no clear outcome of their dispute",
+        "button": "Watch Video"
+      },
+      "internet-economy-section": {
+        "heading": "The Internet Economy",
+        "paragraph": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      },
+      "why-kleros-section": {
+        "heading": "Why Kleros?",
+        "title-1": "Peer-to-Peer Justice",
+        "paragraph-1": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
+        "title-2": "What's the Secret Sauce?",
+        "paragraph-2": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the white paper.",
+        "title-3": "Why Does Kleros Need a Token?",
+        "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more here."
+      },
+      "how-does-it-work-section": {
+        "heading": " How Does It Work?",
+        "title-1": "Contract",
+        "paragraph-1": "Alice hires Bob to build a website for her. They agree to use Kleros should a dispute occur.",
+        "title-2": "Dispute",
+        "paragraph-2": "Alice is not satisfied with Bob's work and raises a dispute.",
+        "title-3": "Selection",
+        "paragraph-3": "Users are randomly selected as jurors for the dispute.",
+        "title-4": "Enforcement",
+        "paragraph-4": "Jurors evaluate the evidence and vote Alice as the winner. She is reimbursed and honest jurors are compensated for their work.",
+        "button": "Watch Video"
+      },
+      "justice-revolution-section": {
+        "heading": "Join The Justice Revolution",
+        "title-1": "Join as a Juror",
+        "paragraph-1": "Become a juror, earn and bring justice to the world.",
+        "button-1": "Join as a Juror",
+        "title-2": "Become a Partner",
+        "paragraph-2": "Integrate Kleros powerful dispute resolution technology in your platform. For free.",
+        "button2": "Become a Partner"
+      },
+      "partners-section": {
+        "heading": "Our Partners",
+        "paragraph": "ollaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
+      },
+      "get-in-touch-section": {
+        "heading": "Get in touch",
+        "paragraph": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io."
+      }
+    },
+    "about": {},
+    "faq": {},
+    "media": {},
+    "assets": {},
+    "escrow": {},
+    "curated-list": {},
+    "oracle": {},
+    "cooperative": {},
+    "court-tour": {},
+    "token": {},
+    "juror": {},
+    "partner": {},
+    "footer": {}
+  },
+  "your-favorite-language-code": { "your-component": {} }
+}
