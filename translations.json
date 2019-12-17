@@ -198,7 +198,43 @@
         "button-primary": "Send"
       }
     },
-    "curated-list": {},
+    "curated-list": {
+      "heading": "Decentralized Curated Lists for Just about Anything",
+      "title": "Empower the community to organize information in your platform...",
+      "why-curated-lists-section": {
+        "heading": "Why Curated Lists?",
+        "paragraph": "Decentralized platforms need a way to decide what content to display. What tokens to list on an exchange? Which comments to censor on a social media platform? Whoever controls the list has the power. True decentralization requires empowering the community."
+      },
+      "why-ours-section": {
+        "heading": "Why Use Our Curated Lists?",
+        "paragraph": "Kleros offers a solution for numerous decentralized platforms. Use Kleros' system to seamlessly curate your lists.",
+        "button-primary": "Kleros Token Curated List"
+      },
+      "trustless-curated-lists-section": {
+        "heading": "Trustless Curated Lists",
+        "title-1": "How Does it Work?",
+        "paragraph-1": "You define the guidelines required for what can and can't be accepted on the list. Users send items. Other users challenge bad submissions. Kleros decides.",
+        "title-2": "How are Disputes resolved?",
+        "paragraph-2": "Jurors, review the evidence provided by both submitter and challenger, cast their vote and the outcome of the dispute is enforce automatically.",
+        "title-3": "Why it matter?",
+        "paragraph-3": "In the decentralized era, a larger number of platforms require decentralized list curation. They range from decentralizede e-commerce, social media, finance, insurance and many other fields looking to curate data in a permissionless way.",
+        "illustration-1": "A decentralized e-commerce platform has a policy of not accepting dangerous items.",
+        "illustration-2": "A user submits a flamethrower.",
+        "illustration-3": "Another user challenges the submission for being a dangerous item.",
+        "illustration-4": "The flamethrower goes to trial in Kleros platform.",
+        "illustration-5": "Jurors rule for the challenger. The flamethrower is rejected from the list.",
+        "contact-us-section": {
+          "heading": "Contact Us",
+          "title": "Implement Kleros list curation in your platform. Contact us now!",
+          "first-name": "First Name",
+          "last-name": "Last Name",
+          "company-email": "Company Email",
+          "company-name": "Company Name",
+          "message": "Write your message",
+          "button-primary": "Send"
+        }
+      }
+    },
     "oracle": {},
     "cooperative": {},
     "court-tour": {},
