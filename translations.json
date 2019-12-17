@@ -10,8 +10,8 @@
     },
     // https://kleros.io/index
     "index": {
-      "title": "Decentralized Courts",
-      "subtitle": "The blockchain dispute resolution layer. Fast, open and affordable justice for all",
+      "heading": "Decentralized Courts",
+      "title": "The blockchain dispute resolution layer. Fast, open and affordable justice for all",
       "juror-button": "Join as a Juror",
       "partner-button": "Become a Partner",
       "token-sale-button": "Token Sale",
@@ -27,7 +27,7 @@
       },
       "internet-economy-section": {
         "heading": "The Internet Economy",
-        "paragraph": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+        "title": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
       },
       "why-kleros-section": {
         "heading": "Why Kleros?",
@@ -61,17 +61,17 @@
       },
       "partners-section": {
         "heading": "Our Partners",
-        "paragraph": "ollaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
+        "title": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
       },
       "get-in-touch-section": {
         "heading": "Get in touch",
-        "paragraph": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io."
+        "title": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io."
       }
     },
     // https://kleros.io/about/
     "about": {
-      "title": "About Us",
-      "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
+      "heading": "About Us",
+      "title": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
       "who-are-we-section": {
         "heading": "Who are we?",
         "paragraph": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance. Kleros' vision is to build open technology empowering the courts of the future."
@@ -87,7 +87,7 @@
     },
     // https://kleros.io/faq/
     "faq": {
-      "title": "Frequently Asked Questions",
+      "heading": "Frequently Asked Questions",
       "search-bar-placeholder": "Search your question",
       "faq-section": {
         "general": {
@@ -136,9 +136,68 @@
         }
       }
     },
-    "media": {},
-    "assets": {},
-    "escrow": {},
+    "media": {
+      "heading": "Media",
+      "title": "For media enquiries, send an email to contact@kleros.io.",
+      "categories-section": {
+        "heading": "categories",
+        "featured": "Featured",
+        "press": "Press",
+        "events": "Events",
+        "articles": "Articles"
+      },
+      "book-section": {
+        "heading": "Download Kleros book today!",
+        "title": "Read `Dispute Revolution` for a deep dive into the fascinating field of decentralized justice.",
+        "button-primary": "Download Whitepaper",
+        "button-secondary": "Download Book"
+      }
+    },
+    "assets": {
+      "heading": "Kleros Brand Assets",
+      "categories-section": {
+        "heading": "categories"
+      }
+    },
+    "escrow": {
+      "heading": "blockchain Escrow Service",
+      "title": "Trade, hire and pay secured by trustless dispute resolution.",
+      "button-primary": "Learn More",
+      "risks-section": {
+        "heading": "The Risks of Contracting Online",
+        "paragraph": "Companies usually contract servicecs online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
+      },
+      "meet-escrow-section": {
+        "heading": "Meet Kleros Escrow",
+        "paragraph": "Send the payment into an escrow account. If a dispute occurs, a panel of Kleros jurors will handle resolution. Kleros Escrow protects both the buyer and the seller by ensuring both parties perform according to the agreement.",
+        "button-primary": "Kleros Escrow"
+      },
+      "trustless-escrow-section": {
+        "heading": "Trustless Decentralized Escrow",
+        "title": "Secure, efficient and trustless escrow secured by blockchain.",
+        "subtitle-1": "Integrate Kleros in Your Platform",
+        "paragraph-1": "Are you building a platform for e-commerce, freelancing, finance...? Disputes will arise. Integrate Kleros to solve them. You send us a dispute, Kleros sends you a decision.",
+        "subtitle-2": "So how are disputes resolved?",
+        "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read Kleros whitepaper.",
+        "subtitle-3": "Why it matters?",
+        "paragraph-3": "Kleros brings a trust standard to online transactions. With Kleros Escrow, buyer and seller can be confident that the other party will fulfill the obligations of their agreement.",
+        "illustration-1": "Go to Kleros Escrow and create a new transaction.",
+        "illustration-2": "Enter the details of the agreement.",
+        "illustration-3": "If there are no disputes, you can pay the balance in full and that's it.",
+        "illustration-4": "If a dispute is raised, with just one click you can send the contract to dispute resolution.",
+        "illustration-5": "Jurors evaluate the evidence and make a decision. Funds are sent to the winner. Case closed."
+      },
+      "want-to-use-section": {
+        "heading": "Want to Use Kleros Escrow in your Platform?",
+        "title": "Contact us now and we will help you with integration.",
+        "first-name": "First Name",
+        "last-name": "Last Name",
+        "company-email": "Company Email",
+        "company-name": "Company Name",
+        "message": "Write your message",
+        "button-primary": "Send"
+      }
+    },
     "curated-list": {},
     "oracle": {},
     "cooperative": {},
