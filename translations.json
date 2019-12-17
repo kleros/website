@@ -179,7 +179,7 @@
         "paragraph-1": "Are you building a platform for e-commerce, freelancing, finance...? Disputes will arise. Integrate Kleros to solve them. You send us a dispute, Kleros sends you a decision.",
         "subtitle-2": "So how are disputes resolved?",
         "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read Kleros whitepaper.",
-        "subtitle-3": "Why it matters?",
+        "subtitle-3": "Why it matters",
         "paragraph-3": "Kleros brings a trust standard to online transactions. With Kleros Escrow, buyer and seller can be confident that the other party will fulfill the obligations of their agreement.",
         "illustration-1": "Go to Kleros Escrow and create a new transaction.",
         "illustration-2": "Enter the details of the agreement.",
@@ -210,7 +210,7 @@
         "paragraph": "Kleros offers a solution for numerous decentralized platforms. Use Kleros' system to seamlessly curate your lists.",
         "button-primary": "Kleros Token Curated List"
       },
-      "trustless-curated-lists-section": {
+      "trustless-section": {
         "heading": "Trustless Curated Lists",
         "title-1": "How Does it Work?",
         "paragraph-1": "You define the guidelines required for what can and can't be accepted on the list. Users send items. Other users challenge bad submissions. Kleros decides.",
@@ -235,13 +235,157 @@
         }
       }
     },
-    "oracle": {},
-    "cooperative": {},
-    "court-tour": {},
-    "token": {},
-    "juror": {},
-    "partner": {},
-    "footer": {}
+    "oracle": {
+      "heading": "Kleros Oracle",
+      "title": "A Trustless Way to Enter Information On-Chain",
+      "problem-section": {
+        "heading": "The Oracle Problem",
+        "paragraph:": "In order to work, smart contracts often gather information from the outside world such as the winner in an election or the amount of rainfall in a specific region. The `Oracle Problem` is about finding a trustworthy way to introduce this information on-chain."
+      },
+      "why-ours-section": {
+        "heading": "Why Kleros Oracle?",
+        "paragraph": "Kleros can provide resolution for disputes about regarding which information should be included on-chain and if the answers to certains questions or queries are correct."
+      },
+      "trustless-section": {
+        "heading": "Trustless Oracle",
+        "title-1": "How it works",
+        "paragraph-1": "Users submit external information (the price of ETH in USD, whether there was a flood in NYC, etc.) and a deposit. If a dispute arises about the truth of this information, Kleros provides dispute resolution. For more information about how this works, read this article.",
+        "title-2": "Why it matters",
+        "paragraph": "By using an oracle based on Kleros' decentralized jurors opens up the potential for a wide variety of useful, practical dApps outwith the blockchain only sphere. The Kleros Oracle is a revolutionary step into the blockchain infrastructure of the future."
+      },
+      "contact-us-section": {
+        "heading": "Contact Us",
+        "title": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io.",
+        "first-name": "First Name",
+        "last-name": "Last Name",
+        "company-email": "Company Email",
+        "company-name": "Company Name",
+        "message": "Write your message",
+        "button-primary": "Send"
+      }
+    },
+    "cooperative": {
+      "heading": "Join Cooperative Kleros",
+      "paragraph": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read this article to learn more about the legal structure. If you want to become a member of the Cooperative, follow the next steps. Your application will have to be approved by other members.",
+      "procedure-section": {
+        "illustration-1": "Download the subscription form.",
+        "button-download": "Download",
+        "illustration-2": "Print it; Fill it in (don't forget the handwritten phrase at the end!); Sign it; Scan it;",
+        "illustration-3": "Send it back to lola@kleros.io along with a digital copy of your passport / national ID and with the TxID of your share deposit.",
+        "button-primary": "Download Form",
+        "button-secondary": "Statutes"
+      }
+    },
+    "court-tour": {
+      "heading": "Kleros Court Tour",
+      "paragraph": "Liked the tour and want to test the real product, but never used crypto? Not to worry, click on Crypto Beginner’s Guide.",
+      "button-primary": "Crypto Beginner's Guide"
+    },
+    "token": {
+      "heading": "Pinakion (PNK) Token",
+      "token-section": {
+        "heading-1": "Stake as a Juror",
+        "paragraph-1": "First and foremost, PNK holders can stake their token in a Kleros court to indicate their availability to serve as jurors. The more they stake, the more chances they have of selection. Jurors stake their PNK in courts they have relevant skills for with a random number generator (RNG) selecting the final spots based on size of stake.",
+        "heading-2": "PNK Protects Against Sybil Attacks",
+        "paragraph": "PNK is a protection against Sybil attacks. In order for an attacker to flood the juror pool, they need to buy enough PNK so that they are selected enough times to be a juror for the same case in order to change the outcome. Using a native token like PNK offers several key advantages for minimizing the risk of 51% attacks versus using an external cryptocurrency like ETH.",
+        "heading-3": "PNK Makes an Attack Expensive",
+        "paragraph-3": "Imagine that someone does buy 51% of the PNK in an effort to attack Kleros. Maybe their attack will be subtle and go unnoticed. However, it’s more likely the community will realize that it is under attack. In this case, Kleros would lose credibility as an arbitration platform and the value of PNK would decrease. Then the attacker would take a substantial loss on PNK bought, representing a high economic attack cost.",
+        "heading-4": "User Oriented",
+        "paragraph-4": "Users have an interest in holding PNK tokens in order to gain voting rewards when taking part as jurors. They also have the opportunity to vote with their PNK on all Kleros Governance related proposals and votes creating an open and unbiased platform for all."
+      },
+      "banner": {
+        "title": "If you are interested in acquiring PNK token OTC, get in touch",
+        "subtitle": "Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the market.",
+        "button-primary": "Get in touch here"
+      }
+    },
+    "juror": {
+      "heading": "Become a Kleros Juror",
+      "title": "Use your skills to earn money and bring justice to the world.",
+      "button-primary": "Start Now",
+      "benefits-section": {
+        "heading": "Benefits",
+        "title-1": "Earn",
+        "paragraph-1": "Earn arbitration fees each time you rule on a dispute.",
+        "title-2": "Help",
+        "paragraph-1": "Help others solve their disputes. Be a force for good.",
+        "title-3": "Learn",
+        "paragraph-1": "Learn new skills while you adjudicate cases.",
+        "title-4": "Choose",
+        "paragraph-1": "Rule one case a month or many cases a day. You choose how much to work.",
+        "title-5": "Open",
+        "paragraph-1": "No special requirements. Anyone can be a juror.",
+        "title-6": "Innovate",
+        "paragraph-1": "Start today and take part in the future of justice!"
+      },
+      "how-section": {
+        "heading": "How It Works",
+        "illustration-1": "When a dispute starts, the smart contract automatically draws a predefined number of jurors.",
+        "illustration-2": "If you are drawn, you will arbitrate on the case.",
+        "illustration-3": "If you rule correctly, you’ll receive payment in ETH for your work.",
+        "illustration-4": "If you are in the majority ruling, you will also receive some PNK."
+      },
+      "start-section": {
+        "heading": "Start as a Juror Now!",
+        "title-1": "Follow this tutorial to buy PNK.",
+        "button-1": "Go to Tutorial",
+        "title-2": "Choose your court and stake your PNK",
+        "button-2": "Kleros Court Stake",
+        "title-3": "Wait to be drawn and start ruling!",
+        "button-3": "Kleros Court Cases"
+      },
+      "join-section": {
+        "heading": "Join as a Juror Now!",
+        "button-primary": "Start Now"
+      }
+    },
+    "partner": {
+      "title": "Become a Partner",
+      "subtitle": "Integrate Justice as a Service (JaaS) on your platform.",
+      "paragraph": "Are you building a marketplace, a content sharing platform or any other that requires dispute resolution? Send your disputes to Kleros and have them back, resolved.",
+      "section-benefits": {
+        "subtitle-1": "Simple Integration",
+        "paragraph-1": "Kleros is simple to integrate removing the burden of dispute resolution from your shoulders.",
+        "subtitle-2": "Efficient Settlement",
+        "paragraph-2": "Kleros is fast and cheap. In most cases, it comes at zero cost.",
+        "subtitle-3": "Decentralized",
+        "paragraph-3": "Fully decentralize all of your disputes. Have them solved in the Kleros court.",
+        "subtitle-4": "24/7",
+        "paragraph-4": "Kleros is always online, solving disputes - around the clock, throughout the year.",
+        "subtitle-5": "Open Source",
+        "paragraph-5": "Use Kleros and support the open source movement!"
+      },
+      "section-integration": {
+        "title": "Full Integration Support",
+        "subtitle": "The Kleros team will give you full support and guidance throughout the integration process.",
+        "button-primary": "Contact Dev Team on Slack #dev"
+      },
+      "section-partner": {
+        "title": "Become a Partner Now",
+        "subtitle": "Start using open justice as a service in your platform!",
+        "button-primary": "Get started"
+      }
+    },
+    "footer": {
+      "about": "About",
+      "governance": "Governance",
+      "join": "Join Us",
+      "faq": "FAQ",
+      "media": "Media",
+      "blog": "blog",
+      "assets": "Assets",
+      "white-paper": "White Paper",
+      "escrow": "Escrow",
+      "curated-list": "Curated List",
+      "oracle": "Oracle",
+      "cooperative": "Cooperative",
+      "court-tour": "Court Tour",
+      "token": "Token",
+      "book": "Book",
+      "copyright": "Copyright",
+      "button-juror": "Join as a Juror",
+      "button-partner": "Become a Partner"
+    }
   },
   "your-favorite-language-code": { "your-component": {} }
 }
