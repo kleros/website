@@ -3,6 +3,8 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import Modal from "react-responsive-modal";
 import theMeta from "../js/helpers.js";
+import { graphql } from "gatsby";
+import Template from "../components/layout";
 
 class RootIndex extends React.Component {
   categories = ["Featured", "Press", "Events", "Articles"];
@@ -46,7 +48,7 @@ class RootIndex extends React.Component {
         ({ node }) => this.categories.indexOf(this.state.mediaFilter.value) > -1
       );
     return (
-      <div>
+      <Template location={this.props.location}>
         <Helmet>
           <html lang="en" />
           <title>{siteTitle}</title>
@@ -140,7 +142,11 @@ class RootIndex extends React.Component {
                               .splice(0, 20)
                               .join(" ")}
                           </p>
-                          <a target="_blank" href={el.node.link}>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={el.node.link}
+                          >
                             {el.node.linkText}
                           </a>
                         </div>
@@ -202,7 +208,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-      </div>
+      </Template>
     );
   }
 }
@@ -211,9 +217,7 @@ export default RootIndex;
 
 export const pageQuery = graphql`
   query MediaQuery {
-    allContentfulMediaEntry(
-      sort: { fields: [date, title___NODE], order: DESC }
-    ) {
+    allContentfulMediaEntry(sort: { fields: [date, title___id], order: DESC }) {
       edges {
         node {
           title {

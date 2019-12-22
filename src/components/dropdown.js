@@ -1,41 +1,51 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Dropdown extends Component {
   state = {
     showOptions: false
-  }
+  };
 
   componentWillMount() {
-    if (typeof document !== 'undefined')
-      document.addEventListener('mousedown', this.handleClick.bind(this), false)
+    if (typeof document !== "undefined")
+      document.addEventListener(
+        "mousedown",
+        this.handleClick.bind(this),
+        false
+      );
   }
 
   componentWillUnmount() {
-    if (typeof document !== 'undefined')
-      document.removeEventListener('mousedown', this.handleClick.bind(this), false)
+    if (typeof document !== "undefined")
+      document.removeEventListener(
+        "mousedown",
+        this.handleClick.bind(this),
+        false
+      );
   }
 
-  handleClick (e) {
+  handleClick(e) {
     if (!this.state.showOptions || this.node.contains(e.target)) {
-      return
+      return;
     }
-    this.toggleOptions()
+    this.toggleOptions();
   }
 
-  toggleOptions () {
+  toggleOptions() {
     this.setState({
       showOptions: !this.state.showOptions
-    })
+    });
   }
 
   render() {
-    const data = this.props.data
-    const showOptions = this.state.showOptions
+    const data = this.props.data;
+    const showOptions = this.state.showOptions;
 
     return (
-      <li ref={node => this.node = node}>
+      <li ref={node => (this.node = node)}>
         <a
-          className={`hamburger-a dropdown-root ${showOptions ? 'selected' : ''}`}
+          className={`hamburger-a dropdown-root ${
+            showOptions ? "selected" : ""
+          }`}
           onClick={this.toggleOptions.bind(this)}
         >
           {data.text}
@@ -48,18 +58,21 @@ class Dropdown extends Component {
                   <a
                     href={option.url}
                     target="_blank"
+                    rel="noopener noreferrer"
                     onClick={this.toggleOptions.bind(this)}
                   >
                     {option.text}
                   </a>
                 </li>
-              )
+              );
             })}
           </ul>
-        ) : ''}
+        ) : (
+          ""
+        )}
       </li>
-    )
+    );
   }
 }
 
-export default Dropdown
+export default Dropdown;

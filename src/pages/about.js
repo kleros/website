@@ -3,6 +3,8 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import theMeta from "../js/helpers.js";
 import Slider from "react-slick";
+import { graphql } from "gatsby";
+import Template from "../components/layout";
 
 class RootIndex extends React.Component {
   render() {
@@ -16,7 +18,7 @@ class RootIndex extends React.Component {
     const vacanciesEntries = data.vacanciesEntries;
 
     return (
-      <div>
+      <Template location={this.props.location}>
         <Helmet>
           <html lang="en" />
           <title>{siteTitle}</title>
@@ -103,6 +105,7 @@ class RootIndex extends React.Component {
                                       key={num}
                                       href={link.url}
                                       target="_blank"
+                                      rel="noopener noreferrer"
                                       className={link.extraClass}
                                     ></a>
                                   );
@@ -157,7 +160,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-      </div>
+      </Template>
     );
   }
 }
