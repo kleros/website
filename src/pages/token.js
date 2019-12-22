@@ -1,9 +1,10 @@
 import React from "react";
 import get from "lodash/get";
 import Helmet from "react-helmet";
-import { navigateTo } from "gatsby-link";
 import Modal from "react-responsive-modal";
 import theMeta from "../js/helpers.js";
+import { graphql } from "gatsby";
+import Template from "../components/layout";
 
 const encode = data => {
   return Object.keys(data)
@@ -18,12 +19,13 @@ class RootIndex extends React.Component {
     companyEmail: "",
     companyName: "",
     message: "",
-    open: false,
-
+    open: false
   };
 
   componentDidMount() {
-    this.setState({biggerThan768px: window.matchMedia("(min-width: 768px)").matches})
+    this.setState({
+      biggerThan768px: window.matchMedia("(min-width: 768px)").matches
+    });
     window
       .matchMedia("(min-width: 768px)")
       .addListener(e => this.setState({ biggerThan768px: e.matches }));
@@ -92,14 +94,7 @@ class RootIndex extends React.Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const {
-      firstname,
-      lastname,
-      companyEmail,
-      companyName,
-      message,
-      open
-    } = this.state;
+    const { open } = this.state;
 
     const biggerThan768px = this.state.biggerThan768px || false;
     console.log(this.state);
@@ -110,14 +105,10 @@ class RootIndex extends React.Component {
     const top = data.top;
     console.log(theMeta(top, "Token Page Top Button"));
 
-    const escrow = data.escrow;
-    const why = data.why;
     const contentCards = this.contentCards;
-    const contentPath = data.contentPath;
-    const contact = data.contact;
 
     return (
-      <div>
+      <Template location={this.props.location}>
         <Helmet>
           <html lang="en" />
           <title>{siteTitle}</title>
@@ -134,7 +125,11 @@ class RootIndex extends React.Component {
           <p>We will answer you as soon as possible.</p>
           <p>
             While waiting for an answer you can join our{" "}
-            <a href="https://t.me/kleros" target="_blank">
+            <a
+              href="https://t.me/kleros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Telegram
             </a>
             .
@@ -260,7 +255,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-      </div>
+      </Template>
     );
   }
 }

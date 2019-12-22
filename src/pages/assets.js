@@ -1,8 +1,7 @@
 import React from "react";
-import get from "lodash/get";
 import Helmet from "react-helmet";
 import Modal from "react-responsive-modal";
-import theMeta from "../js/helpers.js";
+import Template from "../components/layout";
 
 class RootIndex extends React.Component {
   categories = ["Kleros", "T2CR", "Escrow", "Oracle"];
@@ -62,15 +61,10 @@ class RootIndex extends React.Component {
     console.log(this.state);
     console.log(this.assets[mediaFilter.value]);
     var siteTitle = "Kleros";
-    let media = [];
     if (mediaFilter.value == "") this.categoryChange(this.categories[0]);
-    else
-      media = media.filter(
-        ({ node }) => this.categories.indexOf(mediaFilter.value) > -1
-      );
 
     return (
-      <div>
+      <Template location={this.props.location}>
         <Helmet>
           <html lang="en" />
           <title>{siteTitle}</title>
@@ -138,9 +132,7 @@ class RootIndex extends React.Component {
                       <div key={num} className="col-12 col-md-4 my-5 pl-5">
                         <img
                           style={{ maxHeight: "70px" }}
-                          src={`/kleros-brand-assets/${
-                            mediaFilter.value
-                          }/${el}`}
+                          src={`/kleros-brand-assets/${mediaFilter.value}/${el}`}
                           alt={el}
                         />
                       </div>
@@ -156,9 +148,7 @@ class RootIndex extends React.Component {
                       <div key={num} className="col-12 col-md-4 my-5 pl-5">
                         <img
                           style={{ maxHeight: "80px" }}
-                          src={`/kleros-brand-assets/${
-                            mediaFilter.value
-                          }/${el}`}
+                          src={`/kleros-brand-assets/${mediaFilter.value}/${el}`}
                           alt={el}
                         />
                       </div>
@@ -175,9 +165,7 @@ class RootIndex extends React.Component {
                       <div key={num} className="col-12 col-md-4 pl-5">
                         <img
                           style={{ maxWidth: "100px" }}
-                          src={`/kleros-brand-assets/${
-                            mediaFilter.value
-                          }/${el}`}
+                          src={`/kleros-brand-assets/${mediaFilter.value}/${el}`}
                           alt={el}
                         />
                       </div>
@@ -188,7 +176,7 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
-      </div>
+      </Template>
     );
   }
 }

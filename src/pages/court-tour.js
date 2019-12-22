@@ -1,9 +1,7 @@
 import React from "react";
-import get from "lodash/get";
 import Helmet from "react-helmet";
-import { navigateTo } from "gatsby-link";
 import Modal from "react-responsive-modal";
-import theMeta from "../js/helpers.js";
+import Template from "../components/layout";
 
 const encode = data => {
   return Object.keys(data)
@@ -53,19 +51,12 @@ class RootIndex extends React.Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const {
-      firstname,
-      lastname,
-      companyEmail,
-      companyName,
-      message,
-      open
-    } = this.state;
+    const { open } = this.state;
 
     const siteTitle = "Kleros - Court Tour Page";
 
     return (
-      <div>
+      <Template location={this.props.location}>
         <Helmet>
           <html lang="en" />
           <title>{siteTitle}</title>
@@ -82,7 +73,11 @@ class RootIndex extends React.Component {
           <p>We will answer you as soon as possible.</p>
           <p>
             While waiting for an answer you can join our{" "}
-            <a href="https://t.me/kleros" target="_blank">
+            <a
+              href="https://t.me/kleros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Telegram
             </a>
             .
@@ -104,6 +99,7 @@ class RootIndex extends React.Component {
                 style={{ position: "relative", paddingTop: "56.25%" }}
               >
                 <iframe
+                  title="court-tour"
                   style={{
                     border: "none",
                     width: "inherit",
@@ -134,7 +130,6 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-12  text-center">
                 <a
                   href="https://metamask.zendesk.com"
-                  target=""
                   className="ca_button ca_solid_blue"
                 >
                   Crypto Beginner's Guide
@@ -144,7 +139,7 @@ class RootIndex extends React.Component {
           </div>
           );
         </section>
-      </div>
+      </Template>
     );
   }
 }

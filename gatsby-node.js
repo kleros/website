@@ -4,8 +4,8 @@ const path = require("path");
 const axios = require("axios");
 const crypto = require("crypto");
 
-exports.sourceNodes = async ({ boundActionCreators }) => {
-  const { createNode } = boundActionCreators;
+exports.sourceNodes = async ({ actions }) => {
+  const { createNode } = actions;
 
   // fetch raw data from the apis
   const fetchKlerosForum = () =>
