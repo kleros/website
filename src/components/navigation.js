@@ -30,70 +30,64 @@ export default function(menu) {
                 </a>
               </li>
 
-              <li key={3}>
-                <Dropdown
-                  data={{
-                    text: "DApps",
-                    dropdownOptions: [
-                      {
-                        text: "Kleros Court",
-                        url: "https://court.kleros.io"
-                      },
-                      {
-                        text: "Kleros Governance",
-                        url: "https://governance.kleros.io"
-                      },
-                      {
-                        text: "Token² Curated Registry",
-                        url: "https://tokens.kleros.io"
-                      },
-                      { text: "Escrow", url: "https://escrow.kleros.io" },
-                      {
-                        text: "CryptoUnlocked",
-                        url: "https://cryptounlocked.wetrust.io"
-                      },
-                      { text: "Realitio", url: "https://realitio.github.io" }
-                    ]
-                  }}
-                />
-              </li>
+              <Dropdown
+                data={{
+                  text: "DApps",
+                  dropdownOptions: [
+                    {
+                      text: "Kleros Court",
+                      url: "https://court.kleros.io"
+                    },
+                    {
+                      text: "Kleros Governance",
+                      url: "https://governance.kleros.io"
+                    },
+                    {
+                      text: "Token² Curated Registry",
+                      url: "https://tokens.kleros.io"
+                    },
+                    { text: "Escrow", url: "https://escrow.kleros.io" },
+                    {
+                      text: "CryptoUnlocked",
+                      url: "https://cryptounlocked.wetrust.io"
+                    },
+                    { text: "Realitio", url: "https://realitio.github.io" }
+                  ]
+                }}
+              />
               <li key={4}>
                 <a href="https://blog.kleros.io" className="hamburger-a">
                   Blog
                 </a>
               </li>
-              <li key={5}>
-                <Dropdown
-                  data={{
-                    text: "White Paper",
-                    dropdownOptions: [
-                      { text: "English", url: "whitepaper_en.pdf" },
-                      {
-                        text: "Español",
-                        url: "whitepaper_es.pdf"
-                      }
-                    ]
-                  }}
-                />
-              </li>
-              <li key={6}>
-                <Dropdown
-                  data={{
-                    text: "Use Cases",
-                    dropdownOptions: [
-                      { text: "Escrow", url: "/escrow" },
-                      {
-                        text: "Curated List",
-                        url: "/curated-list"
-                      },
-                      {
-                        text: "Oracle",
-                        url: "/oracle"
-                      }
-                    ]
-                  }}
-                />
-              </li>
+              <Dropdown
+                data={{
+                  text: "White Paper",
+                  dropdownOptions: [
+                    { text: "English", url: "whitepaper_en.pdf" },
+                    {
+                      text: "Español",
+                      url: "whitepaper_es.pdf"
+                    }
+                  ]
+                }}
+              />
+              <Dropdown
+                data={{
+                  text: "Use Cases",
+                  dropdownOptions: [
+                    { text: "Escrow", url: "/escrow" },
+                    {
+                      text: "Curated List",
+                      url: "/curated-list"
+                    },
+                    {
+                      text: "Oracle",
+                      url: "/oracle"
+                    }
+                  ]
+                }}
+              />
               <li key={7}>
                 <a href="/about" className="hamburger-a">
                   About
