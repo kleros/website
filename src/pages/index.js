@@ -13,6 +13,7 @@ class RootIndex extends React.Component {
       this,
       "props.data.allTwitterSearchTweetsKleros.edges"
     )[0].node;
+    console.log(apiTwitter);
     const apiGit = get(this, "props.data.allKlerosGitCommits.edges")[0].node;
     const apiForum = get(this, "props.data.allKlerosForumTopic.edges")[0].node;
 
@@ -688,6 +689,7 @@ export const pageQuery = graphql`
         node {
           created_at
           full_text
+          id_str
           user {
             name
           }
