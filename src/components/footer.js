@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from "react-responsive-modal";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
-export default function({ menu, onCloseModal, onOpenModal, open }) {
+export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
   return (
     <footer className="ca_footer">
       <Modal
@@ -40,28 +41,46 @@ export default function({ menu, onCloseModal, onOpenModal, open }) {
             <nav className="ca_left">
               <ul>
                 <li key={0}>
-                  <a href="/about">About</a>
+                  <a href="/about">
+                    <FormattedMessage id="footer.about" />
+                  </a>
                 </li>
                 <li key={1}>
-                  <a href="https://governance.kleros.io">Governance</a>
+                  <a href="https://governance.kleros.io">
+                    <FormattedMessage id="footer.governance" />
+                  </a>
                 </li>
                 <li key={2}>
-                  <a href="/about#join">Join Us</a>
+                  <a href="/about#join">
+                    <FormattedMessage id="footer.join" />
+                  </a>
                 </li>
                 <li key={3}>
-                  <a href="/faq">FAQ</a>
+                  <a href="/faq">
+                    <FormattedMessage id="footer.faq" />
+                  </a>
                 </li>
                 <li key={4}>
-                  <a href="/media">Media</a>
+                  <a href="/media">
+                    <FormattedMessage id="footer.media" />
+                  </a>
                 </li>
                 <li key={5}>
-                  <a href="https://blog.kleros.io">Blog</a>
+                  <a href="https://blog.kleros.io">
+                    <FormattedMessage id="footer.blog" />
+                  </a>
                 </li>
                 <li key={6}>
-                  <a href="/assets">Assets</a>
+                  <a href="/assets">
+                    {" "}
+                    <FormattedMessage id="footer.assets" />
+                  </a>
                 </li>
                 <li key={7}>
-                  <a href="/whitepaper_en.pdf">Whitepaper</a>
+                  <a href="/whitepaper_en.pdf">
+                    {" "}
+                    <FormattedMessage id="footer.white-paper" />
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -70,30 +89,51 @@ export default function({ menu, onCloseModal, onOpenModal, open }) {
             <nav className="ca_right">
               <ul>
                 <li key={0}>
-                  <a href="/escrow">Escrow</a>
+                  <a href="/escrow">
+                    {" "}
+                    <FormattedMessage id="footer.escrow" />
+                  </a>
                 </li>
                 <li key={1}>
-                  <a href="/curated-list">Curated List</a>
+                  <a href="/curated-list">
+                    {" "}
+                    <FormattedMessage id="footer.curated-list" />
+                  </a>
                 </li>
                 <li key={2}>
-                  <a href="/oracle">Oracle</a>
+                  <a href="/oracle">
+                    {" "}
+                    <FormattedMessage id="footer.oracle" />
+                  </a>
                 </li>
                 <li key={3}>
-                  <a href="/cooperative">Cooperative</a>
+                  <a href="/cooperative">
+                    {" "}
+                    <FormattedMessage id="footer.cooperative" />
+                  </a>
                 </li>
                 <li key={4}>
-                  <a href="/court-tour">Court Tour</a>
+                  <a href="/court-tour">
+                    {" "}
+                    <FormattedMessage id="footer.court-tour" />
+                  </a>
                 </li>
                 <li key={5}>
-                  <a href="/token">Token</a>
+                  <a href="/token">
+                    {" "}
+                    <FormattedMessage id="footer.token" />
+                  </a>
                 </li>
                 <li key={6}>
-                  <a href="https://developer.kleros.io">Developer</a>
+                  <a href="https://developer.kleros.io">
+                    {" "}
+                    <FormattedMessage id="footer.developer" />
+                  </a>
                 </li>
 
                 <li>
                   <button className="ca_link_book" onClick={onOpenModal}>
-                    Book
+                    <FormattedMessage id="footer.book" />
                   </button>
                 </li>
               </ul>
@@ -101,10 +141,10 @@ export default function({ menu, onCloseModal, onOpenModal, open }) {
           </div>
           <div className="col-12 col-md-4">
             <a href="/juror" className="ca_button ca_transparent_gray-solid">
-              Join as a Juror
+              <FormattedMessage id="footer.button-juror" />
             </a>
             <a href="/partner" className="ca_button ca_transparent_gray">
-              Become a Partner
+              <FormattedMessage id="footer.button-partner" />
             </a>
           </div>
           <div
@@ -159,11 +199,15 @@ export default function({ menu, onCloseModal, onOpenModal, open }) {
                   <a href=""></a>
                 </li>
               </ul>
-              <span>Copyright 2019 © Kleros.io</span>
+              <span>
+                {" "}
+                <FormattedMessage id="footer.copyright" />
+                {new Date().getFullYear()} © Kleros.io
+              </span>
             </nav>
           </div>
         </div>
       </div>
     </footer>
   );
-}
+});

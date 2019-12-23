@@ -5,6 +5,7 @@ import theMeta from "../js/helpers.js";
 import Slider from "react-slick";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 class RootIndex extends React.Component {
   render() {
@@ -167,7 +168,7 @@ class RootIndex extends React.Component {
   }
 }
 
-export default RootIndex;
+export default injectIntl(RootIndex);
 
 export const pageQuery = graphql`
   query aboutQuery {

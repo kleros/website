@@ -57,7 +57,7 @@ class Dropdown extends Component {
                 <li className="dropdown-item">
                   <a
                     href={option.url}
-                    target="_blank"
+                    target={this.props.target}
                     rel="noopener noreferrer"
                     onClick={this.toggleOptions.bind(this)}
                   >

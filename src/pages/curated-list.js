@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import Modal from "react-responsive-modal";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 const encode = data => {
   return Object.keys(data)
@@ -418,7 +419,7 @@ class RootIndex extends React.Component {
   }
 }
 
-export default RootIndex;
+export default injectIntl(RootIndex);
 
 export const pageQuery = graphql`
   query curatedListQuery {
