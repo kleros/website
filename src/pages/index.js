@@ -4,6 +4,8 @@ import Helmet from "react-helmet";
 import theMeta from "../js/helpers.js";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
+import Slider from "react-slick";
+
 
 class RootIndex extends React.Component {
   render() {
@@ -352,7 +354,7 @@ class RootIndex extends React.Component {
               <div className="row ca_left">
                 <div className="col-12 col-md-1" />
                 <div className="col-12 col-md-6">
-                  <div className="ca_solution_slider">
+                  <Slider className="ca_solution_slider ca_solution_slider_dots" dots={true} arrows={false} infinite={true} autoplay={true} autoplaySpeed={3000} speed={300} slidesToShow={1} slidesToScroll={1} >
                     <div key="1" className="ca_slide">
                       <img src="/img/homepage/welcome.png" alt="Why Kleros?" />
                     </div>
@@ -365,7 +367,7 @@ class RootIndex extends React.Component {
                     <div key="3" className="ca_slide">
                       <img src="/img/homepage/Escrow.jpg" alt="Why Kleros?" />
                     </div>
-                  </div>
+                  </Slider>
                   <div className="ca_solution_slider_dots" />
                 </div>
                 <div className="col-12 col-md-4">

@@ -73,13 +73,15 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-8">
                 <Slider
                   className="ca_team_slider"
-                  infinite={true}
-                  speed={500}
-                  slidesToShow={3}
-                  currentOffset={1}
-                  autoplay={true}
-                  focusOnSelect={true}
+                  dots={false}
                   arrows={false}
+                  infinite={true}
+                  autoplay={true}
+                  slidesToShow={3}
+                  slidesToScroll={1}
+                  centerMode={true}
+                  centerPadding="0px"
+                  focusOnSelect={true}
                 >
                   {teamMembers.map((el, num) => {
                     return (

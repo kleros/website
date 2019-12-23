@@ -1834,7 +1834,7 @@ h6 {
   .ca_about_team p {
     font-size: 1.33333rem;
     line-height: 2.5rem;
-    color: #aaa;
+    color: white;
     margin-bottom: 2.91667rem;
     text-align: right;
     padding-left: 5rem; }
@@ -3006,3 +3006,9 @@ h6 {
         .ca_escrow_contact .ca_form .ca_line input:not([type="submit"]), .ca_escrow_contact .ca_form .ca_line textarea {
           font-size: 21px;
           padding: 5px 0; } }
+
+
+.slick-dots{
+  margin-top: 2rem;
+  width: fit-content;
+}
