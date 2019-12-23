@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Modal from "react-responsive-modal";
 import Template from "../components/layout";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 class RootIndex extends React.Component {
   categories = ["Kleros", "T2CR", "Escrow", "Oracle"];
@@ -181,4 +182,4 @@ class RootIndex extends React.Component {
   }
 }
 
-export default RootIndex;
+export default injectIntl(RootIndex);

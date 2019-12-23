@@ -3,6 +3,7 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 class RootIndex extends React.Component {
   constructor() {
@@ -162,7 +163,7 @@ class RootIndex extends React.Component {
   }
 }
 
-export default RootIndex;
+export default injectIntl(RootIndex);
 
 export const faqQuery = graphql`
   query FAQQuery {

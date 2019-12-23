@@ -5,7 +5,7 @@ import theMeta from "../js/helpers.js";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
 import Slider from "react-slick";
-
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 class RootIndex extends React.Component {
   render() {
@@ -27,7 +27,6 @@ class RootIndex extends React.Component {
         return <h6 key={num}>{el}</h6>;
       });
     };
-
     return (
       <Template location={this.props.location}>
         <div>
@@ -39,10 +38,11 @@ class RootIndex extends React.Component {
             <div className="container">
               <div className="row ca_txt">
                 <div className="col-12 col-md-6">
-                  <h1>Decentralized Courts</h1>
+                  <h1>
+                    <FormattedMessage id="index.title" />
+                  </h1>
                   <h6>
-                    The blockchain dispute resolution layer. Fast, open and
-                    affordable justice for all.
+                    <FormattedMessage id="index.subtitle" />
                   </h6>
                   <a
                     href="
@@ -51,20 +51,20 @@ class RootIndex extends React.Component {
                     className="ca_button ca_solid_blue"
                     target="_self"
                   >
-                    Join as a Juror
+                    <FormattedMessage id="index.button-juror" />
                   </a>
                   <a
                     href="/partner"
                     className="ca_button ca_transparent_blue"
                     target="_self"
                   >
-                    Become a Partner
+                    <FormattedMessage id="index.button-partner" />
                   </a>
                   <a
                     href="https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/"
                     className="ca_button ca_transparent_blue"
                   >
-                    Token Sale
+                    <FormattedMessage id="index.button-token-sale" />
                   </a>
                 </div>
                 <div className="col-12 col-md-6 illustration_holder">
@@ -87,7 +87,7 @@ class RootIndex extends React.Component {
                     <div className="card_header">
                       <div>
                         <img
-                          src="img/homepage/twt.png"
+                          src="/img/homepage/twt.png"
                           className="card_header_icon"
                           alt="Icon"
                         />
@@ -116,7 +116,7 @@ class RootIndex extends React.Component {
                         apiTwitter.id_str
                       }
                     >
-                      Go to Twitter
+                      <FormattedMessage id="index.button-twitter" />
                     </a>
                     <a
                       rel="noopener noreferrer"
@@ -133,7 +133,7 @@ class RootIndex extends React.Component {
                     <div className="card_header">
                       <div>
                         <img
-                          src="img/homepage/blg.png"
+                          src="/img/homepage/blg.png"
                           className="card_header_icon"
                           alt="Icon"
                         />
@@ -163,7 +163,7 @@ class RootIndex extends React.Component {
                       target="_blank"
                       href={"https://blog.kleros.io/" + apiBlog.post_url}
                     >
-                      Go to Blog
+                      <FormattedMessage id="index.button-blog" />
                     </a>
                     <a
                       rel="noopener noreferrer"
@@ -177,7 +177,7 @@ class RootIndex extends React.Component {
                     <div className="card_header">
                       <div>
                         <img
-                          src="img/homepage/gth.png"
+                          src="/img/homepage/gth.png"
                           className="card_header_icon"
                           alt="Icon"
                         />
@@ -203,7 +203,7 @@ class RootIndex extends React.Component {
                       target="_blank"
                       href={apiGit.commit_url}
                     >
-                      Go to Github
+                      <FormattedMessage id="index.button-github" />
                     </a>
                     <a
                       rel="noopener noreferrer"
@@ -217,7 +217,7 @@ class RootIndex extends React.Component {
                     <div className="card_header">
                       <div>
                         <img
-                          src="img/homepage/frm.png"
+                          src="/img/homepage/frm.png"
                           className="card_header_icon"
                           alt="Icon"
                         />
@@ -248,7 +248,7 @@ class RootIndex extends React.Component {
                         apiForum.topic_id
                       }
                     >
-                      Go to Forum
+                      <FormattedMessage id="index.button-forum" />
                     </a>
                     <a
                       rel="noopener noreferrer"
@@ -270,7 +270,9 @@ class RootIndex extends React.Component {
               <div className="row ca_text">
                 <div className="col-12 col-md-1" />
                 <div className="col-12 col-md-10">
-                  <h2>A Common Dispute in the New Economy</h2>
+                  <h2>
+                    <FormattedMessage id="index.section-example-dispute.title" />
+                  </h2>
                 </div>
                 <div className="col-12 col-md-1" />
               </div>
@@ -280,39 +282,46 @@ class RootIndex extends React.Component {
                   <div className="ca_why_block">
                     <img
                       src="/img/homepage/why1.png"
-                      alt="A Common Dispute in the New Economy"
+                      alt={
+                        <FormattedMessage id="index.section-example-dispute.title" />
+                      }
                     />
                     <div className="ca_txt">
-                      <p>Alice hires Bob to build her a website.</p>
+                      <p>
+                        <FormattedMessage id="index.section-example-dispute.paragraph-1" />
+                      </p>
                     </div>
                     <div className="ca_txt">
-                      <p>Alice pays Bob in advance.</p>
+                      <p>
+                        <FormattedMessage id="index.section-example-dispute.paragraph-2" />
+                      </p>
                     </div>
                     <div className="ca_txt">
-                      <p>The site takes Bob longer than expected.</p>
+                      <p>
+                        <FormattedMessage id="index.section-example-dispute.paragraph-3" />
+                      </p>
                     </div>
                   </div>
                   <div className="ca_why_block">
                     <img
                       src="/img/homepage/why2.png"
-                      alt="A Common Dispute in the New Economy"
+                      alt={
+                        <FormattedMessage id="index.section-example-dispute.title" />
+                      }
                     />
                     <div className="ca_txt">
                       <p>
-                        When he finally delivers the site, Alice is not
-                        satisfied.
+                        <FormattedMessage id="index.section-example-dispute.paragraph-4" />
                       </p>
                     </div>
                     <div className="ca_txt">
                       <p>
-                        A debate starts. Alice requests a refund. Bob claims the
-                        specifications weren't clear.
+                        <FormattedMessage id="index.section-example-dispute.paragraph-5" />
                       </p>
                     </div>
                     <div className="ca_txt">
                       <p>
-                        Alice and Bob are both left at a loss with no clear
-                        outcome of their dispute.
+                        <FormattedMessage id="index.section-example-dispute.paragraph-6" />
                       </p>
                     </div>
                   </div>
@@ -322,7 +331,7 @@ class RootIndex extends React.Component {
                       className="ca_button ca_solid_blue ca_open_video_popup"
                       data-video-url="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
                     >
-                      Watch Video
+                      <FormattedMessage id="index.section-example-dispute.button-primary" />
                     </a>
                   </div>
                 </div>
@@ -335,10 +344,12 @@ class RootIndex extends React.Component {
               <div className="row">
                 <div className="col-12 col-md-2" />
                 <div className="col-12 col-md-8">
-                  <h2 className="ca_underlined">The Internet Economy</h2>
-                  {theSubtitle(
-                    "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
-                  )}
+                  <h2 className="ca_underlined">
+                    <FormattedMessage id="index.section-internet-economy.title" />
+                  </h2>
+                  <h6>
+                    <FormattedMessage id="index.section-internet-economy.subtitle" />
+                  </h6>
                 </div>
                 <div className="col-12 col-md-2" />
               </div>
@@ -348,20 +359,32 @@ class RootIndex extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col-12">
-                  <h2 className="ca_underlined">Why Kleros?</h2>
+                  <h2 className="ca_underlined">
+                    <FormattedMessage id="index.section-why-kleros.title" />
+                  </h2>
                 </div>
               </div>
               <div className="row ca_left">
                 <div className="col-12 col-md-1" />
                 <div className="col-12 col-md-6">
-                  <Slider className="ca_solution_slider ca_solution_slider_dots" dots={true} arrows={false} infinite={true} autoplay={true} autoplaySpeed={3000} speed={300} slidesToShow={1} slidesToScroll={1} >
+                  <Slider
+                    className="ca_solution_slider ca_solution_slider_dots"
+                    dots={true}
+                    arrows={false}
+                    infinite={true}
+                    autoplay={true}
+                    autoplaySpeed={3000}
+                    speed={300}
+                    slidesToShow={1}
+                    slidesToScroll={1}
+                  >
                     <div key="1" className="ca_slide">
                       <img src="/img/homepage/welcome.png" alt="Why Kleros?" />
                     </div>
                     <div key="2" className="ca_slide">
                       <img
                         src="/img/homepage/athena_home.jpg"
-                        alt="Why Kleros?"
+                        alt={"Why Kleros?"}
                       />
                     </div>
                     <div key="3" className="ca_slide">
@@ -371,11 +394,11 @@ class RootIndex extends React.Component {
                   <div className="ca_solution_slider_dots" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Peer-to-Peer Justice</h6>
+                  <h6>
+                    <FormattedMessage id="index.section-why-kleros.subtitle-1" />
+                  </h6>
                   <p>
-                    A peer to peer platform that uses crowdsourcing and
-                    blockchain to put the dispute resolution process in the
-                    hands of the community.
+                    <FormattedMessage id="index.section-why-kleros.paragraph-1" />
                   </p>
                 </div>
                 <div className="col-12 col-md-1" />
@@ -386,29 +409,38 @@ class RootIndex extends React.Component {
                   <img src="/img/homepage/solution1.png" alt="Why Kleros?" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>What's the Secret Sauce?</h6>
+                  <h6>
+                    <FormattedMessage id="index.section-why-kleros.subtitle-2" />
+                  </h6>
                   <p>
-                    Kleros uses advanced cryptoeconomics coupled with a global
-                    community of jurors to adjudicate disputes in a fast,
-                    affordable and open way. Read the{" "}
-                    <a href="https://kleros.io/whitepaper_en.pdf">
-                      white paper
-                    </a>
-                    .
+                    <FormattedMessage
+                      id="index.section-why-kleros.paragraph-2"
+                      values={{
+                        anchor: children => (
+                          <a
+                            href="/whitepaper_en.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
                   </p>
                   <a
                     target="_self"
                     href="/juror"
                     className="ca_button ca_solid_blue"
                   >
-                    Join as a Juror
+                    <FormattedMessage id="index.button-juror" />
                   </a>
                   <a
                     target="_self"
                     href="/partner"
                     className="ca_button ca_transparent_blue"
                   >
-                    Become a Partner
+                    <FormattedMessage id="index.button-partner" />
                   </a>
                 </div>
                 <div className="col-12 col-md-1" />
@@ -422,15 +454,24 @@ class RootIndex extends React.Component {
                   />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Why Does Kleros Need a Token?</h6>
+                  <h6>
+                    <FormattedMessage id="index.section-why-kleros.subtitle-3" />
+                  </h6>
                   <p>
-                    The Pinakion (PNK) token protects the system from attacks,
-                    while also providing jurors with a financial incentive to
-                    resolve cases coherently. Learn more{" "}
-                    <a href="https://medium.com/kleros/why-kleros-needs-a-native-token-5c6c6e39cdfe">
-                      here
-                    </a>
-                    .
+                    <FormattedMessage
+                      id="index.section-why-kleros.paragraph-3"
+                      values={{
+                        anchor: children => (
+                          <a
+                            href="https://medium.com/kleros/why-kleros-needs-a-native-token-5c6c6e39cdfe"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
                   </p>
                 </div>
                 <div className="col-12 col-md-1" />
@@ -442,7 +483,9 @@ class RootIndex extends React.Component {
               <div className="row">
                 <div className="col-12 col-md-2" />
                 <div className="col-12 col-md-8">
-                  <h2 className="ca_underlined">How Does It Work?</h2>
+                  <h2 className="ca_underlined">
+                    <FormattedMessage id="index.section-how-does-it-work.title" />
+                  </h2>
                 </div>
                 <div className="col-12 col-md-2" />
               </div>
@@ -456,10 +499,12 @@ class RootIndex extends React.Component {
                   <img src="/img/homepage/solve1.png" alt="Contract" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Contract</h6>
+                  <h6>
+                    {" "}
+                    <FormattedMessage id="index.section-how-does-it-work.subtitle-1" />
+                  </h6>
                   <p>
-                    Alice hires Bob to build a website for her. They agree to
-                    use Kleros should a dispute occur.{" "}
+                    <FormattedMessage id="index.section-how-does-it-work.paragraph-1" />
                   </p>
                 </div>
                 <div className="col-12 col-md-2" />
@@ -473,9 +518,12 @@ class RootIndex extends React.Component {
                   <img src="/img/homepage/solve2.png" alt="Dispute" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Dispute</h6>
+                  <h6>
+                    {" "}
+                    <FormattedMessage id="index.section-how-does-it-work.subtitle-2" />
+                  </h6>
                   <p>
-                    Alice is not satisfied with Bob's work and raises a dispute.
+                    <FormattedMessage id="index.section-how-does-it-work.paragraph-2" />
                   </p>
                 </div>
                 <div className="col-12 col-md-2" />
@@ -489,8 +537,14 @@ class RootIndex extends React.Component {
                   <img src="/img/homepage/solve3.png" alt="Selection" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Selection</h6>
-                  <p>Users are randomly selected as jurors for the dispute. </p>
+                  <h6>
+                    {" "}
+                    <FormattedMessage id="index.section-how-does-it-work.subtitle-3" />
+                  </h6>
+                  <p>
+                    {" "}
+                    <FormattedMessage id="index.section-how-does-it-work.paragraph-3" />
+                  </p>
                 </div>
                 <div className="col-12 col-md-2" />
               </div>
@@ -503,11 +557,12 @@ class RootIndex extends React.Component {
                   <img src="/img/homepage/solve4.png" alt="Enforcement" />
                 </div>
                 <div className="col-12 col-md-4">
-                  <h6>Enforcement</h6>
+                  <h6>
+                    {" "}
+                    <FormattedMessage id="index.section-how-does-it-work.subtitle-4" />
+                  </h6>
                   <p>
-                    Jurors evaluate the evidence and vote Alice as the winner.
-                    She is reimbursed and honest jurors are compensated for
-                    their work.
+                    <FormattedMessage id="index.section-how-does-it-work.paragraph-4" />
                   </p>
                 </div>
                 <div className="col-12 col-md-2" />
@@ -520,7 +575,7 @@ class RootIndex extends React.Component {
                     className="ca_button ca_solid_blue ca_open_video_popup"
                     data-video-url="https://www.youtube.com/watch?v=NuSps_2wMQ4&t=1s"
                   >
-                    Watch Video
+                    <FormattedMessage id="index.section-how-does-it-work.button-primary" />
                   </a>
                 </div>
               </div>
@@ -530,7 +585,10 @@ class RootIndex extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col-12">
-                  <h2 className="ca_underlined">Join The Justice Revolution</h2>
+                  <h2 className="ca_underlined">
+                    {" "}
+                    <FormattedMessage id="index.section-justice-revolution.title" />
+                  </h2>
                 </div>
                 <div className="col-12 col-md-2" />
                 <div className="col-12 col-md-4">
@@ -538,10 +596,15 @@ class RootIndex extends React.Component {
                     <img src="/img/homepage/join1.png" alt="Join as a Juror" />
                   </div>
                   <div className="ca_txt">
-                    <h6>Join as a Juror</h6>
-                    <p>Become a juror, earn and bring justice to the world.</p>
+                    <h6>
+                      <FormattedMessage id="index.section-justice-revolution.subtitle-1" />
+                    </h6>
+                    <p>
+                      {" "}
+                      <FormattedMessage id="index.section-justice-revolution.paragraph-1" />
+                    </p>
                     <a href="/juror" className="ca_button ca_transparent_blue">
-                      Join as a Juror
+                      <FormattedMessage id="index.section-justice-revolution.button-1" />
                     </a>
                   </div>
                 </div>
@@ -550,16 +613,18 @@ class RootIndex extends React.Component {
                     <img src="/img/homepage/join2.png" alt="Become a Partner" />
                   </div>
                   <div className="ca_txt">
-                    <h6>Become a Partner</h6>
+                    <h6>
+                      {" "}
+                      <FormattedMessage id="index.section-justice-revolution.subtitle-2" />
+                    </h6>
                     <p>
-                      Integrate Kleros powerful dispute resolution technology in
-                      your platform. For free.
+                      <FormattedMessage id="index.section-justice-revolution.paragraph-2" />
                     </p>
                     <a
                       href="/partner"
                       className="ca_button ca_transparent_blue"
                     >
-                      Become a Partner
+                      <FormattedMessage id="index.section-justice-revolution.button-2" />
                     </a>
                   </div>
                 </div>
@@ -572,12 +637,12 @@ class RootIndex extends React.Component {
               <div className="row">
                 <div className="col-12 col-md-2" />
                 <div className="col-12 col-md-8">
-                  <h2 className="ca_underlined">Our Partners</h2>
+                  <h2 className="ca_underlined">
+                    {" "}
+                    <FormattedMessage id="index.section-partners.title" />
+                  </h2>
                   <h6>
-                    Collaboration makes Kleros. We can integrate with your
-                    platform securely and at no cost. If this sounds like
-                    something you could use in your blockchain project, just
-                    ask.
+                    <FormattedMessage id="index.section-partners.subtitle" />
                   </h6>
                   <div className="ca_logos">
                     <a href="https://innovation.thomsonreuters.com/en/labs/incubator.html">
@@ -628,31 +693,39 @@ class RootIndex extends React.Component {
               <div className="row">
                 <div className="col-12 col-md-2" />
                 <div className="col-12 col-md-8">
-                  <h2 className="ca_underlined">Get in touch</h2>
+                  <h2 className="ca_underlined">
+                    {" "}
+                    <FormattedMessage id="index.section-get-in-touch.title" />
+                  </h2>
                   <h6>
                     <p>
-                      Looking to find out more? We’re open to all proposals,
-                      suggestions and requests.
+                      <FormattedMessage id="index.section-get-in-touch.subtitle-1" />
                     </p>
                     <p>
-                      Message us via{" "}
-                      <a
-                        href="https://t.me/kleros"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Telegram
-                      </a>{" "}
-                      or{" "}
-                      <a
-                        href="mailto:contact@kleros.io"
-                        title="contact@kleros.io"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        contact@kleros.io
-                      </a>
-                      .
+                      <FormattedMessage
+                        id="index.section-get-in-touch.subtitle-2"
+                        values={{
+                          telegram: children => (
+                            <a
+                              href="https://t.me/kleros"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {children}
+                            </a>
+                          ),
+                          email: children => (
+                            <a
+                              href="mailto:contact@kleros.io"
+                              title="contact@kleros.io"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {children}
+                            </a>
+                          )
+                        }}
+                      />
                     </p>
                   </h6>
                 </div>
@@ -682,7 +755,7 @@ class RootIndex extends React.Component {
   }
 }
 
-export default RootIndex;
+export default injectIntl(RootIndex);
 
 export const pageQuery = graphql`
   query homeQuery {

@@ -1,15 +1,16 @@
 import React from "react";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 import Dropdown from "./dropdown";
 
-export default function(menu) {
+export default injectIntl(function(menu) {
   return (
     <header className="ca_header">
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-2">
             <a href="/" className="ca_logo">
-              <img src="img/logo-s.svg" alt="Kleros" />
+              <img src="/img/logo-s.svg" alt="Kleros" />
             </a>
           </div>
           <nav className="col-6 col-md-10">
@@ -21,13 +22,13 @@ export default function(menu) {
             <ul>
               <Dropdown
                 data={{
-                  text: "One Pager",
+                  text: <FormattedMessage id="header.button-one-pager" />,
                   dropdownOptions: [{ text: "English", url: "onepager_en.pdf" }]
                 }}
               />
               <Dropdown
                 data={{
-                  text: "White Paper",
+                  text: <FormattedMessage id="header.button-white-paper" />,
                   dropdownOptions: [
                     { text: "English", url: "whitepaper_en.pdf" },
                     {
@@ -39,7 +40,7 @@ export default function(menu) {
               />
               <Dropdown
                 data={{
-                  text: "DApps",
+                  text: <FormattedMessage id="header.button-dapps" />,
                   dropdownOptions: [
                     {
                       text: "Kleros Court",
@@ -66,7 +67,7 @@ export default function(menu) {
 
               <Dropdown
                 data={{
-                  text: "Use Cases",
+                  text: <FormattedMessage id="header.button-use-cases" />,
                   dropdownOptions: [
                     { text: "Escrow", url: "/escrow" },
                     {
@@ -82,18 +83,30 @@ export default function(menu) {
               />
               <li key={4}>
                 <a href="https://blog.kleros.io" className="hamburger-a">
-                  Blog
+                  <FormattedMessage id="header.button-blog" />
                 </a>
               </li>
               <li key={7}>
                 <a href="/about" className="hamburger-a">
-                  About
+                  <FormattedMessage id="header.button-about" />
                 </a>
               </li>
+              <Dropdown
+                data={{
+                  text: "Language",
+                  dropdownOptions: [
+                    { text: "English", url: "/en" },
+                    {
+                      text: "한국어",
+                      url: "/ko"
+                    }
+                  ]
+                }}
+              />
             </ul>
           </nav>
         </div>
       </div>
     </header>
   );
-}
+});

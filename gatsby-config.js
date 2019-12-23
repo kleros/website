@@ -22,6 +22,19 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   plugins: [
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `ko`],
+        // language file path
+        defaultLanguage: `en`,
+        // option to redirect to `/en` when connecting `/`
+        redirect: true
+      }
+    },
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
