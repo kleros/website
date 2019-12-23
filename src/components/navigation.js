@@ -19,17 +19,6 @@ export default function(menu) {
               <span></span>
             </a>
             <ul>
-              <li key={1}>
-                <a href="/juror" className="hamburger-a">
-                  Become a Juror
-                </a>
-              </li>
-              <li key={2}>
-                <a href="/partner" className="hamburger-a">
-                  Become a Partner
-                </a>
-              </li>
-
               <Dropdown
                 data={{
                   text: "DApps",
@@ -51,7 +40,8 @@ export default function(menu) {
                       text: "CryptoUnlocked",
                       url: "https://cryptounlocked.wetrust.io"
                     },
-                    { text: "Realitio", url: "https://realitio.github.io" }
+                    { text: "Realitio", url: "https://realitio.github.io" },
+                    { text: "Kleroscan", url: "http://kleroscan.com/" }
                   ]
                 }}
               />
