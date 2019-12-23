@@ -21,6 +21,24 @@ export default function(menu) {
             <ul>
               <Dropdown
                 data={{
+                  text: "One Pager",
+                  dropdownOptions: [{ text: "English", url: "onepager_en.pdf" }]
+                }}
+              />
+              <Dropdown
+                data={{
+                  text: "White Paper",
+                  dropdownOptions: [
+                    { text: "English", url: "whitepaper_en.pdf" },
+                    {
+                      text: "Español",
+                      url: "whitepaper_es.pdf"
+                    }
+                  ]
+                }}
+              />
+              <Dropdown
+                data={{
                   text: "DApps",
                   dropdownOptions: [
                     {
@@ -45,23 +63,7 @@ export default function(menu) {
                   ]
                 }}
               />
-              <li key={4}>
-                <a href="https://blog.kleros.io" className="hamburger-a">
-                  Blog
-                </a>
-              </li>
-              <Dropdown
-                data={{
-                  text: "White Paper",
-                  dropdownOptions: [
-                    { text: "English", url: "whitepaper_en.pdf" },
-                    {
-                      text: "Español",
-                      url: "whitepaper_es.pdf"
-                    }
-                  ]
-                }}
-              />
+
               <Dropdown
                 data={{
                   text: "Use Cases",
@@ -78,6 +80,11 @@ export default function(menu) {
                   ]
                 }}
               />
+              <li key={4}>
+                <a href="https://blog.kleros.io" className="hamburger-a">
+                  Blog
+                </a>
+              </li>
               <li key={7}>
                 <a href="/about" className="hamburger-a">
                   About
