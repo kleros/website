@@ -314,24 +314,24 @@
       "subtitle-1": "Earn",
       "paragraph-1": "Earn arbitration fees each time you rule on a dispute.",
       "subtitle-2": "Help",
-      "paragraph-1": "Help others solve their disputes. Be a force for good.",
+      "paragraph-2": "Help others solve their disputes. Be a force for good.",
       "subtitle-3": "Learn",
-      "paragraph-1": "Learn new skills while you adjudicate cases.",
+      "paragraph-3": "Learn new skills while you adjudicate cases.",
       "subtitle-4": "Choose",
-      "paragraph-1": "Rule one case a month or many cases a day. You choose how much to work.",
+      "paragraph-4": "Rule one case a month or many cases a day. You choose how much to work.",
       "subtitle-5": "Open",
-      "paragraph-1": "No special requirements. Anyone can be a juror.",
+      "paragraph-5": "No special requirements. Anyone can be a juror.",
       "subtitle-6": "Innovate",
-      "paragraph-1": "Start today and take part in the future of justice!"
+      "paragraph-6": "Start today and take part in the future of justice!"
     },
-    "how-section": {
+    "section-how": {
       "title": "How It Works",
       "illustration-1": "When a dispute starts, the smart contract automatically draws a predefined number of jurors.",
       "illustration-2": "If you are drawn, you will arbitrate on the case.",
       "illustration-3": "If you rule correctly, you’ll receive payment in ETH for your work.",
       "illustration-4": "If you are in the majority ruling, you will also receive some PNK."
     },
-    "start-section": {
+    "section-start": {
       "title": "Start as a Juror Now!",
       "subtitle-1": "Follow this tutorial to buy PNK.",
       "button-1": "Go to Tutorial",
@@ -340,7 +340,7 @@
       "subtitle-3": "Wait to be drawn and start ruling!",
       "button-3": "Kleros Court Cases"
     },
-    "join-section": {
+    "section-join": {
       "title": "Join as a Juror Now!",
       "button-primary": "Start Now"
     }
