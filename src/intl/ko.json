@@ -311,13 +311,13 @@
 
   "cooperative": {
     "title": "클레로스 협동조합에 참여해보세요",
-    "paragraph": "클레로스 프로토콜의 개발은 프랑스에 설립된 사회공익협동조합인(Société Coopérative d’Intérêt Collectif, SCIC) 클레로스 협동조합과 함께 합니다. 클레로스 협동조합의 법률 구조에 관해서 더 알아보고 싶으시다면 이 글을 읽어주시기 바랍니다. 협동조합의 일원이 되고 싶으시다면, 다음의 단계를 밟아주세요. 협동조합의 다른 일원들의 승인을 통해 신청서가 통과될 것입니다.",
+    "paragraph": "",
 
     "section-procedure": {
       "illustration-1": "가입 양식을 다운로드 해주세요.",
       "button-1": "다운로드",
       "illustration-2": "양식을 프린트 하고; 채워 넣은 후(마지막 부분의 자필 문구 작성을 잊지마세요!); 서명한 뒤; 스캔 합니다;",
-      "illustration-3": "스캔된 파일을 여러분의 여권 혹은 국가 신분증의 디지털 사본과 여러분 몫의 보증금을 예치한 TxID를 함께 첨부해 lola@kleros.io로 보냅니다.",
+      "illustration-3": "스캔된 파일을 여러분의 여권 혹은 국가 신분증의 디지털 사본과 여러분 몫의 보증금을 예치한 TxID를 함께 첨부해 <email>lola@kleros.io</email> 로 보냅니다.",
       "button-primary": "양식 다운로드",
       "button-secondary": "협동조합 규칙"
     }
