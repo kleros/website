@@ -203,39 +203,39 @@
     }
   },
   "curated-list": {
-    "title": "Decentralized Curated Lists for Just about Anything",
-    "subtitle": "Empower the community to organize information in your platform...",
+    "title": "Децентрализованные Курированные Списки для Всего",
+    "subtitle": "Разширьте права и возможности сообщества организовывать информацию на вашей платформе ...",
     "section-why-curated-lists": {
-      "title": "Why Curated Lists?",
-      "paragraph": "Decentralized platforms need a way to decide what content to display. What tokens to list on an exchange? Which comments to censor on a social media platform? Whoever controls the list has the power. True decentralization requires empowering the community."
+      "title": "Почему Курированные Списки?",
+      "paragraph": "Децентрализованным платформам нужен способ решить, какой контент отображать. Какие токены перечислять на бирже? К каким комментариям применять цензуру в социальной сети? Тот, кто контролирует список, обладает властью. Подлинная децентрализация требует расширения прав и возможностей сообщества."
     },
     "section-why-ours": {
-      "title": "Why Use Our Curated Lists?",
-      "paragraph": "Kleros offers a solution for numerous decentralized platforms. Use Kleros' system to seamlessly curate your lists.",
-      "button-primary": "Kleros Token Curated List"
+      "title": "Почему Использовать Наши Курированные Списки?",
+      "paragraph": "Kleros предлогает решение для многочисленные децентрализованных платформ. Используйте систему Kleros для лёгкого курирования ваших списков.",
+      "button-primary": "Курированный Лист Kleros Token"
     },
     "section-trustless": {
-      "title": "Trustless Curated Lists",
-      "subtitle-1": "How Does it Work?",
-      "paragraph-1": "You define the guidelines required for what can and can't be accepted on the list. Users send items. Other users challenge bad submissions. Kleros decides.",
-      "subtitle-2": "How are Disputes resolved?",
-      "paragraph-2": "Jurors, review the evidence provided by both submitter and challenger, cast their vote and the outcome of the dispute is enforce automatically.",
-      "subtitle-3": "Why it matter?",
-      "paragraph-3": "In the decentralized era, a larger number of platforms require decentralized list curation. They range from decentralizede e-commerce, social media, finance, insurance and many other fields looking to curate data in a permissionless way.",
-      "illustration-1": "A decentralized e-commerce platform has a policy of not accepting dangerous items.",
-      "illustration-2": "A user submits a flamethrower.",
-      "illustration-3": "Another user challenges the submission for being a dangerous item.",
-      "illustration-4": "The flamethrower goes to trial in Kleros platform.",
-      "illustration-5": "Jurors rule for the challenger. The flamethrower is rejected from the list.",
+      "title": "'Не Требующее Доверия' Курированные Листы",
+      "subtitle-1": "Как Это Работает?",
+      "paragraph-1": "Вы устанавливаете руководство касательно того, что может и что не может быть принято в список. Пользователи отпрвляют материалы. Другие пользователи оспаривают предлагаемые контенты. Kleros выносит решение.",
+      "subtitle-2": "Как же Споры Решаются?",
+      "paragraph-2": "Присяжные заседатели просматривают доказательства, представленные как заявителем, так и оспаривающей стороной, отдают свой голос, и исход спора вступает в силу автоматически.",
+      "subtitle-3": "Почему Это Важно?",
+      "paragraph-3": "В эпоху децентрализации большее количество платформ требует децентрализованного курирования списком. Они варьируются от децентрализованной электронной коммерции, социальных сетей, финансов, страхования и многих других областей, стремящихся курировать данные без разрешения.",
+      "illustration-1": "На децентрализованной платформе электронной коммерции действует политика, запрещающая приём опасных материалов.",
+      "illustration-2": "Пользователь отправляет огнемёт",
+      "illustration-3": "Другой пользователь утверждает представленный материал как опасным",
+      "illustration-4": "Для огнемёта заводится судебный процесс на платформе Kleros.",
+      "illustration-5": "Присяжные голосуют за возражающую сторону. Предложение по включению огнемёта в список отклоняется.",
       "section-contact-us": {
-        "title": "Contact Us",
-        "subtitle": "Implement Kleros list curation in your platform. Contact us now!",
-        "first-name": "First Name",
-        "last-name": "Last Name",
-        "company-email": "Company Email",
-        "company-name": "Company Name",
-        "message": "Write your message",
-        "button-primary": "Send"
+        "title": "Связаться с Нами",
+        "subtitle": "Осуществите курирование списка Kleros на своей платформе. Свяжитесь с нами сейчас!",
+        "first-name": "Имя",
+        "last-name": "Фамилия",
+        "company-email": "Электронной Адресс Компании",
+        "company-name": "Название Компании",
+        "message": "Введите ваше сообщение",
+        "button-primary": "Отправить"
       }
     }
   },
