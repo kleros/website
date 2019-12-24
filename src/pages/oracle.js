@@ -113,13 +113,17 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{contentMain[0].title}</h1>
+                <h1>
+                  {" "}
+                  <FormattedMessage id="oracle.title" />
+                </h1>
                 <div
                   style={{ color: "#fff", fontSize: "2em", paddingTop: "2em" }}
-                  dangerouslySetInnerHTML={{
-                    __html: contentMain[0].data.childMarkdownRemark.html
-                  }}
-                ></div>
+                >
+                  <p>
+                    <FormattedMessage id="oracle.subtitle" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-6">
                 <img
@@ -136,13 +140,15 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-4">
-                <h2>{descriptionTitle}</h2>
+                <h2>
+                  <FormattedMessage id="oracle.section-problem.title" />
+                </h2>
                 <div style={{ color: "#fff" }}>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: description.childMarkdownRemark.html
-                    }}
-                  ></div>
+                  <div>
+                    <p>
+                      <FormattedMessage id="oracle.section-problem.paragraph" />
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="col-12 col-md-1"></div>
@@ -167,13 +173,14 @@ class RootIndex extends React.Component {
                 />
               </div>
               <div className="col-12 col-md-5">
-                <h2>{whyTitle}</h2>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: why.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h2>
+                  <FormattedMessage id="oracle.section-why-ours.title" />
+                </h2>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    <FormattedMessage id="oracle.section-why-ours.paragraph" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-1"></div>
             </div>
@@ -184,8 +191,9 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
-                <h2>{trustlessTitle}</h2>
-                <h6>{trustlessSubtitle}</h6>
+                <h2>
+                  <FormattedMessage id="oracle.section-trustless.title" />
+                </h2>
                 <img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
               </div>
               <div className="col-12 col-md-2"></div>
@@ -193,13 +201,28 @@ class RootIndex extends React.Component {
             <div className="row ca_left">
               <div className="col-12 col-md-1 one"></div>
               <div className="col-12 col-md-5 two">
-                <h6>{howWorkTitle}</h6>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: howWork.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h6>
+                  <FormattedMessage id="oracle.section-trustless.subtitle-1" />
+                </h6>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    {" "}
+                    <FormattedMessage
+                      id="oracle.section-trustless.paragraph-1"
+                      values={{
+                        anchor: children => (
+                          <a
+                            href="https://medium.com/kleros/the-oracle-of-the-kleroterion-c8eac7c10401"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-5 three">
                 <img src={contentMain[0].mediaData[4].file.url} alt="Kleros" />
@@ -210,13 +233,14 @@ class RootIndex extends React.Component {
             <div className="row ca_right">
               <div className="col-12 col-md-1 one"></div>
               <div className="col-12 col-md-5 two">
-                <h6>{whyMattersTitle}</h6>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: whyMatters.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h6>
+                  <FormattedMessage id="oracle.section-trustless.subtitle-2" />
+                </h6>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    <FormattedMessage id="oracle.section-trustless.paragraph-2" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-5 three">
                 <img src={contentMain[0].mediaData[5].file.url} alt="Kleros" />
@@ -230,12 +254,41 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-8">
-                <h2>{contactUsTitle}</h2>
-                <h6
-                  dangerouslySetInnerHTML={{
-                    __html: contactUs.childMarkdownRemark.html
-                  }}
-                ></h6>
+                <h2>
+                  {" "}
+                  <FormattedMessage id="oracle.section-contact-us.title" />
+                </h2>
+                <h6>
+                  {" "}
+                  <FormattedMessage id="oracle.section-contact-us.subtitle-1" />
+                </h6>
+                <h6>
+                  {" "}
+                  <FormattedMessage
+                    id="oracle.section-contact-us.subtitle-2"
+                    values={{
+                      telegram: children => (
+                        <a
+                          href="https://t.me/kleros"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {children}
+                        </a>
+                      ),
+                      email: children => (
+                        <a
+                          href="mailto:contact@kleros.io"
+                          title="contact@kleros.io"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {children}
+                        </a>
+                      )
+                    }}
+                  />
+                </h6>
                 <div className="ca_form">
                   <form
                     name="oracle"
@@ -247,7 +300,10 @@ class RootIndex extends React.Component {
                     <input type="hidden" name="form-name" value="oracle" />
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_name">First Name</label>
+                        <label htmlFor="ca_name">
+                          {" "}
+                          <FormattedMessage id="oracle.section-contact-us.first-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_name"
@@ -257,7 +313,10 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_lname">Last Name</label>
+                        <label htmlFor="ca_lname">
+                          {" "}
+                          <FormattedMessage id="oracle.section-contact-us.last-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_lname"
@@ -269,7 +328,10 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_email">Company Email</label>
+                        <label htmlFor="ca_email">
+                          {" "}
+                          <FormattedMessage id="oracle.section-contact-us.company-email" />
+                        </label>
                         <input
                           type="email"
                           id="ca_email"
@@ -279,7 +341,10 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_company">Company Name</label>
+                        <label htmlFor="ca_company">
+                          {" "}
+                          <FormattedMessage id="oracle.section-contact-us.company-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_company"
@@ -291,7 +356,10 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_full">
-                        <label htmlFor="ca_text">Write your message</label>
+                        <label htmlFor="ca_text">
+                          {" "}
+                          <FormattedMessage id="oracle.section-contact-us.message" />
+                        </label>
                         <textarea
                           id="ca_text"
                           name="message"
@@ -303,7 +371,9 @@ class RootIndex extends React.Component {
                     <div className="ca_line">
                       <input
                         type="submit"
-                        value="Send"
+                        value={this.props.intl.formatMessage({
+                          id: "oracle.section-contact-us.button-primary"
+                        })}
                         className="ca_button ca_solid_blue"
                       />
                     </div>
