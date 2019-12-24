@@ -12,12 +12,92 @@ class RootIndex extends React.Component {
     const data = get(this, "props.data.allContentfulJurorPage.edges")[0].node;
     const top = data.topBlock;
     const benefits = data.benefitsBlock;
-    const benefitsCards = data.benefitsBlockCards;
+    const benefitsCards = [
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-1"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-1"
+        }),
+        image: { file: { url: "/img/juror/benefit-1.png" } }
+      },
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-2"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-2"
+        }),
+        image: { file: { url: "/img/juror/benefit-2.png" } }
+      },
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-3"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-3"
+        }),
+        image: { file: { url: "/img/juror/benefit-3.png" } }
+      },
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-4"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-4"
+        }),
+        image: { file: { url: "/img/juror/benefit-4.png" } }
+      },
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-5"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-5"
+        }),
+        image: { file: { url: "/img/juror/benefit-5.png" } }
+      },
+      {
+        title: this.props.intl.formatMessage({
+          id: "juror.section-benefits.subtitle-6"
+        }),
+        text: this.props.intl.formatMessage({
+          id: "juror.section-benefits.paragraph-6"
+        }),
+        image: { file: { url: "/img/juror/benefit-6.png" } }
+      }
+    ];
+    const howCards = [
+      {
+        text: this.props.intl.formatMessage({
+          id: "juror.section-how.illustration-1"
+        }),
+        image: { file: { url: "/img/juror/how-1.png" } }
+      },
+      {
+        text: this.props.intl.formatMessage({
+          id: "juror.section-how.illustration-2"
+        }),
+        image: { file: { url: "/img/juror/how-2.png" } }
+      },
+      {
+        text: this.props.intl.formatMessage({
+          id: "juror.section-how.illustration-3"
+        }),
+        image: { file: { url: "/img/juror/how-3.png" } }
+      },
+      {
+        text: this.props.intl.formatMessage({
+          id: "juror.section-how.illustration-4"
+        }),
+        image: { file: { url: "/img/juror/how-4.png" } }
+      }
+    ];
     const how = data.howBlock;
-    const howCards = data.howBlockCards;
     const getStarted = data.getStartedBlock;
     const beJuror = data.beJurorBlock;
-
+    console.log(howCards);
     return (
       <Template location={this.props.location}>
         <Helmet>
@@ -35,23 +115,19 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-3"></div>
               <div className="col-12 col-md-6">
-                <h1>{theMeta(top, "Juror > Top > Title").data.data}</h1>
-                <h6>{theMeta(top, "Juror > Top > Sub Title").data.data}</h6>
+                <h1>
+                  <FormattedMessage id="juror.title" />
+                </h1>
+                <h6>
+                  <FormattedMessage id="juror.subtitle" />
+                </h6>
                 <a
-                  href={
-                    theMeta(beJuror, "Juror > Be Juror > Button")
-                      .referenceData[0].url
-                  }
-                  target={
-                    "_" +
-                    theMeta(top, "Juror > Top > Button").referenceData[0].target
-                  }
+                  href="https://blog.kleros.io/become-a-juror-blockchain-dispute-resolution-on-ethereum/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="ca_button ca_solid_blue"
                 >
-                  {
-                    theMeta(beJuror, "Juror > Be Juror > Button")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="juror.button-primary" />
                 </a>
               </div>
               <div className="col-12 col-md-3"></div>
@@ -63,7 +139,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {theMeta(benefits, "Juror > Benefits > Title").data.data}
+                  <FormattedMessage id="juror.section-benefits.title" />
                 </h2>
               </div>
             </div>
@@ -81,14 +157,11 @@ class RootIndex extends React.Component {
                           return (
                             <div key={num} className="col-12 col-md-4">
                               <div className="ca_img">
-                                <img
-                                  src={el.image.file.url}
-                                  alt={el.title.title}
-                                />
+                                <img src={el.image.file.url} alt={el.title} />
                               </div>
                               <div className="ca_txt">
-                                <h6>{el.title.title}</h6>
-                                <p>{el.text.text}</p>
+                                <h6>{el.title}</h6>
+                                <p>{el.text}</p>
                               </div>
                             </div>
                           );
@@ -96,14 +169,11 @@ class RootIndex extends React.Component {
                           return (
                             <div key={num} className="col-12 col-md-3">
                               <div className="ca_img">
-                                <img
-                                  src={el.image.file.url}
-                                  alt={el.title.title}
-                                />
+                                <img src={el.image.file.url} alt={el.title} />
                               </div>
                               <div className="ca_txt">
-                                <h6>{el.title.title}</h6>
-                                <p>{el.text.text}</p>
+                                <h6>{el.title}</h6>
+                                <p>{el.text}</p>
                               </div>
                             </div>
                           );
@@ -120,7 +190,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {theMeta(how, "Juror > How > Title").data.data}
+                  <FormattedMessage id="juror.section-how.title" />
                 </h2>
               </div>
             </div>
@@ -137,7 +207,7 @@ class RootIndex extends React.Component {
                   />
                 </div>
                 <div className="col-12 col-md-4 ca_txt">
-                  <p>{el.text.text}</p>
+                  <p>{el.text}</p>
                 </div>
                 <div className="col-12 col-md-2"></div>
               </div>
@@ -149,7 +219,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {theMeta(getStarted, "Juror > Get Started > Title").data.data}
+                  <FormattedMessage id="juror.section-start.title" />
                 </h2>
               </div>
             </div>
@@ -157,35 +227,19 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-4 ca_txt">
                 <h6>
-                  {
-                    theMeta(getStarted, "Juror > Get Started > First > Title")
-                      .data.data
-                  }
+                  <FormattedMessage id="juror.section-start.subtitle-1" />
                 </h6>
                 <a
-                  href={
-                    theMeta(getStarted, "Juror > Get Started > First > Button")
-                      .referenceData[0].url
-                  }
-                  target={
-                    "_" +
-                    theMeta(getStarted, "Juror > Get Started > First > Button")
-                      .referenceData[0].target
-                  }
+                  href="https://blog.kleros.io/how-to-buy-pnk-on-bitfinex-exchange/"
+                  target="_blank"
                   className="ca_button ca_transparent_blue"
                 >
-                  {
-                    theMeta(getStarted, "Juror > Get Started > First > Button")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="juror.section-start.button-1" />
                 </a>
               </div>
               <div className="col-12 col-md-4 ca_img">
                 <img
-                  src={
-                    theMeta(getStarted, "Juror > Get Started > First > Image")
-                      .mediaData[0].file.url
-                  }
+                  src="/img/juror/buy-1.png"
                   alt={
                     theMeta(getStarted, "Juror > Get Started > First > Title")
                       .data.data
@@ -198,35 +252,19 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-4 ca_txt">
                 <h6>
-                  {
-                    theMeta(getStarted, "Juror > Get Started > Second > Title")
-                      .data.data
-                  }
+                  <FormattedMessage id="juror.section-start.subtitle-2" />
                 </h6>
                 <a
-                  href={
-                    theMeta(getStarted, "Juror > Get Started > Second > Button")
-                      .referenceData[0].url
-                  }
-                  target={
-                    "_" +
-                    theMeta(getStarted, "Juror > Get Started > Second > Button")
-                      .referenceData[0].target
-                  }
+                  href="https://court.kleros.io/courts"
+                  target="_blank"
                   className="ca_button ca_transparent_blue"
                 >
-                  {
-                    theMeta(getStarted, "Juror > Get Started > Second > Button")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="juror.section-start.button-2" />
                 </a>
               </div>
               <div className="col-12 col-md-4 ca_img">
                 <img
-                  src={
-                    theMeta(getStarted, "Juror > Get Started > Second > Image")
-                      .mediaData[0].file.url
-                  }
+                  src="/img/juror/buy-2.png"
                   alt={
                     theMeta(getStarted, "Juror > Get Started > Second > Title")
                       .data.data
@@ -239,35 +277,19 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-4 ca_txt">
                 <h6>
-                  {
-                    theMeta(getStarted, "Juror > Get Started > Third > Title")
-                      .data.data
-                  }
+                  <FormattedMessage id="juror.section-start.subtitle-3" />{" "}
                 </h6>
                 <a
-                  href={
-                    theMeta(getStarted, "Juror > Get Started > Third > Button")
-                      .referenceData[0].url
-                  }
-                  target={
-                    "_" +
-                    theMeta(getStarted, "Juror > Get Started > Third > Button")
-                      .referenceData[0].target
-                  }
+                  href="https://court.kleros.io/cases"
+                  target="_blank"
                   className="ca_button ca_transparent_blue"
                 >
-                  {
-                    theMeta(getStarted, "Juror > Get Started > Third > Button")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="juror.section-start.button-3" />{" "}
                 </a>
               </div>
               <div className="col-12 col-md-4 ca_img">
                 <img
-                  src={
-                    theMeta(getStarted, "Juror > Get Started > Third > Image")
-                      .mediaData[0].file.url
-                  }
+                  src="/img/juror/buy-3.png"
                   alt={
                     theMeta(getStarted, "Juror > Get Started > Third > Title")
                       .data.data
@@ -284,24 +306,14 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-10">
                 <h2 className="ca_underlined">
-                  {theMeta(beJuror, "Juror > Be Juror > Title").data.data}
+                  <FormattedMessage id="juror.section-join.title" />
                 </h2>
                 <a
-                  target={
-                    "_" +
-                    theMeta(beJuror, "Juror > Be Juror > Button")
-                      .referenceData[0].target
-                  }
-                  href={
-                    theMeta(beJuror, "Juror > Be Juror > Button")
-                      .referenceData[0].url
-                  }
+                  target="_blank"
+                  href="https://blog.kleros.io/become-a-juror-blockchain-dispute-resolution-on-ethereum/"
                   className="ca_button ca_solid_blue"
                 >
-                  {
-                    theMeta(beJuror, "Juror > Be Juror > Button")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="juror.section-join.button-primary" />
                 </a>
               </div>
               <div className="col-12 col-md-1"></div>
