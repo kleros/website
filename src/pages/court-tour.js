@@ -88,7 +88,10 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 ">
-                <h1>Kleros Court Tour</h1>
+                <h1>
+                  {" "}
+                  <FormattedMessage id="court-tour.title" />
+                </h1>
                 <div
                   style={{ color: "#fff", fontSize: "2em", paddingTop: "2em" }}
                 />
@@ -122,8 +125,7 @@ class RootIndex extends React.Component {
             <div className="row ca_left">
               <div className="col-12 col-md-12  text-center">
                 <p>
-                  Liked the tour and want to test the real product, but never
-                  used crypto? Not to worry, click on Crypto Beginner’s Guide.
+                  <FormattedMessage id="court-tour.paragraph" />
                 </p>
               </div>
             </div>
@@ -133,7 +135,7 @@ class RootIndex extends React.Component {
                   href="https://metamask.zendesk.com"
                   className="ca_button ca_solid_blue"
                 >
-                  Crypto Beginner's Guide
+                  <FormattedMessage id="court-tour.button-primary" />
                 </a>
               </div>
             </div>
