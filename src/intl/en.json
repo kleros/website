@@ -146,14 +146,15 @@
   },
   "media": {
     "title": "Media",
-    "subtitle": "For media enquiries, send an email to contact@kleros.io.",
+    "subtitle": "For media enquiries, send an email to <email>contact@kleros.io<email>.",
+    "categories": "Categories",
     "section-media": {
       "featured": "Featured",
       "press": "Press",
       "events": "Events",
       "articles": "Articles"
     },
-    "book-section": {
+    "section-book": {
       "title": "Download Kleros book today!",
       "subtitle": "Read `Dispute Revolution` for a deep dive into the fascinating field of decentralized justice.",
       "button-primary": "Download Whitepaper",

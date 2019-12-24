@@ -166,15 +166,16 @@
 
   "media": {
     "title": "미디어",
-    "subtitle": "미디어 문의의 경우, contactk@kleros.io로 연락 주시기 바랍니다.",
+    "subtitle": "미디어 문의의 경우, <email>contact@kleros.io</email> 로 연락 주시기 바랍니다.",
+    "categories": "카테고리",
     "section-media": {
       "featured": "Featured",
-      "press": "press",
+      "press": "Press",
       "events": "Events",
       "articles": "Articles"
     },
 
-    "book-section": {
+    "section-book": {
       "title": "클레로스 책을 다운로드 해보세요!",
       "subtitle": "Read `분쟁 혁명(Dispute Revolution)`을 읽고 매력적인 탈중앙 재판의 영역에 푹 빠져보세요.",
       "button-primary": "백서 다운로드",
