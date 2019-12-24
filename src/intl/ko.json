@@ -45,7 +45,7 @@
       "subtitle-2": "클레로스만의 비밀소스가 뭔가요??",
       "paragraph-2": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
       "subtitle-3": "왜 클레로스의 토큰(PNK)이 필요한가요?",
-      "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>"
+      "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
     },
 
     "section-how-does-it-work": {
@@ -169,10 +169,10 @@
     "subtitle": "미디어 문의의 경우, <email>contact@kleros.io</email> 로 연락 주시기 바랍니다.",
     "categories": "카테고리",
     "section-media": {
-      "featured": "Featured",
-      "press": "Press",
-      "events": "Events",
-      "articles": "Articles"
+      "featured": "",
+      "press": "",
+      "events": "",
+      "articles": ""
     },
 
     "section-book": {
@@ -299,7 +299,8 @@
 
     "section-contact-us": {
       "title": "Contact Us",
-      "subtitle": "더 많은 것들을 알아보고 싶으신가요? 저희는 모든 제안, 제의, 그리고 요청들에 있어서 항상 열려있습니다. 저희의 텔레그램이나 contact@kleros.io를 통해서 메시지를 보내주세요!",
+      "subtitle-1": "",
+      "subtitle-2": "",
       "first-name": "이름(First Name)",
       "last-name": "성(Last Name)",
       "company-email": "회사 이메일(Company Email)",

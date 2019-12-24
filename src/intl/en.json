@@ -162,7 +162,8 @@
     }
   },
   "assets": {
-    "title": "Kleros Brand Assets"
+    "title": "Kleros Brand Assets",
+    "categories": "Categories"
   },
   "escrow": {
     "title": "Blockchain Escrow Service",
