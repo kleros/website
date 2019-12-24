@@ -21,57 +21,57 @@
     "button-forum": "Перейти на Форум",
 
     "section-example-dispute": {
-      "title": "A Common Dispute in the New Economy",
-      "paragraph-1": "Alice hires Bob to build her a website.",
-      "paragraph-2": "Alice pays Bob in advance.",
-      "paragraph-3": "The site takes Bob longer than expected.",
-      "paragraph-4": "When he finally delivers the site, Alice is not satisfied.",
-      "paragraph-5": "A debate starts. Alice requests a refund. Bob claims the specifications weren't clear.",
-      "paragraph-6": "Alice and Bob are both left at a loss with no clear outcome of their dispute",
-      "button-primary": "Watch Video"
+      "title": "Общий Диспут в Новой Экономике",
+      "paragraph-1": "Алиса нанимает Боба для создания веб-сайта.",
+      "paragraph-2": "Алиса производить авансовый платёж.",
+      "paragraph-3": "Боб не укладывается в обещанные сроки.",
+      "paragraph-4": "Алиса недовольна даже после получения заказа.",
+      "paragraph-5": "Обсуждение вопроса начинается. Алиса просит вернуть деньги. Боб утверждает, что технические характеристики не были ясны.",
+      "paragraph-6": "Алиса и Боб остались оба в замешательстве без четкого исхода их спора",
+      "button-rpimary": "Смотреть Видео"
     },
     "section-internet-economy": {
-      "title": "The Internet Economy",
-      "subtitle": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      "title": "Интернет Экономика",
+      "subtitle": "Поскольку наша жизнь переходит на глобальные онлайн-платформы, возникают споры в разных областях, которые не могут быть решены с помощью традиционных судебных систем."
     },
     "section-why-kleros": {
-      "title": "Why Kleros?",
-      "subtitle-1": "Peer-to-Peer Justice",
-      "paragraph-1": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
-      "subtitle-2": "What's the Secret Sauce?",
-      "paragraph-2": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
-      "subtitle-3": "Why Does Kleros Need a Token?",
-      "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
+      "title": "Почему Kleros?",
+      "subtitle-1": "Одноранговое Правосудие",
+      "paragraph-1": "Одноранговая платформа, которая использует краудсорсинг и технологию блокчейн, чтобы передать процесс разрешения споров в руки сообщества.",
+      "subtitle-2": "Чем же Является Тайный Ингридиент?",
+      "paragraph-2": "Kleros использует передовые методы криптоэкономики в сочетании с мировым сообществом присяжных для разрешения споров быстрым, доступным и открытым способом. Читать <anchor>white paper</anchor>.",
+      "subtitle-3": "Почему Kleros'у Нужен Токен?",
+      "paragraph-3": "Токен Pinakion (PNK) защищает систему от атак, а также предоставляет присяжным финансовый стимул для последовательного разрешения дел. Узнать больше <anchor>здесь</anchor>."
     },
     "section-how-does-it-work": {
-      "title": " How Does It Work?",
-      "subtitle-1": "Contract",
-      "paragraph-1": "Alice hires Bob to build a website for her. They agree to use Kleros should a dispute occur.",
-      "subtitle-2": "Dispute",
-      "paragraph-2": "Alice is not satisfied with Bob's work and raises a dispute.",
-      "subtitle-3": "Selection",
-      "paragraph-3": "Users are randomly selected as jurors for the dispute.",
-      "subtitle-4": "Enforcement",
-      "paragraph-4": "Jurors evaluate the evidence and vote Alice as the winner. She is reimbursed and honest jurors are compensated for their work.",
-      "button-primary": "Watch Video"
+      "title": " Как Это Работает?",
+      "subtitle-1": "Контракт",
+      "paragraph-1": "Алиса нанимает Боба для создания веб-сайта. Они соглашаются использовать Kleros в случае возникновения спора.",
+      "subtitle-2": "Спор",
+      "paragraph-2": "Алиса не удовлетворена работой Боба и поднимает спор.",
+      "subtitle-3": "Отбор",
+      "paragraph-3": "Пользователи случайным образом выбираются в качестве присяжных для спора.",
+      "subtitle-4": "Правоприменение",
+      "paragraph-4": "Присяжные оценивают показания и голосуют за Алису как за победителя. Она получает компенсацию, а честные присяжные получают вознаграждение за свою работу.",
+      "button-primary": "Смотреть Видео"
     },
     "section-justice-revolution": {
-      "title": "Join The Justice Revolution",
-      "subtitle-1": "Join as a Juror",
-      "paragraph-1": "Become a juror, earn and bring justice to the world.",
-      "button-1": "Join as a Juror",
-      "subtitle-2": "Become a Partner",
-      "paragraph-2": "Integrate Kleros powerful dispute resolution technology in your platform. For free.",
-      "button-2": "Become a Partner"
+      "title": "Присоединиться к Революции Правосудия",
+      "subtitle-1": "Вступить как Присяжный",
+      "paragraph-1": "Станьте присяжным, заработайте и принесите справедливость миру.",
+      "button-1": "Вступить как Присяжный",
+      "subtitle-2": "Стать Партнёром",
+      "paragraph-2": "Интегрируйте мощную технологию разрешения споров Kleros в свою платформу. Бесплатно.",
+      "button-2": "Стать Партнёром"
     },
     "section-partners": {
-      "title": "Our Partners",
-      "subtitle": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
+      "title": "Наши Партнёры",
+      "subtitle": "Kleros основано на сотрудничестве. Мы можем интегрировать с вашей платформой, надежно и без каких-либо затрат. Если это звучит как то, что вы могли бы использовать в своем проекте блокчейна, просто спросите."
     },
     "section-get-in-touch": {
-      "title": "Get in touch",
-      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
-      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>."
+      "title": "Связаться",
+      "subtitle-1": "Хотите узнать больше? Мы открыты для всех предложений, идей и запросов.",
+      "subtitle-2": "Напишите нам через <telegram>Telegram</telegram> или <email>contact@kleros.io</email>."
     }
   },
   "about": {
