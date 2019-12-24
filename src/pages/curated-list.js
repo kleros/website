@@ -119,17 +119,18 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{contentMain[0].title}</h1>
+                <h1>
+                  <FormattedMessage id="curated-list.title" />
+                </h1>
                 <div
                   style={{ color: "#fff", fontSize: "2em", paddingTop: "2em" }}
-                  dangerouslySetInnerHTML={{
-                    __html: contentMain[0].data.childMarkdownRemark.html
-                  }}
-                ></div>
+                >
+                  <FormattedMessage id="curated-list.subtitle" />
+                </div>
               </div>
               <div className="col-12 col-md-6">
                 <img
-                  src={contentMain[0].mediaData[0].file.url}
+                  src="/img/curated-list/TCR1.png"
                   className="illustration_escrow"
                   alt="Curated List"
                 />
@@ -142,13 +143,15 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-4">
-                <h2>{descriptionTitle}</h2>
+                <h2>
+                  <FormattedMessage id="curated-list.section-why-curated-lists.title" />
+                </h2>
                 <div style={{ color: "#fff" }}>
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: description.childMarkdownRemark.html
-                    }}
-                  ></div>
+                  <div>
+                    <p>
+                      <FormattedMessage id="curated-list.section-why-curated-lists.paragraph" />
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="col-12 col-md-1"></div>
@@ -173,20 +176,21 @@ class RootIndex extends React.Component {
                 />
               </div>
               <div className="col-12 col-md-5">
-                <h2>{whyTitle}</h2>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: why.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h2>
+                  <FormattedMessage id="curated-list.section-why-ours.title" />
+                </h2>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    <FormattedMessage id="curated-list.section-why-ours.paragraph" />
+                  </p>
+                </div>
                 <a
                   href="https://tokens.kleros.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ca_button ca_transparent_blue"
                 >
-                  Kleros Token Curated List
+                  <FormattedMessage id="curated-list.section-why-ours.button-primary" />
                 </a>
               </div>
               <div className="col-12 col-md-1"></div>
@@ -198,8 +202,10 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
-                <h2>{trustlessTitle}</h2>
-                <h6>{trustlessSubtitle}</h6>
+                <h2>
+                  <FormattedMessage id="curated-list.section-trustless.title" />
+                </h2>
+
                 <img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
               </div>
               <div className="col-12 col-md-2"></div>
@@ -207,13 +213,15 @@ class RootIndex extends React.Component {
             <div className="row ca_left">
               <div className="col-12 col-md-1 one"></div>
               <div className="col-12 col-md-5 two">
-                <h6>{howWorkTitle}</h6>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: howWork.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h6>
+                  {" "}
+                  <FormattedMessage id="curated-list.section-trustless.subtitle-1" />
+                </h6>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    <FormattedMessage id="curated-list.section-trustless.paragraph-1" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-5 three">
                 <img src={contentMain[0].mediaData[4].file.url} alt="Kleros" />
@@ -223,13 +231,15 @@ class RootIndex extends React.Component {
             <div className="row ca_right">
               <div className="col-12 col-md-1 one"></div>
               <div className="col-12 col-md-5 two">
-                <h6>{disputeTitle}</h6>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: dispute.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h6>
+                  <FormattedMessage id="curated-list.section-trustless.subtitle-2" />
+                </h6>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    {" "}
+                    <FormattedMessage id="curated-list.section-trustless.paragraph-2" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-5 three">
                 <img src={contentMain[0].mediaData[5].file.url} alt="Kleros" />
@@ -239,13 +249,14 @@ class RootIndex extends React.Component {
             <div className="row ca_left">
               <div className="col-12 col-md-1 one"></div>
               <div className="col-12 col-md-5 two">
-                <h6>{whyMattersTitle}</h6>
-                <div
-                  color={{ color: "#fff" }}
-                  dangerouslySetInnerHTML={{
-                    __html: whyMatters.childMarkdownRemark.html
-                  }}
-                ></div>
+                <h6>
+                  <FormattedMessage id="curated-list.section-trustless.subtitle-3" />
+                </h6>
+                <div color={{ color: "#fff" }}>
+                  <p>
+                    <FormattedMessage id="curated-list.section-trustless.paragraph-3" />
+                  </p>
+                </div>
               </div>
               <div className="col-12 col-md-5 three">
                 <img src={contentMain[0].mediaData[6].file.url} alt="Kleros" />
@@ -263,7 +274,9 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="ca_txt">
-                    <p>{trustlessPath1}</p>
+                    <p>
+                      <FormattedMessage id="curated-list.section-trustless.illustration-1" />
+                    </p>
                   </div>
                 </div>
               </div>
@@ -276,7 +289,10 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="ca_txt">
-                    <p>{trustlessPath2}</p>
+                    <p>
+                      {" "}
+                      <FormattedMessage id="curated-list.section-trustless.illustration-2" />
+                    </p>
                   </div>
                 </div>
               </div>
@@ -289,7 +305,10 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="ca_txt">
-                    <p>{trustlessPath3}</p>
+                    <p>
+                      {" "}
+                      <FormattedMessage id="curated-list.section-trustless.illustration-3" />
+                    </p>
                   </div>
                 </div>
               </div>
@@ -304,7 +323,9 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="ca_txt">
-                    <p>{trustlessPath4}</p>
+                    <p>
+                      <FormattedMessage id="curated-list.section-trustless.illustration-4" />
+                    </p>
                   </div>
                 </div>
               </div>
@@ -317,7 +338,10 @@ class RootIndex extends React.Component {
                     />
                   </div>
                   <div className="ca_txt">
-                    <p>{trustlessPath5}</p>
+                    <p>
+                      {" "}
+                      <FormattedMessage id="curated-list.section-trustless.illustration-5" />
+                    </p>
                   </div>
                 </div>
               </div>
@@ -330,12 +354,13 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-8">
-                <h2>{contactUsTitle}</h2>
-                <h6
-                  dangerouslySetInnerHTML={{
-                    __html: contactUs.childMarkdownRemark.html
-                  }}
-                ></h6>
+                <h2>
+                  {" "}
+                  <FormattedMessage id="curated-list.section-contact-us.title" />
+                </h2>
+                <h6>
+                  <FormattedMessage id="curated-list.section-contact-us.subtitle" />
+                </h6>
                 <div className="ca_form">
                   <form
                     name="curatedList"
@@ -347,7 +372,10 @@ class RootIndex extends React.Component {
                     <input type="hidden" name="form-name" value="curatedList" />
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_name">First Name</label>
+                        <label htmlFor="ca_name">
+                          {" "}
+                          <FormattedMessage id="curated-list.section-contact-us.first-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_name"
@@ -357,7 +385,9 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_lname">Last Name</label>
+                        <label htmlFor="ca_lname">
+                          <FormattedMessage id="curated-list.section-contact-us.last-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_lname"
@@ -369,7 +399,9 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_email">Company Email</label>
+                        <label htmlFor="ca_email">
+                          <FormattedMessage id="curated-list.section-contact-us.company-email" />
+                        </label>
                         <input
                           type="email"
                           id="ca_email"
@@ -379,7 +411,10 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_company">Company Name</label>
+                        <label htmlFor="ca_company">
+                          {" "}
+                          <FormattedMessage id="curated-list.section-contact-us.company-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_company"
@@ -391,7 +426,10 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_full">
-                        <label htmlFor="ca_text">Write your message</label>
+                        <label htmlFor="ca_text">
+                          {" "}
+                          <FormattedMessage id="curated-list.section-contact-us.message" />
+                        </label>
                         <textarea
                           id="ca_text"
                           name="message"
@@ -403,7 +441,9 @@ class RootIndex extends React.Component {
                     <div className="ca_line">
                       <input
                         type="submit"
-                        value="Send"
+                        value={this.props.intl.formatMessage({
+                          id: "curated-list.section-contact-us.button-primary"
+                        })}
                         className="ca_button ca_solid_blue"
                       />
                     </div>
