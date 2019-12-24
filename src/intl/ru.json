@@ -269,15 +269,15 @@
     }
   },
   "cooperative": {
-    "title": "Join Cooperative Kleros",
-    "paragraph": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read this article to learn more about the legal structure. If you want to become a member of the Cooperative, follow the next steps. Your application will have to be approved by other members.",
+    "title": "Присоединяйтесь к Cooperative Kleros",
+    "paragraph": "Усилия по развитию протокола Kleros координируются Coopérative Kleros, Société Coopérative d’Intérêt Collectif (SCIC), зарегистрированной во Франции. Прочтите эту статью, чтобы узнать больше о правовой структуре. Если вы хотите стать членом Cooperative, выполните следующие действия. Ваша заявка должна быть одобрена другими участниками.",
     "section-procedure": {
-      "illustration-1": "Download the subscription form.",
-      "button-1": "Download",
-      "illustration-2": "Print it; Fill it in (don't forget the handwritten phrase at the end!); Sign it; Scan it;",
-      "illustration-3": "Send it back to lola@kleros.io along with a digital copy of your passport / national ID and with the TxID of your share deposit.",
-      "button-primary": "Download Form",
-      "button-secondary": "Statutes"
+      "illustration-1": "Скачайте форму подписки",
+      "button-1": "Скачать",
+      "illustration-2": "Распечатайте; Заполните (не забудьте фразу написанную от руки в конце); Подпишите; Отсканируйте;",
+      "illustration-3": "Отправьте обратно на lola@kleros.io вместе с цифровой копией пасспорта/ of your passport / национального удостоверение личности и TxID вашего депозита.",
+      "button-primary": "Скачать Форму",
+      "button-secondary": "Статуты"
     }
   },
   "court-tour": {
