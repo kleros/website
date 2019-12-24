@@ -227,17 +227,17 @@
       "illustration-2": "A user submits a flamethrower.",
       "illustration-3": "Another user challenges the submission for being a dangerous item.",
       "illustration-4": "The flamethrower goes to trial in Kleros platform.",
-      "illustration-5": "Jurors rule for the challenger. The flamethrower is rejected from the list.",
-      "section-contact-us": {
-        "title": "Contact Us",
-        "subtitle": "Implement Kleros list curation in your platform. Contact us now!",
-        "first-name": "First Name",
-        "last-name": "Last Name",
-        "company-email": "Company Email",
-        "company-name": "Company Name",
-        "message": "Write your message",
-        "button-primary": "Send"
-      }
+      "illustration-5": "Jurors rule for the challenger. The flamethrower is rejected from the list."
+    },
+    "section-contact-us": {
+      "title": "Contact Us",
+      "subtitle": "Implement Kleros list curation in your platform. Contact us now!",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "company-email": "Company Email",
+      "company-name": "Company Name",
+      "message": "Write your message",
+      "button-primary": "Send"
     }
   },
   "oracle": {

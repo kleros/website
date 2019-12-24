@@ -261,18 +261,17 @@
       "illustration-2": "사용자가 화염 방사기를 판매하기위해 판매 신청 목록에 제출했습니다.",
       "illustration-3": "다른 사용자가 화염 방사기는 위험하다는 이유로 항의를 했습니다.",
       "illustration-4": "해당 화염 방사기의 판매 목록 등록에 대한 판결을 위해, 본 사건은 클레로스 플랫폼으로 전송됩니다.",
-      "illustration-5": "배심원단들은 항의를 제기한 사용자의 손을 들어줬습니다. 그리하여, 화염 방사기의 판매 목록 등록 신청은 거절됐습니다.",
-
-      "section-contact-us": {
-        "title": "Contack Us",
-        "subtitle": "클레로스의 리스트 선별 솔루션을 여러분의 플랫폼에 도입하고 싶으시다면, 지금 바로 연락주세요!",
-        "first-name": "이름(First Name)",
-        "last-name": "성(Last Name)",
-        "company-email": "회사 이메일(Company Email)",
-        "company-name": "회사명(Company Name)",
-        "message": "메시지를 입력해주세요",
-        "button-primary": "전송"
-      }
+      "illustration-5": "배심원단들은 항의를 제기한 사용자의 손을 들어줬습니다. 그리하여, 화염 방사기의 판매 목록 등록 신청은 거절됐습니다."
+    },
+    "section-contact-us": {
+      "title": "Contack Us",
+      "subtitle": "클레로스의 리스트 선별 솔루션을 여러분의 플랫폼에 도입하고 싶으시다면, 지금 바로 연락주세요!",
+      "first-name": "이름(First Name)",
+      "last-name": "성(Last Name)",
+      "company-email": "회사 이메일(Company Email)",
+      "company-name": "회사명(Company Name)",
+      "message": "메시지를 입력해주세요",
+      "button-primary": "전송"
     }
   },
 
