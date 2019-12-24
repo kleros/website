@@ -75,19 +75,19 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
+    "title": "О Нас",
+    "subtitle": "Kleros - это протокол разрешения споров с открытым исходным кодом, который использует технологию блокчейн и краудсорсинг для справедливого разрешения споров. Усилия по развитию протокола координируются Coopérative Kleros, Société Coopérative d’Intérêt Collectif (SCIC), зарегистрированной во Франции. Все наши исследования и разработки кода имеют открытый доступ и бесплатны для любого использования.",
     "section-who-are-we": {
-      "title": "Who are we?",
-      "paragraph": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance. Kleros' vision is to build open technology empowering the courts of the future."
+      "title": "Кто Мы?",
+      "paragraph": "Мы - междисциплинарная и международная команда, увлеченная технологией блокчейн и её потенциалом для преобразования законодательства и управления. Видение Kleros - создавать открытые технологии, расширяющие возможности судов будущего."
     },
     "section-meet-our-team": {
-      "title": "Meet Our Team",
-      "paragraph": "Kleros is comprised of a high quality team covering all required disciplines for decentralized justice: smart contract security, computer science, cryptoeconomics, business, marketing and communications."
+      "title": "Познакомиться с Командой",
+      "paragraph": "Kleros состоит из высококвалифицированной команды, охватывающей все необходимые дисциплины для децентрализованного правосудия:  безопасность смарт-контрактов, информатика, криптоэкономика, бизнес, маркетинг и коммуникации."
     },
     "section-join-our-team": {
-      "title": "Join Our Team",
-      "subtitle": "Check our open positions below and join the justice revolution!"
+      "title": "Присоединиться к Команде",
+      "subtitle": "Проверьте наши открытые вакансии ниже и присоединяйтесь к революции правосудия!"
     }
   },
   "faq": {
