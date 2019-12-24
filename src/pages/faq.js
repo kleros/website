@@ -6,11 +6,13 @@ import Template from "../components/layout";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 class RootIndex extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       faqFilter: {
-        value: "",
+        value: props.intl.formatMessage({
+          id: "faq.section-faq.category-general.name"
+        }),
         key: Math.random()
       },
       faqSearch: {
@@ -54,6 +56,7 @@ class RootIndex extends React.Component {
     });
   };
   render() {
+    const { intl } = this.props;
     var siteTitle = "Kleros";
     var questions = get(this, "props.data.allContentfulFaqEntry.edges");
     var cats = get(this, "props.data.allContentfulFaqCategory.edges");
@@ -80,12 +83,18 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7">
-                <h1>Frequently Asked Questions</h1>
+                <h1>
+                  <FormattedMessage id="faq.title" />
+                </h1>
                 <form className="ca_search">
                   <input
                     type="text"
                     onChange={e => this.doSearch(e)}
-                    placeholder="Search your question"
+                    placeholder={intl
+                      .formatMessage({
+                        id: "faq.placeholder-search-bar"
+                      })
+                      .toString()}
                   />
                 </form>
               </div>
@@ -98,61 +107,579 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2">
                 <ul>
-                  {cats.map((el, num) => {
-                    return (
-                      <li key={num}>
-                        <a
-                          href="#"
-                          className={
-                            el.node.title.title === this.state.faqFilter.value
-                              ? "ca_selected"
-                              : ""
-                          }
-                          onClick={e =>
-                            this.categoryChange(el.node.title.title, e)
-                          }
-                        >
-                          {el.node.title.title}
-                        </a>
-                      </li>
-                    );
-                  })}
+                  <li key={0}>
+                    <a
+                      href="#"
+                      className={
+                        intl.formatMessage({
+                          id: "faq.section-faq.category-general.name"
+                        }) === this.state.faqFilter.value
+                          ? "ca_selected"
+                          : ""
+                      }
+                      onClick={e =>
+                        this.categoryChange(
+                          intl.formatMessage({
+                            id: "faq.section-faq.category-general.name"
+                          }),
+                          e
+                        )
+                      }
+                    >
+                      {intl.formatMessage({
+                        id: "faq.section-faq.category-general.name"
+                      })}
+                    </a>
+                  </li>
+                  <li key={1}>
+                    <a
+                      href="#"
+                      className={
+                        intl.formatMessage({
+                          id:
+                            "faq.section-faq.category-integration&partners.name"
+                        }) === this.state.faqFilter.value
+                          ? "ca_selected"
+                          : ""
+                      }
+                      onClick={e =>
+                        this.categoryChange(
+                          intl.formatMessage({
+                            id:
+                              "faq.section-faq.category-integration&partners.name"
+                          }),
+                          e
+                        )
+                      }
+                    >
+                      {intl.formatMessage({
+                        id: "faq.section-faq.category-integration&partners.name"
+                      })}
+                    </a>
+                  </li>
+                  <li key={2}>
+                    <a
+                      href="#"
+                      className={
+                        intl.formatMessage({
+                          id: "faq.section-faq.category-jurors.name"
+                        }) === this.state.faqFilter.value
+                          ? "ca_selected"
+                          : ""
+                      }
+                      onClick={e =>
+                        this.categoryChange(
+                          intl.formatMessage({
+                            id: "faq.section-faq.category-jurors.name"
+                          }),
+                          e
+                        )
+                      }
+                    >
+                      {intl.formatMessage({
+                        id: "faq.section-faq.category-jurors.name"
+                      })}
+                    </a>
+                  </li>
+                  <li key={3}>
+                    <a
+                      href="#"
+                      className={
+                        intl.formatMessage({
+                          id: "faq.section-faq.category-legal.name"
+                        }) === this.state.faqFilter.value
+                          ? "ca_selected"
+                          : ""
+                      }
+                      onClick={e =>
+                        this.categoryChange(
+                          intl.formatMessage({
+                            id: "faq.section-faq.category-legal.name"
+                          }),
+                          e
+                        )
+                      }
+                    >
+                      {intl.formatMessage({
+                        id: "faq.section-faq.category-legal.name"
+                      })}
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="col-12 col-md-10">
                 <h2>{this.state.faqFilter.value}</h2>
-                {questions.length == 0 ? (
-                  <div className="ca_question">
-                    <h6>Sorry, nothing found!</h6>
-                  </div>
-                ) : (
-                  questions.map((el, num) => {
-                    return (
-                      <div
-                        key={num}
-                        className={
-                          "ca_question" +
-                          (num == this.state.openedQuestion.value
-                            ? " ca_opened"
-                            : "")
-                        }
-                      >
-                        <div className="ca_toggle">
-                          <h6>{el.node.question.question}</h6>
-                          <a
-                            href="#"
-                            onClick={e => this.questionChange(num, e)}
-                          ></a>
-                        </div>
-                        <div
-                          className="ca_content"
-                          dangerouslySetInnerHTML={{
-                            __html: el.node.answer.childMarkdownRemark.html
-                          }}
-                        ></div>
+
+                {intl.formatMessage({
+                  id: "faq.section-faq.category-general.name"
+                }) === this.state.faqFilter.value && (
+                  <>
+                    <div
+                      key={0}
+                      className={
+                        "ca_question" +
+                        (0 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-1" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(0, e)}
+                        ></a>
                       </div>
-                    );
-                  })
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-1" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={1}
+                      className={
+                        "ca_question" +
+                        (1 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-2" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(1, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-2" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={2}
+                      className={
+                        "ca_question" +
+                        (2 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-3" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(2, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-3" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={3}
+                      className={
+                        "ca_question" +
+                        (3 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-4" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(3, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-4" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={4}
+                      className={
+                        "ca_question" +
+                        (4 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-5" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(4, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-5" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={5}
+                      className={
+                        "ca_question" +
+                        (5 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-general.q-6" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(5, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-general.a-6" />
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                )}
+                {intl.formatMessage({
+                  id: "faq.section-faq.category-integration&partners.name"
+                }) === this.state.faqFilter.value && (
+                  <>
+                    <div
+                      key={6}
+                      className={
+                        "ca_question" +
+                        (6 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-integration&partners.q-1" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(6, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-integration&partners.a-1" />
+                        </p>
+                      </div>
+                    </div>{" "}
+                  </>
+                )}
+                {intl.formatMessage({
+                  id: "faq.section-faq.category-jurors.name"
+                }) === this.state.faqFilter.value && (
+                  <>
+                    <div
+                      key={7}
+                      className={
+                        "ca_question" +
+                        (7 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-1" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(7, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-1" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={8}
+                      className={
+                        "ca_question" +
+                        (8 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-2" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(8, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-2" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={9}
+                      className={
+                        "ca_question" +
+                        (9 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-3" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(9, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-3" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={10}
+                      className={
+                        "ca_question" +
+                        (10 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-4" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(10, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-4" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={11}
+                      className={
+                        "ca_question" +
+                        (11 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-5" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(11, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-5" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={12}
+                      className={
+                        "ca_question" +
+                        (12 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-6" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(12, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-6" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={13}
+                      className={
+                        "ca_question" +
+                        (13 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-7" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(13, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-7" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={14}
+                      className={
+                        "ca_question" +
+                        (14 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-8" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(14, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-8" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={15}
+                      className={
+                        "ca_question" +
+                        (15 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-jurors.q-9" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(15, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-jurors.a-9" />
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {intl.formatMessage({
+                  id: "faq.section-faq.category-legal.name"
+                }) === this.state.faqFilter.value && (
+                  <>
+                    <div
+                      key={16}
+                      className={
+                        "ca_question" +
+                        (16 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-legal.q-1" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(16, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-legal.a-1" />
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      key={17}
+                      className={
+                        "ca_question" +
+                        (17 == this.state.openedQuestion.value
+                          ? " ca_opened"
+                          : "")
+                      }
+                    >
+                      <div className="ca_toggle">
+                        <h6>
+                          <FormattedMessage id="faq.section-faq.category-legal.q-2" />
+                        </h6>
+                        <a
+                          href="#"
+                          onClick={e => this.questionChange(17, e)}
+                        ></a>
+                      </div>
+                      <div className="ca_content">
+                        <p>
+                          <FormattedMessage id="faq.section-faq.category-legal.a-2" />
+                        </p>
+                      </div>
+                    </div>
+                  </>
                 )}
               </div>
             </div>

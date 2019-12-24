@@ -34,8 +34,12 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7">
-                <h1>{theMeta(top, "About Top Title").data.data}</h1>
-                <h6>{theMeta(top, "About Top Sub Title").data.data}</h6>
+                <h1>
+                  <FormattedMessage id="about.title" />
+                </h1>
+                <h6>
+                  <FormattedMessage id="about.subtitle" />
+                </h6>
               </div>
               <div className="col-12 col-md-5"></div>
             </div>
@@ -46,14 +50,11 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-7">
                 <h2>
-                  {theMeta(description, "About Description Title").data.data}
+                  <FormattedMessage id="about.section-who-are-we.title" />
                 </h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(description, "About Description Sub Title")
-                      .data.childMarkdownRemark.html
-                  }}
-                ></div>
+                <p>
+                  <FormattedMessage id="about.section-who-are-we.paragraph" />
+                </p>
               </div>
               <div className="col-12 col-md-5">
                 <div className="illustration">
@@ -122,8 +123,12 @@ class RootIndex extends React.Component {
                 </Slider>
               </div>
               <div className="col-12 col-md-4">
-                <h3>{theMeta(teamText, "About Team Text Title").data.data}</h3>
-                <p>{theMeta(teamText, "About Team Text Text").data.data}</p>
+                <h3>
+                  <FormattedMessage id="about.section-meet-our-team.title" />
+                </h3>
+                <p>
+                  <FormattedMessage id="about.section-meet-our-team.paragraph" />
+                </p>
                 <div className="ca_team_slider_arrows"></div>
               </div>
             </div>
@@ -135,13 +140,10 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {theMeta(vacanciesText, "About Vacancies Title").data.data}
+                  <FormattedMessage id="about.section-join-our-team.title" />
                 </h2>
-                <h6>
-                  {
-                    theMeta(vacanciesText, "About Vacancies Sub Title").data
-                      .data
-                  }
+                <h6 style={{ textAlign: "-webkit-center" }}>
+                  <FormattedMessage id="about.section-join-our-team.subtitle" />
                 </h6>
               </div>
               <div className="col-12 col-md-2"></div>
