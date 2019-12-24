@@ -34,32 +34,40 @@ class RootIndex extends React.Component {
 
   contentCards = [
     {
-      title: "Stake as a Juror",
-      content:
-        "First and foremost, PNK holders can stake their token in a Kleros court to indicate their availability to serve as jurors. The more they stake, the more chances they have of selection. Jurors stake their PNK in courts they have relevant skills for with a random number generator (RNG) selecting the final spots based on size of stake.",
-      src:
-        "https://images.ctfassets.net/di6jbl3521d8/2bU4jVrv9tC60LyKQVCkax/885925df1c04bf9eac9c3ec2f5ba9f76/w2b.png"
+      title: this.props.intl.formatMessage({
+        id: "token.section-token.subtitle-1"
+      }),
+      content: this.props.intl.formatMessage({
+        id: "token.section-token.paragraph-1"
+      }),
+      src: "/img/token/w2b.png"
     },
     {
-      title: "PNK Protects Against Sybil Attacks",
-      content:
-        "PNK is a protection against Sybil attacks. In order for an attacker to flood the juror pool, they need to buy enough PNK so that they are selected enough times to be a juror for the same case in order to change the outcome. Using a native token like PNK offers several key advantages for minimizing the risk of 51% attacks versus using an external cryptocurrency like ETH.",
-      src:
-        "https://images.ctfassets.net/di6jbl3521d8/4ayFRjrt8q7rzwyVlzgpwY/9e6636beb8dd884b4cce200be09386b0/w3.png"
+      title: this.props.intl.formatMessage({
+        id: "token.section-token.subtitle-2"
+      }),
+      content: this.props.intl.formatMessage({
+        id: "token.section-token.paragraph-2"
+      }),
+      src: "/img/token/w3.png"
     },
     {
-      title: "PNK Makes an Attack Expensive",
-      content:
-        "Imagine that someone does buy 51% of the PNK in an effort to attack Kleros. Maybe their attack will be subtle and go unnoticed. However, it’s more likely the community will realize that it is under attack. In this case, Kleros would lose credibility as an arbitration platform and the value of PNK would decrease. Then the attacker would take a substantial loss on PNK bought, representing a high economic attack cost.",
-      src:
-        "https://images.ctfassets.net/di6jbl3521d8/2k8nvzKwHXw9IY3TWZdMVz/415a24a0ab04934795da0a13aef450ba/w4.png"
+      title: this.props.intl.formatMessage({
+        id: "token.section-token.subtitle-3"
+      }),
+      content: this.props.intl.formatMessage({
+        id: "token.section-token.paragraph-3"
+      }),
+      src: "/img/token/w4.png"
     },
     {
-      title: "User Oriented",
-      content:
-        "Users have an interest in holding PNK tokens in order to gain voting rewards when taking part as jurors. They also have the opportunity to vote with their PNK on all Kleros Governance related proposals and votes creating an open and unbiased platform for all.",
-      src:
-        "https://images.ctfassets.net/di6jbl3521d8/Z3U68atBbDX6fGcxFqnWX/4a2ddcafeb24fd4d54bc38151aa0cace/w5b.png"
+      title: this.props.intl.formatMessage({
+        id: "token.section-token.subtitle-4"
+      }),
+      content: this.props.intl.formatMessage({
+        id: "token.section-token.paragraph-4"
+      }),
+      src: "/img/token/w5b.png"
     }
   ];
 
@@ -144,7 +152,7 @@ class RootIndex extends React.Component {
             <div className="row ca_txt">
               <div className="col-12 col-md-6 text-center">
                 <h1 style={{ marginTop: "15%", fontSize: "420%" }}>
-                  {theMeta(top, "Token Page Top Title").data.data}
+                  <FormattedMessage id="token.title" />
                 </h1>
               </div>
               <div className="col-12 col-md-6">
@@ -227,7 +235,7 @@ class RootIndex extends React.Component {
                     fontSize: biggerThan768px ? "2rem" : "4rem"
                   }}
                 >
-                  If you are interested in acquiring PNK token OTC, get in touch
+                  <FormattedMessage id="token.banner.title" />
                 </h3>
 
                 <p
@@ -237,8 +245,7 @@ class RootIndex extends React.Component {
                     color: "white"
                   }}
                 >
-                  Note that in order to ensure fairness in token distribution,
-                  tokens are sold to buyers at prices reflected by the market.
+                  <FormattedMessage id="token.banner.subtitle" />
                 </p>
               </div>
               <div style={{ grid: "button", textAlign: "center" }}>
@@ -250,7 +257,7 @@ class RootIndex extends React.Component {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
                   className="ca_button ca_solid_blue"
                 >
-                  Get in touch here
+                  <FormattedMessage id="token.banner.button-primary" />
                 </a>
               </div>
             </div>
