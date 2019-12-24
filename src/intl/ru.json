@@ -281,9 +281,9 @@
     }
   },
   "court-tour": {
-    "title": "Kleros Court Tour",
-    "paragraph": "Liked the tour and want to test the real product, but never used crypto? Not to worry, click on Crypto Beginner’s Guide.",
-    "button-primary": "Crypto Beginner's Guide"
+    "title": "Экскурсия по Kleros Суду",
+    "paragraph": "Понравился тур и хочешь протестировать настоящий продукт, но никогда не использовал криптографию? Не волнуйтесь, нажмите на Руководство по Crypto для Начинающих",
+    "button-primary": "Руководство по Crypto для Начинающих"
   },
   "token": {
     "title": "Pinakion (PNK) Token",
