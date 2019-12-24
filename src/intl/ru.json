@@ -164,42 +164,42 @@
     "title": "Активы Бренда Kleros"
   },
   "escrow": {
-    "title": "Blockchain Escrow Service",
-    "subtitle": "Trade, hire and pay secured by trustless dispute resolution.",
-    "button-primary": "Learn More",
+    "title": "Эскроу-Сервис на Блокчейне",
+    "subtitle": "Торгуйте, нанимайте и производите оплаты под защитой системы разрешения споров 'не нуждающейся в доверии'",
+    "button-primary": "Узнать Больше",
     "section-risks": {
-      "title": "The Risks of Contracting Online",
-      "paragraph": "Companies usually contract servicecs online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
+      "title": "Риски Заключения Контрактов Онлайн",
+      "paragraph": "Компании обычно заключают контракты на услуги онлайн с внештатными дизайнерами, менеджерами сообществ и разработчиками. Но существует большой риск того, что работа не будет выполнена или будет выполнена с низким качеством."
     },
     "meet-escrow-section": {
-      "title": "Meet Kleros Escrow",
-      "paragraph": "Send the payment into an escrow account. If a dispute occurs, a panel of Kleros jurors will handle resolution. Kleros Escrow protects both the buyer and the seller by ensuring both parties perform according to the agreement.",
+      "title": "Знакомство с Kleros Escrow",
+      "paragraph": "Отправьте платеж на счет условного депонирования.Если возникнет спор, группа присяжных заседателей Kleros будет заниматься разрешением. Kleros Escrow защищает как покупателя, так и продавца, обеспечивая обе стороны в соответствии с соглашением.",
       "button-primary": "Kleros Escrow"
     },
     "trustless-escrow-section": {
-      "title": "Trustless Decentralized Escrow",
-      "subtitle": "Secure, efficient and trustless escrow secured by blockchain.",
-      "subtitle-1": "Integrate Kleros in Your Platform",
-      "paragraph-1": "Are you building a platform for e-commerce, freelancing, finance...? Disputes will arise. Integrate Kleros to solve them. You send us a dispute, Kleros sends you a decision.",
-      "subtitle-2": "So how are disputes resolved?",
-      "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read Kleros whitepaper.",
-      "subtitle-3": "Why it matters",
-      "paragraph-3": "Kleros brings a trust standard to online transactions. With Kleros Escrow, buyer and seller can be confident that the other party will fulfill the obligations of their agreement.",
-      "illustration-1": "Go to Kleros Escrow and create a new transaction.",
-      "illustration-2": "Enter the details of the agreement.",
-      "illustration-3": "If there are no disputes, you can pay the balance in full and that's it.",
-      "illustration-4": "If a dispute is raised, with just one click you can send the contract to dispute resolution.",
-      "illustration-5": "Jurors evaluate the evidence and make a decision. Funds are sent to the winner. Case closed."
+      "title": "'Не Требующее Доверия' Децентрализованное Эскроу",
+      "subtitle": "Безопасное, эффективное и не требующее доверия условное депонирование обеспеченное технологией блокчейн.",
+      "subtitle-1": "Интегрируйте Kleros на Вашу Платформу",
+      "paragraph-1": "Вы создаёте платформу для электронной коммерции, фриланса, финансов ...? Возникновение споров неизбежно. Интегрируйте Kleros, чтобы решить их. Вы отправляете нам спор, Kleros отправляет вам решение.",
+      "subtitle-2": "Итак, как же разрешаются споры?",
+      "paragraph-2": "Kleros выбирает жюри из краудсорсинга, чтобы принять решение. Изучив доказательства, присяжные принимают решение на основании смарт-контракта. Все доказательства хранятся в блокчейне, и никто не может вмешаться в процедуру. Чтобы узнать, как это работает, прочитайте whitepaper Kleros.",
+      "subtitle-3": "Почему это важно",
+      "paragraph-3": "Kleros приносит стандарт доверия для онлайн-транзакций. Благодаря Kleros Escrow, покупатель и продавец могут быть уверены, что другая сторона выполнит обязательства по их соглашению.",
+      "illustration-1": "Перейдите на Kleros Escrow и создайте новую транзакцию.",
+      "illustration-2": "Введите детали соглашения.",
+      "illustration-3": "Если нет споров, вы сможете полностью оплатить баланс и на этом конец.",
+      "illustration-4": "Если спор возник, одним щелчком мыши вы можете отправить контракт на разрешение спора.",
+      "illustration-5": "Присяжные оценивают доказательства и принимают решение. Средства отправляются победителю. Дело закрыто."
     },
     "want-to-use-section": {
-      "title": "Want to Use Kleros Escrow in your Platform?",
-      "subtitle": "Contact us now and we will help you with integration.",
-      "first-name": "First Name",
-      "last-name": "Last Name",
-      "company-email": "Company Email",
-      "company-name": "Company Name",
-      "message": "Write your message",
-      "button-primary": "Send"
+      "title": "Хотите Использовать Kleros Escrow в своей Платформе?",
+      "subtitle": "Свяжитесь с нами сейчас, и мы поможем вам с интеграцией.",
+      "first-name": "Имя",
+      "last-name": "Фамилия",
+      "company-email": "Электронной Адресс Компании",
+      "company-name": "Название Компании",
+      "message": "Введите ваше сообщение",
+      "button-primary": "Отправить"
     }
   },
   "curated-list": {
