@@ -172,18 +172,18 @@
       "title": "The Risks of Contracting Online",
       "paragraph": "Companies usually contract servicecs online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
     },
-    "meet-escrow-section": {
+    "section-meet-escrow": {
       "title": "Meet Kleros Escrow",
       "paragraph": "Send the payment into an escrow account. If a dispute occurs, a panel of Kleros jurors will handle resolution. Kleros Escrow protects both the buyer and the seller by ensuring both parties perform according to the agreement.",
       "button-primary": "Kleros Escrow"
     },
-    "trustless-escrow-section": {
+    "section-trustless-escrow": {
       "title": "Trustless Decentralized Escrow",
       "subtitle": "Secure, efficient and trustless escrow secured by blockchain.",
       "subtitle-1": "Integrate Kleros in Your Platform",
       "paragraph-1": "Are you building a platform for e-commerce, freelancing, finance...? Disputes will arise. Integrate Kleros to solve them. You send us a dispute, Kleros sends you a decision.",
       "subtitle-2": "So how are disputes resolved?",
-      "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read Kleros whitepaper.",
+      "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read <anchor>Kleros whitepaper</anchor>.",
       "subtitle-3": "Why it matters",
       "paragraph-3": "Kleros brings a trust standard to online transactions. With Kleros Escrow, buyer and seller can be confident that the other party will fulfill the obligations of their agreement.",
       "illustration-1": "Go to Kleros Escrow and create a new transaction.",
@@ -192,7 +192,7 @@
       "illustration-4": "If a dispute is raised, with just one click you can send the contract to dispute resolution.",
       "illustration-5": "Jurors evaluate the evidence and make a decision. Funds are sent to the winner. Case closed."
     },
-    "want-to-use-section": {
+    "section-want-to-use": {
       "title": "Want to Use Kleros Escrow in your Platform?",
       "subtitle": "Contact us now and we will help you with integration.",
       "first-name": "First Name",

@@ -58,6 +58,7 @@ class RootIndex extends React.Component {
   };
 
   render() {
+    const { location, intl } = this.props;
     const { mediaFilter } = this.state;
     console.log(this.state);
     console.log(this.assets[mediaFilter.value]);

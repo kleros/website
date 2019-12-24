@@ -106,13 +106,14 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row ca_txt">
               <div className="col-12 col-md-6">
-                <h1>{theMeta(top, "Escrow Top Title").data.data}</h1>
-                <h6>{theMeta(top, "Escrow Top Sub Title").data.data}</h6>
-                <a
-                  href={theMeta(top, "Escrow Top Button").referenceData[0].url}
-                  className="ca_button ca_solid_blue"
-                >
-                  {theMeta(top, "Escrow Top Button").referenceData[0].text.text}
+                <h1>
+                  <FormattedMessage id="escrow.title" />
+                </h1>
+                <h6>
+                  <FormattedMessage id="escrow.subtitle" />
+                </h6>
+                <a href="#more" className="ca_button ca_solid_blue">
+                  <FormattedMessage id="escrow.button-primary" />
                 </a>
               </div>
               <div className="col-12 col-md-6">
@@ -133,13 +134,15 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-4">
-                <h2>{theMeta(escrow, "Escrow Title").data.data}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(escrow, "Escrow Text").data
-                      .childMarkdownRemark.html
-                  }}
-                ></div>
+                <h2>
+                  <FormattedMessage id="escrow.section-risks.title" />
+                </h2>
+                <div>
+                  <p>
+                    <FormattedMessage id="escrow.section-risks.paragraph" />
+                  </p>
+                  >
+                </div>
               </div>
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-5">
@@ -163,20 +166,21 @@ class RootIndex extends React.Component {
                 />
               </div>
               <div className="col-12 col-md-5">
-                <h2>{theMeta(why, "Escrow Why Title").data.data}</h2>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(why, "Escrow Why Text").data
-                      .childMarkdownRemark.html
-                  }}
-                ></div>
+                <h2>
+                  <FormattedMessage id="escrow.section-meet-escrow.title" />
+                </h2>
+                <div>
+                  <p>
+                    <FormattedMessage id="escrow.section-meet-escrow.paragraph" />
+                  </p>
+                </div>
                 <a
                   href="https://escrow.kleros.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ca_button ca_transparent_blue"
                 >
-                  Kleros Escrow
+                  <FormattedMessage id="escrow.section-meet-escrow.button-primary" />
                 </a>
               </div>
               <div className="col-12 col-md-1"></div>
@@ -189,10 +193,10 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
                 <h2>
-                  {theMeta(contentMain, "Escrow Content Title").data.data}
+                  <FormattedMessage id="escrow.section-trustless-escrow.title" />
                 </h2>
                 <h6>
-                  {theMeta(contentMain, "Escrow Content Sub Title").data.data}
+                  <FormattedMessage id="escrow.section-trustless-escrow.subtitle" />
                 </h6>
                 <img
                   src={
@@ -204,121 +208,142 @@ class RootIndex extends React.Component {
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
-            {contentCards.map((el, num) => {
-              return (
-                <div
-                  key={num}
-                  className={"row " + (num % 2 == 0 ? "ca_left" : "ca_right")}
-                >
-                  <div className="col-12 col-md-1 one"></div>
-                  <div className="col-12 col-md-5 two">
-                    <h6>{el.title.title}</h6>
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: el.text.childMarkdownRemark.html
-                      }}
-                    ></div>
-                  </div>
-                  <div className="col-12 col-md-5 three">
-                    <img src={el.image.file.url} alt="Kleros" />
-                  </div>
-                  <div className="col-12 col-md-1 four"></div>
+
+            <div key={0} className="row ca_left">
+              <div className="col-12 col-md-1 one"></div>
+              <div className="col-12 col-md-5 two">
+                <h6>
+                  <FormattedMessage id="escrow.section-trustless-escrow.subtitle-1" />
+                </h6>
+                <div>
+                  <p>
+                    <FormattedMessage id="escrow.section-trustless-escrow.paragraph-1" />
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+              <div className="col-12 col-md-5 three">
+                <img src="/img/escrow/1.png" alt="Kleros" />
+              </div>
+              <div className="col-12 col-md-1 four"></div>
+            </div>
+
+            <div key={1} className="row ca_right">
+              <div className="col-12 col-md-1 one"></div>
+              <div className="col-12 col-md-5 two">
+                <h6>
+                  <FormattedMessage id="escrow.section-trustless-escrow.subtitle-2" />
+                </h6>
+                <div>
+                  <p>
+                    <FormattedMessage
+                      id="escrow.section-trustless-escrow.paragraph-2"
+                      values={{
+                        anchor: children => (
+                          <a
+                            href="/whitepaper_en.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-5 three">
+                <img src="/img/escrow/2.png" alt="Kleros" />
+              </div>
+              <div className="col-12 col-md-1 four"></div>
+            </div>
+
+            <div key={2} className="row ca_left">
+              <div className="col-12 col-md-1 one"></div>
+              <div className="col-12 col-md-5 two">
+                <h6>
+                  <FormattedMessage id="escrow.section-trustless-escrow.subtitle-3" />
+                </h6>
+                <div>
+                  <p>
+                    <FormattedMessage id="escrow.section-trustless-escrow.paragraph-3" />
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-5 three">
+                <img src="/img/escrow/3.png" alt="Kleros" />
+              </div>
+              <div className="col-12 col-md-1 four"></div>
+            </div>
+
             <div className="row ca_escrow_path">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-3">
-                {[contentPath[0]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_1">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        ></div>
-                      </div>
+                <div key={0}>
+                  <div className="ca_img ca_underlined ca_stroke ca_stroke_1">
+                    <img src="/img/escrow/step1.png" alt="Illustration" />
+                  </div>
+                  <div className="ca_txt">
+                    <div>
+                      <FormattedMessage id="escrow.section-trustless-escrow.illustration-1" />
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
               </div>
               <div className="col-12 col-md-4">
-                {[contentPath[1]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_2">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        ></div>
-                      </div>
+                <div key={1}>
+                  <div className="ca_img ca_underlined ca_stroke ca_stroke_2">
+                    <img src="/img/escrow/step2.png" alt="Illustration" />
+                  </div>
+                  <div className="ca_txt">
+                    <div>
+                      <FormattedMessage id="escrow.section-trustless-escrow.illustration-2" />
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
               </div>
               <div className="col-12 col-md-3">
-                {[contentPath[2]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_3">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        ></div>
-                      </div>
+                <div key={2}>
+                  <div className="ca_img ca_underlined ca_stroke ca_stroke_3">
+                    <img src="/img/escrow/step3.png" alt="Illustration" />
+                  </div>
+                  <div className="ca_txt">
+                    <div>
+                      <FormattedMessage id="escrow.section-trustless-escrow.illustration-3" />
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+                ); })}
               </div>
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-4">
-                {[contentPath[3]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_4">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        ></div>
-                      </div>
+                <div key={3}>
+                  <div className="ca_img ca_underlined ca_stroke ca_stroke_4">
+                    <img src="/img/escrow/step4.png" alt="Illustration" />
+                  </div>
+                  <div className="ca_txt">
+                    <div>
+                      <FormattedMessage id="escrow.section-trustless-escrow.illustration-4" />
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+                ); })}
               </div>
               <div className="col-12 col-md-4">
-                {[contentPath[4]].map((el, num) => {
-                  return (
-                    <div key={num}>
-                      <div className="ca_img ca_underlined ca_stroke ca_stroke_5">
-                        <img src={el.image.file.url} alt="Illustration" />
-                      </div>
-                      <div className="ca_txt">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: el.text.childMarkdownRemark.html
-                          }}
-                        ></div>
-                      </div>
+                <div key={4}>
+                  <div className="ca_img ca_underlined ca_stroke ca_stroke_5">
+                    <img src="/img/escrow/step5.png" alt="Illustration" />
+                  </div>
+                  <div className="ca_txt">
+                    <div>
+                      <FormattedMessage id="escrow.section-trustless-escrow.illustration-5" />
                     </div>
-                  );
-                })}
+                  </div>
+                </div>
+                ); })}
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
@@ -329,9 +354,11 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-8">
-                <h2>{theMeta(contact, "Escrow Contact Title").data.data}</h2>
+                <h2>
+                  <FormattedMessage id="escrow.section-want-to-use.title" />
+                </h2>
                 <h6>
-                  {theMeta(contact, "Escrow Contact Sub Title").data.data}
+                  <FormattedMessage id="escrow.section-want-to-use.subtitle" />
                 </h6>
                 <div className="ca_form">
                   <form
@@ -344,7 +371,9 @@ class RootIndex extends React.Component {
                     <input type="hidden" name="form-name" value="escrow" />
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_name">First Name</label>
+                        <label htmlFor="ca_name">
+                          <FormattedMessage id="escrow.section-want-to-use.first-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_name"
@@ -354,7 +383,9 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_lname">Last Name</label>
+                        <label htmlFor="ca_lname">
+                          <FormattedMessage id="escrow.section-want-to-use.last-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_lname"
@@ -366,7 +397,9 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_half">
-                        <label htmlFor="ca_email">Company Email</label>
+                        <label htmlFor="ca_email">
+                          <FormattedMessage id="escrow.section-want-to-use.company-email" />
+                        </label>
                         <input
                           type="email"
                           id="ca_email"
@@ -376,7 +409,9 @@ class RootIndex extends React.Component {
                         />
                       </div>
                       <div className="ca_half">
-                        <label htmlFor="ca_company">Company Name</label>
+                        <label htmlFor="ca_company">
+                          <FormattedMessage id="escrow.section-want-to-use.company-name" />
+                        </label>
                         <input
                           type="text"
                           id="ca_company"
@@ -388,7 +423,9 @@ class RootIndex extends React.Component {
                     </div>
                     <div className="ca_line">
                       <div className="ca_full">
-                        <label htmlFor="ca_text">Write your message</label>
+                        <label htmlFor="ca_text">
+                          <FormattedMessage id="escrow.section-want-to-use.message" />
+                        </label>
                         <textarea
                           id="ca_text"
                           name="message"
@@ -400,7 +437,9 @@ class RootIndex extends React.Component {
                     <div className="ca_line">
                       <input
                         type="submit"
-                        value="Send"
+                        value={this.props.intl.formatMessage({
+                          id: "escrow.section-want-to-use.button-primary"
+                        })}
                         className="ca_button ca_solid_blue"
                       />
                     </div>
