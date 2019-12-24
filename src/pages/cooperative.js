@@ -26,52 +26,115 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
-                <h2>{theMeta(header, "Cooperative Title").data.data}</h2>
-                <span
-                  className="ca_underlined"
-                  dangerouslySetInnerHTML={{
-                    __html: theMeta(header, "Cooperative Sub Title").data
-                      .childMarkdownRemark.html
-                  }}
-                ></span>
+                <h2>
+                  {" "}
+                  <FormattedMessage id="cooperative.title" />
+                </h2>
+                <span className="ca_underlined">
+                  <p>
+                    <FormattedMessage
+                      id="cooperative.paragraph"
+                      values={{
+                        anchor: children => (
+                          <a
+                            href="https://medium.com/kleros/kleros-the-legal-structure-9cd8fca40b1c"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
+                  </p>
+                </span>
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
-            {steps.map((el, num) => {
-              return (
-                <div
-                  key={num}
-                  className={"row " + (num % 2 == 0 ? "ca_left" : "ca_right")}
-                >
-                  <div className="col-12 col-md-2"></div>
-                  <div className="col-12 col-md-4 ca_txt">
-                    <div
-                      className="ca_holder"
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          el.text.childMarkdownRemark.html +
-                          (el.link
-                            ? '<a href="' +
-                              el.link.url +
-                              '" class="ca_button ca_solid_blue" target=_' +
-                              el.link.target +
-                              ">" +
-                              el.link.text.text +
-                              "</a>"
-                            : "")
-                      }}
-                    ></div>
-                  </div>
-                  <div className="col-12 col-md-4 ca_img">
-                    <img
-                      src={el.image ? el.image.file.url : ""}
-                      alt="Download the subscription form."
-                    />
-                  </div>
-                  <div className="col-12 col-md-2"></div>
+
+            <div key={0} className="row ca_left">
+              <div className="col-12 col-md-2"></div>
+              <div className="col-12 col-md-4 ca_txt">
+                <div className="ca_holder">
+                  <p>
+                    {" "}
+                    <FormattedMessage id="cooperative.section-procedure.illustration-1" />
+                  </p>
+                  <a className="ca_button ca_solid_blue" href="#">
+                    <FormattedMessage id="cooperative.section-procedure.button-1" />
+                  </a>
                 </div>
-              );
-            })}
+              </div>
+              <div className="col-12 col-md-4 ca_img">
+                <img
+                  src="/img/cooperative/1.png"
+                  alt="Download the subscription form."
+                />
+              </div>
+              <div className="col-12 col-md-2"></div>
+            </div>
+
+            <div key={1} className="row ca_right">
+              <div className="col-12 col-md-2"></div>
+              <div className="col-12 col-md-4 ca_txt">
+                <div className="ca_holder">
+                  <p>
+                    <ul>
+                      {this.props.intl
+                        .formatMessage({
+                          id: "cooperative.section-procedure.illustration-2"
+                        })
+                        .split(";")
+                        .filter(str => str.length > 0)
+                        .map(item => (
+                          <li>{item}</li>
+                        ))}
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 ca_img">
+                <img
+                  src="/img/cooperative/2.png"
+                  alt="Download the subscription form."
+                />
+              </div>
+              <div className="col-12 col-md-2"></div>
+            </div>
+
+            <div key={2} className="row ca_left">
+              <div className="col-12 col-md-2"></div>
+              <div className="col-12 col-md-4 ca_txt">
+                <div className="ca_holder">
+                  <p>
+                    {" "}
+                    <FormattedMessage
+                      id="cooperative.section-procedure.illustration-3"
+                      values={{
+                        email: children => (
+                          <a
+                            href="mailto:contact@kleros.io"
+                            title="contact@kleros.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {children}
+                          </a>
+                        )
+                      }}
+                    />
+                  </p>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 ca_img">
+                <img
+                  src="/img/cooperative/3.png"
+                  alt="Download the subscription form."
+                />
+              </div>
+              <div className="col-12 col-md-2"></div>
+            </div>
+
             <div className="row ca_cooperative_buttons">
               <div className="col-12">
                 <a
@@ -79,14 +142,14 @@ class RootIndex extends React.Component {
                   target={"_" + bottom[0].target}
                   className="ca_button ca_solid_blue"
                 >
-                  {bottom[0].text.text}
+                  <FormattedMessage id="cooperative.section-procedure.button-primary" />
                 </a>
                 <a
                   href={bottom[1].url}
                   target={"_" + bottom[1].target}
                   className="ca_button ca_transparent_blue"
                 >
-                  {bottom[1].text.text}
+                  <FormattedMessage id="cooperative.section-procedure.button-secondary" />
                 </a>
               </div>
             </div>
