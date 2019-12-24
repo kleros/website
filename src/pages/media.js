@@ -10,11 +10,13 @@ import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 class RootIndex extends React.Component {
   categories = ["Featured", "Press", "Events", "Articles"];
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       mediaFilter: {
-        value: "",
+        value: this.props.intl.formatMessage({
+          id: "media.section-media.featured"
+        }),
         key: Math.random()
       },
       open: false
@@ -80,10 +82,24 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-7">
                 <h1>
-                  {theMeta(data.topBlock, "Media > Top > Title").data.data}
+                  <FormattedMessage id="media.title" />
                 </h1>
                 <h6>
-                  {theMeta(data.topBlock, "Media > Top > Sub Title").data.data}
+                  <FormattedMessage
+                    id="media.subtitle"
+                    values={{
+                      email: children => (
+                        <a
+                          href="mailto:contact@kleros.io"
+                          title="contact@kleros.io"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {children}
+                        </a>
+                      )
+                    }}
+                  />
                 </h6>
               </div>
               <div className="col-12 col-md-5" />
@@ -94,25 +110,36 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-3">
-                <h3>Categories</h3>
+                <h3>
+                  <h1>
+                    <FormattedMessage id="media.categories" />
+                  </h1>
+                </h3>
                 <ul>
-                  {this.categories.map((el, num) => {
-                    return (
-                      <li key={num}>
-                        <a
-                          href="#"
-                          className={
-                            el === this.state.mediaFilter.value
-                              ? "ca_selected"
-                              : ""
-                          }
-                          onClick={e => this.categoryChange(el, e)}
-                        >
-                          {el}
-                        </a>
-                      </li>
-                    );
-                  })}
+                  <li key={0}>
+                    <a
+                      href="#"
+                      className={
+                        this.props.intl.formatMessage({
+                          id: "media.section-media.featured"
+                        }) === this.state.mediaFilter.value
+                          ? "ca_selected"
+                          : ""
+                      }
+                      onClick={e =>
+                        this.categoryChange(
+                          this.props.intl.formatMessage({
+                            id: "media.section-media.featured"
+                          }),
+                          e
+                        )
+                      }
+                    >
+                      {this.props.intl.formatMessage({
+                        id: "media.section-media.featured"
+                      })}
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="col-12 col-md-9">
@@ -165,16 +192,10 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1" />
               <div className="col-12 col-md-10">
                 <h2 className="ca_underlined">
-                  {
-                    theMeta(data.bottomBlock, "Media > Bottom > CTA Title").data
-                      .data
-                  }
+                  <FormattedMessage id="media.section-book.title" />
                 </h2>
                 <h6>
-                  {
-                    theMeta(data.bottomBlock, "Media > Bottom > CTA Text").data
-                      .data
-                  }
+                  <FormattedMessage id="media.section-book.subtitle" />
                 </h6>
                 <a
                   target={
@@ -182,27 +203,16 @@ class RootIndex extends React.Component {
                     theMeta(data.bottomBlock, "Media > Bottom > Buttons > Left")
                       .referenceData[0].target
                   }
-                  href={
-                    theMeta(data.bottomBlock, "Media > Bottom > Buttons > Left")
-                      .referenceData[0].url
-                  }
+                  href="/whitepaper_en.pdf"
                   className="ca_button ca_solid_blue"
                 >
-                  {
-                    theMeta(data.bottomBlock, "Media > Bottom > Buttons > Left")
-                      .referenceData[0].text.text
-                  }
+                  <FormattedMessage id="media.section-book.button-primary" />
                 </a>
                 <a
                   onClick={this.onOpenModal}
                   className="ca_button ca_transparent_blue ca_button_book"
                 >
-                  {
-                    theMeta(
-                      data.bottomBlock,
-                      "Media > Bottom > Buttons > Right"
-                    ).referenceData[0].text.text
-                  }
+                  <FormattedMessage id="media.section-book.button-secondary" />
                 </a>
               </div>
               <div className="col-12 col-md-1" />
