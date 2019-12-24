@@ -245,7 +245,7 @@
     "subtitle": "A Trustless Way to Enter Information On-Chain",
     "section-problem": {
       "title": "The Oracle Problem",
-      "paragraph:": "In order to work, smart contracts often gather information from the outside world such as the winner in an election or the amount of rainfall in a specific region. The `Oracle Problem` is about finding a trustworthy way to introduce this information on-chain."
+      "paragraph": "In order to work, smart contracts often gather information from the outside world such as the winner in an election or the amount of rainfall in a specific region. The `Oracle Problem` is about finding a trustworthy way to introduce this information on-chain."
     },
     "section-why-ours": {
       "title": "Why Kleros Oracle?",
@@ -254,13 +254,14 @@
     "section-trustless": {
       "title": "Trustless Oracle",
       "subtitle-1": "How it works",
-      "paragraph-1": "Users submit external information (the price of ETH in USD, whether there was a flood in NYC, etc.) and a deposit. If a dispute arises about the truth of this information, Kleros provides dispute resolution. For more information about how this works, read this article.",
+      "paragraph-1": "Users submit external information (the price of ETH in USD, whether there was a flood in NYC, etc.) and a deposit. If a dispute arises about the truth of this information, Kleros provides dispute resolution. For more information about how this works, read <anchor>this article</anchor>.",
       "subtitle-2": "Why it matters",
       "paragraph-2": "By using an oracle based on Kleros' decentralized jurors opens up the potential for a wide variety of useful, practical dApps outwith the blockchain only sphere. The Kleros Oracle is a revolutionary step into the blockchain infrastructure of the future."
     },
     "section-contact-us": {
       "title": "Contact Us",
-      "subtitle": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io.",
+      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
+      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>.",
       "first-name": "First Name",
       "last-name": "Last Name",
       "company-email": "Company Email",
