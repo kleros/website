@@ -184,7 +184,8 @@
   },
 
   "assets": {
-    "title": "클레로스 브랜드 로고"
+    "title": "클레로스 브랜드 로고",
+    "categories": "카테고리"
   },
 
   "escrow": {

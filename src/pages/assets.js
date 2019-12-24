@@ -95,7 +95,9 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7">
-                <h1>Kleros Brand Assets</h1>
+                <h1>
+                  <FormattedMessage id="assets.title" />
+                </h1>
               </div>
               <div className="col-12 col-md-5" />
             </div>
@@ -105,7 +107,9 @@ class RootIndex extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-3">
-                <h3>Categories</h3>
+                <h3>
+                  <FormattedMessage id="assets.categories" />
+                </h3>
                 <ul>
                   {this.categories.map((el, num) => {
                     return (
