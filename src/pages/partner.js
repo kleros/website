@@ -33,23 +33,18 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
-                <h1>{theMeta(top, "Partner > Top > Title").data.data}</h1>
-                <h6>{theMeta(top, "Partner > Top > Sub Title").data.data}</h6>
-                <p>{theMeta(top, "Partner > Top > Description").data.data}</p>
-                {theMeta(top, "Partner > Top > Button").referenceData.map(
-                  (el, num) => {
-                    return (
-                      <a
-                        href={el.url}
-                        key={num}
-                        target={"_" + el.target}
-                        className="ca_button ca_solid_blue"
-                      >
-                        {el.text.text}
-                      </a>
-                    );
-                  }
-                )}
+                <h1>
+                  <FormattedMessage id="partner.title" />
+                </h1>
+                <h6>
+                  <FormattedMessage id="partner.subtitle" />
+                </h6>
+                <p>
+                  <FormattedMessage id="partner.paragraph" />
+                </p>
+                <a className="ca_button ca_solid_blue" href="">
+                  <FormattedMessage id="partner.button-primary" />
+                </a>
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
@@ -60,10 +55,7 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <h2 className="ca_underlined">
-                  {
-                    theMeta(benefitsText, "Partner > Benefits > Title").data
-                      .data
-                  }
+                  <FormattedMessage id="partner.section-benefits.title" />
                 </h2>
               </div>
             </div>
@@ -71,29 +63,42 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-3">
                 <div className="ca_img">
-                  <img src={benefitsCards[0].image.file.url} alt="Earn" />
+                  <img src="/img/partner/benefit-1.png" alt="Earn" />
                 </div>
                 <div className="ca_txt">
-                  <h6>{benefitsCards[0].title.title}</h6>
-                  <p>{benefitsCards[0].text.text}</p>
+                  <h6>
+                    {" "}
+                    <FormattedMessage id="partner.section-benefits.subtitle-1" />
+                  </h6>
+                  <p>
+                    <FormattedMessage id="partner.section-benefits.paragraph-1" />
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-4">
                 <div className="ca_img">
-                  <img src={benefitsCards[1].image.file.url} alt="Resolve" />
+                  <img src="/img/partner/benefit-2.png" alt="Resolve" />
                 </div>
                 <div className="ca_txt">
-                  <h6>{benefitsCards[1].title.title}</h6>
-                  <p>{benefitsCards[1].text.text}</p>
+                  <h6>
+                    <FormattedMessage id="partner.section-benefits.subtitle-2" />
+                  </h6>
+                  <p>
+                    <FormattedMessage id="partner.section-benefits.paragraph-2" />
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-3">
                 <div className="ca_img">
-                  <img src={benefitsCards[2].image.file.url} alt="Expertise" />
+                  <img src="/img/partner/benefit-3.png" alt="Expertise" />
                 </div>
                 <div className="ca_txt">
-                  <h6>{benefitsCards[2].title.title}</h6>
-                  <p>{benefitsCards[2].text.text}</p>
+                  <h6>
+                    <FormattedMessage id="partner.section-benefits.subtitle-3" />
+                  </h6>
+                  <p>
+                    <FormattedMessage id="partner.section-benefits.paragraph-3" />
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-1"></div>
@@ -103,22 +108,30 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-4">
                 <div className="ca_img">
                   <img
-                    src={benefitsCards[3].image.file.url}
+                    src="/img/partner/benefit-4.png"
                     alt="Fit your Schedule"
                   />
                 </div>
                 <div className="ca_txt">
-                  <h6>{benefitsCards[3].title.title}</h6>
-                  <p>{benefitsCards[3].text.text}</p>
+                  <h6>
+                    <FormattedMessage id="partner.section-benefits.subtitle-4" />
+                  </h6>
+                  <p>
+                    <FormattedMessage id="partner.section-benefits.paragraph-4" />
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-4">
                 <div className="ca_img">
-                  <img src={benefitsCards[4].image.file.url} alt="Private" />
+                  <img src="/img/partner/benefit-5.png" alt="Private" />
                 </div>
                 <div className="ca_txt">
-                  <h6>{benefitsCards[4].title.title}</h6>
-                  <p>{benefitsCards[4].text.text}</p>
+                  <h6>
+                    <FormattedMessage id="partner.section-benefits.subtitle-5" />
+                  </h6>
+                  <p>
+                    <FormattedMessage id="partner.section-benefits.paragraph-5" />
+                  </p>
                 </div>
               </div>
               <div className="col-12 col-md-2"></div>
@@ -131,32 +144,14 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-2"></div>
               <div className="col-12 col-md-8">
                 <h2 className="ca_underlined">
-                  {
-                    theMeta(integration, "Partner > Integration > Title").data
-                      .data
-                  }
+                  <FormattedMessage id="partner.section-integration.title" />
                 </h2>
                 <h6>
-                  {
-                    theMeta(integration, "Partner > Integration > Sub Title")
-                      .data.data
-                  }
+                  <FormattedMessage id="partner.section-integration.subtitle" />
                 </h6>
-                {theMeta(
-                  integration,
-                  "Partner > Integration > Button"
-                ).referenceData.map((el, num) => {
-                  return (
-                    <a
-                      href={el.url}
-                      target={"_" + el.target}
-                      key={num}
-                      className="ca_button ca_solid_blue"
-                    >
-                      {el.text.text}
-                    </a>
-                  );
-                })}
+                <a className="ca_button ca_solid_blue">
+                  <FormattedMessage id="partner.section-integration.button-primary" />
+                </a>
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
@@ -168,29 +163,14 @@ class RootIndex extends React.Component {
               <div className="col-12 col-md-1"></div>
               <div className="col-12 col-md-10">
                 <h2 className="ca_underlined">
-                  {theMeta(partner, "Partner > Be partner > Title").data.data}
+                  <FormattedMessage id="partner.section-partner.title" />
                 </h2>
                 <h6>
-                  {
-                    theMeta(partner, "Partner > Be partner > Description").data
-                      .data
-                  }
+                  <FormattedMessage id="partner.section-partner.subtitle" />
                 </h6>
-                {theMeta(
-                  partner,
-                  "Partner > Be partner > Button"
-                ).referenceData.map((el, num) => {
-                  return (
-                    <a
-                      href={el.url}
-                      target={"_" + el.target}
-                      key={num}
-                      className="ca_button ca_solid_blue"
-                    >
-                      {el.text.text}
-                    </a>
-                  );
-                })}
+                <a className="ca_button ca_solid_blue">
+                  <FormattedMessage id="partner.section-partner.button-primary" />
+                </a>
               </div>
               <div className="col-12 col-md-1"></div>
             </div>
