@@ -86,7 +86,7 @@
       "paragraph": "Kleros is comprised of a high quality team covering all required disciplines for decentralized justice: smart contract security, computer science, cryptoeconomics, business, marketing and communications."
     },
     "section-join-our-team": {
-      "title": "Join Our Team",
+      "title": "Join Our Team!",
       "subtitle": "Check our open positions below and join the justice revolution!"
     }
   },
@@ -96,7 +96,7 @@
     "section-faq": {
       "category-general": {
         "name": "General",
-        "q-1": "Can you really trust a decision made by a bunch of anonymous people on the Internet_",
+        "q-1": "Can you really trust a decision made by a bunch of anonymous people on the Internet?",
         "a-1": "Satoshi Nakamoto taught us that a number of anonymous computers who do not trust each can still reach consensus, provided incentives are correctly structured. Kleros extends this principle to human decision making. A number of anonymous jurors who do not trust each other can reach consensus on a right decision, provided incentives are correctly structured. To learn more about the incentive system, read our white paper.",
         "q-2": "How many pinakion will exist?",
         "a-2": "The supply of pinakion is fixed at one billion units.",

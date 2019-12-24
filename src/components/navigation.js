@@ -23,7 +23,9 @@ export default injectIntl(function(menu) {
               <Dropdown
                 data={{
                   text: <FormattedMessage id="header.button-one-pager" />,
-                  dropdownOptions: [{ text: "English", url: "onepager_en.pdf" }]
+                  dropdownOptions: [
+                    { text: "English", url: "/onepager_en.pdf" }
+                  ]
                 }}
               />
               <Dropdown

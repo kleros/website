@@ -59,7 +59,7 @@
     "url": "git+https://github.com/kleros/website.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby clean && gatsby develop",
     "build": "gatsby clean && gatsby build",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve",

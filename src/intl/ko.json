@@ -1,7 +1,7 @@
 {
   "header": {
-    "button-one-pager": "TODO",
-    "button-blog": "TODO",
+    "button-one-pager": "",
+    "button-blog": "",
     "button-partner": "파트너 신청",
     "button-juror": "배심원단 지원",
     "button-dapps": "DApps",
@@ -16,10 +16,10 @@
     "button-juror": "배심원단 지원",
     "button-partner": "파트너 신청",
     "button-token-sale": "토큰 세일",
-    "button-twitter": "TODO",
-    "button-blog": "TODO",
-    "button-github": "TODO",
-    "button-forum": "TODO",
+    "button-twitter": "",
+    "button-blog": "",
+    "button-github": "",
+    "button-forum": "",
 
     "section-example-dispute": {
       "title": "새로운 경제 상황 속에서 발행하는 일반적으로 발생하는 분쟁들",
@@ -29,7 +29,7 @@
       "paragraph-4": "밥씨가 작업을 완료했을 땐, 이미 앨리스씨는 불만족한 상태였습니다.",
       "paragraph-5": "이렇게, 분쟁이 시작됐습니다. 앨리스씨는 환불을 요구했고, 밥씨는 앨리스씨가 제공한 홈페이지 가이드가 확실하지 않아 작업이 늦어졌다고 반박했습니다.",
       "paragraph-6": "앨리스씨와 밥씨는 모두 이 분쟁에서 명확한 결과를 얻지 못한 채, 둘 다 불만족한 상태로 남겨졌습니다.",
-      "button-rpimary": "비디오 보러 가기"
+      "button-primary": "비디오 보러 가기"
     },
 
     "section-internet-economy": {
@@ -427,7 +427,7 @@
 
   "footer": {
     "about": "About",
-    "developer": "TODO",
+    "developer": "",
     "governance": "거버넌스",
     "join": "Join Us",
     "faq": "FAQ",
