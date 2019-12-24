@@ -215,7 +215,7 @@
       "button-primary": "Курированный Лист Kleros Token"
     },
     "section-trustless": {
-      "title": "'Не Требующее Доверия' Курированные Листы",
+      "title": "'Не Требующее Доверия' Курированные Списки",
       "subtitle-1": "Как Это Работает?",
       "paragraph-1": "Вы устанавливаете руководство касательно того, что может и что не может быть принято в список. Пользователи отпрвляют материалы. Другие пользователи оспаривают предлагаемые контенты. Kleros выносит решение.",
       "subtitle-2": "Как же Споры Решаются?",
@@ -372,24 +372,23 @@
     }
   },
   "footer": {
-    "about": "About",
-    "governance": "Governance",
-    "join": "Join Us",
+    "about": "О Нас",
+    "governance": "Управление",
+    "join": "Присоединиться к Нам",
     "faq": "FAQ",
-    "media": "Media",
-    "blog": "Blog",
-    "assets": "Assets",
+    "media": "СМИ",
+    "blog": "Блог",
+    "assets": "Активы",
     "white-paper": "White Paper",
     "escrow": "Escrow",
-    "curated-list": "Curated List",
-    "oracle": "Oracle",
+    "curated-list": "Курированный Список",
+    "oracle": "Оракул",
     "cooperative": "Cooperative",
-    "court-tour": "Court Tour",
-    "token": "Token",
-    "book": "Book",
-    "developer": "Developer",
-    "copyright": "Copyright",
-    "button-juror": "Join as a Juror",
-    "button-partner": "Become a Partner"
+    "court-tour": "Экскурсия по Суду",
+    "token": "Токен",
+    "book": "Книга",
+    "copyright": "Авторские Права",
+    "button-juror": "Вступить как Присяжный",
+    "button-partner": "Стать Партнёром"
   }
 }
