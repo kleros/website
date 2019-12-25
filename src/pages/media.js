@@ -17,7 +17,7 @@ class RootIndex extends React.Component {
         value: this.props.intl.formatMessage({
           id: "media.section-media.featured"
         }),
-        key: Math.random()
+        key: "media.section-media.featured"
       },
       open: false
     };
@@ -41,15 +41,19 @@ class RootIndex extends React.Component {
   };
 
   render() {
+    console.log(this.state);
     var siteTitle = "Kleros";
     var media = get(this, "props.data.allContentfulMediaEntry.edges");
     var data = get(this, "props.data.allContentfulMediaPage.edges")[0].node;
-    if (this.state.mediaFilter.value == "")
-      this.categoryChange(this.categories[0]);
-    else
-      media = media.filter(
-        ({ node }) => this.categories.indexOf(this.state.mediaFilter.value) > -1
-      );
+    console.log(media);
+
+    //if (this.state.mediaFilter.key == "")
+    // this.categoryChange(this.categories[0]);
+    // else
+    //   media = media.filter(
+    //     ({ node }) => this.categories.indexOf(this.state.mediaFilter.value) > -1
+    //   );
+    console.log(media);
     return (
       <Template location={this.props.location}>
         <Helmet>
@@ -120,9 +124,8 @@ class RootIndex extends React.Component {
                     <a
                       href="#"
                       className={
-                        this.props.intl.formatMessage({
-                          id: "media.section-media.featured"
-                        }) === this.state.mediaFilter.value
+                        "media.section-media.featured" ==
+                        this.state.mediaFilter.key
                           ? "ca_selected"
                           : ""
                       }
