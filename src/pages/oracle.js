@@ -194,7 +194,11 @@ class RootIndex extends React.Component {
                 <h2>
                   <FormattedMessage id="oracle.section-trustless.title" />
                 </h2>
-                <img src={contentMain[0].mediaData[3].file.url} alt="Kleros" />
+                <img
+                  style={{ marginLeft: 0 }}
+                  src={contentMain[0].mediaData[3].file.url}
+                  alt="Kleros"
+                />
               </div>
               <div className="col-12 col-md-2"></div>
             </div>
