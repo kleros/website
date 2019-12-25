@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 class Dropdown extends Component {
   state = {
     showOptions: false
@@ -24,7 +24,10 @@ class Dropdown extends Component {
   }
 
   handleClick(e) {
-    if (!this.state.showOptions || this.node.contains(e.target)) {
+    if (
+      !this.state.showOptions ||
+      (this.node && this.node.contains(e.target))
+    ) {
       return;
     }
     this.toggleOptions();
@@ -55,14 +58,12 @@ class Dropdown extends Component {
             {data.dropdownOptions.map((option, num) => {
               return (
                 <li className="dropdown-item">
-                  <a
-                    href={option.url}
-                    target={this.props.target}
-                    rel="noopener noreferrer"
-                    onClick={this.toggleOptions.bind(this)}
-                  >
-                    {option.text}
-                  </a>
+                  {this.props.data.intl && (
+                    <Link to={option.url}>{option.text}</Link>
+                  )}
+                  {!this.props.data.intl && (
+                    <a href={option.url}>{option.text}</a>
+                  )}
                 </li>
               );
             })}
@@ -75,4 +76,4 @@ class Dropdown extends Component {
   }
 }
 
-export default Dropdown;
+export default injectIntl(Dropdown);

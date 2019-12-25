@@ -9,9 +9,9 @@ export default injectIntl(function(menu) {
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-2">
-            <a href="/" className="ca_logo">
+            <Link to="/">
               <img src="/img/logo-s.svg" alt="Kleros" />
-            </a>
+            </Link>
           </div>
           <nav className="col-6 col-md-10">
             <a href="#" className="ca_hamburger">
@@ -32,10 +32,10 @@ export default injectIntl(function(menu) {
                 data={{
                   text: <FormattedMessage id="header.button-white-paper" />,
                   dropdownOptions: [
-                    { text: "English", url: "whitepaper_en.pdf" },
+                    { text: "English", url: "/whitepaper_en.pdf" },
                     {
                       text: "Español",
-                      url: "whitepaper_es.pdf"
+                      url: "/whitepaper_es.pdf"
                     }
                   ]
                 }}
@@ -80,7 +80,8 @@ export default injectIntl(function(menu) {
                       text: "Oracle",
                       url: "/oracle"
                     }
-                  ]
+                  ],
+                  intl: true
                 }}
               />
               <li key={4}>
@@ -89,9 +90,9 @@ export default injectIntl(function(menu) {
                 </a>
               </li>
               <li key={7}>
-                <a href="/about" className="hamburger-a">
+                <Link to="/about" className="hamburger-a">
                   <FormattedMessage id="header.button-about" />
-                </a>
+                </Link>
               </li>
               <Dropdown
                 data={{
