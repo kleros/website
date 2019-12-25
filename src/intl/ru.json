@@ -286,12 +286,12 @@
     "button-primary": "Руководство по Crypto для Начинающих"
   },
   "token": {
-    "title": "Pinakion (PNK) Token",
+    "title": "Pinakion (PNK) Токен",
     "section-token": {
-      "subtitle-1": "Stake as a Juror",
-      "paragraph-1": "First and foremost, PNK holders can stake their token in a Kleros court to indicate their availability to serve as jurors. The more they stake, the more chances they have of selection. Jurors stake their PNK in courts they have relevant skills for with a random number generator (RNG) selecting the final spots based on size of stake.",
-      "subtitle-2": "PNK Protects Against Sybil Attacks",
-      "paragraph": "PNK is a protection against Sybil attacks. In order for an attacker to flood the juror pool, they need to buy enough PNK so that they are selected enough times to be a juror for the same case in order to change the outcome. Using a native token like PNK offers several key advantages for minimizing the risk of 51% attacks versus using an external cryptocurrency like ETH.",
+      "subtitle-1": "Делать Ставку как Присяжный",
+      "paragraph-1": "Прежде всего, обладатели PNK могут использовать свой токен в суде Kleros, чтобы указать на свою готовность выступать в качестве присяжного заседателя. Чем больше они делают ставку, тем больше у них шансов стать выбранным. Присяжные ставят свои PNK в судах, для которых у них есть соответствующие навыки, с помощью генератора случайных чисел (RNG), который выбирает финальные места на основе размера ставки.",
+      "subtitle-2": "PNK Защищает Против Атак Сиббилы",
+      "paragraph": "PNK - защита от атак Сиббил. Чтобы злоумышленник затопил пул присяжных, ему нужно купить достаточно PNK, чтобы их выбрали достаточно раз, чтобы стать присяжным в том же деле, чтобы изменить исход. Использование собственного токена, такого как PNK, дает несколько ключевых преимуществ для минимизации риска 51% атак по сравнению с использованием внешней криптовалюты, такой как ETH.",
       "subtitle-3": "PNK Makes an Attack Expensive",
       "paragraph-3": "Imagine that someone does buy 51% of the PNK in an effort to attack Kleros. Maybe their attack will be subtle and go unnoticed. However, it’s more likely the community will realize that it is under attack. In this case, Kleros would lose credibility as an arbitration platform and the value of PNK would decrease. Then the attacker would take a substantial loss on PNK bought, representing a high economic attack cost.",
       "subtitle-4": "User Oriented",
