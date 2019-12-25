@@ -344,31 +344,32 @@
     }
   },
   "partner": {
-    "title": "Become a Partner",
-    "subtitle": "Integrate Justice as a Service (JaaS) on your platform.",
-    "paragraph": "Are you building a marketplace, a content sharing platform or any other that requires dispute resolution? Send your disputes to Kleros and our protocol returns them resolved.",
+    "title": "Стать Партнёром",
+    "subtitle": "Интегрируйте 'Правосудие как Услугу'(JaaS) на вашей платформе.",
+    "button-primary": "Начать Сейчас",
+    "paragraph": "Вы создаёте рынок, платформу для обмена контентом или любую другую, которые потребуют разрешения споров? Отправьте свои споры в Kleros, и наш протокол вернёт их решёнными.",
     "section-benefits": {
-      "title": "Benefits",
-      "subtitle-1": "Simple Integration",
-      "paragraph-1": "Kleros is simple to integrate removing the burden of dispute resolution from your shoulders.",
-      "subtitle-2": "Efficient Settlement",
-      "paragraph-2": "Kleros is fast and cheap. In most cases, it comes at zero cost.",
-      "subtitle-3": "Decentralized",
-      "paragraph-3": "Fully decentralize all of your disputes. Have them solved in the Kleros court.",
+      "title": "Выгода",
+      "subtitle-1": "Простая Интеграция",
+      "paragraph-1": "Kleros легко интегрируется, снимая с ваших плеч бремя разрешения споров",
+      "subtitle-2": "Эффективное Урегулирование",
+      "paragraph-2": "Клерос это быстро и дешево. В большинстве случаев это происходит бесплатно.",
+      "subtitle-3": "Децентрализация",
+      "paragraph-3": "Полностью децентрализуйте все ваши споры. Пусть они решаются в суде Kleros.",
       "subtitle-4": "24/7",
-      "paragraph-4": "Kleros is always online, solving disputes - around the clock, throughout the year.",
-      "subtitle-5": "Open Source",
-      "paragraph-5": "Use Kleros and support the open source movement!"
+      "paragraph-4": "Kleros всегда онлайн, разрешает споры - круглосуточно и круглый год.",
+      "subtitle-5": "Открытый Источник",
+      "paragraph-5": "Используйте Kleros и поддерживайте движение с открытым исходным кодом!"
     },
     "section-integration": {
-      "title": "Full Integration Support",
-      "subtitle": "The Kleros team will give you full support and guidance throughout the integration process.",
-      "button-primary": "Contact Dev Team on Slack #dev"
+      "title": "Полная Поддержка Интеграции",
+      "subtitle": "Команда Kleros предоставит вам полную поддержку и руководство на протяжении всего процесса интеграции.",
+      "button-primary": "Связаться с командой разработчиков на Slack #dev"
     },
     "section-partner": {
-      "title": "Become a Partner Now",
-      "subtitle": "Start using open justice as a service in your platform!",
-      "button-primary": "Get started"
+      "title": "Стать Партнёром Сейчас",
+      "subtitle": "Начните использовать открытое правосудие как сервис на вашей платформе!",
+      "button-primary": "Начать"
     }
   },
   "footer": {
