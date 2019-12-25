@@ -44,22 +44,22 @@ class RootIndex extends React.Component {
                   <h6>
                     <FormattedMessage id="index.subtitle" />
                   </h6>
-                  <a
-                    href="
-                    /juror
-                  "
+
+                  <Link
+                    to="/juror"
                     className="ca_button ca_solid_blue"
                     target="_self"
                   >
                     <FormattedMessage id="index.button-juror" />
-                  </a>
-                  <a
-                    href="/partner"
+                  </Link>
+
+                  <Link
+                    to="/partner"
                     className="ca_button ca_transparent_blue"
                     target="_self"
                   >
                     <FormattedMessage id="index.button-partner" />
-                  </a>
+                  </Link>
                   <a
                     href="https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/"
                     className="ca_button ca_transparent_blue"
@@ -428,20 +428,21 @@ class RootIndex extends React.Component {
                       }}
                     />
                   </p>
-                  <a
-                    target="_self"
-                    href="/juror"
+                  <Link
+                    to="/juror"
                     className="ca_button ca_solid_blue"
+                    target="_self"
                   >
                     <FormattedMessage id="index.button-juror" />
-                  </a>
-                  <a
-                    target="_self"
-                    href="/partner"
+                  </Link>
+
+                  <Link
+                    to="/partner"
                     className="ca_button ca_transparent_blue"
+                    target="_self"
                   >
                     <FormattedMessage id="index.button-partner" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-12 col-md-1" />
               </div>
@@ -603,9 +604,10 @@ class RootIndex extends React.Component {
                       {" "}
                       <FormattedMessage id="index.section-justice-revolution.paragraph-1" />
                     </p>
-                    <a href="/juror" className="ca_button ca_transparent_blue">
+
+                    <Link to="/juror" className="ca_button ca_transparent_blue">
                       <FormattedMessage id="index.section-justice-revolution.button-1" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-12 col-md-4">
@@ -620,12 +622,14 @@ class RootIndex extends React.Component {
                     <p>
                       <FormattedMessage id="index.section-justice-revolution.paragraph-2" />
                     </p>
-                    <a
-                      href="/partner"
+
+                    <Link
+                      to="/partner"
                       className="ca_button ca_transparent_blue"
+                      target="_self"
                     >
                       <FormattedMessage id="index.section-justice-revolution.button-2" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-12 col-md-2" />
