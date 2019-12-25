@@ -146,7 +146,7 @@
   },
   "media": {
     "title": "Media",
-    "subtitle": "For media enquiries, send an email to <email>contact@kleros.io<email>.",
+    "subtitle": "For media enquiries, send an email to <email>contact@kleros.io</email>.",
     "categories": "Categories",
     "section-media": {
       "featured": "Featured",
