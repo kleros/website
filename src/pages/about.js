@@ -84,6 +84,14 @@ class RootIndex extends React.Component {
                   centerMode={true}
                   centerPadding="0px"
                   focusOnSelect={true}
+                  responsive={[
+                    {
+                      breakpoint: 768,
+                      settings: {
+                        slidesToShow: 1
+                      }
+                    }
+                  ]}
                 >
                   {teamMembers.map((el, num) => {
                     return (
