@@ -171,18 +171,18 @@
       "title": "Риски Заключения Контрактов Онлайн",
       "paragraph": "Компании обычно заключают контракты на услуги онлайн с внештатными дизайнерами, менеджерами сообществ и разработчиками. Но существует большой риск того, что работа не будет выполнена или будет выполнена с низким качеством."
     },
-    "meet-escrow-section": {
+    "section-meet-escrow": {
       "title": "Знакомство с Kleros Escrow",
-      "paragraph": "Отправьте платеж на счет условного депонирования.Если возникнет спор, группа присяжных заседателей Kleros будет заниматься разрешением. Kleros Escrow защищает как покупателя, так и продавца, обеспечивая обе стороны в соответствии с соглашением.",
+      "paragraph": "Отправьте платеж на счёт условного депонирования.Если возникнет спор, группа присяжных заседателей Kleros будет заниматься разрешением. Kleros Escrow защищает как покупателя, так и продавца, обеспечивая обе стороны в соответствии с соглашением.",
       "button-primary": "Kleros Escrow"
     },
-    "trustless-escrow-section": {
+    "section-trustless-escrow": {
       "title": "'Не Требующее Доверия' Децентрализованное Эскроу",
       "subtitle": "Безопасное, эффективное и не требующее доверия условное депонирование обеспеченное технологией блокчейн.",
       "subtitle-1": "Интегрируйте Kleros на Вашу Платформу",
       "paragraph-1": "Вы создаёте платформу для электронной коммерции, фриланса, финансов ...? Возникновение споров неизбежно. Интегрируйте Kleros, чтобы решить их. Вы отправляете нам спор, Kleros отправляет вам решение.",
       "subtitle-2": "Итак, как же разрешаются споры?",
-      "paragraph-2": "Kleros выбирает жюри из краудсорсинга, чтобы принять решение. Изучив доказательства, присяжные принимают решение на основании смарт-контракта. Все доказательства хранятся в блокчейне, и никто не может вмешаться в процедуру. Чтобы узнать, как это работает, прочитайте whitepaper Kleros.",
+      "paragraph-2": "Kleros выбирает жюри из краудсорсинга, чтобы принять решение. Изучив доказательства, присяжные принимают решение на основании смарт-контракта. Все доказательства хранятся в блокчейне, и никто не может вмешаться в процедуру. Чтобы узнать, как это работает, прочитайте <anchor>Kleros whitepaper</anchor>.",
       "subtitle-3": "Почему это важно",
       "paragraph-3": "Kleros приносит стандарт доверия для онлайн-транзакций. Благодаря Kleros Escrow, покупатель и продавец могут быть уверены, что другая сторона выполнит обязательства по их соглашению.",
       "illustration-1": "Перейдите на Kleros Escrow и создайте новую транзакцию.",
@@ -191,7 +191,7 @@
       "illustration-4": "Если спор возник, одним щелчком мыши вы можете отправить контракт на разрешение спора.",
       "illustration-5": "Присяжные оценивают доказательства и принимают решение. Средства отправляются победителю. Дело закрыто."
     },
-    "want-to-use-section": {
+    "section-want-to-use": {
       "title": "Хотите Использовать Kleros Escrow в своей Платформе?",
       "subtitle": "Свяжитесь с нами сейчас, и мы поможем вам с интеграцией.",
       "first-name": "Имя",
@@ -259,7 +259,7 @@
     },
     "section-contact-us": {
       "title": "Contact Us",
-      "subtitle": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via Telegram or contact@kleros.io.",
+      "subtitle": "Looking to find out more? We’re open to all proposals, suggestions and requests. Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>.",
       "first-name": "First Name",
       "last-name": "Last Name",
       "company-email": "Company Email",
@@ -270,12 +270,12 @@
   },
   "cooperative": {
     "title": "Присоединяйтесь к Cooperative Kleros",
-    "paragraph": "Усилия по развитию протокола Kleros координируются Coopérative Kleros, Société Coopérative d’Intérêt Collectif (SCIC), зарегистрированной во Франции. Прочтите эту статью, чтобы узнать больше о правовой структуре. Если вы хотите стать членом Cooperative, выполните следующие действия. Ваша заявка должна быть одобрена другими участниками.",
+    "paragraph": "Усилия по развитию протокола Kleros координируются Coopérative Kleros, Société Coopérative d’Intérêt Collectif (SCIC), зарегистрированной во Франции. Прочтите <anchor>эту статью</anchor>, чтобы узнать больше о правовой структуре. Если вы хотите стать членом Cooperative, выполните следующие действия. Ваша заявка должна быть одобрена другими участниками.",
     "section-procedure": {
       "illustration-1": "Скачайте форму подписки",
       "button-1": "Скачать",
       "illustration-2": "Распечатайте; Заполните (не забудьте фразу написанную от руки в конце); Подпишите; Отсканируйте;",
-      "illustration-3": "Отправьте обратно на lola@kleros.io вместе с цифровой копией пасспорта/ of your passport / национального удостоверение личности и TxID вашего депозита.",
+      "illustration-3": "Отправьте обратно на <email>lola@kleros.io</email> вместе с цифровой копией пасспорта/ of your passport / национального удостоверение личности и TxID вашего депозита.",
       "button-primary": "Скачать Форму",
       "button-secondary": "Статуты"
     }
@@ -294,13 +294,13 @@
       "paragraph": "PNK - защита от атак Сиббил. Чтобы злоумышленник затопил пул присяжных, ему нужно купить достаточно PNK, чтобы их выбрали достаточно раз, чтобы стать присяжным в том же деле, чтобы изменить исход. Использование собственного токена, такого как PNK, дает несколько ключевых преимуществ для минимизации риска 51% атак по сравнению с использованием внешней криптовалюты, такой как ETH.",
       "subtitle-3": "PNK Makes an Attack Expensive",
       "paragraph-3": "Imagine that someone does buy 51% of the PNK in an effort to attack Kleros. Maybe their attack will be subtle and go unnoticed. However, it’s more likely the community will realize that it is under attack. In this case, Kleros would lose credibility as an arbitration platform and the value of PNK would decrease. Then the attacker would take a substantial loss on PNK bought, representing a high economic attack cost.",
-      "subtitle-4": "User Oriented",
-      "paragraph-4": "Users have an interest in holding PNK tokens in order to gain voting rewards when taking part as jurors. They also have the opportunity to vote with their PNK on all Kleros Governance related proposals and votes creating an open and unbiased platform for all."
+      "subtitle-4": "Ориентированный на Пользователя",
+      "paragraph-4": "Пользователи заинтересованы в обладании токенами PNK, чтобы получать вознаграждения за участие в качестве присяжных заседателей. У них также есть возможность проголосовать со своими PNK по всем предложениям и голосам, связанными с управлением Kleros Governance, создавая открытую и беспристрастную платформу для всех."
     },
     "banner": {
-      "title": "If you are interested in acquiring PNK token OTC, get in touch",
-      "subtitle": "Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the market.",
-      "button-primary": "Get in touch here"
+      "title": "Если вы заинтересованы в приобретении PNK токена по внебиржевой сделке, свяжитесь с нами.",
+      "subtitle": "Обратите внимание, что для обеспечения справедливости в распределении токенов, они продаются покупателям по ценам, отраженным на рынке.",
+      "button-primary": "Связаться здесь"
     }
   },
   "juror": {
@@ -322,14 +322,14 @@
       "subtitle-6": "Innovate",
       "paragraph-1": "Start today and take part in the future of justice!"
     },
-    "how-section": {
+    "section-how": {
       "title": "How It Works",
       "illustration-1": "When a dispute starts, the smart contract automatically draws a predefined number of jurors.",
       "illustration-2": "If you are drawn, you will arbitrate on the case.",
       "illustration-3": "If you rule correctly, you’ll receive payment in ETH for your work.",
       "illustration-4": "If you are in the majority ruling, you will also receive some PNK."
     },
-    "start-section": {
+    "section-start": {
       "title": "Start as a Juror Now!",
       "subtitle-1": "Follow this tutorial to buy PNK.",
       "button-1": "Go to Tutorial",
@@ -338,7 +338,7 @@
       "subtitle-3": "Wait to be drawn and start ruling!",
       "button-3": "Kleros Court Cases"
     },
-    "join-section": {
+    "section-join": {
       "title": "Join as a Juror Now!",
       "button-primary": "Start Now"
     }
