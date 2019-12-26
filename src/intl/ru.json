@@ -147,13 +147,14 @@
   "media": {
     "title": "СМИ",
     "subtitle": "Для запросов СМИ, отправьте электронное письмо на <email>contact@kleros.io</email>.",
+    "categories": "Категории",
     "section-media": {
       "featured": "Рекомендуемые",
       "press": "В прессе",
-        "events": "События",
+      "events": "События",
       "articles": "Статьи"
     },
-    "book-section": {
+    "section-book": {
       "title": "Скачайте книгу Kleros сегодня!",
       "subtitle": "Прочтите 'Dispute Revolution', чтобы глубже погрузиться в увлекательный мир децентрализованного правосудия.",
       "button-primary": "Скачать White Paper",
