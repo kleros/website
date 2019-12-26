@@ -188,7 +188,7 @@ class RootIndex extends React.Component {
                   href="https://tokens.kleros.io"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ca_button ca_transparent_blue"
+                  className="ca_button ca_solid_blue"
                 >
                   <FormattedMessage id="curated-list.section-why-ours.button-primary" />
                 </a>
