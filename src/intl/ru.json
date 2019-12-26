@@ -162,7 +162,8 @@
     }
   },
   "assets": {
-    "title": "Активы Бренда Kleros"
+    "title": "Активы Бренда Kleros",
+    "categories": "Категории"
   },
   "escrow": {
     "title": "Эскроу-Сервис на Блокчейне",
