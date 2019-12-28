@@ -60,7 +60,10 @@ class RootIndex extends React.Component {
                     {" "}
                     <FormattedMessage id="cooperative.section-procedure.illustration-1" />
                   </p>
-                  <a className="ca_button ca_solid_blue" href="#">
+                  <a
+                    className="ca_button ca_solid_blue"
+                    href="/assets/form.pdf"
+                  >
                     <FormattedMessage id="cooperative.section-procedure.button-1" />
                   </a>
                 </div>
@@ -138,7 +141,7 @@ class RootIndex extends React.Component {
             <div className="row ca_cooperative_buttons">
               <div className="col-12">
                 <a
-                  href={bottom[0].url}
+                  href="/assets/form.pdf"
                   target={"_" + bottom[0].target}
                   className="ca_button ca_solid_blue"
                 >
