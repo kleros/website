@@ -102,7 +102,8 @@ export default injectIntl(function(menu) {
                     {
                       text: "한국어",
                       url: "/ko"
-                    }
+                    },
+                    { text: "Español", url: "/es" }
                   ]
                 }}
               />
