@@ -42,7 +42,10 @@ class RootIndex extends React.Component {
                 <p>
                   <FormattedMessage id="partner.paragraph" />
                 </p>
-                <a className="ca_button ca_solid_blue" href="">
+                <a
+                  className="ca_button ca_solid_blue"
+                  href="https://developer.kleros.io"
+                >
                   <FormattedMessage id="partner.button-primary" />
                 </a>
               </div>
@@ -149,7 +152,10 @@ class RootIndex extends React.Component {
                 <h6>
                   <FormattedMessage id="partner.section-integration.subtitle" />
                 </h6>
-                <a className="ca_button ca_solid_blue">
+                <a
+                  className="ca_button ca_solid_blue"
+                  href="https://slack.kleros.io"
+                >
                   <FormattedMessage id="partner.section-integration.button-primary" />
                 </a>
               </div>
@@ -168,7 +174,10 @@ class RootIndex extends React.Component {
                 <h6>
                   <FormattedMessage id="partner.section-partner.subtitle" />
                 </h6>
-                <a className="ca_button ca_solid_blue">
+                <a
+                  className="ca_button ca_solid_blue"
+                  href="https://developer.kleros.io"
+                >
                   <FormattedMessage id="partner.section-partner.button-primary" />
                 </a>
               </div>

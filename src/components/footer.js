@@ -133,12 +133,12 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
             </nav>
           </div>
           <div className="col-12 col-md-4">
-            <a href="/juror" className="ca_button ca_transparent_gray-solid">
+            <Link to="/juror" className="ca_button ca_transparent_gray-solid">
               <FormattedMessage id="footer.button-juror" />
-            </a>
-            <a href="/partner" className="ca_button ca_transparent_gray">
+            </Link>
+            <Link to="/partner" className="ca_button ca_transparent_gray">
               <FormattedMessage id="footer.button-partner" />
-            </a>
+            </Link>
           </div>
           <div
             className="col-12 col-md-3"

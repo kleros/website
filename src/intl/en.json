@@ -127,20 +127,20 @@
         "q-5": "Since jurors are drawn from a global pool, how would you make sure that they all speak the language the dispute is called in?",
         "a-5": "Kleros is made of subcourts specializing in different types of disputes. Language is one of the specialization parameters. For example, there could be a “website dispute court in English”, a “website dispute court in Spanish”, “website dispute court in French”, etc.",
         "q-6": "How do you know that jurors reviewed the evidence instead of just voting randomly?",
-        "a-6": "leros does not have a specific way to make sure that jurors reviewed the evidence. The way to make sure that jurors act honestly is through the creation of right economic incentives. Jurors who vote randomly without reviewing the evidence are more likely to vote incoherently with the majority and lose the token they staked to be drawn. Hence, they lose money on average. Over time, this would make dishonest jurors leave the court. To learn more about how incentives work in Kleros, read the white paper.",
+        "a-6": "Kleros does not have a specific way to make sure that jurors reviewed the evidence. The way to make sure that jurors act honestly is through the creation of right economic incentives. Jurors who vote randomly without reviewing the evidence are more likely to vote incoherently with the majority and lose the token they staked to be drawn. Hence, they lose money on average. Over time, this would make dishonest jurors leave the court. To learn more about how incentives work in Kleros, read the white paper.",
         "q-7": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to others jurors?",
         "a-7": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete.",
         "q-8": "Are there time limits for disputes? Do jurors have to respond withing a given period of time?",
         "a-8": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution.",
         "q-9": "What happens to jurors who don't respond or review the evidence within the set time frame?",
-        "a-9": "Jurors who don't give their ruling before the deadline are penalized by losing some of some of their staked tokens and by not receiving the arbitration fee."
+        "a-9": "Jurors who don't give their ruling before the deadline are penalized by losing some of their staked tokens and by not receiving the arbitration fee."
       },
       "category-legal": {
         "name": "Legal",
         "q-1": "In legal systems such as the United States, judges are responsible for instructing jurors and explaining legal nuances. How does Kleros address questions of interpretation of legal terms in the contract?",
         "a-1": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros is intended be used for simpler cases, where legal nuances are not as important.",
         "q-2": "Which are the main legal and regulatory hurdles in setting up Kleros?",
-        "a-2": "Because of its innovative practice based on cryptoeconomics, Kleros is not recognized as arbitration according to international agreements. This could be an obstacle for adoption in “mainstream” use cases (e.g., a government regulator could not use Kleros for settling disputes between, say, a credit card company its users). However, this should not be an obstacle to adoption in other use cases (especially those within the crypto industry). As Kleros is able to prove that it can solve disputes in non-mainstream use cases, we expect interest to arise in mainstream use cases. Eventually, arbitration associations will accept the Kleros approach to dispute resolution. The Kleros platform is an 'opt-in' system meaning the enforcement is automatic and pre-accepted by contracting parties agreeing on using Kleros as an arbitrator."
+        "a-2": "Because of its innovative practice based on cryptoeconomics, Kleros is not recognized as arbitration according to international agreements. This could be an obstacle for adoption in “mainstream” use cases (e.g., a government regulator could not use Kleros for settling disputes between, say, a credit card company and its users). However, this should not be an obstacle to adoption in other use cases (especially those within the crypto industry). As Kleros is able to prove that it can solve disputes in non-mainstream use cases, we expect interest to arise in mainstream use cases. Eventually, arbitration associations will accept the Kleros approach to dispute resolution. The Kleros platform is an 'opt-in' system meaning the enforcement is automatic and pre-accepted by contracting parties agreeing on using Kleros as an arbitrator."
       }
     }
   },
@@ -171,7 +171,7 @@
     "button-primary": "Learn More",
     "section-risks": {
       "title": "The Risks of Contracting Online",
-      "paragraph": "Companies usually contract servicecs online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
+      "paragraph": "Companies usually contract services online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
     },
     "section-meet-escrow": {
       "title": "Meet Kleros Escrow",
@@ -223,7 +223,7 @@
       "subtitle-2": "How are Disputes resolved?",
       "paragraph-2": "Jurors, review the evidence provided by both submitter and challenger, cast their vote and the outcome of the dispute is enforce automatically.",
       "subtitle-3": "Why it matter?",
-      "paragraph-3": "In the decentralized era, a larger number of platforms require decentralized list curation. They range from decentralizede e-commerce, social media, finance, insurance and many other fields looking to curate data in a permissionless way.",
+      "paragraph-3": "In the decentralized era, a larger number of platforms require decentralized list curation. They range from decentralized e-commerce, social media, finance, insurance and many other fields looking to curate data in a permissionless way.",
       "illustration-1": "A decentralized e-commerce platform has a policy of not accepting dangerous items.",
       "illustration-2": "A user submits a flamethrower.",
       "illustration-3": "Another user challenges the submission for being a dangerous item.",
