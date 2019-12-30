@@ -157,7 +157,8 @@
   },
 
   "assets": {
-    "title": "Marcas de Kleros"
+    "title": "Marcas de Kleros",
+    "categories": "Categorías"
   },
 
   "escrow": {
