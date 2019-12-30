@@ -243,7 +243,7 @@
     "subtitle": "Una forma descentralizada de ingresar información en el blockchain",
     "section-problem": {
       "title": "El Problema del Oráculo",
-      "paragraph:": "Los contratos inteligentes con frecuencia necesitan información del mundo exterior como el ganador de una elección, o la cantidad de lluvia en una región específica. El `Problema del Oráculo` es cómo ingresar esta información en el blockchain de manera segura."
+      "paragraph": "Los contratos inteligentes con frecuencia necesitan información del mundo exterior como el ganador de una elección, o la cantidad de lluvia en una región específica. El `Problema del Oráculo` es cómo ingresar esta información en el blockchain de manera segura."
     },
     "section-why-ours": {
       "title": "¿Por qué Oráculo Kleros?",
@@ -258,7 +258,8 @@
     },
     "section-contact-us": {
       "title": "Contáctanos",
-      "subtitle": "¿Quiere más información? Estamos abiertos a todo tipo de propuestas, sugerencias y requerimientos. Recibimos mensajes por medio de Telegram o via contact@kleros.io.",
+      "subtitle-1": "¿Quiere más información? Estamos abiertos a todo tipo de propuestas, sugerencias y requerimientos.",
+      "subtitle-2": " Recibimos mensajes por medio de <telegram>Telegram</telegram> o via <email>contact@kleros.io</email>.",
       "first-name": "Nombre",
       "last-name": "Apellido",
       "company-email": "Email de la Compañía",
