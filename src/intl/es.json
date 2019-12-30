@@ -244,7 +244,7 @@
     "subtitle": "Una forma descentralizada de ingresar información en el blockchain",
     "section-problem": {
       "title": "El Problema del Oráculo",
-      "paragraph": "Los contratos inteligentes con frecuencia necesitan información del mundo exterior como el ganador de una elección, o la cantidad de lluvia en una región específica. El `Problema del Oráculo` es cómo ingresar esta información en el blockchain de manera segura."
+      "paragraph": "Para funcionar, los smart contracts con frecuencia necesitan información del mundo externo como el ganador de una elección o la cantidad de lluvia que cayó en una región. El 'problema del oráculo' es cómo encontrar una forma confiable de introducir esta información en el blockchain."
     },
     "section-why-ours": {
       "title": "¿Por qué Oráculo Kleros?",
