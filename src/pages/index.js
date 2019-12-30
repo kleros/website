@@ -416,15 +416,26 @@ class RootIndex extends React.Component {
                     <FormattedMessage
                       id="index.section-why-kleros.paragraph-2"
                       values={{
-                        anchor: children => (
-                          <a
-                            href="/whitepaper_en.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {children}
-                          </a>
-                        )
+                        anchor: children => {
+                          let href = "";
+                          switch (this.props.intl.locale) {
+                            case "es":
+                              href = "/whitepaper_es.pdf";
+                              break;
+                            default:
+                              href = "/whitepaper_en.pdf";
+                              break;
+                          }
+                          return (
+                            <a
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {children}
+                            </a>
+                          );
+                        }
                       }}
                     />
                   </p>
