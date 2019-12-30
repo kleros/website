@@ -1,11 +1,13 @@
 {
   "header": {
+    "button-one-pager": "One Pager",
     "button-partner": "Conviértete en Partner",
     "button-juror": "Conviértete en Jurado",
     "button-dapps": "DApps",
     "button-white-paper": "White Paper",
     "button-use-cases": "Casos de Uso",
-    "button-about": "Acerca de"
+    "button-about": "Acerca de",
+    "button-blog": "Blog"
   },
   "index": {
     "title": "Cortes Descentralizadas",
