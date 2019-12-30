@@ -1,11 +1,13 @@
 {
   "header": {
+    "button-one-pager": "Resumen Ejecutivo",
     "button-partner": "Conviértete en Partner",
     "button-juror": "Conviértete en Jurado",
     "button-dapps": "DApps",
     "button-white-paper": "White Paper",
     "button-use-cases": "Casos de Uso",
-    "button-about": "Acerca de"
+    "button-about": "Acerca de",
+    "button-blog": "Blog"
   },
   "index": {
     "title": "Cortes Descentralizadas",
@@ -32,9 +34,9 @@
       "subtitle-1": "Justicia entre Pares",
       "paragraph-1": "Una plataforma p2p que usa crowdsourcing y blockchain para colocar la resolución de disputas en manos de la comunidad.",
       "subtitle-2": "¿Cuál es el ingrediente secreto?",
-      "paragraph-2": "Kleros usa criptoeconomía avanzada junto con una comunidad global de jurados para adjudicar disputas en una forma rápida, abierta y accesible. Lee el White Paper.",
+      "paragraph-2": "Kleros usa criptoeconomía avanzada junto con una comunidad global de jurados para adjudicar disputas en una forma rápida, abierta y accesible. Lee el <anchor>White Paper</anchor>.",
       "subtitle-3": "¿Por Qué Kleros Necesita un Token?",
-      "paragraph-3": "El token Pinakion (PNK) protege al sistema de ataques, y provee de incentivos económicos para resolver los casos coherentemente. Lee más al respecto aquí."
+      "paragraph-3": "El token Pinakion (PNK) protege al sistema de ataques, y provee de incentivos económicos para resolver los casos coherentemente. Lee más al <anchor>respecto aquí</anchor>."
     },
     "section-how-does-it-work": {
       "title": " ¿Cómo Funciona?",

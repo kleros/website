@@ -692,51 +692,7 @@ class RootIndex extends React.Component {
               </div>
             </div>
           </section>
-          <section className="ca_home_contancts">
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-md-2" />
-                <div className="col-12 col-md-8">
-                  <h2 className="ca_underlined">
-                    {" "}
-                    <FormattedMessage id="index.section-get-in-touch.title" />
-                  </h2>
-                  <h6>
-                    <p>
-                      <FormattedMessage id="index.section-get-in-touch.subtitle-1" />
-                    </p>
-                    <p>
-                      <FormattedMessage
-                        id="index.section-get-in-touch.subtitle-2"
-                        values={{
-                          telegram: children => (
-                            <a
-                              href="https://t.me/kleros"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {children}
-                            </a>
-                          ),
-                          email: children => (
-                            <a
-                              href="mailto:contact@kleros.io"
-                              title="contact@kleros.io"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {children}
-                            </a>
-                          )
-                        }}
-                      />
-                    </p>
-                  </h6>
-                </div>
-                <div className="col-12 col-md-2" />
-              </div>
-            </div>
-          </section>
+
           <section className="ca_video_popup">
             <div className="ca_popup_holder">
               <a href="#" className="ca_close">
