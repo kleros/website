@@ -141,7 +141,8 @@
 
   "media": {
     "title": "Media",
-    "subtitle": "Para consultas de medios, envía un email a contact@kleros.io.",
+    "subtitle": "Para consultas de medios, envía un email a <emaail>contact@kleros.io</email>.",
+    "categories": "Categorías",
     "section-media": {
       "featured": "Destacadas",
       "press": "Prensa",
