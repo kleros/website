@@ -63,7 +63,8 @@
     },
     "section-get-in-touch": {
       "title": "Contactanos",
-      "subtitle": "¿Quieres más información? Estamos abiertos a propuestas, sugerencias y solicitudes. Escríbenos vía Telegram o a contacto@kleros.io."
+      "subtitle-1": "¿Quieres más información? Estamos abiertos a propuestas, sugerencias y solicitudes.",
+      "subtitle-2": "Escríbenos vía <telegram>Telegram</telegram> o a <email>contacto@kleros.io</email>."
     }
   },
   "about": {
