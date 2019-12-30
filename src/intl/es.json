@@ -15,6 +15,10 @@
     "button-juror": "Únete como Jurado",
     "button-partner": "Conviértete en Partner",
     "button-token-sale": "Venta de Tokens",
+    "button-twitter": "Ir a Twitter",
+    "button-blog": "Ir a Blog",
+    "button-github": "Ir a Github",
+    "button-forum": "Ir a Forum",
     "section-example-dispute": {
       "title": "Una Disputa Común en la Nueva Economía",
       "paragraph-1": "Alice contrata a Bob para construir su sitio web.",
@@ -335,23 +339,24 @@
     },
     "section-start": {
       "title": "¡Comienza como Jurado ahora!",
-      "subtitle-1": "Sigue este tutorial para comprar PNK.",
-      "button-1": "Ir al Tutorial",
+      "subtitle-1": "Compra PNK en Uniswap",
+      "button-1": "Ir al Uniswap",
       "subtitle-2": "Elige tu corte y deposita tus PNK",
       "button-2": "Deposita en la Corte de Kleros",
       "subtitle-3": "Espera a ser elegido y comienza a juzgar!",
       "button-3": "Casos en Corte de Kleros"
     },
     "section-join": {
-      "title": "Unetenos como Jurado Ahora!",
+      "title": "Comienza como Jurado Ahora!",
       "button-primary": "Comienza Ya"
     }
   },
 
   "partner": {
-    "title": "Conviértete en Socio",
-    "subtitle": "Integra Justice as a Service (JaaS) (Justicia como un Servicio) en tu platform.",
-    "paragraph": "Estás construyendo una tienda, una plataforma para compartir contenido, o cualquier otra plataforma que requiera resolución de disputas? Envíanos tus disputas a Kleros y nuestro protocolo te las devolverá resueltas.",
+    "title": "Conviértete en Partner",
+    "subtitle": "Integra Justicia como un Servicio en tu plataforma.",
+    "paragraph": "¿Estás construyendo una plataforma que requiere resolución de disputas? Envía las disputas a Kleros y recibe las soluciones.",
+    "button-primary": "Empieza Ya",
     "section-benefits": {
       "title": "Beneficios",
       "subtitle-1": "Integración Simple",

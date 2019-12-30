@@ -230,7 +230,7 @@ class RootIndex extends React.Component {
                   <FormattedMessage id="juror.section-start.subtitle-1" />
                 </h6>
                 <a
-                  href="https://blog.kleros.io/how-to-buy-pnk-on-bitfinex-exchange/"
+                  href="https://uniswap.ninja/"
                   target="_blank"
                   className="ca_button ca_transparent_blue"
                 >
