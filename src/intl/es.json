@@ -224,17 +224,17 @@
       "illustration-2": "Un usuario envía un lanzallamas.",
       "illustration-3": "Otro usuario impugna ese ítem por ser un elemento peligroso.",
       "illustration-4": "El lanzallamas va a juicio en Kleros.",
-      "illustration-5": "El jurado decide a favor del impugnador. El lanzallamas es removido de la lista.",
-      "section-contact-us": {
-        "title": "Contáctanos",
-        "subtitle": "Implementa una lista filtrada por Kleros en tu plataforma. Contáctanos ahora!",
-        "first-name": "Nombre",
-        "last-name": "Apellido",
-        "company-email": "Email de la Compañía",
-        "company-name": "Nombre de la Compañía",
-        "message": "Escribe tu mensaje",
-        "button-primary": "Enviar"
-      }
+      "illustration-5": "El jurado decide a favor del impugnador. El lanzallamas es removido de la lista."
+    },
+    "section-contact-us": {
+      "title": "Contáctanos",
+      "subtitle": "Implementa una lista filtrada por Kleros en tu plataforma. Contáctanos ahora!",
+      "first-name": "Nombre",
+      "last-name": "Apellido",
+      "company-email": "Email de la Compañía",
+      "company-name": "Nombre de la Compañía",
+      "message": "Escribe tu mensaje",
+      "button-primary": "Enviar"
     }
   },
 
