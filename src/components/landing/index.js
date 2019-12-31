@@ -84,11 +84,7 @@ class Landing extends Component {
         <StyledLayout>
           <StyledLayoutHeader>
             <Row>
-              <StyledLogoCol lg={3} md={6}>
-                <img src="/assets/images/logo.svg" />
-              </StyledLogoCol>
-              <StyledColRight lg={10} offset={6}>
-              </StyledColRight>
+              
             </Row>
           </StyledLayoutHeader>
           <StyledLayoutContent>

@@ -41,7 +41,6 @@ export default ({ language }) => {
       </StyledGradientSection>
       <JoinCourt language={language} />
       <Contact language={language} />
-      <Footer language={language} />
     </StyledHome>
   )
 }
