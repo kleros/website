@@ -117,13 +117,10 @@ class RootIndex extends React.Component {
                   {" "}
                   <FormattedMessage id="oracle.title" />
                 </h1>
-                <div
-                  style={{ color: "#fff", fontSize: "2em", paddingTop: "2em" }}
-                >
-                  <p>
-                    <FormattedMessage id="oracle.subtitle" />
-                  </p>
-                </div>
+
+                <h6>
+                  <FormattedMessage id="oracle.subtitle" />
+                </h6>
               </div>
               <div className="col-12 col-md-6">
                 <img
