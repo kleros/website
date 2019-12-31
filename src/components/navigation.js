@@ -24,7 +24,8 @@ export default injectIntl(function(menu) {
                 data={{
                   text: <FormattedMessage id="header.button-one-pager" />,
                   dropdownOptions: [
-                    { text: "English", url: "/onepager_en.pdf" }
+                    { text: "English", url: "/onepager_en.pdf" },
+                    { text: "Korean", url: "/onepager_ko.pdf" }
                   ]
                 }}
               />
