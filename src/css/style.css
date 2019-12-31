@@ -439,6 +439,7 @@ h6 {
       right: 3.33333em; }
 
 .ca_button {
+  margin: 1rem;
   display: inline-block;
   text-decoration: none !important;
   font-weight: 600;
@@ -606,7 +607,7 @@ h6 {
           font-size: 1.33333rem;
           color: #fff; }
   .ca_footer .ca_button {
-    margin-top: 5rem;
+
     padding: 0 1.66667rem; }
   .ca_footer .ca_social {
     width: max-content;
