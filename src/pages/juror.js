@@ -97,7 +97,6 @@ class RootIndex extends React.Component {
     const how = data.howBlock;
     const getStarted = data.getStartedBlock;
     const beJuror = data.beJurorBlock;
-    console.log(howCards);
     return (
       <Template location={this.props.location}>
         <Helmet>

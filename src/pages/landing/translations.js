@@ -390,5 +390,87 @@ export default {
       becomeAPartner: "Стать Партнёром",
       tryKlerosCourt: "Попробовать Суд Kleros"
     }
-  }
+  },
+  'pt': {
+    'home': {
+      'countdown': {
+        'subheading': 'Kleros',
+        'heading': 'Venda de Tokens',
+        'days': 'dias',
+        'hours': 'horas',
+        'minutes': 'minutos',
+        'seconds': 'segundos',
+        'subtext': (
+          <>
+            Tokens à venda: 150,000,000 PNK ou 15% <br />
+            Início em 11 de Janeiro de 2020, 16:00 UTC
+          </>
+        )
+      },
+      'decentralizedCourts': {
+        'subheading': 'A camada de resolução de disputas do blockchain. Justiça rápida, aberta e acessível para todos.',
+        'heading': 'Tribunais descentralizados',
+      },
+      'secretSauce': {
+        'pt1Heading': 'Justiça P2P',
+        'pt1Subtext': 'Uma plataforma P2P que usa crowdsourcing e blockchain para colocar o processo de resolução de disputas nas mãos da comunidade.',
+        'pt2Heading': "Qual é o ingrediente secreto?",
+        'pt2Subtext': (
+          <>
+            Kleros usa criptoeconomia avançada, juntamente com uma comunidade global de jurados, para julgar disputas de maneira rápida, acessível e aberta. Leia o <a href="https://kleros.io/whitepaper.pdf">white paper</a>.
+          </>
+        ),
+        'pt3Heading': 'Por que o Kleros precisa de um token?',
+        'pt3Subtext': (
+          <>
+            O token Pinakion (PNK) protege o sistema contra ataques, além de oferecer aos jurados um incentivo financeiro para resolver casos de forma coerente. Saiba mais <a href="https://kleros.io/whitepaper.pdf">here</a>.
+          </>
+        )
+      },
+      'internetEconomy': {
+        'heading': 'A economia da Internet',
+        'subtext': 'A medida que nossas vidas passam para plataformas on-line globais, surgem disputas em áreas que não podem ser resolvidas pelos sistemas judiciais tradicionais.'
+      },
+      'products': {
+        'heading': 'Produtos e integrações',
+        'disclaimer': '* Produto em desenvolvimento'
+      },
+      justiceRevolution: {
+        'heading': 'Junte-se à Revolução da Justiça',
+        'subtext': (
+          <>
+            A colaboração faz o Kleros. Podemos integrar à sua plataforma com segurança e sem nenhum custo. <br/>
+            Se isso soa como algo que você poderia usar em seu projeto de blockchain, basta perguntar.
+          </>
+        ),
+        'joinJurorHeading': 'Seja um jurado',
+        'joinJurorSubtext': 'Seja um jurado, ganhe e traga justiça ao mundo descentralizado.',
+        'joinJurorButtonText': 'Seja um jurado',
+        'joinPartnerHeading': 'Seja um Parceiro',
+        'joinPartnerSubtext': "Integre a poderosa tecnologia de resolução de disputas do Kleros em sua plataforma, gratuitamente.",
+        'joinPartnerButtonText': 'Seja um Parceiro',
+      },
+      latest: {
+        'heading': 'Mais recentes'
+      },
+      joinCourt: {
+        'heading': 'Junte-se a um tribunal',
+        'subtext': 'Junte-se a um tribunal, ajude a resolver disputas e obtenha incentivos em ETH e PNK.'
+      },
+      contact: {
+        'heading': 'Entre em contato',
+        'subtext': (
+          <>
+            Quer saber mais? Estamos abertos a todas as propostas, sugestões e solicitações. Envie-nos uma mensagem através do <a href='https://t.me/kleros'>Telegram</a> ou contact@kleros.io.
+          </>
+        )
+      }
+    },
+    'buttons': {
+      'learnMore': 'Saiba mais',
+      'joinAsJuror': 'Seja um Jurado',
+      'becomeAPartner': 'Seja um Parceiro',
+      'tryKlerosCourt': 'Experimente Kleros Court'
+    }
+  },
 };

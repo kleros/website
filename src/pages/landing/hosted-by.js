@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ThomsonReuters from "../assets/images/thomson-reuters.png";
+import ThomsonReuters from "../../../static/assets/images/thomson-reuters.png";
 
 const HostedByBar = styled.div`
   background: #1e075f;

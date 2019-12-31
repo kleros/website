@@ -9,7 +9,7 @@ import Partners from './partners'
 import JusticeRevolution from './justice-revolution'
 import JoinCourt from './join-court'
 import Contact from './contact'
-import Footer from './footer'
+import Footer from './landing-footer'
 import styled from 'styled-components'
 
 const StyledHome = styled.div`

@@ -15,6 +15,14 @@ const StyledNumber = styled.div`
   font-size: 96px;
   line-height: 131px;
   text-align: center;
+
+  @media (max-width: 1100px) {
+    font-size: 75px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 96px;
+  }
 `
 const StyledTitle = styled.div`
   color: #fff;
@@ -22,6 +30,14 @@ const StyledTitle = styled.div`
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
 `
 
 export default ({number, title}) => {

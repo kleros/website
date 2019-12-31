@@ -1,38 +1,38 @@
-import Button from "./button";
+import Button from "../../components/button";
 import { Col, Row } from "antd";
-import CountdownBox from "./countdown-box";
+import CountdownBox from "../../components/countdown-box";
 import React, { useState, useEffect, useRef } from "react";
-import TopBackground from "../assets/images/top_background.png";
+import TopBackground from "../../../static/assets/images/top_background.png";
 import styled from "styled-components";
-import text from "../text";
+import text from "./translations";
 
 const StyledTopSection = styled.div`
-  background: linear-gradient(158.61deg, #4d00b4 15.9%, #1e075f 59.16%);
+  background: linear-gradient(158.61deg, #4D00B4 15.9%, #1E075F 59.16%);
   color: white;
   text-align: center;
-`;
+`
 const StyledContent = styled.div`
   position: relative;
   z-index: 1;
-`;
+`
 const StyledTopBackground = styled.img`
   position: absolute;
   top: 60px;
   right: 0px;
   z-index: 0;
-`;
+`
 const KlerosTextSmall = styled.div`
   font-size: 36px;
   letter-spacing: 8px;
   position: relative;
-`;
+`
 const StyledHeadingText = styled.div`
   font-size: 100px;
   letter-spacing: 4px;
-`;
+`
 const StyledSpacer = styled.div`
   height: 60px;
-`;
+`
 const BoxBreak = styled.div`
   display: inline-block;
   font-weight: 600;
@@ -46,14 +46,22 @@ const BoxBreak = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 const StyledSubtext = styled.div`
-  color: #d8b6ff;
+  color: #D8B6FF;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-`;
+`
+const StyledCountdownContainer = styled.div`
+  width: 80%;
+  display: inline-block;
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+`
 
 // Start of Sale
 const endTime = new Date(Date.UTC(2020, 0, 11, 16, 0, 0)).getTime();
@@ -126,36 +134,36 @@ export default ({ language }) => {
         <Row style={{ marginTop: "28px" }}>
           <Col lg={4} md={4} />
           <Col lg={4} md={4}>
-            <div style={{ width: "80%", display: "inline-block" }}>
+            <StyledCountdownContainer>
               <CountdownBox number={timeLeft.days} title={days.toUpperCase()} />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{ width: "80%", display: "inline-block" }}>
+            <StyledCountdownContainer>
               <CountdownBox
                 number={timeLeft.hours}
                 title={hours.toUpperCase()}
               />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{ width: "80%", display: "inline-block" }}>
+            <StyledCountdownContainer>
               <CountdownBox
                 number={timeLeft.minutes}
                 title={minutes.toUpperCase()}
               />
-            </div>
+            </StyledCountdownContainer>
             <BoxBreak>:</BoxBreak>
           </Col>
           <Col lg={4} md={4}>
-            <div style={{ width: "80%", display: "inline-block" }}>
+            <StyledCountdownContainer>
               <CountdownBox
                 number={timeLeft.seconds}
                 title={seconds.toUpperCase()}
               />
-            </div>
+            </StyledCountdownContainer>
           </Col>
         </Row>
         <Row style={{ marginTop: "25px" }}>

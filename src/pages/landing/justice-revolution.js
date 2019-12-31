@@ -1,11 +1,11 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "../text";
-import JoinBox from "./join-box";
-import JoinJuror from "../assets/images/join-juror.png";
-import JoinPartner from "../assets/images/join-partner.png";
-import Button from "./button";
+import text from "./translations";
+import JoinBox from "../../components/join-box";
+import JoinJuror from "../../../static/assets/images/join-juror.png";
+import JoinPartner from "../../../static/assets/images/join-partner.png";
+import Button from "../../components/button";
 
 const StyledContainer = styled.div`
   padding: 20px 10%;
@@ -75,7 +75,7 @@ export default ({ language }) => {
                 text={joinPartnerButtonText}
                 color={"purple"}
                 action={() => {
-                  window.location = "https://kleros.io/en/partner";
+                  window.location = `/${language}/partner`;
                 }}
               />
             }

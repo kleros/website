@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import BlueFrontiers from "../assets/images/bluefrontiers.png";
-import Ink from "../assets/images/ink.png";
-import Deversifi from "../assets/images/deversifi.png";
-import MarketProtocol from "../assets/images/marketprotocol.png";
+import BlueFrontiers from "../../../static/assets/images/bluefrontiers.png";
+import Ink from "../../../static/assets/images/ink.png";
+import Deversifi from "../../../static/assets/images/deversifi.png";
+import MarketProtocol from "../../../static/assets/images/marketprotocol.png";
 
 const StyledPartners = styled.div`
   color: #d8b6ff;

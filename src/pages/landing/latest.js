@@ -1,11 +1,11 @@
 import { Col, Row } from 'antd'
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import text from '../../text'
+import text from './translations'
 import NewsBox from '../../components/news-box'
-import Twitter from '../../assets/images/twitter.png'
-import Github from '../../assets/images/github.png'
-import Forum from '../../assets/images/forum.png'
+import Twitter from '../../../static/assets/images/twitter.png'
+import Github from '../../../static/assets/images/github.png'
+import Forum from '../../../static/assets/images/forum.png'
 
 const StyledLatest = styled.div`
   margin: 0px 10%;

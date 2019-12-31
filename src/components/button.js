@@ -3,21 +3,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledButton = styled(Button)`
-  color: #fff;
-  border-radius: 300px;
-  width: 230px;
-  height: 50px;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  border: none;
+  &.ant-btn{
+    color: #fff !important;
+    border-radius: 300px;
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
 
-  &:hover {
-    color: #fff;
-  }
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
 
-  @media (max-width: 370px) {
-    width: 180px;
+    @media (max-width: 370px) {
+      width: 180px;
+    }
   }
 `
 
