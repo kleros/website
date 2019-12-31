@@ -829,7 +829,8 @@ h6 {
 
 .ca_footer .ca_social {
 	width: max-content;
-	margin-top: 5rem;
+	margin-top: 1.5rem;
+
 	text-align: right;
 	font-size: 0;
 }
