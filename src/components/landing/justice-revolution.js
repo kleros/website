@@ -2,10 +2,10 @@ import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
 import text from "./translations";
-import JoinBox from "../../components/join-box";
+import JoinBox from "../join-box";
 import JoinJuror from "../../../static/assets/images/join-juror.png";
 import JoinPartner from "../../../static/assets/images/join-partner.png";
-import Button from "../../components/button";
+import Button from "../button";
 
 const StyledContainer = styled.div`
   padding: 20px 10%;

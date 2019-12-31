@@ -1,4 +1,4 @@
-import Button from "../../components/button"
+import Button from "../button"
 import { Col, Row } from "antd"
 import React from "react"
 import styled from "styled-components"

@@ -9,7 +9,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import media from "styled-media-query";
 import text from "./translations";
-import Dropdown from '../../components/dropdown'
+import Dropdown from '../dropdown'
 
 const StyledLayoutContent = styled(Layout.Content)`
   background: #1E075F;
@@ -65,7 +65,7 @@ class Landing extends Component {
   constructor(props) {
     super(props)
     // Hack to get language in path
-    const selectedLanguage = window.location.pathname.split('/')[1]
+    const selectedLanguage = props.location.pathname.split('/')[1]
     this.state = {
       language: text[selectedLanguage] ? selectedLanguage : 'en'
     }

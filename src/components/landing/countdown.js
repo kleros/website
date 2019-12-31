@@ -1,6 +1,6 @@
-import Button from "../../components/button";
+import Button from "../button";
 import { Col, Row } from "antd";
-import CountdownBox from "../../components/countdown-box";
+import CountdownBox from "../countdown-box";
 import React, { useState, useEffect, useRef } from "react";
 import TopBackground from "../../../static/assets/images/top_background.png";
 import styled from "styled-components";

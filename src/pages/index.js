@@ -1,6 +1,14 @@
 import React from "react";
-import Landing from './landing'
+import Template from "../components/layout";
+import { Location } from '@reach/router';
+import Landing from '../components/landing'
 
 export default () => (
-  <Landing />
+  <Template>
+    <Location>
+      {({navigate, location}) => (
+        <Landing location={location} />
+      )}
+    </Location>
+  </Template>
 )

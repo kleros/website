@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
 import text from "./translations";
-import ProductBox from "../../components/product-box";
+import ProductBox from "../product-box";
 import KlerosSymbol from "../../../static/assets/images/kleros-symbol.png";
 import DisputeResolver from "../../../static/assets/images/dispute-resolver.png";
 import UniswapNinja from "../../../static/assets/images/uniswap-ninja.png";
