@@ -349,6 +349,51 @@ class RootIndex extends React.Component {
             </div>
           </div>
         </section>
+        <section className="ca_escrow_contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-1"></div>
+              <div className="col-12 col-md-8">
+                <h2>
+                  {" "}
+                  <FormattedMessage id="oracle.section-contact-us.title" />
+                </h2>
+                <h6>
+                  {" "}
+                  <FormattedMessage id="oracle.section-contact-us.subtitle-1" />
+                </h6>
+                <h6>
+                  {" "}
+                  <FormattedMessage
+                    id="oracle.section-contact-us.subtitle-2"
+                    values={{
+                      telegram: children => (
+                        <a
+                          href="https://t.me/kleros"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {children}
+                        </a>
+                      ),
+                      email: children => (
+                        <a
+                          href="mailto:contact@kleros.io"
+                          title="contact@kleros.io"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {children}
+                        </a>
+                      )
+                    }}
+                  />
+                </h6>
+              </div>
+              <div className="col-12 col-md-3"></div>
+            </div>
+          </div>
+        </section>
       </Template>
     );
   }
