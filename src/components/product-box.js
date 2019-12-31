@@ -20,6 +20,22 @@ const Box = styled.div`
 
     height: 130px;
 
+    @media (max-width: 1269px) {
+      height: 110px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 100px;
+    }
+
+    @media (max-width: 762px) {
+      height: 80px;
+    }
+
+    @media (max-width: 680px) {
+      height: 70px;
+    }
+
     @media (max-width: 510px) {
       height: 60px;
     }

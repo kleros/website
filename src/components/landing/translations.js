@@ -60,7 +60,7 @@ export default {
             Collaboration makes Kleros. We can integrate with your platform
             securely and at no cost. <br />
             If this sounds like something you could use in your blockchain
-            project, Just ask.
+            project, just ask.
           </>
         ),
         joinJurorHeading: "Join as a Juror",

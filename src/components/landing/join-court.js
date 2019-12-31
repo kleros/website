@@ -5,8 +5,8 @@ import DrawnCases from "../../../static/assets/images/drawn-cases.png";
 import Courts from "../../../static/assets/images/courts.png";
 
 const StyledJoinCourt = styled.div`
-  @media (max-width: 510px) {
-    margin: 0px 10px;
+  @media (max-width: 850px) {
+    margin: 0px 20px;
   }
 `;
 const StyledHeading = styled.div`
