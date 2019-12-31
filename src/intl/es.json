@@ -300,7 +300,7 @@
       "subtitle-1": "Selección de Jurados",
       "paragraph-1": "Los tenedores de PNK pueden depositar sus monedas en una corte de Kleros para indicar su disponibilidad para actuar como jurados. Mientras más depositas, más chances de ser elegido. Un generador de números aleatorios (RNG) selecciona los jurados en función de la cantidad de tokens depositados por cada candidato.",
       "subtitle-2": "El PNK protege contra ataques Sybil",
-      "paragraph": "El PNK es una protección en contra de ataques Sybil. Para que un atacante pueda 'inundar la pileta' de jurados, necesita suficiente cantidad de PNK para ser elegido una cantidad suficiente de veces para poder modificar el resultado de un caso. Usar una moneda nativa como el PNK ofrece numerosas ventajas para minimizar el riesgo de ataques del 51% en vez de usar una cripto moneda externa como el ETH.",
+      "paragraph-2": "Para controlar el jurado, un atacante necesita comprar una gran cantidad de PNK. El uso de este token permite minimizar el riesgo de ataques de 51% contra la corte de Kleros.",
       "subtitle-3": "PNK hace que un ataque sea muy costoso",
       "paragraph-3": "Imagina que alguien compra el 51% de PNK en un esfuerzo de atacar Kleros. Quizás su ataque es sutil y pasa desapercibido. Sin embargo, es más probable que la comunidad se dé cuenta que está bajo un ataque. En este caso, Kleros perderá credibilidad como una plataforma de arbitraje y el valor del PNK disminuirá. Entonces, el atacante tendrá una pérdida importante en los PNK que compró, por lo que el ataque tendrá un alto costo económico para el atacante.",
       "subtitle-4": "Orientado en el Usuario",
