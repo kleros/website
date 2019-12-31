@@ -439,7 +439,8 @@ h6 {
       right: 3.33333em; }
 
 .ca_button {
-  margin: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   display: inline-block;
   text-decoration: none !important;
   font-weight: 600;
