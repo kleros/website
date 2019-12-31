@@ -20,6 +20,13 @@ class RootIndex extends React.Component {
     open: false
   };
 
+  embedLinks = {
+    en:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOWLtvy6EdqqIEKxRLqQ7XF%2FKleros-2%3Fnode-id%3D14%253A4486%26viewport%3D319%252C405%252C0.015625%26scaling%3Dscale-down-width",
+    es:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOWLtvy6EdqqIEKxRLqQ7XF%2FKleros-2%3Fnode-id%3D914%253A11419%26viewport%3D249%252C404%252C0.015625%26scaling%3Dscale-down-width"
+  };
+
   onCloseModal = () => {
     this.setState({ open: false });
   };
@@ -112,7 +119,10 @@ class RootIndex extends React.Component {
                     top: "0",
                     left: "0"
                   }}
-                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOWLtvy6EdqqIEKxRLqQ7XF%2FKleros-2%3Fnode-id%3D14%253A4486%26viewport%3D319%252C405%252C0.015625%26scaling%3Dscale-down-width"
+                  src={
+                    this.embedLinks[this.props.intl.locale] ||
+                    this.embedLinks.en
+                  }
                   allowfullscreen
                 />
               </div>
