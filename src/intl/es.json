@@ -147,6 +147,7 @@
   "media": {
     "title": "Media",
     "subtitle": "Para consultas de medios, envía un email a contact@kleros.io.",
+    "categories": "Categorías",
     "section-media": {
       "featured": "Destacadas",
       "press": "Prensa",
@@ -210,7 +211,7 @@
     "subtitle": "Empodera a la comunidad para organizar información en tu plataforma...",
     "section-why-curated-lists": {
       "title": "¿Por Qué los Registros de Tokens?",
-      "paragraph": "Las plataformas descentralizadas necesitan un mecanismo para decidir qué contenido mostrar. ¿Qué moneda listar en un exchange? ¿Qué comentarios censurar en una red social? Quién controla la lista, tiene el poder. Por eso, una verdadera descentralización requiere que la lista esté en manos de la comunidad."
+      "paragraph": "Las plataformas descentralizadas necesitan un mecanismo para decidir qué contenido mostrar. ¿Qué moneda listar en un exchange? ¿Qué comentarios censurar en una red social? Quién controla la lista, tiene el poder."
     },
     "section-why-ours": {
       "title": "¿Por qué usar registros de tokens?",
@@ -263,7 +264,8 @@
     },
     "section-contact-us": {
       "title": "Contáctanos",
-      "subtitle": "¿Quiere más información? Estamos abiertos a todo tipo de propuestas, sugerencias y requerimientos. Recibimos mensajes por medio de Telegram o via contact@kleros.io.",
+      "subtitle-1": "¿Quieres saber más? Estamos abiertos a propuestas, sugerencias y consultas.",
+      "subtitle-2": "Escríbenos por <telegram>Telegram</telegram> o a <email>contact@kleros.io</email>.",
       "first-name": "Nombre",
       "last-name": "Apellido",
       "company-email": "Email de la Compañía",
@@ -386,10 +388,11 @@
     "about": "Acerca de",
     "governance": "Gobernaza",
     "join": "Unetenos",
+    "developer": "Desarrollador",
     "faq": "FAQ",
     "media": "Media",
-    "blog": "blog",
-    "assets": "Activos",
+    "blog": "Blog",
+    "assets": "Logos",
     "white-paper": "White Paper",
     "escrow": "Escrow",
     "curated-list": "Curated List",
