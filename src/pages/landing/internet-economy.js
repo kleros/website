@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Amphitheater from "../assets/images/amphitheater.png";
-import text from "../text";
+import Amphitheater from "../../../static/assets/images/amphitheater.png";
+import text from "./translations";
 
 const StyledInternetEconomy = styled.div`
   background: #f2e3ff;

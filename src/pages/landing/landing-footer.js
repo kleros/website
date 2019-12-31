@@ -2,14 +2,14 @@ import Button from '../../components/button'
 import { Col, Row, Icon } from 'antd'
 import React from 'react'
 import styled from 'styled-components'
-import KlerosWhite from '../../assets/images/logo-white.png'
-import { ReactComponent as Ghost } from '../../assets/images/ghost.svg'
-import { ReactComponent as Github } from '../../assets/images/github.svg'
-import { ReactComponent as LinkedIn } from '../../assets/images/linkedin.svg'
-import { ReactComponent as Telegram } from '../../assets/images/telegram.svg'
-import { ReactComponent as Twitter } from '../../assets/images/twitter.svg'
-import { ReactComponent as Reddit } from '../../assets/images/reddit.svg'
-import { ReactComponent as Slack } from '../../assets/images/slack.svg'
+import KlerosWhite from '../../../static/assets/images/logo-white.png'
+import Ghost from '../../../static/assets/images/ghost.svg'
+import Github from '../../../static/assets/images/github.svg'
+import LinkedIn from '../../../static/assets/images/linkedin.svg'
+import Telegram from '../../../static/assets/images/telegram.svg'
+import Twitter from '../../../static/assets/images/twitter.svg'
+import Reddit from '../../../static/assets/images/reddit.svg'
+import Slack from '../../../static/assets/images/slack.svg'
 
 const StyledFooter = styled.div`
   background: #4D00B4;
@@ -104,26 +104,26 @@ export default ({language}) => {
           </StyledLogoCol>
           <StyledLinkCol lg={14}>
             <Col lg={8} md={8}>
-              <StyledLink href={"https://kleros.io/en/about"}>About</StyledLink>
-              <StyledLink href={"https://governance.kleros.io"}>Governance</StyledLink>
-              <StyledLink href={"https://kleros.io/en/about#join"}>Join Us</StyledLink>
-              <StyledLink href={"https://kleros.io/en/faq"}>FAQ</StyledLink>
-              <StyledLink href={"https://kleros.io/en/media"}>Media</StyledLink>
-              <StyledLink href="https://kleros.io/en/token">Token</StyledLink>
+              <StyledLink href={`/${language}/about`}>About</StyledLink>
+              <StyledLink href={`https://governance.kleros.io`}>Governance</StyledLink>
+              <StyledLink href={`/${language}/about#join`}>Join Us</StyledLink>
+              <StyledLink href={`/${language}/faq`}>FAQ</StyledLink>
+              <StyledLink href={`/${language}/media`}>Media</StyledLink>
+              <StyledLink href={`/${language}/token`}>Token</StyledLink>
             </Col>
             <Col lg={8} md={8}>
-              <StyledLink href="https://blog.kleros.io">Blog</StyledLink>
-              <StyledLink href="https://kleros.io/en/assets">Brand Assets</StyledLink>
-              <StyledLink href="https://kleros.io/whitepaper_en.pdf">White Paper</StyledLink>
-              <StyledLink href="https://escrow.kleros.io">Escrow</StyledLink>
-              <StyledLink href="https://kleros.io/en/curated-list">Curated List</StyledLink>
-              <StyledLink href="https://kleros.io/en/oracle">Oracle</StyledLink>
+              <StyledLink href={`https://blog.kleros.io`}>Blog</StyledLink>
+              <StyledLink href={`/${language}/assets`}>Brand Assets</StyledLink>
+              <StyledLink href={`https://kleros.io/whitepaper_en.pdf`}>White Paper</StyledLink>
+              <StyledLink href={`https://escrow.kleros.io`}>Escrow</StyledLink>
+              <StyledLink href={`/${language}/curated-list`}>Curated List</StyledLink>
+              <StyledLink href={`/${language}/oracle`}>Oracle</StyledLink>
             </Col>
             <Col lg={8} md={8}>
-              <StyledLink href="https://kleros.io/en/cooperative">Cooperative</StyledLink>
-              <StyledLink href="https://kleros.io/en/court-tour">Court Tour</StyledLink>
-              <StyledLink href="https://ipfs.kleros.io/ipfs/QmZeV32S2VoyUnqJsRRCh75F1fP2AeomVq2Ury2fTt9V4z/Dispute-Resolution-Kleros.pdf">Book</StyledLink>
-              <StyledLink href="https://developer.kleros.io/en/latest/">Developer</StyledLink>
+              <StyledLink href={`/${language}/cooperative`}>Cooperative</StyledLink>
+              <StyledLink href={`/${language}/court-tour`}>Court Tour</StyledLink>
+              <StyledLink href={`https://ipfs.kleros.io/ipfs/QmZeV32S2VoyUnqJsRRCh75F1fP2AeomVq2Ury2fTt9V4z/Dispute-Resolution-Kleros.pdf`}>Book</StyledLink>
+              <StyledLink href={`https://developer.kleros.io/en/latest/`}>Developer</StyledLink>
             </Col>
           </StyledLinkCol>
         </Row>
@@ -188,7 +188,7 @@ export default ({language}) => {
           </StyledButtonCol>
           <Col lg={3} md={5} />
           <StyledButtonCol lg={4} md={4}>
-            <Button text={'Become a Partner'} action={() => {window.location = "https://kleros.io/en/partner"}} color={'purple'} />
+            <Button text={'Become a Partner'} action={() => {window.location = `/${language}/partner`}} color={'purple'} />
           </StyledButtonCol>
         </Row>
         <Row>

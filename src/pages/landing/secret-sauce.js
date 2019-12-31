@@ -1,10 +1,10 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "../text";
-import JusticeImg from "../assets/images/justice.png";
-import pPlusEpsilon from "../assets/images/pPlusEpsilon.png";
-import KlerosHex from "../assets/images/klerosHex.png";
+import text from "./translations";
+import JusticeImg from "../../../static/assets/images/justice.png";
+import pPlusEpsilon from "../../../static/assets/images/pPlusEpsilon.png";
+import KlerosHex from "../../../static/assets/images/klerosHex.png";
 
 const StyledSecretSauce = styled.div`
   background: #fff;

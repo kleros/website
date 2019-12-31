@@ -106,13 +106,10 @@ class RootIndex extends React.Component {
     const { open } = this.state;
 
     const biggerThan768px = this.state.biggerThan768px || false;
-    console.log(this.state);
 
     const siteTitle = "Kleros - Token Page";
     const data = get(this, "props.data.allContentfulTokenPage.edges")[0].node;
-    console.log(data);
     const top = data.top;
-    console.log(theMeta(top, "Token Page Top Button"));
 
     const contentCards = this.contentCards;
 

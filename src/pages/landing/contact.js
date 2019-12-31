@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import text from "../text";
+import text from "./translations";
 
 const ContactBox = styled.div`
   background: rgba(144, 19, 254, 0.21);
@@ -31,5 +31,5 @@ export default ({ language }) => {
       <StyledHeading>{heading}</StyledHeading>
       <StyledSubtext>{subtext}</StyledSubtext>
     </ContactBox>
-  );
-};
+  )
+}

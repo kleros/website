@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import text from "../text";
-import DrawnCases from "../assets/images/drawn-cases.png";
-import Courts from "../assets/images/courts.png";
+import text from "./translations";
+import DrawnCases from "../../../static/assets/images/drawn-cases.png";
+import Courts from "../../../static/assets/images/courts.png";
 
 const StyledJoinCourt = styled.div`
   @media (max-width: 510px) {

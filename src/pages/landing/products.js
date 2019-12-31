@@ -1,17 +1,19 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "../text";
-import ProductBox from "./product-box";
-import KlerosSymbol from "../assets/images/kleros-symbol.png";
-import DisputeResolver from "../assets/images/dispute-resolver.png";
-import UniswapNinja from "../assets/images/uniswap-ninja.png";
-import Escrow from "../assets/images/escrow.png";
-import GTCR from "../assets/images/GTCR.png";
-import Linguo from "../assets/images/linguo.png";
-import T2CR from "../assets/images/t2cr.png";
-import RealitioImg from "../assets/images/realitio.png";
-import PlusImg from "../assets/images/plus.png";
+import text from "./translations";
+import ProductBox from "../../components/product-box";
+import KlerosSymbol from "../../../static/assets/images/kleros-symbol.png";
+import DisputeResolver from "../../../static/assets/images/dispute-resolver.png";
+import UniswapNinja from "../../../static/assets/images/uniswap-ninja.png";
+import Escrow from "../../../static/assets/images/escrow.png";
+import GTCR from "../../../static/assets/images/GTCR.png";
+import Linguo from "../../../static/assets/images/linguo.png";
+import T2CR from "../../../static/assets/images/t2cr.png";
+import RealitioImg from "../../../static/assets/images/realitio.png";
+import PlusImg from "../../../static/assets/images/plus.png";
+import CryptoUnlocked from '../../../static/assets/images/crypto-unlocked.png'
+
 
 const StyledProducts = styled.div`
   color: #6700b4;
@@ -74,6 +76,11 @@ const products = [
   {
     title: "GTCR*",
     image: GTCR
+  },
+  {
+    'title': 'CryptoUnlocked',
+    'link': 'https://cryptounlocked.wetrust.io/',
+    'image': CryptoUnlocked
   },
   {
     title: "Your DApp",
