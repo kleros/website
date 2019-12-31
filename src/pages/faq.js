@@ -33,8 +33,6 @@ class RootIndex extends React.Component {
     });
   };
   questionChange = (num, e = null) => {
-    console.log(num);
-    console.log(e);
     if (e) e.preventDefault();
     num = num === this.state.openedQuestion.value ? (num = -1) : num;
     this.setState({

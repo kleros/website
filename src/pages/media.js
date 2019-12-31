@@ -41,11 +41,9 @@ class RootIndex extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     var siteTitle = "Kleros";
     var media = get(this, "props.data.allContentfulMediaEntry.edges");
     var data = get(this, "props.data.allContentfulMediaPage.edges")[0].node;
-    console.log(media);
 
     //if (this.state.mediaFilter.key == "")
     // this.categoryChange(this.categories[0]);
@@ -53,7 +51,6 @@ class RootIndex extends React.Component {
     //   media = media.filter(
     //     ({ node }) => this.categories.indexOf(this.state.mediaFilter.value) > -1
     //   );
-    console.log(media);
     return (
       <Template location={this.props.location}>
         <Helmet>

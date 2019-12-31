@@ -100,10 +100,6 @@ export default injectIntl(function(menu) {
                   text: "Language",
                   dropdownOptions: [
                     { text: "English", url: "/en" },
-                    {
-                      text: "한국어",
-                      url: "/ko"
-                    },
                     { text: "Español", url: "/es" },
                     { text: "Русский", url: "/ru" }
                   ]
