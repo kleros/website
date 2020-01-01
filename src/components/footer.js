@@ -195,7 +195,7 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
               <span>
                 {" "}
                 <FormattedMessage id="footer.copyright" />
-                {new Date().getFullYear()} © Kleros.io
+                {new Date().getFullYear()}{' '}© Kleros.io
               </span>
             </nav>
           </div>
