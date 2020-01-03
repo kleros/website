@@ -6,17 +6,11 @@ import Slider from "react-slick";
 import { graphql } from "gatsby";
 import Template from "../components/layout";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import teamMembers from "../../content/team-members.json";
 
 class RootIndex extends React.Component {
   render() {
     const siteTitle = "Kleros";
-    const data = get(this, "props.data.allContentfulAboutPage.edges")[0].node;
-    const top = data.top;
-    const description = data.description;
-    const teamText = data.teamText;
-    const teamMembers = data.teamMembers;
-    const vacanciesText = data.vacanciesText;
-    const vacanciesEntries = data.vacanciesEntries;
 
     return (
       <Template location={this.props.location}>
@@ -93,7 +87,7 @@ class RootIndex extends React.Component {
                     }
                   ]}
                 >
-                  {teamMembers.map((el, num) => {
+                  {Object.values(teamMembers).map((el, num) => {
                     return (
                       <div key={num} className="ca_slide">
                         <div className="ca_holder">
@@ -101,14 +95,13 @@ class RootIndex extends React.Component {
                             <div
                               className="ca_photo"
                               style={{
-                                backgroundImage:
-                                  "url('" + el.photo.file.url + "')"
+                                backgroundImage: "url('" + el.photo + "')"
                               }}
                             ></div>
                           </div>
                           <div className="ca_txt">
-                            <h6>{el.name.name}</h6>
-                            <p>{el.position.position}</p>
+                            <h6>{el.name}</h6>
+                            <p>{el.title}</p>
                             <div className="ca_social">
                               {el.links &&
                                 el.links.map((link, num) => {
@@ -118,7 +111,7 @@ class RootIndex extends React.Component {
                                       href={link.url}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className={link.extraClass}
+                                      className={link.fa}
                                     ></a>
                                   );
                                 })}
@@ -159,15 +152,11 @@ class RootIndex extends React.Component {
             <div className="row">
               <div className="col-12">
                 <ul>
-                  {vacanciesEntries.map((el, num) => {
-                    return (
-                      <li key={num}>
-                        <span>{el.title.title}</span>
-                        <span>{el.location.location}</span>
-                        <a href={el.url.url}></a>
-                      </li>
-                    );
-                  })}
+                  <li key={0}>
+                    <span>Full Stack Dev</span>
+                    <span>Remote</span>
+                    <a href="https://forum.kleros.io/t/full-stack-developer-blockchain-legaltech-fintech/176"></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -179,211 +168,3 @@ class RootIndex extends React.Component {
 }
 
 export default injectIntl(RootIndex);
-
-export const pageQuery = graphql`
-  query aboutQuery {
-    allContentfulAboutPage(sort: { fields: [id], order: DESC }) {
-      edges {
-        node {
-          top {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          description {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          teamText {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          teamMembers {
-            name {
-              name
-            }
-            position {
-              position
-            }
-            photo {
-              file {
-                url
-              }
-            }
-            links {
-              text {
-                text
-              }
-              url
-              extraClass
-              target
-            }
-          }
-          vacanciesText {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          vacanciesEntries {
-            __typename
-            ... on Node {
-              ... on ContentfulVacancies {
-                title {
-                  title
-                }
-                location {
-                  location
-                }
-                url {
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
