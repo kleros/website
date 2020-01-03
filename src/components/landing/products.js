@@ -67,6 +67,7 @@ const products = [
   },
   {
     title: "Dispute Resolver",
+    link: "https://resolve.kleros.io/",
     image: DisputeResolver
   },
   {
