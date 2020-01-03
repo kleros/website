@@ -103,7 +103,7 @@ export default injectIntl(function(menu) {
                     { text: "English", url: "/en" },
                     { text: "Español", url: "/es" },
                     { text: "Русский", url: "/ru" },
-                    { text: "French", url: "/fr" }
+                    { text: "Français", url: "/fr" }
                   ]
                 }}
               />
