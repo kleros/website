@@ -26,7 +26,8 @@ export default injectIntl(function(menu) {
                   dropdownOptions: [
                     { text: "English", url: "/onepager_en.pdf" },
                     { text: "한국인", url: "/onepager_ko.pdf" },
-                    { text: "Español", url: "/onepager_es.pdf" }
+                    { text: "Español", url: "/onepager_es.pdf" },
+                    { text: "Français", url: "/onepager_fr.pdf" }
                   ]
                 }}
               />
