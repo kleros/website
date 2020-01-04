@@ -74,7 +74,7 @@ class RootIndex extends React.Component {
                   infinite={true}
                   autoplay={true}
                   slidesToShow={3}
-                  slidesToScroll={1}
+                  slidesToScroll={3}
                   centerMode={true}
                   centerPadding="0px"
                   focusOnSelect={true}
