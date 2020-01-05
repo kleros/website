@@ -62,7 +62,22 @@ export default ({ language }) => {
               {<FormattedMessage id="home.secretSauce.pt2Heading" />}
             </SecretSauceHeading>
             <SecretSauceSubtext>
-              {<FormattedMessage id="home.secretSauce.pt2Subtext" />}
+              {
+                <FormattedMessage
+                  id="home.secretSauce.pt2Subtext"
+                  values={{
+                    anchor: children => (
+                      <a
+                        href="/whitepaper_en.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    )
+                  }}
+                />
+              }
             </SecretSauceSubtext>
           </SecretSauceTextContainer>
         </SecretSauceCol>
@@ -73,7 +88,22 @@ export default ({ language }) => {
               {<FormattedMessage id="home.secretSauce.pt3Heading" />}
             </SecretSauceHeading>
             <SecretSauceSubtext>
-              {<FormattedMessage id="home.secretSauce.pt3Subtext" />}
+              {
+                <FormattedMessage
+                  id="home.secretSauce.pt3Subtext"
+                  values={{
+                    anchor: children => (
+                      <a
+                        href="/whitepaper_en.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    )
+                  }}
+                />
+              }
             </SecretSauceSubtext>
           </SecretSauceTextContainer>
         </SecretSauceCol>
