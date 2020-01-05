@@ -25,8 +25,8 @@ export default injectIntl(function(menu) {
                   text: <FormattedMessage id="header.button-one-pager" />,
                   dropdownOptions: [
                     { text: "English", url: "/onepager_en.pdf" },
-                    { text: "한국인", url: "/onepager_ko.pdf" },
                     { text: "Español", url: "/onepager_es.pdf" },
+                    { text: "한국인", url: "/onepager_ko.pdf" },
                     { text: "Français", url: "/onepager_fr.pdf" }
                   ]
                 }}
@@ -103,8 +103,9 @@ export default injectIntl(function(menu) {
                   dropdownOptions: [
                     { text: "English", url: "/en" },
                     { text: "Español", url: "/es" },
-                    { text: "Русский", url: "/ru" },
-                    { text: "Français", url: "/fr" }
+                    { text: "한국인", url: "/ko" },
+                    { text: "Français", url: "/fr" },
+                    { text: "Русский", url: "/ru" }
                   ]
                 }}
               />
