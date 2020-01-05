@@ -1,7 +1,8 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "./translations";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+
 import ProductBox from "../product-box";
 import KlerosSymbol from "../../../static/assets/images/kleros-symbol.png";
 import DisputeResolver from "../../../static/assets/images/dispute-resolver.png";
@@ -12,8 +13,7 @@ import Linguo from "../../../static/assets/images/linguo.png";
 import T2CR from "../../../static/assets/images/t2cr.png";
 import RealitioImg from "../../../static/assets/images/realitio.png";
 import PlusImg from "../../../static/assets/images/plus.png";
-import CryptoUnlocked from '../../../static/assets/images/crypto-unlocked.png'
-
+import CryptoUnlocked from "../../../static/assets/images/crypto-unlocked.png";
 
 const StyledProducts = styled.div`
   color: #6700b4;
@@ -79,9 +79,9 @@ const products = [
     image: GTCR
   },
   {
-    'title': 'CryptoUnlocked',
-    'link': 'https://cryptounlocked.wetrust.io/',
-    'image': CryptoUnlocked
+    title: "CryptoUnlocked",
+    link: "https://cryptounlocked.wetrust.io/",
+    image: CryptoUnlocked
   },
   {
     title: "Your DApp",
@@ -90,12 +90,11 @@ const products = [
 ];
 
 export default ({ language }) => {
-  const heading = text[language].home.products.heading;
-  const disclaimer = text[language].home.products.disclaimer;
-
   return (
     <StyledProducts>
-      <StyledHeading>{heading}</StyledHeading>
+      <StyledHeading>
+        {<FormattedMessage id="home.products.heading" />}
+      </StyledHeading>
       <ProductsContent>
         <Row>
           {products.map(p => (
@@ -106,7 +105,9 @@ export default ({ language }) => {
         </Row>
         <Row>
           <Col lg={24}>
-            <StyledDisclaimer>{disclaimer}</StyledDisclaimer>
+            <StyledDisclaimer>
+              {<FormattedMessage id="home.products.disclaimer" />}
+            </StyledDisclaimer>
           </Col>
         </Row>
       </ProductsContent>

@@ -1,7 +1,8 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "./translations";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+
 import JoinBox from "../join-box";
 import JoinJuror from "../../../static/assets/images/join-juror.png";
 import JoinPartner from "../../../static/assets/images/join-partner.png";
@@ -27,35 +28,31 @@ const StyledSubtext = styled.div`
 `;
 
 export default ({ language }) => {
-  const heading = text[language].home.justiceRevolution.heading;
-  const subtext = text[language].home.justiceRevolution.subtext;
-
-  const joinJurorHeading =
-    text[language].home.justiceRevolution.joinJurorHeading;
-  const joinJurorSubtext =
-    text[language].home.justiceRevolution.joinJurorSubtext;
-  const joinJurorButtonText =
-    text[language].home.justiceRevolution.joinJurorButtonText;
-  const joinPartnerHeading =
-    text[language].home.justiceRevolution.joinPartnerHeading;
-  const joinPartnerSubtext =
-    text[language].home.justiceRevolution.joinPartnerSubtext;
-  const joinPartnerButtonText =
-    text[language].home.justiceRevolution.joinPartnerButtonText;
-
   return (
     <StyledContainer>
-      <StyledHeading>{heading}</StyledHeading>
-      <StyledSubtext>{subtext}</StyledSubtext>
+      <StyledHeading>
+        <FormattedMessage id="home.justiceRevolution.heading" />
+      </StyledHeading>
+      <StyledSubtext>
+        <FormattedMessage id="home.justiceRevolution.subtext" />
+        <br />
+        <FormattedMessage id="home.justiceRevolution.subtext-2" />
+      </StyledSubtext>
       <Row>
         <Col lg={12}>
           <JoinBox
             image={JoinJuror}
-            title={joinJurorHeading}
-            subtext={joinJurorSubtext}
+            title={
+              <FormattedMessage id="home.justiceRevolution.joinJurorHeading" />
+            }
+            subtext={
+              <FormattedMessage id="home.justiceRevolution.joinJurorSubtext" />
+            }
             button={
               <Button
-                text={joinJurorButtonText}
+                text={
+                  <FormattedMessage id="home.justiceRevolution.joinJurorButtonText" />
+                }
                 color={"blue"}
                 action={() => {
                   window.location =
@@ -68,11 +65,17 @@ export default ({ language }) => {
         <Col lg={12}>
           <JoinBox
             image={JoinPartner}
-            title={joinPartnerHeading}
-            subtext={joinPartnerSubtext}
+            title={
+              <FormattedMessage id="home.justiceRevolution.joinPartnerHeading" />
+            }
+            subtext={
+              <FormattedMessage id="home.justiceRevolution.joinPartnerSubtext" />
+            }
             button={
               <Button
-                text={joinPartnerButtonText}
+                text={
+                  <FormattedMessage id="home.justiceRevolution.joinPartnerButtonText" />
+                }
                 color={"purple"}
                 action={() => {
                   window.location = `/${language}/partner`;

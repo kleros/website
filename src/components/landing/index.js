@@ -1,5 +1,5 @@
-import 'antd/lib/grid/style/index.css';
-import 'antd/lib/icon/style/index.css';
+import "antd/lib/grid/style/index.css";
+import "antd/lib/icon/style/index.css";
 import { Col, Layout, Row } from "antd";
 import { Helmet } from "react-helmet";
 import Home from "./home";
@@ -8,11 +8,10 @@ import { ReactComponent as Logo } from "../../../static/assets/images/logo.svg";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import media from "styled-media-query";
-import text from "./translations";
-import Dropdown from '../dropdown'
+import Dropdown from "../dropdown";
 
 const StyledLayoutContent = styled(Layout.Content)`
-  background: #1E075F;
+  background: #1e075f;
 `;
 const StyledLayout = styled(Layout)`
   min-height: 100vh;
@@ -49,26 +48,13 @@ const StyledColRight = styled(Col)`
   `}
 `;
 
-const getDefaultLanguage = () => {
-  let language = (
-    window.navigator.userLanguage ||
-    window.navigator.language ||
-    "en"
-  ).split("-")[0];
-  if (!text[language]) language = "en";
-  return language;
-};
-
 const LanguageSelector = ({ setLanguage, currentLanguage }) => {};
 
 class Landing extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     // Hack to get language in path
-    const selectedLanguage = props.location.pathname.split('/')[1]
-    this.state = {
-      language: text[selectedLanguage] ? selectedLanguage : 'en'
-    }
+    const selectedLanguage = props.location.pathname.split("/")[1];
   }
 
   render() {
@@ -83,18 +69,15 @@ class Landing extends Component {
         </Helmet>
         <StyledLayout>
           <StyledLayoutHeader>
-            <Row>
-              
-            </Row>
+            <Row></Row>
           </StyledLayoutHeader>
           <StyledLayoutContent>
-            <Home language={this.state.language} />
+            <Home />
           </StyledLayoutContent>
         </StyledLayout>
       </>
     );
   }
-
 }
 
-export default Landing
+export default Landing;

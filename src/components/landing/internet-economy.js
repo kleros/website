@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Amphitheater from "../../../static/assets/images/amphitheater.png";
-import text from "./translations";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 const StyledInternetEconomy = styled.div`
   background: #f2e3ff;
@@ -61,15 +61,16 @@ const StyledSubtext = styled.div`
 `;
 
 export default ({ language }) => {
-  const heading = text[language].home.internetEconomy.heading;
-  const subtext = text[language].home.internetEconomy.subtext;
-
   return (
     <StyledInternetEconomy>
       <ClippedInternetEconomyTop>
         <StyledImg src={Amphitheater} />
-        <StyledHeader>{heading}</StyledHeader>
-        <StyledSubtext>{subtext}</StyledSubtext>
+        <StyledHeader>
+          <FormattedMessage id="home.internetEconomy.heading" />
+        </StyledHeader>
+        <StyledSubtext>
+          <FormattedMessage id="home.internetEconomy.subtext" />
+        </StyledSubtext>
       </ClippedInternetEconomyTop>
       <ClippedInternetEconomy />
     </StyledInternetEconomy>
