@@ -147,7 +147,7 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
             <div className="ca_social">
               <a
                 key={0}
-                href="https://github/kleros"
+                href="https://github.com/kleros"
                 className={"fab fa-github"}
               ></a>
               <a
@@ -194,8 +194,8 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
               </ul>
               <span>
                 {" "}
-                <FormattedMessage id="footer.copyright" />{' '}
-                {new Date().getFullYear()}{' '}© Kleros.io
+                <FormattedMessage id="footer.copyright" />{" "}
+                {new Date().getFullYear()} © Kleros.io
               </span>
             </nav>
           </div>
