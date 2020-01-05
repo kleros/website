@@ -72,6 +72,66 @@
       "subtitle": "¿Quieres más información? Estamos abiertos a propuestas, sugerencias y solicitudes. Escríbenos vía Telegram o a contacto@kleros.io."
     }
   },
+  "home": {
+    "countdown": {
+      "subheading": "Kleros",
+      "heading": "Venta de Tokens",
+      "days": "días",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos",
+      "subtext": "Tokens en Venta: 150,000,000 PNK o 15%",
+      "subtext-2": "Comienza el 11 de Enero de 2020, 16:00 UTC"
+    },
+    "decentralizedCourts": {
+      "subheading": "Resolución de Disputas en Blockchain. Justicia rápida, abierta y accesible para todos.",
+      "heading": "Cortes Descentralizadas"
+    },
+    "secretSauce": {
+      "pt1Heading": "Justicia Entre Pares",
+      "pt1Subtext": "Una plataforma que utiliza crowdsourcing y blockchain para poner el proceso de resolución de disputas en manos de la comunidad.",
+      "pt2Heading": "¿Cuál es el ingrediente secreto?",
+      "pt2Subtext": "Kleros usa criptoeconomía avanzada y una comunidad global de jurados para resolver disputas de manera rápida, accesible y abierta. Lee el <anchor>white paper</anchor>.",
+      "pt3Heading": "¿Por Qué Kleros Necesita un Token?",
+      "pt3Subtext": "El token Pinakion (PNK) protege al sistema de ataques y brinda a los jurados incentivos para resolver los casos correctamente. Aprende más <anchor>aquí</anchor>."
+    },
+    "internetEconomy": {
+      "heading": "La Economía de Internet",
+      "subtext": "A medida que una parte cada vez mayor de la economía opera en plataformas globales online, surgen disputas que no pueden ser resueltas por los sistemas de justicia tradicionales."
+    },
+    "products": {
+      "heading": "Productos & Integraciones",
+      "disclaimer": "*Producto en desarrollo"
+    },
+    "justiceRevolution": {
+      "heading": "Únete a la Revolución de la Justicia",
+      "subtext": "Podemos ayudarte a integrar tu plataforma con Kleros de manera segura y sin costo.",
+      "subtext-2": " ¿Quieres usar Kleros para resolución de disputas en tu proyecto? Contáctanos.",
+      "joinJurorHeading": "Únete como Jurado",
+      "joinJurorSubtext": "Únete como jurado, gana dinero y contribuye a un mundo más justo.",
+      "joinJurorButtonText": "Únete como Jurado",
+      "joinPartnerHeading": "Conviértete en Partner",
+      "joinPartnerSubtext": "Integra la potente tecnología de justicia de Kleros en tu plataforma. Gratis.",
+      "joinPartnerButtonText": "Conviértete en Partner"
+    },
+    "latest": {
+      "heading": "Último"
+    },
+    "joinCourt": {
+      "heading": "Únete a una Corte",
+      "subtext": "Únete a una corte, ayuda a resolver disputas y gana incentivos en ETH y PNK."
+    },
+    "contact": {
+      "heading": "Contáctanos",
+      "subtext": "¿Quieres saber más? Estamos abiertos a propuestas, sugerencias y consultas. Ponte en contacto a través de <telegram>Telegram</telegram> o <email>contact@kleros.io</email>."
+    },
+    "buttons": {
+      "learnMore": "Saber Más",
+      "joinAsJuror": "Únete como Jurado",
+      "becomeAPartner": "Conviértete en Partner",
+      "tryKlerosCourt": "Prueba la Corte de Kleros"
+    }
+  },
   "about": {
     "title": "Acerca Nuestro",
     "subtitle": "Kleros es un protocolo de software libre que utiliza blockchain y crowdsourcing para resolver disputas de forma justa. Los esfuerzos de desarrollo del protocolo son coordinados por Coopérative Kleros, una Société Coopérative d’Intérêt Collectif (SCIC) constituida en Francia. Toda nuestra investigación y código son de libre acceso y gratuitos para todos los que lo quieran utilizarlos.",
