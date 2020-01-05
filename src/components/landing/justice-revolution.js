@@ -72,15 +72,14 @@ export default ({ language }) => {
               <FormattedMessage id="home.justiceRevolution.joinPartnerSubtext" />
             }
             button={
-              <Button
-                text={
-                  <FormattedMessage id="home.justiceRevolution.joinPartnerButtonText" />
-                }
-                color={"purple"}
-                action={() => {
-                  window.location = `/${language}/partner`;
-                }}
-              />
+              <Link to="/partner">
+                <Button
+                  text={
+                    <FormattedMessage id="home.justiceRevolution.joinPartnerButtonText" />
+                  }
+                  color={"purple"}
+                />
+              </Link>
             }
           />
         </Col>
