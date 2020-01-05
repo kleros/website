@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import text from "./translations";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 import DrawnCases from "../../../static/assets/images/drawn-cases.png";
 import Courts from "../../../static/assets/images/courts.png";
 
@@ -44,13 +44,14 @@ const OverImage = styled.img`
 `;
 
 export default ({ language }) => {
-  const heading = text[language].home.joinCourt.heading;
-  const subtext = text[language].home.joinCourt.subtext;
-
   return (
     <StyledJoinCourt>
-      <StyledHeading>{heading}</StyledHeading>
-      <StyledSubtext>{subtext}</StyledSubtext>
+      <StyledHeading>
+        <FormattedMessage id="home.joinCourt.heading" />
+      </StyledHeading>
+      <StyledSubtext>
+        <FormattedMessage id="home.joinCourt.subtext" />
+      </StyledSubtext>
       <ImagesContainer>
         <OverImage src={DrawnCases} />
         <UnderImage src={Courts} />

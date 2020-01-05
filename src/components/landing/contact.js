@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import text from "./translations";
+
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 const ContactBox = styled.div`
   background: rgba(144, 19, 254, 0.21);
@@ -23,13 +24,37 @@ const StyledSubtext = styled.div`
 `;
 
 export default ({ language }) => {
-  const heading = text[language].home.contact.heading;
-  const subtext = text[language].home.contact.subtext;
-
   return (
     <ContactBox>
-      <StyledHeading>{heading}</StyledHeading>
-      <StyledSubtext>{subtext}</StyledSubtext>
+      <StyledHeading>
+        <FormattedMessage id="home.contact.heading" />
+      </StyledHeading>
+      <StyledSubtext>
+        <FormattedMessage
+          id="home.contact.subtext"
+          values={{
+            telegram: children => (
+              <a
+                href="https://t.me/kleros"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {children}
+              </a>
+            ),
+            email: children => (
+              <a
+                href="mailto:contact@kleros.io"
+                title="contact@kleros.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {children}
+              </a>
+            )
+          }}
+        />
+      </StyledSubtext>
     </ContactBox>
-  )
-}
+  );
+};

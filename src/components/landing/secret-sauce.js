@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import React from "react";
 import styled from "styled-components";
-import text from "./translations";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 import JusticeImg from "../../../static/assets/images/justice.png";
 import pPlusEpsilon from "../../../static/assets/images/pPlusEpsilon.png";
 import KlerosHex from "../../../static/assets/images/klerosHex.png";
@@ -41,35 +41,70 @@ const SecretSauceSubtext = styled.div`
 `;
 
 export default ({ language }) => {
-  const pt1Heading = text[language].home.secretSauce.pt1Heading;
-  const pt1Subtext = text[language].home.secretSauce.pt1Subtext;
-  const pt2Heading = text[language].home.secretSauce.pt2Heading;
-  const pt2Subtext = text[language].home.secretSauce.pt2Subtext;
-  const pt3Heading = text[language].home.secretSauce.pt3Heading;
-  const pt3Subtext = text[language].home.secretSauce.pt3Subtext;
-
   return (
     <StyledSecretSauce>
       <Row>
         <SecretSauceCol lg={8}>
           <StyledImg src={JusticeImg} />
           <SecretSauceTextContainer>
-            <SecretSauceHeading>{pt1Heading}</SecretSauceHeading>
-            <SecretSauceSubtext>{pt1Subtext}</SecretSauceSubtext>
+            <SecretSauceHeading>
+              {<FormattedMessage id="home.secretSauce.pt1Heading" />}
+            </SecretSauceHeading>
+            <SecretSauceSubtext>
+              {<FormattedMessage id="home.secretSauce.pt1Subtext" />}
+            </SecretSauceSubtext>
           </SecretSauceTextContainer>
         </SecretSauceCol>
         <SecretSauceCol lg={8}>
           <StyledImg src={pPlusEpsilon} />
           <SecretSauceTextContainer>
-            <SecretSauceHeading>{pt2Heading}</SecretSauceHeading>
-            <SecretSauceSubtext>{pt2Subtext}</SecretSauceSubtext>
+            <SecretSauceHeading>
+              {<FormattedMessage id="home.secretSauce.pt2Heading" />}
+            </SecretSauceHeading>
+            <SecretSauceSubtext>
+              {
+                <FormattedMessage
+                  id="home.secretSauce.pt2Subtext"
+                  values={{
+                    anchor: children => (
+                      <a
+                        href="/whitepaper_en.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    )
+                  }}
+                />
+              }
+            </SecretSauceSubtext>
           </SecretSauceTextContainer>
         </SecretSauceCol>
         <SecretSauceCol lg={8}>
           <StyledImg src={KlerosHex} />
           <SecretSauceTextContainer>
-            <SecretSauceHeading>{pt3Heading}</SecretSauceHeading>
-            <SecretSauceSubtext>{pt3Subtext}</SecretSauceSubtext>
+            <SecretSauceHeading>
+              {<FormattedMessage id="home.secretSauce.pt3Heading" />}
+            </SecretSauceHeading>
+            <SecretSauceSubtext>
+              {
+                <FormattedMessage
+                  id="home.secretSauce.pt3Subtext"
+                  values={{
+                    anchor: children => (
+                      <a
+                        href="/whitepaper_en.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    )
+                  }}
+                />
+              }
+            </SecretSauceSubtext>
           </SecretSauceTextContainer>
         </SecretSauceCol>
       </Row>

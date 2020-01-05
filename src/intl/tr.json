@@ -77,61 +77,61 @@
   "home": {
     "countdown": {
       "subheading": "Kleros",
-      "heading": "Token Sale",
-      "days": "days",
-      "hours": "hours",
-      "minutes": "minutes",
-      "seconds": "seconds",
-      "subtext": "Tokens for sale: 150,000,000 PNK or 15%",
-      "subtext-2": "Starting on January 11th 2020, 16:00 UTC"
+      "heading": "Jeton Satışı",
+      "days": "gün",
+      "hours": "saat",
+      "minutes": "dakika",
+      "seconds": "saniye",
+      "subtext": "150 milyon PNK (tümünün %15'i) satışı için geri sayım başladı!",
+      "subtext-2": "11 Ocak 2020, saat 16:00 UTC'de başlıyor!"
     },
     "decentralizedCourts": {
-      "subheading": "The blockchain dispute resolution layer. Fast, open and affordable justice for all.",
-      "heading": "Decentralized Courts"
+      "subheading": "Blokzincirinin ihtilaf çözümleme katmanı. Herkes için hızlı, şeffaf ve ucuz adalet.",
+      "heading": "Merkezsiz Mahkemeler"
     },
     "secretSauce": {
-      "pt1Heading": "Peer-to-Peer Justice",
-      "pt1Subtext": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
-      "pt2Heading": "What's the Secret Sauce?",
-      "pt2Subtext": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
-      "pt3Heading": "Why Does Kleros Need a Token?",
-      "pt3Subtext": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
+      "pt1Heading": "Topluluk Tarafından, Topluluk İçin",
+      "pt1Subtext": "Blokzinciri ve topluluğun içinden sağlanan juri adayları sayesinde ihtilaf çözümleme tamamen topluluğun elinde!",
+      "pt2Heading": "Püf noktası nedir?",
+      "pt2Subtext": "Kleros, gelişmiş kripto-ekonomi ve küresel juri topluluğunu bir araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde hakemlik edilmesine imkan sağlıyor. <anchor>Resmi raporu</anchor> okuyun.",
+      "pt3Heading": "Kleros'un neden ayrı bi jetona ihtiyacı var?",
+      "pt3Subtext": "Pinakion jetonu sistemi saldırılardan korumakta ve jurileri oybirliğine varmaları için teşvik etmektedir. Daha detaylı bilgi için <anchor>buraya</anchor> tıklayın."
     },
     "internetEconomy": {
-      "heading": "The Internet Economy",
-      "subtext": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      "heading": "Online Ekonomi",
+      "subtext": "Hayatlarımız giderek online platformlara taşınıyor ve bu platformlarda ortaya çıkan ihtilaflar geneleneksel adalet sistemi ile pratikte çözülemiyor."
     },
     "products": {
-      "heading": "Products & Integrations",
-      "disclaimer": "* Product under development"
+      "heading": "Ürünler Ve Entegrasyonlar",
+      "disclaimer": "* Geliştirme sürecinde"
     },
     "justiceRevolution": {
-      "heading": "Join the Justice Revolution",
-      "subtext": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost.",
-      "subtext-2": "If this sounds like something you could use in your blockchain project, just ask.",
-      "joinJurorHeading": "Join as a Juror",
-      "joinJurorSubtext": "Become a juror, earn and bring justice to the decentralized world.",
-      "joinJurorButtonText": "Join as a Juror",
-      "joinPartnerHeading": "Become a Partner",
-      "joinPartnerSubtext": "Integrate Kleros' powerful dispute resolution technology in your platform, for free.",
-      "joinPartnerButtonText": "Become a Partner"
+      "heading": "Adalet Devrimine Siz De Katılın!",
+      "subtext": "Kleros'u, Kleros yapan şey, işbirliğidir. Platformunuzu, güvenli ve ücretsiz olarak Kleros ile entegre etmekten memnun oluruz.",
+      "subtext-2": "Eğer projenizde bir ihtilaf çözümlemeye ihtiyaç duyuyorsanız lütfen iletişime geçin.",
+      "joinJurorHeading": "Juri Olun",
+      "joinJurorSubtext": "Juri olun ve merkezsiz dünyaya adalet getirirken para kazanın.",
+      "joinJurorButtonText": "Juri Olun",
+      "joinPartnerHeading": "Çözüm Ortağı Olun",
+      "joinPartnerSubtext": "Kleros'u platformunuza entegre edin bu ihtilaf çözümleme sisteminden ücretsiz yararlanın.",
+      "joinPartnerButtonText": "Çözüm Ortağı Olun"
     },
     "latest": {
-      "heading": "Latest"
+      "heading": "En Son"
     },
     "joinCourt": {
-      "heading": "Join a Court",
-      "subtext": "Join a court, help resolve disputes and win incentives in ETH and PNK."
+      "heading": "Bir Mahkemeye Juri Olarak Katılın",
+      "subtext": "Bir mahkemeye katılın ve ETH ve PNK kazanırken ihtilaf çözümlemeye yardım edin."
     },
     "contact": {
-      "heading": "Get in touch",
-      "subtext": "Looking to find out more? We're open to all proposals, suggestions and requests. Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>."
+      "heading": "İrtibata geçin",
+      "subtext": "Önerilerilerinizi ve taleplerinizi duymaktan mutluluk duyarız. Data fazlası için lütfen <telegram>Telegram</telegram> üzerinden bize yazın ya da <email>contact@kleros.io</email> adresine email gönderin."
     },
     "buttons": {
-      "learnMore": "Learn More",
-      "joinAsJuror": "Join as a Juror",
-      "becomeAPartner": "Become a Partner",
-      "tryKlerosCourt": "Try Kleros Court"
+      "learnMore": "Devamı İçin Tıklayın",
+      "joinAsJuror": "Juri Olun",
+      "becomeAPartner": "Çözüm Ortağı Olun",
+      "tryKlerosCourt": "Kleros Mahkemesini Deneyin"
     }
   },
   "about": {

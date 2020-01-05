@@ -77,63 +77,64 @@
   "home": {
     "countdown": {
       "subheading": "Kleros",
-      "heading": "Token Sale",
-      "days": "days",
-      "hours": "hours",
-      "minutes": "minutes",
-      "seconds": "seconds",
-      "subtext": "Tokens for sale: 150,000,000 PNK or 15%",
-      "subtext-2": "Starting on January 11th 2020, 16:00 UTC"
+      "heading": "Venda de Tokens",
+      "days": "dias",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos",
+      "subtext": "Tokens à venda: 150,000,000 PNK ou 15%",
+      "subtext-2": "Início em 11 de Janeiro de 2020, 16:00 UTC"
     },
     "decentralizedCourts": {
-      "subheading": "The blockchain dispute resolution layer. Fast, open and affordable justice for all.",
-      "heading": "Decentralized Courts"
+      "subheading": "A camada de resolução de disputas do blockchain. Justiça rápida, aberta e acessível para todos.",
+      "heading": "Tribunais descentralizados"
     },
     "secretSauce": {
-      "pt1Heading": "Peer-to-Peer Justice",
-      "pt1Subtext": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
-      "pt2Heading": "What's the Secret Sauce?",
-      "pt2Subtext": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
-      "pt3Heading": "Why Does Kleros Need a Token?",
-      "pt3Subtext": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
+      "pt1Heading": "Justiça P2P",
+      "pt1Subtext": "Uma plataforma P2P que usa crowdsourcing e blockchain para colocar o processo de resolução de disputas nas mãos da comunidade.",
+      "pt2Heading": "Qual é o ingrediente secreto?",
+      "pt2Subtext": "Kleros usa criptoeconomia avançada, juntamente com uma comunidade global de jurados, para julgar disputas de maneira rápida, acessível e aberta. Leia o <anchor>white paper</anchor>.",
+      "pt3Heading": "Por que o Kleros precisa de um token?",
+      "pt3Subtext": "O token Pinakion (PNK) protege o sistema contra ataques, além de oferecer aos jurados um incentivo financeiro para resolver casos de forma coerente. Saiba mais <anchor>here</anchor>."
     },
     "internetEconomy": {
-      "heading": "The Internet Economy",
-      "subtext": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      "heading": "A economia da Internet",
+      "subtext": "A medida que nossas vidas passam para plataformas on-line globais, surgem disputas em áreas que não podem ser resolvidas pelos sistemas judiciais tradicionais."
     },
     "products": {
-      "heading": "Products & Integrations",
-      "disclaimer": "* Product under development"
+      "heading": "Produtos e integrações",
+      "disclaimer": "* Produto em desenvolvimento"
     },
     "justiceRevolution": {
-      "heading": "Join the Justice Revolution",
-      "subtext": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost.",
-      "subtext-2": "If this sounds like something you could use in your blockchain project, just ask.",
-      "joinJurorHeading": "Join as a Juror",
-      "joinJurorSubtext": "Become a juror, earn and bring justice to the decentralized world.",
-      "joinJurorButtonText": "Join as a Juror",
-      "joinPartnerHeading": "Become a Partner",
-      "joinPartnerSubtext": "Integrate Kleros' powerful dispute resolution technology in your platform, for free.",
-      "joinPartnerButtonText": "Become a Partner"
+      "heading": "Junte-se à Revolução da Justiça",
+      "subtext": "A colaboração faz o Kleros. Podemos integrar à sua plataforma com segurança e sem nenhum custo.",
+      "subtext-2": "Se isso soa como algo que você poderia usar em seu projeto de blockchain, basta perguntar.",
+      "joinJurorHeading": "Seja um jurado",
+      "joinJurorSubtext": "Seja um jurado, ganhe e traga justiça ao mundo descentralizado.",
+      "joinJurorButtonText": "Seja um jurado",
+      "joinPartnerHeading": "Seja um Parceiro",
+      "joinPartnerSubtext": "Integre a poderosa tecnologia de resolução de disputas do Kleros em sua plataforma, gratuitamente.",
+      "joinPartnerButtonText": "Seja um Parceiro"
     },
     "latest": {
-      "heading": "Latest"
+      "heading": "Mais recentes"
     },
     "joinCourt": {
-      "heading": "Join a Court",
-      "subtext": "Join a court, help resolve disputes and win incentives in ETH and PNK."
+      "heading": "Junte-se a um tribunal",
+      "subtext": "Junte-se a um tribunal, ajude a resolver disputas e obtenha incentivos em ETH e PNK."
     },
     "contact": {
-      "heading": "Get in touch",
-      "subtext": "Looking to find out more? We're open to all proposals, suggestions and requests. Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>."
+      "heading": "Entre em contato",
+      "subtext": "Quer saber mais? Estamos abertos a todas as propostas, sugestões e solicitações. Envie-nos uma mensagem através do <telegram>Telegram</telegram> ou <email>contact@kleros.io</email>."
     },
     "buttons": {
-      "learnMore": "Learn More",
-      "joinAsJuror": "Join as a Juror",
-      "becomeAPartner": "Become a Partner",
-      "tryKlerosCourt": "Try Kleros Court"
+      "learnMore": "Saiba mais",
+      "joinAsJuror": "Seja um Jurado",
+      "becomeAPartner": "Seja um Parceiro",
+      "tryKlerosCourt": "Experimente Kleros Court"
     }
   },
+
   "about": {
     "title": "About Us",
     "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
