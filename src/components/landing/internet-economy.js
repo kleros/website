@@ -58,6 +58,10 @@ const StyledSubtext = styled.div`
   @media (max-width: 510px) {
     font-size: 20px;
   }
+
+  @media (max-width: 386px) {
+    font-size: 16px;
+  }
 `;
 
 export default ({ language }) => {

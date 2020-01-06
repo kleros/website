@@ -27,6 +27,17 @@ const SecretSauceHeading = styled.div`
   font-size: 36px;
   line-height: 49px;
   padding: 0px 60px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media (max-width: 386px) {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0px 10px;
+  }
 `;
 const SecretSauceSubtext = styled.div`
   font-size: 16px;
@@ -37,6 +48,10 @@ const SecretSauceSubtext = styled.div`
   a {
     color: #4d00b4;
     text-decoration: underline;
+  }
+
+  @media (max-width: 386px) {
+    padding: 0px 0px;
   }
 `;
 
