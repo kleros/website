@@ -26,8 +26,8 @@ export default injectIntl(function(menu) {
                   dropdownOptions: [
                     { text: "English", url: "/onepager_en.pdf" },
                     { text: "Español", url: "/onepager_es.pdf" },
-                    { text: "한국인", url: "/onepager_ko.pdf" },
-                    { text: "Français", url: "/onepager_fr.pdf" }
+                    { text: "Français", url: "/onepager_fr.pdf" },
+                    { text: "한국인", url: "/onepager_ko.pdf" }
                   ]
                 }}
               />
@@ -36,10 +36,7 @@ export default injectIntl(function(menu) {
                   text: <FormattedMessage id="header.button-white-paper" />,
                   dropdownOptions: [
                     { text: "English", url: "/whitepaper_en.pdf" },
-                    {
-                      text: "Español",
-                      url: "/whitepaper_es.pdf"
-                    }
+                    { text: "Español", url: "/whitepaper_es.pdf" }
                   ]
                 }}
               />
@@ -47,42 +44,23 @@ export default injectIntl(function(menu) {
                 data={{
                   text: <FormattedMessage id="header.button-dapps" />,
                   dropdownOptions: [
-                    {
-                      text: "Kleros Court",
-                      url: "https://court.kleros.io"
-                    },
-                    {
-                      text: "Kleros Governance",
-                      url: "https://governance.kleros.io"
-                    },
-                    {
-                      text: "Token² Curated Registry",
-                      url: "https://tokens.kleros.io"
-                    },
+                    { text: "Kleros Court", url: "https://court.kleros.io" },
+                    { text: "Kleros Governance", url: "https://governance.kleros.io" },
+                    { text: "Token² Curated Registry", url: "https://tokens.kleros.io" },
                     { text: "Escrow", url: "https://escrow.kleros.io" },
-                    {
-                      text: "CryptoUnlocked",
-                      url: "https://cryptounlocked.wetrust.io"
-                    },
+                    { text: "CryptoUnlocked", url: "https://cryptounlocked.wetrust.io" },
                     { text: "Realitio", url: "https://realitio.github.io" },
                     { text: "Kleroscan", url: "http://kleroscan.com/" }
                   ]
                 }}
               />
-
               <Dropdown
                 data={{
                   text: <FormattedMessage id="header.button-use-cases" />,
                   dropdownOptions: [
                     { text: "Escrow", url: "/escrow" },
-                    {
-                      text: "Curated List",
-                      url: "/curated-list"
-                    },
-                    {
-                      text: "Oracle",
-                      url: "/oracle"
-                    }
+                    { text: "Curated List", url: "/curated-list" },
+                    { text: "Oracle", url: "/oracle" }
                   ],
                   intl: true
                 }}
@@ -103,9 +81,9 @@ export default injectIntl(function(menu) {
                   dropdownOptions: [
                     { text: "English", url: "/en" },
                     { text: "Español", url: "/es" },
-                    { text: "한국인", url: "/ko" },
                     { text: "Français", url: "/fr" },
-                    { text: "Русский", url: "/ru" }
+                    { text: "Русский", url: "/ru" },
+                    { text: "한국인", url: "/ko" }
                   ]
                 }}
               />
