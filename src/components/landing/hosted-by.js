@@ -12,6 +12,10 @@ const StyledThomsonReuters = styled.img`
   margin-top: 55px;
   width: 50%;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export default () => {

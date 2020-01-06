@@ -26,8 +26,10 @@ const StyledButton = styled(Button)`
       width: 230px;
     }
 
-    @media (max-width: 370px) {
-      width: 180px;
+    @media (max-width: 386px) {
+      width: 170px;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 `;
