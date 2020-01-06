@@ -1,7 +1,7 @@
 {
   "header": {
-    "button-one-pager": "",
-    "button-blog": "",
+    "button-one-pager": "한눈에 보기",
+    "button-blog": "블로그",
     "button-partner": "파트너 신청",
     "button-juror": "배심원단 지원",
     "button-dapps": "DApps",
@@ -230,7 +230,7 @@
     "subtitle": "미디어 문의의 경우, <email>contact@kleros.io</email> 로 연락 주시기 바랍니다.",
     "categories": "카테고리",
     "section-media": {
-      "featured": "",
+      "featured": "주요 기사",
       "press": "",
       "events": "",
       "articles": ""
@@ -491,7 +491,7 @@
 
   "footer": {
     "about": "About",
-    "developer": "",
+    "developer": "개발자 가이드",
     "governance": "거버넌스",
     "join": "Join Us",
     "faq": "FAQ",

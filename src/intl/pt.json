@@ -1,77 +1,131 @@
 {
   "header": {
     "button-one-pager": "One Pager",
-    "button-partner": "Become a Partner",
-    "button-juror": "Become a Juror",
+
+    "button-partner": "Seja um Parceiro",
+
+    "button-juror": "Seja um Jurado",
+
     "button-dapps": "DApps",
+
     "button-white-paper": "White Paper",
-    "button-use-cases": "Use Cases",
-    "button-about": "About",
+
+    "button-use-cases": "Casos de Uso",
+
+    "button-about": "Sobre",
+
     "button-blog": "Blog"
   },
+
   "index": {
-    "title": "Decentralized Courts",
-    "subtitle": "The blockchain dispute resolution layer. Fast, open and affordable justice for all.",
-    "button-juror": "Join as a Juror",
-    "button-partner": "Become a Partner",
-    "button-token-sale": "Token Sale",
-    "button-twitter": "Go to Twitter",
-    "button-blog": "Go to Blog",
-    "button-github": "Go to Github",
-    "button-forum": "Go to Forum",
+    "title": "Tribunais Descentralizados",
+
+    "subtitle": "A camada de resolução de disputas do blockchain. Justiça rápida, aberta e acessível para todos.",
+
+    "button-juror": "Seja um Jurado",
+
+    "button-partner": "Seja um Parceiro",
+
+    "button-token-sale": "Venda de Tokens",
+
+    "button-twitter": "Ir para o Twitter",
+
+    "button-blog": "Ir para o Blog",
+
+    "button-github": "Ir para o Github",
+
+    "button-forum": "Ir para o Fórum",
 
     "section-example-dispute": {
-      "title": "A Common Dispute in the New Economy",
-      "paragraph-1": "Alice hires Bob to build her a website.",
-      "paragraph-2": "Alice pays Bob in advance.",
-      "paragraph-3": "The site takes Bob longer than expected.",
-      "paragraph-4": "When he finally delivers the site, Alice is not satisfied.",
-      "paragraph-5": "A debate starts. Alice requests a refund. Bob claims the specifications weren't clear.",
-      "paragraph-6": "Alice and Bob are both left at a loss with no clear outcome of their dispute",
-      "button-primary": "Watch Video"
+      "title": "Uma disputa comum na nova economia",
+
+      "paragraph-1": "Alice contrata Bob para criar um site para ela.",
+
+      "paragraph-2": "Alice paga a Bob com antecedência.",
+
+      "paragraph-3": "O site demora mais tempo do que o esperado para ficar pronto.",
+
+      "paragraph-4": "Quando Bob finalmente entrega o site, Alice não está satisfeita.",
+
+      "paragraph-5": "Uma disputa começa. Alice solicita o reembolso. Bob afirma que as especificações não eram claras.",
+
+      "paragraph-6": "Alice e Bob estão em um impasse sem um resultado claro para sua disputa.",
+
+      "button-primary": "Assista ao Vídeo"
     },
+
     "section-internet-economy": {
-      "title": "The Internet Economy",
-      "subtitle": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      "title": "A economia da Internet",
+
+      "subtitle": "A medida que nossas vidas passam para plataformas on-line globais, surgem disputas em áreas que não podem ser resolvidas pelos sistemas judiciais tradicionais."
     },
+
     "section-why-kleros": {
-      "title": "Why Kleros?",
-      "subtitle-1": "Peer-to-Peer Justice",
-      "paragraph-1": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
-      "subtitle-2": "What's the Secret Sauce?",
-      "paragraph-2": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
-      "subtitle-3": "Why Does Kleros Need a Token?",
-      "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
+      "title": "Por que Kleros?",
+
+      "subtitle-1": "Justiça P2P",
+
+      "paragraph-1": "Uma plataforma P2P que usa crowdsourcing e blockchain para colocar o processo de resolução de disputas nas mãos da comunidade.",
+
+      "subtitle-2": "Qual é o ingrediente secreto?",
+
+      "paragraph-2": "Kleros usa cripto-economia avançada, juntamente com uma comunidade global de jurados, para julgar disputas de maneira rápida, acessível e aberta. Leia o <anchor>White Paper</anchor>.",
+
+      "subtitle-3": "Por que o Kleros precisa de um token?",
+
+      "paragraph-3": "O token Pinakion (PNK) protege o sistema contra ataques, além de oferecer aos jurados um incentivo financeiro para resolver casos de forma coerente. Saiba mais <anchor>aqui</anchor>."
     },
+
     "section-how-does-it-work": {
-      "title": " How Does It Work?",
-      "subtitle-1": "Contract",
-      "paragraph-1": "Alice hires Bob to build a website for her. They agree to use Kleros should a dispute occur.",
-      "subtitle-2": "Dispute",
-      "paragraph-2": "Alice is not satisfied with Bob's work and raises a dispute.",
-      "subtitle-3": "Selection",
-      "paragraph-3": "Users are randomly selected as jurors for the dispute.",
-      "subtitle-4": "Enforcement",
-      "paragraph-4": "Jurors evaluate the evidence and vote Alice as the winner. She is reimbursed and honest jurors are compensated for their work.",
-      "button-primary": "Watch Video"
+      "title": "Como funciona?",
+
+      "subtitle-1": "Contrato",
+
+      "paragraph-1": "Alice contrata Bob para criar um site para ela. Eles concordam em usar o Kleros caso ocorra uma disputa.",
+
+      "subtitle-2": "Disputa",
+
+      "paragraph-2": "Alice não está satisfeita com o trabalho de Bob e começa uma disputa.",
+
+      "subtitle-3": "Seleção",
+
+      "paragraph-3": "Os usuários são selecionados aleatoriamente como jurados da disputa.",
+
+      "subtitle-4": "Execução",
+
+      "paragraph-4": "Os jurados avaliam as evidências e votam em Alice como vencedora. Ela é reembolsada e jurados honestos são recompensados por seu trabalho.",
+
+      "button-primary": "Assista ao Vídeo"
     },
+
     "section-justice-revolution": {
-      "title": "Join The Justice Revolution",
-      "subtitle-1": "Join as a Juror",
-      "paragraph-1": "Become a juror, earn and bring justice to the world.",
-      "button-1": "Join as a Juror",
-      "subtitle-2": "Become a Partner",
-      "paragraph-2": "Integrate Kleros powerful dispute resolution technology in your platform. For free.",
-      "button-2": "Become a Partner"
+      "title": "Junte-se à Revolução da Justiça",
+
+      "subtitle-1": "Seja um Jurado",
+
+      "paragraph-1": "Seja um Jurado, ganhe incentivos e traga justiça ao mundo.",
+
+      "button-1": "Seja um Jurado",
+
+      "subtitle-2": "Seja um Parceiro",
+
+      "paragraph-2": "Integre a poderosa tecnologia de resolução de disputas do Kleros em sua plataforma. De graça.",
+
+      "button-2": "Seja um Parceiro"
     },
+
     "section-partners": {
-      "title": "Our Partners",
-      "subtitle": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
+      "title": "Nossos Parceiros",
+
+      "subtitle": "A colaboração faz o Kleros. Podemos integrar à sua plataforma com segurança e sem nenhum custo. Se isso soa como algo que você poderia usar em seu projeto blockchain, basta perguntar."
     },
+
     "section-get-in-touch": {
-      "title": "Get in touch",
-      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
-      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>."
+      "title": "Entre em contato",
+
+      "subtitle-1": "Quer saber mais? Estamos abertos a todas as propostas, sugestões e solicitações.",
+
+      "subtitle-2": "Envie uma mensagem no <telegram>Telegram</telegram> ou em <email>contact@kleros.io</email>."
     }
   },
   "home": {
@@ -136,325 +190,556 @@
   },
 
   "about": {
-    "title": "About Us",
-    "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
+    "title": "Sobre nós",
+
+    "subtitle": "Kleros é um protocolo de resolução de disputas on-line de código aberto que usa blockchain e crowdsourcing para julgar de maneira justa as disputas. Os esforços de desenvolvimento do protocolo são coordenados pela Coopérative Kleros, uma Société Coopérative d'Intérêt Collectif (SCIC) incorporada na França. Toda a nossa pesquisa e desenvolvimento de código é de código aberto e gratuito para qualquer pessoa usar.",
+
     "section-who-are-we": {
-      "title": "Who are we?",
-      "paragraph": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance. Kleros' vision is to build open technology empowering the courts of the future."
+      "title": "Quem somos nós?",
+
+      "paragraph": "Somos uma equipe interdisciplinar e internacional apaixonada por blockchain e seu potencial para transformar o setor jurídico e governança. A visão de Kleros é construir tecnologia aberta, capacitando os tribunais do futuro."
     },
+
     "section-meet-our-team": {
-      "title": "Meet Our Team",
-      "paragraph": "Kleros is comprised of a high quality team covering all required disciplines for decentralized justice: smart contract security, computer science, cryptoeconomics, business, marketing and communications."
+      "title": "Conheça nosso time",
+
+      "paragraph": "Kleros é composto por uma equipe de alta qualidade, cobrindo todas as disciplinas necessárias para a justiça descentralizada: segurança contratual inteligente, ciência da computação, cripto-economia, negócios, marketing e comunicações."
     },
+
     "section-join-our-team": {
-      "title": "Join Our Team!",
-      "subtitle": "Check our open positions below and join the justice revolution!"
+      "title": "Junte-se a nossa equipe!",
+
+      "subtitle": "Confira nossas posições em aberto a seguir e participe da revolução da justiça!"
     }
   },
+
   "faq": {
-    "title": "Frequently Asked Questions",
-    "placeholder-search-bar": "Search your question",
+    "title": "Perguntas Frequentes",
+
+    "placeholder-search-bar": "Pesquise sua dúvida",
+
     "section-faq": {
       "category-general": {
-        "name": "General",
-        "q-1": "Can you really trust a decision made by a bunch of anonymous people on the Internet?",
-        "a-1": "Satoshi Nakamoto taught us that a number of anonymous computers who do not trust each can still reach consensus, provided incentives are correctly structured. Kleros extends this principle to human decision making. A number of anonymous jurors who do not trust each other can reach consensus on a right decision, provided incentives are correctly structured. To learn more about the incentive system, read our white paper.",
-        "q-2": "How many pinakion will exist?",
-        "a-2": "The supply of pinakion is fixed at one billion units.",
-        "q-3": "Does a party who wants to have a case adjudicated need to have pinakion?",
-        "a-3": "No, only jurors will need pinakion in order to be drawn. Parties don’t even need to know what a pinakion is.",
-        "q-4": "Is the identity of jurors revealed?",
-        "a-4": "Since decisions made in Kleros affect the allocation of resources, there is an incentive for parties to try to bribe or intimidate the tribunal. Anonimity is intended to protect jurors from intimidation and retaliation. It also simplifies the process of users becoming jurors and avoids the costs of identity verification. By providing a secure environment and simplifying the selection process, Kleros greatly enlarges the pool of potential jurors. This results in lower arbitration costs and the democratization of access to justice.",
-        "q-5": "What is Kleros token allocation?",
-        "a-5": "Team Members: 18% First Round of Token Sale: 16% Airdrop: 4% Subsequent Rounds and Juror Incentive Program: 50% Kleros Cooperative Development Reserve: 12%",
-        "q-6": "Could Kleros become a platform used by mainstream online retailers such as eBay or Amazon?",
-        "a-6": "Yes, by adopting Kleros, any mainstream e-commerce platform could enjoy a fast, affordable and transparent dispute resolution method. If you want to learn more, contact us."
+        "name": "Geral",
+
+        "q-1": "Você pode realmente confiar em uma decisão tomada por várias pessoas anônimas na Internet?",
+
+        "a-1": "Satoshi Nakamoto nos ensinou que vários computadores anônimos que não confiam em cada um ainda assim podem chegar a um consenso, desde que os incentivos sejam estruturados corretamente. Kleros estende esse princípio à tomada de decisão humana. Vários jurados anônimos que não confiam um no outro podem chegar a um consenso sobre uma decisão correta, desde que os incentivos sejam estruturados corretamente. Para saber mais sobre o sistema de incentivos, leia nosso Whitepaper.",
+
+        "q-2": "Quantos pinakions existirão?",
+
+        "a-2": "O fornecimento de pinakion é fixado em um bilhão de unidades.",
+
+        "q-3": "Os envolvidos na disputa que queiram ter o caso julgado precisam ter pinakions?",
+
+        "a-3": "Não, apenas os jurados precisarão de pinakion para serem sorteados. As partes nem precisam saber o que é um pinakion.",
+
+        "q-4": "A identidade dos jurados é revelada?",
+
+        "a-4": "Como as decisões tomadas em Kleros afetam a alocação de recursos, há um incentivo para que as partes tentem subornar ou intimidar o tribunal. A anonimidade visa proteger os jurados de intimidação e retaliação. Também simplifica o processo de usuários se tornarem jurados e evita os custos de verificação de identidade. Ao fornecer um ambiente seguro e simplificar o processo de seleção, Kleros aumenta muito o grupo de jurados em potencial. Isso resulta em menores custos de arbitragem e na democratização do acesso à justiça.",
+
+        "q-5": "Qual é alocação de tokens do Kleros?",
+
+        "a-5": "Membros da equipe: 18% Venda da primeira rodada de tokens: 16% Airdrop: 4% Rodadas subsequentes e programa de incentivo ao jurado: 50% Reserva de desenvolvimento cooperativo da Kleros: 12%",
+
+        "q-6": "O Kleros poderia se tornar uma plataforma usada pelos principais varejistas online, como eBay ou Amazon?",
+
+        "a-6": "Sim, adotando o Kleros, qualquer plataforma convencional de comércio eletrônico poderia usufruir de um método rápido, acessível e transparente de resolução de disputas. Se você quiser saber mais, entre em contato conosco."
       },
+
       "category-integration&partners": {
-        "name": "Integration & Partners",
-        "q-1": "We are from organization X and would like to use Kleros. However, for XYZ reasons, we can't use anonymous jurors. Can we tweak Kleros in order to only select jurors from a pre-vetted pool?",
-        "a-1": "At this point, it is not possible to select jurors from a pre-defined pool. Anyone having tokens can self-select to be drawn randomly as a juror. However, we understand that selecting jurors from a pre-vetted pool is important in many use cases. If this is your situation, please contact us on contact@kleros.io. We would like to know more about your use case."
+        "name": "Integração e Parceiros",
+
+        "q-1": "Nós somos da organização X e gostaríamos de usar o Kleros. No entanto, por razões XYZ, não podemos usar jurados anônimos. Podemos ajustar Kleros para selecionar apenas jurados de um grupo predefinido?",
+
+        "a-1": "Neste ponto, não é possível selecionar jurados de um grupo predefinido. Qualquer pessoa que possua tokens pode se colocar à disposição para ser sorteada aleatoriamente como jurado. No entanto, entendemos que a seleção de jurados de um grupo previamente aprovado é importante em muitos casos de uso. Se essa for a sua situação, entre em contato conosco em contact@kleros.io. Gostaríamos de saber mais sobre o seu caso de uso."
       },
+
       "category-jurors": {
-        "name": "Jurors",
-        "q-1": "Can appeals be managed outside of Kleros?",
-        "a-1": "Yes, it’s possible to create an arbitrable smart contract which uses Kleros for solving first instance disputes and allows appeals to be handled outside of Kleros.",
-        "q-2": "Do you have sample contracts that show what type of disputes could be adjudicated by Kleros?",
-        "a-2": "While at this point there are some sample smart contracts, this is an area that requires further development. Kleros focuses on the dispute resolution process, not on the contract drafting itself. Other companies in the ecosystem will focus on drafting contracts. In order to be arbitrable by Kleros, a smart contract needs to follow the smart contract standard we have developed. Check out our GitHub repository for more information and join our discussion on Telegram if you're interested in following the development.",
-        "q-3": "Have you considered how jurors might be vetted, as well as their experience and expertise, to enable them to participate in specific courts/disputes?",
-        "a-3": "In decentralized systems, the main problem of vetting jurors is: `Who vets the vetters?`, which is a chicken and the egg problem. One of the most attractive features of public blockchains is that anyone can join, so nobody gets to monopolize the ledger.",
-        "q-4": "How is evidence presented and managed by the system?",
-        "a-4": "The way in which evidence is presented depends on the type of dispute. A freelancing dispute will require different evidence than an insurance or a payment dispute. Kleros Cooperative provides a back end for jurors to arbitrate disputes. The way in which it is built makes it possible for anyone to develop their own front end. The logic is similar to the Ethereum Wallet. The Ethereum Core Team provide a wallet to users, but anyone can build an Ethereum wallet. This means, for example, that an e-commerce platform could build a front end on which users could arbitrate disputes without leaving the platform. The front end would tap into Kleros' juror network. We expect many companies from the ecosystem to build interfaces based on our platform. To learn more, read this article about the evolution of Kleros Cooperative's ecosystem.",
-        "q-5": "Since jurors are drawn from a global pool, how would you make sure that they all speak the language the dispute is called in?",
-        "a-5": "Kleros is made of subcourts specializing in different types of disputes. Language is one of the specialization parameters. For example, there could be a “website dispute court in English”, a “website dispute court in Spanish”, “website dispute court in French”, etc.",
-        "q-6": "How do you know that jurors reviewed the evidence instead of just voting randomly?",
-        "a-6": "Kleros does not have a specific way to make sure that jurors reviewed the evidence. The way to make sure that jurors act honestly is through the creation of right economic incentives. Jurors who vote randomly without reviewing the evidence are more likely to vote incoherently with the majority and lose the token they staked to be drawn. Hence, they lose money on average. Over time, this would make dishonest jurors leave the court. To learn more about how incentives work in Kleros, read the white paper.",
-        "q-7": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to others jurors?",
-        "a-7": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete.",
-        "q-8": "Are there time limits for disputes? Do jurors have to respond withing a given period of time?",
-        "a-8": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution.",
-        "q-9": "What happens to jurors who don't respond or review the evidence within the set time frame?",
-        "a-9": "Jurors who don't give their ruling before the deadline are penalized by losing some of their staked tokens and by not receiving the arbitration fee."
+        "name": "Jurados",
+
+        "q-1": "Os recursos de apelação podem ser gerenciados fora do Kleros?",
+
+        "a-1": "Sim, é possível criar um contrato inteligente arbitrável que use o Kleros para resolver disputas de primeira instância e permita que os recursos sejam tratados fora do Kleros.",
+
+        "q-2": "Você tem exemplos de contratos que mostram que tipo de disputas poderiam ser julgadas pelo Kleros?",
+
+        "a-2": "Embora neste momento existam alguns contratos inteligentes de amostra, esta é uma área que requer maior desenvolvimento. Kleros se concentra no processo de resolução de disputas, não no próprio esboço do contrato. Outras empresas do ecossistema se concentram na elaboração de contratos. Para ser arbitrável pelo Kleros, um contrato inteligente precisa seguir o padrão de contrato inteligente que desenvolvemos. Confira nosso repositório GitHub para obter mais informações e participe de nossa discussão no Telegram, se você estiver interessado em acompanhar o desenvolvimento.",
+
+        "q-3": "Você já considerou como os jurados podem ser examinados, bem como sua experiência e conhecimento, para permitir que participem de tribunais / disputas específicas?",
+
+        "a-3": "Nos sistemas descentralizados, o principal problema da verificação dos jurados é: 'Quem examina os examinadores?', o que é um problema “galinha e ovo”. Uma das características mais atraentes das cadeias públicas de blockchain é que qualquer pessoa pode participar, para que ninguém monopolize o registro.",
+
+        "q-4": "Como as evidências são apresentadas e gerenciadas pelo sistema?",
+
+        "a-4": "A maneira como as evidências são apresentadas depende do tipo de disputa. Uma disputa de freelancer exigirá evidências diferentes de uma disputa de seguro ou pagamento. A Cooperativa Kleros fornece um back-end para os jurados julgarem disputas. A maneira como ele é construído torna possível para qualquer pessoa desenvolver seu próprio front-end. A lógica é semelhante à Ethereum Wallet. A equipe principal do Ethereum fornece uma carteira para os usuários, mas qualquer pessoa pode criar uma carteira de Ethereum. Isso significa, por exemplo, que uma plataforma de comércio eletrônico pode criar um front-end no qual os usuários possam arbitrar disputas sem sair da plataforma. O front-end entraria na rede de jurados do Kleros. Esperamos que muitas empresas do ecossistema construam interfaces com base em nossa plataforma. Para saber mais, leia este artigo sobre a evolução do ecossistema da Cooperativa Kleros.",
+
+        "q-5": "Como os jurados são selecionados de um grupo global, como você garantiria que todos eles falassem o idioma em que a disputa é apresentada?",
+
+        "a-5": "O Kleros é composto de sub-tribunais especializados em diferentes tipos de disputas. Idioma é um dos parâmetros de especialização. Por exemplo, pode haver um “tribunal de disputas de sites em inglês”, um “tribunal de disputas de sites em espanhol”, “tribunal de disputas de sites em francês” etc.",
+
+        "q-6": "Como você sabe que os jurados revisaram as evidências em vez de apenas votar aleatoriamente?",
+
+        "a-6": "Kleros não tem uma maneira específica de garantir que os jurados analisem as evidências. A maneira de garantir que os jurados julguem honestamente é através da criação dos incentivos econômicos corretos. Os jurados que votam aleatoriamente sem revisar as evidências possuem maior probabilidade de votar incoerentemente em relação à maioria e perder os tokens que eles depositaram para serem sorteados como jurados. Portanto, eles perdem dinheiro em média. Com o tempo, isso faria os jurados desonestos deixarem o tribunal. Para saber mais sobre como os incentivos funcionam em Kleros, leia o Whitepaper.",
+
+        "q-7": "Os jurados são obrigados a fornecer uma justificativa para o seu voto? A justificativa é revelada às partes em disputa e a outros jurados?",
+
+        "a-7": "Sim, os jurados devem fornecer uma justificativa na forma de um texto breve. A justificativa é então revelada às partes em disputa, bem como a outros jurados após a conclusão da votação.",
+
+        "q-8": "Existem prazos para disputas? Os jurados precisam responder dentro de um determinado período de tempo?",
+
+        "a-8": "Sim, cada sub-tribunal tem um período dentro do qual os jurados precisam enviar sua decisão. Os jurados serão notificados de casos pendentes que precisam de resolução.",
+
+        "q-9": "O que acontece com os jurados que não respondem ou revisam as evidências dentro do prazo estabelecido?",
+
+        "a-9": "Os jurados que não enviarem suas decisões antes do prazo final serão penalizados perdendo alguns de seus tokens apostados e não recebendo a taxa de arbitragem."
       },
+
       "category-legal": {
-        "name": "Legal",
-        "q-1": "In legal systems such as the United States, judges are responsible for instructing jurors and explaining legal nuances. How does Kleros address questions of interpretation of legal terms in the contract?",
-        "a-1": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros is intended be used for simpler cases, where legal nuances are not as important.",
-        "q-2": "Which are the main legal and regulatory hurdles in setting up Kleros?",
-        "a-2": "Because of its innovative practice based on cryptoeconomics, Kleros is not recognized as arbitration according to international agreements. This could be an obstacle for adoption in “mainstream” use cases (e.g., a government regulator could not use Kleros for settling disputes between, say, a credit card company and its users). However, this should not be an obstacle to adoption in other use cases (especially those within the crypto industry). As Kleros is able to prove that it can solve disputes in non-mainstream use cases, we expect interest to arise in mainstream use cases. Eventually, arbitration associations will accept the Kleros approach to dispute resolution. The Kleros platform is an 'opt-in' system meaning the enforcement is automatic and pre-accepted by contracting parties agreeing on using Kleros as an arbitrator."
+        "name": "Jurídico",
+
+        "q-1": "Em sistemas jurídicos como nos Estados Unidos, os juízes são responsáveis por instruir os jurados e explicar as nuances legais. Como o Kleros aborda questões de interpretação de termos legais no contrato?",
+
+        "a-1": "Um moderador em um fórum on-line segue algumas regras predefinidas para decidir se um comentário do usuário violou os termos e condições. Ao tomar decisões, os jurados seguem regras semelhantes definidas anteriormente, que os instruem sobre como lidar com as nuances legais. Nos estágios iniciais do projeto, no entanto, o Kleros deve ser usado em casos mais simples, onde as nuances legais não são tão importantes.",
+
+        "q-2": "Quais são os principais obstáculos legais e regulatórios na criação do Kleros?",
+
+        "a-2": "Devido à sua prática inovadora baseada em cripto-economia, o Kleros não é reconhecido como arbitragem de acordo com acordos internacionais. Isso pode ser um obstáculo para a adoção em casos de uso 'convencionais' (por exemplo, um regulador do governo não pode usar o Kleros para resolver disputas entre, por exemplo, uma empresa de cartão de crédito e seus usuários). No entanto, isso não deve ser um obstáculo para a adoção em outros casos de uso (especialmente aqueles dentro da indústria de criptografia). Como o Kleros é capaz de provar que pode resolver disputas em casos de uso não convencionais, esperamos que surja interesse nos casos de uso convencionais. Eventualmente, as associações de arbitragem aceitarão a abordagem de Kleros para a resolução de disputas. A plataforma Kleros é um sistema de 'aceitação', o que significa que a aplicação é automática e pré-aceita pelas partes contratantes que concordam em usar o Kleros como árbitro."
       }
     }
   },
+
   "media": {
-    "title": "Media",
-    "subtitle": "For media enquiries, send an email to <email>contact@kleros.io</email>.",
-    "categories": "Categories",
+    "title": "Mídia",
+
+    "subtitle": "Para perguntas de mídia, envie um email para <email>contact@kleros.io</email>.",
+
+    "categories": "Categorias",
+
     "section-media": {
-      "featured": "Featured",
-      "press": "Press",
-      "events": "Events",
-      "articles": "Articles"
+      "featured": "Destaque",
+
+      "press": "Imprensa",
+
+      "events": "Eventos",
+
+      "articles": "Artigos"
     },
+
     "section-book": {
-      "title": "Download Kleros book today!",
-      "subtitle": "Read `Dispute Revolution` for a deep dive into the fascinating field of decentralized justice.",
-      "button-primary": "Download Whitepaper",
-      "button-secondary": "Download Book"
+      "title": "Faça o download do livro do Kleros hoje!",
+
+      "subtitle": "Leia `Dispute Revolution` para mergulhar profundamente no fascinante campo da justiça descentralizada.",
+
+      "button-primary": "Faça o download do Whitepaper",
+
+      "button-secondary": "Faça o download do livro"
     }
   },
+
   "assets": {
-    "title": "Kleros Brand Assets",
-    "categories": "Categories"
+    "title": "Kleros Ativos de Marca",
+
+    "categories": "Categorias"
   },
+
   "escrow": {
-    "title": "Blockchain Escrow Service",
-    "subtitle": "Trade, hire and pay secured by trustless dispute resolution.",
-    "button-primary": "Learn More",
+    "title": "Serviço de Escrow Blockchain",
+
+    "subtitle": "Negocie, contrate e pague, garantido por uma resolução de disputas confiável.",
+
+    "button-primary": "Saiba Mais",
+
     "section-risks": {
-      "title": "The Risks of Contracting Online",
-      "paragraph": "Companies usually contract services online from freelance designers, community managers and developers. But there's a big risk that the work will not be done or will be done in poor quality."
+      "title": "Os riscos de contratar on-line",
+
+      "paragraph": "As empresas geralmente contratam os serviços on-line de designers freelancers, gerentes de comunidade e desenvolvedores. Mas há o grande risco de que o trabalho não seja realizado ou seja de baixa qualidade."
     },
+
     "section-meet-escrow": {
-      "title": "Meet Kleros Escrow",
-      "paragraph": "Send the payment into an escrow account. If a dispute occurs, a panel of Kleros jurors will handle resolution. Kleros Escrow protects both the buyer and the seller by ensuring both parties perform according to the agreement.",
+      "title": "Conheça Kleros Escrow",
+
+      "paragraph": "Envie o pagamento para uma conta de garantia. Se ocorrer uma disputa, um painel de jurados do Kleros cuidará da resolução. O Kleros Escrow protege o comprador e vendedor, garantindo que ambas as partes atuem de acordo com o contrato.",
+
       "button-primary": "Kleros Escrow"
     },
+
     "section-trustless-escrow": {
-      "title": "Trustless Decentralized Escrow",
-      "subtitle": "Secure, efficient and trustless escrow secured by blockchain.",
-      "subtitle-1": "Integrate Kleros in Your Platform",
-      "paragraph-1": "Are you building a platform for e-commerce, freelancing, finance...? Disputes will arise. Integrate Kleros to solve them. You send us a dispute, Kleros sends you a decision.",
-      "subtitle-2": "So how are disputes resolved?",
-      "paragraph-2": "Kleros selects a crowdsourced jury to make the ruling. Upon reviewing the evidence, jurors will make a decision enforced by smart contract. All evidence is secured in the blockchain and nobody can tamper with the procedure. To learn how this works, read <anchor>Kleros whitepaper</anchor>.",
-      "subtitle-3": "Why it matters",
-      "paragraph-3": "Kleros brings a trust standard to online transactions. With Kleros Escrow, buyer and seller can be confident that the other party will fulfill the obligations of their agreement.",
-      "illustration-1": "Go to Kleros Escrow and create a new transaction.",
-      "illustration-2": "Enter the details of the agreement.",
-      "illustration-3": "If there are no disputes, you can pay the balance in full and that's it.",
-      "illustration-4": "If a dispute is raised, with just one click you can send the contract to dispute resolution.",
-      "illustration-5": "Jurors evaluate the evidence and make a decision. Funds are sent to the winner. Case closed."
+      "title": "Escrow Descentralizado Confiável",
+
+      "subtitle": "Escrow seguro, eficiente e confiável garantido pelo blockchain.",
+
+      "subtitle-1": "Integre o Kleros na sua plataforma",
+
+      "paragraph-1": "Você está construindo uma plataforma para comércio eletrônico, freelancing, finanças ...? Disputas surgirão. Integre o Kleros para resolvê-las. Você nos envia uma disputa, Kleros envia uma decisão.",
+
+      "subtitle-2": "Então, como as disputas são resolvidas?",
+
+      "paragraph-2": "Kleros seleciona um júri de crowdsourcing para julgar o caso. Ao revisar as evidências, os jurados tomarão uma decisão executada por contrato inteligente. Todas as evidências estão protegidas no blockchain e ninguém pode adulterar o procedimento. Para saber como isso funciona, leia o <anchor>Kleros Whitepaper</anchor>.",
+
+      "subtitle-3": "Por que isso importa",
+
+      "paragraph-3": "Kleros traz o padrão de confiança para transações online. Com o compromisso do Kleros, o comprador e vendedor podem ter certeza de que a outra parte cumprirá as obrigações do contrato.",
+
+      "illustration-1": "Vá para Kleros Escrow e crie uma nova transação.",
+
+      "illustration-2": "Digite os detalhes do contrato.",
+
+      "illustration-3": "Se não houver disputas, você poderá pagar o saldo integralmente e pronto.",
+
+      "illustration-4": "Se uma disputa surgir, com apenas um clique, você poderá enviar o contrato para a resolução de disputas.",
+
+      "illustration-5": "Os jurados avaliam as evidências e tomam uma decisão. Os fundos são enviados para o vencedor. Caso encerrado."
     },
+
     "section-want-to-use": {
-      "title": "Want to Use Kleros Escrow in your Platform?",
-      "subtitle": "Contact us now and we will help you with integration.",
-      "first-name": "First Name",
-      "last-name": "Last Name",
-      "company-email": "Company Email",
-      "company-name": "Company Name",
-      "message": "Write your message",
-      "button-primary": "Send"
+      "title": "Deseja usar o Kleros Escrow em sua plataforma?",
+
+      "subtitle": "Entre em contato conosco agora e iremos ajudá-lo com a integração.",
+
+      "first-name": "Primeiro Nome",
+
+      "last-name": "Último Nome",
+
+      "company-email": "Email da Empresa",
+
+      "company-name": "Nome da Empresa",
+
+      "message": "Escreva sua Mensagem",
+
+      "button-primary": "Enviar"
     }
   },
+
   "curated-list": {
-    "title": "Decentralized Curated Lists for Just about Anything",
-    "subtitle": "Empower the community to organize information in your platform...",
+    "title": "Curadoria Descentralizada de Listas para Praticamente Tudo.",
+
+    "subtitle": "Capacite a comunidade para organizar informações em sua plataforma ...",
+
     "section-why-curated-lists": {
-      "title": "Why Curated Lists?",
-      "paragraph": "Decentralized platforms need a way to decide what content to display. What tokens to list on an exchange? Which comments to censor on a social media platform? Whoever controls the list has the power. True decentralization requires empowering the community."
+      "title": "Por que curadoria de listas?",
+
+      "paragraph": "As plataformas descentralizadas precisam de uma maneira de decidir qual conteúdo exibir. Quais tokens listar em uma Exchange? Quais comentários censurar em uma plataforma de mídia social? Quem controla a lista tem o poder. A verdadeira descentralização requer colocar o controle nas mãos da comunidade."
     },
+
     "section-why-ours": {
-      "title": "Why Use Our Curated Lists?",
-      "paragraph": "Kleros offers a solution for numerous decentralized platforms. Use Kleros' system to seamlessly curate your lists.",
-      "button-primary": "Kleros Token Curated List"
+      "title": "Por que usar nossas listas selecionadas?",
+
+      "paragraph": "O Kleros oferece uma solução para inúmeras plataformas descentralizadas. Use o sistema do Kleros para organizar suas listas sem problemas.",
+
+      "button-primary": "Lista com Curadoria de Token Kleros"
     },
+
     "section-trustless": {
-      "title": "Trustless Curated Lists",
-      "subtitle-1": "How Does it Work?",
-      "paragraph-1": "You define the guidelines required for what can and can't be accepted on the list. Users send items. Other users challenge bad submissions. Kleros decides.",
-      "subtitle-2": "How are Disputes resolved?",
-      "paragraph-2": "Jurors, review the evidence provided by both submitter and challenger, cast their vote and the outcome of the dispute is enforce automatically.",
-      "subtitle-3": "Why it matter?",
-      "paragraph-3": "In the decentralized era, a larger number of platforms require decentralized list curation. They range from decentralized e-commerce, social media, finance, insurance and many other fields looking to curate data in a permissionless way.",
-      "illustration-1": "A decentralized e-commerce platform has a policy of not accepting dangerous items.",
-      "illustration-2": "A user submits a flamethrower.",
-      "illustration-3": "Another user challenges the submission for being a dangerous item.",
-      "illustration-4": "The flamethrower goes to trial in Kleros platform.",
-      "illustration-5": "Jurors rule for the challenger. The flamethrower is rejected from the list."
+      "title": "Curadoria de Listas Confiável",
+
+      "subtitle-1": "Como funciona?",
+
+      "paragraph-1": "Você define as diretrizes necessárias para o que pode e o que não pode ser aceito na lista. Usuários enviam itens. Outros usuários contestam envios incorretos. Kleros decide.",
+
+      "subtitle-2": "Como as disputas são resolvidas?",
+
+      "paragraph-2": "Os jurados, revisam as evidências fornecidas pelo remetente e pelo desafiante, dão seu voto e o resultado da disputa é aplicado automaticamente.",
+
+      "subtitle-3": "Por que isso importa?",
+
+      "paragraph-3": "Na era descentralizada, um número maior de plataformas exige curadoria de lista descentralizada. Eles vão desde comércio eletrônico descentralizado, mídia social, finanças, seguros e muitos outros campos que procuram selecionar dados de uma maneira autônoma.",
+
+      "illustration-1": "Uma plataforma de comércio eletrônico descentralizada tem uma política de não aceitar itens perigosos.",
+
+      "illustration-2": "Um usuário envia um lança-chamas.",
+
+      "illustration-3": "Outro usuário desafia o envio por ser um item perigoso.",
+
+      "illustration-4": "O lança-chamas vai a julgamento na plataforma Kleros.",
+
+      "illustration-5": "Os jurados votam em favor do desafiante. O lança-chamas é rejeitado da lista."
     },
+
     "section-contact-us": {
-      "title": "Contact Us",
-      "subtitle": "Implement Kleros list curation in your platform. Contact us now!",
-      "first-name": "First Name",
-      "last-name": "Last Name",
-      "company-email": "Company Email",
-      "company-name": "Company Name",
-      "message": "Write your message",
-      "button-primary": "Send"
+      "title": "Entre em Contato",
+
+      "subtitle": "Implemente a curadoria de listas Kleros em sua plataforma. Entre em contato conosco agora!",
+
+      "first-name": "Primeiro Nome",
+
+      "last-name": "Último Nome",
+
+      "company-email": "Email da Empresa",
+
+      "company-name": "Nome da Empresa",
+
+      "message": "Escreva sua Mensagem",
+
+      "button-primary": "Enviar"
     }
   },
+
   "oracle": {
-    "title": "Kleros Oracle",
-    "subtitle": "A Trustless Way to Enter Information On-Chain",
+    "title": "Kleros Oráculo",
+
+    "subtitle": "Uma maneira confiável de inserir informações no blockchain",
+
     "section-problem": {
-      "title": "The Oracle Problem",
-      "paragraph": "In order to work, smart contracts often gather information from the outside world such as the winner in an election or the amount of rainfall in a specific region. The `Oracle Problem` is about finding a trustworthy way to introduce this information on-chain."
+      "title": "O Problema do Oráculo",
+
+      "paragraph": "Para funcionar, os contratos inteligentes geralmente coletam informações do mundo exterior, como o vencedor de uma eleição ou a quantidade de chuva em uma região específica. O 'Problema do Oráculo' é sobre encontrar uma maneira confiável de introduzir essas informações no blockchain."
     },
+
     "section-why-ours": {
-      "title": "Why Kleros Oracle?",
-      "paragraph": "Kleros can provide resolution for disputes about regarding which information should be included on-chain and if the answers to certains questions or queries are correct."
+      "title": "Por que Kleros Oráculo?",
+
+      "paragraph": "O Kleros pode fornecer solução para disputas sobre quais informações devem ser incluídas na cadeia e se as respostas para certas perguntas ou perguntas estão corretas."
     },
+
     "section-trustless": {
-      "title": "Trustless Oracle",
-      "subtitle-1": "How it works",
-      "paragraph-1": "Users submit external information (the price of ETH in USD, whether there was a flood in NYC, etc.) and a deposit. If a dispute arises about the truth of this information, Kleros provides dispute resolution. For more information about how this works, read <anchor>this article</anchor>.",
-      "subtitle-2": "Why it matters",
-      "paragraph-2": "By using an oracle based on Kleros' decentralized jurors opens up the potential for a wide variety of useful, practical dApps outwith the blockchain only sphere. The Kleros Oracle is a revolutionary step into the blockchain infrastructure of the future."
+      "title": "Oráculo Confiável",
+
+      "subtitle-1": "Como Funciona?",
+
+      "paragraph-1": "Os usuários enviam informações externas (o preço do ETH em USD, se houve uma enchente em Nova York etc.) e um depósito. Se surgir uma disputa sobre a verdade dessas informações, o Kleros fornecerá a resolução da disputa. Para mais informações sobre como isso funciona, leia <anchor>este artigo</anchor>.",
+
+      "subtitle-2": "Por que isso importa?",
+
+      "paragraph-2": "O uso de um oráculo baseado nos jurados descentralizados do Kleros abre o potencial para uma ampla variedade de DApps úteis e práticos fora da esfera única do blockchain. O Kleros oráculo é um passo revolucionário para a infraestrutura de blockchain do futuro."
     },
+
     "section-contact-us": {
-      "title": "Contact Us",
-      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
-      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>.",
-      "first-name": "First Name",
-      "last-name": "Last Name",
-      "company-email": "Company Email",
-      "company-name": "Company Name",
-      "message": "Write your message",
-      "button-primary": "Send"
+      "title": "Entre em Contato",
+
+      "subtitle-1": "Quer saber mais? Estamos abertos a todas as propostas, sugestões e solicitações.",
+
+      "subtitle-2": "Envie uma mensagem pelo <telegram>Telegram</telegram> ou em <email>contact@kleros.io</email>.",
+
+      "first-name": "Primeiro Nome",
+
+      "last-name": "Último Nome",
+
+      "company-email": "Email da Empresa",
+
+      "company-name": "Nome da Empresa",
+
+      "message": "Escreva uma Mensagem",
+
+      "button-primary": "Enviar"
     }
   },
+
   "cooperative": {
-    "title": "Join Coopérative Kleros",
-    "paragraph": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read <anchor>this article</anchor> to learn more about the legal structure. If you want to become a member of the Cooperative, follow the next steps. Your application will have to be approved by other members.",
+    "title": "Junte-se à Cooperativa Kleros",
+
+    "paragraph": "Os esforços de desenvolvimento para o protocolo Kleros são coordenados pela Coopérative Kleros, uma Société Coopérative d'Intérêt Collectif (SCIC) incorporada na França. Leia <anchor>este artigo</anchor> para saber mais sobre a estrutura legal. Se você deseja se tornar um membro da Cooperativa, siga as próximas etapas. Sua inscrição deverá ser aprovada por outros membros.",
+
     "section-procedure": {
-      "illustration-1": "Download the subscription form.",
-      "button-1": "Download",
-      "illustration-2": "Print it; Fill it in (don't forget the handwritten phrase at the end!); Sign it; Scan it;",
-      "illustration-3": "Send it back to <email>lola@kleros.io</email> along with a digital copy of your passport / national ID and with the TxID of your share deposit.",
-      "button-primary": "Download Form",
-      "button-secondary": "Statutes"
+      "illustration-1": "Faça o download do formulário de inscrição.",
+
+      "button-1": "Faça o Download",
+
+      "illustration-2": "Imprima; Preencha-o (não esqueça a frase manuscrita no final!); Assine; Digitalize;",
+
+      "illustration-3": "Envie de volta para <email> lola@kleros.io </email>, juntamente com uma cópia digital do seu passaporte / ID nacional e com o TxID do seu depósito de ações.",
+
+      "button-primary": "Faça o download do formulário",
+
+      "button-secondary": "Estatuto"
     }
   },
+
   "court-tour": {
     "title": "Kleros Court Tour",
-    "paragraph": "Liked the tour and want to test the real product, but never used crypto? Not to worry, click on Crypto Beginner’s Guide.",
-    "button-primary": "Crypto Beginner's Guide"
+
+    "paragraph": "Gostou do passeio e quer testar o produto real, mas nunca usou criptografia? Não se preocupe, clique em Crypto Beginner’s Guide.",
+
+    "button-primary": "Crypto Beginner’s Guide"
   },
+
   "token": {
     "title": "Pinakion (PNK) Token",
+
     "section-token": {
-      "subtitle-1": "Stake as a Juror",
-      "paragraph-1": "First and foremost, PNK holders can stake their token in a Kleros court to indicate their availability to serve as jurors. The more they stake, the more chances they have of selection. Jurors stake their PNK in courts they have relevant skills for with a random number generator (RNG) selecting the final spots based on size of stake.",
-      "subtitle-2": "PNK Protects Against Sybil Attacks",
-      "paragraph-2": "PNK is a protection against Sybil attacks. In order for an attacker to flood the juror pool, they need to buy enough PNK so that they are selected enough times to be a juror for the same case in order to change the outcome. Using a native token like PNK offers several key advantages for minimizing the risk of 51% attacks versus using an external cryptocurrency like ETH.",
-      "subtitle-3": "PNK Makes an Attack Expensive",
-      "paragraph-3": "Imagine that someone does buy 51% of the PNK in an effort to attack Kleros. Maybe their attack will be subtle and go unnoticed. However, it’s more likely the community will realize that it is under attack. In this case, Kleros would lose credibility as an arbitration platform and the value of PNK would decrease. Then the attacker would take a substantial loss on PNK bought, representing a high economic attack cost.",
-      "subtitle-4": "User Oriented",
-      "paragraph-4": "Users have an interest in holding PNK tokens in order to gain voting rewards when taking part as jurors. They also have the opportunity to vote with their PNK on all Kleros Governance related proposals and votes creating an open and unbiased platform for all."
+      "subtitle-1": "Participe como jurado",
+
+      "paragraph-1": "Em primeiro lugar, os detentores de PNK podem depositar seu token em um tribunal do Kleros para indicar sua disponibilidade para atuar como jurados. Quanto mais eles depositam, mais chances têm de serem selecionados. Os jurados depositam seu PNK nos tribunais para os quais possuem habilidades relevantes, com um gerador de números aleatórios (RNG) selecionando os pontos finais com base no tamanho do depósito.",
+
+      "subtitle-2": "PNK Protege contra Sybil Attacks",
+
+      "paragraph-2": "PNK é uma proteção contra Sybil Attacks. Para um invasor invadir o grupo de jurados, ele precisa comprar PNK suficiente para que seja selecionado mais de uma vez para ser jurado no mesmo caso, a fim de alterar o resultado. O uso de um token nativo como o PNK oferece várias vantagens importantes para minimizar o risco de ataques de 51%, em comparação com o uso de uma criptomoeda externa como a ETH.",
+
+      "subtitle-3": "O PNK Faz com que os ataques sejam caros.",
+
+      "paragraph-3": "Imagine que alguém compre 51% do PNK em um esforço para atacar o Kleros. Talvez o ataque deles seja sutil e passe despercebido. No entanto, é mais provável que a comunidade perceba que está sendo atacada. Nesse caso, Kleros perderia credibilidade como plataforma de arbitragem e o valor do PNK diminuiria. Em seguida, o atacante sofreria uma perda substancial no PNK comprado, representando um alto custo econômico de ataque.",
+
+      "subtitle-4": "Orientado ao usuário",
+
+      "paragraph-4": "Os usuários têm interesse em manter os tokens PNK para obter recompensas de voto ao participar como jurados. Eles também têm a oportunidade de votar com seu PNK em todas as propostas e votos relacionados à governança do Kleros, criando uma plataforma aberta e imparcial para todos."
     },
+
     "banner": {
-      "title": "If you are interested in acquiring PNK token OTC, get in touch",
-      "subtitle": "Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the market.",
-      "button-primary": "Get in touch here"
+      "title": "Se você estiver interessado em adquirir o token PNK OTC, entre em contato",
+
+      "subtitle": "Observe que, para garantir a equidade na distribuição de tokens, os tokens são vendidos aos compradores a preços refletidos pelo mercado.",
+
+      "button-primary": "Entre em contato aqui."
     }
   },
+
   "juror": {
-    "title": "Become a Kleros Juror",
-    "subtitle": "Use your skills to earn money and bring justice to the world.",
-    "button-primary": "Start Now",
+    "title": "Seja um Jurado Kleros",
+
+    "subtitle": "Use suas habilidades para ganhar incentivos e trazer justiça ao mundo.",
+
+    "button-primary": "Comece Agora",
+
     "section-benefits": {
-      "title": "Benefits",
-      "subtitle-1": "Earn",
-      "paragraph-1": "Earn arbitration fees each time you rule on a dispute.",
-      "subtitle-2": "Help",
-      "paragraph-2": "Help others solve their disputes. Be a force for good.",
-      "subtitle-3": "Learn",
-      "paragraph-3": "Learn new skills while you adjudicate cases.",
-      "subtitle-4": "Choose",
-      "paragraph-4": "Rule one case a month or many cases a day. You choose how much to work.",
-      "subtitle-5": "Open",
-      "paragraph-5": "No special requirements. Anyone can be a juror.",
-      "subtitle-6": "Innovate",
-      "paragraph-6": "Start today and take part in the future of justice!"
+      "title": "Benefícios",
+
+      "subtitle-1": "Ganhe",
+
+      "paragraph-1": "Ganhe taxas de arbitragem sempre que decidir sobre uma disputa.",
+
+      "subtitle-2": "Ajude",
+
+      "paragraph-2": "Ajude outras pessoas a resolver suas disputas. Seja uma força para o bem.",
+
+      "subtitle-3": "Aprenda",
+
+      "paragraph-3": "Aprenda novas habilidades enquanto julga os casos.",
+
+      "subtitle-4": "Escolha",
+
+      "paragraph-4": "Julgue um caso por mês ou muitos casos por dia. Você escolhe quanto trabalhar.",
+
+      "subtitle-5": "Aberto a Todos",
+
+      "paragraph-5": "Nenhum requisito especial. Qualquer um pode ser jurado.",
+
+      "subtitle-6": "Inove",
+
+      "paragraph-6": "Comece hoje e participe do futuro da justiça!"
     },
+
     "section-how": {
-      "title": "How It Works",
-      "illustration-1": "When a dispute starts, the smart contract automatically draws a predefined number of jurors.",
-      "illustration-2": "If you are drawn, you will arbitrate on the case.",
-      "illustration-3": "If you rule correctly, you’ll receive payment in ETH for your work.",
-      "illustration-4": "If you are in the majority ruling, you will also receive some PNK."
+      "title": "Como Funciona",
+
+      "illustration-1": "Quando uma disputa começa, o contrato inteligente seleciona automaticamente um número predefinido de jurados.",
+
+      "illustration-2": "Se você for sorteado, você julgará o caso.",
+
+      "illustration-3": "Se você julgar corretamente, receberá o pagamento em ETH pelo seu trabalho.",
+
+      "illustration-4": "Se você tiver votado de acordo com a decisão majoritária, também receberá alguns PNKs."
     },
+
     "section-start": {
-      "title": "Start as a Juror Now!",
-      "subtitle-1": "Buy PNK without signup.",
-      "button-1": "Go to Uniswap",
-      "subtitle-2": "Choose your court and stake your PNK",
-      "button-2": "Kleros Court Stake",
-      "subtitle-3": "Wait to be drawn and start ruling!",
-      "button-3": "Kleros Court Cases"
+      "title": "Comece como jurado agora!",
+
+      "subtitle-1": "Compre o PNK sem precisar de inscrição.",
+
+      "button-1": "Vá para o Uniswap",
+
+      "subtitle-2": "Escolha seu tribunal e deposite PNK",
+
+      "button-2": "Kleros Court Depósito",
+
+      "subtitle-3": "Espere para ser sorteado e comece a julgar!",
+
+      "button-3": "Kleros Court Casos"
     },
+
     "section-join": {
-      "title": "Join as a Juror Now!",
-      "button-primary": "Start Now"
+      "title": "Seja um Jurado Agora!",
+
+      "button-primary": "Comece Agora"
     }
   },
+
   "partner": {
-    "title": "Become a Partner",
-    "subtitle": "Integrate Justice as a Service (JaaS) on your platform.",
-    "paragraph": "Are you building a marketplace, a content sharing platform or any other that requires dispute resolution? Send your disputes to Kleros and our protocol returns them resolved.",
-    "button-primary": "Start Now",
+    "title": "Seja um Parceiro",
+
+    "subtitle": "Integre a justiça como serviço (JaaS) em sua plataforma.",
+
+    "paragraph": "Você está construindo um marketplace, uma plataforma de compartilhamento de conteúdo ou qualquer outra que exija resolução de disputas? Envie suas disputas para o Kleros e nosso protocolo as devolve resolvidas.",
+
+    "button-primary": "Comece Agora",
+
     "section-benefits": {
-      "title": "Benefits",
-      "subtitle-1": "Simple Integration",
-      "paragraph-1": "Kleros is simple to integrate removing the burden of dispute resolution from your shoulders.",
-      "subtitle-2": "Efficient Settlement",
-      "paragraph-2": "Kleros is fast and cheap. In most cases, it comes at zero cost.",
-      "subtitle-3": "Decentralized",
-      "paragraph-3": "Fully decentralize all of your disputes. Have them solved in the Kleros court.",
+      "title": "Benefícios",
+
+      "subtitle-1": "Integraç˜ão Simples",
+
+      "paragraph-1": "O Kleros é simples de integrar, removendo o ônus da resolução de disputas de seus ombros.",
+
+      "subtitle-2": "Resolução eficiente",
+
+      "paragraph-2": "Kleros é rápido e barato. Na maioria dos casos, tem custo zero.",
+
+      "subtitle-3": "Descentralizado",
+
+      "paragraph-3": "Descentralize totalmente todas as suas disputas. Resolva-as no tribunal do Kleros.",
+
       "subtitle-4": "24/7",
-      "paragraph-4": "Kleros is always online, solving disputes - around the clock, throughout the year.",
-      "subtitle-5": "Open Source",
-      "paragraph-5": "Use Kleros and support the open source movement!"
+
+      "paragraph-4": "Kleros está sempre online, resolvendo disputas - 24 horas por dia, durante todo o ano.",
+
+      "subtitle-5": "Código Aberto",
+
+      "paragraph-5": "Use o Kleros e apoie o movimento de código aberto!"
     },
+
     "section-integration": {
-      "title": "Full Integration Support",
-      "subtitle": "The Kleros team will give you full support and guidance throughout the integration process.",
-      "button-primary": "Contact Dev Team on Slack #dev"
+      "title": "Suporte completo à integração",
+
+      "subtitle": "A equipe Kleros fornecerá suporte e orientação completos durante todo o processo de integração.",
+
+      "button-primary": "Entre em contato com a equipe de desenvolvimento no Slack #dev"
     },
+
     "section-partner": {
-      "title": "Become a Partner Now",
-      "subtitle": "Start using open justice as a service in your platform!",
-      "button-primary": "Get started"
+      "title": "Seja um Parceiro Agora",
+
+      "subtitle": "Comece a usar a justiça aberta como um serviço em sua plataforma!",
+
+      "button-primary": "Comece"
     }
   },
+
   "footer": {
-    "about": "About",
-    "governance": "Governance",
-    "join": "Join Us",
+    "about": "Sobre",
+
+    "governance": "Governança",
+
+    "join": "Junte-se à nós",
+
     "faq": "FAQ",
-    "media": "Media",
+
+    "media": "Mídia",
+
     "blog": "Blog",
-    "assets": "Assets",
+
+    "assets": "Ativos de Marca",
+
     "white-paper": "White Paper",
+
     "escrow": "Escrow",
-    "curated-list": "Curated List",
-    "oracle": "Oracle",
-    "cooperative": "Cooperative",
+
+    "curated-list": "Curadoria de Listas",
+
+    "oracle": "Oráculo",
+
+    "cooperative": "Cooperativa",
+
     "court-tour": "Court Tour",
+
     "token": "Token",
-    "book": "Book",
-    "developer": "Developer",
+
+    "book": "Livro",
+
+    "developer": "Desenvolvedor",
+
     "copyright": "Copyright",
-    "button-juror": "Join as a Juror",
-    "button-partner": "Become a Partner"
+
+    "button-juror": "Seja um Jurado",
+
+    "button-partner": "Seja um Parceiro"
   }
 }
