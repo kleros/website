@@ -28,7 +28,8 @@ export default injectIntl(function(menu) {
                     { text: "Español", url: "/onepager_es.pdf" },
                     { text: "한국인", url: "/onepager_ko.pdf" },
                     { text: "Français", url: "/onepager_fr.pdf" },
-                    { text: "Русский", url: "/onepager_ru.pdf" }
+                    { text: "Русский", url: "/onepager_ru.pdf" },
+                    { text: "Portugués", url: "/onepager_pt.pdf" }
                   ]
                 }}
               />
