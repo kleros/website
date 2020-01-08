@@ -38,11 +38,9 @@
       "subtitle-1": "点对点正义",
       "paragraph-1": "一个使用众包和区块链将争议解决流程交到社区手中的对等平台。",
       "subtitle-2": "成功秘诀",
-      """paragraph-2"": ""Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、负担得起的开放方式裁定争议。
-      <anchor>阅读白皮书了解更多内容</anchor>。"","
+      "paragraph-2": "Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、负担得起的开放方式裁定争议。<anchor>阅读白皮书了解更多内容</anchor>。",
       "subtitle-3": "为什么Kleros需要PNK？",
-      """paragraph-3"": ""Pinakion（PNK）令牌可保护系统免受攻击，同时还为陪审员提供了经济上的动力来协调解决案件。
-      <anchor>点击这里了解更多内容</anchor>。"""
+      "paragraph-3": "Pinakion（PNK）令牌可保护系统免受攻击，同时还为陪审员提供了经济上的动力来协调解决案件。<anchor>点击这里了解更多内容</anchor>。"
     },
     "section-how-does-it-work": {
       "title": " 它如何运作？",
