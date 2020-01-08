@@ -1,77 +1,78 @@
 {
   "header": {
-    "button-one-pager": "One Pager",
-    "button-partner": "Become a Partner",
-    "button-juror": "Become a Juror",
-    "button-dapps": "DApps",
-    "button-white-paper": "White Paper",
-    "button-use-cases": "Use Cases",
-    "button-about": "About",
-    "button-blog": "Blog"
+    "button-one-pager": "简介",
+    "button-partner": "成为合伙人",
+    "button-juror": "成为一个陪审员",
+    "button-dapps": "去中心化饮用",
+    "button-white-paper": "白皮书",
+    "button-use-cases": "用例",
+    "button-about": "关于我们",
+    "button-blog": "博客"
   },
   "index": {
-    "title": "Decentralized Courts",
-    "subtitle": "The blockchain dispute resolution layer. Fast, open and affordable justice for all.",
-    "button-juror": "Join as a Juror",
-    "button-partner": "Become a Partner",
-    "button-token-sale": "Token Sale",
-    "button-twitter": "Go to Twitter",
-    "button-blog": "Go to Blog",
-    "button-github": "Go to Github",
-    "button-forum": "Go to Forum",
-
+    "title": "去中心化司法平台",
+    "subtitle": "区块链争议解决方案为大家提供快速、开放和有利的正义。",
+    "button-juror": "成为一个陪审员",
+    "button-partner": "成为合伙人",
+    "button-token-sale": "代币销售",
+    "button-twitter": "推特",
+    "button-blog": "博客",
+    "button-github": "Github",
+    "button-forum": "论坛",
     "section-example-dispute": {
-      "title": "A Common Dispute in the New Economy",
-      "paragraph-1": "Alice hires Bob to build her a website.",
-      "paragraph-2": "Alice pays Bob in advance.",
-      "paragraph-3": "The site takes Bob longer than expected.",
-      "paragraph-4": "When he finally delivers the site, Alice is not satisfied.",
-      "paragraph-5": "A debate starts. Alice requests a refund. Bob claims the specifications weren't clear.",
-      "paragraph-6": "Alice and Bob are both left at a loss with no clear outcome of their dispute",
-      "button-primary": "Watch Video"
+      "title": "新经济中的一个普通争议",
+      "paragraph-1": "爱丽丝（Alice）雇用鲍勃（Bob）建立一个网站。",
+      "paragraph-2": "爱丽丝提前付款给鲍勃。",
+      "paragraph-3": "Bob建立该网站花费的时间超出了他的预期。",
+      "paragraph-4": "当他终于建好了网站交工，爱丽丝并不满意。",
+      "paragraph-5": "辩论开始了，爱丽丝要求退款， 鲍勃声称建网站的描述不清楚。",
+      "paragraph-6": "爱丽丝（Alice）和鲍勃（Bob）都无所适从，他们的争议没有明确的结果。",
+      "button-primary": "看视频"
     },
     "section-internet-economy": {
-      "title": "The Internet Economy",
-      "subtitle": "As our lives move to global online platforms, disputes arise in areas that cannot be solved by traditional court systems."
+      "title": "互联网经济",
+      "subtitle": "随着我们的生活转向全球在线平台，争议出现在传统法院体系无法解决的领域中。"
     },
     "section-why-kleros": {
-      "title": "Why Kleros?",
-      "subtitle-1": "Peer-to-Peer Justice",
-      "paragraph-1": "A peer to peer platform that uses crowdsourcing and blockchain to put the dispute resolution process in the hands of the community.",
-      "subtitle-2": "What's the Secret Sauce?",
-      "paragraph-2": "Kleros uses advanced cryptoeconomics coupled with a global community of jurors to adjudicate disputes in a fast, affordable and open way. Read the <anchor>white paper</anchor>.",
-      "subtitle-3": "Why Does Kleros Need a Token?",
-      "paragraph-3": "The Pinakion (PNK) token protects the system from attacks, while also providing jurors with a financial incentive to resolve cases coherently. Learn more <anchor>here</anchor>."
+      "title": "为什么选择Kleros？",
+      "subtitle-1": "点对点正义",
+      "paragraph-1": "一个使用众包和区块链将争议解决流程交到社区手中的对等平台。",
+      "subtitle-2": "成功秘诀",
+      """paragraph-2"": ""Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、负担得起的开放方式裁定争议。
+      <anchor>阅读白皮书了解更多内容</anchor>。"","
+      "subtitle-3": "为什么Kleros需要PNK？",
+      """paragraph-3"": ""Pinakion（PNK）令牌可保护系统免受攻击，同时还为陪审员提供了经济上的动力来协调解决案件。
+      <anchor>点击这里了解更多内容</anchor>。"""
     },
     "section-how-does-it-work": {
-      "title": " How Does It Work?",
-      "subtitle-1": "Contract",
-      "paragraph-1": "Alice hires Bob to build a website for her. They agree to use Kleros should a dispute occur.",
-      "subtitle-2": "Dispute",
-      "paragraph-2": "Alice is not satisfied with Bob's work and raises a dispute.",
-      "subtitle-3": "Selection",
-      "paragraph-3": "Users are randomly selected as jurors for the dispute.",
-      "subtitle-4": "Enforcement",
-      "paragraph-4": "Jurors evaluate the evidence and vote Alice as the winner. She is reimbursed and honest jurors are compensated for their work.",
-      "button-primary": "Watch Video"
+      "title": " 它如何运作？",
+      "subtitle-1": "合同",
+      "paragraph-1": "爱丽丝聘请鲍勃为她建立一个网站。 他们同意在发生争议时使用Kleros。",
+      "subtitle-2": "争议",
+      "paragraph-2": "爱丽丝对鲍勃的工作不满意，并提出了争议。",
+      "subtitle-3": "选拔",
+      "paragraph-3": "随机选择用户作为争议的陪审员。",
+      "subtitle-4": "执法",
+      "paragraph-4": "陪审团评估证据并投票给爱丽丝作为获胜者。 她得到报销，诚实的陪审员因其工作获得报酬。",
+      "button-primary": "看视频"
     },
     "section-justice-revolution": {
-      "title": "Join The Justice Revolution",
+      "title": "加入正义革命",
       "subtitle-1": "Join as a Juror",
       "paragraph-1": "Become a juror, earn and bring justice to the world.",
-      "button-1": "Join as a Juror",
-      "subtitle-2": "Become a Partner",
-      "paragraph-2": "Integrate Kleros powerful dispute resolution technology in your platform. For free.",
-      "button-2": "Become a Partner"
+      "button-1": "加入为陪审员",
+      "subtitle-2": "成为合伙人",
+      "paragraph-2": "将Kleros强大的争议解决技术免费集成到您的平台中。 ",
+      "button-2": "成为合伙人"
     },
     "section-partners": {
-      "title": "Our Partners",
-      "subtitle": "Collaboration makes Kleros. We can integrate with your platform securely and at no cost. If this sounds like something you could use in your blockchain project, just ask."
+      "title": "我们的合作伙伴",
+      "subtitle": "协作成就了Kleros。 我们可以免费安全地与您的平台集成。 如果这对您的区块链项目有益，请联系我们。"
     },
     "section-get-in-touch": {
-      "title": "Get in touch",
-      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
-      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>."
+      "title": "联系我们",
+      "subtitle-1": "想要了解更多？ 我们欢迎所有提案，建议和要求。",
+      "subtitle-2": "想要了解更多？ 我们欢迎所有提案，建议和要求。加入<a href='https://t.me/kleros'>Telegram</a> 或微信群。"
     }
   },
   "home": {
@@ -135,19 +136,19 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts for the protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use.",
+    "title": "关于我们",
+    "subtitle": "Kleros是一个开放源代码在线争议解决协议，它使用区块链和众包来公平地解决争议。该协议的开发工作由Kleros合作社协调，Kleros合作社是一家在法国成立的法国国际合作社（SCIC）。我们的研究和代码开发是开源的，任何人都可以免费使用。",
     "section-who-are-we": {
-      "title": "Who are we?",
-      "paragraph": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance. Kleros' vision is to build open technology empowering the courts of the future."
+      "title": "我们是谁？",
+      "paragraph": "我们是一支跨学科的国际团队，对区块链及其变革法律和治理的潜力充满热情。Kleros的愿景是建立开放技术，为未来的法院提供支持。"
     },
     "section-meet-our-team": {
-      "title": "Meet Our Team",
-      "paragraph": "Kleros is comprised of a high quality team covering all required disciplines for decentralized justice: smart contract security, computer science, cryptoeconomics, business, marketing and communications."
+      "title": "与我们的团队会面",
+      "paragraph": "Kleros由一支高素质的团队组成，涵盖去中心化司法的所有必需学科：智能合约安全，计算机科学，加密经济学，商业，市场营销和通信。"
     },
     "section-join-our-team": {
-      "title": "Join Our Team!",
-      "subtitle": "Check our open positions below and join the justice revolution!"
+      "title": "加入我们的团队！",
+      "subtitle": "检查下面的空缺职位，加入正义革命！"
     }
   },
   "faq": {
@@ -320,15 +321,15 @@
       "paragraph-2": "By using an oracle based on Kleros' decentralized jurors opens up the potential for a wide variety of useful, practical dApps outwith the blockchain only sphere. The Kleros Oracle is a revolutionary step into the blockchain infrastructure of the future."
     },
     "section-contact-us": {
-      "title": "Contact Us",
-      "subtitle-1": "Looking to find out more? We’re open to all proposals, suggestions and requests.",
-      "subtitle-2": "Message us via <telegram>Telegram</telegram> or <email>contact@kleros.io</email>.",
-      "first-name": "First Name",
-      "last-name": "Last Name",
-      "company-email": "Company Email",
-      "company-name": "Company Name",
-      "message": "Write your message",
-      "button-primary": "Send"
+      "title": "联系我们",
+      "subtitle-1": "想要了解更多？ 我们欢迎所有提案，建议和要求。",
+      "subtitle-2": "想要了解更多？ 我们欢迎所有提案，建议和要求。加入<a href='https://t.me/kleros'>Telegram</a> 或微信群。",
+      "first-name": "名字",
+      "last-name": "姓",
+      "company-email": "公司电邮",
+      "company-name": "公司名",
+      "message": "写您的留言",
+      "button-primary": "发送"
     }
   },
   "cooperative": {
@@ -436,24 +437,24 @@
     }
   },
   "footer": {
-    "about": "About",
-    "governance": "Governance",
-    "join": "Join Us",
-    "faq": "FAQ",
-    "media": "Media",
-    "blog": "Blog",
-    "assets": "Assets",
-    "white-paper": "White Paper",
-    "escrow": "Escrow",
-    "curated-list": "Curated List",
-    "oracle": "Oracle",
-    "cooperative": "Cooperative",
-    "court-tour": "Court Tour",
-    "token": "Token",
-    "book": "Book",
-    "developer": "Developer",
-    "copyright": "Copyright",
-    "button-juror": "Join as a Juror",
-    "button-partner": "Become a Partner"
+    "about": "关于我们",
+    "governance": "管治",
+    "join": "加入",
+    "faq": "常问问题",
+    "media": "媒体",
+    "blog": "博客",
+    "assets": "资产",
+    "white-paper": "白皮书",
+    "escrow": "第三方托管",
+    "curated-list": "策划清单",
+    "oracle": "预言机",
+    "cooperative": "合作社",
+    "court-tour": "平台游",
+    "token": "代币",
+    "book": "书",
+    "developer": "开发者",
+    "copyright": "版权",
+    "button-juror": "加入为陪审员",
+    "button-partner": "成为合伙人"
   }
 }
