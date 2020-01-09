@@ -108,7 +108,8 @@ export default injectIntl(function(menu) {
                     { text: "한국인", url: "/ko" },
                     { text: "Français", url: "/fr" },
                     { text: "Русский", url: "/ru" },
-                    { text: "Portugués", url: "/pt" }
+                    { text: "Portugués", url: "/pt" },
+                    { text: "中文", url: "/zh" }
                   ]
                 }}
               />
