@@ -33,15 +33,15 @@
     },
     "section-internet-economy": {
       "title": "Internet Ekonomisi",
-      "subtitle": "Hayatlarımız giderek online platformlara taşınıyor ve bu platformlarda ortaya çıkan ihtilaflar geneleneksel adalet sistemi ile pratikte çözülemiyor."
+      "subtitle": "Hayatlarımız giderek online platformlara taşınıyor ve bu platformlarda ortaya çıkan ihtilaflar geleneksel adalet sistemi ile pratikte çözülemiyor."
     },
     "section-why-kleros": {
       "title": "Neden Kleros?",
       "subtitle-1": "Topluluk Tarafından, Topluluk İçin",
-      "paragraph-1": "Blokzinciri ve topluluğun içinden sağlanan juri adayları sayesinde ihtilaf çözümleme tamamen topluluğun elinde!",
+      "paragraph-1": "Blokzinciri ve topluluğun içinden sağlanan jüri adayları sayesinde ihtilaf çözümleme tamamen topluluğun elinde!",
       "subtitle-2": "Püf noktası nedir?",
-      "paragraph-2": "Kleros, gelişmiş kripto-ekonomi ve küresel juri topluluğunu bir araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde hakemlik edilmesine imkan sağlıyor. <anchor>Resmi raporu</anchor> okuyun.",
-      "subtitle-3": "Kleros'un neden ayrı bi jetona ihtiyacı var?",
+      "paragraph-2": "Kleros, gelişmiş kripto-ekonomi ve küresel jüri topluluğunu bir araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde hakemlik edilmesine imkan sağlıyor. <anchor>Resmi raporu</anchor> okuyun.",
+      "subtitle-3": "PNK jetonu neden gereklidir?",
       "paragraph-3": "Pinakion jetonu sistemi saldırılardan korumakta ve jurileri mutabakata varmaları için teşvik etmektedir. Daha detaylı bilgi için <anchor>buraya</anchor> tıklayın."
     },
     "section-how-does-it-work": {
@@ -71,7 +71,7 @@
     },
     "section-get-in-touch": {
       "title": "İrtibata geçin",
-      "subtitle-1": "Önerilerilerinizi ve taleplerinizi duymaktan mutluluk duyarız.",
+      "subtitle-1": "Önerilerinizi ve taleplerinizi duymaktan mutluluk duyarız.",
       "subtitle-2": "Daha fazlası için lütfen <telegram>Telegram</telegram> üzerinden bize yazın ya da <email>contact@kleros.io</email> adresine email gönderin."
     }
   },
@@ -92,22 +92,22 @@
     },
     "secretSauce": {
       "pt1Heading": "Topluluk Tarafından, Topluluk İçin",
-      "pt1Subtext": "Blokzinciri ve topluluğun içinden sağlanan juri adayları sayesinde ihtilaf çözümleme tamamen topluluğun elinde!",
+      "pt1Subtext": "Blokzinciri ve topluluğun içinden sağlanan jüri adayları sayesinde ihtilaf çözümleme tamamen topluluğun elinde!",
       "pt2Heading": "Püf noktası nedir?",
-      "pt2Subtext": "Kleros, gelişmiş kripto-ekonomi ve küresel juri topluluğunu bir araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde hakemlik edilmesine imkan sağlıyor. <anchor>Resmi raporu</anchor> okuyun.",
+      "pt2Subtext": "Kleros, gelişmiş kripto-ekonomi ve küresel jüri topluluğunu bir araya getirerek, ihtilaflara hızlı, şeffaf ve ucuz bir şekilde hakemlik edilmesine imkan sağlıyor. <anchor>Resmi raporu</anchor> okuyun.",
       "pt3Heading": "Kleros'un neden ayrı bi jetona ihtiyacı var?",
       "pt3Subtext": "Pinakion jetonu sistemi saldırılardan korumakta ve jurileri oybirliğine varmaları için teşvik etmektedir. Daha detaylı bilgi için <anchor>buraya</anchor> tıklayın."
     },
     "internetEconomy": {
       "heading": "Online Ekonomi",
-      "subtext": "Hayatlarımız giderek online platformlara taşınıyor ve bu platformlarda ortaya çıkan ihtilaflar geneleneksel adalet sistemi ile pratikte çözülemiyor."
+      "subtext": "Hayatlarımız giderek online platformlara taşınıyor ve bu platformlarda ortaya çıkan ihtilaflar geleneksel adalet sistemi ile pratikte çözülemiyor."
     },
     "products": {
       "heading": "Ürünler Ve Entegrasyonlar",
       "disclaimer": "* Geliştirme sürecinde"
     },
     "justiceRevolution": {
-      "heading": "Adalet Devrimine Siz De Katılın!",
+      "heading": "Adalet Devrimine Siz de Katılın!",
       "subtext": "Kleros'u, Kleros yapan şey, işbirliğidir. Platformunuzu, güvenli ve ücretsiz olarak Kleros ile entegre etmekten memnun oluruz.",
       "subtext-2": "Eğer projenizde bir ihtilaf çözümlemeye ihtiyaç duyuyorsanız lütfen iletişime geçin.",
       "joinJurorHeading": "Juri Olun",
@@ -126,7 +126,7 @@
     },
     "contact": {
       "heading": "İrtibata geçin",
-      "subtext": "Önerilerilerinizi ve taleplerinizi duymaktan mutluluk duyarız. Daha fazlası için lütfen <telegram>Telegram</telegram> üzerinden bize yazın ya da <email>contact@kleros.io</email> adresine email gönderin."
+      "subtext": "Önerilerinizi ve taleplerinizi duymaktan mutluluk duyarız. Daha fazlası için lütfen <telegram>Telegram</telegram> üzerinden bize yazın ya da <email>contact@kleros.io</email> adresine email gönderin."
     },
     "buttons": {
       "learnMore": "Devamı İçin Tıklayın",
@@ -148,7 +148,7 @@
     },
     "section-join-our-team": {
       "title": "Bize Katılın!",
-      "subtitle": "Adalet devrimine katkıda bulunmak için hemen aşağıdaki açık pozisyonlara gözatın!"
+      "subtitle": "Adalet devrimine katkıda bulunmak için hemen aşağıdaki açık pozisyonlara göz atın!"
     }
   },
   "faq": {
@@ -158,13 +158,13 @@
       "category-general": {
         "name": "Genel",
         "q-1": "Cidden, internetteki birtakım anonim kişilerin kararına güvenilebilir mi?",
-        "a-1": "Satoshi Nakamoto, bize, doğru şekilde teşvik edildiğinde, internetteki birtakım birbirine güvenmeyen anonim bilgisayarın mutabakata ulaşabileceğini gösterdi. Kleros bu prensibi insanların karar mekanizmasına uygulayarak genişletiyor. Yani internetteki birtakım anonim juri, doğru teşvik edildiklerinde, haklı olana oy verecek şekilde mutabakata ulaşabilir. Nasıl mı? Daha detaylı öğrenmek için lütfen resmi raporu inceleyin.",
+        "a-1": "Satoshi Nakamoto, bize, doğru şekilde teşvik edildiğinde, internetteki birtakım birbirine güvenmeyen anonim bilgisayarın mutabakata ulaşabileceğini gösterdi. Kleros bu prensibi insanların karar mekanizmasına uygulayarak genişletiyor. Yani internetteki birtakım anonim jüri, doğru teşvik edildiklerinde, haklı olana oy verecek şekilde mutabakata ulaşabilir. Nasıl mı? Daha detaylı öğrenmek için lütfen resmi raporu inceleyin.",
         "q-2": "Kaç adet Pinakion olacak?",
         "a-2": "Pinakion jeton sayısı bir milyar ile sınırlıdır.",
         "q-3": "Bir ihtilafım var ve davamın Kleros'ta görülmesini istiyorum. Pinakion jetonuna ihtiyacım var mı?",
         "a-3": "Hayır, pinakion jetonu sadece juriler için gerekli, bu jetonu seçilebilmek için mahkemeye rehin bırakmaları gerekiyor. Davaları görülen tarafların bu jetona ihtiyacı yoktur, varlığından haberleri bile olmasına gerek yoktur.",
         "q-4": "Jurilerin kimliği ortaya çıkıyor mu?",
-        "a-4": "Kleros'un kararlarının maddi sonuçları olduğundan, dava taraflarını rüşvete ve gözdağı vermeye cesasetlendirebilir. Anonimliğin jurileri gözdağı ve misilleme gibi durumlardan koruması amaçlanmaktadır. Anonimlik, ayrıca juri seçim sürecini sadeleştirmekte ve kimlik doğrulama masraflarını önlemektedir. Kleros, basit bir juri seçimine dayanan güvenli bir platform ile juri havuzunu oldukça büyütmüştür ve bu daha ucuz ve demokratik bir itilaf çözümleme sistemini mümkün kılmıştır.",
+        "a-4": "Kleros'un kararlarının maddi sonuçları olduğundan, dava taraflarını rüşvete ve gözdağı vermeye cesasetlendirebilir. Anonimliğin jurileri gözdağı ve misilleme gibi durumlardan koruması amaçlanmaktadır. Anonimlik, ayrıca jüri seçim sürecini sadeleştirmekte ve kimlik doğrulama masraflarını önlemektedir. Kleros, basit bir jüri seçimine dayanan güvenli bir platform ile jüri havuzunu oldukça büyütmüştür ve bu daha ucuz ve demokratik bir itilaf çözümleme sistemini mümkün kılmıştır.",
         "q-5": "Kleros jetonları nasıl paylaştırılıyor?",
         "a-5": "Geliştirme ekibi: 18% Jeton Satışının İlk Ayağı: 16% Airdrop: 4% Jeton Satışının Sonraki Ayakları Ve Juri Teşvik Programı: 50% Kleros Kooperatifi Geliştirme Rezervi: 12%",
         "q-6": "Kleros, eBay ve Amazon gibi yaygın kullanınan perakendeciler tarafından kullanılabilir mi?",
@@ -188,7 +188,7 @@
         "q-5": "Juriler küresel bir havuzdan seçiliyor. Öyleyse nasıl herkesin anlaşmanın ve delillerin yazıldığı dilde konuştuğuna emin olabiliyorsunuz?",
         "a-5": "Kleros, farklı alanlarda özelleşen altmahkemelerden oluşur. Dil, bu altmahkemelerin oluşturulmasında gözetilen değişkenlerden biridir. Örneğin, 'Türkçe dilinde yazılım geliştirme mahkemesi', 'İspanyolca dilinde yazılım geliştirme mahkemesi' ve 'Rusça dilinde yazılım geliştirme mahkemesi' olarak üç ayrı altmahkeme olabilir.",
         "q-6": "Jurilerin oy verirken delilleri gözettiğine nasıl emin olabilirsiniz?",
-        "a-6": "Kleros'un, jurilerin delilleri incelediğinden emin olamaz. Fakat, jurilerin delilleri incelemeleri kendi ekonomik yararlarınadır. Şöyle ki; juriler hakemlikleri karşılığında ücret alabilmek için oy çoğunluğuna dahil olmaları gerekmektedir. Çoğunluğun kuralları ve delilleri gözeterek oy vermesinin daha olası olduğu düşünülürse, para kazanmak isteyen bir juri de böyle yapacaktır. Ekonomik teşvikler jurileri dürüst davranmaya iter. Ekonomik teşvikler hakkında daha detaylı bilgi almak için lütfen resmi raporu (white paper) okuyun.",
+        "a-6": "Kleros'un, jurilerin delilleri incelediğinden emin olamaz. Fakat, jurilerin delilleri incelemeleri kendi ekonomik yararlarınadır. Şöyle ki; juriler hakemlikleri karşılığında ücret alabilmek için oy çoğunluğuna dahil olmaları gerekmektedir. Çoğunluğun kuralları ve delilleri gözeterek oy vermesinin daha olası olduğu düşünülürse, para kazanmak isteyen bir jüri de böyle yapacaktır. Ekonomik teşvikler jurileri dürüst davranmaya iter. Ekonomik teşvikler hakkında daha detaylı bilgi almak için lütfen resmi raporu (white paper) okuyun.",
         "q-7": "Jurilerin verdikleri kararların gerekçelerini sunması gerekiyor mu? Bu gerekçeler davanın taraflarına ve diğer jurilere gösteriliyor mu?",
         "a-7": "Evet, juriler, oy verirken, kararlarının gerekçesini kısaca açıklıyorlar. Bu gerekçeler, oylama sonlandıktan sonra davanın taraflarına ve diğer jurilere gösteriliyor.",
         "q-8": "Davaların görülmesi için bir zaman sınır var mı? Juriler verilen zaman içerisinde oylamak zorundalar mı?",
@@ -245,7 +245,7 @@
       "subtitle-1": "Kleros'u Platformunuza Entegre Edin",
       "paragraph-1": "Bir e-ticaret, freelancing ya da finans platformu mu inşa ediyorsunuz? İşinizin doğası gereği ihtilaflar doğacaktır. Kleros'u entegre ederek bu ihtilafları ücretsiz olacak çözümleyin. Tek yapmanız gerek ihtilafı Kleros'a göndermek ve kararı beklemek.",
       "subtitle-2": "Peki, ihtilaflar nasıl çözümleniyor?",
-      "paragraph-2": "Kleros, topluluk içinden ihtilafı oylaması için juri seçer. Delilleri incelemelerinin akabinde, juriler kararlarını oy vererek bildirirler ve çoğunluğun kararı otomatik olarak akıllı kontrat tarafından icra edilir. Tüm deliller blokzinciri tarafından güvence altındadır ve karartılmaları mümkün değildir. Nasıl çalıştığını öğrenmek için lütfen <anchor>Kleros Resmi Raporu'nu</anchor> okuyun.",
+      "paragraph-2": "Kleros, topluluk içinden ihtilafı oylaması için jüri seçer. Delilleri incelemelerinin akabinde, juriler kararlarını oy vererek bildirirler ve çoğunluğun kararı otomatik olarak akıllı kontrat tarafından icra edilir. Tüm deliller blokzinciri tarafından güvence altındadır ve karartılmaları mümkün değildir. Nasıl çalıştığını öğrenmek için lütfen <anchor>Kleros Resmi Raporu'nu</anchor> okuyun.",
       "subtitle-3": "Neden Önemli?",
       "paragraph-3": "Kleros online alışverişlere bir güven standardı getirmektedir. Kleros Escrow ile, hem alıcı hem de satıcı karşı tarafın sözleşmenin gereğini yerine getireceğinden emin olabilir.",
       "illustration-1": "Kleros Escrow üzerinden yeni bir alışveriş (transaction) oluşturun.",
@@ -353,13 +353,13 @@
     "title": "Pinakion (PNK) Jetonu",
     "section-token": {
       "subtitle-1": "Juri Olmak İçin Pot (Stake) Koyun",
-      "paragraph-1": "Öncelikle PNK jetonu sahipleri, jetonlarını Kleros mahkemelerine pot olarak koyabilirler. Bu onların ilgili mahkemede oy vermeye müsait olduklarını belirtir. Ne kadar çok pot koyarlarsa juri olarak seçilme ihtimalleri o kadar yükselir.",
+      "paragraph-1": "Öncelikle PNK jetonu sahipleri, jetonlarını Kleros mahkemelerine pot olarak koyabilirler. Bu onların ilgili mahkemede oy vermeye müsait olduklarını belirtir. Ne kadar çok pot koyarlarsa jüri olarak seçilme ihtimalleri o kadar yükselir.",
       "subtitle-2": "PNK, Kleros'u Sybil Saldırılarına Karşı Korur",
-      "paragraph-2": "PNK Sybil saldırılarına karşı bir sigortadır. Saldırganın, bu saldırıyı icra edebilmesi için juri havuzunun çoğunu ele geçirmesi gerekmektedir. Bu da demek oluyor ki, mahkemedeki toplam potun çoğu saldırgana ait olmalı. Saldırganın bu kadar çok PNK satın alması pratikte mümkün değildir.",
+      "paragraph-2": "PNK Sybil saldırılarına karşı bir sigortadır. Saldırganın, bu saldırıyı icra edebilmesi için jüri havuzunun çoğunu ele geçirmesi gerekmektedir. Bu da demek oluyor ki, mahkemedeki toplam potun çoğu saldırgana ait olmalı. Saldırganın bu kadar çok PNK satın alması pratikte mümkün değildir.",
       "subtitle-3": "PNK, Olası Bir Saldırıyı Aşırı Masraflı Kılar",
       "paragraph-3": "Diyelim ki bir saldırgan PNK jetonlarının çoğunu satın almayı başardı. Ve diyelim ki Sybil saldırısını başarıyla gerçekleştirdi ve adaleti aldattı. Kleros'u aldatmış olması PNK jetonunu kıymetsiz kılar, çünkü PNK jetonuna değerini veren Kleros'tur. Böylece saldırgan, elinde beş para etmeyen PNK jetonlarıyla kalakalır, saldırı ona devasa bir ekonomik kayba sebep olur.",
       "subtitle-4": "Kullancı Odaklı",
-      "paragraph-4": "Kullancılar PNK'ye sahip olmaya teşvik edilirler çünkü ne kadar çok PNK'ye sahip iseler mahkemelerde o kadar çok juri olarak seçilme (ve hizmetleri karşılığında ücret alma) olasılıkları artar. Ayrıca, PNK jetonu sahipleri, sahip oldukları jetonlara oranla Kleros yönetiminde söz hakkına sahiptir. Yönetimde ve kurallarda değişiklik önerebilirler, önerilen değişiklikleri oylayabilirler."
+      "paragraph-4": "Kullancılar PNK'ye sahip olmaya teşvik edilirler çünkü ne kadar çok PNK'ye sahip iseler mahkemelerde o kadar çok jüri olarak seçilme (ve hizmetleri karşılığında ücret alma) olasılıkları artar. Ayrıca, PNK jetonu sahipleri, sahip oldukları jetonlara oranla Kleros yönetiminde söz hakkına sahiptir. Yönetimde ve kurallarda değişiklik önerebilirler, önerilen değişiklikleri oylayabilirler."
     },
     "banner": {
       "title": "Eğer borsa dışı PNK jetonu satın almak isterseniz lütfen irtibata geçin",
@@ -382,7 +382,7 @@
       "subtitle-4": "Seçin",
       "paragraph-4": "Ne sıklıkla hakemlik etmek istediğinize, ne kadar çalışmak istediğinize siz karar verin.",
       "subtitle-5": "Şeffaf",
-      "paragraph-5": "Hiçbir özel gereksinim yoktur. Herkes juri olabilir.",
+      "paragraph-5": "Hiçbir özel gereksinim yoktur. Herkes jüri olabilir.",
       "subtitle-6": "Yenilikçi Olun",
       "paragraph-6": "Bugün başlayın ve geleceğin adalet sisteminde yerinizi alın!"
     },
