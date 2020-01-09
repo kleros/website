@@ -670,7 +670,30 @@
   "contact": {
     "title": "联系我们"
   },
+<<<<<<< HEAD
   "404": {
     "seo-title": "404: 页面缺失"
+=======
+  "footer": {
+    "about": "关于我们",
+    "governance": "管治",
+    "join": "加入",
+    "faq": "常问问题",
+    "media": "媒体",
+    "blog": "博客",
+    "assets": "资产",
+    "white-paper": "白皮书",
+    "escrow": "第三方托管",
+    "curated-list": "策划清单",
+    "oracle": "预言机",
+    "cooperative": "合作社",
+    "court-tour": "平台游",
+    "token": "通证",
+    "book": "书籍",
+    "developer": "开发者",
+    "copyright": "版权",
+    "button-juror": "成为陪审员",
+    "button-partner": "成为合伙人"
+>>>>>>> some suggestions
   }
 }
