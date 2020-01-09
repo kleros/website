@@ -3,7 +3,7 @@
     "button-one-pager": "简介",
     "button-partner": "成为合伙人",
     "button-juror": "成为一个陪审员",
-    "button-dapps": "去中心化饮用",
+    "button-dapps": "去中心化应用",
     "button-white-paper": "白皮书",
     "button-use-cases": "用例",
     "button-about": "关于我们",
@@ -11,11 +11,11 @@
     "button-language": "语言"
   },
   "index": {
-    "title": "去中心化司法平台",
-    "subtitle": "区块链争议解决方案为大家提供更快、更好、更经济地实现司法正义。",
+    "title": "去中心化仲裁平台",
+    "subtitle": "区块链争议解决方案为大家提供更快、更好、更经济地实现公正的仲裁。",
     "button-juror": "成为一个陪审员",
     "button-partner": "成为合伙人",
-    "button-token-sale": "通证出售量",
+    "button-token-sale": "通证分配量",
     "button-twitter": "推特",
     "button-blog": "博客",
     "button-github": "Github",
@@ -36,7 +36,7 @@
     },
     "section-why-kleros": {
       "title": "为什么选择Kleros？",
-      "subtitle-1": "点对点正义",
+      "subtitle-1": "点对点公正",
       "paragraph-1": "一个使用众包和区块链将争议解决流程交到社区手中的对等平台。",
       "subtitle-2": "成功秘诀",
       "paragraph-2": "Kleros使用先进的加密货币经济学和全球陪审员社区，更快、更好、更经济地实现司法正义。<anchor>阅读白皮书了解更多内容</anchor>。",
@@ -52,14 +52,14 @@
       "subtitle-3": "选拔",
       "paragraph-3": "随机选择用户作为争议的陪审员。",
       "subtitle-4": "执法",
-      "paragraph-4": "陪审团评估证据并投票给爱丽丝作为获胜者。 她得到报销，诚实的陪审员因其工作获得报酬。",
+      "paragraph-4": "陪审团评估证据并投票给爱丽丝作为获胜者。 她得到退款，诚实的陪审员因其工作获得报酬。",
       "button-primary": "看视频"
     },
     "section-justice-revolution": {
-      "title": "加入正义革命",
-      "subtitle-1": "Join as a Juror",
-      "paragraph-1": "Become a juror, earn and bring justice to the world.",
-      "button-1": "加入为陪审员",
+      "title": "参与公正的革新",
+      "subtitle-1": "加入成为待选陪审员",
+      "paragraph-1": "成为陪审员, 为世界提供公正并获取报酬.",
+      "button-1": "加入成为待选陪审员",
       "subtitle-2": "成为合伙人",
       "paragraph-2": "将Kleros强大的争议解决技术免费集成到您的平台中。 ",
       "button-2": "成为合伙人"
@@ -77,23 +77,23 @@
   "home": {
     "countdown": {
       "subheading": "Kleros",
-      "heading": "代币销售",
+      "heading": "通证分配",
       "days": "天",
       "hours": "小时",
       "minutes": "分钟",
       "seconds": "秒",
-      "subtext": "代币出售: 150,000,000 PNK",
+      "subtext": "通证分配: 150,000,000 PNK",
       "subtext-2": "从2020年1月11日北京时间晚上12点钟开始"
     },
     "decentralizedCourts": {
-      "subheading": "区块链争议解决方案为大家提供快速、开放和有利的正义。",
+      "subheading": "区块链争议解决方案为大家提供更快、更好、更经济的公正仲裁。",
       "heading": "去中心化司法平台"
     },
     "secretSauce": {
-      "pt1Heading": "点对点正义",
+      "pt1Heading": "点对点公正",
       "pt1Subtext": "一个使用众包和区块链将争议解决流程交到社区手中的对等平台。",
       "pt2Heading": "成功秘诀",
-      "pt2Subtext": "Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、有利的放方式裁定争议。<anchor>阅读白皮书了解更多内容</anchor>。区块链争议解决方案为大家提供快速、开放和有利的正义",
+      "pt2Subtext": "Kleros使用先进的加密货币经济学和全球陪审员社区，以快速、有效的放方式裁定争议。<anchor>阅读白皮书了解更多内容</anchor>。区块链争议解决方案为大家提供快速、开放和有利的正义",
       "pt3Heading": "为什么Kleros需要PNK？",
       "pt3Subtext": "PNK（Pinakion）令牌可保护系统免受攻击，同时还为陪审员提供了经济上的动力来协调解决案件。 <anchor>在这里了解更多</anchor>。"
     },
@@ -106,11 +106,11 @@
       "disclaimer": "* 开发中的产品"
     },
     "justiceRevolution": {
-      "heading": "加入正义革命",
+      "heading": "加入公正的革新",
       "subtext": "协作造就了Kleros。 我们可以免费安全地与您的平台集成。  ",
       "subtext-2": "如果这听起来像您可以在区块链项目中使用的东西，请问。",
       "joinJurorHeading": "加入为陪审员",
-      "joinJurorSubtext": "成为陪审员，又赚钱又为世界带来正义。",
+      "joinJurorSubtext": "成为陪审员, 为世界提供公正并获取报酬。",
       "joinJurorButtonText": "加入为陪审员",
       "joinPartnerHeading": "成为合伙人",
       "joinPartnerSubtext": "将Kleros强大的争议解决技术免费集成到您的平台中。 ",
@@ -120,8 +120,8 @@
       "heading": "最新"
     },
     "joinCourt": {
-      "heading": "参加法院",
-      "subtext": "参加法院，帮助解决争议并赢得ETH和PNK的激励。"
+      "heading": "加入法庭",
+      "subtext": "加入法庭，帮助解决争议并赢得ETH和PNK的激励。"
     },
     "contact": {
       "heading": "联系我们",
@@ -131,15 +131,15 @@
       "learnMore": "了解更多",
       "joinAsJuror": "加入为陪审员",
       "becomeAPartner": "成为合伙人",
-      "tryKlerosCourt": "参加司法平台"
+      "tryKlerosCourt": "加入已有法庭"
     }
   },
   "about": {
     "title": "关于我们",
-    "subtitle": "Kleros是一个开放源代码在线争议解决协议，它使用区块链和众包来公平地解决争议。该协议的开发工作由Kleros合作社协调，Kleros合作社是一家在法国成立的法国国际合作社（SCIC）。我们的研究和代码开发是开源的，任何人都可以免费使用。",
+    "subtitle": "Kleros是一个开放源代码的在线争议解决协议，它使用区块链和众包来公平地解决争议。该协议的开发工作由Kleros合作社协调，Kleros合作社是一家在法国成立的法国国际合作社（SCIC）。我们的研究和代码开发是开源的，任何人都可以免费使用。",
     "section-who-are-we": {
       "title": "我们是谁？",
-      "paragraph": "我们是一支跨学科的国际团队，对区块链及其变革法律和治理的潜力充满热情。Kleros的愿景是建立开放技术，为未来的法院提供支持。"
+      "paragraph": "我们是一支跨学科的国际团队，对区块链及其变革法律和治理的潜力充满热情。Kleros的愿景是建立开放技术，为未来的仲裁提供支持。"
     },
     "section-meet-our-team": {
       "title": "与我们的团队会面",
@@ -147,7 +147,7 @@
     },
     "section-join-our-team": {
       "title": "加入我们的团队！",
-      "subtitle": "检查下面的空缺职位，加入正义革命！"
+      "subtitle": "检查下面的空缺职位，加入公正的革新！"
     }
   },
   "faq": {
@@ -449,11 +449,11 @@
     "oracle": "预言机",
     "cooperative": "合作社",
     "court-tour": "平台游",
-    "token": "代币",
-    "book": "书",
+    "token": "通证",
+    "book": "书籍",
     "developer": "开发者",
     "copyright": "版权",
-    "button-juror": "加入为陪审员",
+    "button-juror": "成为陪审员",
     "button-partner": "成为合伙人"
   }
 }
