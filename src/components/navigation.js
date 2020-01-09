@@ -110,7 +110,7 @@ export default injectIntl(function(menu) {
                     { text: "Русский", url: "/ru" },
                     { text: "Portugués", url: "/pt" },
                     { text: "中文", url: "/zh" },
-                    { text: "Turkish", url: "/tr" }
+                    { text: "Türkçe", url: "/tr" }
                   ]
                 }}
               />
