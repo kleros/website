@@ -101,7 +101,7 @@ export default injectIntl(function(menu) {
               </li>
               <Dropdown
                 data={{
-                  text: "Language",
+                  text: <FormattedMessage id="header.button-language" />,
                   dropdownOptions: [
                     { text: "English", url: "/en" },
                     { text: "Español", url: "/es" },
