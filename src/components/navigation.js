@@ -29,7 +29,8 @@ export default injectIntl(function(menu) {
                     { text: "한국인", url: "/onepager_ko.pdf" },
                     { text: "Français", url: "/onepager_fr.pdf" },
                     { text: "Русский", url: "/onepager_ru.pdf" },
-                    { text: "Portugués", url: "/onepager_pt.pdf" }
+                    { text: "Portugués", url: "/onepager_pt.pdf" },
+                    { text: "Türkçe", url: "/onepager_tr.pdf" }
                   ]
                 }}
               />
