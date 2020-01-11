@@ -109,10 +109,16 @@ const getTimeLeft = () => {
 
 export default ({}) => {
   // Time keeping
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-  useInterval(() => setTimeLeft(getTimeLeft()), 1000);
+  // const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+  // useInterval(() => setTimeLeft(getTimeLeft()), 1000);
 
-  const countdownOver = (timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0)
+  const timeLeft = {
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  }
+  const countdownOver = true
 
   return (
     <StyledTopSection>
