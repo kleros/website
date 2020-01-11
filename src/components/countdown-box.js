@@ -24,6 +24,9 @@ const StyledNumber = styled.div`
     font-size: 96px;
   }
 `;
+const StyledFinishedNumber = styled(StyledNumber)`
+  color: #D50cf6;
+`;
 const StyledTitle = styled.div`
   color: #fff;
   font-weight: 600;
@@ -39,12 +42,23 @@ const StyledTitle = styled.div`
     font-size: 24px;
   }
 `;
+const StyledFinishedTitle = styled(StyledTitle)`
+`;
 
-export default ({ number, title }) => {
+export default ({ number, title, finished }) => {
   return (
     <StyledCountdownBox>
-      <StyledNumber>{number}</StyledNumber>
-      <StyledTitle>{title}</StyledTitle>
+      { finished ? (
+        <>
+          <StyledFinishedNumber>{number}</StyledFinishedNumber>
+          <StyledFinishedTitle>{title}</StyledFinishedTitle>
+        </>
+      ) : (
+        <>
+          <StyledNumber>{number}</StyledNumber>
+          <StyledTitle>{title}</StyledTitle>
+        </>
+      )}
     </StyledCountdownBox>
   );
 };

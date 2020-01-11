@@ -111,19 +111,9 @@ export default ({}) => {
   // Time keeping
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   useInterval(() => setTimeLeft(getTimeLeft()), 1000);
-  // Headings
-  // const subHeading = intl.formatMessage({
-  //   id: "home.countdown.subheading"
-  // });
-  // const heading = intl.formatMessage({ id: "home.countdown.heading" });
-  // // Timer
-  // const days = intl.formatMessage({ id: "home.countdown.days" });
-  // const hours = intl.formatMessage({ id: "home.countdown.hours" });
-  // const minutes = intl.formatMessage({ id: "home.countdown.minutes" });
-  // const seconds = intl.formatMessage({ id: "home.countdown.seconds" });
-  // // Text
-  // const subtext = intl.formatMessage({ id: "home.countdown.subtext" });
-  // const buttonText = intl.formatMessage({ id: "buttons.learnMore" });
+
+  const countdownOver = (timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0)
+
   return (
     <StyledTopSection>
       <StyledSpacer />
@@ -143,6 +133,7 @@ export default ({}) => {
                 <CountdownBox
                   number={timeLeft.days}
                   title={<FormattedMessage id="home.countdown.days" />}
+                  finished={countdownOver}
                 />
               </span>
             </StyledCountdownContainer>
@@ -154,6 +145,7 @@ export default ({}) => {
                 <CountdownBox
                   number={timeLeft.hours}
                   title={<FormattedMessage id="home.countdown.hours" />}
+                  finished={countdownOver}
                 />
               </span>
             </StyledCountdownContainer>
@@ -165,6 +157,7 @@ export default ({}) => {
                 <CountdownBox
                   number={timeLeft.minutes}
                   title={<FormattedMessage id="home.countdown.minutes" />}
+                  finished={countdownOver}
                 />
               </span>
             </StyledCountdownContainer>
@@ -176,6 +169,7 @@ export default ({}) => {
                 <CountdownBox
                   number={timeLeft.seconds}
                   title={<FormattedMessage id="home.countdown.seconds" />}
+                  finished={countdownOver}
                 />
               </span>
             </StyledCountdownContainer>
@@ -189,14 +183,26 @@ export default ({}) => {
           </StyledSubtext>
         </Row>
         <Row style={{ marginTop: "40px" }}>
-          <Button
-            text={<FormattedMessage id="home.buttons.learnMore" />}
-            action={() => {
-              window.location =
-                "https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/";
-            }}
-            color={"blue"}
-          />
+          { countdownOver ? (
+            <Button
+              text={<FormattedMessage id="home.buttons.goToSale" />}
+              action={() => {
+                window.location =
+                  "https://sale.kleros.io";
+              }}
+              color={"blue"}
+            />
+          ) : (
+            <Button
+              text={<FormattedMessage id="home.buttons.learnMore" />}
+              action={() => {
+                window.location =
+                  "https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/";
+              }}
+              color={"blue"}
+            />
+          )}
+
         </Row>
       </StyledContent>
     </StyledTopSection>
