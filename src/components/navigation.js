@@ -30,6 +30,7 @@ export default injectIntl(function(menu) {
                     { text: "Français", url: "/onepager_fr.pdf" },
                     { text: "Русский", url: "/onepager_ru.pdf" },
                     { text: "Portugués", url: "/onepager_pt.pdf" },
+                    { text: "中文", url: "/onepager_zh.pdf" },
                     { text: "Türkçe", url: "/onepager_tr.pdf" }
                   ]
                 }}
