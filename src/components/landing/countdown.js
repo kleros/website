@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import TopBackground from "../../../static/assets/images/top_background.png";
 import styled from "styled-components";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import SaleProgressBar from './sale-progress-bar'
 
 const StyledTopSection = styled.div`
   background: linear-gradient(158.61deg, #4d00b4 15.9%, #1e075f 59.16%);
@@ -27,7 +28,7 @@ const KlerosTextSmall = styled.div`
   position: relative;
 `;
 const StyledHeadingText = styled.div`
-  font-size: 100px;
+  font-size: 60px;
   letter-spacing: 4px;
 `;
 const StyledSpacer = styled.div`
@@ -109,8 +110,7 @@ const getTimeLeft = () => {
 
 export default ({}) => {
   // Time keeping
-  // const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-  // useInterval(() => setTimeLeft(getTimeLeft()), 1000);
+
 
   const timeLeft = {
     days: 0,
@@ -132,61 +132,9 @@ export default ({}) => {
           <FormattedMessage id="home.countdown.heading" />
         </StyledHeadingText>
         <Row style={{ marginTop: "28px" }}>
-          <Col lg={4} md={4} />
-          <Col lg={4} md={4}>
-            <StyledCountdownContainer>
-              <span style={{ textTransform: "capitalize" }}>
-                <CountdownBox
-                  number={timeLeft.days}
-                  title={<FormattedMessage id="home.countdown.days" />}
-                  finished={countdownOver}
-                />
-              </span>
-            </StyledCountdownContainer>
-            <BoxBreak>:</BoxBreak>
+          <Col lg={24} style={{padding: '20px 10%'}}>
+            <SaleProgressBar />
           </Col>
-          <Col lg={4} md={4}>
-            <StyledCountdownContainer>
-              <span style={{ textTransform: "capitalize" }}>
-                <CountdownBox
-                  number={timeLeft.hours}
-                  title={<FormattedMessage id="home.countdown.hours" />}
-                  finished={countdownOver}
-                />
-              </span>
-            </StyledCountdownContainer>
-            <BoxBreak>:</BoxBreak>
-          </Col>
-          <Col lg={4} md={4}>
-            <StyledCountdownContainer>
-              <span style={{ textTransform: "capitalize" }}>
-                <CountdownBox
-                  number={timeLeft.minutes}
-                  title={<FormattedMessage id="home.countdown.minutes" />}
-                  finished={countdownOver}
-                />
-              </span>
-            </StyledCountdownContainer>
-            <BoxBreak>:</BoxBreak>
-          </Col>
-          <Col lg={4} md={4}>
-            <StyledCountdownContainer>
-              <span style={{ textTransform: "capitalize" }}>
-                <CountdownBox
-                  number={timeLeft.seconds}
-                  title={<FormattedMessage id="home.countdown.seconds" />}
-                  finished={countdownOver}
-                />
-              </span>
-            </StyledCountdownContainer>
-          </Col>
-        </Row>
-        <Row style={{ marginTop: "25px" }}>
-          <StyledSubtext>
-            <FormattedMessage id="home.countdown.subtext" />
-            <br />
-            <FormattedMessage id="home.countdown.subtext-2" />
-          </StyledSubtext>
         </Row>
         <Row style={{ marginTop: "40px" }}>
           { countdownOver ? (
