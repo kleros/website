@@ -26,6 +26,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "antd": "^3.26.5",
     "axios": "^0.18.0",
+    "electron": "^7.1.9",
     "ev-emitter": "^1.1.1",
     "gatsby": "^2",
     "gatsby-image": "^2.2.37",
@@ -48,7 +49,9 @@
     "react-router-dom": "^5.1.2",
     "react-slick": "^0.25.2",
     "styled-components": "^4.4.1",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "web3": "^1.2.5-rc.0",
+    "web3-utils": "^1.2.5-rc.0"
   },
   "homepage": "https://kleros.io",
   "keywords": [

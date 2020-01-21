@@ -1,5 +1,6 @@
 import "antd/lib/grid/style/index.css";
 import "antd/lib/icon/style/index.css";
+import "antd/lib/progress/style/index.css";
 import { Col, Layout, Row } from "antd";
 import { Helmet } from "react-helmet";
 import Home from "./home";
