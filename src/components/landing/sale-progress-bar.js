@@ -112,7 +112,7 @@ export default({}) => {
         } Raised</AmountRaisedText>
       </Row>
       <Row>
-        <StyledProgress percent={50} status="active" showInfo={false} />
+        <StyledProgress percent={Number(fromWei(purchaseAmount)) / Number(fromWei(saleTotal)) * 100} status="active" showInfo={false} />
       </Row>
       <Row>
         <Col lg={12} md={12} sm={12}>
