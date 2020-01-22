@@ -30,6 +30,7 @@ const KlerosTextSmall = styled.div`
 const StyledHeadingText = styled.div`
   font-size: 60px;
   letter-spacing: 4px;
+  text-shadow: 0px 0px 8px #7a6ad9, 0px 0px 8px #7a6ad9;
 `;
 const StyledSpacer = styled.div`
   height: 60px;
