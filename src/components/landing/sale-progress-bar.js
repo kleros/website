@@ -104,7 +104,7 @@ export default({}) => {
               fromWei(
                 purchaseAmount.mul(toBN('50000000000000'))
                 .div(toBN('1000000000000000000'))
-                .mul(toBN(String(Number(ethPrice * 100))))
+                .mul(toBN(String(Number(ethPrice * 100).toFixed(0))))
                 .div(toBN('100'))
               )
             ).toFixed(0)
