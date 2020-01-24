@@ -37,7 +37,6 @@ export default ({ language }) => {
       <InternetEconomy language={language} />
       <Products language={language} />
       <HostedBy />
-      <BPI />
       <StyledGradientSection>
         <Partners language={language} />
         <JusticeRevolution language={language} />
