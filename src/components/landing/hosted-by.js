@@ -24,7 +24,7 @@ export default () => {
     <HostedByBar>
       <Row style={{ margin: "4rem" }}>
         <Col span={16}>
-          <img src={ThomsonReuters} style={{ height: "6rem" }} />
+          <img src={ThomsonReuters} style={{ height: "6rem", width: "100%" }} />
         </Col>
         <Col span={8}>
           <svg
