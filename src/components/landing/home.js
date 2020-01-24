@@ -4,6 +4,8 @@ import DecentralizedCourts from "./decentralized-courts";
 import SecretSauce from "./secret-sauce";
 import InternetEconomy from "./internet-economy";
 import HostedBy from "./hosted-by";
+import BPI from "./bpi";
+
 import Products from "./products";
 import Partners from "./partners";
 import JusticeRevolution from "./justice-revolution";
@@ -35,6 +37,7 @@ export default ({ language }) => {
       <InternetEconomy language={language} />
       <Products language={language} />
       <HostedBy />
+      <BPI />
       <StyledGradientSection>
         <Partners language={language} />
         <JusticeRevolution language={language} />
