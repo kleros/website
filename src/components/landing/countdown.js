@@ -152,7 +152,7 @@ export default ({}) => {
               action={() => {
                 window.location = "https://www.bitfinex.com/t/PNKETH";
               }}
-              color={"blue"}
+              color={"purple"}
             />
           </Col>
           <Col xs={0} sm={0} md={5} lg={6}>
