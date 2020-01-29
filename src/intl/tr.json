@@ -133,7 +133,9 @@
       "joinAsJuror": "Juri Olun",
       "becomeAPartner": "Çözüm Ortağı Olun",
       "tryKlerosCourt": "Kleros Mahkemesini Deneyin",
-      "goToSale": "Buy PNK"
+      "goToSale": "Bitfinex'ten Satın Alın",
+      "goToSale-2": "IDEX'ten Satın Alın",
+      "goToSale-3": "Uniswap'tan Satın Alın"
     }
   },
   "about": {
