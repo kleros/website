@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import TopBackground from "../../../static/assets/images/top_background.png";
 import styled from "styled-components";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-import SaleProgressBar from './sale-progress-bar'
+import SaleProgressBar from "./sale-progress-bar";
 
 const StyledTopSection = styled.div`
   background: linear-gradient(158.61deg, #4d00b4 15.9%, #1e075f 59.16%);
@@ -112,14 +112,12 @@ const getTimeLeft = () => {
 export default ({}) => {
   // Time keeping
 
-
   const timeLeft = {
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0
-  }
-  const countdownOver = true
+  };
 
   return (
     <StyledTopSection>
@@ -133,31 +131,38 @@ export default ({}) => {
           <FormattedMessage id="home.countdown.heading" />
         </StyledHeadingText>
         <Row style={{ marginTop: "28px" }}>
-          <Col lg={24} style={{padding: '20px 10%'}}>
+          <Col lg={24} style={{ padding: "20px 10%" }}>
             <SaleProgressBar />
           </Col>
         </Row>
         <Row style={{ marginTop: "40px" }}>
-          { countdownOver ? (
+          <Col span="6" offset="3">
             <Button
               text={<FormattedMessage id="home.buttons.goToSale" />}
               action={() => {
-                window.location =
-                  "https://sale.kleros.io";
+                window.location = "https://www.bitfinex.com/t/PNKETH";
               }}
               color={"blue"}
             />
-          ) : (
+          </Col>
+          <Col span="6">
             <Button
-              text={<FormattedMessage id="home.buttons.learnMore" />}
+              text={<FormattedMessage id="home.buttons.goToSale-2" />}
               action={() => {
-                window.location =
-                  "https://blog.kleros.io/kleros-token-sale-announcement-january-11-2020/";
+                window.location = "https://idex.market/eth/pnk";
               }}
               color={"blue"}
             />
-          )}
-
+          </Col>
+          <Col span="6">
+            <Button
+              text={<FormattedMessage id="home.buttons.goToSale-3" />}
+              action={() => {
+                window.location = "https://uniswap.ninja/swap";
+              }}
+              color={"blue"}
+            />
+          </Col>
         </Row>
       </StyledContent>
     </StyledTopSection>

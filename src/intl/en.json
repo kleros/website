@@ -77,8 +77,8 @@
   },
   "home": {
     "countdown": {
-      "subheading": "Kleros",
-      "heading": "The Token Sale is Open!",
+      "subheading": "Kleros Token Sale",
+      "heading": "Sold Out! Thanks for Your Contribution!",
       "days": "days",
       "hours": "hours",
       "minutes": "minutes",
@@ -133,7 +133,9 @@
       "joinAsJuror": "Join as a Juror",
       "becomeAPartner": "Become a Partner",
       "tryKlerosCourt": "Try Kleros Court",
-      "goToSale": "Buy PNK"
+      "goToSale": "Buy PNK on Bitfinex",
+      "goToSale-2": "Buy PNK on IDEX",
+      "goToSale-3": "Buy PNK on Uniswap"
     }
   },
   "about": {
