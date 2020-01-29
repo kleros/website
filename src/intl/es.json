@@ -75,8 +75,8 @@
   },
   "home": {
     "countdown": {
-      "subheading": "Kleros",
-      "heading": "Venta de Tokens",
+      "subheading": "Kleros Venta de Tokens",
+      "heading": "¡Venta terminada! ¡Gracias por su contribución!",
       "days": "días",
       "hours": "horas",
       "minutes": "minutos",
@@ -136,9 +136,9 @@
       "goToSale-3": "Compra PNK"
     },
     "progress": {
-      "raised": "Raised",
-      "sold": "Sold",
-      "remaining": "Remaining"
+      "raised": "Recaudado",
+      "sold": "Vendido",
+      "remaining": "Restante"
     }
   },
   "about": {
