@@ -133,9 +133,9 @@
       "joinAsJuror": "Join as a Juror",
       "becomeAPartner": "Become a Partner",
       "tryKlerosCourt": "Try Kleros Court",
-      "goToSale": "Buy PNK on Bitfinex",
-      "goToSale-2": "Buy PNK on IDEX",
-      "goToSale-3": "Buy PNK on Uniswap"
+      "goToSale": "Buy on Bitfinex",
+      "goToSale-2": "Buy on IDEX",
+      "goToSale-3": "Buy on Uniswap"
     }
   },
   "about": {
