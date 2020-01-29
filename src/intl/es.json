@@ -134,6 +134,11 @@
       "goToSale": "Compra PNK",
       "goToSale-2": "Compra PNK",
       "goToSale-3": "Compra PNK"
+    },
+    "progress": {
+      "raised": "Raised",
+      "sold": "Sold",
+      "remaining": "Remaining"
     }
   },
   "about": {

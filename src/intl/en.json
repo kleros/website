@@ -136,6 +136,11 @@
       "goToSale": "Buy on Bitfinex",
       "goToSale-2": "Buy on IDEX",
       "goToSale-3": "Buy on Uniswap"
+    },
+    "progress": {
+      "raised": "Raised",
+      "sold": "Sold",
+      "remaining": "Remaining"
     }
   },
   "about": {

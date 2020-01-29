@@ -4,6 +4,7 @@ import tokenSaleAbi from "../../../static/assets/contracts/token-sale.json";
 import styled from "styled-components";
 import Web3 from "web3";
 import { toBN, fromWei, toWei } from "web3-utils";
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 const saleTotal = toWei("150000000");
 
@@ -110,7 +111,7 @@ export default ({}) => {
             .mul(toBN(String(Number(ethPrice).toFixed(0))))
             .toString()
             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-          Raised
+          <FormattedMessage id="home.progress.raised" />
         </AmountRaisedText>
       </Row>
       <Row>
@@ -129,7 +130,7 @@ export default ({}) => {
               /\B(?=(\d{3})+(?!\d))/g,
               ","
             )}{" "}
-            Sold
+            <FormattedMessage id="home.progress.sold" />
           </PNKSoldText>
         </Col>
         <Col lg={12} md={12} sm={12}>
@@ -137,7 +138,7 @@ export default ({}) => {
             {String(
               Number(fromWei(toBN(saleTotal).sub(purchaseAmount))).toFixed(0)
             ).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-            Remaining
+            <FormattedMessage id="home.progress.remaining" />
           </RemainingText>
         </Col>
       </Row>

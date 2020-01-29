@@ -136,6 +136,11 @@
       "goToSale": "Купить PNK",
       "goToSale-2": "Купить PNK",
       "goToSale-3": "Купить PNK"
+    },
+    "progress": {
+      "raised": "Собрано",
+      "sold": "Продано",
+      "remaining": "Осталось"
     }
   },
   "about": {

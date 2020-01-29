@@ -135,6 +135,11 @@
       "goToSale": "购买PNK",
       "goToSale-2": "购买PNK",
       "goToSale-3": "购买PNK"
+    },
+    "progress": {
+      "raised": "Raised",
+      "sold": "Sold",
+      "remaining": "Remaining"
     }
   },
   "about": {

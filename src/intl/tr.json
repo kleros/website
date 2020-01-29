@@ -136,6 +136,11 @@
       "goToSale": "Bitfinex'ten Satın Alın",
       "goToSale-2": "IDEX'ten Satın Alın",
       "goToSale-3": "Uniswap'tan Satın Alın"
+    },
+    "progress": {
+      "raised": "Toplandı",
+      "sold": "Adet Satıldı",
+      "remaining": "Adet Kaldı"
     }
   },
   "about": {

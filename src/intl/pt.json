@@ -190,6 +190,11 @@
       "goToSale": "Compre PNK na Bitfinex",
       "goToSale-2": "Compre PNK na IDEX",
       "goToSale-3": "Compre PNK na Uniswap"
+    },
+    "progress": {
+      "raised": "Recebidos",
+      "sold": "Vendido",
+      "remaining": "Restantes"
     }
   },
 

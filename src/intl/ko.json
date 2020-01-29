@@ -145,6 +145,11 @@
       "goToSale": "Buy PNK",
       "goToSale-2": "Buy PNK",
       "goToSale-3": "Buy PNK"
+    },
+    "progress": {
+      "raised": "Raised",
+      "sold": "Sold",
+      "remaining": "Remaining"
     }
   },
 
