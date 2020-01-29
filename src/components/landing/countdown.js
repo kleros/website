@@ -135,17 +135,9 @@ export default ({}) => {
             <SaleProgressBar />
           </Col>
         </Row>
-        <Row style={{ marginTop: "40px" }}>
-          <Col span="6" offset="3">
-            <Button
-              text={<FormattedMessage id="home.buttons.goToSale" />}
-              action={() => {
-                window.location = "https://www.bitfinex.com/t/PNKETH";
-              }}
-              color={"blue"}
-            />
-          </Col>
-          <Col span="6">
+        <Row type="flex" justify="space-between" style={{ marginTop: "40px" }}>
+          <Col />
+          <Col xs={0} sm={0} md={5} lg={6}>
             <Button
               text={<FormattedMessage id="home.buttons.goToSale-2" />}
               action={() => {
@@ -154,7 +146,16 @@ export default ({}) => {
               color={"blue"}
             />
           </Col>
-          <Col span="6">
+          <Col xs={24} sm={24} md={5} lg={6}>
+            <Button
+              text={<FormattedMessage id="home.buttons.goToSale" />}
+              action={() => {
+                window.location = "https://www.bitfinex.com/t/PNKETH";
+              }}
+              color={"blue"}
+            />
+          </Col>
+          <Col xs={0} sm={0} md={5} lg={6}>
             <Button
               text={<FormattedMessage id="home.buttons.goToSale-3" />}
               action={() => {
@@ -163,6 +164,7 @@ export default ({}) => {
               color={"blue"}
             />
           </Col>
+          <Col />
         </Row>
       </StyledContent>
     </StyledTopSection>
