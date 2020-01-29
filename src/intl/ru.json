@@ -133,9 +133,9 @@
       "joinAsJuror": "Присоединиться как Присяжный",
       "becomeAPartner": "Стать Партнёром",
       "tryKlerosCourt": "Попробовать Суд Kleros",
-      "goToSale": "Купить PNK",
-      "goToSale-2": "Купить PNK",
-      "goToSale-3": "Купить PNK"
+      "goToSale": "Купить PNK на Bitfinex",
+      "goToSale-2": "Купить PNK на IDEX",
+      "goToSale-3": "Купить PNK на Uniswap"
     },
     "progress": {
       "raised": "Собрано",
