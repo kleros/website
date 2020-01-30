@@ -30,8 +30,7 @@ const StyledGradientSection = styled.div`
 export default ({ language }) => {
   return (
     <StyledHome>
-      <Countdown language={language} style={{ marginBottom: "4rem" }} />
-      <StyledDivider />
+      <Countdown language={language} />
       <DecentralizedCourts language={language} />
       <SecretSauce language={language} />
       <InternetEconomy language={language} />

@@ -120,7 +120,7 @@ export default ({}) => {
   };
 
   return (
-    <StyledTopSection>
+    <StyledTopSection style={{ paddingBottom: "3rem", marginBottom: "12rem" }}>
       <StyledSpacer />
       <StyledTopBackground src={TopBackground} />
       <StyledContent>

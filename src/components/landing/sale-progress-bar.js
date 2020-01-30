@@ -9,7 +9,7 @@ import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 const saleTotal = toWei("150000000");
 
 const StyledProgress = styled(Progress)`
-  padding: 20px;
+  padding: 1rem;
   background: rgba(144, 19, 254, 0.7);
   box-shadow: 0px 12px 90px #9013fe;
   border-radius: 300px;
