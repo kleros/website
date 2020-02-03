@@ -69,6 +69,10 @@ export default injectIntl(function(menu) {
                       url: "https://cryptounlocked.wetrust.io"
                     },
                     { text: "Realitio", url: "https://realitio.github.io" },
+                    {
+                      text: "Dispute Resolver",
+                      url: "https://resolve.kleros.io"
+                    },
                     { text: "Kleroscan", url: "http://kleroscan.com/" }
                   ]
                 }}
