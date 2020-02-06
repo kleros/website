@@ -18,6 +18,7 @@ import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 const StyledHome = styled.div`
   color: #fff;
   overflow: hidden;
+  margin: 4vw 0 0 0;
 `;
 const StyledDivider = styled.div`
   border: 1px solid #9013fe;
@@ -30,7 +31,6 @@ const StyledGradientSection = styled.div`
 export default ({ language }) => {
   return (
     <StyledHome>
-      <Countdown language={language} />
       <DecentralizedCourts language={language} />
       <SecretSauce language={language} />
       <InternetEconomy language={language} />
