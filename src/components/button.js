@@ -6,8 +6,8 @@ const StyledButton = styled(Button)`
   &.ant-btn {
     color: #fff !important;
     border-radius: 300px;
-    width: 230px;
-    height: 50px;
+    width: 250px;
+    height: 60px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
