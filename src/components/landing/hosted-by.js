@@ -11,26 +11,26 @@ const HostedByBar = styled.div`
 const StyledThomsonReuters = styled.img`
   margin-top: 4rem;
   margin-bottom: 4rem;
-  width: 50%;
+  width: 100%;
   position: relative;
-
-  @media (max-width: 768px) {
-    width: 80%;
-  }
 `;
 
 export default () => {
   return (
     <HostedByBar>
       <Row style={{ margin: "4rem" }}>
-        <Col span={16}>
-          <img src={ThomsonReuters} style={{ height: "6rem", width: "100%" }} />
+        <Col sm={16} md={16} lg={16} style={{ padding: "1rem 0" }}>
+          <img
+            src={ThomsonReuters}
+            style={{ verticalAlign: "middle", height: "6rem", width: "auto" }}
+          />
         </Col>
-        <Col span={8}>
+        <Col sm={8} md={8} lg={8} style={{ padding: "1rem 0" }}>
           <svg
             viewBox="0 0 568 163"
             version="1.1"
             style={{
+              verticalAlign: "middle",
               "-webkit-filter": "grayscale(100%)",
               filter: "grayscale(100%)",
               filter: "gray",
