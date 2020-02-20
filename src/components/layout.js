@@ -53,6 +53,23 @@ class Template extends React.Component {
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="msapplication-config" content="/img/browserconfig.xml" />
           <meta name="theme-color" content="#ffffff" />
+
+          <meta
+            property="og:title"
+            content="Kleros · The Blockchain Dispute Resolution Layer"
+          />
+          <meta
+            property="og:description"
+            content="Kleros provides fast, secure and affordable arbitration for virtually everything. An ethereum project."
+          />
+          <meta property="og:url" content="https://kleros.io/en/" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            property="og:site_name"
+            content="Kleros · The Blockchain Dispute Resolution Layer"
+          />
+          <meta name="twitter:image:alt" content="Kleros Logo" />
+          <meta name="twitter:site" content="@Kleros_io" />
         </Helmet>
         <Navigation menu={this.props.allContentfulMenu} />
         {children}
