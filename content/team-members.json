@@ -204,5 +204,12 @@
         "fa": "fab fa-linkedin-in"
       }
     ]
+  },
+
+  "henrique": {
+    "name": "Henrique Barcelos",
+    "title": "DApp Developer",
+    "photo": "/img/team/henrique.png",
+    "links": [{ "url": "https://github.com/hbarcelos", "fa": "fab fa-github" }]
   }
 }
