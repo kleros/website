@@ -41,12 +41,17 @@ export default injectIntl(function(menu) {
                   dropdownOptions: [
                     { text: "English", url: "/whitepaper_en.pdf" },
                     {
+                      text: "English (Long Paper)",
+                      url: "/whitepaper_long_en.pdf"
+                    },
+                    {
                       text: "Español",
                       url: "/whitepaper_es.pdf"
                     }
                   ]
                 }}
               />
+
               <Dropdown
                 data={{
                   text: <FormattedMessage id="header.button-dapps" />,
