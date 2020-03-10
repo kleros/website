@@ -39,13 +39,13 @@ export default injectIntl(function(menu) {
                 data={{
                   text: <FormattedMessage id="header.button-white-paper" />,
                   dropdownOptions: [
-                    { text: "English", url: "/whitepaper_en.pdf" },
+                    { text: "English White Paper", url: "/whitepaper_en.pdf" },
                     {
-                      text: "English (Long Paper)",
+                      text: "English Yellow Paper",
                       url: "/whitepaper_long_en.pdf"
                     },
                     {
-                      text: "Español",
+                      text: "Español White Paper",
                       url: "/whitepaper_es.pdf"
                     }
                   ]
