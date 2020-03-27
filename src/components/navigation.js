@@ -78,7 +78,10 @@ export default injectIntl(function(menu) {
                       text: "Dispute Resolver",
                       url: "https://resolve.kleros.io"
                     },
-                    { text: "Kleroscan", url: "http://kleroscan.com/" }
+                    {
+                      text: "Kleroscan (Community Built)",
+                      url: "http://kleroscan.com/"
+                    }
                   ]
                 }}
               />

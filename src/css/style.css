@@ -169,6 +169,7 @@ h6 {
 	background: #050f2c;
 	position: absolute;
 	text-align: left;
+	min-width: min-content;
 	width: 200px;
 }
 
