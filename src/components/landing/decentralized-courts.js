@@ -39,7 +39,7 @@ export default ({ language }) => {
         <FormattedMessage id="home.decentralizedCourts.subheading" />
       </StyledSubHeading>
       <Row style={{ margin: "60px 0px", textAlign: "center" }}>
-        <Col style={{ display: "inline-block", margin: "5rem" }}>
+        <Col style={{ display: "inline-block", margin: "2rem 5rem" }}>
           <Button
             text={<FormattedMessage id="home.buttons.tryKlerosCourt" />}
             action={() => {
@@ -48,7 +48,7 @@ export default ({ language }) => {
             color={"blue"}
           />
         </Col>
-        <Col style={{ display: "inline-block" }}>
+        <Col style={{ display: "inline-block", margin: "2rem 5rem" }}>
           <Link to="/court-tour">
             <Button
               text={<FormattedMessage id="home.buttons.learnMore" />}
