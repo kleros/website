@@ -19,16 +19,7 @@ const StyledButton = styled(Button)`
       cursor: pointer;
     }
 
-    @media (max-width: 843px) {
-      width: 200px;
-    }
-
-    @media (max-width: 767px) {
-      width: 230px;
-    }
-
     @media (max-width: 386px) {
-      width: 170px;
       font-size: 16px;
       line-height: 22px;
     }
