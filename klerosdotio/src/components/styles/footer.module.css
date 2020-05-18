@@ -1,0 +1,110 @@
+.footer {
+  position: relative;
+}
+
+.footer svg {
+  width: 11vmax;
+  height: auto;
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer > div {
+  padding: 3rem 6vw;
+}
+
+.scrollback {
+  background: var(--color-purple) !important;
+  width: 4rem !important;
+  font-size: 2rem;
+  color: white;
+  border-radius: 100% !important;
+  height: auto !important;
+  position: absolute;
+  top: -1.5rem;
+  left: 80%;
+  box-shadow: none !important;
+}
+
+/* .footer::before {
+  content: "↑";
+  background-color: var(--color-purple);
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+  width: 4rem;
+  height: auto;
+  margin-left: 30vw;
+  border-radius: 100%;
+  left: 50%;
+  top: -5.5rem;
+  text-align: center;
+
+  position: absolute;
+
+  z-index: 1;
+} */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(300px - 8vw);
+}
+
+.footer > div > div > div:nth-child(3) {
+  align-self: center;
+  text-align: -webkit-right;
+}
+
+.footer hr {
+  border: 1px solid #9013fe;
+}
+
+@media (max-width: 576px) {
+  .footer > div > div > div:nth-child(2) {
+    align-items: center;
+  }
+}
+
+.footer svg {
+  fill: white;
+}
+
+.footer > div > div:nth-child(3) {
+  justify-content: center;
+}
+
+.bottomContainer {
+  min-width: 300px;
+  max-width: 30vw;
+}
+
+.social {
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.social > a > svg {
+  width: 1.8vmax;
+}
+
+.subscribe > div > input {
+  height: unset;
+  border-radius: 300px !important;
+  background: var(--color-purple-faded);
+  border: none;
+  z-index: 1;
+}
+
+.subscribe > div > div > button {
+  margin-left: -35px;
+  z-index: 30 !important;
+  width: auto;
+  padding: 0 2rem;
+  border-radius: 300px !important;
+}

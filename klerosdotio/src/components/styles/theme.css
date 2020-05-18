@@ -1,0 +1,59 @@
+:root {
+  font-size: 14px;
+  --color-purple-light: #9013fe;
+  --color-purple: #4d00b4;
+  --color-purple-darker: #6700b4;
+  --color-purple-darkest: #1e075f;
+  --color-pink-light: #bd73ff;
+  --color-pink: #d8b6ff;
+  --color-blue-light: #7bcbff;
+  --color-blue: #009aff;
+  --color-purple-faded: rgba(144, 19, 254, 0.2);
+}
+
+main .btn,
+footer .btn {
+  height: 2.7rem;
+  font-weight: 600;
+  border-width: 0;
+  border-radius: 300px;
+  width: 20rem;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+  background: linear-gradient(
+    90deg,
+    var(--color-blue) 0%,
+    var(--color-blue-light) 100%
+  );
+  box-shadow: 0px 12px 90px var(--color-blue);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    270deg,
+    var(--color-blue) 0%,
+    var(--color-blue-light) 100%
+  );
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background: linear-gradient(
+    90deg,
+    var(--color-purple-light) 0%,
+    var(--color-pink-light) 100%
+  );
+  box-shadow: 0px 12px 90px var(--color-purple-light);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(
+    270deg,
+    var(--color-purple-light) 0%,
+    var(--color-pink-light) 100%
+  );
+}

@@ -1,0 +1,105 @@
+.text-purple {
+  color: var(--color-purple) !important;
+}
+
+.text-purple-darker {
+  color: var(--color-purple-darker) !important;
+}
+
+.text-purple-darkest {
+  color: var(--color-purple-darkest) !important;
+}
+
+.text-pink {
+  color: var(--color-pink) !important;
+}
+
+.bg-purple {
+  background-color: var(--color-purple) !important;
+}
+
+.bg-purple-darker {
+  background-color: var(--color-purple-darker) !important;
+}
+
+.bg-purple-darkest {
+  background-color: var(--color-purple-darkest) !important;
+}
+
+.bg-pink {
+  background-color: var(--color-pink) !important;
+}
+
+.f-weight-600 {
+  font-weight: 600;
+}
+
+html {
+  font-family: open-sans;
+  font-size: 1rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+}
+
+main {
+  background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
+  flex: 1;
+  padding-bottom: 2vh;
+}
+footer {
+  margin-top: auto;
+
+  width: 100%;
+
+  background-color: var(--color-purple);
+}
+
+#gatsby-focus-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a,
+p,
+small {
+  color: var(--color-pink);
+  white-space: nowrap;
+}
+
+a:hover {
+  color: white;
+}
+
+footer a,
+footer p,
+footer small {
+  font-size: 1.285714286rem;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
