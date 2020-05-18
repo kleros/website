@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
@@ -29,6 +28,8 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap"
+
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 
 const Footer = ({}) => {
   return (
@@ -325,4 +326,4 @@ const Footer = ({}) => {
   )
 }
 
-export default Footer
+export default injectIntl(Footer)

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
@@ -24,9 +23,27 @@ import {
   Badge,
 } from "react-bootstrap"
 
-const Header = ({}) => {
-  const [language, setLanguage] = useState("🇬🇧")
+import {
+  injectIntl,
+  Link,
+  FormattedMessage,
+  IntlContextConsumer,
+  changeLocale,
+} from "gatsby-plugin-intl"
 
+const FLAGS = {
+  en: "🇬🇧",
+  tr: "🇹🇷",
+  fr: "🇫🇷",
+  ru: "🇷🇺",
+  es: "🇪🇸",
+  pt: "🇵🇹",
+  br: "🇧🇷",
+  zh: "🇨🇳",
+  ko: "🇰🇷",
+}
+
+const Header = ({}) => {
   return (
     <header className={styles.header}>
       <Navbar collapseOnSelect expand="lg" variant="dark">
@@ -44,97 +61,50 @@ const Header = ({}) => {
               aria-controls="dapps"
               className={`position-relative px-lg-2 pl-0 collapsed`}
             >
-              DApps
+              <FormattedMessage id="header.dapps" />
             </Button>
             <Link to="/integrations" className="text-pink nav-link">
-              Integrations
+              <FormattedMessage id="header.integrations" />
             </Link>
             <Link to="/research" className="text-pink nav-link">
-              Research
+              <FormattedMessage id="header.research" />
             </Link>
             <Nav.Link className="text-pink" href="https://blog.kleros.io">
-              Blog
+              <FormattedMessage id="header.blog" />
             </Nav.Link>
             <Link to="/about" className="text-pink nav-link">
-              About
+              <FormattedMessage id="header.about" />
             </Link>
           </Nav>
           <Nav>
-            <NavDropdown
-              alignRight
-              title={language}
-              className="d-inline-flex h3"
-            >
-              {language != "🇬🇧" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2 "
-                  onClick={() => setLanguage("🇬🇧")}
-                  role="button"
-                >
-                  🇬🇧
-                </NavDropdown.Item>
-              )}
-              {language != "🇹🇷" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => setLanguage("🇹🇷")}
-                  role="button"
-                >
-                  🇹🇷
-                </NavDropdown.Item>
-              )}
-              {language != "🇪🇸" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => setLanguage("🇪🇸")}
-                  role="button"
-                >
-                  🇪🇸
-                </NavDropdown.Item>
-              )}
-              {language != "🇫🇷" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => setLanguage("🇫🇷")}
-                  role="button"
-                >
-                  🇫🇷
-                </NavDropdown.Item>
-              )}
-              {language != "🇵🇹" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => {
-                    setLanguage("🇵🇹")
-                  }}
-                  role="button"
-                >
-                  🇵🇹
-                </NavDropdown.Item>
-              )}
-              {language != "🇨🇳" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => {
-                    setLanguage("🇨🇳")
-                  }}
-                  role="button"
-                >
-                  🇨🇳
-                </NavDropdown.Item>
-              )}
-              {language != "🇷🇺" && (
-                <NavDropdown.Item
-                  className="h3 text-right px-2"
-                  onClick={() => {
-                    setLanguage("🇷🇺")
-                  }}
-                  role="button"
-                >
-                  🇷🇺
-                </NavDropdown.Item>
-              )}
-            </NavDropdown>
+            <IntlContextConsumer>
+              {({ languages, language: currentLocale }) => {
+                const items = languages
+                  .filter(language => language != currentLocale)
+                  .map(language => (
+                    <NavDropdown.Item
+                      key={language}
+                      title={language}
+                      className="h3 text-right px-2 "
+                      onClick={() => {
+                        changeLocale(language)
+                      }}
+                    >
+                      {FLAGS[language] || language}
+                    </NavDropdown.Item>
+                  ))
+
+                return (
+                  <NavDropdown
+                    alignRight
+                    title={FLAGS[currentLocale]}
+                    className="d-inline-flex h3"
+                  >
+                    {items}
+                  </NavDropdown>
+                )
+              }}
+            </IntlContextConsumer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -228,4 +198,4 @@ const Header = ({}) => {
   )
 }
 
-export default Header
+export default injectIntl(Header)
