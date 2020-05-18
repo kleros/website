@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "react-responsive-modal";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
-export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
+export default injectIntl(function ({ menu, onCloseModal, onOpenModal, open }) {
   return (
     <footer className="ca_footer">
       <Modal
@@ -10,7 +10,7 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
         onClose={onCloseModal}
         center
         classNames={{
-          modal: "customModal"
+          modal: "customModal",
         }}
       >
         <h2>Download Book</h2>
@@ -19,7 +19,7 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
             EPUB FORMAT
           </a>
           <a
-            href="https://ipfs.kleros.io/ipfs/QmZeV32S2VoyUnqJsRRCh75F1fP2AeomVq2Ury2fTt9V4z/Dispute-Resolution-Kleros.pdf"
+            href="/book/Dispute-Resolution-Kleros.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
