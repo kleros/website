@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -23,7 +23,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/kleros.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/images/kleros.svg`, // This path is relative to the root of the site.
       },
     },
     {
@@ -43,7 +43,7 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `ko`, `es`, `ru`, `fr`, "tr", "pt", "zh", "br"],
+        languages: [`en`, `ko`, `es`, `ru`, `fr`, "tr", "pt", "zh", "pt-br"],
         // language file path
         defaultLanguage: `en`,
         // option to redirect to `/en` when connecting `/`

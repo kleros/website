@@ -1,16 +1,16 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-import Logo from "../images/brand.svg"
-import Court from "../images/kleros.svg"
-import Curate from "../images/curate.svg"
-import Escrow from "../images/escrow.svg"
-import T2CR from "../images/t2cr.svg"
-import DisputeResolver from "../images/dispute-resolver.svg"
-import Ninja from "../images/ninja.svg"
-import Linguo from "../images/linguo.svg"
-import CU from "../images/kleros.svg"
-import Realitio from "../images/kleros.svg"
+import Logo from "../assets/images/brand.svg"
+import Court from "../assets/images/kleros.svg"
+import Curate from "../assets/images/curate.svg"
+import Escrow from "../assets/images/escrow.svg"
+import T2CR from "../assets/images/t2cr.svg"
+import DisputeResolver from "../assets/images/dispute-resolver.svg"
+import Ninja from "../assets/images/ninja.svg"
+import Linguo from "../assets/images/linguo.svg"
+import CU from "../assets/images/kleros.svg"
+import Realitio from "../assets/images/kleros.svg"
 
 import styles from "./styles/header.module.css"
 import {
@@ -38,7 +38,7 @@ const FLAGS = {
   ru: "🇷🇺",
   es: "🇪🇸",
   pt: "🇵🇹",
-  br: "🇧🇷",
+  "pt-br": "🇧🇷",
   zh: "🇨🇳",
   ko: "🇰🇷",
 }

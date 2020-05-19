@@ -17,7 +17,8 @@ footer .btn {
   font-weight: 600;
   border-width: 0;
   border-radius: 300px;
-  width: 20rem;
+  max-width: 20rem;
+  width: -webkit-fill-available;
 }
 
 .btn-primary,

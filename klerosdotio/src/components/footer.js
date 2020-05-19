@@ -1,16 +1,30 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 
-import Logo from "../images/brand_white.svg"
-import Court from "../images/kleros.svg"
-import Curate from "../images/curate.svg"
-import Escrow from "../images/escrow.svg"
-import T2CR from "../images/t2cr.svg"
-import DisputeResolver from "../images/dispute-resolver.svg"
-import Ninja from "../images/ninja.svg"
-import Linguo from "../images/linguo.svg"
-import CU from "../images/kleros.svg"
-import Realitio from "../images/kleros.svg"
+import Logo from "../assets/images/brand_white.svg"
+import Court from "../assets/images/kleros.svg"
+import Curate from "../assets/images/curate.svg"
+import Escrow from "../assets/images/escrow.svg"
+import T2CR from "../assets/images/t2cr.svg"
+import DisputeResolver from "../assets/images/dispute-resolver.svg"
+import Ninja from "../assets/images/ninja.svg"
+import Linguo from "../assets/images/linguo.svg"
+import CU from "../assets/images/kleros.svg"
+import Realitio from "../assets/images/kleros.svg"
+
+import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf"
+import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf"
+import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf"
+import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf"
+import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf"
+import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf"
+import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf"
+import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf"
+
+import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf"
+import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf"
+
+import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf"
 
 import styles from "./styles/footer.module.css"
 import {
@@ -31,76 +45,108 @@ import {
 
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 
-const Footer = ({}) => {
+const ONEPAGERS = {
+  en: OnePagerEN,
+  tr: OnePagerTR,
+  fr: OnePagerFR,
+  es: OnePagerES,
+  ko: OnePagerKO,
+  ru: OnePagerRU,
+  zh: OnePagerZH,
+}
+
+const WHITE_PAPERS = {
+  en: WhitePaperEN,
+  es: WhitePaperES,
+}
+
+const YELLOW_PAPERS = {
+  en: YellowPaperEN,
+}
+
+const Footer = ({ intl }) => {
   return (
     <footer className={styles.footer}>
       <Container fluid>
         <Row>
-          <Col className="d-none d-sm-block" xs={5} sm={4} md={3}>
+          <Col className="d-none d-lg-block">
             <Logo />
           </Col>
-          <Col xs className={styles.links}>
-            <a className="mr-3" href="/about">
-              About
+          <Col xs={12} lg={6} className={styles.links}>
+            <Link className="mr-3" to="/about">
+              <FormattedMessage id="footer.about" />
+            </Link>
+            <Link className="mr-3" to="/coop">
+              <FormattedMessage id="footer.cooperative" />
+            </Link>
+            <a
+              className="mr-3"
+              href={
+                WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]
+              }
+            >
+              <FormattedMessage id="footer.whitepaper" />
             </a>
-            <a className="mr-3" href="/about">
-              Cooperative
+            <a
+              className="mr-3"
+              href={
+                YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]
+              }
+            >
+              <FormattedMessage id="footer.yellowpaper" />
             </a>
-            <a className="mr-3" href="/about">
-              White Paper
+            <a
+              className="mr-3"
+              href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]}
+            >
+              <FormattedMessage id="footer.onepager" />
             </a>
-            <a className="mr-3" href="/about">
-              Yellow Paper
+            <Link className="mr-3" to="/research">
+              <FormattedMessage id="footer.research" />
+            </Link>
+            <Link className="mr-3" to="/token">
+              <FormattedMessage id="footer.pnktoken" />
+            </Link>
+            <a className="mr-3" href="https://developer.kleros.io">
+              <FormattedMessage id="footer.developer" />
             </a>
-            <a className="mr-3" href="/about">
-              One Pager{" "}
+            <Link className="mr-3" to="/integrations">
+              <FormattedMessage id="footer.integrations" />
+            </Link>
+            <a className="mr-3" href="https://governance.kleros.io">
+              <FormattedMessage id="footer.governance" />
             </a>
-            <a className="mr-3" href="/about">
-              Research
+            <Link className="mr-3" to="/escrow">
+              <FormattedMessage id="footer.escrow" />
+            </Link>
+            <Link className="mr-3" to="/curate">
+              <FormattedMessage id="footer.curate" />
+            </Link>
+            <Link className="mr-3" to="/fellowship">
+              <FormattedMessage id="footer.fellowship" />
+            </Link>
+            <Link className="mr-3" to="/community">
+              <FormattedMessage id="footer.community" />
+            </Link>
+            <a className="mr-3" href="https://blog.kleros.io">
+              <FormattedMessage id="footer.blog" />
             </a>
-            <a className="mr-3" href="/about">
-              PNK Token
-            </a>
-            <a className="mr-3" href="/about">
-              Developer
-            </a>
-            <a className="mr-3" href="/about">
-              Integrations
-            </a>
-            <a className="mr-3" href="/about">
-              Governance
-            </a>
-            <a className="mr-3" href="/about">
-              Escrow
-            </a>
-            <a className="mr-3" href="/about">
-              Curate
-            </a>
-            <a className="mr-3" href="/about">
-              Fellowship
-            </a>
-            <a className="mr-3" href="/about">
-              Community
-            </a>
-            <a className="mr-3" href="/about">
-              Blog
-            </a>
-            <a className="mr-3" href="/about">
-              Media
-            </a>
-            <a className="mr-3" href="/about">
-              Book
-            </a>
-            <a className="mr-3" href="/about">
-              FAQ
-            </a>
+            <Link className="mr-3" to="/media">
+              <FormattedMessage id="footer.media" />
+            </Link>
+            <Link className="mr-3" to="/book">
+              <FormattedMessage id="footer.book" />
+            </Link>
+            <Link className="mr-3" to="/faq">
+              <FormattedMessage id="footer.faq" />
+            </Link>
           </Col>
-          <Col className="d-none d-md-block">
+          <Col className="d-none d-lg-block">
             <Button className="d-block mb-4" variant="primary">
-              Join as a Juror
+              <FormattedMessage id="footer.button-primary" />
             </Button>
             <Button className="d-block" variant="secondary">
-              Become a Partner
+              <FormattedMessage id="footer.button-secondary" />
             </Button>
           </Col>
         </Row>
@@ -298,17 +344,25 @@ const Footer = ({}) => {
             </a>
           </Row>
           <Row className="justify-content-center">
-            <p className="text-center text-white ">Stay Updated </p>
+            <p className="text-center text-white ">
+              <FormattedMessage id="footer.subscribe-title" />
+            </p>
           </Row>
           <Row className={styles.subscribe}>
             <InputGroup className="mb-3">
               <FormControl
-                placeholder="your@email.com"
-                aria-label="your@email.com"
+                placeholder={intl.formatMessage({
+                  id: "footer.subscribe-placeholder",
+                })}
+                aria-label={intl.formatMessage({
+                  id: "footer.subscribe-placeholder",
+                })}
                 aria-describedby="subscribe"
               />
               <InputGroup.Append>
-                <Button variant="primary">Subscribe</Button>
+                <Button variant="primary">
+                  <FormattedMessage id="footer.subscribe-button" />
+                </Button>
               </InputGroup.Append>
             </InputGroup>
           </Row>
@@ -316,7 +370,8 @@ const Footer = ({}) => {
       </Container>
 
       <p className="d-block text-center">
-        Copyright {new Date().getFullYear()} © Kleros
+        <FormattedMessage id="footer.copyright" /> {new Date().getFullYear()} ©
+        Kleros
       </p>
 
       <Button href="#gatsby-focus-wrapper" className={styles.scrollback}>

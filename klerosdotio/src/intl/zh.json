@@ -5,5 +5,31 @@
     "research": "research",
     "blog": "blog",
     "about": "about"
+  },
+  "footer": {
+    "about": "About",
+    "cooperative": "Copperative",
+    "whitepaper": "White Paper",
+    "yellowpaper": "Yellow Paper",
+    "onepager": "One Pager",
+    "research": "Research",
+    "pnktoken": "PNK Token",
+    "developer": "Developer",
+    "integrations": "Integrations",
+    "governance": "Governance",
+    "escrow": "Escrow",
+    "curate": "Curate",
+    "fellowship": "Fellowship",
+    "community": "Community",
+    "blog": "Blog",
+    "media": "Media",
+    "book": "Book",
+    "faq": "FAQ",
+    "subscribe-title": "Stay Updated",
+    "subscribe-placeholder": "your@email.com",
+    "subscribe-button": "Subscribe",
+    "button-primary": "Join as a Juror",
+    "button-secondary": "Become a Partner",
+    "copyright": "Copyright"
   }
 }
