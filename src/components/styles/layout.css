@@ -36,12 +36,9 @@
   font-weight: 600;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-}
-
 body {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

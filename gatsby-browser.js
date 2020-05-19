@@ -8,6 +8,8 @@
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
+import "./src/components/styles/layout.css"
+import "./src/components/styles/theme.css"
 
 // import "jquery/dist/jquery.min.js"
 // import "popper.js/dist/popper.min"
