@@ -8,12 +8,12 @@
   --color-purple: #4d00b4; /* Kleros Main Purple */
   --color-purple-darker: #6700b4;
   --color-purple-darkest: #1e075f;
+  --color-purple-faded: #9013fe33;
   --color-pink-light: #bd73ff;
   --color-pink: #d8b6ff; /* (90% of all texts when over purple background) */
+  --color-pink-dark: #824ccb; /* (texts when over white background) */
   --color-blue-light: #7bcbff;
   --color-blue: #009aff;
-  --color-purple-faded: #9013fe33;
-  --color-wtf: #824ccb; /* (texts when over white background) */
 }
 
 h1 {

@@ -86,6 +86,14 @@ footer small {
   z-index: 1;
 }
 
+.subscribe > div > input:enabled {
+  color: var(--color-pink-dark);
+}
+
+.subscribe > div > input::placeholder {
+  color: var(--color-pink);
+}
+
 .subscribe > div > div > button {
   margin-left: -35px;
   z-index: 30 !important;
