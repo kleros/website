@@ -1,21 +1,52 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Collapse,
+  Card,
+  Button,
+  Badge,
+  Container,
+} from "react-bootstrap"
+
+import {
+  injectIntl,
+  Link,
+  FormattedMessage,
+  IntlContextConsumer,
+  changeLocale,
+} from "gatsby-plugin-intl"
+
+import styles from "./styles/index.module.css"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Container as="main" fluid className={styles.index}>
+      <h1>
+        <FormattedMessage id="index.h1" />
+      </h1>
+      <h2>
+        <FormattedMessage id="index.h2" />
+      </h2>
+
+      <Container className={styles.buttonWrapper}>
+        <Button variant="primary">
+          <FormattedMessage id="index.hero.button-primary" />
+        </Button>
+        <Button variant="secondary">
+          <FormattedMessage id="index.hero.button-secondary" />
+        </Button>
+      </Container>
+      <img src="/index-hero.png" />
+    </Container>
   </Layout>
 )
 
-export default IndexPage
+export default injectIntl(IndexPage)

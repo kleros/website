@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
 .text-purple {
   color: var(--color-purple) !important;
 }
@@ -35,7 +37,7 @@
 }
 
 html {
-  font-family: open-sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -77,10 +79,13 @@ a:hover {
   color: white;
 }
 
-footer a,
-footer p,
-footer small {
-  font-size: 1.285714286rem;
+h1 {
+}
+
+h2 {
+}
+
+h3 {
 }
 
 article,

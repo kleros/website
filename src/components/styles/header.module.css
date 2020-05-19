@@ -2,6 +2,12 @@
   background-color: var(--color-purple-darkest);
 }
 
+.header a,
+.header button,
+.header p {
+  font-weight: 500 !important;
+}
+
 .header button,
 .header button:hover,
 .header button:active,

@@ -2,6 +2,12 @@
   position: relative;
 }
 
+footer a,
+footer p,
+footer small {
+  font-size: 1.285714286rem !important;
+}
+
 .footer svg {
   width: 20vmin;
   height: auto;
@@ -19,12 +25,12 @@
 .scrollback {
   background: var(--color-purple) !important;
   width: 4rem !important;
-  font-size: 2rem;
+  font-size: 2rem !important;
   color: white;
   border-radius: 100% !important;
   height: auto !important;
   position: absolute;
-  top: -1.5rem;
+  top: -1.3rem;
   left: 80%;
   box-shadow: none !important;
   min-width: auto !important;

@@ -1,0 +1,35 @@
+.index {
+  text-align: center;
+}
+
+.index img {
+  max-width: 85vw;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.index h1,
+.index h2 {
+  text-align: center;
+}
+
+.index > h1 {
+  margin-top: 3rem;
+}
+
+.index > img {
+  margin-top: 3rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.index .buttonWrapper button {
+  margin-top: 1.5rem;
+}

@@ -32,5 +32,14 @@
     "button-primary": "Join as a Juror",
     "button-secondary": "Become a Partner",
     "copyright": "Copyright"
+  },
+
+  "index": {
+    "h1": "Decentralized Courts",
+    "h2": "An open online dispute resolution platform bringing justice for all.",
+    "hero": {
+      "button-primary": "Try Kleros Court",
+      "button-secondary": "Integrate Your Product"
+    }
   }
 }

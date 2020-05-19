@@ -1,24 +1,42 @@
 :root {
   font-size: 14px;
-  --color-purple-light: #9013fe;
-  --color-purple: #4d00b4;
+  --font-size-medium: 18px;
+  --font-size-big: 24px;
+  --font-size-bigger: 36px;
+  --font-size-huge: 54px;
+  --color-purple-light: #9013fe; /* (Side menu titles eg. Use Cases, Get Started, Media) */
+  --color-purple: #4d00b4; /* Kleros Main Purple */
   --color-purple-darker: #6700b4;
   --color-purple-darkest: #1e075f;
   --color-pink-light: #bd73ff;
-  --color-pink: #d8b6ff;
+  --color-pink: #d8b6ff; /* (90% of all texts when over purple background) */
   --color-blue-light: #7bcbff;
   --color-blue: #009aff;
-  --color-purple-faded: rgba(144, 19, 254, 0.2);
+  --color-purple-faded: #9013fe33;
+  --color-wtf: #824ccb; /* (texts when over white background) */
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: var(--font-size-huge);
+}
+
+h2 {
+  color: var(--color-pink);
+  font-weight: normal;
+  font-size: var(--font-size-big);
 }
 
 main .btn,
 footer .btn {
-  height: 2.7rem;
+  height: 3.2rem;
   font-weight: 600;
   border-width: 0;
   border-radius: 300px;
   max-width: 20rem;
   width: -webkit-fill-available;
+  font-size: 1.285714286rem;
 }
 
 .btn-primary,
