@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Sash from "../components/sash.js"
 
 import {
   Navbar,
@@ -25,9 +26,9 @@ import {
 
 import styles from "./styles/index.module.css"
 
-const IndexPage = () => (
+const IndexPage = ({ intl }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" lang={intl.locale} />
     <Container as="main" fluid className={styles.index}>
       <h1>
         <FormattedMessage id="index.h1" />
@@ -45,6 +46,7 @@ const IndexPage = () => (
         </Button>
       </Container>
       <img src="/index-hero.png" />
+      <Sash />
     </Container>
   </Layout>
 )

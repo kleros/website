@@ -6,7 +6,8 @@
   max-width: 85vw;
   display: block;
   margin: auto;
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .index h1,

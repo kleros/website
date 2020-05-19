@@ -46,10 +46,10 @@ const FLAGS = {
 const Header = ({}) => {
   return (
     <header className={styles.header}>
-      <Navbar collapseOnSelect expand="lg" variant="dark">
-        <Navbar.Brand href="/">
+      <Navbar collapseOnSelect expand="lg">
+        <Link className="navbar-brand" to="/">
           <Logo />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto">
@@ -108,7 +108,7 @@ const Header = ({}) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Collapse className="collapse" id="dapps">
+      <Collapse className="collapse" id="dapps" className={styles.dapps}>
         <Card>
           <Card.Body className="px-5 py-3 text-center">
             <div className="d-inline-block">

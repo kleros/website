@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kleros`,
     description: `The blockchain dispute resolution layer. Fast, open and affordable justice for all.`,
-    author: `@kleros`,
+    author: `Kleros`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
