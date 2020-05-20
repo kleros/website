@@ -1,5 +1,7 @@
 :root {
   font-size: 14px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
   --font-size-medium: 18px;
   --font-size-big: 24px;
   --font-size-bigger: 36px;

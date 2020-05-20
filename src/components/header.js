@@ -46,7 +46,7 @@ const FLAGS = {
 const Header = ({}) => {
   return (
     <header className={styles.header}>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" variant="dark">
         <Link className="navbar-brand" to="/">
           <Logo />
         </Link>

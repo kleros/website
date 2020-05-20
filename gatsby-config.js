@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Kleros`,
@@ -48,6 +50,13 @@ module.exports = {
         defaultLanguage: `en`,
         // option to redirect to `/en` when connecting `/`
         redirect: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        src: path.join(__dirname, "src"),
+        pages: path.join(__dirname, "src/pages"),
       },
     },
   ],

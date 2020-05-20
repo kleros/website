@@ -46,7 +46,37 @@ const IndexPage = ({ intl }) => (
         </Button>
       </Container>
       <img src="/index-hero.png" />
-      <Sash />
+      <Sash
+        figures={{
+          first: {
+            title: intl.formatMessage({
+              id: "index.sash.first.title",
+            }),
+            paragraph: intl.formatMessage({
+              id: "index.sash.first.paragraph",
+            }),
+            icon: "scales",
+          },
+          second: {
+            title: intl.formatMessage({
+              id: "index.sash.second.title",
+            }),
+            paragraph: intl.formatMessage({
+              id: "index.sash.second.paragraph",
+            }),
+            icon: "epsilon",
+          },
+          third: {
+            title: intl.formatMessage({
+              id: "index.sash.third.title",
+            }),
+            paragraph: intl.formatMessage({
+              id: "index.sash.third.paragraph",
+            }),
+            icon: "kleros",
+          },
+        }}
+      />
     </Container>
   </Layout>
 )

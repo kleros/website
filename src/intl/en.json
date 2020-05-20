@@ -40,6 +40,20 @@
     "hero": {
       "button-primary": "Try Kleros Court",
       "button-secondary": "Integrate Your Product"
+    },
+    "sash": {
+      "first": {
+        "title": "Peer-to-Peer",
+        "paragraph": "A global community of users serving as jurors."
+      },
+      "second": {
+        "title": "Advanced Cryptoeconomics",
+        "paragraph": "Blockchain and game theroy bring fast, affordable and fair decisions."
+      },
+      "third": {
+        "title": "Multi Purpose",
+        "paragraph": "Kleros works in a wide variety of industries."
+      }
     }
   }
 }

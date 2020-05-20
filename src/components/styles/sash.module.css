@@ -1,4 +1,22 @@
 .sash {
   background: white;
-  height: 400px;
+  padding: 3rem;
+}
+
+.sash span {
+  display: block;
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.sash span:first-child {
+  font-size: var(--font-size-bigger);
+}
+
+.sash span:nth-child(2) {
+  font-size: var(--font-size-medium);
+}
+
+.sash figure {
+  margin-top: 4rem;
 }
