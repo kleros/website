@@ -106,6 +106,10 @@ a:hover {
   color: white;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
 }
 

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Sash from "../components/sash.js"
-import Card from "../components/card.js"
+import HorizontalCard from "../components/horizontal-card.js"
 
 import {
   Navbar,
@@ -32,18 +32,18 @@ const IndexPage = ({ intl }) => (
     <Container as="main" fluid className={styles.index}>
       <section className={styles.hero}>
         <h1>
-          <FormattedMessage id="index.h1" />
+          <FormattedMessage id="index.section-hero.h1" />
         </h1>
         <h2>
-          <FormattedMessage id="index.h2" />
+          <FormattedMessage id="index.section-hero.h2" />
         </h2>
 
         <Container className={styles.buttonWrapper}>
           <Button variant="primary">
-            <FormattedMessage id="index.hero.button-primary" />
+            <FormattedMessage id="index.section-hero.button-primary" />
           </Button>
           <Button variant="secondary">
-            <FormattedMessage id="index.hero.button-secondary" />
+            <FormattedMessage id="index.section-hero.button-secondary" />
           </Button>
         </Container>
         <img src="/index-hero.png" />
@@ -95,64 +95,69 @@ const IndexPage = ({ intl }) => (
 
       <hr />
       <section className={styles.usecases}>
-        <h1>{intl.formatMessage({ id: "index.use-cases.h1" })}</h1>
-        <h2>{intl.formatMessage({ id: "index.use-cases.h2" })}</h2>
+        <h1>{intl.formatMessage({ id: "index.section-2.h1" })}</h1>
+        <h2>{intl.formatMessage({ id: "index.section-2.h2" })}</h2>
         <div className={styles.cards}>
-          <Card
+          <HorizontalCard
             content={{
               icon: "smallClaims",
-              text: intl.formatMessage({ id: "index.use-cases.cards.1" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.1" }),
             }}
           />
-          <Card
+          <HorizontalCard
             content={{
               icon: "insurance",
-              text: intl.formatMessage({ id: "index.use-cases.cards.2" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.2" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "eCommerce",
-              text: intl.formatMessage({ id: "index.use-cases.cards.3" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.3" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "finance",
-              text: intl.formatMessage({ id: "index.use-cases.cards.4" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.4" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "freelancing",
-              text: intl.formatMessage({ id: "index.use-cases.cards.5" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.5" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "token",
-              text: intl.formatMessage({ id: "index.use-cases.cards.6" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.6" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "moderation",
-              text: intl.formatMessage({ id: "index.use-cases.cards.7" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.7" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "copyright",
-              text: intl.formatMessage({ id: "index.use-cases.cards.8" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.8" }),
             }}
           />{" "}
-          <Card
+          <HorizontalCard
             content={{
               icon: "plus",
-              text: intl.formatMessage({ id: "index.use-cases.cards.9" }),
+              text: intl.formatMessage({ id: "index.section-2.cards.9" }),
             }}
           />
         </div>
+      </section>
+      <section>
+        <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
+        <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
+        <img src="/cases-disputes.png" />
       </section>
     </Container>
   </Layout>

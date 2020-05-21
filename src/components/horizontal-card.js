@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 
-import styles from "./styles/card.module.css"
+import styles from "./styles/horizontal-card.module.css"
 
 import copyright from "src/assets/icons/copyright.png"
 import eCommerce from "src/assets/icons/e-commerce.png"
@@ -53,13 +53,13 @@ const ICONS = {
   token,
 }
 
-const Card = ({ content, intl }) => (
-  <Container fluid className={styles.card}>
+const HorizontalCard = ({ content, intl }) => (
+  <Container fluid className={styles.horizontalCard}>
     <img src={ICONS[content.icon]} />
     <span>{content.text}</span>
   </Container>
 )
 
-Card.propTypes = {}
+HorizontalCard.propTypes = {}
 
-export default injectIntl(Card)
+export default injectIntl(HorizontalCard)

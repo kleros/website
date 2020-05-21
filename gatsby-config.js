@@ -22,17 +22,17 @@ module.exports = {
       options: {
         name: `Kleros`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#4d00b4`,
+        theme_color: `#d8b6ff`,
         display: `minimal-ui`,
-        icon: `src/assets/images/kleros.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/logos/kleros.svg`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images/,
+          include: /logos/,
         },
       },
     },

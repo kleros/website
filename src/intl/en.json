@@ -35,12 +35,13 @@
   },
 
   "index": {
-    "h1": "Decentralized Courts",
-    "h2": "An open online dispute resolution platform bringing justice for all.",
-    "hero": {
+    "section-hero": {
+      "h1": "Decentralized Courts",
+      "h2": "An open online dispute resolution platform bringing justice for all.",
       "button-primary": "Try Kleros Court",
       "button-secondary": "Integrate Your Product"
     },
+
     "sash": {
       "first": {
         "title": "Peer-to-Peer",
@@ -55,7 +56,7 @@
         "paragraph": "Kleros works in a wide variety of industries."
       }
     },
-    "use-cases": {
+    "section-2": {
       "h1": "Use Cases",
       "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be sovled by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",
       "cards": {
@@ -69,6 +70,11 @@
         "8": "Intellectual Property",
         "9": "More"
       }
+    },
+
+    "section-3": {
+      "h1": "Justice as a Service",
+      "h2": "You send your cases. Kleros sends back a decision."
     }
   }
 }

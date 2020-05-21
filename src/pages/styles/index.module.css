@@ -3,9 +3,6 @@
 }
 
 .hero img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
