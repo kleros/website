@@ -5,21 +5,17 @@
 footer a,
 footer p,
 footer small {
-  font-size: 1.285714286rem !important;
+  font-size: 18px !important;
 }
 
 .footer svg {
-  width: 20vmin;
+  width: 16rem;
   height: auto;
   margin: 0;
 }
 
 .footer a {
   text-decoration: none;
-}
-
-.footer > div {
-  padding: 3rem 6vw;
 }
 
 .scrollback {
@@ -48,10 +44,6 @@ footer small {
   text-align: -webkit-right;
 }
 
-.footer hr {
-  border: 1px solid #9013fe;
-}
-
 .footer > div > div > div:nth-child(2) {
   text-align-last: center;
 }
@@ -75,7 +67,7 @@ footer small {
 }
 
 .social > a > svg {
-  width: 3.2vmin;
+  width: 2rem;
 }
 
 .subscribe > div > input {

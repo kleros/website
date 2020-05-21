@@ -32,9 +32,28 @@
   background-color: var(--color-pink) !important;
 }
 
-.f-weight-600 {
-  font-weight: 600;
+/* .text-4 {
+  font-size: 1rem;
+  font-weight: var(--font-weight-normal);
 }
+
+.text-3 {
+  font-size: var(--font-size-medium);
+  color: var(--color-pink);
+  font-weight: var(--font-weight-normal);
+}
+.text-2 {
+  font-size: var(--font-size-medium);
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-1 {
+  font-size: var(--font-size-bigger);
+  color: var(--color-purple);
+
+  font-weight: var(--font-weight-bold);
+} */
 
 body {
   font-family: "Open Sans", sans-serif !important;
@@ -48,13 +67,22 @@ body {
 main {
   background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
   flex: 1;
-  padding-bottom: 2vh;
+  padding-bottom: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+section {
+  margin: 0 6vw;
+  margin-top: 5vh;
+}
+section:last-of-type {
+  margin-bottom: 5vh;
+}
+
 footer {
   margin-top: auto;
-
+  padding: 3rem 6vw;
   width: 100%;
 
   background-color: var(--color-purple);
@@ -106,4 +134,19 @@ canvas,
 progress,
 video {
   display: inline-block;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }

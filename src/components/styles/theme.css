@@ -19,15 +19,15 @@
 }
 
 h1 {
-  color: white;
-  font-weight: 600;
   font-size: var(--font-size-huge);
+  color: white;
+  font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  color: var(--color-pink);
-  font-weight: normal;
   font-size: var(--font-size-big);
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
 }
 
 main .btn,
@@ -77,4 +77,8 @@ footer .btn {
     var(--color-purple-light) 0%,
     var(--color-pink-light) 100%
   );
+}
+
+hr {
+  border: 1px solid var(--color-purple-light);
 }

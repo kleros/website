@@ -54,6 +54,21 @@
         "title": "Multi Purpose",
         "paragraph": "Kleros works in a wide variety of industries."
       }
+    },
+    "use-cases": {
+      "h1": "Use Cases",
+      "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be sovled by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",
+      "cards": {
+        "1": "Small Claims",
+        "2": "Insurance",
+        "3": "E-Commerce",
+        "4": "Finance",
+        "5": "Freelancing",
+        "6": "Token Listing",
+        "7": "Content Moderation",
+        "8": "Intellectual Property",
+        "9": "More"
+      }
     }
   }
 }
