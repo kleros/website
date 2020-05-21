@@ -75,6 +75,10 @@
     "section-3": {
       "h1": "Justice as a Service",
       "h2": "You send your cases. Kleros sends back a decision."
+    },
+
+    "dapps": {
+      "h1": "Our Products & Integrations"
     }
   }
 }

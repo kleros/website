@@ -117,9 +117,7 @@ const Header = ({}) => {
                   <Court />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                Court
-              </p>
+              <p className="text-center text-purple-darker ">Court</p>
             </div>
             <div className="d-inline-block">
               <a href="https://escrow.kleros.io">
@@ -127,9 +125,7 @@ const Header = ({}) => {
                   <Escrow />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                Escrow
-              </p>
+              <p className="text-center text-purple-darker ">Escrow</p>
             </div>
             <div className="d-inline-block">
               <a href="https://linguo.kleros.io">
@@ -137,9 +133,7 @@ const Header = ({}) => {
                   <Linguo />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                Linguo
-              </p>
+              <p className="text-center text-purple-darker ">Linguo</p>
             </div>
             <div className="d-inline-block">
               <a href="https://tokens.kleros.io">
@@ -147,9 +141,7 @@ const Header = ({}) => {
                   <T2CR />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                T2CR
-              </p>
+              <p className="text-center text-purple-darker ">T2CR</p>
             </div>
             <div className="d-inline-block">
               <a href="https://uniswap.ninja">
@@ -157,9 +149,7 @@ const Header = ({}) => {
                   <Ninja />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                Ninja
-              </p>
+              <p className="text-center text-purple-darker ">Ninja</p>
             </div>
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
@@ -167,7 +157,7 @@ const Header = ({}) => {
                   <DisputeResolver />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
+              <p className="text-center text-purple-darker ">
                 Dispute Resolver
               </p>
             </div>
@@ -177,9 +167,7 @@ const Header = ({}) => {
                   <CU />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600">
-                Crypto Unlocked
-              </p>
+              <p className="text-center text-purple-darker ">Crypto Unlocked</p>
             </div>
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
@@ -187,9 +175,7 @@ const Header = ({}) => {
                   <Realitio />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker f-weight-600 ">
-                Realitio
-              </p>
+              <p className="text-center text-purple-darker  ">Realitio</p>
             </div>
           </Card.Body>
         </Card>

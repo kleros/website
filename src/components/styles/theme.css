@@ -11,6 +11,7 @@
   --color-purple-darker: #6700b4;
   --color-purple-darkest: #1e075f;
   --color-purple-faded: #9013fe33;
+  --color-pink-lightest: #f2e3ff;
   --color-pink-light: #bd73ff;
   --color-pink: #d8b6ff; /* (90% of all texts when over purple background) */
   --color-pink-dark: #824ccb; /* (texts when over white background) */
@@ -19,15 +20,15 @@
 }
 
 h1 {
-  font-size: var(--font-size-huge);
   color: white;
-  font-weight: var(--font-weight-bold);
+  font-weight: 600;
+  font-size: var(--font-size-huge);
 }
 
 h2 {
-  font-size: var(--font-size-big);
   color: var(--color-pink);
-  font-weight: var(--font-weight-bold);
+  font-weight: normal;
+  font-size: var(--font-size-big);
 }
 
 main .btn,

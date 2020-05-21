@@ -12,6 +12,7 @@ import {
   NavDropdown,
   Collapse,
   Button,
+  Card,
   Badge,
   Container,
 } from "react-bootstrap"
@@ -23,8 +24,17 @@ import {
   IntlContextConsumer,
   changeLocale,
 } from "gatsby-plugin-intl"
-
 import styles from "./styles/index.module.css"
+import Logo from "../assets/logos/brand.svg"
+import Court from "../assets/logos/kleros.svg"
+import Curate from "../assets/logos/curate.svg"
+import Escrow from "../assets/logos/escrow.svg"
+import T2CR from "../assets/logos/t2cr.svg"
+import DisputeResolver from "../assets/logos/dispute-resolver.svg"
+import Ninja from "../assets/logos/ninja.svg"
+import Linguo from "../assets/logos/linguo.svg"
+import CU from "../assets/logos/kleros.svg"
+import Realitio from "../assets/logos/kleros.svg"
 
 const IndexPage = ({ intl }) => (
   <Layout>
@@ -159,6 +169,76 @@ const IndexPage = ({ intl }) => (
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
         <img src="/cases-disputes.png" />
       </section>
+      <Card className={styles.products}>
+        <Card.Body className="px-5 py-3 text-center">
+          <div>{intl.formatMessage({ id: "index.dapps.h1" })}</div>
+          <div className="d-inline-block">
+            <a href="https://court.kleros.io">
+              <Badge>
+                <Court />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Court</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://escrow.kleros.io">
+              <Badge>
+                <Escrow />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Escrow</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://linguo.kleros.io">
+              <Badge>
+                <Linguo />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Linguo</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://tokens.kleros.io">
+              <Badge>
+                <T2CR />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">T2CR</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://uniswap.ninja">
+              <Badge>
+                <Ninja />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Ninja</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://resolve.kleros.io">
+              <Badge>
+                <DisputeResolver />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Dispute Resolver</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://resolve.kleros.io">
+              <Badge>
+                <CU />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Crypto Unlocked</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://resolve.kleros.io">
+              <Badge>
+                <Realitio />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker  ">Realitio</p>
+          </div>
+          <br /> <small>*Products under development</small>
+        </Card.Body>
+      </Card>
     </Container>
   </Layout>
 )

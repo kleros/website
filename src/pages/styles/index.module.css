@@ -52,3 +52,39 @@
     grid-gap: 2rem;
   }
 }
+
+.products {
+  background-color: var(--color-pink-lightest);
+  padding: 3rem 0;
+}
+
+.products > div > div:first-child {
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-purple);
+}
+
+.products div div span {
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
+  border-radius: 13.3321px;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25),
+    -4.76148px -4.76148px 19.0459px #ffffff;
+  border: 0.952296px solid #ffffff;
+}
+
+.products p {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+}
+
+.products small {
+  display: block;
+  text-align: right;
+  color: var(--color-purple);
+}
