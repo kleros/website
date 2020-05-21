@@ -95,60 +95,64 @@ const IndexPage = ({ intl }) => (
 
       <hr />
       <section className={styles.usecases}>
-        <Card
-          content={{
-            icon: "smallClaims",
-            text: intl.formatMessage({ id: "index.use-cases.cards.1" }),
-          }}
-        />
-        <Card
-          content={{
-            icon: "insurance",
-            text: intl.formatMessage({ id: "index.use-cases.cards.2" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "eCommerce",
-            text: intl.formatMessage({ id: "index.use-cases.cards.3" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "finance",
-            text: intl.formatMessage({ id: "index.use-cases.cards.4" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "freelancing",
-            text: intl.formatMessage({ id: "index.use-cases.cards.5" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "token",
-            text: intl.formatMessage({ id: "index.use-cases.cards.6" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "moderation",
-            text: intl.formatMessage({ id: "index.use-cases.cards.7" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "copyright",
-            text: intl.formatMessage({ id: "index.use-cases.cards.8" }),
-          }}
-        />{" "}
-        <Card
-          content={{
-            icon: "plus",
-            text: intl.formatMessage({ id: "index.use-cases.cards.9" }),
-          }}
-        />
+        <h1>{intl.formatMessage({ id: "index.use-cases.h1" })}</h1>
+        <h2>{intl.formatMessage({ id: "index.use-cases.h2" })}</h2>
+        <div className={styles.cards}>
+          <Card
+            content={{
+              icon: "smallClaims",
+              text: intl.formatMessage({ id: "index.use-cases.cards.1" }),
+            }}
+          />
+          <Card
+            content={{
+              icon: "insurance",
+              text: intl.formatMessage({ id: "index.use-cases.cards.2" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "eCommerce",
+              text: intl.formatMessage({ id: "index.use-cases.cards.3" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "finance",
+              text: intl.formatMessage({ id: "index.use-cases.cards.4" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "freelancing",
+              text: intl.formatMessage({ id: "index.use-cases.cards.5" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "token",
+              text: intl.formatMessage({ id: "index.use-cases.cards.6" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "moderation",
+              text: intl.formatMessage({ id: "index.use-cases.cards.7" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "copyright",
+              text: intl.formatMessage({ id: "index.use-cases.cards.8" }),
+            }}
+          />{" "}
+          <Card
+            content={{
+              icon: "plus",
+              text: intl.formatMessage({ id: "index.use-cases.cards.9" }),
+            }}
+          />
+        </div>
       </section>
     </Container>
   </Layout>

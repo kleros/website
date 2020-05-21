@@ -10,11 +10,6 @@
   border-top-right-radius: 12px;
 }
 
-.hero h1,
-.hero h2 {
-  text-align: center;
-}
-
 .hero > img {
   margin-top: 3rem;
 }
@@ -35,15 +30,16 @@
   margin: 5rem 4rem;
 }
 
-.usecases {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* space between columns for demo */
   grid-gap: 2rem;
+  margin-top: 4rem;
 }
 
 @media (max-width: 1200px) {
-  .usecases {
+  .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* space between columns for demo */
@@ -52,7 +48,7 @@
 }
 
 @media (max-width: 768px) {
-  .usecases {
+  .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* space between columns for demo */
