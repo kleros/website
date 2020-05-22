@@ -80,6 +80,18 @@
     "products": {
       "h1": "Our Products & Integrations",
       "small": "*Product under development"
+    },
+    "section-4": {
+      "card-1": {
+        "title": "Join as a Juror",
+        "paragraph": "Earn money and bring justice to the world.",
+        "button": "Join as a Juror"
+      },
+      "card-2": {
+        "title": "Integrate your Platform",
+        "paragraph": "Learn how you can Kleros to solve in your platform.",
+        "button": "Start Now"
+      }
     }
   },
   "contact": {

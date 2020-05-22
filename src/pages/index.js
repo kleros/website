@@ -5,6 +5,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Sash from "../components/sash"
 import HorizontalCard from "../components/horizontal-card"
+import VerticalCard from "../components/vertical-card"
+
 import Sponsors from "../components/sponsors"
 import Contact from "../components/contact"
 
@@ -17,6 +19,8 @@ import {
   Card,
   Badge,
   Container,
+  Row,
+  Col,
 } from "react-bootstrap"
 
 import {
@@ -103,9 +107,9 @@ const IndexPage = ({ intl }) => (
             allowfullscreen
           ></iframe>
         </div>
+        <hr />
       </section>
 
-      <hr />
       <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "index.section-2.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-2.h2" })}</h2>
@@ -247,10 +251,56 @@ const IndexPage = ({ intl }) => (
           </small>
         </div>
       </div>
-      <Sponsors />
+      <section>
+        <h1 className="mb-5">Join the Justice Revolution</h1>
+        <Container>
+          <Row>
+            <Col>
+              <VerticalCard
+                content={{
+                  icon: "gavel",
+                  title: intl.formatMessage({
+                    id: "index.section-4.card-1.title",
+                  }),
+                  paragraph: intl.formatMessage({
+                    id: "index.section-4.card-1.paragraph",
+                  }),
+                  button: {
+                    variant: "primary",
+                    text: intl.formatMessage({
+                      id: "index.section-4.card-1.button",
+                    }),
+                  },
+                }}
+              />
+            </Col>
+            <Col>
+              <VerticalCard
+                content={{
+                  icon: "handshake",
+                  title: intl.formatMessage({
+                    id: "index.section-4.card-2.title",
+                  }),
+                  paragraph: intl.formatMessage({
+                    id: "index.section-4.card-2.paragraph",
+                  }),
+                  button: {
+                    variant: "secondary",
+                    text: intl.formatMessage({
+                      id: "index.section-4.card-2.button",
+                    }),
+                  },
+                }}
+              />
+            </Col>
+          </Row>
+        </Container>
+        <hr />
+      </section>
       <section>
         <Contact />
       </section>
+      <Sponsors />
     </Container>
   </Layout>
 )

@@ -67,7 +67,7 @@ const YELLOW_PAPERS = {
 const Footer = ({ intl }) => {
   return (
     <footer className={styles.footer}>
-      <Container fluid>
+      <Container fluid className="p-0">
         <Row>
           <Col className="d-none d-lg-block">
             <Logo />
