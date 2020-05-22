@@ -3,8 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Sash from "../components/sash.js"
-import HorizontalCard from "../components/horizontal-card.js"
+import Sash from "../components/sash"
+import HorizontalCard from "../components/horizontal-card"
+import Sponsors from "../components/sponsors"
+import Contact from "../components/contact"
 
 import {
   Navbar,
@@ -30,7 +32,7 @@ import Court from "../assets/logos/kleros.svg"
 import Curate from "../assets/logos/curate.svg"
 import Escrow from "../assets/logos/escrow.svg"
 import T2CR from "../assets/logos/t2cr.svg"
-import DisputeResolver from "../assets/logos/dispute-resolver.svg"
+import Resolver from "../assets/logos/dispute-resolver.svg"
 import Ninja from "../assets/logos/ninja.svg"
 import Linguo from "../assets/logos/linguo.svg"
 import CU from "../assets/logos/kleros.svg"
@@ -169,9 +171,12 @@ const IndexPage = ({ intl }) => (
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
         <img src="/cases-disputes.png" />
       </section>
-      <Card className={styles.products}>
-        <Card.Body className="px-5 py-3 text-center">
-          <div>{intl.formatMessage({ id: "index.dapps.h1" })}</div>
+
+      <div className={styles.products}>
+        <div className="px-5 py-3 text-center">
+          <div className={styles.h1}>
+            {intl.formatMessage({ id: "index.products.h1" })}
+          </div>
           <div className="d-inline-block">
             <a href="https://court.kleros.io">
               <Badge>
@@ -215,7 +220,7 @@ const IndexPage = ({ intl }) => (
           <div className="d-inline-block">
             <a href="https://resolve.kleros.io">
               <Badge>
-                <DisputeResolver />
+                <Resolver />
               </Badge>
             </a>
             <p className="text-center text-purple-darker ">Dispute Resolver</p>
@@ -236,9 +241,16 @@ const IndexPage = ({ intl }) => (
             </a>
             <p className="text-center text-purple-darker  ">Realitio</p>
           </div>
-          <br /> <small>*Products under development</small>
-        </Card.Body>
-      </Card>
+          <br />{" "}
+          <small>
+            <FormattedMessage id="index.products.small" />
+          </small>
+        </div>
+      </div>
+      <Sponsors />
+      <section>
+        <Contact />
+      </section>
     </Container>
   </Layout>
 )

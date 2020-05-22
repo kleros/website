@@ -31,6 +31,10 @@ h2 {
   font-size: var(--font-size-big);
 }
 
+.text {
+  color: var(--color-pink);
+}
+
 main .btn,
 footer .btn {
   height: 3.2rem;

@@ -1,0 +1,71 @@
+.contact {
+  background-color: var(--color-purple-faded);
+  border-radius: 37.3588px;
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr 1fr;
+  place-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.contact img {
+  width: 4rem;
+  height: auto;
+  margin: 0.5rem 1rem;
+}
+
+.contact svg {
+  display: block;
+  grid-row: 1 / span 2;
+  justify-self: start;
+  grid-column: 1;
+  height: 100%;
+  min-width: 6rem;
+}
+
+.contact span {
+  color: white;
+  font-size: var(--font-size-bigger);
+  text-align: left;
+  align-self: center;
+  white-space: nowrap;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 2 / span 2;
+  justify-self: center;
+  display: block;
+}
+
+.contact > div:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column: 2 / span 2;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    grid: 1fr / [logo] 2fr [text] 16fr [telegram] 6fr;
+  }
+
+  .contact svg {
+    display: block;
+    grid-column: logo;
+    grid-row: 1 / span 1;
+    width: 5.5rem;
+    height: auto;
+  }
+
+  .contact span {
+    font-size: var(--font-size-huge);
+    grid-column: text;
+    display: block;
+    justify-self: left;
+    margin-left: 1rem;
+  }
+
+  .contact > div:nth-child(3) {
+    justify-self: right;
+    display: block;
+    grid-row: 1;
+  }
+}

@@ -77,8 +77,12 @@
       "h2": "You send your cases. Kleros sends back a decision."
     },
 
-    "dapps": {
-      "h1": "Our Products & Integrations"
+    "products": {
+      "h1": "Our Products & Integrations",
+      "small": "*Product under development"
     }
+  },
+  "contact": {
+    "title": "Get in Touch"
   }
 }

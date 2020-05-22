@@ -1,0 +1,30 @@
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: auto;
+}
+
+.reuters {
+  padding: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.bpi {
+  verticalalign: middle;
+  "-webkit-filter":grayscale(100%) ;
+  filter: grayscale(100%);
+  filter: gray;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.bpiContainer {
+}
+
+.reutersContainer {
+}

@@ -35,21 +35,11 @@
   font-weight: var(--font-weight-bold);
 }
 
-.dapps > div,
-.dapps > div:focus {
-  /* TODO: Delete border */
-}
-
 .header nav div div div {
   background-color: transparent;
   opacity: 1;
   border: none;
 }
-
-/* .dapps p {
-  padding-left: 1rem;
-  padding-right: 1rem;
-} */
 
 .dapps div div span {
   background-color: white;
@@ -65,8 +55,6 @@
   height: 5vmax;
 }
 
-.header button {
-}
 @media screen and (min-width: 992px) {
   .header nav > div > div:nth-child(2) > div > div {
     margin-top: 1rem !important;
