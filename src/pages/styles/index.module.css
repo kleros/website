@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.hero {
+  margin-bottom: 0;
+}
+
 .hero img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -75,8 +79,7 @@
   margin-top: 1vmax;
   margin-bottom: 1vmax;
   border-radius: 13.3321px;
-  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25),
-    -4.76148px -4.76148px 19.0459px #ffffff;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
   border: 0.952296px solid #ffffff;
 }
 

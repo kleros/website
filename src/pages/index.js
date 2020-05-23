@@ -277,7 +277,7 @@ const IndexPage = ({ intl }) => (
         </Container>
         <hr />
         <Contact />
-        <Sponsors />
+        <Sponsors extraClass="mt-5" />
       </section>
     </Container>
   </Layout>
