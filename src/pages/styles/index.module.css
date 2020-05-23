@@ -19,7 +19,8 @@
   align-content: space-between;
 }
 
-.hero .buttonWrapper button {
+.hero .buttonWrapper button,
+.hero .buttonWrapper a {
   margin-top: 1.5rem;
 }
 

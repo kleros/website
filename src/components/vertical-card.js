@@ -6,11 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import Footer from "./footer"
 
 import styles from "./styles/vertical-card.module.css"
 
@@ -27,22 +22,9 @@ import risks from "src/assets/icons/risks.png"
 import gavel from "src/assets/icons/gavel.png"
 import handshake from "src/assets/icons/handshake.png"
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Collapse,
-  Button,
-  Badge,
-  Col,
-  Row,
-  Container,
-  Form,
-  InputGroup,
-  FormControl,
-} from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl, Link } from "gatsby-plugin-intl"
 
 const ICONS = {
   escrow,
@@ -59,15 +41,24 @@ const ICONS = {
   handshake,
 }
 
+const isExternal = href => /^\/(?!\/)/.test(href)
+
 const VerticalCard = ({ content, intl }) => (
   <Container fluid className={styles.verticalCard}>
-    <img src={ICONS[content.icon]} />
+    <img src={ICONS[content.icon]} alt={content.icon} />
     <span>{content.title}</span>
     <span>{content.paragraph}</span>
-    <Button variant={content.button.variant}>{content.button.text}</Button>
+    {isExternal(content.button.href) && (
+      <Link to={content.button.href}>
+        <Button variant={content.button.variant}>{content.button.text}</Button>
+      </Link>
+    )}
+    {!isExternal(content.button.href) && (
+      <a href={content.button.href} target="blank" rel="noopener noreferrer">
+        <Button variant={content.button.variant}>{content.button.text}</Button>
+      </a>
+    )}
   </Container>
 )
-
-VerticalCard.propTypes = {}
 
 export default injectIntl(VerticalCard)

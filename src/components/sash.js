@@ -6,11 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import Footer from "./footer"
 
 import styles from "./styles/sash.module.css"
 
@@ -25,23 +20,9 @@ import t2cr from "src/assets/icons/t2cr.png"
 import scales from "src/assets/icons/scales.png"
 import risks from "src/assets/icons/risks.png"
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Collapse,
-  Card,
-  Button,
-  Badge,
-  Col,
-  Row,
-  Container,
-  Form,
-  InputGroup,
-  FormControl,
-} from "react-bootstrap"
+import { Col, Row, Container } from "react-bootstrap"
 
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 const ICONS = {
   escrow,
@@ -62,7 +43,7 @@ const Sash = ({ figures, intl }) => {
       <Row className="d-block d-lg-flex">
         <Col>
           <figure>
-            <img src={ICONS[figures.first.icon]} />
+            <img src={ICONS[figures.first.icon]} alt={figures.first.icon} />
             <figcaption>
               <span>{figures.first.title}</span>
               <span>{figures.first.paragraph}</span>
@@ -71,7 +52,7 @@ const Sash = ({ figures, intl }) => {
         </Col>
         <Col>
           <figure>
-            <img src={ICONS[figures.second.icon]} />
+            <img src={ICONS[figures.second.icon]} alt={figures.second.icon} />
             <figcaption>
               <span>{figures.second.title}</span>
               <span>{figures.second.paragraph}</span>
@@ -80,7 +61,7 @@ const Sash = ({ figures, intl }) => {
         </Col>
         <Col>
           <figure>
-            <img src={ICONS[figures.third.icon]} />
+            <img src={ICONS[figures.third.icon]} alt={figures.third.icon} />
             <figcaption>
               <span>{figures.third.title}</span>
               <span>{figures.third.paragraph}</span>
@@ -91,7 +72,5 @@ const Sash = ({ figures, intl }) => {
     </Container>
   )
 }
-
-Sash.propTypes = {}
 
 export default injectIntl(Sash)

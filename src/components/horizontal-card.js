@@ -6,11 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import Footer from "./footer"
 
 import styles from "./styles/horizontal-card.module.css"
 
@@ -24,22 +19,9 @@ import plus from "src/assets/icons/plus.png"
 import smallClaims from "src/assets/icons/small-claims.png"
 import token from "src/assets/icons/token.png"
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Collapse,
-  Button,
-  Badge,
-  Col,
-  Row,
-  Container,
-  Form,
-  InputGroup,
-  FormControl,
-} from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 
 const ICONS = {
   copyright,
@@ -55,11 +37,9 @@ const ICONS = {
 
 const HorizontalCard = ({ content, intl }) => (
   <Container fluid className={styles.horizontalCard}>
-    <img src={ICONS[content.icon]} />
+    <img src={ICONS[content.icon]} alt={content.icon} />
     <span>{content.text}</span>
   </Container>
 )
-
-HorizontalCard.propTypes = {}
 
 export default injectIntl(HorizontalCard)

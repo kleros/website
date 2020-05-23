@@ -1,5 +1,4 @@
-import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 
 import Logo from "../assets/logos/brand.svg"
 import Court from "../assets/logos/kleros.svg"
@@ -43,7 +42,7 @@ const FLAGS = {
   ko: "🇰🇷",
 }
 
-const Header = ({}) => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <Navbar collapseOnSelect expand="lg" variant="dark">
@@ -80,7 +79,7 @@ const Header = ({}) => {
             <IntlContextConsumer>
               {({ languages, language: currentLocale }) => {
                 const items = languages
-                  .filter(language => language != currentLocale)
+                  .filter(language => language !== currentLocale)
                   .map(language => (
                     <NavDropdown.Item
                       key={language}
@@ -108,7 +107,7 @@ const Header = ({}) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Collapse className="collapse" id="dapps" className={styles.dapps}>
+      <Collapse id="dapps" className={`collapse ${styles.dapps}`}>
         <Card>
           <Card.Body className="px-5 py-3 text-center">
             <div className="d-inline-block">
@@ -142,6 +141,14 @@ const Header = ({}) => {
                 </Badge>
               </a>
               <p className="text-center text-purple-darker ">T2CR</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://curate.kleros.io">
+                <Badge>
+                  <Curate />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Curate</p>
             </div>
             <div className="d-inline-block">
               <a href="https://uniswap.ninja">

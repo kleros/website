@@ -19,6 +19,10 @@
   --color-blue: #009aff;
 }
 
+body {
+  color: white;
+}
+
 h1 {
   color: white;
   font-weight: 600;
@@ -37,7 +41,9 @@ h2 {
 
 main .btn,
 footer .btn {
-  height: 3.2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+
   font-weight: 600;
   border-width: 0;
   border-radius: 300px;
@@ -49,6 +55,7 @@ footer .btn {
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus {
+  color: white;
   background: linear-gradient(
     90deg,
     var(--color-blue) 0%,
@@ -57,7 +64,7 @@ footer .btn {
   box-shadow: 0px 12px 90px var(--color-blue);
 }
 
-.btn-primary:hover {
+.btn .btn-primary:hover {
   background: linear-gradient(
     270deg,
     var(--color-blue) 0%,

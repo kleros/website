@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Sash from "../components/sash"
 import HorizontalCard from "../components/horizontal-card"
@@ -10,28 +9,10 @@ import VerticalCard from "../components/vertical-card"
 import Sponsors from "../components/sponsors"
 import Contact from "../components/contact"
 
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Collapse,
-  Button,
-  Card,
-  Badge,
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap"
+import { Badge, Container, Row, Col } from "react-bootstrap"
 
-import {
-  injectIntl,
-  Link,
-  FormattedMessage,
-  IntlContextConsumer,
-  changeLocale,
-} from "gatsby-plugin-intl"
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 import styles from "./styles/index.module.css"
-import Logo from "../assets/logos/brand.svg"
 import Court from "../assets/logos/kleros.svg"
 import Curate from "../assets/logos/curate.svg"
 import Escrow from "../assets/logos/escrow.svg"
@@ -55,14 +36,19 @@ const IndexPage = ({ intl }) => (
         </h2>
 
         <Container className={styles.buttonWrapper}>
-          <Button variant="primary">
+          <a
+            href="https://court.kleros.io"
+            target="blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
             <FormattedMessage id="index.section-hero.button-primary" />
-          </Button>
-          <Button variant="secondary">
+          </a>
+          <Link to="/integrations" className="btn btn-secondary">
             <FormattedMessage id="index.section-hero.button-secondary" />
-          </Button>
+          </Link>
         </Container>
-        <img src="/index-hero.png" />
+        <img src="/index-hero.png" alt="Court Screenshot" />
       </section>
       <Sash
         as="div"
@@ -99,6 +85,7 @@ const IndexPage = ({ intl }) => (
       <section>
         <div className="iframe-container">
           <iframe
+            title="introduction-video"
             width="560"
             height="315"
             src="https://www.youtube-nocookie.com/embed/M8nJ7yrTL-Q"
@@ -173,7 +160,7 @@ const IndexPage = ({ intl }) => (
       <section>
         <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
-        <img src="/cases-disputes.png" />
+        <img src="/cases-disputes.png" alt="A figure about how Kleros works." />
       </section>
 
       <div className={styles.products}>
@@ -212,6 +199,14 @@ const IndexPage = ({ intl }) => (
               </Badge>
             </a>
             <p className="text-center text-purple-darker ">T2CR</p>
+          </div>
+          <div className="d-inline-block">
+            <a href="https://curate.kleros.io">
+              <Badge>
+                <Curate />
+              </Badge>
+            </a>
+            <p className="text-center text-purple-darker ">Curate</p>
           </div>
           <div className="d-inline-block">
             <a href="https://uniswap.ninja">
@@ -270,6 +265,7 @@ const IndexPage = ({ intl }) => (
                     text: intl.formatMessage({
                       id: "index.section-4.card-1.button",
                     }),
+                    href: "https://court.kleros.io",
                   },
                 }}
               />
@@ -289,6 +285,7 @@ const IndexPage = ({ intl }) => (
                     text: intl.formatMessage({
                       id: "index.section-4.card-2.button",
                     }),
+                    href: "/integrations",
                   },
                 }}
               />

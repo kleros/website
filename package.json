@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
-    "prettier": "2.0.5"
+    "prettier": "^2.0.5"
   },
   "keywords": [
     "kleros"
@@ -48,5 +48,9 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 280
   }
 }
