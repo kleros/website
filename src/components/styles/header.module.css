@@ -2,7 +2,7 @@
   background-color: var(--color-purple-darkest);
 }
 
-.header svg {
+.brand {
   width: 8rem;
   height: auto;
 }

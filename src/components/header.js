@@ -33,7 +33,7 @@ const Header = () => {
     <header className={styles.header}>
       <Navbar collapseOnSelect expand="md" variant="dark">
         <Link className="navbar-brand" to="/">
-          <Logo />
+          <Logo className={styles.brand} />
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={styles.responsiveNavbarNav}>
