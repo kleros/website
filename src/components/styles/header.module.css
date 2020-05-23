@@ -7,10 +7,6 @@
   height: auto;
 }
 
-.responsiveNavbarNav {
-  margin-left: calc((8rem + 1rem) / 2 * -1);
-}
-
 .header a,
 .header button,
 .header p {
@@ -58,6 +54,13 @@
   border: 0.952296px solid #ffffff;
   width: 5vmax;
   height: 5vmax;
+}
+
+@media screen and (min-width: 768px) {
+  // Only when navbar expanded
+  .responsiveNavbarNav {
+    margin-left: calc((8rem + 1rem) / 2 * -1);
+  }
 }
 
 @media screen and (min-width: 992px) {
