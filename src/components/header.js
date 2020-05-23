@@ -8,8 +8,6 @@ import T2CR from "../assets/logos/t2cr.svg";
 import DisputeResolver from "../assets/logos/dispute-resolver.svg";
 import Ninja from "../assets/logos/ninja.svg";
 import Linguo from "../assets/logos/linguo.svg";
-import CU from "../assets/logos/kleros.svg";
-import Realitio from "../assets/logos/kleros.svg";
 
 import styles from "./styles/header.module.css";
 import { Navbar, Nav, NavDropdown, Collapse, Card, Button, Badge } from "react-bootstrap";
@@ -144,7 +142,8 @@ const Header = () => {
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
                 <Badge>
-                  <CU />
+                  <span class={styles.helper}></span>
+                  <img src="/crypto-unlocked.png" />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker ">Crypto Unlocked</p>
@@ -152,7 +151,8 @@ const Header = () => {
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
                 <Badge>
-                  <Realitio />
+                  <span class={styles.helper}></span>
+                  <img src="/realitio.png" />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Realitio</p>

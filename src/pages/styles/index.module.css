@@ -65,7 +65,14 @@
   color: var(--color-purple);
 }
 
-.products div div span {
+.helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.products div div span:not(.helper) {
   width: 10rem;
   height: 10rem;
   background-color: white;

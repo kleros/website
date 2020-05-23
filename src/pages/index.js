@@ -210,7 +210,8 @@ const IndexPage = ({ intl }) => (
           <div className="d-inline-block">
             <a href="https://resolve.kleros.io">
               <Badge>
-                <CU />
+                <span className={styles.helper} />
+                <img src="/crypto-unlocked.png" />
               </Badge>
             </a>
             <p className="text-center text-purple-darker ">Crypto Unlocked</p>
@@ -218,7 +219,7 @@ const IndexPage = ({ intl }) => (
           <div className="d-inline-block">
             <a href="https://resolve.kleros.io">
               <Badge>
-                <Realitio />
+                <img src="/realitio.png" />
               </Badge>
             </a>
             <p className="text-center text-purple-darker  ">Realitio</p>

@@ -43,7 +43,14 @@
   border: none;
 }
 
-.dapps div div span {
+.helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.dapps div div span:not(.helper) {
   background-color: white;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
