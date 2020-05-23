@@ -77,14 +77,12 @@ const IndexPage = ({ intl }) => (
           },
         }}
       />
-      <section>
+      <section className={styles.usecases}>
         <div className="iframe-container">
           <iframe title="introduction-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/M8nJ7yrTL-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; controls=0" allowfullscreen></iframe>
         </div>
         <hr />
-      </section>
 
-      <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "index.section-2.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-2.h2" })}</h2>
         <div className={styles.cards}>
@@ -225,7 +223,7 @@ const IndexPage = ({ intl }) => (
             </a>
             <p className="text-center text-purple-darker  ">Realitio</p>
           </div>
-          <br />{" "}
+          <br />
           <small>
             <FormattedMessage id="index.products.small" />
           </small>
@@ -278,11 +276,9 @@ const IndexPage = ({ intl }) => (
           </Row>
         </Container>
         <hr />
-      </section>
-      <section>
         <Contact />
+        <Sponsors />
       </section>
-      <Sponsors />
     </Container>
   </Layout>
 );
