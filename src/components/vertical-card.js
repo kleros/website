@@ -45,9 +45,9 @@ const isExternal = (href) => /^\/(?!\/)/.test(href);
 
 const VerticalCard = ({ content, intl }) => (
   <Container fluid className={styles.verticalCard}>
-    <Row>
-      <Col sm>
-        <img src={ICONS[content.icon]} alt={content.icon} />
+    <Row className="h-100 d-flex">
+      <Col sm className="h-100 d-flex flex-column">
+        <img src={ICONS[content.icon]} alt={content.icon} className="align-self-center" />
         <span>{content.title}</span>
         <span>{content.paragraph}</span>
         {isExternal(content.button.href) && (
@@ -56,7 +56,7 @@ const VerticalCard = ({ content, intl }) => (
           </Link>
         )}
         {!isExternal(content.button.href) && (
-          <a href={content.button.href} target="blank" rel="noopener noreferrer">
+          <a href={content.button.href} target="blank" rel="noopener noreferrer" className="mt-auto">
             <Button variant={content.button.variant}>{content.button.text}</Button>
           </a>
         )}

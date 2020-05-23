@@ -231,9 +231,9 @@ const IndexPage = ({ intl }) => (
       </div>
       <section>
         <h1 className="mb-5">Join the Justice Revolution</h1>
-        <Container>
+        <Container fluid className="p-0">
           <Row>
-            <Col sm className="mt-5">
+            <Col md className="mt-5">
               <VerticalCard
                 content={{
                   icon: "gavel",
@@ -253,7 +253,7 @@ const IndexPage = ({ intl }) => (
                 }}
               />
             </Col>
-            <Col sm className="mt-5">
+            <Col md className="mt-5">
               <VerticalCard
                 content={{
                   icon: "handshake",
