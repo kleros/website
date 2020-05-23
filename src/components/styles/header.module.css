@@ -2,6 +2,15 @@
   background-color: var(--color-purple-darkest);
 }
 
+.header svg {
+  width: 8rem;
+  height: auto;
+}
+
+.responsiveNavbarNav {
+  margin-left: calc((8rem + 1rem) / 2 * -1);
+}
+
 .header a,
 .header button,
 .header p {
@@ -28,9 +37,6 @@
   border: none;
 }
 
-.header nav div div button {
-}
-
 .dapps p {
   font-weight: var(--font-weight-bold);
 }
@@ -48,8 +54,7 @@
   margin-top: 1vmax;
   margin-bottom: 1vmax;
   border-radius: 13.3321px;
-  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25),
-    -4.76148px -4.76148px 19.0459px #ffffff;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
   border: 0.952296px solid #ffffff;
   width: 5vmax;
   height: 5vmax;

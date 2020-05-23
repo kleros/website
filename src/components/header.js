@@ -1,34 +1,20 @@
-import React from "react"
+import React from "react";
 
-import Logo from "../assets/logos/brand.svg"
-import Court from "../assets/logos/kleros.svg"
-import Curate from "../assets/logos/curate.svg"
-import Escrow from "../assets/logos/escrow.svg"
-import T2CR from "../assets/logos/t2cr.svg"
-import DisputeResolver from "../assets/logos/dispute-resolver.svg"
-import Ninja from "../assets/logos/ninja.svg"
-import Linguo from "../assets/logos/linguo.svg"
-import CU from "../assets/logos/kleros.svg"
-import Realitio from "../assets/logos/kleros.svg"
+import Logo from "../assets/logos/brand_white.svg";
+import Court from "../assets/logos/kleros.svg";
+import Curate from "../assets/logos/curate.svg";
+import Escrow from "../assets/logos/escrow.svg";
+import T2CR from "../assets/logos/t2cr.svg";
+import DisputeResolver from "../assets/logos/dispute-resolver.svg";
+import Ninja from "../assets/logos/ninja.svg";
+import Linguo from "../assets/logos/linguo.svg";
+import CU from "../assets/logos/kleros.svg";
+import Realitio from "../assets/logos/kleros.svg";
 
-import styles from "./styles/header.module.css"
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Collapse,
-  Card,
-  Button,
-  Badge,
-} from "react-bootstrap"
+import styles from "./styles/header.module.css";
+import { Navbar, Nav, NavDropdown, Collapse, Card, Button, Badge } from "react-bootstrap";
 
-import {
-  injectIntl,
-  Link,
-  FormattedMessage,
-  IntlContextConsumer,
-  changeLocale,
-} from "gatsby-plugin-intl"
+import { injectIntl, Link, FormattedMessage, IntlContextConsumer, changeLocale } from "gatsby-plugin-intl";
 
 const FLAGS = {
   en: "🇬🇧",
@@ -40,26 +26,19 @@ const FLAGS = {
   "pt-br": "🇧🇷",
   zh: "🇨🇳",
   ko: "🇰🇷",
-}
+};
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Navbar collapseOnSelect expand="lg" variant="dark">
+      <Navbar collapseOnSelect expand="md" variant="dark">
         <Link className="navbar-brand" to="/">
           <Logo />
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" className={styles.responsiveNavbarNav}>
           <Nav className="m-auto">
-            <Button
-              variant="outline-*"
-              data-toggle="collapse"
-              data-target="#dapps"
-              aria-expanded="false"
-              aria-controls="dapps"
-              className={`position-relative px-lg-2 pl-0 collapsed`}
-            >
+            <Button variant="outline-*" data-toggle="collapse" data-target="#dapps" aria-expanded="false" aria-controls="dapps" className={`position-relative px-lg-2 pl-0 collapsed`}>
               <FormattedMessage id="header.dapps" />
             </Button>
             <Link to="/integrations" className="text-pink nav-link">
@@ -79,29 +58,25 @@ const Header = () => {
             <IntlContextConsumer>
               {({ languages, language: currentLocale }) => {
                 const items = languages
-                  .filter(language => language !== currentLocale)
-                  .map(language => (
+                  .filter((language) => language !== currentLocale)
+                  .map((language) => (
                     <NavDropdown.Item
                       key={language}
                       title={language}
                       className="h3 text-right px-2 "
                       onClick={() => {
-                        changeLocale(language)
+                        changeLocale(language);
                       }}
                     >
                       {FLAGS[language] || language}
                     </NavDropdown.Item>
-                  ))
+                  ));
 
                 return (
-                  <NavDropdown
-                    alignRight
-                    title={FLAGS[currentLocale]}
-                    className="d-inline-flex h3"
-                  >
+                  <NavDropdown alignRight title={FLAGS[currentLocale]} className="d-inline-flex h3">
                     {items}
                   </NavDropdown>
-                )
+                );
               }}
             </IntlContextConsumer>
           </Nav>
@@ -164,9 +139,7 @@ const Header = () => {
                   <DisputeResolver />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker ">
-                Dispute Resolver
-              </p>
+              <p className="text-center text-purple-darker ">Dispute Resolver</p>
             </div>
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
@@ -188,7 +161,7 @@ const Header = () => {
         </Card>
       </Collapse>
     </header>
-  )
-}
+  );
+};
 
-export default injectIntl(Header)
+export default injectIntl(Header);

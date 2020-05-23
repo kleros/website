@@ -1,27 +1,27 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Sash from "../components/sash"
-import HorizontalCard from "../components/horizontal-card"
-import VerticalCard from "../components/vertical-card"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Sash from "../components/sash";
+import HorizontalCard from "../components/horizontal-card";
+import VerticalCard from "../components/vertical-card";
 
-import Sponsors from "../components/sponsors"
-import Contact from "../components/contact"
+import Sponsors from "../components/sponsors";
+import Contact from "../components/contact";
 
-import { Badge, Container, Row, Col } from "react-bootstrap"
+import { Badge, Container, Row, Col } from "react-bootstrap";
 
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
-import styles from "./styles/index.module.css"
-import Court from "../assets/logos/kleros.svg"
-import Curate from "../assets/logos/curate.svg"
-import Escrow from "../assets/logos/escrow.svg"
-import T2CR from "../assets/logos/t2cr.svg"
-import Resolver from "../assets/logos/dispute-resolver.svg"
-import Ninja from "../assets/logos/ninja.svg"
-import Linguo from "../assets/logos/linguo.svg"
-import CU from "../assets/logos/kleros.svg"
-import Realitio from "../assets/logos/kleros.svg"
+import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import styles from "./styles/index.module.css";
+import Court from "../assets/logos/kleros.svg";
+import Curate from "../assets/logos/curate.svg";
+import Escrow from "../assets/logos/escrow.svg";
+import T2CR from "../assets/logos/t2cr.svg";
+import Resolver from "../assets/logos/dispute-resolver.svg";
+import Ninja from "../assets/logos/ninja.svg";
+import Linguo from "../assets/logos/linguo.svg";
+import CU from "../assets/logos/kleros.svg";
+import Realitio from "../assets/logos/kleros.svg";
 
 const IndexPage = ({ intl }) => (
   <Layout>
@@ -36,12 +36,7 @@ const IndexPage = ({ intl }) => (
         </h2>
 
         <Container className={styles.buttonWrapper}>
-          <a
-            href="https://court.kleros.io"
-            target="blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
+          <a href="https://court.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-primary">
             <FormattedMessage id="index.section-hero.button-primary" />
           </a>
           <Link to="/integrations" className="btn btn-secondary">
@@ -84,15 +79,7 @@ const IndexPage = ({ intl }) => (
       />
       <section>
         <div className="iframe-container">
-          <iframe
-            title="introduction-video"
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/M8nJ7yrTL-Q"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; controls=0"
-            allowfullscreen
-          ></iframe>
+          <iframe title="introduction-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/M8nJ7yrTL-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; controls=0" allowfullscreen></iframe>
         </div>
         <hr />
       </section>
@@ -165,9 +152,7 @@ const IndexPage = ({ intl }) => (
 
       <div className={styles.products}>
         <div className="px-5 py-3 text-center">
-          <div className={styles.h1}>
-            {intl.formatMessage({ id: "index.products.h1" })}
-          </div>
+          <div className={styles.h1}>{intl.formatMessage({ id: "index.products.h1" })}</div>
           <div className="d-inline-block">
             <a href="https://court.kleros.io">
               <Badge>
@@ -250,7 +235,7 @@ const IndexPage = ({ intl }) => (
         <h1 className="mb-5">Join the Justice Revolution</h1>
         <Container>
           <Row>
-            <Col>
+            <Col sm className="mt-5">
               <VerticalCard
                 content={{
                   icon: "gavel",
@@ -270,7 +255,7 @@ const IndexPage = ({ intl }) => (
                 }}
               />
             </Col>
-            <Col>
+            <Col sm className="mt-5">
               <VerticalCard
                 content={{
                   icon: "handshake",
@@ -300,6 +285,6 @@ const IndexPage = ({ intl }) => (
       <Sponsors />
     </Container>
   </Layout>
-)
+);
 
-export default injectIntl(IndexPage)
+export default injectIntl(IndexPage);
