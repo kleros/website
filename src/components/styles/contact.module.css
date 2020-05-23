@@ -2,70 +2,89 @@
   background-color: var(--color-purple-faded);
   border-radius: 37.3588px;
   display: grid;
-  grid: 1fr 1fr / 1fr 1fr 1fr;
+  grid: 1fr 1fr / 1fr 1fr;
   place-items: center;
   padding: 1rem 1.5rem;
 }
 
 .contact img {
-  width: 4rem;
-  height: auto;
-  margin: 0.5rem 1rem;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
 }
 
 .contact svg {
-  display: block;
-  grid-row: 1 / span 2;
-  justify-self: start;
-  grid-column: 1;
-  height: 100%;
-  min-width: 6rem;
+  display: none;
 }
 
 .contact span {
   color: white;
   font-size: var(--font-size-bigger);
-  text-align: left;
-  align-self: center;
   white-space: nowrap;
   grid-row-start: 1;
   grid-row-end: 1;
-  grid-column: 2 / span 2;
+  grid-column: 1 / span 2;
   justify-self: center;
-  display: block;
 }
 
-.contact > div:nth-child(3) {
+.rest {
   grid-row-start: 2;
   grid-row-end: 2;
-  grid-column: 2 / span 2;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .contact {
-    grid: 1fr / [logo] 2fr [text] 16fr [telegram] 6fr;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+    padding: 1rem 1.5rem;
+  }
+
+  .contact svg {
+    display: block;
+    grid-row: 1 / span 2;
+    justify-self: start;
+    grid-column: 1;
+    height: 75%;
+  }
+
+  .rest {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+
+    display: block;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .contact {
+    grid: 1fr / [logo] 4fr [text] 16fr [icons] 6fr;
   }
 
   .contact svg {
     display: block;
     grid-column: logo;
-    grid-row: 1 / span 1;
-    width: 5.5rem;
-    height: auto;
+    height: 100%;
+  }
+
+  .rest {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .contact span {
     font-size: var(--font-size-huge);
     grid-column: text;
     display: block;
-    justify-self: left;
-    margin-left: 1rem;
+    align-self: center;
+    margin-left: 2rem;
   }
 
-  .contact > div:nth-child(3) {
+  .icons {
     justify-self: right;
     display: block;
-    grid-row: 1;
+    grid-column: icons;
   }
 }
