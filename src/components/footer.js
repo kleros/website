@@ -47,7 +47,9 @@ const Footer = ({ intl }) => {
       <Container fluid className="p-0">
         <Row>
           <Col className="d-none d-lg-block">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </Col>
           <Col xs={12} lg={6} className={styles.links}>
             <Link className="mr-3" to="/about">
