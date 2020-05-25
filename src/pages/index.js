@@ -51,35 +51,35 @@ const IndexPage = ({ intl }) => (
       </section>
       <Sash
         as="div"
-        figures={{
-          first: {
+        figures={[
+          {
             title: intl.formatMessage({
               id: "index.sash.first.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "index.sash.first.paragraph",
             }),
             icon: "scales",
           },
-          second: {
+          {
             title: intl.formatMessage({
               id: "index.sash.second.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "index.sash.second.paragraph",
             }),
             icon: "epsilon",
           },
-          third: {
+          {
             title: intl.formatMessage({
               id: "index.sash.third.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "index.sash.third.paragraph",
             }),
             icon: "kleros",
           },
-        }}
+        ]}
       />
       <section className={styles.usecases}>
         <div className="iframe-container">

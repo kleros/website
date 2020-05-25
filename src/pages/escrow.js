@@ -44,35 +44,35 @@ const Escrow = ({ intl }) => (
       </section>
       <Sash
         as="div"
-        figures={{
-          first: {
+        figures={[
+          {
             title: intl.formatMessage({
               id: "escrow.sash.first.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "escrow.sash.first.paragraph",
             }),
             icon: "scales",
           },
-          second: {
+          {
             title: intl.formatMessage({
               id: "escrow.sash.second.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "escrow.sash.second.paragraph",
             }),
             icon: "epsilon",
           },
-          third: {
+          {
             title: intl.formatMessage({
               id: "escrow.sash.third.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "escrow.sash.third.paragraph",
             }),
             icon: "kleros",
           },
-        }}
+        ]}
       />
       <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "escrow.section-use-case.h1" })}</h1>

@@ -44,35 +44,35 @@ const Curate = ({ intl }) => (
       </section>
       <Sash
         as="div"
-        figures={{
-          first: {
+        figures={[
+          {
             title: intl.formatMessage({
               id: "curate.sash.first.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "curate.sash.first.paragraph",
             }),
             icon: "scales",
           },
-          second: {
+          {
             title: intl.formatMessage({
               id: "curate.sash.second.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "curate.sash.second.paragraph",
             }),
             icon: "epsilon",
           },
-          third: {
+          {
             title: intl.formatMessage({
               id: "curate.sash.third.title",
             }),
-            paragraph: intl.formatMessage({
+            text: intl.formatMessage({
               id: "curate.sash.third.paragraph",
             }),
             icon: "kleros",
           },
-        }}
+        ]}
       />
       <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "curate.section-use-case.h1" })}</h1>
