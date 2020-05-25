@@ -1,6 +1,7 @@
 .sash {
   background: white;
   padding: 3rem;
+  text-align: center;
 }
 
 .sash span {
