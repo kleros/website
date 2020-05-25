@@ -56,7 +56,7 @@
         "paragraph": "Kleros works in a wide variety of industries."
       }
     },
-    "section-2": {
+    "section-use-case": {
       "h1": "Use Cases",
       "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be sovled by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",
       "cards": {
@@ -114,7 +114,7 @@
         "paragraph": "Kleros will make sure that the curation decisions are done in a fair and transparent way."
       }
     },
-    "section-2": {
+    "section-use-case": {
       "h1": "Kleros Curate Use Cases",
       "cards": {
         "1": "Token Listing",
@@ -127,8 +127,65 @@
         "8": "Anti-Spam",
         "9": "More"
       }
+    },
+
+    "section-3": {
+      "h1": "Kleros Curate",
+      "h2": "Create your own token curated registry and put the information power in the hands of your community.",
+      "button": "Start Using Kleros Curate"
+    },
+    "section-4": {
+      "h1": "Who is Using This?"
     }
   },
+  "escrow": {
+    "section-hero": {
+      "h1": "Kleros Escrow",
+      "h2": "Trade, hire and pay secured by trustless dispute resolution.",
+      "button-primary": "Try Kleros Escrow"
+    },
+    "sash": {
+      "first": {
+        "title": "The Risk of Online Commerce",
+        "paragraph": "When contracting someone online there is always the risk of the other party not fulfilling the agreement, or acting maliciously."
+      },
+      "second": {
+        "title": "Use Kleros Escrow",
+        "paragraph": "In case something goes wrong, the dispute will be resolved by Kleros."
+      },
+      "third": {
+        "title": "Transact Securely",
+        "paragraph": "With Kleros Escrow, the buyer and seller can be confident that the other party will fulfill their obligation."
+      }
+    },
+    "section-use-case": {
+      "h1": "Kleros Curate Use Cases",
+      "cards": {
+        "1": "Freelancing",
+        "2": "Domain Name Transfer",
+        "3": "Bounties",
+        "4": "E-Commerce",
+        "5": "Payroll",
+        "6": "Crowdfunding Milestones",
+        "7": "OTC",
+        "8": "Plagiarism",
+        "9": "More"
+      }
+    },
+
+    "section-3": {
+      "h1": "Secure Your Transactions With Kleros",
+      "h2": "Start using Kleros Escrow to reduce counterparty risk in your online transactions.",
+      "button": "Start Using Kleros Escrow"
+    },
+
+    "section-4": {
+      "h1": "Integrate Escrow in Your Platform",
+      "h2": "If you're building an e-commerce platfrom, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
+      "button": "Integrate Now"
+    }
+  },
+
   "contact": {
     "title": "Get in Touch"
   }

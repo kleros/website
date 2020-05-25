@@ -62,6 +62,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   margin: 0;
+  text-align: center;
 }
 
 main {
@@ -118,15 +119,6 @@ svg {
 
 hr {
   margin: 4rem 0;
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
 }
 
 article,

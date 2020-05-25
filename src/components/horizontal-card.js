@@ -22,6 +22,11 @@ import restaurant from "src/assets/icons/restaurant.png";
 import hotel from "src/assets/icons/hotel.png";
 import spam from "src/assets/icons/spam.png";
 import social from "src/assets/icons/social.png";
+import bounty from "src/assets/icons/bounty.png";
+import otc from "src/assets/icons/otc.png";
+import crowdfunding from "src/assets/icons/crowdfunding.png";
+import payroll from "src/assets/icons/payroll.png";
+import www from "src/assets/icons/www.png";
 
 import { Container } from "react-bootstrap";
 
@@ -41,6 +46,11 @@ const ICONS = {
   hotel,
   spam,
   social,
+  bounty,
+  crowdfunding,
+  otc,
+  payroll,
+  www,
 };
 
 const HorizontalCard = ({ content, intl }) => (

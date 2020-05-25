@@ -75,60 +75,60 @@ const Curate = ({ intl }) => (
         }}
       />
       <section className={styles.usecases}>
-        <h1>{intl.formatMessage({ id: "curate.section-2.h1" })}</h1>
+        <h1>{intl.formatMessage({ id: "curate.section-use-case.h1" })}</h1>
         <div className={styles.cards}>
           <HorizontalCard
             content={{
               icon: "token",
-              text: intl.formatMessage({ id: "curate.section-2.cards.1" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.1" }),
             }}
           />
           <HorizontalCard
             content={{
               icon: "moderation",
-              text: intl.formatMessage({ id: "curate.section-2.cards.2" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.2" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "hotel",
-              text: intl.formatMessage({ id: "curate.section-2.cards.3" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.3" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "restaurant",
-              text: intl.formatMessage({ id: "curate.section-2.cards.4" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.4" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "insurance",
-              text: intl.formatMessage({ id: "curate.section-2.cards.5" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.5" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "eCommerce",
-              text: intl.formatMessage({ id: "curate.section-2.cards.6" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.6" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "social",
-              text: intl.formatMessage({ id: "curate.section-2.cards.7" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.7" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "spam",
-              text: intl.formatMessage({ id: "curate.section-2.cards.8" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.8" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "plus",
-              text: intl.formatMessage({ id: "curate.section-2.cards.9" }),
+              text: intl.formatMessage({ id: "curate.section-use-case.cards.9" }),
             }}
           />
         </div>
@@ -136,12 +136,20 @@ const Curate = ({ intl }) => (
 
       <section className="masked">
         <span className="trapezium" />
-        <h1>Kleros Curate</h1>
-        <h2>Create your own token curated registry and put the information power in the hands of your community</h2>
-        <a className="btn btn-secondary">Start Using Kleros Curate</a>
+        <h1>
+          <FormattedMessage id="curate.section-3.h1" />
+        </h1>
+        <h2>
+          <FormattedMessage id="curate.section-3.h2" />
+        </h2>
+        <a className="btn btn-secondary">
+          <FormattedMessage id="curate.section-3.button" />
+        </a>
       </section>
       <section>
-        <h1> Who Is Using This?</h1>
+        <h1>
+          <FormattedMessage id="curate.section-4.h1" />
+        </h1>
         <Container className="mt-5 d-flex flex-wrap justify-content-around">
           <Badge as="a" href="https://www.deversifi.com/" className={styles.badge}>
             <span class={styles.helper}></span>

@@ -87,61 +87,61 @@ const IndexPage = ({ intl }) => (
         </div>
         <hr />
 
-        <h1>{intl.formatMessage({ id: "index.section-2.h1" })}</h1>
-        <h2>{intl.formatMessage({ id: "index.section-2.h2" })}</h2>
+        <h1>{intl.formatMessage({ id: "index.section-use-case.h1" })}</h1>
+        <h2>{intl.formatMessage({ id: "index.section-use-case.h2" })}</h2>
         <div className={styles.cards}>
           <HorizontalCard
             content={{
               icon: "smallClaims",
-              text: intl.formatMessage({ id: "index.section-2.cards.1" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.1" }),
             }}
           />
           <HorizontalCard
             content={{
               icon: "insurance",
-              text: intl.formatMessage({ id: "index.section-2.cards.2" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.2" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "eCommerce",
-              text: intl.formatMessage({ id: "index.section-2.cards.3" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.3" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "finance",
-              text: intl.formatMessage({ id: "index.section-2.cards.4" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.4" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "freelancing",
-              text: intl.formatMessage({ id: "index.section-2.cards.5" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.5" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "token",
-              text: intl.formatMessage({ id: "index.section-2.cards.6" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.6" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "moderation",
-              text: intl.formatMessage({ id: "index.section-2.cards.7" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.7" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "copyright",
-              text: intl.formatMessage({ id: "index.section-2.cards.8" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.8" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
               icon: "plus",
-              text: intl.formatMessage({ id: "index.section-2.cards.9" }),
+              text: intl.formatMessage({ id: "index.section-use-case.cards.9" }),
             }}
           />
         </div>
