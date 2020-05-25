@@ -94,6 +94,41 @@
       }
     }
   },
+  "curate": {
+    "section-hero": {
+      "h1": "Kleros Curate",
+      "h2": "Information organized by your community for your community.",
+      "button-primary": "Create Your Own List With Kleros Curate"
+    },
+    "sash": {
+      "first": {
+        "title": "A World of Lists",
+        "paragraph": "What tokens to list in an exchange? What items to accept in a marketplace? Which content to remove in a social media platform? All these are problems of list curation."
+      },
+      "second": {
+        "title": "Empower Your Community",
+        "paragraph": "Integrate with Kleros, define guidelines and let your community take care of the curation."
+      },
+      "third": {
+        "title": "Fairness and Transparency",
+        "paragraph": "Kleros will make sure that the curation decisions are done in a fair and transparent way."
+      }
+    },
+    "section-2": {
+      "h1": "Kleros Curate Use Cases",
+      "cards": {
+        "1": "Token Listing",
+        "2": "Moderation",
+        "3": "Hotel Listing",
+        "4": "Restaurant Listing",
+        "5": "Insurance",
+        "6": "E-Commerce",
+        "7": "Social Media",
+        "8": "Anti-Spam",
+        "9": "More"
+      }
+    }
+  },
   "contact": {
     "title": "Get in Touch"
   }

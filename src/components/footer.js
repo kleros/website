@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../assets/logos/brand_white.svg";
+import Logo from "../assets/svgs/brand_white.svg";
 
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
@@ -106,7 +106,7 @@ const Footer = ({ intl }) => {
             </Link>
           </Col>
           <Col className="d-none d-lg-block">
-            <a href="https://court.kleros.io" className="btn btn-primary d-block mb-4">
+            <a href="https://court.kleros.io" className="btn btn-primary d-block">
               <FormattedMessage id="footer.button-primary" />
             </a>
             <Link to="/integrations" className="btn btn-secondary d-block" variant="secondary">
@@ -195,7 +195,7 @@ const Footer = ({ intl }) => {
                 aria-describedby="subscribe"
               />
               <InputGroup.Append>
-                <Button variant="primary">
+                <Button variant="primary" className="mt-0">
                   <FormattedMessage id="footer.subscribe-button" />
                 </Button>
               </InputGroup.Append>

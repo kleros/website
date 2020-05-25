@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -25,14 +25,14 @@ module.exports = {
         background_color: `#4d00b4`,
         theme_color: `#d8b6ff`,
         display: `minimal-ui`,
-        icon: `src/assets/logos/kleros.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/svgs/kleros.svg`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /logos/,
+          include: /svgs/,
         },
       },
     },
@@ -60,4 +60,4 @@ module.exports = {
       },
     },
   ],
-}
+};

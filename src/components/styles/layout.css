@@ -101,7 +101,6 @@ a,
 p,
 small {
   color: var(--color-pink);
-  white-space: nowrap;
 }
 
 a:hover {
@@ -118,7 +117,7 @@ svg {
 }
 
 hr {
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 
 h1 {

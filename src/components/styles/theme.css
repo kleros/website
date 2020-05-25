@@ -41,14 +41,16 @@ h2 {
 
 main .btn,
 footer .btn {
+  margin-top: 1.5rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-weight: 600;
   border-width: 0;
   border-radius: 300px;
-  max-width: 20rem;
-  width: -webkit-fill-available;
+  max-width: 30rem;
+  width: auto;
   font-size: 1.285714286rem;
 }
 
@@ -56,41 +58,32 @@ footer .btn {
 .btn-primary:active,
 .btn-primary:focus {
   color: white;
-  background: linear-gradient(
-    90deg,
-    var(--color-blue) 0%,
-    var(--color-blue-light) 100%
-  );
+  background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
   box-shadow: 0px 12px 90px var(--color-blue);
 }
 
 .btn .btn-primary:hover {
-  background: linear-gradient(
-    270deg,
-    var(--color-blue) 0%,
-    var(--color-blue-light) 100%
-  );
+  background: linear-gradient(270deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
 }
 
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background: linear-gradient(
-    90deg,
-    var(--color-purple-light) 0%,
-    var(--color-pink-light) 100%
-  );
+  background: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
   box-shadow: 0px 12px 90px var(--color-purple-light);
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(
-    270deg,
-    var(--color-purple-light) 0%,
-    var(--color-pink-light) 100%
-  );
+  background: linear-gradient(270deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
 }
 
 hr {
   border: 1px solid var(--color-purple-light);
+}
+
+section.masked {
+  background-color: var(--color-purple-darkest);
+  background: center / contain no-repeat url("../../assets/images/symbol-mask.svg");
+  background-size: contain;
+  padding: 6rem 0rem;
 }

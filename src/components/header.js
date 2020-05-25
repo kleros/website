@@ -1,13 +1,16 @@
 import React from "react";
 
-import Logo from "../assets/logos/brand_white.svg";
-import Court from "../assets/logos/kleros.svg";
-import Curate from "../assets/logos/curate.svg";
-import Escrow from "../assets/logos/escrow.svg";
-import T2CR from "../assets/logos/t2cr.svg";
-import DisputeResolver from "../assets/logos/dispute-resolver.svg";
-import Ninja from "../assets/logos/ninja.svg";
-import Linguo from "../assets/logos/linguo.svg";
+import Logo from "../assets/svgs/brand_white.svg";
+import Court from "../assets/svgs/kleros.svg";
+import Curate from "../assets/svgs/curate.svg";
+import Escrow from "../assets/svgs/escrow.svg";
+import T2CR from "../assets/svgs/t2cr.svg";
+import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
+import Ninja from "../assets/svgs/ninja.svg";
+import Linguo from "../assets/svgs/linguo.svg";
+
+import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
+import Realitio from "src/assets/images/realitio.png";
 
 import styles from "./styles/header.module.css";
 import { Navbar, Nav, NavDropdown, Collapse, Card, Button, Badge } from "react-bootstrap";
@@ -36,7 +39,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className={styles.responsiveNavbarNav}>
           <Nav className="m-auto">
-            <Button variant="outline-*" data-toggle="collapse" data-target="#dapps" aria-expanded="false" aria-controls="dapps" className={`position-relative px-lg-2 pl-0 collapsed`}>
+            <Button variant="outline-*" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse" className={`position-relative px-lg-2 pl-0 collapsed`}>
               <FormattedMessage id="header.dapps" />
             </Button>
             <Link to="/integrations" className="text-pink nav-link">
@@ -80,7 +83,7 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Collapse id="dapps" className={`collapse ${styles.dapps}`}>
+      <Collapse id="collapse" className={`collapse ${styles.dapps}`}>
         <Card>
           <Card.Body className="px-5 py-3 text-center">
             <div className="d-inline-block">
@@ -143,7 +146,7 @@ const Header = () => {
               <a href="https://resolve.kleros.io">
                 <Badge>
                   <span class={styles.helper}></span>
-                  <img src="/crypto-unlocked.png" />
+                  <img src={CryptoUnlocked} />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker ">Crypto Unlocked</p>
@@ -152,7 +155,7 @@ const Header = () => {
               <a href="https://resolve.kleros.io">
                 <Badge>
                   <span class={styles.helper}></span>
-                  <img src="/realitio.png" />
+                  <img src={Realitio} />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Realitio</p>

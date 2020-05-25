@@ -13,15 +13,19 @@ import { Badge, Container, Row, Col } from "react-bootstrap";
 
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 import styles from "./styles/index.module.css";
-import Court from "../assets/logos/kleros.svg";
-import Curate from "../assets/logos/curate.svg";
-import Escrow from "../assets/logos/escrow.svg";
-import T2CR from "../assets/logos/t2cr.svg";
-import Resolver from "../assets/logos/dispute-resolver.svg";
-import Ninja from "../assets/logos/ninja.svg";
-import Linguo from "../assets/logos/linguo.svg";
-import CU from "../assets/logos/kleros.svg";
-import Realitio from "../assets/logos/kleros.svg";
+import Court from "../assets/svgs/kleros.svg";
+import Curate from "../assets/svgs/curate.svg";
+import Escrow from "../assets/svgs/escrow.svg";
+import T2CR from "../assets/svgs/t2cr.svg";
+import Resolver from "../assets/svgs/dispute-resolver.svg";
+import Ninja from "../assets/svgs/ninja.svg";
+import Linguo from "../assets/svgs/linguo.svg";
+import CU from "../assets/svgs/kleros.svg";
+import CasesDisputes from "src/assets/images/cases-disputes.png";
+import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
+import Realitio from "src/assets/images/realitio.png";
+
+import IndexHero from "src/assets/images/index-hero.png";
 
 const IndexPage = ({ intl }) => (
   <Layout>
@@ -43,7 +47,7 @@ const IndexPage = ({ intl }) => (
             <FormattedMessage id="index.section-hero.button-secondary" />
           </Link>
         </Container>
-        <img src="/index-hero.png" alt="Court Screenshot" />
+        <img src={IndexHero} alt={IndexHero} />
       </section>
       <Sash
         as="div"
@@ -145,7 +149,7 @@ const IndexPage = ({ intl }) => (
       <section>
         <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
-        <img src="/cases-disputes.png" alt="A figure about how Kleros works." />
+        <img src={CasesDisputes} alt="A figure about how Kleros works." />
       </section>
 
       <div className={styles.products}>
@@ -211,7 +215,7 @@ const IndexPage = ({ intl }) => (
             <a href="https://resolve.kleros.io">
               <Badge>
                 <span className={styles.helper} />
-                <img src="/crypto-unlocked.png" />
+                <img src={CryptoUnlocked} />
               </Badge>
             </a>
             <p className="text-center text-purple-darker ">Crypto Unlocked</p>
@@ -219,7 +223,7 @@ const IndexPage = ({ intl }) => (
           <div className="d-inline-block">
             <a href="https://resolve.kleros.io">
               <Badge>
-                <img src="/realitio.png" />
+                <img src={Realitio} />
               </Badge>
             </a>
             <p className="text-center text-purple-darker  ">Realitio</p>

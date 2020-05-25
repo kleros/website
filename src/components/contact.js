@@ -2,7 +2,7 @@ import React from "react";
 
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl";
 
-import Logo from "../assets/logos/kleros-white.svg";
+import Logo from "../assets/svgs/kleros-white.svg";
 
 import telegram from "src/assets/icons/telegram.png";
 import email from "src/assets/icons/email.png";
