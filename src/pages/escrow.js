@@ -12,7 +12,7 @@ import Contact from "../components/contact";
 import Deversifi from "src/assets/images/deversifi.png";
 import Escrow1 from "src/assets/images/escrow1.png";
 import Escrow2 from "src/assets/images/escrow2.png";
-import CurateHero from "src/assets/images/curate-hero.png";
+import EscrowHero from "src/assets/images/escrow-hero.png";
 
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 
@@ -40,7 +40,7 @@ const Escrow = ({ intl }) => (
             <FormattedMessage id="escrow.section-hero.button-primary" />
           </a>
         </Container>
-        <img src={CurateHero} alt={CurateHero} />
+        <img src={EscrowHero} alt={EscrowHero} />
       </section>
       <Sash
         as="div"
