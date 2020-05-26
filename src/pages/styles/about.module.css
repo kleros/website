@@ -36,7 +36,7 @@
 
 .overlay span {
   display: block;
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-medium);
 }
 
 .overlay span:first-child {
@@ -46,7 +46,7 @@
 
 .social {
   justify-content: space-around;
-  margin-top: 3rem;
+  margin-top: 10%;
 }
 
 .social > a > svg {
