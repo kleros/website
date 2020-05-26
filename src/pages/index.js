@@ -83,7 +83,7 @@ const IndexPage = ({ intl }) => (
       />
       <section className={styles.usecases}>
         <div className="iframe-container">
-          <iframe title="introduction-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/M8nJ7yrTL-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; controls=0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <hr />
 

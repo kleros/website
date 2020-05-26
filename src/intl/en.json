@@ -188,7 +188,7 @@
   "about": {
     "section-hero": {
       "h1": "About Kleros",
-      "h2": "About Kleros Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts are coordinated by <link>Coopérative Kleros</link>, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use."
+      "h2": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts are coordinated by <anchor>Coopérative Kleros</anchor>, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use."
     },
     "section-2": "How It Works",
     "sash": {
