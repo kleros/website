@@ -120,7 +120,7 @@ const About = ({ intl }) => (
       </section>
       <Container fluid className={`no-gutters p-0 ${styles.team}`}>
         <Row className="no-gutters">
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -141,7 +141,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -162,7 +162,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -183,7 +183,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -204,7 +204,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -225,7 +225,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -246,7 +246,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -267,7 +267,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -288,7 +288,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -309,7 +309,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -330,7 +330,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -351,7 +351,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -372,7 +372,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -393,7 +393,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -414,7 +414,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -435,7 +435,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -456,7 +456,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
@@ -477,7 +477,7 @@ const About = ({ intl }) => (
               </Row>
             </div>
           </Col>{" "}
-          <Col xs={2} className={styles.portraitContainer}>
+          <Col xs={4} sm={3} md={2} className={styles.portraitContainer}>
             <img style={{ width: "100%" }} src={Federico} />
             <div className={styles.overlay}>
               <span>Federico Ast </span>
