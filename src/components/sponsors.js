@@ -1,5 +1,5 @@
 import React from "react";
-import ThomsonReuters from "../assets/images/thomson-reuters.png";
+import ThomsonReuters from "../assets/svgs/thomson-reuters.svg";
 
 import styles from "./styles/sponsors.module.css";
 
@@ -7,7 +7,7 @@ export default ({ extraClass }) => {
   return (
     <div className={`${extraClass} ${styles.sponsors}`}>
       <div className={styles.reutersContainer}>
-        <img className={styles.reuters} src={ThomsonReuters} alt="Hosted by Thomson Reuters Incubator" />
+        <ThomsonReuters className={styles.reuters} />
       </div>
       <div className={styles.bpiContainer}>
         <svg viewBox="0 0 568 163" version="1.1" className={styles.bpi}>

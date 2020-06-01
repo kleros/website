@@ -6,10 +6,27 @@
   margin: auto;
 }
 
-.reuters {
-  padding: 1rem;
+.reutersContainer {
+}
+
+.bpiContainer {
+}
+
+.sponsors svg {
+  height: 80px;
+
+  width: auto;
   max-width: 100%;
-  height: auto;
+}
+
+.reuters {
+  padding: 0;
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.reuters path {
+  fill: white;
 }
 
 .bpi {
@@ -17,7 +34,6 @@
   "-webkit-filter":grayscale(100%) ;
   filter: grayscale(100%);
   filter: gray;
-  width: 100%;
-  height: auto;
+
   padding: 1rem;
 }

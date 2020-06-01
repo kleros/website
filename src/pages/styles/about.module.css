@@ -60,6 +60,7 @@
 
 .partners > img {
   margin: 1rem 2rem;
+  max-width: 80%;
 }
 
 .partners > h2 {
