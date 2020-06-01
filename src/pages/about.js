@@ -9,7 +9,11 @@ import VerticalCard from "../components/vertical-card";
 import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
 
-import Deversifi from "src/assets/images/deversifi.png";
+import Deversifi from "src/assets/images/deversifi-bw.png";
+import Ink from "src/assets/images/ink.png";
+import MarketProtocol from "src/assets/images/marketprotocol.png";
+import BlueFrontiers from "src/assets/images/bluefrontiers.png";
+import WindingTree from "src/assets/images/winding-tree.png";
 
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 import Github from "src/assets/svgs/github.svg";
@@ -176,6 +180,14 @@ const About = ({ intl }) => {
             ))}
           </Row>
         </Container>
+        <section className={styles.partners}>
+          <h2>Partners</h2>
+          <img src={Deversifi} />
+          <img src={MarketProtocol} />
+          <img src={Ink} />
+          <img src={WindingTree} />
+          <img src={BlueFrontiers} />
+        </section>
         <section>
           <hr />
           <Sponsors extraClass="mt-5" />

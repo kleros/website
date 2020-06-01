@@ -57,3 +57,11 @@
 .social path {
   fill: white;
 }
+
+.partners > img {
+  margin: 1rem 2rem;
+}
+
+.partners > h2 {
+  font-weight: var(--font-weight-bold);
+}
