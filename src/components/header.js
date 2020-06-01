@@ -142,6 +142,14 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Escrow</p>
               </div>
               <div className="d-inline-block">
+                <a href="https://resolve.kleros.io">
+                  <Badge>
+                    <DisputeResolver />
+                  </Badge>
+                </a>
+                <p className="text-center text-purple-darker ">Dispute Resolver</p>
+              </div>
+              <div className="d-inline-block">
                 <a href="https://linguo.kleros.io">
                   <Badge>
                     <Linguo />
@@ -173,14 +181,7 @@ class Header extends React.Component {
                 </a>
                 <p className="text-center text-purple-darker ">Ninja</p>
               </div>
-              <div className="d-inline-block">
-                <a href="https://resolve.kleros.io">
-                  <Badge>
-                    <DisputeResolver />
-                  </Badge>
-                </a>
-                <p className="text-center text-purple-darker ">Dispute Resolver</p>
-              </div>
+
               <div className="d-inline-block">
                 <a href="https://resolve.kleros.io">
                   <Badge>
