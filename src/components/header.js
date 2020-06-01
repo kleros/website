@@ -32,12 +32,12 @@ const FLAGS = {
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { navbarNotCollapsed: window.matchMedia("(min-width: 768px)").matches };
+    this.state = { navbarNotCollapsed: window && window.matchMedia("(min-width: 768px)").matches };
   }
 
   componentDidMount() {
     const handler = (e) => this.setState({ navbarNotCollapsed: e.matches });
-    window.matchMedia("(min-width: 768px)").addListener(handler);
+    window && window.matchMedia("(min-width: 768px)").addListener(handler);
   }
 
   render() {
