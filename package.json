@@ -23,7 +23,8 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-media": "^1.10.0"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",

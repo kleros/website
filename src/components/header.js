@@ -1,4 +1,5 @@
 import React from "react";
+import Media from "react-media";
 
 import Logo from "../assets/svgs/brand_white.svg";
 import Court from "../assets/svgs/kleros.svg";
@@ -32,12 +33,6 @@ const FLAGS = {
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    if (window) this.state = { navbarNotCollapsed: window.matchMedia("(min-width: 768px)").matches };
-  }
-
-  componentDidMount() {
-    const handler = (e) => this.setState({ navbarNotCollapsed: e.matches });
-    if (window) window.matchMedia("(min-width: 768px)").addListener(handler);
   }
 
   render() {
@@ -66,32 +61,65 @@ class Header extends React.Component {
                 <FormattedMessage id="header.about" />
               </Link>
             </Nav>
-            <Nav style={this.state.navbarNotCollapsed ? { width: "8rem", justifyContent: "flex-end" } : {}}>
-              <IntlContextConsumer>
-                {({ languages, language: currentLocale }) => {
-                  const items = languages
-                    .filter((language) => language !== currentLocale)
-                    .map((language) => (
-                      <NavDropdown.Item
-                        key={language}
-                        title={language}
-                        className="h3 text-right px-2 "
-                        onClick={() => {
-                          changeLocale(language);
-                        }}
-                      >
-                        {FLAGS[language] || language}
-                      </NavDropdown.Item>
-                    ));
+            <Media queries={{ notCollapsed: "(min-width: 768px)" }}>
+              {(matches) =>
+                matches.notCollapsed ? (
+                  <Nav style={{ width: "8rem", justifyContent: "flex-end" }}>
+                    <IntlContextConsumer>
+                      {({ languages, language: currentLocale }) => {
+                        const items = languages
+                          .filter((language) => language !== currentLocale)
+                          .map((language) => (
+                            <NavDropdown.Item
+                              key={language}
+                              title={language}
+                              className="h3 text-right px-2 "
+                              onClick={() => {
+                                changeLocale(language);
+                              }}
+                            >
+                              {FLAGS[language] || language}
+                            </NavDropdown.Item>
+                          ));
 
-                  return (
-                    <NavDropdown alignRight title={FLAGS[currentLocale]} className="d-inline-flex h3">
-                      {items}
-                    </NavDropdown>
-                  );
-                }}
-              </IntlContextConsumer>
-            </Nav>
+                        return (
+                          <NavDropdown alignRight title={FLAGS[currentLocale]} className="d-inline-flex h3">
+                            {items}
+                          </NavDropdown>
+                        );
+                      }}
+                    </IntlContextConsumer>
+                  </Nav>
+                ) : (
+                  <Nav>
+                    <IntlContextConsumer>
+                      {({ languages, language: currentLocale }) => {
+                        const items = languages
+                          .filter((language) => language !== currentLocale)
+                          .map((language) => (
+                            <NavDropdown.Item
+                              key={language}
+                              title={language}
+                              className="h3 text-right px-2 "
+                              onClick={() => {
+                                changeLocale(language);
+                              }}
+                            >
+                              {FLAGS[language] || language}
+                            </NavDropdown.Item>
+                          ));
+
+                        return (
+                          <NavDropdown alignRight title={FLAGS[currentLocale]} className="d-inline-flex h3">
+                            {items}
+                          </NavDropdown>
+                        );
+                      }}
+                    </IntlContextConsumer>
+                  </Nav>
+                )
+              }
+            </Media>
           </Navbar.Collapse>
         </Navbar>
         <Collapse id="collapse" className={`collapse ${styles.dapps}`}>
