@@ -183,11 +183,11 @@ const Escrow = ({ intl }) => (
       </section>
       <div></div>
       <section>
-        <div id="holder" style={{ position: "relative", height: "70vw", maxWidth: "100vw", margin: "auto" }}>
+        <div id="holder" style={{ position: "relative", height: "40vw", maxWidth: "100vw", margin: "auto" }}>
           <div style={{ float: "right", maxWidth: "70%" }}>
             <Escrow1 />
           </div>
-          <div style={{ float: "left", position: "absolute", top: "30vw", maxWidth: "70%" }}>
+          <div style={{ float: "left", position: "absolute", top: "20vw", maxWidth: "70%" }}>
             <Escrow2 />
           </div>
           <div style={{ clear: "both" }}></div>
