@@ -17,6 +17,8 @@
   --color-pink-dark: #824ccb; /* (texts when over white background) */
   --color-blue-light: #7bcbff;
   --color-blue: #009aff;
+  --color-gray: #333;
+  --color-gray-light: #999;
 }
 
 body {
@@ -52,17 +54,17 @@ footer .btn {
   max-width: 30rem;
   width: auto;
   font-size: 1.285714286rem;
+  color: white;
 }
 
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus {
-  color: white;
   background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
-  box-shadow: 0px 12px 90px var(--color-blue);
 }
 
-.btn .btn-primary:hover {
+.btn-primary:hover {
+  box-shadow: 0px 12px 90px var(--color-blue);
   background: linear-gradient(270deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
 }
 
@@ -70,10 +72,10 @@ footer .btn {
 .btn-secondary:active,
 .btn-secondary:focus {
   background: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
-  box-shadow: 0px 12px 90px var(--color-purple-light);
 }
 
 .btn-secondary:hover {
+  box-shadow: 0px 12px 90px var(--color-purple-light);
   background: linear-gradient(270deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
 }
 

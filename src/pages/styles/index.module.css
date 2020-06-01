@@ -1,5 +1,6 @@
 .hero {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hero img {
@@ -15,7 +16,12 @@
 .buttonWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.buttonWrapper a {
+  margin: 0 2rem;
 }
 
 .cards {
@@ -46,10 +52,10 @@
 
 .products {
   background-color: var(--color-pink-lightest);
-  padding: 3rem 0;
+  padding: 7rem 0;
 }
 
-.products > div > div:first-child {
+.productsTitle {
   font-size: var(--font-size-huge);
   font-weight: var(--font-weight-bold);
   color: var(--color-purple);

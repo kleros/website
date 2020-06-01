@@ -55,6 +55,11 @@
   font-weight: var(--font-weight-bold);
 } */
 
+body main section {
+  max-width: 1200px;
+  margin: auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif !important;
   font-size: 1rem;
@@ -77,6 +82,7 @@ section {
   margin: 0 6vw;
   margin-top: 5vh;
   margin-bottom: 3vh;
+  padding: 75px;
 }
 section:last-of-type {
   margin-bottom: 5vh;
@@ -84,7 +90,7 @@ section:last-of-type {
 
 footer {
   margin-top: auto;
-  padding: 3rem 6vw;
+  padding: 7rem 6vw;
   width: 100%;
 
   background-color: var(--color-purple);
@@ -111,6 +117,14 @@ a:hover {
   color: white;
 }
 
+h1 {
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  margin-bottom: 1.4rem;
+}
+
 img {
   max-width: 100%;
 }
@@ -122,10 +136,6 @@ svg {
 
 hr {
   margin: 4rem 0;
-}
-
-figure > svg {
-  padding: 0 20%;
 }
 
 article,
@@ -153,6 +163,7 @@ video {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
+  border-radius: 15px;
 }
 
 .iframe-container iframe {

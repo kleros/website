@@ -1,27 +1,29 @@
 .sash {
   background: white;
-  padding: 3rem;
+  padding: 7rem;
   text-align: center;
 }
 
 .sash span {
   display: block;
-  color: var(--color-purple);
-  font-weight: var(--font-weight-bold);
 }
 
 .sash span:first-child {
+  color: var(--color-gray);
+  padding-top: 2.2rem;
   font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
 }
 
 .sash span:nth-child(2) {
+  color: var(--color-gray-light);
+
   font-size: var(--font-size-medium);
 }
 
 .sash figure {
-  margin-top: 4rem;
 }
 
-.sash svg > figure {
+.sash figure > svg {
   padding: 0 20%;
 }

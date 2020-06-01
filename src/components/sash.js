@@ -16,34 +16,36 @@ import { injectIntl } from "gatsby-plugin-intl";
 const Sash = ({ separator, figures, intl }) => {
   return (
     <Container fluid className={styles.sash}>
-      <Row className="d-block d-lg-flex">
-        {figures.map((figure, index) => {
-          const item = (
-            <Col>
-              <figure>
-                <figure.icon className="text" />
-                <figcaption>
-                  <span>{figure.title}</span>
-                  {figure.button && (
-                    <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"}`} href={figure.button.href}>
-                      {figure.button.text}
-                    </button>
-                  )}
-                  {figure.text && <span>{figure.text}</span>}
-                </figcaption>
-              </figure>
-            </Col>
-          );
-          if (index != figures.length - 1 && separator)
-            return (
-              <>
-                {item}
-                <div style={{ borderLeft: "1px solid #570DAE" }}></div>
-              </>
+      <section>
+        <Row className="d-block d-lg-flex">
+          {figures.map((figure, index) => {
+            const item = (
+              <Col className="px-5">
+                <figure>
+                  <figure.icon className="text" />
+                  <figcaption>
+                    <span>{figure.title}</span>
+                    {figure.button && (
+                      <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"}`} href={figure.button.href}>
+                        {figure.button.text}
+                      </button>
+                    )}
+                    {figure.text && <span>{figure.text}</span>}
+                  </figcaption>
+                </figure>
+              </Col>
             );
-          else return item;
-        })}
-      </Row>
+            if (index != figures.length - 1 && separator)
+              return (
+                <>
+                  {item}
+                  <div style={{ borderLeft: "1px solid #570DAE" }}></div>
+                </>
+              );
+            else return item;
+          })}
+        </Row>
+      </section>
     </Container>
   );
 };

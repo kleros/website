@@ -27,6 +27,7 @@
   grid-row-end: 1;
   grid-column: 1 / span 2;
   justify-self: center;
+  opacity: 0.62;
 }
 
 .rest {
@@ -77,7 +78,6 @@
   }
 
   .contact span {
-    font-size: var(--font-size-huge);
     grid-column: text;
     display: block;
     align-self: center;

@@ -177,7 +177,7 @@ const Footer = ({ intl }) => {
         </Container>
       </Container>
 
-      <p className="d-block text-center">
+      <p id="copyright" className="d-block text-center">
         <FormattedMessage id="footer.copyright" /> {new Date().getFullYear()} © Kleros
       </p>
 

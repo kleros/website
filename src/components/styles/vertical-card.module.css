@@ -24,7 +24,6 @@
 .verticalCard span:nth-of-type(2) {
   font-size: var(--font-size-medium);
   color: var(--color-pink);
-  font-weight: var(--font-weight-bold);
   display: block;
   margin-bottom: 4rem;
 }

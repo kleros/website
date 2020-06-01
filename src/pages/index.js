@@ -176,86 +176,88 @@ const IndexPage = ({ intl }) => (
       </section>
 
       <div className={styles.products}>
-        <div className="px-5 py-3 text-center">
-          <div className={styles.h1}>{intl.formatMessage({ id: "index.products.h1" })}</div>
-          <div className="d-inline-block">
-            <a href="https://court.kleros.io">
-              <Badge>
-                <Court />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Court</p>
+        <section>
+          <div className="px-5 py-3 text-center">
+            <h2 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h2>
+            <div className="d-inline-block">
+              <a href="https://court.kleros.io">
+                <Badge>
+                  <Court />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Court</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://escrow.kleros.io">
+                <Badge>
+                  <Escrow />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Escrow</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://linguo.kleros.io">
+                <Badge>
+                  <Linguo />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Linguo</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://tokens.kleros.io">
+                <Badge>
+                  <T2CR />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">T2CR</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://curate.kleros.io">
+                <Badge>
+                  <Curate />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Curate</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://uniswap.ninja">
+                <Badge>
+                  <Ninja />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Ninja</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://resolve.kleros.io">
+                <Badge>
+                  <Resolver />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Dispute Resolver</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://resolve.kleros.io">
+                <Badge>
+                  <span className={styles.helper} />
+                  <img src={CryptoUnlocked} />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Crypto Unlocked</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://resolve.kleros.io">
+                <Badge>
+                  <img src={Realitio} />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker  ">Realitio</p>
+            </div>
+            <br />
+            <small>
+              <FormattedMessage id="index.products.small" />
+            </small>
           </div>
-          <div className="d-inline-block">
-            <a href="https://escrow.kleros.io">
-              <Badge>
-                <Escrow />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Escrow</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://linguo.kleros.io">
-              <Badge>
-                <Linguo />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Linguo</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://tokens.kleros.io">
-              <Badge>
-                <T2CR />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">T2CR</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://curate.kleros.io">
-              <Badge>
-                <Curate />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Curate</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://uniswap.ninja">
-              <Badge>
-                <Ninja />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Ninja</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://resolve.kleros.io">
-              <Badge>
-                <Resolver />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Dispute Resolver</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://resolve.kleros.io">
-              <Badge>
-                <span className={styles.helper} />
-                <img src={CryptoUnlocked} />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker ">Crypto Unlocked</p>
-          </div>
-          <div className="d-inline-block">
-            <a href="https://resolve.kleros.io">
-              <Badge>
-                <img src={Realitio} />
-              </Badge>
-            </a>
-            <p className="text-center text-purple-darker  ">Realitio</p>
-          </div>
-          <br />
-          <small>
-            <FormattedMessage id="index.products.small" />
-          </small>
-        </div>
+        </section>
       </div>
       <section>
         <h1 className="mb-5">Join the Justice Revolution</h1>
