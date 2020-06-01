@@ -21,3 +21,7 @@
 .sash figure {
   margin-top: 4rem;
 }
+
+.sash svg > figure {
+  padding: 0 20%;
+}

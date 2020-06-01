@@ -6,7 +6,7 @@
   height: 100%;
   overflow: auto;
 }
-.horizontalCard img {
+.horizontalCard svg {
   width: 4rem;
   height: auto;
   margin-right: 2rem;

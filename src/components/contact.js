@@ -4,24 +4,24 @@ import { injectIntl, FormattedMessage } from "gatsby-plugin-intl";
 
 import Logo from "../assets/svgs/kleros-white.svg";
 
-import telegram from "src/assets/icons/telegram.png";
-import email from "src/assets/icons/email.png";
+import Telegram from "src/assets/svgs/icon-telegram.svg";
+import Email from "src/assets/svgs/icon-envelope.svg";
 
 import styles from "./styles/contact.module.css";
 
 const Contact = ({ intl }) => (
   <div className={styles.contact}>
-    <Logo />
+    <Logo className={styles.brand} />
     <div className={styles.rest}>
       <span className="text">
         <FormattedMessage id="contact.title" />
       </span>
       <div className={styles.icons}>
         <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
-          <img src={telegram} alt="telegram icon" />
+          <Telegram />
         </a>
         <a href="mailto:contract@kleros.io" target="blank" rel="noopener noreferrer">
-          <img src={email} alt="email icon" />
+          <Email />
         </a>
       </div>
     </div>

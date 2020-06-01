@@ -7,13 +7,15 @@
   padding: 1rem 1.5rem;
 }
 
-.contact img {
-  height: 100%;
+.icons a > svg {
+  height: 6rem;
+  width: auto;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
+  display: inline;
 }
 
-.contact svg {
+.brand {
   display: none;
 }
 
@@ -41,7 +43,7 @@
     padding: 1rem 1.5rem;
   }
 
-  .contact svg {
+  .brand {
     display: block;
     grid-row: 1 / span 2;
     justify-self: start;
@@ -62,7 +64,7 @@
     grid: 1fr / [logo] 4fr [text] 16fr [icons] 6fr;
   }
 
-  .contact svg {
+  .brand {
     display: block;
     grid-column: logo;
     height: 100%;

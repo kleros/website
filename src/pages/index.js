@@ -29,6 +29,25 @@ import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 
+import copyright from "src/assets/svgs/icon-copyright.svg";
+import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
+import finance from "src/assets/svgs/icon-finance.svg";
+import freelancing from "src/assets/svgs/icon-freelance.svg";
+import insurance from "src/assets/svgs/icon-shield.svg";
+import moderation from "src/assets/svgs/icon-moderation.svg";
+import plus from "src/assets/svgs/icon-plus.svg";
+import smallClaims from "src/assets/svgs/icon-gavel.svg";
+import token from "src/assets/svgs/icon-token.svg";
+import restaurant from "src/assets/svgs/icon-fork-n-knife.svg";
+import hotel from "src/assets/svgs/icon-hotel.svg";
+import spam from "src/assets/svgs/icon-spam.svg";
+import social from "src/assets/svgs/icon-speaker.svg";
+import bounty from "src/assets/svgs/icon-bounty.svg";
+import otc from "src/assets/svgs/icon-otc.svg";
+import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
+import payroll from "src/assets/svgs/icon-payroll.svg";
+import www from "src/assets/svgs/icon-www.svg";
+
 import IndexHero from "src/assets/images/index-hero.png";
 
 const IndexPage = ({ intl }) => (
@@ -96,55 +115,55 @@ const IndexPage = ({ intl }) => (
         <div className={styles.cards}>
           <HorizontalCard
             content={{
-              icon: "smallClaims",
+              icon: smallClaims,
               text: intl.formatMessage({ id: "index.section-use-case.cards.1" }),
             }}
           />
           <HorizontalCard
             content={{
-              icon: "insurance",
+              icon: insurance,
               text: intl.formatMessage({ id: "index.section-use-case.cards.2" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "eCommerce",
+              icon: eCommerce,
               text: intl.formatMessage({ id: "index.section-use-case.cards.3" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "finance",
+              icon: finance,
               text: intl.formatMessage({ id: "index.section-use-case.cards.4" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "freelancing",
+              icon: freelancing,
               text: intl.formatMessage({ id: "index.section-use-case.cards.5" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "token",
+              icon: token,
               text: intl.formatMessage({ id: "index.section-use-case.cards.6" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "moderation",
+              icon: moderation,
               text: intl.formatMessage({ id: "index.section-use-case.cards.7" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "copyright",
+              icon: copyright,
               text: intl.formatMessage({ id: "index.section-use-case.cards.8" }),
             }}
           />{" "}
           <HorizontalCard
             content={{
-              icon: "plus",
+              icon: plus,
               text: intl.formatMessage({ id: "index.section-use-case.cards.9" }),
             }}
           />
