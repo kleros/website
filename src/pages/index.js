@@ -25,6 +25,10 @@ import CasesDisputes from "src/assets/images/cases-disputes.png";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 
+import Scales from "src/assets/svgs/icon-scales.svg";
+import Epsilon from "src/assets/svgs/icon-epsilon.svg";
+import Kleros from "src/assets/svgs/icon-kleros.svg";
+
 import IndexHero from "src/assets/images/index-hero.png";
 
 const IndexPage = ({ intl }) => (
@@ -59,7 +63,7 @@ const IndexPage = ({ intl }) => (
             text: intl.formatMessage({
               id: "index.sash.first.paragraph",
             }),
-            icon: "scales",
+            icon: Scales,
           },
           {
             title: intl.formatMessage({
@@ -68,7 +72,7 @@ const IndexPage = ({ intl }) => (
             text: intl.formatMessage({
               id: "index.sash.second.paragraph",
             }),
-            icon: "epsilon",
+            icon: Epsilon,
           },
           {
             title: intl.formatMessage({
@@ -77,7 +81,7 @@ const IndexPage = ({ intl }) => (
             text: intl.formatMessage({
               id: "index.sash.third.paragraph",
             }),
-            icon: "kleros",
+            icon: Kleros,
           },
         ]}
       />

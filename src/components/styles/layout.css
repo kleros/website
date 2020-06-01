@@ -124,6 +124,10 @@ hr {
   margin: 4rem 0;
 }
 
+figure > svg {
+  padding: 0 20%;
+}
+
 article,
 aside,
 details,

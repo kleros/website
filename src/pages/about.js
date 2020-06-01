@@ -43,6 +43,10 @@ import Danil from "src/assets/images/danil.png";
 import Sam from "src/assets/images/sam.png";
 import Stuart from "src/assets/images/stuart.png";
 
+import OnePager from "src/assets/svgs/icon-onepager.svg";
+import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
+import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
+
 import Config from "../../gatsby-config.js";
 
 const WHITE_PAPERS = {
@@ -95,7 +99,7 @@ const About = ({ intl }) => {
                 }),
                 href: "",
               },
-              icon: "onepager",
+              icon: OnePager,
             },
             {
               title: intl.formatMessage({
@@ -107,7 +111,7 @@ const About = ({ intl }) => {
                 }),
                 href: "",
               },
-              icon: "whitepaper",
+              icon: WhitePaper,
             },
             {
               title: intl.formatMessage({
@@ -119,7 +123,7 @@ const About = ({ intl }) => {
                 }),
                 href: "",
               },
-              icon: "yellowpaper",
+              icon: YellowPaper,
             },
           ]}
         />

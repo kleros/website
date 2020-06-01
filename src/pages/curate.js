@@ -14,6 +14,10 @@ import Curate1 from "src/assets/images/curate1.png";
 import Curate2 from "src/assets/images/curate2.png";
 import CurateHero from "src/assets/images/curate-hero.png";
 
+import List from "src/assets/svgs/icon-list.svg";
+import TCR from "src/assets/svgs/icon-tcr.svg";
+import Scales from "src/assets/svgs/icon-scales.svg";
+
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 
 import { Badge, Container, Row, Col } from "react-bootstrap";
@@ -52,7 +56,7 @@ const Curate = ({ intl }) => (
             text: intl.formatMessage({
               id: "curate.sash.first.paragraph",
             }),
-            icon: "scales",
+            icon: List,
           },
           {
             title: intl.formatMessage({
@@ -61,7 +65,7 @@ const Curate = ({ intl }) => (
             text: intl.formatMessage({
               id: "curate.sash.second.paragraph",
             }),
-            icon: "epsilon",
+            icon: TCR,
           },
           {
             title: intl.formatMessage({
@@ -70,7 +74,7 @@ const Curate = ({ intl }) => (
             text: intl.formatMessage({
               id: "curate.sash.third.paragraph",
             }),
-            icon: "kleros",
+            icon: Scales,
           },
         ]}
       />

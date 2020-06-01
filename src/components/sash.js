@@ -9,33 +9,9 @@ import React from "react";
 
 import styles from "./styles/sash.module.css";
 
-import escrow from "src/assets/icons/escrow.png";
-import epsilon from "src/assets/icons/epsilon.png";
-import kleros from "src/assets/icons/kleros.png";
-import list from "src/assets/icons/list.png";
-import onepager from "src/assets/icons/onepager.png";
-import yellowpaper from "src/assets/icons/yellowpaper.png";
-import whitepaper from "src/assets/icons/whitepaper.png";
-import t2cr from "src/assets/icons/t2cr.png";
-import scales from "src/assets/icons/scales.png";
-import risks from "src/assets/icons/risks.png";
-
 import { Col, Row, Container } from "react-bootstrap";
 
 import { injectIntl } from "gatsby-plugin-intl";
-
-const ICONS = {
-  escrow,
-  epsilon,
-  kleros,
-  list,
-  onepager,
-  yellowpaper,
-  whitepaper,
-  t2cr,
-  scales,
-  risks,
-};
 
 const Sash = ({ separator, figures, intl }) => {
   return (
@@ -45,7 +21,7 @@ const Sash = ({ separator, figures, intl }) => {
           const item = (
             <Col>
               <figure>
-                <img src={ICONS[figure.icon]} alt={figure.icon} />
+                <figure.icon className="text" />
                 <figcaption>
                   <span>{figure.title}</span>
                   {figure.button && (

@@ -14,6 +14,10 @@ import Escrow1 from "src/assets/images/escrow1.png";
 import Escrow2 from "src/assets/images/escrow2.png";
 import EscrowHero from "src/assets/images/escrow-hero.png";
 
+import Warning from "src/assets/svgs/icon-warning.svg";
+import EscrowIcon from "src/assets/svgs/icon-escrow.svg";
+import Kleros from "src/assets/svgs/icon-kleros.svg";
+
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 
 import { Badge, Container, Row, Col } from "react-bootstrap";
@@ -52,7 +56,7 @@ const Escrow = ({ intl }) => (
             text: intl.formatMessage({
               id: "escrow.sash.first.paragraph",
             }),
-            icon: "scales",
+            icon: Warning,
           },
           {
             title: intl.formatMessage({
@@ -61,7 +65,7 @@ const Escrow = ({ intl }) => (
             text: intl.formatMessage({
               id: "escrow.sash.second.paragraph",
             }),
-            icon: "epsilon",
+            icon: EscrowIcon,
           },
           {
             title: intl.formatMessage({
@@ -70,7 +74,7 @@ const Escrow = ({ intl }) => (
             text: intl.formatMessage({
               id: "escrow.sash.third.paragraph",
             }),
-            icon: "kleros",
+            icon: Kleros,
           },
         ]}
       />
