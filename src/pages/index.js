@@ -21,7 +21,7 @@ import Resolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
 import CU from "../assets/svgs/kleros.svg";
-import CasesDisputes from "src/assets/images/cases-disputes.png";
+import CasesDisputes from "src/assets/svgs/illustration-home.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 
@@ -48,7 +48,7 @@ import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
 
-import IndexHero from "src/assets/images/index-hero.png";
+import IndexHero from "src/assets/svgs/index-hero.svg";
 
 const IndexPage = ({ intl }) => (
   <Layout>
@@ -70,7 +70,7 @@ const IndexPage = ({ intl }) => (
             <FormattedMessage id="index.section-hero.button-secondary" />
           </Link>
         </Container>
-        <img src={IndexHero} alt={IndexHero} />
+        <IndexHero />
       </section>
       <Sash
         as="div"
@@ -172,7 +172,7 @@ const IndexPage = ({ intl }) => (
       <section>
         <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
-        <img src={CasesDisputes} alt="A figure about how Kleros works." />
+        <CasesDisputes />
       </section>
 
       <div className={styles.products}>

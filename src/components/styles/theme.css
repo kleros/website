@@ -83,7 +83,7 @@ hr {
 
 section.masked {
   background-color: var(--color-purple-darkest);
-  background: center / contain no-repeat url("../../assets/images/symbol-mask.svg");
+  background: center / contain no-repeat url("/logos-shadow.svg");
   background-size: contain;
   padding: 6rem 0rem;
 }

@@ -184,12 +184,12 @@ const Curate = ({ intl }) => (
         </Container>
       </section>
       <div></div>
-      <div id="holder" style={{ position: "relative", height: "100vmin", maxWidth: "2000px", margin: "auto" }}>
-        <div id="logo" style={{ float: "right" }}>
-          <img src={Curate1} style={{}} />
+      <div id="holder" style={{ position: "relative", height: "80vw", maxHeight: "1500px", maxWidth: "2000px", margin: "auto" }}>
+        <div style={{ float: "right" }}>
+          <img src={Curate1} style={{ maxWidth: "70vw" }} />
         </div>
         <div style={{ float: "left", position: "absolute", top: "30vmin" }}>
-          <img src={Curate2} />
+          <img src={Curate2} style={{ maxWidth: "70vw" }} />
         </div>
         <div style={{ clear: "both" }}></div>
       </div>
