@@ -47,9 +47,8 @@ import styles from "./styles/escrow.module.css";
 
 const Escrow = ({ intl }) => (
   <Layout>
-    {" "}
     <SEO title="Escrow" lang={intl.locale} />
-    <Container as="main" fluid className={styles.escrow}>
+    <Container fluid className={styles.escrow}>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="escrow.section-hero.h1" />
@@ -196,7 +195,6 @@ const Escrow = ({ intl }) => (
       <hr />
       <section>
         <Contact />
-        <Sponsors extraClass="mt-5" />
       </section>
     </Container>
   </Layout>

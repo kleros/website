@@ -3,7 +3,8 @@
   padding-bottom: 0 !important;
 }
 
-.hero img {
+.hero img,
+.hero svg {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }

@@ -5,7 +5,7 @@ import styles from "./styles/sponsors.module.css";
 
 export default ({ extraClass }) => {
   return (
-    <div className={`${extraClass} ${styles.sponsors}`}>
+    <section className={`${extraClass} ${styles.sponsors}`}>
       <div className={styles.reutersContainer}>
         <ThomsonReuters className={styles.reuters} />
       </div>
@@ -29,6 +29,6 @@ export default ({ extraClass }) => {
           </g>
         </svg>
       </div>
-    </div>
+    </section>
   );
 };

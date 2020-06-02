@@ -17,7 +17,7 @@ const Sash = ({ separator, figures, intl }) => {
   return (
     <Container fluid className={styles.sash}>
       <section>
-        <Row className="d-block d-lg-flex">
+        <div className="d-block d-lg-flex">
           {figures.map((figure, index) => {
             const item = (
               <Col className="p-5">
@@ -44,7 +44,7 @@ const Sash = ({ separator, figures, intl }) => {
               );
             else return item;
           })}
-        </Row>
+        </div>
       </section>
     </Container>
   );

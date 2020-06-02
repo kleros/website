@@ -4,6 +4,7 @@
 
 .team {
   text-align: left;
+  max-width: 100%;
 }
 
 .team > div > div > img {

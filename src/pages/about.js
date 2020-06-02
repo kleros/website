@@ -63,9 +63,8 @@ const PHOTOS = { Federico, Clément, Damjan, Shebin, Lola, Matheus, Plinio, Will
 const About = ({ intl }) => {
   return (
     <Layout>
-      {" "}
       <SEO title="About" lang={intl.locale} />
-      <Container as="main" fluid className={styles.about}>
+      <Container fluid className={styles.about}>
         <section className={styles.hero}>
           <h1>
             <FormattedMessage id="about.section-hero.h1" />
@@ -153,7 +152,7 @@ const About = ({ intl }) => {
             <FormattedMessage id="about.section-4.h2" />
           </h2>
         </section>
-        <Container fluid className={`no-gutters p-0 ${styles.team}`}>
+        <Container as="section" fluid className={`no-gutters px-0 ${styles.team}`}>
           <Row className="no-gutters">
             {Config.siteMetadata.teamMembers.map((member) => (
               <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
@@ -192,10 +191,8 @@ const About = ({ intl }) => {
           <img src={WindingTree} />
           <img src={BlueFrontiers} />
         </section>
-        <section>
-          <hr />
-          <Sponsors />
-        </section>
+        <section></section>
+        <hr />
       </Container>
     </Layout>
   );

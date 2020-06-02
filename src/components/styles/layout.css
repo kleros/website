@@ -66,33 +66,29 @@ body {
 
 main {
   background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
+  word-break: break-word;
+  padding-bottom: 4rem;
+}
+main > div {
   flex: 1;
   padding-bottom: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  word-break: break-word;
 }
 
-main > * {
+hr {
+  max-width: 90vw;
+}
+
+section {
   max-width: 1200px;
   margin-bottom: 2.5vh;
-
+  padding: 5vh 4vw;
   margin: auto;
 }
 
-main > *:first-child {
+main > div > section:first-child {
   margin-top: 2vh;
-}
-main > *:last-child {
-  margin-bottom: 5vh;
-}
-
-main > *:not(:empty) {
-  padding: 4vh 3vw;
-}
-
-main > hr {
-  max-width: min(92vw, calc(1200px - 6vw));
 }
 
 footer {

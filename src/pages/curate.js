@@ -47,9 +47,8 @@ import styles from "./styles/curate.module.css";
 
 const Curate = ({ intl }) => (
   <Layout>
-    {" "}
     <SEO title="Curate" lang={intl.locale} />
-    <Container as="main" fluid className={styles.curate}>
+    <Container fluid className={styles.curate}>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="curate.section-hero.h1" />
@@ -198,7 +197,6 @@ const Curate = ({ intl }) => (
       <hr />
       <section>
         <Contact />
-        <Sponsors extraClass="mt-5" />
       </section>
     </Container>
   </Layout>

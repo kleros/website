@@ -53,7 +53,7 @@ import IndexHero from "src/assets/svgs/index-hero.svg";
 const IndexPage = ({ intl }) => (
   <Layout>
     <SEO title="Home" lang={intl.locale} />
-    <Container as="main" fluid className={styles.index}>
+    <Container fluid className={styles.index}>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="index.section-hero.h1" />
@@ -307,7 +307,6 @@ const IndexPage = ({ intl }) => (
         </Container>
         <hr />
         <Contact />
-        <Sponsors extraClass="mt-5" />
       </section>
     </Container>
   </Layout>
