@@ -225,8 +225,8 @@
       "h2": "If you want to become a member of the Cooperative, follow the next steps. Your application will have to be approved by other members."
     },
     "sash": {
-      "first": { "title": "Subscription Form", "button": "Dowload" },
-      "second": { "title": "Statutes", "button": "Dowload" }
+      "first": { "title": "Subscription Form", "button": "Download" },
+      "second": { "title": "Statutes", "button": "Download" }
     },
     "section-steps": {
       "heading": "Steps",

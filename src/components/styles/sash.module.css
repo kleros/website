@@ -9,14 +9,14 @@
   display: block;
 }
 
-.sash span:first-child {
+.sash figcaption {
   color: var(--color-gray);
   padding-top: 2.2rem;
   font-size: var(--font-size-bigger);
   font-weight: var(--font-weight-bold);
 }
 
-.sash span:nth-child(2) {
+.text {
   color: var(--color-gray-light);
 
   font-size: var(--font-size-medium);
@@ -26,5 +26,9 @@
 }
 
 .sash figure > svg {
-  max-width: 16vw;
+  max-width: 12rem;
+}
+
+.column {
+  padding: 2rem 2vmax;
 }

@@ -20,18 +20,18 @@ const Sash = ({ separator, figures, intl }) => {
         <div className="d-block d-lg-flex">
           {figures.map((figure, index) => {
             const item = (
-              <Col className="p-5">
+              <Col className={styles.column}>
                 <figure>
                   <figure.icon className="text" />
                   <figcaption>
                     <span>{figure.title}</span>
-                    {figure.button && (
-                      <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"}`} href={figure.button.href}>
-                        {figure.button.text}
-                      </button>
-                    )}
-                    {figure.text && <span>{figure.text}</span>}
                   </figcaption>
+                  {figure.button && (
+                    <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"} ${styles.button}`} href={figure.button.href}>
+                      {figure.button.text}
+                    </button>
+                  )}
+                  {figure.text && <span className={styles.text}>{figure.text}</span>}
                 </figure>
               </Col>
             );
