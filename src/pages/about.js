@@ -198,7 +198,6 @@ const About = ({ intl }) => {
           <img src={WindingTree} />
           <img src={BlueFrontiers} />
         </section>
-        <section></section>
         <hr />
       </Container>
     </Layout>

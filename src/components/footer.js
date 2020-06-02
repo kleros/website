@@ -53,12 +53,12 @@ const Footer = ({ intl }) => {
     <footer className={styles.footer}>
       <Container fluid className="p-0">
         <Row>
-          <Col className="d-none d-lg-block">
+          <Col xs={0} md={3}>
             <Link to="/">
               <Logo />
             </Link>
           </Col>
-          <Col xs={12} lg={6} className={styles.links}>
+          <Col xs={12} md={{ span: 7, offset: 2 }} xl={{ span: 6, offset: 0 }} className={styles.links}>
             <Link className="mr-3" to="/about">
               <FormattedMessage id="footer.about" />
             </Link>
@@ -114,16 +114,16 @@ const Footer = ({ intl }) => {
               <FormattedMessage id="footer.faq" />
             </Link>
           </Col>
-          <Col className="d-none d-lg-block">
-            <a href="https://court.kleros.io" className="btn btn-primary d-block">
+          <Col className="d-none d-xl-block">
+            <a href="https://court.kleros.io" className="btn btn-primary d-block mx-0">
               <FormattedMessage id="footer.button-primary" />
             </a>
-            <Link to="/integrations" className="btn btn-secondary d-block" variant="secondary">
+            <Link to="/integrations" className="btn btn-secondary d-block mx-0" variant="secondary">
               <FormattedMessage id="footer.button-secondary" />
             </Link>
           </Col>
         </Row>
-        <hr />
+        <hr className="mt-4 mb-5" />
         <Container className={styles.bottomContainer}>
           <Row className={styles.social}>
             <a className="g-kleros_footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/kleros">

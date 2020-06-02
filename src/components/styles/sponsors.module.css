@@ -14,11 +14,16 @@
 
 .sponsors svg {
   height: 80px;
-  margin-top: 3rem;
   width: auto;
   max-width: 100%;
 }
+.sponsors div:first-of-type svg {
+  margin-top: 3rem;
+}
 
+.sponsors div {
+  align-self: flex-end;
+}
 .reuters {
   padding: 0;
   filter: grayscale(100%);

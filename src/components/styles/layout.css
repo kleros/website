@@ -32,29 +32,6 @@
   background-color: var(--color-pink) !important;
 }
 
-/* .text-4 {
-  font-size: 1rem;
-  font-weight: var(--font-weight-normal);
-}
-
-.text-3 {
-  font-size: var(--font-size-medium);
-  color: var(--color-pink);
-  font-weight: var(--font-weight-normal);
-}
-.text-2 {
-  font-size: var(--font-size-medium);
-  color: var(--color-purple);
-  font-weight: var(--font-weight-bold);
-}
-
-.text-1 {
-  font-size: var(--font-size-bigger);
-  color: var(--color-purple);
-
-  font-weight: var(--font-weight-bold);
-} */
-
 body {
   font-family: "Open Sans", sans-serif !important;
   font-size: 1rem;
@@ -68,6 +45,7 @@ main {
   background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
   word-break: break-word;
   padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 main > div {
   flex: 1;
@@ -80,20 +58,22 @@ hr {
   max-width: 90vw;
 }
 
-section {
-  max-width: 1200px;
-  margin-bottom: 2.5vh;
-  padding: 3.5vh 4vw;
+nav,
+section,
+footer > div:first-child {
+  max-width: 1400px;
   margin: auto;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
 }
 
-main > div > section:first-child {
-  margin-top: 2vh;
+section {
+  padding: 3rem 5vw;
 }
 
 footer {
   margin-top: auto;
-  padding: 4rem 6vw;
+  padding: 4rem 5vw;
   width: 100%;
 
   background-color: var(--color-purple);

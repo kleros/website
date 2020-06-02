@@ -48,7 +48,7 @@
         "paragraph": "A global community of users serving as jurors."
       },
       "second": {
-        "title": "Advanced Cryptoeconomics",
+        "title": "Cryptoeconomics",
         "paragraph": "Blockchain and game theroy bring fast, affordable and fair decisions."
       },
       "third": {
@@ -155,7 +155,7 @@
       },
       "third": {
         "title": "Transact Securely",
-        "paragraph": "With Kleros Escrow, the buyer and seller can be confident that the other party will fulfill their obligation."
+        "paragraph": "With Kleros Escrow, buyer and seller can be confident that the other party will fulfill their obligation."
       }
     },
     "section-use-case": {

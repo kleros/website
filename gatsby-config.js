@@ -54,7 +54,7 @@ module.exports = {
         links: {
           twitter: "https://twitter.com/satello3",
           linkedin: "https://www.linkedin.com/in/samvitello/",
-          github: { url: "https://github.com/satello" },
+          github: "https://github.com/satello",
         },
       },
       {

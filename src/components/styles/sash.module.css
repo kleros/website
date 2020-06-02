@@ -12,7 +12,7 @@
 .sash figcaption {
   color: var(--color-gray);
   padding-top: 2.2rem;
-  font-size: var(--font-size-bigger);
+  font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
 }
 

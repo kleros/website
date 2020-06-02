@@ -43,6 +43,8 @@ h2 {
 
 main .btn,
 footer .btn {
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 1.5rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
