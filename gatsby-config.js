@@ -9,238 +9,142 @@ module.exports = {
       {
         name: "Federico Ast",
         title: "Co-founder, CEO",
-        photo: "/img/team/federico.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/federicoast",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/federicoast/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/federicoast",
+          linkedin: "https://www.linkedin.com/in/federicoast/",
         },
       },
 
       {
         name: "Clément Lesaege",
         title: "Co-founder, CTO",
-        photo: "/img/team/clement.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/clesaege",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/cl%C3%A9ment-lesaege-a326b9ab/",
-            fa: "fab fa-linkedin-in",
-          },
-          github: {
-            url: "https://github.com/clesaege",
-            fa: "fab fa-github",
-          },
+          twitter: "https://twitter.com/clesaege",
+          linkedin: "https://www.linkedin.com/in/cl%C3%A9ment-lesaege-a326b9ab/",
+          github: "https://github.com/clesaege",
         },
       },
       {
         name: "Lola Guérin",
         title: "Office Manager",
-        photo: "/img/team/lola.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/Haz3lstar",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/lola-gu%C3%A9rin-05166782/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/Haz3lstar",
+          linkedin: "https://www.linkedin.com/in/lola-gu%C3%A9rin-05166782/",
         },
       },
       {
         name: "Stuart James",
         title: "Operations Manager",
-        photo: "/img/team/stuart.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/zambianastro",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/stuart-james-588086158/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/zambianastro",
+          linkedin: "https://www.linkedin.com/in/stuart-james-588086158/",
         },
       },
       {
         name: "William George",
         title: "Research Lead",
-        photo: "/img/team/william.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/williamhwgeorge",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/william-george-128bab148/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/williamhwgeorge",
+          linkedin: "https://www.linkedin.com/in/william-george-128bab148/",
         },
       },
       {
         name: "Sam Vitello",
         title: "DApp Developer",
-        photo: "/img/team/sam.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/satello3",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/samvitello/",
-            fa: "fab fa-linkedin-in",
-          },
-          github: { url: "https://github.com/satello", fa: "fab fa-github" },
+          twitter: "https://twitter.com/satello3",
+          linkedin: "https://www.linkedin.com/in/samvitello/",
+          github: { url: "https://github.com/satello" },
         },
       },
       {
         name: "Ferit Tunçer",
         title: "DApp Developer",
-        photo: "/img/team/ferit.png",
         links: {
-          linkedin: {
-            url: "https://www.linkedin.com/in/ferit-tuncer/",
-            fa: "fab fa-linkedin-in",
-          },
-          twitter: {
-            url: "https://twitter.com/0xferittuncer",
-            fa: "fab fa-twitter",
-          },
-          github: {
-            url: "https://github.com/ferittuncer",
-            fa: "fab fa-github",
-          },
+          linkedin: "https://www.linkedin.com/in/ferit-tuncer/",
+          twitter: "https://twitter.com/0xferittuncer",
+          github: "https://github.com/ferittuncer",
         },
       },
       {
         name: "Matheus Alencar",
         title: "DApp Developer",
-        photo: "/img/team/matt.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/mtsalenc",
-            fa: "fab fa-twitter",
-          },
-          github: {
-            url: "https://github.com/mtsalenc",
-            fa: "fab fa-github",
-          },
+          twitter: "https://twitter.com/mtsalenc",
+          github: "https://github.com/mtsalenc",
         },
       },
       {
         name: "Henrique Barcelos",
         title: "DApp Developer",
-        photo: "/img/team/henrique.png",
         links: {
-          github: { url: "https://github.com/hbarcelos", fa: "fab fa-github" },
-          twitter: {
-            url: "https://twitter.com/hbarcelos909",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/henriquebarcelos/",
-            fa: "fab fa-linkedin-in",
-          },
+          github: "https://github.com/hbarcelos",
+          twitter: "https://twitter.com/hbarcelos909",
+          linkedin: "https://www.linkedin.com/in/henriquebarcelos/",
         },
       },
       {
         name: "Danil Dmitrikov",
         title: "Solidity Developer",
-        photo: "/img/team/danil.png",
         links: {},
       },
 
       {
         name: "Plinio Braga",
         title: "UX Design Lead",
-        photo: "/img/team/plinio.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/pliniobraga_",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/pliniobraga/",
-            fa: "fab fa-linkedin-in",
-          },
-          dribble: {
-            url: "https://dribbble.com/pliniobraga",
-            fa: "fab fa-dribble",
-          },
+          twitter: "https://twitter.com/pliniobraga_",
+          linkedin: "https://www.linkedin.com/in/pliniobraga/",
+          dribble: "https://dribbble.com/pliniobraga",
         },
       },
       {
         name: "Damjan Malbasic",
         title: "Communications Lead",
-        photo: "/img/team/damjan.png",
         links: {
-          twitter: {
-            url: "https://twitter.com/flycca",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/damjan-malba%C5%A1i%C4%87-103a2199/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/flycca",
+          linkedin: "https://www.linkedin.com/in/damjan-malba%C5%A1i%C4%87-103a2199/",
         },
       },
 
       {
         name: "Tobias Glemming",
         title: "Ambassador",
-        photo: "/img/team/tobias.jpg",
         links: {
-          twitter: {
-            url: "https://twitter.com/TGlemming",
-            fa: "fab fa-twitter",
-          },
-          linkedin: {
-            url: "https://www.linkedin.com/in/tobiasglemming/",
-            fa: "fab fa-linkedin-in",
-          },
+          twitter: "https://twitter.com/TGlemming",
+          linkedin: "https://www.linkedin.com/in/tobiasglemming/",
         },
       },
       {
         name: "Laurence Zhang",
         title: "Ambassador",
-        photo: "/img/team/laurence.jpg",
         links: {
-          twitter: {
-            url: "https://twitter.com/LaurenceZhangSG",
-            fa: "fab fa-twitter",
-          },
-          github: {
-            url: "https://github.com/lanlan3322",
-            fa: "fab fa-github",
-          },
+          twitter: "https://twitter.com/LaurenceZhangSG",
+          github: "https://github.com/lanlan3322",
         },
       },
 
       {
         name: "Shebin John",
-        title: "DApp Developer",
-        photo: "/img/team/henrique.png",
+        title: "Solidity Developer",
         links: {
-          github: { url: "https://github.com/remedcu", fa: "fab fa-github" },
-          linkedin: {
-            url: "https://www.linkedin.com/in/shebinjohn/",
-            fa: "fab fa-linkedin-in",
-          },
+          github: "https://github.com/remedcu",
+          linkedin: "https://www.linkedin.com/in/shebinjohn/",
         },
       },
       {
         name: "Yann",
-        title: "DApp Developer",
-        photo: "/img/team/henrique.png",
+        title: "PhD Researcher",
+        links: {},
+      },
+      {
+        name: "Karla Pichler",
+        title: "Graphics Designer",
+        links: {},
+      },
+      {
+        name: "Lorens Huculak",
+        title: "Layer 2 Entrepreneur and Fellow",
         links: {},
       },
     ],

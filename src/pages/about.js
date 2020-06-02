@@ -20,6 +20,7 @@ import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Telegram from "src/assets/svgs/telegram.svg";
 import Twitter from "src/assets/svgs/twitter.svg";
+import Dribble from "src/assets/svgs/dribble.svg";
 
 import { Badge, Container, Row, Col } from "react-bootstrap";
 
@@ -46,6 +47,8 @@ import Laurence from "src/assets/images/laurence.png";
 import Danil from "src/assets/images/danil.png";
 import Sam from "src/assets/images/sam.png";
 import Stuart from "src/assets/images/stuart.png";
+import Karla from "src/assets/images/karla.png";
+import Lorens from "src/assets/images/lorens.png";
 
 import OnePager from "src/assets/svgs/icon-onepager.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
@@ -58,7 +61,7 @@ const WHITE_PAPERS = {
   es: WhitePaperES,
 };
 
-const PHOTOS = { Federico, Clément, Damjan, Shebin, Lola, Matheus, Plinio, William, Tobias, Yann, Ferit, Henrique, Laurence, Danil, Sam, Stuart };
+const PHOTOS = { Federico, Clément, Damjan, Shebin, Lola, Matheus, Plinio, William, Tobias, Yann, Ferit, Henrique, Laurence, Danil, Sam, Stuart, Karla, Lorens };
 
 const About = ({ intl }) => {
   return (
@@ -162,19 +165,23 @@ const About = ({ intl }) => {
                   <span>{member.title}</span>
                   <Row className={`no-gutters ${styles.social}`}>
                     {member.links.github && (
-                      <a rel="noopener noreferrer" target="_blank" href={member.links.github.url}>
+                      <a href={member.links.github} rel="noopener noreferrer" target="_blank">
                         <Github />
                       </a>
                     )}
                     {member.links.linkedin && (
-                      <a href={member.links.linkedin.url} rel="noopener noreferrer" target="_blank">
+                      <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
                         <Linkedin />
                       </a>
                     )}
-
                     {member.links.twitter && (
-                      <a href={member.links.twitter.url} rel="noopener noreferrer" target="_blank">
+                      <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
                         <Twitter />
+                      </a>
+                    )}
+                    {member.links.dribble && (
+                      <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
+                        <Dribble />
                       </a>
                     )}
                   </Row>
