@@ -1,6 +1,6 @@
 .hero {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .hero img {

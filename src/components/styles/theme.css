@@ -87,5 +87,4 @@ section.masked {
   background-color: var(--color-purple-darkest);
   background: center / contain no-repeat url("/logos-shadow.svg");
   background-size: contain;
-  padding: 6rem 0rem;
 }

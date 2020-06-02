@@ -140,7 +140,17 @@ module.exports = {
         name: "Henrique Barcelos",
         title: "DApp Developer",
         photo: "/img/team/henrique.png",
-        links: { github: { url: "https://github.com/hbarcelos", fa: "fab fa-github" } },
+        links: {
+          github: { url: "https://github.com/hbarcelos", fa: "fab fa-github" },
+          twitter: {
+            url: "https://twitter.com/hbarcelos909",
+            fa: "fab fa-twitter",
+          },
+          linkedin: {
+            url: "https://www.linkedin.com/in/henriquebarcelos/",
+            fa: "fab fa-linkedin-in",
+          },
+        },
       },
       {
         name: "Danil Dmitrikov",
@@ -151,7 +161,7 @@ module.exports = {
 
       {
         name: "Plinio Braga",
-        title: "Design Lead",
+        title: "UX Design Lead",
         photo: "/img/team/plinio.png",
         links: {
           twitter: {
@@ -161,6 +171,10 @@ module.exports = {
           linkedin: {
             url: "https://www.linkedin.com/in/pliniobraga/",
             fa: "fab fa-linkedin-in",
+          },
+          dribble: {
+            url: "https://dribbble.com/pliniobraga",
+            fa: "fab fa-dribble",
           },
         },
       },

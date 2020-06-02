@@ -1,6 +1,6 @@
 .hero {
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .hero img {
@@ -53,6 +53,7 @@
 .products {
   background-color: var(--color-pink-lightest);
   padding: 7rem 0;
+  max-width: 100%;
 }
 
 .productsTitle {
@@ -96,4 +97,8 @@
 
 .h1 {
   margin-bottom: 2rem;
+}
+
+.index hr {
+  margin: 6rem 0;
 }

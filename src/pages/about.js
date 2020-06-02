@@ -65,7 +65,7 @@ const About = ({ intl }) => {
     <Layout>
       {" "}
       <SEO title="About" lang={intl.locale} />
-      <Container as="main" fluid className={styles.About}>
+      <Container as="main" fluid className={styles.about}>
         <section className={styles.hero}>
           <h1>
             <FormattedMessage id="about.section-hero.h1" />
@@ -82,9 +82,13 @@ const About = ({ intl }) => {
               }}
             />
           </h2>
-          <hr />
         </section>
+        <hr />
         <section>
+          <h1>
+            {" "}
+            <FormattedMessage id="about.section-2" />
+          </h1>
           <div className="iframe-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -190,7 +194,7 @@ const About = ({ intl }) => {
         </section>
         <section>
           <hr />
-          <Sponsors extraClass="mt-5" />
+          <Sponsors />
         </section>
       </Container>
     </Layout>

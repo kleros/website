@@ -66,3 +66,11 @@
 .partners > h2 {
   font-weight: var(--font-weight-bold);
 }
+
+.about hr {
+  margin-top: 8rem;
+}
+
+.about hr:last-of-type {
+  margin-top: 0;
+}

@@ -49,7 +49,7 @@ const Escrow = ({ intl }) => (
   <Layout>
     {" "}
     <SEO title="Escrow" lang={intl.locale} />
-    <Container as="main" fluid className={styles.Escrow}>
+    <Container as="main" fluid className={styles.escrow}>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="escrow.section-hero.h1" />
@@ -183,18 +183,18 @@ const Escrow = ({ intl }) => (
       </section>
       <div></div>
       <section>
-        <div id="holder" style={{ position: "relative", height: "40vw", maxWidth: "100vw", margin: "auto" }}>
+        <div id="holder" style={{ position: "relative", height: "50vw", maxWidth: "100vw", margin: "auto" }}>
           <div style={{ float: "right", maxWidth: "70%" }}>
             <Escrow1 />
           </div>
-          <div style={{ float: "left", position: "absolute", top: "20vw", maxWidth: "70%" }}>
+          <div style={{ float: "left", position: "absolute", top: "30%", maxWidth: "70%" }}>
             <Escrow2 />
           </div>
           <div style={{ clear: "both" }}></div>
         </div>
       </section>
+      <hr />
       <section>
-        <hr />
         <Contact />
         <Sponsors extraClass="mt-5" />
       </section>

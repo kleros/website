@@ -20,7 +20,7 @@ const Sash = ({ separator, figures, intl }) => {
         <Row className="d-block d-lg-flex">
           {figures.map((figure, index) => {
             const item = (
-              <Col className="px-5">
+              <Col className="p-5">
                 <figure>
                   <figure.icon className="text" />
                   <figcaption>

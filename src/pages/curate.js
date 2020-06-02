@@ -185,18 +185,18 @@ const Curate = ({ intl }) => (
       </section>
       <div></div>
       <section>
-        <div id="holder" style={{ position: "relative", height: "50vw", maxHeight: "1500px", margin: "auto", width: "100%" }}>
+        <div id="holder" style={{ position: "relative", minHeight: "300px", height: "60vw", maxHeight: "900px", margin: "auto", width: "100%" }}>
           <div style={{ float: "right", width: "80%" }}>
             <img src={Curate1} style={{ maxWidth: "100%" }} />
           </div>
-          <div style={{ float: "left", width: "80%", position: "absolute", top: "20vmin" }}>
+          <div style={{ float: "left", width: "80%", position: "absolute", top: "20%  " }}>
             <img src={Curate2} style={{ maxWidth: "100%" }} />
           </div>
           <div style={{ clear: "both" }}></div>
         </div>
       </section>
+      <hr />
       <section>
-        <hr />
         <Contact />
         <Sponsors extraClass="mt-5" />
       </section>
