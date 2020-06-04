@@ -39,6 +39,7 @@ footer small {
   flex-direction: column;
   flex-wrap: wrap;
   height: calc(300px - 8vw);
+  min-height: 120px;
 }
 
 .footer > div > div > div:nth-child(3) {
@@ -72,18 +73,8 @@ footer small {
 
 .subscribe > div > input {
   height: unset;
-  border-radius: 300px !important;
-  background: var(--color-purple-faded);
   border: none;
   z-index: 1;
-}
-
-.subscribe > div > input:enabled {
-  color: var(--color-pink-dark);
-}
-
-.subscribe > div > input::placeholder {
-  color: var(--color-pink);
 }
 
 .subscribe > div > div > button {

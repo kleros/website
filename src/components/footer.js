@@ -53,7 +53,7 @@ const Footer = ({ intl }) => {
     <footer className={styles.footer}>
       <Container fluid className="p-0">
         <Row>
-          <Col xs={0} md={3}>
+          <Col xs={0} md={3} className="d-none d-md-block">
             <Link to="/">
               <Logo />
             </Link>
@@ -115,7 +115,7 @@ const Footer = ({ intl }) => {
             </Link>
           </Col>
           <Col className="d-none d-xl-block">
-            <a href="https://court.kleros.io" className="btn btn-primary d-block mx-0">
+            <a href="https://court.kleros.io" className="btn btn-primary d-block mx-0 mt-0">
               <FormattedMessage id="footer.button-primary" />
             </a>
             <Link to="/integrations" className="btn btn-secondary d-block mx-0" variant="secondary">

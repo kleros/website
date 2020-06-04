@@ -70,7 +70,7 @@
             <circle id="Oval" fill="#9013FE" cx="1122.5" cy="51.5" r="10.5"></circle>
             <circle id="Oval" fill="#9013FE" cx="810.5" cy="239.5" r="10.5"></circle>
             <circle id="Oval" fill="#9013FE" cx="1101.5" cy="409.5" r="10.5"></circle>
-            <polygon id="Line-20" fill="#009AFF" fill-rule="nonzero" points="707.5 248.5 741.5 265.5 707.5 282.5 707.5 268.5 509.5 268.5 509.5 262.5 707.5 262.5"></polygon>
+            <polygon id="Line-20" fill="#009AFF" fill-rule="nonzero" transform="translate(625.500000, 265.500000) rotate(-180.000000) translate(-625.500000, -265.500000) " points="707.5 248.5 741.5 265.5 707.5 282.5 707.5 268.5 509.5 268.5 509.5 262.5 707.5 262.5"></polygon>
             <polygon id="Line-20" fill="#FFFFFF" fill-rule="nonzero" points="708.5 177.5 742.5 194.5 708.5 211.5 708.5 197.5 510.5 197.5 510.5 191.5 708.5 191.5"></polygon>
         </g>
     </g>

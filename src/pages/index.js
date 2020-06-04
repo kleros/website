@@ -72,6 +72,7 @@ const IndexPage = ({ intl }) => (
         </Container>
         <IndexHero />
       </section>
+
       <Sash
         as="div"
         figures={[

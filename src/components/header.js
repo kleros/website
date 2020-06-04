@@ -185,7 +185,7 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://resolve.kleros.io">
                   <Badge>
-                    <span class={styles.helper}></span>
+                    <span className={styles.helper}></span>
                     <img src={CryptoUnlocked} />
                   </Badge>
                 </a>
@@ -194,7 +194,7 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://resolve.kleros.io">
                   <Badge>
-                    <span class={styles.helper}></span>
+                    <span className={styles.helper}></span>
                     <img src={Realitio} />
                   </Badge>
                 </a>

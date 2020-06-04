@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  clear: both;
 }
 
 .reutersContainer {

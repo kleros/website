@@ -1,0 +1,50 @@
+.faq {
+  text-align: left;
+}
+
+.faq input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.prepend span {
+  border: 0;
+  background: var(--color-purple-faded);
+  border-top-left-radius: 300px !important;
+  border-bottom-left-radius: 300px !important;
+  outline: unset;
+}
+
+.faq aside {
+  background: red;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+
+.faq #v-pills-home-tab {
+  background-color: red !important;
+}
+
+.questions a {
+  font-size: var(--font-size-medium);
+}
+
+.questions a.active {
+  color: white;
+}
+
+.questions h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.questions > div:nth-child(2) {
+  margin-left: 16rem;
+}
+
+.accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+  color: var(--color-pink);
+}

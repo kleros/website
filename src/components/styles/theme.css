@@ -90,3 +90,19 @@ section.masked {
   background: center / contain no-repeat url("/logos-shadow.svg");
   background-size: contain;
 }
+
+input {
+  background-color: var(--color-purple-faded) !important;
+  height: unset;
+  border-radius: 300px !important;
+  background: var(--color-purple-faded);
+  border: none !important;
+  z-index: 1;
+}
+
+input:enabled {
+  color: var(--color-pink-dark) !important;
+}
+input::placeholder {
+  color: var(--color-pink) !important;
+}
