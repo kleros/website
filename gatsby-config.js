@@ -145,7 +145,7 @@ module.exports = {
       {
         name: "Lorens Huculak",
         title: "Layer 2 Entrepreneur and Fellow",
-        links: {},
+        links: { linkedin: "https://www.linkedin.com/in/lorenshuculak/", twitter: "https://twitter.com/lorenshuculak" },
       },
     ],
   },
