@@ -168,7 +168,7 @@ const Footer = ({ intl }) => {
                 aria-describedby="subscribe"
               />
               <InputGroup.Append>
-                <Button variant="primary" className="mt-0">
+                <Button variant="primary" className="mt-0 mr-0">
                   <FormattedMessage id="footer.subscribe-button" />
                 </Button>
               </InputGroup.Append>

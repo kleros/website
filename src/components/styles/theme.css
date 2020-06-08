@@ -98,11 +98,16 @@ input {
   background: var(--color-purple-faded);
   border: none !important;
   z-index: 1;
+  padding: 0.8rem 2rem !important;
 }
 
 input:enabled {
-  color: var(--color-pink-dark) !important;
+  color: white !important;
 }
 input::placeholder {
   color: var(--color-pink) !important;
+}
+
+.nav-link.active {
+  color: white;
 }
