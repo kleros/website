@@ -27,7 +27,6 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* space between columns for demo */
   grid-gap: 2rem;
   margin-top: 4rem;
 }

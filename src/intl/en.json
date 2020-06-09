@@ -332,6 +332,35 @@
     }
   },
 
+  "media": {
+    "section-hero": {
+      "h1": "Media",
+      "button": "Learn more on Kleros Blog"
+    },
+    "section-media": {
+      "featured": {
+        "title": "Featured",
+        "items": {
+          "defiprime": "Kleros — decentralized court system to adjudicate smart contracts",
+          "thomsonreuters": "Thomson Reuters Media",
+          "cardrates": "Kleros Resolved Onl'ne Payment Disputes through Blockchain Technology and a Crowdsourced Jury System?",
+          "consensus": "Kleros presenting at Consensus 2018.",
+          "venturebeat": "Kleros joins Thomson Reuters Incubator - VentureBeat",
+          "token2049": "Kleros CEO Federico Ast as part of the Token 2049 panel, with Lisk, Golem, Zencash and more.",
+          "bitcoindotcom": "PR: Justice Protocol Kleros to Host One of the First 'Interactive' Crowd Sales - Bitcoin News",
+          "ethcc": "Federico Ast keynote presentation at EthCC Paris"
+        }
+      },
+      "presentations": { "title": "Presentations" },
+      "promo": { "title": "Promo Videos" },
+      "conference": { "title": "Kleros Conference" }
+    },
+    "section-cards": {
+      "card-1": { "title": "Brand Assets Package", "button": "Download" },
+      "card-2": { "title": "Company Photos", "button": "Download" }
+    }
+  },
+
   "contact": {
     "title": "Get in Touch"
   }

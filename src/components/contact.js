@@ -9,13 +9,11 @@ import Email from "src/assets/svgs/icon-envelope.svg";
 
 import styles from "./styles/contact.module.css";
 
-const Contact = ({ intl }) => (
+const Contact = ({ intl, title }) => (
   <div className={styles.contact}>
     <Logo className={styles.brand} />
     <div className={styles.rest}>
-      <span className="text">
-        <FormattedMessage id="contact.title" />
-      </span>
+      <span className="text">{title}</span>
       <div className={styles.icons}>
         <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
           <Telegram />

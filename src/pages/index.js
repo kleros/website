@@ -307,7 +307,11 @@ const IndexPage = ({ intl }) => (
           </Row>
         </Container>
         <hr />
-        <Contact />
+        <Contact
+          title={intl.formatMessage({
+            id: "contact.title",
+          })}
+        />
       </section>
     </Container>
   </Layout>

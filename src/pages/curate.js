@@ -196,7 +196,11 @@ const Curate = ({ intl }) => (
       </section>
       <hr />
       <section>
-        <Contact />
+        <Contact
+          title={intl.formatMessage({
+            id: "contact.title",
+          })}
+        />
       </section>
     </Container>
   </Layout>
