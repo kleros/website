@@ -72,6 +72,10 @@
   padding-left: 0;
 }
 
+.card-header {
+  cursor: pointer;
+}
+
 .open::before,
 .closed::before {
   color: var(--color-blue);

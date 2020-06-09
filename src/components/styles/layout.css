@@ -46,9 +46,6 @@ main {
   word-break: break-word;
   padding-bottom: 4rem;
 }
-main > div > section:first-child {
-  padding-top: 4rem;
-}
 
 main > div {
   flex: 1;
@@ -78,7 +75,8 @@ footer > div:first-child {
 }
 
 section {
-  padding: 3rem 5vw;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 footer {
