@@ -2,6 +2,10 @@
   text-align: left;
 }
 
+.sectionHeader {
+  background: linear-gradient(148.16deg, #4d00b4 15.9%, #1e075f 59.16%);
+}
+
 .faq input {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -33,6 +37,10 @@
 
 .faq #v-pills-home-tab {
   background-color: red !important;
+}
+
+.questions {
+  background-color: var(--color-purple-darkest);
 }
 
 .questions a {

@@ -45,8 +45,11 @@ main {
   background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
   word-break: break-word;
   padding-bottom: 4rem;
+}
+main > div > section:first-child {
   padding-top: 4rem;
 }
+
 main > div {
   flex: 1;
   padding-bottom: 0;
@@ -61,10 +64,17 @@ hr {
 nav,
 section,
 footer > div:first-child {
-  max-width: 1400px;
-  margin: auto;
-  padding-left: 5vw !important;
-  padding-right: 5vw !important;
+  padding-left: calc(1.2rem + 1vw) !important;
+  padding-right: calc(1.2rem + 1vw) !important;
+}
+
+@media (min-width: 1500px) {
+  nav,
+  section,
+  footer > div:first-child {
+    padding-left: calc((100vw - 1400px) / 2) !important;
+    padding-right: calc((100vw - 1400px) / 2) !important;
+  }
 }
 
 section {

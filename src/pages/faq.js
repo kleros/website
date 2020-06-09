@@ -35,7 +35,7 @@ const FAQ = ({ intl }) => {
       <SEO title="FAQ" />
 
       <div className={styles.faq}>
-        <section>
+        <section className={styles.sectionHeader}>
           <h1 className="text-center mb-5">
             <FormattedMessage id="faq.section-hero.h1" />
           </h1>
