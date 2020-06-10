@@ -30,15 +30,15 @@
   margin-left: auto;
 }
 
-svg {
+.mediaCard svg {
   height: auto;
 }
 
-hr {
+.mediaCard hr {
   width: 100%;
   border: 1px solid var(--color-purple-light);
 }
 
-.logoWrapper {
+.mediaCard .logoWrapper {
   height: 30%;
 }

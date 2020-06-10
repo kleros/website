@@ -2,16 +2,16 @@
   margin-bottom: 0;
 }
 
-.team {
+.about .team {
   text-align: left;
   max-width: 100%;
 }
 
-.team > div > div > img {
+.about .team > div > div > img {
   width: 100%;
 }
 
-.portraitContainer .overlay {
+.about .portraitContainer .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,51 +21,51 @@
   color: #fff;
 }
 
-.portraitContainer {
+.about .portraitContainer {
   position: relative;
 }
 
-.portraitContainer:hover .overlay {
+.about .portraitContainer:hover .overlay {
   display: block;
   opacity: 0.8;
   background-color: var(--color-purple-light);
 }
 
-.overlay {
+.about .overlay {
   padding: 0 1rem;
   text-align: center;
 }
 
-.overlay span {
+.about .overlay span {
   display: block;
   font-size: var(--font-size-medium);
 }
 
-.overlay span:first-child {
+.about .overlay span:first-child {
   margin-top: 40%;
   font-weight: var(--font-weight-bold);
 }
 
-.social {
+.about .social {
   justify-content: space-evenly;
   margin-top: 10%;
 }
 
-.social > a > svg {
+.about .social > a > svg {
   width: 2rem;
   fill: white;
 }
 
-.social path {
+.about .social path {
   fill: white;
 }
 
-.partners > img {
+.about .partners > img {
   margin: 1rem 2rem;
   max-width: 80%;
 }
 
-.partners > h2 {
+.about .partners > h2 {
   font-weight: var(--font-weight-bold);
 }
 

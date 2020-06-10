@@ -86,6 +86,11 @@ footer {
 
   background-color: var(--color-purple);
 }
+footer a,
+footer p,
+footer small {
+  font-size: 18px !important;
+}
 
 #gatsby-focus-wrapper {
   margin: 0;

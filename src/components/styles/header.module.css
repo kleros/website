@@ -2,7 +2,7 @@
   background-color: var(--color-purple-darkest);
 }
 
-.brand {
+.header .brand {
   width: 8rem;
   height: auto;
 }
@@ -21,7 +21,7 @@
   text-align: left;
   box-shadow: none;
   background-color: transparent;
-  color: var(--color-pink);
+  color: white;
 }
 
 .header span,
@@ -33,7 +33,7 @@
   border: none;
 }
 
-.dapps p {
+.header .dapps p {
   font-weight: var(--font-weight-bold);
 }
 
@@ -43,14 +43,14 @@
   border: none;
 }
 
-.helper {
+.header .helper {
   /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.dapps div div span:not(.helper) {
+.header .dapps div div span:not(.helper) {
   background-color: white;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -59,8 +59,9 @@
   border-radius: 13.3321px;
   box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
   border: 0.952296px solid #ffffff;
-  width: 5vmax;
-  height: 5vmax;
+  width: 7rem;
+  height: 7rem;
+  padding: 0.4rem;
 }
 
 @media screen and (min-width: 992px) {

@@ -48,16 +48,16 @@ class Header extends React.Component {
               <Button variant="outline-*" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse" className={`position-relative px-lg-2 pl-0 collapsed`}>
                 <FormattedMessage id="header.dapps" />
               </Button>
-              <Link to="/integrations" className="text-pink nav-link">
+              <Link to="/integrations" className=" nav-link">
                 <FormattedMessage id="header.integrations" />
               </Link>
-              <Link to="/research" className="text-pink nav-link">
+              <Link to="/research" className=" nav-link">
                 <FormattedMessage id="header.research" />
               </Link>
-              <Nav.Link className="text-pink" href="https://blog.kleros.io">
+              <Nav.Link className="" href="https://blog.kleros.io">
                 <FormattedMessage id="header.blog" />
               </Nav.Link>
-              <Link to="/about" className="text-pink nav-link">
+              <Link to="/about" className=" nav-link">
                 <FormattedMessage id="header.about" />
               </Link>
             </Nav>
@@ -122,7 +122,7 @@ class Header extends React.Component {
             </Media>
           </Navbar.Collapse>
         </Navbar>
-        <Collapse id="collapse" className={`collapse ${styles.dapps}`}>
+        <Collapse as="section" id="collapse" className={`collapse ${styles.dapps}`}>
           <Card>
             <Card.Body className="px-5 py-3 text-center">
               <div className="d-inline-block">

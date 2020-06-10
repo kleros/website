@@ -16,7 +16,7 @@
   font-weight: var(--font-weight-bold);
 }
 
-.text {
+.sash .text {
   color: var(--color-gray-light);
 
   font-size: var(--font-size-medium);
@@ -29,6 +29,6 @@
   max-width: 12rem;
 }
 
-.column {
+.sash .column {
   padding: 2rem 2vmax;
 }

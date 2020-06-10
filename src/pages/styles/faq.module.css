@@ -2,7 +2,7 @@
   text-align: left;
 }
 
-.sectionHeader {
+.faq .sectionHeader {
   background: linear-gradient(148.16deg, #4d00b4 15.9%, #1e075f 59.16%);
 }
 
@@ -12,10 +12,7 @@
   padding: 1.4rem 1.4rem !important;
 }
 
-.prepend {
-}
-
-.prepend span {
+.faq .prepend span {
   border: 0;
   background: var(--color-purple-faded);
   border-top-left-radius: 300px !important;
@@ -24,7 +21,7 @@
   padding: 0 3rem;
 }
 
-.prepend svg {
+.faq .prepend svg {
   width: auto;
 }
 
@@ -39,56 +36,56 @@
   background-color: red !important;
 }
 
-.questions {
+.faq .questions {
   background-color: var(--color-purple-darkest);
 }
 
-.questions a {
+.faq .questions a {
   font-size: var(--font-size-medium);
 }
 
-.questions a.active {
+.faq .questions a.active {
   color: white;
 }
 
-.questions h2 {
+.faq .questions h2 {
   color: white;
   font-size: var(--font-size-bigger);
 }
 
-.accordion div {
+.faq .accordion div {
   background-color: transparent !important;
   border: none;
   font-size: var(--font-size-medium);
 }
 
-.accordion div.card-header {
+.faq .accordion div.card-header {
   color: var(--color-pink);
   font-weight: var(--font-weight-bold);
   padding-left: 0;
 }
 
-.card-body {
+.faq .card-body {
   padding-left: 0;
 }
 
-.card-header {
+.faq .card-header {
   cursor: pointer;
 }
 
-.open::before,
-.closed::before {
+.faq .open::before,
+.faq .closed::before {
   color: var(--color-blue);
   font-size: 3rem;
   margin-right: 2rem;
 }
 
-.open::before {
+.faq .open::before {
   content: "+";
   vertical-align: middle;
 }
 
-.closed::before {
+.faq .closed::before {
   content: "-";
   vertical-align: sub;
 }
@@ -97,19 +94,19 @@
   color: white;
 }
 
-.nav {
+.faq .nav {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 5rem;
 }
 
 @media (min-width: 800px) {
-  .nav {
+  .faq .nav {
     float: left;
     flex-direction: column;
   }
 
-  .questions > div:nth-child(2) {
+  .faq .questions > div:nth-child(2) {
     margin-left: 20rem;
   }
 }

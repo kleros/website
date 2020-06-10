@@ -25,6 +25,16 @@ body {
   color: white;
 }
 
+footer svg {
+  width: 16rem;
+  height: auto;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
 h1 {
   color: white;
   font-weight: 600;
@@ -91,6 +101,12 @@ section.masked {
   background-size: contain;
 }
 
+section.speaker {
+  background: center / contain no-repeat url("/illustration-speakers.svg");
+  background-color: var(--color-purple-darkest); /* Order is important */
+  background-size: auto;
+}
+
 input {
   background-color: var(--color-purple-faded) !important;
   height: unset;
@@ -109,5 +125,9 @@ input::placeholder {
 }
 
 .nav-link.active {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }

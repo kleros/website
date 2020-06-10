@@ -1,30 +1,30 @@
-.hero {
+.index .hero {
   margin-bottom: 0;
   padding-bottom: 0 !important;
 }
 
-.hero img,
-.hero svg {
+.index .hero img,
+.index .hero svg {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.hero > img,
-.hero > svg {
+.index .hero > img,
+.index .hero > svg {
   margin-top: 3rem;
 }
 
-.buttonWrapper {
+.index .buttonWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
 }
 
-.buttonWrapper a {
+.index .buttonWrapper a {
 }
 
-.cards {
+.index .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 1200px) {
-  .cards {
+  .index .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* space between columns for demo */
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 768px) {
-  .cards {
+  .index .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* space between columns for demo */
@@ -49,26 +49,26 @@
   }
 }
 
-.products {
+.index .products {
   background-color: var(--color-pink-lightest);
   padding: 7rem 0;
   max-width: 100%;
 }
 
-.productsTitle {
+.index .productsTitle {
   font-size: var(--font-size-huge);
   font-weight: var(--font-weight-bold);
   color: var(--color-purple);
 }
 
-.helper {
+.index .helper {
   /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.products div div span:not(.helper) {
+.index .products div div span:not(.helper) {
   width: 10rem;
   height: 10rem;
   background-color: white;
@@ -81,12 +81,12 @@
   border: 0.952296px solid #ffffff;
 }
 
-.products p {
+.index .products p {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-medium);
 }
 
-.products small {
+.index .products small {
   margin-top: 3rem;
   display: block;
   text-align: right;
@@ -94,10 +94,10 @@
   font-size: var(--font-size-medium);
 }
 
-.h1 {
+.index .h1 {
   margin-bottom: 2rem;
 }
 
-.index hr {
+.index .index hr {
   margin: 3rem 0;
 }

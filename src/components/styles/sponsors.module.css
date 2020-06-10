@@ -7,12 +7,6 @@
   clear: both;
 }
 
-.reutersContainer {
-}
-
-.bpiContainer {
-}
-
 .sponsors svg {
   height: 80px;
   width: auto;
@@ -25,17 +19,17 @@
 .sponsors div {
   align-self: flex-end;
 }
-.reuters {
+.sponsors .reuters {
   padding: 0;
   filter: grayscale(100%);
   filter: gray;
 }
 
-.reuters path {
+.sponsors .reuters path {
   fill: white;
 }
 
-.bpi {
+.sponsors .bpi {
   verticalalign: middle;
   "-webkit-filter":grayscale(100%) ;
   filter: grayscale(100%);

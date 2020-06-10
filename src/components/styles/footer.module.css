@@ -2,23 +2,7 @@
   position: relative;
 }
 
-footer a,
-footer p,
-footer small {
-  font-size: 18px !important;
-}
-
-.footer svg {
-  width: 16rem;
-  height: auto;
-  margin: 0;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.scrollback {
+.footer .scrollback {
   background: var(--color-purple) !important;
   width: 4rem !important;
   font-size: 2rem !important;
@@ -34,7 +18,7 @@ footer small {
   padding: 0 !important;
 }
 
-.links {
+.footer .links {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -57,27 +41,27 @@ footer small {
   justify-content: center;
 }
 
-.bottomContainer {
+.footer .bottomContainer {
   min-width: 300px;
   max-width: 40vw;
 }
 
-.social {
+.footer .social {
   justify-content: space-around;
   margin-bottom: 3rem;
 }
 
-.social > a > svg {
+.footer .social > a > svg {
   width: 2rem;
 }
 
-.subscribe > div > input {
+.footer .subscribe > div > input {
   height: unset;
   border: none;
   z-index: 1;
 }
 
-.subscribe > div > div > button {
+.footer .subscribe > div > div > button {
   margin-left: -35px;
   z-index: 30 !important;
   width: auto;
