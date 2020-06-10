@@ -139,3 +139,7 @@
     grid-gap: 2rem;
   }
 }
+
+span {
+  font-weight: var(--font-weight-bold);
+}

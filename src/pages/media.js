@@ -82,6 +82,64 @@ const Media = ({ intl }) => {
                     <MediaCard content={{ icon: EthCC, text: intl.formatMessage({ id: "media.section-media.featured.items.ethcc" }), href: "" }} />
                   </div>
                 )}
+                {category[0] == "presentations" && (
+                  <div className={styles.cards}>
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/m-NGxJfS0mw?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.1" />
+                      </span>
+                    </div>
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lPeca1h4auI?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.2" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.3" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PRFn3599CY0?start=23" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.4" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/keQKNiyzVGs?start=316" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.5" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.6" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8CAL-Vyc-wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.7" />
+                      </span>
+                    </div>{" "}
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/DVCzEuEwQGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.8" />
+                      </span>
+                    </div>
+                    <div>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YmA0E5EE3OY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <span>
+                        <FormattedMessage id="media.section-media.presentations.items.9" />
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>

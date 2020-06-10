@@ -351,7 +351,20 @@
           "ethcc": "Federico Ast keynote presentation at EthCC Paris"
         }
       },
-      "presentations": { "title": "Presentations" },
+      "presentations": {
+        "title": "Presentations",
+        "items": {
+          "1": "Clement Lesaege Presentation at EthCC 3 Paris March 2020",
+          "2": "William George Presentation at EthCC 3 Paris March 2020",
+          "3": "Federico Ast Presentation at EthCC 3 Paris March 2020",
+          "4": "Matheus Alencar Presentation at EthCC 3 Paris March 2020",
+          "5": "Ferit Tunçer Presentation at EthCC 3 Paris March 2020",
+          "6": "Federico Ast Presentation at DevCon 5 Osaka October 2019",
+          "7": "Plinio Braga Presentation at DevCon 5 Osaka October 2019",
+          "8": "Clement Lesaege Presentation at EthCC 2 Paris March 2019",
+          "9": "William George Presentation at EthCC 2 Paris March 2019"
+        }
+      },
       "promo": { "title": "Promo Videos" },
       "conference": { "title": "Kleros Conference" }
     },
