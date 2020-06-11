@@ -109,8 +109,9 @@ const IndexPage = ({ intl }) => (
         <div className="iframe-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <hr />
-
+      </section>
+      <hr />
+      <section>
         <h1>{intl.formatMessage({ id: "index.section-use-case.h1" })}</h1>
         <h2>{intl.formatMessage({ id: "index.section-use-case.h2" })}</h2>
         <div className={styles.cards}>
@@ -306,7 +307,9 @@ const IndexPage = ({ intl }) => (
             </Col>
           </Row>
         </Container>
-        <hr />
+      </section>
+      <hr />
+      <section>
         <Contact
           title={intl.formatMessage({
             id: "contact.title",

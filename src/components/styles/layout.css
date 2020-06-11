@@ -54,15 +54,17 @@ main > div {
   padding-right: 0 !important;
 }
 
-hr {
-  max-width: 90vw;
-}
-
 nav,
 section,
 footer > div:first-child {
   padding-left: calc(1.2rem + 1vw) !important;
   padding-right: calc(1.2rem + 1vw) !important;
+}
+
+hr {
+  width: calc(98vw - 4rem);
+  max-width: 99%;
+  margin: auto;
 }
 
 @media (min-width: 1500px) {
@@ -71,6 +73,10 @@ footer > div:first-child {
   footer > div:first-child {
     padding-left: calc((100vw - 1400px) / 2) !important;
     padding-right: calc((100vw - 1400px) / 2) !important;
+  }
+
+  hr {
+    width: calc(1400px - 1.6rem);
   }
 }
 
@@ -154,10 +160,10 @@ video {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
-  border-radius: 15px;
 }
 
 .iframe-container iframe {
+  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;

@@ -52,9 +52,40 @@ const CONTENT = {
     { icon: BitcoinDotCom, text: "media.section-media.featured.items.bitcoindotcom", href: "/" },
     { icon: EthCC, text: "media.section-media.featured.items.ethcc", href: "/" },
   ],
-  presentations: {},
-  promo: {},
-  conference: {},
+  presentations: [
+    { link: "https://www.youtube.com/embed/m-NGxJfS0mw?start=12", text: "media.section-media.presentations.items.1" },
+    { link: "https://www.youtube.com/embed/lPeca1h4auI?start=11", text: "media.section-media.presentations.items.2" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.3" },
+    { link: "https://www.youtube.com/embed/PRFn3599CY0?start=23", text: "media.section-media.presentations.items.4" },
+    { link: "https://www.youtube.com/embed/keQKNiyzVGs?start=316", text: "media.section-media.presentations.items.5" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.6" },
+    { link: "https://www.youtube.com/embed/8CAL-Vyc-wc", text: "media.section-media.presentations.items.7" },
+    { link: "https://www.youtube.com/embed/DVCzEuEwQGg", text: "media.section-media.presentations.items.8" },
+    { link: "https://www.youtube.com/embed/YmA0E5EE3OY", text: "media.section-media.presentations.items.9" },
+  ],
+  promo: [
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.1" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.2" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.3" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.4" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.5" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.6" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.7" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.8" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.9" },
+  ],
+
+  conference: [
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.1" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.2" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.3" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.4" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.5" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.6" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.7" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.8" },
+    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.9" },
+  ],
 };
 
 const Media = ({ intl }) => {
@@ -81,9 +112,8 @@ const Media = ({ intl }) => {
             ))}
           </div>
           <div className="tab-content" id="v-pills-tabContent">
-            {Object.entries(Categories.media["section-media"]).map((category, index) => console.log(category))}
             {Object.entries(Categories.media["section-media"]).map((category, index) => (
-              <div className={`tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`}>
+              <div key={index} className={`tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`}>
                 <h2>
                   <FormattedMessage id={`media.section-media.${category[0]}.title`} />
                 </h2>
@@ -100,189 +130,51 @@ const Media = ({ intl }) => {
                 {category[0] == "featured" && (
                   <div className={styles.cards}>
                     {CONTENT.featured.map((item, index) => (
-                      <MediaCard content={{ icon: item.icon, text: intl.formatMessage({ id: item.text }), href: item.href }} />
+                      <MediaCard key={index} content={{ icon: item.icon, text: intl.formatMessage({ id: item.text }), href: item.href }} />
                     ))}
                   </div>
                 )}
                 {category[0] == "presentations" && (
                   <div className={styles.cards}>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/m-NGxJfS0mw?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.1" />
-                      </span>
-                    </div>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/lPeca1h4auI?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.2" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.3" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PRFn3599CY0?start=23" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.4" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/keQKNiyzVGs?start=316" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.5" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.6" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/8CAL-Vyc-wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.7" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/DVCzEuEwQGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.8" />
-                      </span>
-                    </div>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YmA0E5EE3OY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.presentations.items.9" />
-                      </span>
-                    </div>
+                    {CONTENT.presentations.map((item, index) => (
+                      <div key={index}>
+                        <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <span>
+                          <FormattedMessage id={item.text} />
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 )}
                 {category[0] == "promo" && (
                   <div className={styles.cards}>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.1" />
-                      </span>
-                    </div>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.2" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.3" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.4" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.5" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.6" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.7" />
-                      </span>
-                    </div>{" "}
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.8" />
-                      </span>
-                    </div>
-                    <div>
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.promo.items.9" />
-                      </span>
-                    </div>
+                    {CONTENT.promo.map((item, index) => (
+                      <div key={index}>
+                        <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <span>
+                          <FormattedMessage id={item.text} />
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 )}
                 {category[0] == "conference" && (
                   <>
                     <div className="iframe-container mt-5">
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                       <span>
                         <FormattedMessage id="media.section-media.conference.items.1" />
                       </span>
                     </div>
                     <div className={styles.cards}>
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.1" />
-                        </span>
-                      </div>
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.2" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.3" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.4" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.5" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.6" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.7" />
-                        </span>
-                      </div>{" "}
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.8" />
-                        </span>
-                      </div>
-                      <div>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <span>
-                          <FormattedMessage id="media.section-media.conference.items.9" />
-                        </span>
-                      </div>
+                      {CONTENT.conference.slice(1).map((item, index) => (
+                        <div key={index}>
+                          <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                          <span>
+                            <FormattedMessage id={item.text} />
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </>
                 )}

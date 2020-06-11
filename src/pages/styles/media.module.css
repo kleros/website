@@ -155,3 +155,8 @@
   margin-top: 3rem;
   font-size: var(--font-size-big);
 }
+
+.media iframe {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
