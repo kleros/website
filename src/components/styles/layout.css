@@ -57,8 +57,8 @@ main > div {
 nav,
 section,
 footer > div:first-child {
-  padding-left: calc(1.2rem + 1vw) !important;
-  padding-right: calc(1.2rem + 1vw) !important;
+  padding-left: calc(2rem + 1vw) !important;
+  padding-right: calc(2rem + 1vw) !important;
 }
 
 hr {

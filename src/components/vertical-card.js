@@ -9,37 +9,9 @@ import React from "react";
 
 import styles from "./styles/vertical-card.module.css";
 
-import escrow from "src/assets/icons/escrow.png";
-import epsilon from "src/assets/icons/epsilon.png";
-import kleros from "src/assets/icons/kleros.png";
-import list from "src/assets/icons/list.png";
-import onepager from "src/assets/icons/onepager.png";
-import yellowpaper from "src/assets/icons/yellowpaper.png";
-import whitepaper from "src/assets/icons/whitepaper.png";
-import t2cr from "src/assets/icons/t2cr.png";
-import scales from "src/assets/icons/scales.png";
-import risks from "src/assets/icons/risks.png";
-import gavel from "src/assets/icons/gavel.png";
-import handshake from "src/assets/icons/handshake.png";
-
 import { Button, Row, Col, Container } from "react-bootstrap";
 
 import { injectIntl, Link } from "gatsby-plugin-intl";
-
-const ICONS = {
-  escrow,
-  epsilon,
-  kleros,
-  list,
-  onepager,
-  yellowpaper,
-  whitepaper,
-  t2cr,
-  scales,
-  risks,
-  gavel,
-  handshake,
-};
 
 const isExternal = (href) => /^\/(?!\/)/.test(href);
 
@@ -47,7 +19,7 @@ const VerticalCard = ({ content, intl }) => (
   <Container fluid className={styles.verticalCard}>
     <Row className="h-100 d-flex">
       <Col sm className="h-100 d-flex flex-column">
-        <img src={ICONS[content.icon]} alt={content.icon} className="align-self-center" />
+        <content.icon />
         <span>{content.title}</span>
         <span>{content.paragraph}</span>
         {isExternal(content.button.href) && (

@@ -37,19 +37,19 @@
   background-color: red !important;
 }
 
-.media .questions {
+.media .items {
   background-color: var(--color-purple-darkest);
 }
 
-.media .questions a {
+.media .items a {
   font-size: var(--font-size-medium);
 }
 
-.media .questions a.active {
+.media .items a.active {
   color: white;
 }
 
-.media .questions h2 {
+.media .items h2 {
   color: white;
   font-size: var(--font-size-bigger);
 }
@@ -107,7 +107,7 @@
     flex-direction: column;
   }
 
-  .media .questions > div:nth-child(2) {
+  .media .items > div:nth-child(2) {
     margin-left: 20rem;
   }
 }

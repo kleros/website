@@ -403,7 +403,8 @@
     "section-cards": {
       "card-1": { "title": "Brand Assets Package", "button": "Download" },
       "card-2": { "title": "Company Photos", "button": "Download" }
-    }
+    },
+    "section-contact": "For Media Queries"
   },
 
   "contact": {

@@ -28,6 +28,8 @@ import Realitio from "src/assets/images/realitio.png";
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
+import Gavel from "src/assets/svgs/icon-gavel.svg";
+import Handshake from "src/assets/svgs/icon-handshake.svg";
 
 import copyright from "src/assets/svgs/icon-copyright.svg";
 import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
@@ -268,7 +270,7 @@ const IndexPage = ({ intl }) => (
             <Col md className="mt-5">
               <VerticalCard
                 content={{
-                  icon: "gavel",
+                  icon: Gavel,
                   title: intl.formatMessage({
                     id: "index.section-4.card-1.title",
                   }),
@@ -288,7 +290,7 @@ const IndexPage = ({ intl }) => (
             <Col md className="mt-5">
               <VerticalCard
                 content={{
-                  icon: "handshake",
+                  icon: Handshake,
                   title: intl.formatMessage({
                     id: "index.section-4.card-2.title",
                   }),
