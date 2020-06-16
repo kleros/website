@@ -124,7 +124,7 @@ const Footer = ({ intl }) => {
           </Col>
         </Row>
         <hr className="mt-4 mb-5" />
-        <Container className={styles.bottomContainer}>
+        <div className={styles.bottomContainer}>
           <Row className={styles.social}>
             <a className="g-kleros_footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/kleros">
               <Github />
@@ -174,7 +174,7 @@ const Footer = ({ intl }) => {
               </InputGroup.Append>
             </InputGroup>
           </Row>
-        </Container>
+        </div>
       </Container>
 
       <p id="copyright" className="d-block text-center">

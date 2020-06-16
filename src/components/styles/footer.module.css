@@ -42,8 +42,6 @@
 }
 
 .footer .bottomContainer {
-  min-width: 300px;
-  max-width: 40vw;
 }
 
 .footer .social {
@@ -53,6 +51,12 @@
 
 .footer .social > a > svg {
   width: 2rem;
+}
+
+@media (max-width: 500px) {
+  .footer .social > a > svg {
+    width: 1.4rem;
+  }
 }
 
 .footer .subscribe > div > input {
