@@ -15,7 +15,7 @@ import { injectIntl } from "gatsby-plugin-intl";
 
 const HorizontalCard = ({ content, intl }) => (
   <Container fluid className={styles.horizontalCard}>
-    <content.icon />
+    {content.icon && <content.icon />}
     <span>{content.text}</span>
   </Container>
 );

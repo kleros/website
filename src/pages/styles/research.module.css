@@ -1,0 +1,33 @@
+.research .director {
+  background-color: white;
+}
+
+.research .hero > h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.research .director img {
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.research .director h1,
+.research .director h2,
+.research .director p {
+  color: var(--color-purple);
+  border-radius: 50%;
+}
+
+.research .director h2,
+.research .director p {
+  font-weight: var(--font-weight-bold);
+}
+
+.research .papers > h1 {
+  margin-bottom: 4rem;
+}
+
+.research .cards > div {
+  margin-bottom: 2rem;
+}

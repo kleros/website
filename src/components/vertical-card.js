@@ -19,7 +19,9 @@ const VerticalCard = ({ content, intl }) => (
   <Container fluid className={styles.verticalCard}>
     <Row className="h-100 d-flex">
       <Col sm className="h-100 d-flex flex-column">
-        <content.icon />
+        <span>
+          <content.icon />
+        </span>
         <span>{content.title}</span>
         <span>{content.paragraph}</span>
         {isExternal(content.button.href) && (
