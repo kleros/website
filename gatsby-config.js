@@ -133,7 +133,7 @@ module.exports = {
         },
       },
       {
-        name: "Yann",
+        name: "Yann Aouidef",
         title: "PhD Researcher",
         links: {},
       },
@@ -146,6 +146,136 @@ module.exports = {
         name: "Lorens Huculak",
         title: "Layer 2 Entrepreneur and Fellow",
         links: { linkedin: "https://www.linkedin.com/in/lorenshuculak/", twitter: "https://twitter.com/lorenshuculak" },
+      },
+      {
+        name: "Ning Fidel",
+        title: "General Assistant",
+        links: {},
+      },
+      {
+        name: "Colin Rule",
+        title: "Vice President for Online Dispute Resolution, Tyler Technologies",
+        links: {},
+      },
+      {
+        name: "Joseph Raczynski",
+        title: "Technologist and Futurist, Thomson Reuters Legal",
+        links: {},
+      },
+      {
+        name: "Barry Weingast",
+        title: "Ward C. Krebs Family Professor, Stanford University",
+        links: {},
+      },
+      {
+        name: "Josiah Ober",
+        title: "Misotakis Professor, School of Humanities and Science, Stanford University",
+        links: {},
+      },
+      {
+        name: "Eyal Winter",
+        title: "Professor of Economics, Hebrew University of Jerusalem",
+        links: {},
+      },
+      {
+        name: "Peter Stone",
+        title: "Associate Professor, Trinity College, Dublin",
+        links: {},
+      },
+      {
+        name: "Kate Sills",
+        title: "Community Lead, Agoric",
+        links: {},
+      },
+      {
+        name: "Gillian Hadfield",
+        title: "Law Professor",
+        links: {},
+      },
+      {
+        name: "Sophie Nappert",
+        title: "International Arbitrator",
+        links: {},
+      },
+      {
+        name: "Alice Namuli Blazevic",
+        title: "Associate Partner, Messrs. Katende Ssempewba & Company Advocates",
+        links: {},
+      },
+      {
+        name: "Jose Torres",
+        title: "Former Fellow atr The Legal Design Lab - Stanford University",
+        links: {},
+      },
+      {
+        name: "Amy Schmitz",
+        title: "Professor, University of Missouri School of Law",
+        links: {},
+      },
+      {
+        name: "Joel Monegro",
+        title: "Partner, Placeholder",
+        links: {},
+      },
+      {
+        name: "Santiago Siri",
+        title: "President, Democracy Earth Foundation",
+        links: {},
+      },
+      {
+        name: "Primavera de Flippi",
+        title: "Faculty Associate at the Berkman Center for Internet & Society at Harvard Law School",
+        links: {},
+      },
+      {
+        name: "Rossana Deplano",
+        title: "Law Professor, Leicester University",
+        links: {},
+      },
+      {
+        name: "Nicolas Dagnillo",
+        title: "Financial Analyst",
+        links: {},
+      },
+      {
+        name: "Enrique Piqueras",
+        title: "Former Lead Developer",
+        links: {},
+      },
+      {
+        name: "Orna Rabinovich Einy",
+        title: "Associate Professor, Faculty of Law, University of Haifa",
+        links: {},
+      },
+      {
+        name: "Peter Hunn",
+        title: "Founder, Clause.io and the Accord Project",
+        links: {},
+      },
+      {
+        name: "Daniel Dimov",
+        title: "Founder, Clause.io and the Accord Project",
+        links: {},
+      },
+      {
+        name: "Marco Mauer",
+        title: "Attorney and Notary, Specialist in Energy Infrastructure Investment Law",
+        links: {},
+      },
+      {
+        name: "Dmitry Narozhny",
+        title: "Civil Law Attorney",
+        links: {},
+      },
+      {
+        name: "Luis Bergolla",
+        title: "Doctoral Student",
+        links: {},
+      },
+      {
+        name: "Abeer Sharma",
+        title: "International Arbitration",
+        links: {},
       },
     ],
   },

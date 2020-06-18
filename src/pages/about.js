@@ -31,24 +31,25 @@ import styles from "./styles/about.module.css";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 
-import Federico from "src/assets/images/federico.png";
-import Clément from "src/assets/images/clement.png";
-import Damjan from "src/assets/images/damjan.png";
-import Shebin from "src/assets/images/shebin.png";
-import Lola from "src/assets/images/lola.png";
-import Matheus from "src/assets/images/matheus.png";
-import Plinio from "src/assets/images/plinio.png";
-import William from "src/assets/images/william.png";
-import Tobias from "src/assets/images/tobias.png";
-import Yann from "src/assets/images/yann.png";
-import Ferit from "src/assets/images/ferit.png";
-import Henrique from "src/assets/images/henrique.png";
-import Laurence from "src/assets/images/laurence.png";
-import Danil from "src/assets/images/danil.png";
-import Sam from "src/assets/images/sam.png";
-import Stuart from "src/assets/images/stuart.png";
-import Karla from "src/assets/images/karla.png";
-import Lorens from "src/assets/images/lorens.png";
+import Ast from "src/assets/images/ast.png";
+import Lesaege from "src/assets/images/lesaege.png";
+import Malbasic from "src/assets/images/malbasic.png";
+import John from "src/assets/images/john.png";
+import Guérin from "src/assets/images/guerin.png";
+import Alencar from "src/assets/images/alencar.png";
+import Braga from "src/assets/images/braga.png";
+import George from "src/assets/images/george.png";
+import Glemming from "src/assets/images/glemming.png";
+import Aouidef from "src/assets/images/aouidef.png";
+import Tunçer from "src/assets/images/tuncer.png";
+import Barcelos from "src/assets/images/barcelos.png";
+import Zhang from "src/assets/images/zhang.png";
+import Dmitrikov from "src/assets/images/dmitrikov.png";
+import Vitello from "src/assets/images/vitello.png";
+import James from "src/assets/images/james.png";
+import Pichler from "src/assets/images/pichler.png";
+import Huculak from "src/assets/images/huculak.png";
+import Fidel from "src/assets/images/fidel.png";
 
 import OnePager from "src/assets/svgs/icon-onepager.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
@@ -61,7 +62,7 @@ const WHITE_PAPERS = {
   es: WhitePaperES,
 };
 
-const PHOTOS = { Federico, Clément, Damjan, Shebin, Lola, Matheus, Plinio, William, Tobias, Yann, Ferit, Henrique, Laurence, Danil, Sam, Stuart, Karla, Lorens };
+const PHOTOS = { Ast, Lesaege, Malbasic, John, Guérin, Alencar, Braga, George, Glemming, Aouidef, Tunçer, Barcelos, Zhang, Dmitrikov, Vitello, James, Pichler, Huculak, Fidel };
 
 const About = ({ intl }) => {
   return (
@@ -159,7 +160,7 @@ const About = ({ intl }) => {
           <Row className="no-gutters">
             {Config.siteMetadata.teamMembers.map((member) => (
               <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ")[0]]} />
+                <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
                 <div className={styles.overlay}>
                   <span>{member.name} </span>
                   <span>{member.title}</span>

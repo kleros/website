@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
-import William from "src/assets/images/william.png";
+import George from "src/assets/images/george.png";
 
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
@@ -37,7 +37,7 @@ const IndexPage = ({ intl }) => (
         <h2>
           <FormattedMessage id="research.section-director.subtitle" />
         </h2>
-        <img src={William} />
+        <img src={George} />
         <p>
           <FormattedMessage id="research.section-director.paragraph" />
         </p>

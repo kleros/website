@@ -454,7 +454,43 @@
       "card-2": { "title": "Learn about Kleros book", "button": "Learn more" }
     }
   },
-  "book": {},
+  "book": {
+    "section-hero": { "title": "Kleros Book", "subtitle": "Dispute Revolution: The Kleros Handbook of Decentralized Justice.", "title-download": "Read Now" },
+    "section-contents": {
+      "h1": "Table of Contents",
+      "chapters": {
+        "1": {
+          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
+          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+        },
+        "1": {
+          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
+          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+        },
+        "2": {
+          "title": "Chapter 2, Kleros Cryptoeconomics: Towards a Theory of Decentralized Justice",
+          "paragraph": "This chapter focuses on the technology behind Kleros. In it, experts on game theory, such as Hebrew University professor Eyal Winter and our cryptoeconomic researcher William George try to bring these concepts closer to the layman reader. It also consists of our latest research into social choice theory, different choices of voting mechanisms and their potential impact on Kleros. The remainder of the chapter focuses on helping expand the knowledge base of our expert audience by sharing our experiences with smart contracts, oracles, as well as presenting proposals for Ethereum standards (or ERCs) and the basic policies on which Kleros is built."
+        },
+        "3": {
+          "title": "Chapter 3, Decentralized Justice in Action: From Doges on Trial to the Token Curated Registry",
+          "paragraph": "This chapter is an in-depth analysis of the 'Doges on Trial' experiment, as well as early lessons from the implementation of our T2CR and a wide look at what has been learned about attack vectors, juror behavior and the foundational cryptoeconomics. In the second edition, the chapter is expanded with latest insights into the so-called ‘challenger’s dilemma’ and the experiment we undertook comparing artificial and collective intelligence in the context of Doges on Trial."
+        },
+        "4": {
+          "title": "Chapter 4, Dispute Revolution: A New Justice Paradigm in an Old World",
+          "paragraph": "This chapter deals with the implications this technology might have for law and society. By sharing their experiences in online dispute resolution and research on blockchain law, industry and thought leaders such as Gillian Hadfield, Kate Sills and former Vice-President of the Ugandan Law Society, Alice Namuli give their opinion on how Kleros and decentralized justice might affect the future of law. A veteran international arbitrator, Sophie Nappert gives us a fantastic insight into the rise of algocracy and how humans can respond. In this chapter, particular care is taken to analyze the most critical points of any arbitration system - fairness and compatibility with existing legal frameworks."
+        },
+        "5": {
+          "title": "Chapter 5, The Business of Decentralized Justice",
+          "paragraph": "This chapter tries to paint an image of the way legal business is going to develop and change in the coming years. By bringing in decades of experience in future-centered thinking through conversations with Joe Raczynski, Thomson Reuters resident legal futurist, Colin Rule, the creator of eBay and PayPal’s dispute resolution systems, the author of the seminal book Digital Justice, Orna Rabinovich-Einy, Accord Project founder, Peter Hunn and legal design expert José Torres, we discuss the opportunities and hurdles in building new legal systems for the 21st Century. As added flavour, our Design Lead, Plinio Braga gives us unique, practical insight into designing novel legal applications."
+        },
+        "6": {
+          "title": "Chapter 6, Scaling Up: The Applications of Decentralized Justice",
+          "paragraph": "This chapter focuses on the use cases of Kleros, where we combine the vision and practice to define the key ingredients which will make Kleros the dispute resolution system of the future. Experts from different fields present their research into Kleros as a solution for a plethora of use cases, ranging from decentralized freelancing, marketplaces, gas, energy markets and derivatives trading to fake news, social media and online gaming. This chapter also presents some of our coming platforms, as well as existing ones in the context of creating a thriving dispute resolution ecosystem."
+        }
+      }
+    },
+    "contributors": "Contributors"
+  },
   "token": {},
   "community": {},
   "integrations": {},

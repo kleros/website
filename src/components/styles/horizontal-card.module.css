@@ -13,8 +13,18 @@
   margin-right: 2rem;
 }
 
+.horizontalCard .title {
+  margin-bottom: 2rem;
+}
+
 .horizontalCard span {
   font-size: var(--font-size-medium);
+  color: white;
+  font-weight: var(--font-weight-bold);
+}
+
+.horizontalCard div {
+  font-size: var(--font-size-big);
   color: white;
   font-weight: var(--font-weight-bold);
 }
