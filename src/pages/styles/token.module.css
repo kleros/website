@@ -1,0 +1,100 @@
+.token .hero {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: bottom -20vw right 50%;
+  background-size: 90%;
+}
+
+.token svg,
+.token img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.token hr {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.token .exchanges > span {
+  background: white;
+  box-shadow: 13.34px 13.34px 53.37px rgba(77, 0, 180, 0.25);
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.token .exchanges > span > * {
+  width: 20rem;
+}
+
+.token .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.token .badge {
+  width: 20rem;
+  height: 7rem;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+  margin: 1rem;
+
+  box-shadow: 13.34px 13.34px 53.37px rgba(77, 0, 180, 0.25);
+}
+
+.token > .otc {
+}
+
+.token .otc > div {
+  border-radius: 36px;
+  margin-top: 20px;
+  padding: 2rem;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: [logo] 6fr [text] 20fr [button] 7fr;
+  align-items: center;
+  background: rgba(144, 19, 254, 0.21);
+}
+
+.token .otcLogo {
+  grid-column: logo;
+}
+
+.token .otcLogo > svg {
+  width: 10rem;
+}
+
+.token .otcText {
+  grid-column: text;
+
+  text-align: start;
+}
+
+.token .otcButton {
+  grid-column: button;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .token .otc > div {
+    border-radius: 36px;
+    margin-top: 20px;
+    padding: 2rem;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: rgba(144, 19, 254, 0.21);
+  }
+
+  .token .otcText {
+    text-align: center;
+  }
+}

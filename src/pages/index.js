@@ -74,39 +74,40 @@ const IndexPage = ({ intl }) => (
         </Container>
         <IndexHero />
       </section>
-
-      <Sash
-        as="div"
-        figures={[
-          {
-            title: intl.formatMessage({
-              id: "index.sash.first.title",
-            }),
-            text: intl.formatMessage({
-              id: "index.sash.first.paragraph",
-            }),
-            icon: Scales,
-          },
-          {
-            title: intl.formatMessage({
-              id: "index.sash.second.title",
-            }),
-            text: intl.formatMessage({
-              id: "index.sash.second.paragraph",
-            }),
-            icon: Epsilon,
-          },
-          {
-            title: intl.formatMessage({
-              id: "index.sash.third.title",
-            }),
-            text: intl.formatMessage({
-              id: "index.sash.third.paragraph",
-            }),
-            icon: Kleros,
-          },
-        ]}
-      />
+      <section className="light">
+        <Sash
+          as="div"
+          figures={[
+            {
+              title: intl.formatMessage({
+                id: "index.sash.first.title",
+              }),
+              text: intl.formatMessage({
+                id: "index.sash.first.paragraph",
+              }),
+              icon: Scales,
+            },
+            {
+              title: intl.formatMessage({
+                id: "index.sash.second.title",
+              }),
+              text: intl.formatMessage({
+                id: "index.sash.second.paragraph",
+              }),
+              icon: Epsilon,
+            },
+            {
+              title: intl.formatMessage({
+                id: "index.sash.third.title",
+              }),
+              text: intl.formatMessage({
+                id: "index.sash.third.paragraph",
+              }),
+              icon: Kleros,
+            },
+          ]}
+        />
+      </section>
       <section className={styles.usecases}>
         <div className="iframe-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

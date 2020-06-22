@@ -64,38 +64,41 @@ const Escrow = ({ intl }) => (
         </Container>
         <EscrowHero />
       </section>
-      <Sash
-        as="div"
-        figures={[
-          {
-            title: intl.formatMessage({
-              id: "escrow.sash.first.title",
-            }),
-            text: intl.formatMessage({
-              id: "escrow.sash.first.paragraph",
-            }),
-            icon: Warning,
-          },
-          {
-            title: intl.formatMessage({
-              id: "escrow.sash.second.title",
-            }),
-            text: intl.formatMessage({
-              id: "escrow.sash.second.paragraph",
-            }),
-            icon: EscrowIcon,
-          },
-          {
-            title: intl.formatMessage({
-              id: "escrow.sash.third.title",
-            }),
-            text: intl.formatMessage({
-              id: "escrow.sash.third.paragraph",
-            }),
-            icon: Kleros,
-          },
-        ]}
-      />
+      <section className="light">
+        <Sash
+          as="div"
+          figures={[
+            {
+              title: intl.formatMessage({
+                id: "escrow.sash.first.title",
+              }),
+              text: intl.formatMessage({
+                id: "escrow.sash.first.paragraph",
+              }),
+              icon: Warning,
+            },
+            {
+              title: intl.formatMessage({
+                id: "escrow.sash.second.title",
+              }),
+              text: intl.formatMessage({
+                id: "escrow.sash.second.paragraph",
+              }),
+              icon: EscrowIcon,
+            },
+            {
+              title: intl.formatMessage({
+                id: "escrow.sash.third.title",
+              }),
+              text: intl.formatMessage({
+                id: "escrow.sash.third.paragraph",
+              }),
+              icon: Kleros,
+            },
+          ]}
+        />
+      </section>
+
       <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "escrow.section-use-case.h1" })}</h1>
         <div className={styles.cards}>

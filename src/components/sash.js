@@ -16,36 +16,34 @@ import { injectIntl } from "gatsby-plugin-intl";
 const Sash = ({ separator, figures, intl }) => {
   return (
     <Container fluid className={styles.sash}>
-      <section>
-        <div className="d-block d-lg-flex">
-          {figures.map((figure, index) => {
-            const item = (
-              <Col className={styles.column}>
-                <figure>
-                  <figure.icon className="text" />
-                  <figcaption>
-                    <span>{figure.title}</span>
-                  </figcaption>
-                  {figure.button && (
-                    <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"} ${styles.button}`} href={figure.button.href}>
-                      {figure.button.text}
-                    </button>
-                  )}
-                  {figure.text && <span className={styles.text}>{figure.text}</span>}
-                </figure>
-              </Col>
+      <div className="d-block d-lg-flex">
+        {figures.map((figure, index) => {
+          const item = (
+            <Col className={styles.column}>
+              <figure>
+                <figure.icon className="text" />
+                <figcaption>
+                  <span>{figure.title}</span>
+                </figcaption>
+                {figure.button && (
+                  <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"} ${styles.button}`} href={figure.button.href}>
+                    {figure.button.text}
+                  </button>
+                )}
+                {figure.text && <span className={styles.text}>{figure.text}</span>}
+              </figure>
+            </Col>
+          );
+          if (index != figures.length - 1 && separator)
+            return (
+              <>
+                {item}
+                <div style={{ borderLeft: "1px solid #570DAE" }}></div>
+              </>
             );
-            if (index != figures.length - 1 && separator)
-              return (
-                <>
-                  {item}
-                  <div style={{ borderLeft: "1px solid #570DAE" }}></div>
-                </>
-              );
-            else return item;
-          })}
-        </div>
-      </section>
+          else return item;
+        })}
+      </div>
     </Container>
   );
 };

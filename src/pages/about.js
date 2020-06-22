@@ -96,49 +96,50 @@ const About = ({ intl }) => {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </section>
-        <Sash
-          as="div"
-          separator={true}
-          figures={[
-            {
-              title: intl.formatMessage({
-                id: "about.sash.first.title",
-              }),
-              button: {
-                text: intl.formatMessage({
-                  id: "about.sash.first.button",
+        <section className="light">
+          <Sash
+            as="div"
+            separator={true}
+            figures={[
+              {
+                title: intl.formatMessage({
+                  id: "about.sash.first.title",
                 }),
-                href: "",
+                button: {
+                  text: intl.formatMessage({
+                    id: "about.sash.first.button",
+                  }),
+                  href: "",
+                },
+                icon: OnePager,
               },
-              icon: OnePager,
-            },
-            {
-              title: intl.formatMessage({
-                id: "about.sash.second.title",
-              }),
-              button: {
-                text: intl.formatMessage({
-                  id: "about.sash.first.button",
+              {
+                title: intl.formatMessage({
+                  id: "about.sash.second.title",
                 }),
-                href: "",
+                button: {
+                  text: intl.formatMessage({
+                    id: "about.sash.first.button",
+                  }),
+                  href: "",
+                },
+                icon: WhitePaper,
               },
-              icon: WhitePaper,
-            },
-            {
-              title: intl.formatMessage({
-                id: "about.sash.third.title",
-              }),
-              button: {
-                text: intl.formatMessage({
-                  id: "about.sash.first.button",
+              {
+                title: intl.formatMessage({
+                  id: "about.sash.third.title",
                 }),
-                href: "",
+                button: {
+                  text: intl.formatMessage({
+                    id: "about.sash.first.button",
+                  }),
+                  href: "",
+                },
+                icon: YellowPaper,
               },
-              icon: YellowPaper,
-            },
-          ]}
-        />
-
+            ]}
+          />
+        </section>
         <section className="masked">
           <span className="trapezium" />
           <h1>

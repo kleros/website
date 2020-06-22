@@ -35,36 +35,38 @@ const Coop = ({ intl }) => (
           <FormattedMessage id="coop.section-2.h2" />
         </h2>
       </section>
-      <Sash
-        as="div"
-        separator={true}
-        figures={[
-          {
-            title: intl.formatMessage({
-              id: "coop.sash.first.title",
-            }),
-            button: {
-              text: intl.formatMessage({
-                id: "coop.sash.first.button",
+      <section className="light">
+        <Sash
+          as="div"
+          separator={true}
+          figures={[
+            {
+              title: intl.formatMessage({
+                id: "coop.sash.first.title",
               }),
-              href: "",
+              button: {
+                text: intl.formatMessage({
+                  id: "coop.sash.first.button",
+                }),
+                href: "",
+              },
+              icon: Subscription,
             },
-            icon: Subscription,
-          },
-          {
-            title: intl.formatMessage({
-              id: "coop.sash.second.title",
-            }),
-            button: {
-              text: intl.formatMessage({
-                id: "coop.sash.first.button",
+            {
+              title: intl.formatMessage({
+                id: "coop.sash.second.title",
               }),
-              href: "",
+              button: {
+                text: intl.formatMessage({
+                  id: "coop.sash.first.button",
+                }),
+                href: "",
+              },
+              icon: Statutes,
             },
-            icon: Statutes,
-          },
-        ]}
-      />
+          ]}
+        />
+      </section>
       <section className={styles.steps}>
         <h1>
           <FormattedMessage id="coop.section-steps.heading" />

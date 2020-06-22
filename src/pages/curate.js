@@ -64,38 +64,40 @@ const Curate = ({ intl }) => (
         </Container>
         <img src={CurateHero} alt={CurateHero} />
       </section>
-      <Sash
-        as="div"
-        figures={[
-          {
-            title: intl.formatMessage({
-              id: "curate.sash.first.title",
-            }),
-            text: intl.formatMessage({
-              id: "curate.sash.first.paragraph",
-            }),
-            icon: List,
-          },
-          {
-            title: intl.formatMessage({
-              id: "curate.sash.second.title",
-            }),
-            text: intl.formatMessage({
-              id: "curate.sash.second.paragraph",
-            }),
-            icon: TCR,
-          },
-          {
-            title: intl.formatMessage({
-              id: "curate.sash.third.title",
-            }),
-            text: intl.formatMessage({
-              id: "curate.sash.third.paragraph",
-            }),
-            icon: Scales,
-          },
-        ]}
-      />
+      <section className="light">
+        <Sash
+          as="div"
+          figures={[
+            {
+              title: intl.formatMessage({
+                id: "curate.sash.first.title",
+              }),
+              text: intl.formatMessage({
+                id: "curate.sash.first.paragraph",
+              }),
+              icon: List,
+            },
+            {
+              title: intl.formatMessage({
+                id: "curate.sash.second.title",
+              }),
+              text: intl.formatMessage({
+                id: "curate.sash.second.paragraph",
+              }),
+              icon: TCR,
+            },
+            {
+              title: intl.formatMessage({
+                id: "curate.sash.third.title",
+              }),
+              text: intl.formatMessage({
+                id: "curate.sash.third.paragraph",
+              }),
+              icon: Scales,
+            },
+          ]}
+        />
+      </section>
       <section className={styles.usecases}>
         <h1>{intl.formatMessage({ id: "curate.section-use-case.h1" })}</h1>
         <div className={styles.cards}>

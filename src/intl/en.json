@@ -491,7 +491,25 @@
     },
     "contributors": "Contributors"
   },
-  "token": {},
+  "token": {
+    "section-hero": {
+      "h1": "PNK Token",
+      "h2": "Pinakion, the name of Kleros token, was inspired by the token used by Ancient Athenians to draw jurors for their popular trials"
+    },
+    "sash": {
+      "title": "Why Does Kleros Need a Token?",
+      "first": { "title": "Juror Incentives", "paragraph": "Users need to stake PNK in order to be drawn as jurors in disputes" },
+      "second": { "title": "Attack Protection", "paragraph": "The PNK token protects against malicious actors." },
+      "third": { "title": "Platform Governance", "paragraph": "The PNK token is used for voting in platform governance." },
+      "learnMore": { "title": " Learn more about why Kleros needs a native token.", "button": "Learn More" }
+    },
+    "section-buy": "Where To Buy PNK",
+    "section-otc": {
+      "title": "Buy PNK Through an OTC Transaction",
+      "subtitle": "In order to ensure fair token distribution, tokens are sold to buyers at prices reflected by current market.",
+      "button": "Get in touch here"
+    }
+  },
   "community": {},
   "integrations": {},
   "fellowship": {},

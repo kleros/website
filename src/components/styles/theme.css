@@ -21,6 +21,29 @@
   --color-gray-light: #999;
 }
 
+.purple {
+  color: var(--color-purple);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.big {
+  font-size: var(--font-size-big);
+}
+
+.bigger {
+  font-size: var(--font-size-bigger);
+}
+
+.bg-light {
+  background: white;
+}
+
 body {
   color: white;
 }
@@ -105,6 +128,10 @@ section.speaker {
   background: center / contain no-repeat url("/illustration-speakers.svg");
   background-color: var(--color-purple-darkest); /* Order is important */
   background-size: auto;
+}
+
+section.light {
+  background-color: white;
 }
 
 input {
