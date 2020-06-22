@@ -510,7 +510,33 @@
       "button": "Get in touch here"
     }
   },
-  "community": {},
+  "community": {
+    "section-hero": { "h1": "The Kleros Community", "h2": "Kleros is a global community of people driven by legal innovation and blockchain technology." },
+    "section-members": {
+      "title": "Community Members Around the World",
+      "telegram": "Kleros Main Telegram Group"
+    },
+    "section-groups": {
+      "title": "Language Specific Groups",
+      "title-poh": "Proof of Humanity Group"
+    },
+    "section-guild": {
+      "title": "The Kleros Guild of Justice",
+      "paragraph": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide.<br/>The Guild is divided into two degrees, Envoys and Heralds.",
+      "envoy": {
+        "title": "Envoys",
+        "paragraph": "he role of Envoys in the Guild is to act as community builders, molding the online and offline presence of Kleros in their regions and bolstering the numbers of our community members.",
+        "activities": { "title": "Some of the activities", "items": { "1": "Creating and nurturing regional Telegram groups.", "2": "Building region-specific and general content about Kleros.", "3": "Organizing physical and online meetups." }, "button": "Learn More" }
+      },
+      "herald": {
+        "title": "Heralds",
+        "paragraph": "The role of Heralds in the Guild is to increase the awareness of Kleros globally, fostering adoption in the legal and business worlds, as well as academia.",
+        "activities": { "title": "Some of the activities", "items": { "1": "Holding speeches at high level corporate, government and academic contexts.", "2": "Representing Kleros in local media.", "3": "Creating business development opportunities." }, "button": "Learn More" }
+      }
+    },
+
+    "section-contact": "Would you like to become a member of the Guild? Contact us:"
+  },
   "integrations": {},
   "fellowship": {},
 

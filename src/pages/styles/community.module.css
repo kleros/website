@@ -1,0 +1,33 @@
+.community .director {
+  background-color: white;
+}
+
+.community .hero > h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.community .director img {
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.community .director h1,
+.community .director h2,
+.community .director p {
+  color: var(--color-purple);
+  border-radius: 50%;
+}
+
+.community .director h2,
+.community .director p {
+  font-weight: var(--font-weight-bold);
+}
+
+.community .papers > h1 {
+  margin-bottom: 4rem;
+}
+
+.community .cards > div {
+  margin-bottom: 2rem;
+}
