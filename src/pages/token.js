@@ -131,7 +131,7 @@ const IndexPage = ({ intl }) => (
             <p className="big bold pink">Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the&nbsp;market.</p>
           </div>
           <div className={styles.otcButton}>
-            <a className="btn btn-primary mr-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform">
+            <a className="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform">
               <FormattedMessage id="token.section-otc.button" />
             </a>
           </div>

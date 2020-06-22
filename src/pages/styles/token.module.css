@@ -72,7 +72,7 @@
 .token .otcText {
   grid-column: text;
 
-  text-align: start;
+  text-align: center;
 }
 
 .token .otcButton {
@@ -83,18 +83,17 @@
 
 @media screen and (max-width: 1200px) {
   .token .otc > div {
-    border-radius: 36px;
-    margin-top: 20px;
-    padding: 2rem;
-    margin-bottom: 20px;
-    display: grid;
     grid-template-rows: 2fr 4fr 1fr;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background: rgba(144, 19, 254, 0.21);
   }
 
+  .token .otcButton > a {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .token .otcText {
-    text-align: center;
+    text-align: start;
   }
 }
