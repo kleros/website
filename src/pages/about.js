@@ -159,37 +159,39 @@ const About = ({ intl }) => {
         </section>
         <Container as="section" fluid className={`no-gutters px-0 ${styles.team}`}>
           <Row className="no-gutters">
-            {Config.siteMetadata.teamMembers.map((member) => (
-              <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
-                <div className={styles.overlay}>
-                  <span>{member.name} </span>
-                  <span>{member.title}</span>
-                  <Row className={`no-gutters ${styles.social}`}>
-                    {member.links.github && (
-                      <a href={member.links.github} rel="noopener noreferrer" target="_blank">
-                        <Github />
-                      </a>
-                    )}
-                    {member.links.linkedin && (
-                      <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
-                        <Linkedin />
-                      </a>
-                    )}
-                    {member.links.twitter && (
-                      <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
-                        <Twitter />
-                      </a>
-                    )}
-                    {member.links.dribble && (
-                      <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
-                        <Dribble />
-                      </a>
-                    )}
-                  </Row>
-                </div>
-              </Col>
-            ))}
+            {Config.siteMetadata.teamMembers
+              .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
+              .map((member) => (
+                <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
+                  <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
+                  <div className={styles.overlay}>
+                    <span>{member.name} </span>
+                    <span>{member.title}</span>
+                    <Row className={`no-gutters ${styles.social}`}>
+                      {member.links.github && (
+                        <a href={member.links.github} rel="noopener noreferrer" target="_blank">
+                          <Github />
+                        </a>
+                      )}
+                      {member.links.linkedin && (
+                        <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
+                          <Linkedin />
+                        </a>
+                      )}
+                      {member.links.twitter && (
+                        <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
+                          <Twitter />
+                        </a>
+                      )}
+                      {member.links.dribble && (
+                        <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
+                          <Dribble />
+                        </a>
+                      )}
+                    </Row>
+                  </div>
+                </Col>
+              ))}
           </Row>
         </Container>
         <section className={styles.partners}>

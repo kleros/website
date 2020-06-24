@@ -541,7 +541,43 @@
 
     "section-contact": "Would you like to become a member of the Guild? Contact us:"
   },
-  "integrations": {},
+  "integrations": {
+    "section-hero": {
+      "h1": "Integrate with Kleros",
+      "h2": "Kleros provides fast, secure and affordable arbitration for virtually everything. Integrate your platform securely and at no cost. We are here to guide you all the way.",
+      "button": "Get in touch for integrations support"
+    },
+    "section-main": {
+      "usecases": {
+        "exchanges": {
+          "nav-title": "Exchanges",
+          "title": "Kleros for Exchanges",
+          "text-1": "Are you an exchange looking to list tokens in a decentralized way?",
+          "text-2": "Send them to Kleros",
+          "used-by": "Used by"
+        },
+        "marketplaces": {
+          "nav-title": "Marketplaces",
+          "title": "Kleros for Marketplaces",
+          "text-1": "Building a marketplace and need to resolve disputes between users?",
+          "text-2": "Send them to Kleros"
+        },
+        "bounties": {
+          "nav-title": "Work & Bounties",
+          "title": "Kleros for Work and Bounties Platforms",
+          "text-1": "Building a freelancing or bounty platform and need to resolve disputes between users?",
+          "text-2": "Send them to Kleros"
+        },
+        "curation": {
+          "nav-title": "User Generated Content Platforms",
+          "title": "Kleros for Content Platforms",
+          "text-1": "Need a decentralized content moderation system for fighting malicious users? (Hate Speech, Copyright, Spam, Porn)",
+          "text-2": "Send them to Kleros"
+        }
+      }
+    },
+    "section-contact": "Integrate Now"
+  },
   "fellowship": {},
 
   "contact": {
