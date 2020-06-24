@@ -29,6 +29,7 @@ import otc from "src/assets/svgs/icon-otc.svg";
 import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
+import Trade from "src/assets/svgs/icon-trade.svg";
 
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
@@ -105,45 +106,44 @@ const Integrations = ({ intl }) => {
       <div className={styles.integrations}>
         <section className={styles.sectionHeader}>
           <h1 className="text-center mb-5">
-            <FormattedMessage id="media.section-hero.h1" />
+            <FormattedMessage id="integrations.section-hero.h1" />
           </h1>
+          <h2 className="text-center mb-5">
+            <FormattedMessage id="integrations.section-hero.h2" />
+          </h2>
           <a href="https://blog.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-primary">
-            <FormattedMessage id="media.section-hero.button" />
+            <FormattedMessage id="integrations.section-hero.button" />
           </a>
         </section>
-        <section className="speaker" />
+        <section className="integrations" />
         <section className={styles.items}>
           <div className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            {Object.keys(Categories.media["section-media"]).map((category, index) => (
+            <p>asdasda</p>
+            {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
               <a key={index} className={`nav-link ${!index && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
-                <FormattedMessage id={`media.section-media.${category}.nav-title`} />
+                <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
               </a>
             ))}
           </div>
           <div className="tab-content" id="v-pills-tabContent">
-            {Object.entries(Categories.media["section-media"]).map((category, index) => (
+            {Object.entries(Categories.integrations["section-main"].usecases).map((category, index) => (
               <div key={index} className={`tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`}>
                 <h2>
-                  <FormattedMessage id={`media.section-media.${category[0]}.title`} />
+                  <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.title`} />
                 </h2>
-                {Categories.media["section-media"][category[0]].subtitle && (
-                  <h3>
-                    <FormattedMessage id={`media.section-media.${category[0]}.subtitle`} />
-                  </h3>
-                )}
-                {Categories.media["section-media"][category[0]].paragraph && (
-                  <p>
-                    <FormattedMessage id={`media.section-media.${category[0]}.paragraph`} />
-                  </p>
-                )}
-                {category[0] == "featured" && (
-                  <div className={styles.cards}>
-                    {CONTENT.featured.map((item, index) => (
-                      <MediaCard key={index} content={{ icon: item.icon, text: intl.formatMessage({ id: item.text }), href: item.href }} />
-                    ))}
+
+                {category[0] == "exchanges" && (
+                  <div className={styles.card}>
+                    <Trade />
+                    <h2>
+                      <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
+                    </h2>
+                    <h3>
+                      <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
+                    </h3>
                   </div>
                 )}
-                {category[0] == "presentations" && (
+                {category[0] == "marketplaces" && (
                   <div className={styles.cards}>
                     {CONTENT.presentations.map((item, index) => (
                       <div key={index}>
@@ -155,7 +155,7 @@ const Integrations = ({ intl }) => {
                     ))}
                   </div>
                 )}
-                {category[0] == "promo" && (
+                {category[0] == "bounties" && (
                   <div className={styles.cards}>
                     {CONTENT.promo.map((item, index) => (
                       <div key={index}>
@@ -167,7 +167,7 @@ const Integrations = ({ intl }) => {
                     ))}
                   </div>
                 )}
-                {category[0] == "conference" && (
+                {category[0] == "curation" && (
                   <>
                     <div className="iframe-container mt-5">
                       <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -192,52 +192,11 @@ const Integrations = ({ intl }) => {
           </div>
         </section>
         <hr className="mt-5" />
-        <section>
-          <Container fluid className="p-0">
-            <Row>
-              <Col md className="mt-5">
-                <VerticalCard
-                  content={{
-                    icon: Box,
-                    title: intl.formatMessage({
-                      id: "media.section-cards.card-1.title",
-                    }),
 
-                    button: {
-                      variant: "primary",
-                      text: intl.formatMessage({
-                        id: "media.section-cards.card-1.button",
-                      }),
-                      href: "media://court.kleros.io",
-                    },
-                  }}
-                />
-              </Col>
-              <Col md className="mt-5">
-                <VerticalCard
-                  content={{
-                    icon: Photo,
-                    title: intl.formatMessage({
-                      id: "media.section-cards.card-2.title",
-                    }),
-
-                    button: {
-                      variant: "secondary",
-                      text: intl.formatMessage({
-                        id: "media.section-cards.card-2.button",
-                      }),
-                      href: "/integrations",
-                    },
-                  }}
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
         <section>
           <Contact
             title={intl.formatMessage({
-              id: "media.section-contact",
+              id: "integrations.section-contact",
             })}
           />
         </section>

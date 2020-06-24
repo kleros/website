@@ -160,3 +160,22 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
+.integrations .card {
+  background-color: var(--color-purple-faded);
+  border-radius: 36px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.integrations .card > svg {
+  width: 8rem;
+}
+
+.integrations .card > h2 {
+  color: var(--color-pink);
+}
+
+.integrations .card > h3 {
+  color: white;
+}

@@ -148,6 +148,12 @@ section.speaker {
   background-size: auto;
 }
 
+section.integrations {
+  background: center / contain no-repeat url("/illustration-integrations.svg");
+  background-color: var(--color-purple-darkest); /* Order is important */
+  background-size: auto;
+}
+
 section.light {
   background-color: white;
 }

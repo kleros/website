@@ -574,8 +574,32 @@
           "text-1": "Need a decentralized content moderation system for fighting malicious users? (Hate Speech, Copyright, Spam, Porn)",
           "text-2": "Send them to Kleros"
         }
+      },
+      "getstarted": {
+        "erc792": {
+          "nav-title": "ERC 792: Arbitration Standard",
+          "title": "ERC 792: Arbitration Standard",
+          "text-1": "ERC-792: Arbitration Standard proposes a standard way to create interoperable arbitration on Ethereum. The standard consists of two types of smart contracts: Arbitrable and Arbitrator. Arbitrable contracts send enforceable disputes to the Arbitrator smart contract, which comes up with a ruling and sends it back to the Arbitrable contracts, which then enforce the decision. ERC-792 provides basic functions to allow smart contracts to interact with the Kleros Court and other arbitrators. It provides a standardized flow for disputes and enforcement of rulings.",
+          "button-primary": "Read the full documentation",
+          "button-secondary": "Learn more on Github"
+        },
+        "erc1497": {
+          "nav-title": "ERC 1497: Evidence Standard",
+          "title": "ERC 1497: Evidence Standard",
+          "text-1": "In order to have an interoperable way store agreements between parties and information about agreements, we have developed the ERC-1497: Evidence Standard. The ERC-1497 consists of two categories of information: evidence and meta-evidence. Evidence, as the name hints, is a piece of information that supports a proposition. Meta-evidence, on the other hand is the information about the dispute itself, the agreement, parties involved, ruling options, and others.",
+          "button-primary": "Read the full documentation",
+          "button-secondary": "Learn more on Github"
+        },
+        "archon": {
+          "nav-title": "Archon - Ethereum Arbitration Standard API",
+          "title": "Archon - Ethereum Arbitration Standard API",
+          "text-1": "Archon is a javascript library written to make it easy to interact with Arbitrable and Arbitrator contacts. In particular, Archon can be used to take care of a lot of the hash validation work that is part of the Evidence Standard (ERC 1497). Archon can be used with all Arbitrable and Arbitrator contracts that follow the ERC 792 standard and has the functionality to interact with all standardized methods.",
+          "button-primary": "Read the full documentation",
+          "button-secondary": "Learn more on Github"
+        }
       }
     },
+    "section-trusted-by": "Trusted By Top Projects",
     "section-contact": "Integrate Now"
   },
   "fellowship": {},
