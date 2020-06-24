@@ -19,19 +19,41 @@ const VerticalCard = ({ content, intl }) => (
   <Container fluid className={styles.verticalCard}>
     <Row className="h-100 d-flex">
       <Col sm className="h-100 d-flex flex-column">
-        <span>
-          <content.icon />
-        </span>
-        <span>{content.title}</span>
-        <span>{content.paragraph}</span>
-        {isExternal(content.button.href) && (
+        {content.icon && (
+          <span className={styles.icon}>
+            <content.icon />
+          </span>
+        )}
+        <span className={styles.title}>{content.title}</span>
+        {content.paragraphHref && (
+          <a className={styles.paragraph} href={content.paragraphHref}>
+            {content.paragraph}
+          </a>
+        )}
+        {!content.paragraphHref && <span className={styles.paragraph}>{content.paragraph}</span>}
+        {content.listTitle && (
+          <>
+            <span className={styles.listTitle}>{content.listTitle}</span>
+            <br />
+          </>
+        )}
+
+        {content.listTitle && (
+          <ul>
+            {content.list.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+
+        {content.button && isExternal(content.button.href) && (
           <Link to={content.button.href}>
             <Button variant={content.button.variant}>{content.button.text}</Button>
           </Link>
         )}
-        {!isExternal(content.button.href) && (
+        {content.button && !isExternal(content.button.href) && (
           <a href={content.button.href} target="blank" rel="noopener noreferrer" className="mt-auto">
-            <Button variant={content.button.variant}>{content.button.text}</Button>
+            {content.button.text}
           </a>
         )}
       </Col>

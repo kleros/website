@@ -63,7 +63,7 @@ footer > div:first-child {
 
 hr {
   width: calc(98vw - 4rem);
-  max-width: 99%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -106,16 +106,6 @@ footer small {
 
 main {
   text-align: center;
-}
-
-a,
-p,
-small {
-  color: var(--color-pink);
-}
-
-a:hover {
-  color: white;
 }
 
 h1 {

@@ -59,7 +59,7 @@
     },
     "section-use-case": {
       "h1": "Use Cases",
-      "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be sovled by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",
+      "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be solved by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",
       "cards": {
         "1": "Small Claims",
         "2": "Insurance",
@@ -90,7 +90,7 @@
       },
       "card-2": {
         "title": "Integrate your Platform",
-        "paragraph": "Learn how you can Kleros to solve in your platform.",
+        "paragraph": "Learn how you can use Kleros.",
         "button": "Start Now"
       }
     }
@@ -214,7 +214,7 @@
     },
     "section-3": {
       "h1": "Mission",
-      "h2": "Our mission is to develop software empowering justice inclusing and individual freedom."
+      "h2": "Our mission is to develop software enabling access to justice and individual freedom."
     },
     "section-4": {
       "h1": "Team",
@@ -522,16 +522,20 @@
     },
     "section-guild": {
       "title": "The Kleros Guild of Justice",
-      "paragraph": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide.<br/>The Guild is divided into two degrees, Envoys and Heralds.",
+      "paragraph-1": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide. The Guild is divided into two degrees, Envoys and Heralds.",
+      "paragraph-2": "The Guild is divided into two degrees, Envoys and Heralds.",
+
       "envoy": {
         "title": "Envoys",
-        "paragraph": "he role of Envoys in the Guild is to act as community builders, molding the online and offline presence of Kleros in their regions and bolstering the numbers of our community members.",
-        "activities": { "title": "Some of the activities", "items": { "1": "Creating and nurturing regional Telegram groups.", "2": "Building region-specific and general content about Kleros.", "3": "Organizing physical and online meetups." }, "button": "Learn More" }
+        "paragraph": "The role of Envoys in the Guild is to act as community builders, molding the online and offline presence of Kleros in their regions and bolstering the numbers of our community members.",
+        "activities": { "title": "Some of the activities", "items": { "1": "Creating and nurturing regional Telegram groups.", "2": "Building region-specific and general content about Kleros.", "3": "Organizing physical and online meetups." } },
+        "button": "Learn More"
       },
       "herald": {
         "title": "Heralds",
         "paragraph": "The role of Heralds in the Guild is to increase the awareness of Kleros globally, fostering adoption in the legal and business worlds, as well as academia.",
-        "activities": { "title": "Some of the activities", "items": { "1": "Holding speeches at high level corporate, government and academic contexts.", "2": "Representing Kleros in local media.", "3": "Creating business development opportunities." }, "button": "Learn More" }
+        "activities": { "title": "Some of the activities", "items": { "1": "Holding speeches at high level corporate, government and academic contexts.", "2": "Representing Kleros in local media.", "3": "Creating business development opportunities." } },
+        "button": "Learn More"
       }
     },
 

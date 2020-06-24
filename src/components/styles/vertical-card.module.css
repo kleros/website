@@ -18,26 +18,52 @@
 .verticalCard svg {
 }
 
-.verticalCard span:nth-of-type(1) {
+.verticalCard .icon {
   height: 250px;
   width: auto;
   margin-bottom: 2rem;
 }
 
-.verticalCard span:nth-of-type(2) {
+.verticalCard .title {
   font-size: var(--font-size-bigger);
   color: white;
   font-weight: var(--font-weight-bold);
   display: block;
 }
 
-.verticalCard span:nth-of-type(3) {
+.verticalCard .paragraph {
   font-size: var(--font-size-medium);
   color: var(--color-pink);
   display: block;
   margin-bottom: 4rem;
 }
 
+.verticalCard a.paragraph:hover {
+  color: white;
+}
+
 .verticalCard button {
   margin-bottom: 2rem;
+}
+
+.verticalCard .listTitle {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+}
+
+.verticalCard ul {
+  text-align: left;
+}
+
+.verticalCard li {
+  list-style: none;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-pink);
+}
+
+.verticalCard li:before {
+  content: "→ ";
+  vertical-align: text-bottom;
+  color: white;
 }

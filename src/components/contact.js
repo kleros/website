@@ -14,14 +14,14 @@ const Contact = ({ intl, title }) => (
     <Logo className={styles.brand} />
     <div className={styles.rest}>
       <span className="text">{title}</span>
-      <div className={styles.icons}>
-        <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
-          <Telegram />
-        </a>
-        <a href="mailto:contract@kleros.io" target="blank" rel="noopener noreferrer">
-          <Email />
-        </a>
-      </div>
+    </div>
+    <div className={styles.icons}>
+      <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
+        <Telegram />
+      </a>
+      <a href="mailto:contract@kleros.io" target="blank" rel="noopener noreferrer">
+        <Email />
+      </a>
     </div>
   </div>
 );

@@ -1,33 +1,65 @@
-.community .director {
-  background-color: white;
+.community .hero {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: bottom -20vw right 50%;
+  background-size: 70%;
 }
 
-.community .hero > h2 {
-  font-weight: var(--font-weight-bold);
+.community > section:nth-child(2) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-.community .director img {
-  background-color: white;
-  border-radius: 50%;
-  margin-bottom: 3rem;
+.community .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
 }
 
-.community .director h1,
-.community .director h2,
-.community .director p {
-  color: var(--color-purple);
-  border-radius: 50%;
+.community .singleCard {
+  margin: auto;
+  margin-top: 4rem;
+  width: 33%;
 }
 
-.community .director h2,
-.community .director p {
-  font-weight: var(--font-weight-bold);
+.community .cards > div > div > div > span {
+  height: auto;
 }
 
-.community .papers > h1 {
-  margin-bottom: 4rem;
+.community .cards > div > div > div > a,
+.community .singleCard > div > div > div > a {
+  margin: 0;
 }
 
-.community .cards > div {
-  margin-bottom: 2rem;
+.community .cards > div > div > div > span > svg {
+  width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .community .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+  .community .singleCard {
+    margin: auto;
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .community .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.community .groups {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: top -10vw right 50%;
+  background-size: 70%;
 }
