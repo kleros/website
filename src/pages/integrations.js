@@ -144,22 +144,18 @@ const Integrations = ({ intl }) => {
         <section className="integrations" />
         <section className={styles.items}>
           <div className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <div>
-              <p className="purple-light">USECASES</p>
-              {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
-                <a key={category} className={`nav-link ${!index && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
-                  <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
-                </a>
-              ))}
-            </div>
-            <div>
-              <p className="purple-light">GET STARTED</p>
-              {Object.keys(Categories.integrations["section-main"].getstarted).map((category, index) => (
-                <a key={category} className={`nav-link ${category == null && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
-                  <FormattedMessage id={`integrations.section-main.getstarted.${category}.nav-title`} />
-                </a>
-              ))}
-            </div>
+            <p className="purple-light">USECASES</p>
+            {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
+              <a key={category} className={`nav-link ${!index && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
+                <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
+              </a>
+            ))}
+            <p className="purple-light">GET STARTED</p>
+            {Object.keys(Categories.integrations["section-main"].getstarted).map((category, index) => (
+              <a key={category} className={`nav-link ${category == null && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
+                <FormattedMessage id={`integrations.section-main.getstarted.${category}.nav-title`} />
+              </a>
+            ))}
           </div>
           <div className="tab-content" id="v-pills-tabContent">
             {Object.entries(Categories.integrations["section-main"].usecases).map((category, index) => (
@@ -289,7 +285,7 @@ const Integrations = ({ intl }) => {
                       <h2>
                         <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
                       </h2>
-                      <div style={{ background: "white", borderRadius: "36px", padding: "3rem 10rem" }}>
+                      <div style={{ background: "white", borderRadius: "36px", padding: "7% 20%" }}>
                         <Archon />
                       </div>
                       <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
