@@ -4,15 +4,15 @@
     <title>website-integrations5</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient1">
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="1497linearGradient1">
             <stop stop-color="#8400DB" offset="0%"></stop>
             <stop stop-color="#4D00B4" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="website-integrations5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="url(#linearGradient1)" cx="312.5" cy="384.5" r="244.5"></circle>
+        <circle id="Oval" fill="url(#1497linearGradient1)" cx="312.5" cy="384.5" r="244.5"></circle>
         <path d="M312.5,635 C450.84733,635 563,522.84733 563,384.5 C563,246.15267 450.84733,134 312.5,134 C174.15267,134 62,246.15267 62,384.5 C62,522.84733 174.15267,635 312.5,635 Z M312.5,629 C177.466379,629 68,519.533621 68,384.5 C68,249.466379 177.466379,140 312.5,140 C447.533621,140 557,249.466379 557,384.5 C557,519.533621 447.533621,629 312.5,629 Z" id="Oval" fill="#9013FE" fill-rule="nonzero"></path>
-        <circle id="Oval" fill="url(#linearGradient1)" cx="884.5" cy="384.5" r="244.5"></circle>
+        <circle id="Oval" fill="url(#1497linearGradient1)" cx="884.5" cy="384.5" r="244.5"></circle>
         <path d="M884.5,635 C1022.84733,635 1135,522.84733 1135,384.5 C1135,246.15267 1022.84733,134 884.5,134 C746.15267,134 634,246.15267 634,384.5 C634,522.84733 746.15267,635 884.5,635 Z M884.5,629 C749.466379,629 640,519.533621 640,384.5 C640,249.466379 749.466379,140 884.5,140 C1019.53362,140 1129,249.466379 1129,384.5 C1129,519.533621 1019.53362,629 884.5,629 Z" id="Oval" fill="#9013FE" fill-rule="nonzero"></path>
         <g id="file-pdf-solid" transform="translate(261.000000, 257.000000)" fill="#9013FE" fill-rule="nonzero">
             <path d="M65.875,42.5 L102,42.5 L102,129.625 C102,133.157813 99.1578125,136 95.625,136 L6.375,136 C2.8421875,136 0,133.157813 0,129.625 L0,6.375 C0,2.8421875 2.8421875,0 6.375,0 L59.5,0 L59.5,36.125 C59.5,39.63125 62.36875,42.5 65.875,42.5 Z M100.140625,27.890625 L74.109375,1.859375 C72.9140625,0.6640625 71.29375,0 69.59375,0 L68,0 L68,34 L102,34 L102,32.3796875 C102,30.70625 101.335938,29.0859375 100.140625,27.890625 Z" id="Shape"></path>

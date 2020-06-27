@@ -4,7 +4,7 @@
     <title>symbol-oracle</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient1">
             <stop stop-color="#8710F4" offset="0%"></stop>
             <stop stop-color="#5A00BD" offset="100%"></stop>
         </linearGradient>
@@ -14,7 +14,7 @@
             <g id="Group-86">
                 <g id="Group-85" transform="translate(0.000000, 56.990785)">
                     <circle id="Oval" fill="#E0C2FC" cx="315.333333" cy="315.333333" r="315.333333"></circle>
-                    <circle id="Oval" fill="url(#linearGradient-1)" cx="315.333333" cy="315.333333" r="291.373134"></circle>
+                    <circle id="Oval" fill="url(#linearGradient1)" cx="315.333333" cy="315.333333" r="291.373134"></circle>
                     <g id="Group-83" transform="translate(100.975124, 101.830846)" fill="#E0C2FC" fill-rule="nonzero">
                         <path d="M213.930348,427.860697 C332.080817,427.860697 427.860697,332.080817 427.860697,213.930348 C427.860697,95.7798794 332.080817,0 213.930348,0 C95.7798794,0 0,95.7798794 0,213.930348 C0,332.080817 95.7798794,427.860697 213.930348,427.860697 Z M213.930348,419.303483 C100.505898,419.303483 8.55721393,327.354798 8.55721393,213.930348 C8.55721393,100.505898 100.505898,8.55721393 213.930348,8.55721393 C327.354798,8.55721393 419.303483,100.505898 419.303483,213.930348 C419.303483,327.354798 327.354798,419.303483 213.930348,419.303483 Z" id="Oval"></path>
                     </g>

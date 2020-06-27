@@ -101,14 +101,28 @@
   margin-bottom: 5rem;
 }
 
-@media (min-width: 800px) {
+.integrations .nav > div > a {
+  display: block;
+}
+
+@media (min-width: 1000px) {
   .integrations .nav {
     float: left;
     flex-direction: column;
   }
 
   .integrations .items > div:nth-child(2) {
-    margin-left: 20rem;
+    margin-left: 29rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .integrations .nav > div > a {
+    display: inline-block;
+  }
+
+  .integrations .nav > div {
+    text-align: center;
   }
 }
 
@@ -168,14 +182,86 @@
   text-align: center;
 }
 
-.integrations .card > svg {
+.integrations .getstarted > h2:first-child {
+  font-size: var(--font-size-bigger);
+}
+
+.integrations .usecases .card > svg {
   width: 8rem;
+  margin-bottom: 2rem;
 }
 
 .integrations .card > h2 {
   color: var(--color-pink);
+  margin-bottom: 3rem;
 }
 
 .integrations .card > h3 {
   color: white;
+}
+
+.integrations .exchanges > span {
+  background: white;
+  box-shadow: 13.34px 13.34px 53.37px rgba(77, 0, 180, 0.25);
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.integrations .exchanges > span > * {
+  width: 20rem;
+}
+
+.integrations .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.integrations .badge {
+  width: 12rem;
+  height: 7rem;
+  background-color: transparent;
+  border-radius: 12px;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .integrations .badge {
+    width: 11rem;
+  }
+}
+
+.integrations .trustedBy .badge {
+  width: 12rem;
+}
+
+.integrations .trustedBy > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.integrations svg,
+.integrations img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.integrations .usedBy {
+  background-color: white;
+  border-radius: 36px;
+}
+
+.integrations small {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  color: white;
+}
+
+.integrations .getstarted h2 {
+  font-size: var(--font-size-medium);
+  text-align: left;
 }

@@ -23,19 +23,45 @@ import token from "src/assets/svgs/icon-token.svg";
 import restaurant from "src/assets/svgs/icon-fork-n-knife.svg";
 import hotel from "src/assets/svgs/icon-hotel.svg";
 import spam from "src/assets/svgs/icon-spam.svg";
-import social from "src/assets/svgs/icon-speaker.svg";
+import Github from "src/assets/svgs/github.svg";
 import bounty from "src/assets/svgs/icon-bounty.svg";
 import otc from "src/assets/svgs/icon-otc.svg";
 import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
+
 import Trade from "src/assets/svgs/icon-trade.svg";
+import ECommerce from "src/assets/svgs/icon-e-commerce.svg";
+import Freelancing from "src/assets/svgs/icon-freelance.svg";
+import Moderation from "src/assets/svgs/icon-moderation.svg";
+
+import ERC792 from "src/assets/svgs/illustration-erc792.svg";
+import ERC1497 from "src/assets/svgs/illustration-erc1497.svg";
+import Archon from "src/assets/svgs/archon.svg";
 
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Photo from "src/assets/svgs/icon-photo.svg";
 import Box from "src/assets/svgs/icon-box.svg";
+
+import Deversifi from "src/assets/images/deversifi.png";
+import WindingTree from "src/assets/images/winding-tree-colored.png";
+
+import Uniswap from "src/assets/svgs/uniswap.svg";
+
+import IDEX from "src/assets/images/idex.png";
+import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
+import Realitio from "src/assets/images/realitio.png";
+import DutchX from "src/assets/images/dutchx.png";
+
+import ExchangeIllustration from "src/assets/svgs/exchange.svg";
+import MarketplaceIllustration from "src/assets/svgs/marketplace.svg";
+import BountiesIllustration from "src/assets/svgs/bounties.svg";
+import CurationIllustration from "src/assets/svgs/curation.svg";
+
+import Ninja from "src/assets/svgs/ninja-black-text.svg";
+import Transak from "src/assets/images/transak.png";
 
 import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
 import Categories from "src/intl/en.json";
@@ -118,72 +144,163 @@ const Integrations = ({ intl }) => {
         <section className="integrations" />
         <section className={styles.items}>
           <div className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <p>asdasda</p>
-            {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
-              <a key={index} className={`nav-link ${!index && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
-                <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
-              </a>
-            ))}
+            <div>
+              <p className="purple-light">USECASES</p>
+              {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
+                <a key={category} className={`nav-link ${!index && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
+                  <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
+                </a>
+              ))}
+            </div>
+            <div>
+              <p className="purple-light">GET STARTED</p>
+              {Object.keys(Categories.integrations["section-main"].getstarted).map((category, index) => (
+                <a key={category} className={`nav-link ${category == null && "active"}`} id="v-pills-${category}-tab" data-toggle="pill" href={`#v-pills-${category}`} role="tab" aria-controls={`#v-pills-${category}`} aria-selected="true">
+                  <FormattedMessage id={`integrations.section-main.getstarted.${category}.nav-title`} />
+                </a>
+              ))}
+            </div>
           </div>
           <div className="tab-content" id="v-pills-tabContent">
             {Object.entries(Categories.integrations["section-main"].usecases).map((category, index) => (
-              <div key={index} className={`tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`}>
+              <div key={category} className={`${styles.usecases} tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`}>
                 <h2>
                   <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.title`} />
                 </h2>
 
                 {category[0] == "exchanges" && (
-                  <div className={styles.card}>
-                    <Trade />
-                    <h2>
-                      <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
-                    </h2>
-                    <h3>
-                      <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
-                    </h3>
-                  </div>
+                  <>
+                    <div className={styles.card}>
+                      <Trade />
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
+                      </h2>
+                      <h3>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
+                      </h3>
+                    </div>
+                    <ExchangeIllustration />
+                    <small>Used by</small>
+                    <div className={` ${styles.usedBy} mt-5 d-flex flex-wrap justify-content-around`}>
+                      <Badge as="a" href="https://uniswap.ninja/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+                        <Ninja />
+                      </Badge>
+
+                      <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+                        <span className={styles.helper}></span>
+                        <img src={Deversifi} />
+                      </Badge>
+                      <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+                        <span className={styles.helper}></span>
+                        <img src={DutchX} />
+                      </Badge>
+                    </div>
+                  </>
                 )}
                 {category[0] == "marketplaces" && (
-                  <div className={styles.cards}>
-                    {CONTENT.presentations.map((item, index) => (
-                      <div key={index}>
-                        <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        <span>
-                          <FormattedMessage id={item.text} />
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                  <>
+                    <div className={styles.card}>
+                      <ECommerce />
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
+                      </h2>
+                      <h3>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
+                      </h3>
+                    </div>
+                    <MarketplaceIllustration />
+                  </>
                 )}
                 {category[0] == "bounties" && (
-                  <div className={styles.cards}>
-                    {CONTENT.promo.map((item, index) => (
-                      <div key={index}>
-                        <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        <span>
-                          <FormattedMessage id={item.text} />
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                  <>
+                    <div className={styles.card}>
+                      <Freelancing />
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
+                      </h2>
+                      <h3>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
+                      </h3>
+                    </div>
+                    <BountiesIllustration />
+                  </>
                 )}
                 {category[0] == "curation" && (
                   <>
-                    <div className="iframe-container mt-5">
-                      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                      <span>
-                        <FormattedMessage id="media.section-media.conference.items.1" />
-                      </span>
+                    <div className={styles.card}>
+                      <Moderation />
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-1`} />
+                      </h2>
+                      <h3>
+                        <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
+                      </h3>
                     </div>
-                    <div className={styles.cards}>
-                      {CONTENT.conference.slice(1).map((item, index) => (
-                        <div key={index}>
-                          <iframe width="100%" height="auto" src={item.link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                          <span>
-                            <FormattedMessage id={item.text} />
-                          </span>
-                        </div>
-                      ))}
+                    <CurationIllustration />
+                  </>
+                )}
+              </div>
+            ))}
+
+            {Object.entries(Categories.integrations["section-main"].getstarted).map((category, index) => (
+              <div key={category} className={`${styles.getstarted} tab-pane fade`} id={`v-pills-${category[0]}`}>
+                <h2>
+                  <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.title`} />
+                </h2>
+                {category[0] == "erc792" && (
+                  <div className={styles.card}>
+                    <h2>
+                      <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
+                    </h2>
+                    <ERC792 />
+                    <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
+                      <a className="btn btn-primary" href="#">
+                        <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
+                      </a>
+                      <a className="btn btn-secondary" href="#">
+                        <Github style={{ height: "1.2em", width: "auto", marginRight: "0.6em" }} />
+                        <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-secondary`} />
+                      </a>
+                    </div>
+                  </div>
+                )}
+                {category[0] == "erc1497" && (
+                  <>
+                    <div className={styles.card}>
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
+                      </h2>
+                      <ERC1497 />
+                      <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
+                        <a className="btn btn-primary" href="#">
+                          <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
+                        </a>
+                        <a className="btn btn-secondary" href="#">
+                          <Github style={{ height: "1.2em", width: "auto", marginRight: "0.6em" }} />
+                          <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-secondary`} />
+                        </a>
+                      </div>
+                    </div>
+                  </>
+                )}
+                {category[0] == "archon" && (
+                  <>
+                    <div className={styles.card}>
+                      <h2>
+                        <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
+                      </h2>
+                      <div style={{ background: "white", borderRadius: "36px", padding: "3rem 10rem" }}>
+                        <Archon />
+                      </div>
+                      <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
+                        <a className="btn btn-primary" href="#">
+                          <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
+                        </a>
+                        <a className="btn btn-secondary" href="#">
+                          <Github style={{ height: "1.2em", width: "auto", marginRight: "0.6em" }} />
+                          <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-secondary`} />
+                        </a>
+                      </div>
                     </div>
                   </>
                 )}
@@ -199,6 +316,33 @@ const Integrations = ({ intl }) => {
               id: "integrations.section-contact",
             })}
           />
+        </section>
+        <section className={`${styles.trustedBy} light`}>
+          <h2 className="text-center purple">
+            <FormattedMessage id={`integrations.section-trusted-by`} />
+          </h2>
+          <div>
+            <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+              <span className={styles.helper}></span>
+              <img src={Deversifi} />
+            </Badge>
+            <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+              <span className={styles.helper}></span>
+              <img src={DutchX} />
+            </Badge>
+            <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+              <span className={styles.helper}></span>
+              <img src={WindingTree} />
+            </Badge>
+            <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+              <span className={styles.helper}></span>
+              <img src={Realitio} />
+            </Badge>
+            <Badge as="a" href="https://app.deversifi.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+              <span className={styles.helper}></span>
+              <img src={CryptoUnlocked} />
+            </Badge>
+          </div>
         </section>
       </div>
     </Layout>

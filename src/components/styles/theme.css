@@ -25,6 +25,10 @@
   color: var(--color-purple);
 }
 
+.purple-light {
+  color: var(--color-purple-light);
+}
+
 .pink {
   color: var(--color-pink);
 }
@@ -85,11 +89,11 @@ small {
 
 a:hover {
   text-decoration: none;
-  color: var(--color-blue);
+  color: white;
 }
 
-:not(section.light) a:hover {
-  color: white;
+section.light a:hover {
+  color: var(--color-blue);
 }
 
 main .btn,
