@@ -294,7 +294,7 @@ module.exports = {
       { name: "Dorukhan Oguz", title: "Corporate Lawyer", location: "Turkey", batch: 2 },
       { name: "Elliot Talbert Goldstein", title: "Assistant Director", location: "USA", batch: 2 },
       { name: "Faith Obafemi", title: "Head of Strategy", location: "Nigeria", batch: 2 },
-      { name: "Flávio Freitas Gouvêa", title: "Lawyer, Mediator", location: "Brazil", batch: 2 },
+      { name: "Flávio Freitas Gouvea", title: "Lawyer, Mediator", location: "Brazil", batch: 2 },
       { name: "Sahelê Felicio", title: "Corporate Lawyer", location: "Brazil", batch: 2 },
       { name: "Julieta Tineo", title: "Digital Law Specialist", location: "Argentina", batch: 2 },
       { name: "Kizzy Mota", title: "Digital Law Specialist", location: "Brazil", batch: 2 },
