@@ -602,7 +602,44 @@
     "section-trusted-by": "Trusted By Top Projects",
     "section-contact": "Integrate Now"
   },
-  "fellowship": {},
+  "fellowship": {
+    "section-hero": {
+      "h1": "Kleros Fellowship of Justice",
+      "h2": "Kleros Fellowship of Justice The Kleros Fellowship of Justice is a program which gathers experts ranging from the field of computer science to law and business to conduct research on the development of Kleros. Our Fellows collaborate actively with our core team members on the advancement of decentralized justice. Participate in our Fellowship program and become a leader in this emerging field!",
+      "conversion-phrase": "Follow Kleros on social media to know when applications for the next batch open."
+    },
+    "section-fellows": "Meet our Fellows",
+    "section-faq": {
+      "1": {
+        "q": "What's the Kleros Fellowship of Justice?",
+        "a": "It's a 6 month remote program where participants conduct some research on some topic connected to Kleros and decentralized justice."
+      },
+      "2": {
+        "q": "Who can participate?",
+        "a": "Anyone wishing to conduct some research about decentralized justice can apply to participate."
+      },
+      "3": {
+        "q": "What is the expected outcome from the program?",
+        "a": "The outcome is agreed by Kleros team and the participant at the beginning of the program, but it typically is a 10 to 15 pages report about some specific aspect of Kleros."
+      },
+      "4": {
+        "q": "What kind of support does Kleros give to participants?",
+        "a": "Participants can count on the Kleros team for mentorship, data on user behavior, introductions to key players in the ecosystem and even support with design. We will try to help Fellows in every way we can."
+      },
+      "5": {
+        "q": "Do you offer grants?",
+        "a": "No."
+      },
+      "6": {
+        "q": "How does the day to day look like?",
+        "a": "The Fellowship is a fully remote and autonomous program. There are no regular calls nor progress reports. The only deliverable is the report to be presented at the end of the program."
+      },
+      "7": {
+        "q": "Where can I apply?",
+        "a": "You can apply here."
+      }
+    }
+  },
 
   "contact": {
     "title": "Get in Touch"

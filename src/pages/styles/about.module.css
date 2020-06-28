@@ -26,7 +26,7 @@
 }
 
 .about .portraitContainer:hover .overlay {
-  display: block;
+  display: flex;
   opacity: 0.8;
   background-color: var(--color-purple-light);
 }
@@ -34,6 +34,8 @@
 .about .overlay {
   padding: 0 1rem;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about .overlay span {
@@ -42,7 +44,6 @@
 }
 
 .about .overlay span:first-child {
-  margin-top: 40%;
   font-weight: var(--font-weight-bold);
 }
 

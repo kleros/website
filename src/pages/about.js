@@ -167,28 +167,30 @@ const About = ({ intl }) => {
                   <div className={styles.overlay}>
                     <span>{member.name} </span>
                     <span>{member.title}</span>
-                    <Row className={`no-gutters ${styles.social}`}>
-                      {member.links.github && (
-                        <a href={member.links.github} rel="noopener noreferrer" target="_blank">
-                          <Github />
-                        </a>
-                      )}
-                      {member.links.linkedin && (
-                        <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
-                          <Linkedin />
-                        </a>
-                      )}
-                      {member.links.twitter && (
-                        <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
-                          <Twitter />
-                        </a>
-                      )}
-                      {member.links.dribble && (
-                        <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
-                          <Dribble />
-                        </a>
-                      )}
-                    </Row>
+                    {member.links && (
+                      <Row className={`no-gutters ${styles.social}`}>
+                        {member.links.github && (
+                          <a href={member.links.github} rel="noopener noreferrer" target="_blank">
+                            <Github />
+                          </a>
+                        )}
+                        {member.links.linkedin && (
+                          <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
+                            <Linkedin />
+                          </a>
+                        )}
+                        {member.links.twitter && (
+                          <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
+                            <Twitter />
+                          </a>
+                        )}
+                        {member.links.dribble && (
+                          <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
+                            <Dribble />
+                          </a>
+                        )}
+                      </Row>
+                    )}
                   </div>
                 </Col>
               ))}

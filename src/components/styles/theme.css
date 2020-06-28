@@ -21,6 +21,9 @@
   --color-gray-light: #999;
 }
 
+.white {
+  color: white;
+}
 .purple {
   color: var(--color-purple);
 }
