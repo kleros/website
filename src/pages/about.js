@@ -197,7 +197,9 @@ const About = ({ intl }) => {
           </Row>
         </Container>
         <section className={styles.partners}>
-          <h2>Partners</h2>
+          <h2>
+            <FormattedMessage id="about.section-5" />
+          </h2>
           <img src={Deversifi} />
           <img src={MarketProtocol} />
           <img src={Ink} />

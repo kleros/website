@@ -157,22 +157,9 @@ const Footer = ({ intl }) => {
             </p>
           </Row>
           <Row className={styles.subscribe}>
-            <InputGroup className="mb-3">
-              <FormControl
-                placeholder={intl.formatMessage({
-                  id: "footer.subscribe-placeholder",
-                })}
-                aria-label={intl.formatMessage({
-                  id: "footer.subscribe-placeholder",
-                })}
-                aria-describedby="subscribe"
-              />
-              <InputGroup.Append>
-                <Button variant="primary" className="mt-0 mr-0">
-                  <FormattedMessage id="footer.subscribe-button" />
-                </Button>
-              </InputGroup.Append>
-            </InputGroup>
+            <Button variant="primary" className="mb-5 mt-1" href="https://cdn.forms-content.sg-form.com/e7cee475-ba0e-11ea-ada4-aada6854d8c2" target="blank" rel="noopener noreferrer">
+              <FormattedMessage id="footer.subscribe-button" />
+            </Button>
           </Row>
         </div>
       </Container>

@@ -32,7 +32,16 @@ const Coop = ({ intl }) => (
           <FormattedMessage id="coop.section-2.h1" />
         </h1>
         <h2>
-          <FormattedMessage id="coop.section-2.h2" />
+          <FormattedMessage
+            id="coop.section-2.h2"
+            values={{
+              link: (children) => (
+                <a href="https://medium.com/kleros/kleros-the-legal-structure-9cd8fca40b1c" target="_blank" rel="noopener noreferrer">
+                  {children}
+                </a>
+              ),
+            }}
+          />
         </h2>
       </section>
       <section className="light">
