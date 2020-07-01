@@ -198,9 +198,11 @@ const Escrow = ({ intl }) => (
       <hr />
       <section>
         <Contact
-          title={intl.formatMessage({
-            id: "contact.title",
-          })}
+          content={{
+            title: intl.formatMessage({
+              id: "contact.title",
+            }),
+          }}
         />
       </section>
     </Container>

@@ -199,9 +199,11 @@ const Community = ({ intl }) => (
       </section>
       <section className="pt-0">
         <Contact
-          title={intl.formatMessage({
-            id: "community.section-contact",
-          })}
+          content={{
+            title: intl.formatMessage({
+              id: "community.section-contact",
+            }),
+          }}
         />
       </section>
     </div>

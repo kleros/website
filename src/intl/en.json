@@ -641,6 +641,10 @@
       }
     }
   },
+  "bio": {
+    "section-main": "Download the Report",
+    "section-contact": { "title": "Join Kleros Fellowship", "subtitle": "Interested in joining Kleros Fellowship? Message us via <mail>contact@kleros.io</mail>." }
+  },
 
   "contact": {
     "title": "Get in Touch"

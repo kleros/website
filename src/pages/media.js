@@ -236,9 +236,11 @@ const Media = ({ intl }) => {
         </section>
         <section>
           <Contact
-            title={intl.formatMessage({
-              id: "media.section-contact",
-            })}
+            content={{
+              title: intl.formatMessage({
+                id: "media.section-contact",
+              }),
+            }}
           />
         </section>
       </div>

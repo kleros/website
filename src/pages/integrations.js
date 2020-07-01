@@ -308,9 +308,11 @@ const Integrations = ({ intl }) => {
 
         <section>
           <Contact
-            title={intl.formatMessage({
-              id: "integrations.section-contact",
-            })}
+            content={{
+              title: intl.formatMessage({
+                id: "integrations.section-contact",
+              }),
+            }}
           />
         </section>
         <section className={`${styles.trustedBy} light`}>
