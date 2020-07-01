@@ -111,3 +111,10 @@
 .book .social path {
   fill: white;
 }
+
+.book .buttonWrapper {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

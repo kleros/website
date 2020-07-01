@@ -3,7 +3,7 @@
   border-radius: 12px;
   text-align: left;
   padding: 1.6rem;
-  height: 100%;
+  height: auto;
   overflow: auto;
   text-align: center;
   border-radius: 12px;
@@ -30,15 +30,29 @@
   margin-left: auto;
 }
 
-.mediaCard svg {
-  height: auto;
+.mediaCard img {
+  height: 85%;
+  width: auto;
 }
 
 .mediaCard hr {
   width: 100%;
   border: 1px solid var(--color-purple-light);
+  margin: 0;
 }
 
 .mediaCard .logoWrapper {
-  height: 30%;
+  height: 4rem;
+}
+
+.mediaCard .main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 70%;
+}
+
+.mediaCard .btn {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
 }

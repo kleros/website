@@ -4,6 +4,8 @@
   display: grid;
   grid: 1fr 1fr / 1fr 1fr;
   grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+
   place-items: center;
   padding: 1rem 1.5rem;
 }
@@ -30,7 +32,6 @@
 }
 
 .contact .rest {
-  margin-left: 2rem;
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column: 1 / span 2;
@@ -45,7 +46,7 @@
 
 @media screen and (min-width: 500px) {
   .contact {
-    grid: 1fr 1fr / 1fr 1fr 1fr;
+    grid: 1fr 1fr / 1fr 2fr;
     padding: 1rem 1.5rem;
   }
 
@@ -63,7 +64,7 @@
   .contact .rest {
     grid-column: 2 / span 2;
     grid-row: 1 / span 2;
-    text-align: left;
+    text-align: center;
     display: block;
   }
 
@@ -87,6 +88,7 @@
   }
 
   .contact .rest {
+    text-align: left;
     grid-row: 1 / span 1;
     grid-column: text;
     display: flex;
@@ -98,7 +100,6 @@
     grid-column: text;
     display: block;
     align-self: center;
-    margin-left: 2rem;
   }
 
   .contact .icons {

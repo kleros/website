@@ -12,7 +12,7 @@ import styles from "./styles/contact.module.css";
 const Contact = ({ intl, content }) => (
   <div className={styles.contact}>
     {!content.icon && <Logo className={styles.brand} />}
-    {content.icon && <content.icon />}
+    {content.icon && <content.icon className={styles.brand} />}
 
     <div className={styles.rest}>
       <span className="text">{content.title}</span>

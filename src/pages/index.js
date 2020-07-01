@@ -200,14 +200,7 @@ const IndexPage = ({ intl }) => (
               </a>
               <p className="text-center text-purple-darker ">Escrow</p>
             </div>
-            <div className="d-inline-block">
-              <a href="https://linguo.kleros.io">
-                <Badge>
-                  <Linguo />
-                </Badge>
-              </a>
-              <p className="text-center text-purple-darker ">Linguo</p>
-            </div>
+
             <div className="d-inline-block">
               <a href="https://tokens.kleros.io">
                 <Badge>
@@ -230,7 +223,7 @@ const IndexPage = ({ intl }) => (
                   <Ninja />
                 </Badge>
               </a>
-              <p className="text-center text-purple-darker ">Ninja</p>
+              <p className="text-center text-purple-darker ">Uniswap Ninja</p>
             </div>
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
@@ -256,6 +249,14 @@ const IndexPage = ({ intl }) => (
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Realitio</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://linguo.kleros.io">
+                <Badge>
+                  <Linguo />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Linguo*</p>
             </div>
             <br />
             <small>

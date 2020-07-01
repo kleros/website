@@ -9,11 +9,17 @@ import Deversifi from "src/assets/images/deversifi.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
 
 import IDEX from "src/assets/images/idex.png";
+import OneInch from "src/assets/images/1inch.png";
+import Paraswap from "src/assets/images/paraswap.jpg";
+import Balancer from "src/assets/images/balancer.png";
 
 import Bitfinex from "src/assets/images/bitfinex.png";
 import Kyber from "src/assets/images/kyber.png";
 
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
+import DexBlue from "src/assets/svgs/dexblue.svg";
+import Loopring from "src/assets/svgs/loopring.svg";
+
 import Transak from "src/assets/images/transak.png";
 
 import Kleros from "src/assets/svgs/icon-kleros.svg";
@@ -102,6 +108,12 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" href="https://uniswap.exchange/" target="blank" rel="noopener noreferrer" className={styles.badge}>
             <Uniswap />
           </Badge>
+          <Badge as="a" href="https://dex.blue/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+            <DexBlue />
+          </Badge>
+          <Badge as="a" href="https://loopring.org/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+            <Loopring />
+          </Badge>
 
           <Badge as="a" href="https://idex.market/eth/pnk" target="blank" rel="noopener noreferrer" className={styles.badge}>
             <span class={styles.helper}></span>
@@ -118,6 +130,18 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" href="https://transak.com/" target="blank" rel="noopener noreferrer" className={styles.badge}>
             <span class={styles.helper}></span>
             <img src={Transak} />
+          </Badge>
+          <Badge as="a" href="https://1inch.exchange/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+            <span class={styles.helper}></span>
+            <img src={OneInch} />
+          </Badge>
+          <Badge as="a" href="https://paraswap.io/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+            <span class={styles.helper}></span>
+            <img src={Paraswap} />
+          </Badge>
+          <Badge as="a" href="https://balancer.exchange/" target="blank" rel="noopener noreferrer" className={styles.badge}>
+            <span class={styles.helper}></span>
+            <img src={Balancer} />
           </Badge>
         </Container>
       </section>

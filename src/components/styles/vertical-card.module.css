@@ -42,10 +42,6 @@
   color: white;
 }
 
-.verticalCard button {
-  margin-bottom: 2rem;
-}
-
 .verticalCard .listTitle {
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);

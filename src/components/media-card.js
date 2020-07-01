@@ -46,13 +46,15 @@ const MediaCard = ({ content, intl }) => (
     <Row className="h-100 d-flex">
       <Col sm className="h-100 d-flex flex-column">
         <div className={styles.logoWrapper}>
-          <content.icon />
+          <img src={content.icon} />
         </div>
         <hr />
-        <span className="pb-5">{content.text}</span>
-        <a href={content.href} target="blank" rel="noopener noreferrer">
-          Read More →
-        </a>
+        <div className={styles.main}>
+          <span className="pb-5">{content.text}</span>
+          <a href={content.href} target="blank" rel="noopener noreferrer">
+            Read More →
+          </a>
+        </div>
       </Col>
     </Row>
   </Container>

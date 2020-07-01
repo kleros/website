@@ -39,14 +39,14 @@ import Box from "src/assets/svgs/icon-box.svg";
 import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
 import Categories from "src/intl/en.json";
 
-import ThomsonReuters from "src/assets/svgs/thomson-reuters-2.svg";
-import DefiPrime from "src/assets/svgs/defiprime.svg";
-import CardRates from "src/assets/svgs/cr-logo.svg";
-import BitcoinDotCom from "../assets/svgs/bitcoindotcom.svg";
-import VentureBeat from "src/assets/svgs/venture-beat.svg";
-import Token2049 from "src/assets/svgs/token2049.svg";
-import Consensus from "src/assets/svgs/consensus.svg";
-import EthCC from "src/assets/svgs/ethcc.svg";
+import ThomsonReuters from "src/assets/images/thomsonreuters.png";
+import DefiPrime from "src/assets/images/defiprime.png";
+import CardRates from "src/assets/images/cardrates.png";
+import BitcoinDotCom from "../assets/images/bitcoindotcom.png";
+import VentureBeat from "src/assets/images/venturebeat.png";
+import Token2049 from "src/assets/images/token2049.png";
+import Consensus from "src/assets/images/consensus.png";
+import EthCC from "src/assets/images/ethcc.png";
 
 import VerticalCard from "../components/vertical-card";
 
