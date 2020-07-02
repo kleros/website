@@ -230,7 +230,7 @@ const Fellowship = ({ intl }) => {
                           id={`fellowship.section-faq.${index + 1}.a`}
                           values={{
                             anchor: (children) => (
-                              <a href="/" target="_blank" rel="noopener noreferrer">
+                              <a href="https://forms.gle/s6nND6jmKriNyDsR8" target="_blank" rel="noopener noreferrer">
                                 {children}
                               </a>
                             ),
