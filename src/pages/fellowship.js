@@ -31,7 +31,6 @@ import Alencar from "src/assets/images/alencar.png";
 import Braga from "src/assets/images/braga.png";
 import George from "src/assets/images/george.png";
 import Glemming from "src/assets/images/glemming.png";
-import Aouidef from "src/assets/images/aouidef.png";
 import Tunçer from "src/assets/images/tuncer.png";
 import Barcelos from "src/assets/images/barcelos.png";
 import Zhang from "src/assets/images/zhang.png";
@@ -133,7 +132,6 @@ const PHOTOS = {
   Vargas,
   Carrera,
   Lewis,
-  Aouidef,
   Huculak,
   Narozhny,
   Sharma,

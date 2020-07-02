@@ -146,6 +146,8 @@ module.exports = {
         name: "Lorens Huculak",
         title: "Layer 2 Entrepreneur and Fellow",
         links: { linkedin: "https://www.linkedin.com/in/lorenshuculak/", twitter: "https://twitter.com/lorenshuculak" },
+        location: "Belgium",
+        batch: 3,
       },
       {
         name: "Ning Fidel",
@@ -306,7 +308,6 @@ module.exports = {
       { name: "Robert Dean", title: "Construction Arbitrator", location: "UK", batch: 3 },
       { name: "Marta García Bel", title: "International Arbitration Lawyer", location: "USA", batch: 3 },
       { name: "Scott Gray", title: "Economist", location: "USA", batch: 3 },
-      { name: "Lorens Huculak", title: "Digital Entrepreneur", location: "Belgium", batch: 3 },
       { name: "José María de la Jara", title: "Digital Arbitration Attorney", location: "Peru", batch: 3 },
       { name: "Jake Lowther", title: "Dispute Resolution Expert", location: "Australia", batch: 3 },
       { name: "Shraddha Kulshreshtha", title: "Commercial and Business Lawyer", location: "India", batch: 3 },
