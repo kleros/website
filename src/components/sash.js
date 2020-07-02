@@ -19,7 +19,7 @@ const Sash = ({ separator, figures, intl }) => {
       <div className="d-block d-lg-flex">
         {figures.map((figure, index) => {
           const item = (
-            <Col className={styles.column}>
+            <Col className={styles.column} key={index}>
               <figure>
                 <figure.icon className="text" />
                 <figcaption>
@@ -36,10 +36,10 @@ const Sash = ({ separator, figures, intl }) => {
           );
           if (index != figures.length - 1 && separator)
             return (
-              <>
+              <React.Fragment key={index}>
                 {item}
                 <div style={{ borderLeft: "1px solid #570DAE" }}></div>
-              </>
+              </React.Fragment>
             );
           else return item;
         })}

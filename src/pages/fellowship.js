@@ -220,10 +220,23 @@ const Fellowship = ({ intl }) => {
                 <>
                   <Card key={index}>
                     <Accordion.Toggle as={Card.Header} eventKey={index} className={styles.cardHeader}>
-                      <span className={`${activeKey === index ? styles.closed : styles.open}`}>{question[1].q}</span>
+                      <span className={`${activeKey === index ? styles.closed : styles.open}`}>
+                        <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
+                      </span>
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey={index}>
-                      <Card.Body className={styles.cardBody}>{question[1].a}</Card.Body>
+                      <Card.Body className={styles.cardBody}>
+                        <FormattedMessage
+                          id={`fellowship.section-faq.${index + 1}.a`}
+                          values={{
+                            anchor: (children) => (
+                              <a href="/" target="_blank" rel="noopener noreferrer">
+                                {children}
+                              </a>
+                            ),
+                          }}
+                        />
+                      </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                   <hr style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }} />

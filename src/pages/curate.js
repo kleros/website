@@ -12,6 +12,8 @@ import Contact from "../components/contact";
 import Deversifi from "src/assets/images/deversifi.png";
 import Curate1 from "src/assets/images/curate1.png";
 import Curate2 from "src/assets/images/curate2.png";
+import CurateTwoScreen from "src/assets/svgs/curate-twoscreen.svg";
+
 import CurateHero from "src/assets/images/curate-hero.png";
 
 import List from "src/assets/svgs/icon-list.svg";
@@ -185,16 +187,8 @@ const Curate = ({ intl }) => (
         </Container>
       </section>
       <div></div>
-      <section>
-        <div id="holder" style={{ position: "relative", minHeight: "300px", height: "60vw", maxHeight: "900px", margin: "auto", width: "100%" }}>
-          <div style={{ float: "right", width: "80%" }}>
-            <img src={Curate1} style={{ maxWidth: "100%" }} />
-          </div>
-          <div style={{ float: "left", width: "80%", position: "absolute", top: "20%  " }}>
-            <img src={Curate2} style={{ maxWidth: "100%" }} />
-          </div>
-          <div style={{ clear: "both" }}></div>
-        </div>
+      <section className="nopadding">
+        <CurateTwoScreen />
       </section>
       <hr />
       <section>

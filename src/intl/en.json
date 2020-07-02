@@ -164,7 +164,7 @@
       }
     },
     "section-use-case": {
-      "h1": "Kleros Curate Use Cases",
+      "h1": "Kleros Escrow Use Cases",
       "cards": {
         "1": "Freelancing",
         "2": "Domain Name Transfer",
@@ -228,7 +228,7 @@
 
     "section-hero": {
       "h1": "Coopérative Kleros",
-      "h2": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read <link>this article</link> to learn more about the legal structure."
+      "h2": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read <anchor>this article</anchor> to learn more about the legal structure."
     },
     "section-2": {
       "h1": "Become a Member of the Cooperative",
@@ -606,7 +606,7 @@
   "fellowship": {
     "section-hero": {
       "h1": "Kleros Fellowship of Justice",
-      "h2": "Kleros Fellowship of Justice The Kleros Fellowship of Justice is a program which gathers experts ranging from the field of computer science to law and business to conduct research on the development of Kleros. Our Fellows collaborate actively with our core team members on the advancement of decentralized justice. Participate in our Fellowship program and become a leader in this emerging field!",
+      "h2": "A program which gathers experts from different fields to conduct research and work on Kleros. Our Fellows collaborate actively with our core team on the advancement of decentralized justice.",
       "conversion-phrase": "Follow Kleros on social media to know when applications for the next batch open."
     },
     "section-fellows": "Meet our Fellows",
@@ -637,7 +637,7 @@
       },
       "7": {
         "q": "Where can I apply?",
-        "a": "You can apply here."
+        "a": "You can apply <anchor>here</anchor>."
       }
     }
   },

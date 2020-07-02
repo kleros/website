@@ -12,6 +12,8 @@ import Contact from "../components/contact";
 import Deversifi from "src/assets/images/deversifi.png";
 import Escrow1 from "src/assets/svgs/escrow-screen1.svg";
 import Escrow2 from "src/assets/svgs/escrow-screen2.svg";
+import EscrowTwoScreen from "src/assets/svgs/escrow-twoscreen.svg";
+
 import EscrowHero from "src/assets/svgs/escrow-hero.svg";
 
 import Warning from "src/assets/svgs/icon-warning.svg";
@@ -184,16 +186,8 @@ const Escrow = ({ intl }) => (
         </a>
       </section>
       <div></div>
-      <section>
-        <div id="holder" style={{ position: "relative", height: "50vw", maxWidth: "100vw", margin: "auto" }}>
-          <div style={{ float: "right", maxWidth: "70%" }}>
-            <Escrow1 />
-          </div>
-          <div style={{ float: "left", position: "absolute", top: "30%", maxWidth: "70%" }}>
-            <Escrow2 />
-          </div>
-          <div style={{ clear: "both" }}></div>
-        </div>
+      <section className="nopadding">
+        <EscrowTwoScreen />
       </section>
       <hr />
       <section>
