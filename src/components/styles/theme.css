@@ -99,6 +99,11 @@ section.light a:hover {
   color: var(--color-blue);
 }
 
+.btn:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
 main .btn,
 footer .btn {
   margin: auto;

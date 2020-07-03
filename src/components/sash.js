@@ -26,9 +26,9 @@ const Sash = ({ separator, figures, intl }) => {
                   <span>{figure.title}</span>
                 </figcaption>
                 {figure.button && (
-                  <button className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"} ${styles.button}`} href={figure.button.href}>
+                  <a className={`btn btn-${index % 2 == 0 ? "primary" : "secondary"} ${styles.button}`} href={figure.button.href}>
                     {figure.button.text}
-                  </button>
+                  </a>
                 )}
                 {figure.text && <span className={styles.text}>{figure.text}</span>}
               </figure>

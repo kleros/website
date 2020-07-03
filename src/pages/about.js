@@ -9,6 +9,10 @@ import VerticalCard from "../components/vertical-card";
 import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
 
+import OnePager from "src/assets/svgs/icon-onepager.svg";
+import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
+import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
+
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import Ink from "src/assets/images/ink.png";
 import MarketProtocol from "src/assets/images/marketprotocol.png";
@@ -27,9 +31,6 @@ import { Badge, Container, Row, Col } from "react-bootstrap";
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 import styles from "./styles/about.module.css";
-
-import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
-import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 
 import Ast from "src/assets/images/ast.png";
 import Lesaege from "src/assets/images/lesaege.png";
@@ -51,15 +52,39 @@ import Pichler from "src/assets/images/pichler.png";
 import Huculak from "src/assets/images/huculak.png";
 import Fidel from "src/assets/images/fidel.png";
 
-import OnePager from "src/assets/svgs/icon-onepager.svg";
-import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
-import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
+import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
+import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
+import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
+import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf";
+import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
+import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
+import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
+import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
+
+import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
+import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
+
+import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
 
 import Config from "../../gatsby-config.js";
+const ONEPAGERS = {
+  en: OnePagerEN,
+  tr: OnePagerTR,
+  fr: OnePagerFR,
+  es: OnePagerES,
+  ko: OnePagerKO,
+  ru: OnePagerRU,
+  zh: OnePagerZH,
+  pt: OnePagerPT,
+};
 
 const WHITE_PAPERS = {
   en: WhitePaperEN,
   es: WhitePaperES,
+};
+
+const YELLOW_PAPERS = {
+  en: YellowPaperEN,
 };
 
 const PHOTOS = { Ast, Lesaege, Malbasic, John, Guérin, Alencar, Braga, George, Glemming, Aouidef, Tunçer, Barcelos, Zhang, Dmitrikov, Vitello, James, Pichler, Huculak, Fidel };
@@ -109,7 +134,7 @@ const About = ({ intl }) => {
                   text: intl.formatMessage({
                     id: "about.sash.first.button",
                   }),
-                  href: "",
+                  href: ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale],
                 },
                 icon: OnePager,
               },
@@ -121,7 +146,7 @@ const About = ({ intl }) => {
                   text: intl.formatMessage({
                     id: "about.sash.first.button",
                   }),
-                  href: "",
+                  href: WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale],
                 },
                 icon: WhitePaper,
               },
@@ -133,7 +158,7 @@ const About = ({ intl }) => {
                   text: intl.formatMessage({
                     id: "about.sash.first.button",
                   }),
-                  href: "",
+                  href: YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale],
                 },
                 icon: YellowPaper,
               },
