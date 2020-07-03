@@ -8486,6 +8486,11 @@ latest-version@5.1.0, latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
+latinize@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/latinize/-/latinize-0.4.1.tgz#1b82d6e0687f2722dfdf67a19302fc345a772738"
+  integrity sha512-A4miz97dNF+EbNgQdayPAEtud5eRpCGPwJy7JQFD1hBQcOzOgBS4m721zoREuPqpz1yKm8hYT2ANlh7pirapsA==
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"

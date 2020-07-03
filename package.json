@@ -20,6 +20,7 @@
     "gatsby-transformer-remark": "^2.8.20",
     "gatsby-transformer-sharp": "^2.5.0",
     "jquery": "^3.5.1",
+    "latinize": "^0.4.1",
     "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",

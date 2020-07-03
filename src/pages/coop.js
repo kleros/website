@@ -6,8 +6,10 @@ import SEO from "../components/seo";
 import Sash from "../components/sash";
 
 import Form from "src/assets/form.pdf";
+import Statutes from "src/assets/statutes.pdf";
+
 import Subscription from "src/assets/svgs/icon-pen.svg";
-import Statutes from "src/assets/svgs/icon-book.svg";
+import Book from "src/assets/svgs/icon-book.svg";
 
 import styles from "./styles/coop.module.css";
 import Map from "src/assets/svgs/map.svg";
@@ -70,9 +72,9 @@ const Coop = ({ intl }) => (
                 text: intl.formatMessage({
                   id: "coop.sash.first.button",
                 }),
-                href: "",
+                href: Statutes,
               },
-              icon: Statutes,
+              icon: Book,
             },
           ]}
         />

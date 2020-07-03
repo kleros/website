@@ -21,7 +21,7 @@ const Contact = ({ intl, content }) => (
       <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
         <Telegram />
       </a>
-      <a href="mailto:contract@kleros.io" target="blank" rel="noopener noreferrer">
+      <a href="mailto:contact@kleros.io" target="blank" rel="noopener noreferrer">
         <Email />
       </a>
     </div>

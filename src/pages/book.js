@@ -1,5 +1,7 @@
 import React from "react";
 
+import latinize from "latinize";
+
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
@@ -15,28 +17,19 @@ import Twitter from "src/assets/svgs/twitter.svg";
 import Dribble from "src/assets/svgs/dribble.svg";
 
 import styles from "./styles/book.module.css";
-import { Badge, Container, Row, Col } from "react-bootstrap";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import { Container, Row, Col } from "react-bootstrap";
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl";
 
 import Ast from "src/assets/images/ast.png";
 import Lesaege from "src/assets/images/lesaege.png";
 import Malbasic from "src/assets/images/malbasic.png";
-import John from "src/assets/images/john.png";
-import Guérin from "src/assets/images/guerin.png";
 import Alencar from "src/assets/images/alencar.png";
 import Braga from "src/assets/images/braga.png";
 import George from "src/assets/images/george.png";
-import Glemming from "src/assets/images/glemming.png";
-import Aouidef from "src/assets/images/aouidef.png";
-import Tunçer from "src/assets/images/tuncer.png";
-import Barcelos from "src/assets/images/barcelos.png";
-import Zhang from "src/assets/images/zhang.png";
+import Tuncer from "src/assets/images/tuncer.png";
 import Dmitrikov from "src/assets/images/dmitrikov.png";
 import Vitello from "src/assets/images/vitello.png";
 import James from "src/assets/images/james.png";
-import Pichler from "src/assets/images/pichler.png";
-import Huculak from "src/assets/images/huculak.png";
-import Fidel from "src/assets/images/fidel.png";
 import Rule from "src/assets/images/rule.png";
 import Dimov from "src/assets/images/dimov.png";
 import Winter from "src/assets/images/winter.png";
@@ -65,54 +58,44 @@ import Piqueras from "src/assets/images/piqueras.png";
 import Bergolla from "src/assets/images/bergolla.png";
 
 import Config from "../../gatsby-config.js";
-const PHOTOS = {
-  Ast,
-  Lesaege,
-  Malbasic,
-  John,
-  Guérin,
-  Alencar,
-  Braga,
-  George,
-  Glemming,
-  Aouidef,
-  Tunçer,
-  Barcelos,
-  Zhang,
-  Dmitrikov,
-  Vitello,
-  James,
-  Pichler,
-  Huculak,
+const PHOTOS = [
   Rule,
-  Dimov,
-  Winter,
-  Narozhny,
   Raczynski,
-  Sharma,
-  Blazevic,
-  Schmitz,
   Weingast,
-  Flippi,
-  Mauer,
-  Duarte,
-  Nappert,
-  Deplano,
-  Siri,
-  Hunn,
-  Fidel,
+  Lesaege,
   Ober,
+  Winter,
   Stone,
   Sills,
   Hadfield,
+  Nappert,
   Blazevic,
   Torres,
+  Schmitz,
   Monegro,
+  Siri,
+  Flippi,
+  Deplano,
   Dagnillo,
+  Braga,
+  Tuncer,
+  Malbasic,
+  Alencar,
+  Lesaege,
+  Ast,
+  James,
+  George,
+  Vitello,
   Piqueras,
   Einy,
+  Hunn,
+  Dimov,
+  Mauer,
+  Duarte,
+  Narozhny,
   Bergolla,
-};
+  Sharma,
+];
 
 const Book = ({ intl }) => (
   <Layout>
@@ -140,15 +123,15 @@ const Book = ({ intl }) => (
                     <FormattedMessage id="book.section-hero.title-download" />
                   </h3>
                   <Container className={styles.buttonWrapper}>
-                    <a href="https://court.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <a href="/../book.epub" target="blank" rel="noopener noreferrer" className="btn btn-primary">
                       EPUB
                     </a>
-                    <Link to="/integrations" className="btn btn-primary">
+                    <a href="/../book.mobi" className="btn btn-primary">
                       MOBI
-                    </Link>
-                    <Link to="/integrations" className="btn btn-primary">
+                    </a>
+                    <a href="/../book.pdf" className="btn btn-primary">
                       PDF
-                    </Link>
+                    </a>
                   </Container>
                 </Col>
               </Row>
@@ -175,33 +158,29 @@ const Book = ({ intl }) => (
       </h1>
       <Container as="section" fluid className={`no-gutters px-0 ${styles.team}`}>
         <Row className="no-gutters">
-          {Config.siteMetadata.teamMembers
-            .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
-            .map((member) => (
+          {PHOTOS.map((member) => {
+            const lastName = member.split("/")[2].split("-")[0];
+            const person = Config.siteMetadata.teamMembers.find((object) => latinize(object.name).toLowerCase().includes(lastName.toString()));
+            return (
               <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
+                <img style={{ width: "100%" }} src={member} />
                 <div className={styles.overlay}>
-                  <span>{member.name} </span>
-                  <span>{member.title}</span>
-                  {member.links && (
+                  <span>{person.name}</span>
+                  <span>{person.title}</span>
+                  {person.links && (
                     <Row className={`no-gutters ${styles.social}`}>
-                      {member.links.github && (
-                        <a href={member.links.github} rel="noopener noreferrer" target="_blank">
-                          <Github />
-                        </a>
-                      )}
-                      {member.links.linkedin && (
-                        <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
+                      {person.links.linkedin && (
+                        <a href={person.links.linkedin} rel="noopener noreferrer" target="_blank">
                           <Linkedin />
                         </a>
                       )}
-                      {member.links.twitter && (
-                        <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
+                      {person.links.twitter && (
+                        <a href={person.links.twitter} rel="noopener noreferrer" target="_blank">
                           <Twitter />
                         </a>
                       )}
-                      {member.links.dribble && (
-                        <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
+                      {person.links.dribble && (
+                        <a href={person.links.dribble} rel="noopener noreferrer" target="_blank">
                           <Dribble />
                         </a>
                       )}
@@ -209,7 +188,8 @@ const Book = ({ intl }) => (
                   )}
                 </div>
               </Col>
-            ))}
+            );
+          })}
         </Row>
       </Container>
     </div>
