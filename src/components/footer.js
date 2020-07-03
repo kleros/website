@@ -65,13 +65,13 @@ const Footer = ({ intl }) => {
             <Link className="mr-3" to="/coop">
               <FormattedMessage id="footer.cooperative" />
             </Link>
-            <a className="mr-3" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]}>
+            <a rel="noopener noreferrer" target="_blank" className="mr-3" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]}>
               <FormattedMessage id="footer.whitepaper" />
             </a>
-            <a className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]}>
+            <a rel="noopener noreferrer" target="_blank" className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]}>
               <FormattedMessage id="footer.yellowpaper" />
             </a>
-            <a className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]}>
+            <a rel="noopener noreferrer" target="_blank" className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]}>
               <FormattedMessage id="footer.onepager" />
             </a>
             <Link className="mr-3" to="/research">
@@ -80,13 +80,13 @@ const Footer = ({ intl }) => {
             <Link className="mr-3" to="/token">
               <FormattedMessage id="footer.pnktoken" />
             </Link>
-            <a className="mr-3" href="https://developer.kleros.io">
+            <a rel="noopener noreferrer" target="_blank" className="mr-3" href="https://developer.kleros.io">
               <FormattedMessage id="footer.developer" />
             </a>
             <Link className="mr-3" to="/integrations">
               <FormattedMessage id="footer.integrations" />
             </Link>
-            <a className="mr-3" href="https://governance.kleros.io">
+            <a rel="noopener noreferrer" target="_blank" className="mr-3" href="https://governance.kleros.io">
               <FormattedMessage id="footer.governance" />
             </a>
             <Link className="mr-3" to="/escrow">

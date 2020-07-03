@@ -56,7 +56,7 @@ class Header extends React.Component {
               <Link to="/research" className=" nav-link">
                 <FormattedMessage id="header.research" />
               </Link>
-              <Nav.Link className="" href="https://blog.kleros.io">
+              <Nav.Link className="" href="https://blog.kleros.io" rel="noopener noreferrer" target="_blank">
                 <FormattedMessage id="header.blog" />
               </Nav.Link>
               <Link to="/about" className=" nav-link">
@@ -128,7 +128,7 @@ class Header extends React.Component {
           <Card>
             <Card.Body className="px-5 py-3 text-center">
               <div className="d-inline-block">
-                <a href="https://court.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://court.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Court} />
@@ -137,7 +137,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Court</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://escrow.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://escrow.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Escrow} />
@@ -146,7 +146,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Escrow</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://resolve.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://resolve.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={DisputeResolver} />
@@ -155,7 +155,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Dispute Resolver</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://linguo.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://linguo.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Linguo} />
@@ -164,7 +164,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Linguo</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://tokens.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://tokens.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={T2CR} />
@@ -173,7 +173,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">T2CR</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://curate.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://curate.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Curate} />
@@ -182,7 +182,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Curate</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://uniswap.ninja">
+                <a rel="noopener noreferrer" target="_blank" href="https://uniswap.ninja">
                   <Badge>
                     <span className={styles.helper}></span>
 
@@ -193,7 +193,7 @@ class Header extends React.Component {
               </div>
 
               <div className="d-inline-block">
-                <a href="https://resolve.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://resolve.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={CryptoUnlocked} />
@@ -202,7 +202,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Crypto Unlocked</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://resolve.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://resolve.kleros.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Realitio} />
