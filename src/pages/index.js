@@ -50,7 +50,7 @@ import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
 
-import IndexHero from "src/assets/svgs/index-hero.svg";
+import IndexHero from "src/assets/svgs/court-hero.svg";
 
 const IndexPage = ({ intl, svgs }) => (
   <Layout>
