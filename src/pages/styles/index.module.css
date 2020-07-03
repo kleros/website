@@ -56,7 +56,6 @@
 }
 
 .index .productsTitle {
-  font-size: var(--font-size-huge);
   font-weight: var(--font-weight-bold);
   color: var(--color-purple);
 }

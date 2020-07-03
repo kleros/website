@@ -1,11 +1,15 @@
 import React from "react";
 import ThomsonReuters from "../assets/svgs/thomson-reuters.svg";
+import EU from "src/assets/svgs/eu-winner.svg";
 
 import styles from "./styles/sponsors.module.css";
 
 export default ({ extraClass }) => {
   return (
     <section className={`pt-0 ${extraClass} ${styles.sponsors}`}>
+      <div className={styles.euContainer}>
+        <EU />
+      </div>
       <div className={styles.reutersContainer}>
         <ThomsonReuters className={styles.reuters} />
       </div>

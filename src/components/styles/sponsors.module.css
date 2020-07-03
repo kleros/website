@@ -8,12 +8,12 @@
 }
 
 .sponsors svg {
-  height: 80px;
+  min-height: 80px;
+  max-height: 160px;
   width: auto;
   max-width: 100%;
 }
 .sponsors div:first-of-type svg {
-  margin-top: 3rem;
 }
 
 .sponsors div {
@@ -36,4 +36,14 @@
   filter: gray;
 
   padding: 1rem;
+}
+
+.sponsors .euContainer {
+  display: block;
+  width: 100%;
+}
+
+.sponsors div {
+  padding-top: 2rem;
+  margin: auto;
 }

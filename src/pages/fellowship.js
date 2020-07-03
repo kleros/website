@@ -148,7 +148,7 @@ const Fellowship = ({ intl, data }) => {
     <Layout>
       <SEO title="Fellowship" />
       <div className={styles.fellowship}>
-        <section className={`${styles.hero}`}>
+        <section className={`pb-0 ${styles.hero} `}>
           <FellowshipBadge />
           <h1>
             <FormattedMessage id="fellowship.section-hero.h1" />
@@ -161,38 +161,40 @@ const Fellowship = ({ intl, data }) => {
             <FormattedMessage id="fellowship.section-hero.conversion-phrase" />
           </h2>
           <div className={`${styles.social}`}>
-            <a className="g-kleros_footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/kleros">
-              <Github />
-            </a>
-            <a className="g-kleros_footer__anchor" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
-              <Slack />
-            </a>
+            <div>
+              <a className="g-kleros_footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/kleros">
+                <Github />
+              </a>
+              <a className="g-kleros_footer__anchor" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
+                <Slack />
+              </a>
 
-            <a className="g-kleros_footer__anchor" href="https://reddit.com/r/Kleros/" rel="noopener noreferrer" target="_blank">
-              <Reddit />
-            </a>
-            <a className="g-kleros_footer__anchor" href="https://twitter.com/kleros_io?" rel="noopener noreferrer" target="_blank">
-              <Twitter />
-            </a>
+              <a className="g-kleros_footer__anchor" href="https://reddit.com/r/Kleros/" rel="noopener noreferrer" target="_blank">
+                <Reddit />
+              </a>
+              <a className="g-kleros_footer__anchor" href="https://twitter.com/kleros_io?" rel="noopener noreferrer" target="_blank">
+                <Twitter />
+              </a>
 
-            <a className="g-kleros_footer__anchor" href="https://blog.kleros.io/" rel="noopener noreferrer" target="_blank">
-              <Ghost />
-            </a>
+              <a className="g-kleros_footer__anchor" href="https://blog.kleros.io/" rel="noopener noreferrer" target="_blank">
+                <Ghost />
+              </a>
 
-            <a className="g-kleros_footer__anchor" href="https://t.me/kleros" rel="noopener noreferrer" target="_blank">
-              <Telegram />
-            </a>
-            <a className="g-kleros_footer__anchor" href="https://www.linkedin.com/company/kleros/" rel="noopener noreferrer" target="_blank">
-              <Linkedin />
-            </a>
+              <a className="g-kleros_footer__anchor" href="https://t.me/kleros" rel="noopener noreferrer" target="_blank">
+                <Telegram />
+              </a>
+              <a className="g-kleros_footer__anchor" href="https://www.linkedin.com/company/kleros/" rel="noopener noreferrer" target="_blank">
+                <Linkedin />
+              </a>
+            </div>
           </div>
           <hr style={{ marginTop: "4rem" }} />
+          <h1 style={{ marginTop: "6rem", marginBottom: "4rem" }}>
+            <FormattedMessage id="fellowship.section-fellows" />
+          </h1>
         </section>
 
         <Container as="section" fluid className={`no-gutters pt-0 px-0 ${styles.team}`}>
-          <h1 style={{ marginBottom: "4rem" }}>
-            <FormattedMessage id="fellowship.section-fellows" />
-          </h1>
           <Row className="no-gutters">
             {Config.siteMetadata.teamMembers
               .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
