@@ -8,8 +8,6 @@
 }
 
 .sponsors svg {
-  min-height: 80px;
-  max-height: 160px;
   width: auto;
   max-width: 100%;
 }
@@ -43,7 +41,16 @@
   width: 100%;
 }
 
+.sponsors .bpiContainer {
+  display: block;
+  width: 30%;
+}
+
+.sponsors .reutersContainer {
+  display: block;
+  width: 60%;
+}
+
 .sponsors div {
-  padding-top: 2rem;
   margin: auto;
 }
