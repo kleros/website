@@ -65,6 +65,7 @@
 .about .partners > svg {
   margin: 1rem 2rem;
   max-width: 250px;
+  max-height: 70px;
 }
 
 .about .partners > h2 {
