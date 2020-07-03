@@ -12,7 +12,7 @@ import Contact from "../components/contact";
 import Deversifi from "src/assets/images/deversifi.png";
 import Escrow1 from "src/assets/svgs/escrow-screen1.svg";
 import Escrow2 from "src/assets/svgs/escrow-screen2.svg";
-import EscrowTwoScreen from "src/assets/svgs/escrow-twoscreen.svg";
+import EscrowTwoScreen from "src/assets/svgs/escrow-twoscreens.svg";
 
 import EscrowHero from "src/assets/svgs/escrow-hero.svg";
 
