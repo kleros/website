@@ -376,7 +376,8 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `ko`, `es`, `ru`, `fr`, "tr", "pt", "zh", "pt-br"],
+        //languages: [`en`, `ko`, `es`, `ru`, `fr`, "tr", "pt", "zh", "pt-br"],
+        languages: [`en`],
         // language file path
         defaultLanguage: `en`,
         // option to redirect to `/en` when connecting `/`

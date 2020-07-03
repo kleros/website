@@ -13,6 +13,7 @@ import OnePager from "src/assets/svgs/icon-onepager.svg";
 import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
 
+import Alice from "src/assets/images/alice.png";
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import Ink from "src/assets/images/ink.png";
 import MarketProtocol from "src/assets/images/marketprotocol.png";
@@ -230,6 +231,7 @@ const About = ({ intl }) => {
           <img src={Ink} />
           <img src={WindingTree} />
           <img src={BlueFrontiers} />
+          <img src={Alice} />
         </section>
         <hr />
       </Container>
