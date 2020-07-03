@@ -18,7 +18,9 @@ import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 import Content from "src/intl/en.json";
 
-const LINKS = [
+const PAPERS = ["https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf", "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age"];
+
+const MENTIONS = [
   "https://elibrary.ru/item.asp?id=39426452",
   "https://cyberleninka.ru/article/n/o-sposobah-razresheniya-sporov-voznikayuschih-iz-smart-kontraktov",
   "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/comnlrevi16&section=5",
@@ -75,6 +77,7 @@ const IndexPage = ({ intl }) => (
             <HorizontalCard
               content={{
                 text: intl.formatMessage({ id: `research.section-papers.papers.items.${paper}` }),
+                href: PAPERS[index],
               }}
             />
           ))}
@@ -89,7 +92,7 @@ const IndexPage = ({ intl }) => (
             <HorizontalCard
               content={{
                 text: intl.formatMessage({ id: `research.section-papers.mentions.items.${mention}` }),
-                href: LINKS[index],
+                href: MENTIONS[index],
               }}
             />
           ))}

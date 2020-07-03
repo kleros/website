@@ -420,9 +420,8 @@
       "papers": {
         "title": "Kleros Papers",
         "items": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "1": "A Smart Contract Oracle for Approximating Real-World, Real Number Values",
+          "2": "Decentralised justice: reinventing arbitration for the digital age?"
         }
       },
       "mentions": {
