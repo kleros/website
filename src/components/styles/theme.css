@@ -74,6 +74,12 @@ h1 {
   font-size: var(--font-size-huge);
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 h2 {
   color: var(--color-pink);
   font-weight: normal;

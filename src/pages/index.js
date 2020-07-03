@@ -181,8 +181,8 @@ const IndexPage = ({ intl, svgs }) => (
       </section>
       <div className={styles.products}>
         <section>
-          <div className="px-5 py-3 text-center">
-            <h2 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h2>
+          <div className="px-3 py-3 text-center">
+            <h1 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
             <div className="d-inline-block">
               <a href="https://court.kleros.io">
                 <Badge>
