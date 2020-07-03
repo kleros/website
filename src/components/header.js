@@ -2,13 +2,14 @@ import React from "react";
 import Media from "react-media";
 
 import Logo from "../assets/svgs/brand_white.svg";
-import Court from "../assets/svgs/kleros.svg";
-import Curate from "../assets/svgs/curate.svg";
-import Escrow from "../assets/svgs/escrow.svg";
-import T2CR from "../assets/svgs/t2cr.svg";
-import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
-import Ninja from "../assets/svgs/ninja.svg";
-import Linguo from "../assets/svgs/linguo.svg";
+
+import Court from "../assets/images/kleros.png";
+import Curate from "../assets/images/curate.png";
+import Escrow from "../assets/images/escrow.png";
+import T2CR from "../assets/images/t2cr.png";
+import DisputeResolver from "../assets/images/dispute-resolver.png";
+import Ninja from "../assets/images/ninja.png";
+import Linguo from "../assets/images/linguo.png";
 
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
@@ -36,6 +37,7 @@ class Header extends React.Component {
   }
 
   render() {
+    const { svgs } = this.props;
     return (
       <header className={styles.header}>
         <Navbar collapseOnSelect expand="md" variant="dark">
@@ -128,7 +130,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://court.kleros.io">
                   <Badge>
-                    <Court />
+                    <span className={styles.helper}></span>
+                    <img src={Court} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Court</p>
@@ -136,7 +139,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://escrow.kleros.io">
                   <Badge>
-                    <Escrow />
+                    <span className={styles.helper}></span>
+                    <img src={Escrow} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Escrow</p>
@@ -144,7 +148,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://resolve.kleros.io">
                   <Badge>
-                    <DisputeResolver />
+                    <span className={styles.helper}></span>
+                    <img src={DisputeResolver} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Dispute Resolver</p>
@@ -152,7 +157,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://linguo.kleros.io">
                   <Badge>
-                    <Linguo />
+                    <span className={styles.helper}></span>
+                    <img src={Linguo} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Linguo</p>
@@ -160,7 +166,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://tokens.kleros.io">
                   <Badge>
-                    <T2CR />
+                    <span className={styles.helper}></span>
+                    <img src={T2CR} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">T2CR</p>
@@ -168,7 +175,8 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://curate.kleros.io">
                   <Badge>
-                    <Curate />
+                    <span className={styles.helper}></span>
+                    <img src={Curate} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Curate</p>
@@ -176,7 +184,9 @@ class Header extends React.Component {
               <div className="d-inline-block">
                 <a href="https://uniswap.ninja">
                   <Badge>
-                    <Ninja />
+                    <span className={styles.helper}></span>
+
+                    <img src={Ninja} />
                   </Badge>
                 </a>
                 <p className="text-center text-purple-darker ">Ninja</p>

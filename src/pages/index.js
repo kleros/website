@@ -52,7 +52,7 @@ import www from "src/assets/svgs/icon-www.svg";
 
 import IndexHero from "src/assets/svgs/index-hero.svg";
 
-const IndexPage = ({ intl }) => (
+const IndexPage = ({ intl, svgs }) => (
   <Layout>
     <SEO title="Home" lang={intl.locale} />
     <Container fluid className={styles.index}>
@@ -129,43 +129,43 @@ const IndexPage = ({ intl }) => (
               icon: insurance,
               text: intl.formatMessage({ id: "index.section-use-case.cards.2" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: eCommerce,
               text: intl.formatMessage({ id: "index.section-use-case.cards.3" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: finance,
               text: intl.formatMessage({ id: "index.section-use-case.cards.4" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: freelancing,
               text: intl.formatMessage({ id: "index.section-use-case.cards.5" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: token,
               text: intl.formatMessage({ id: "index.section-use-case.cards.6" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: moderation,
               text: intl.formatMessage({ id: "index.section-use-case.cards.7" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: copyright,
               text: intl.formatMessage({ id: "index.section-use-case.cards.8" }),
             }}
-          />{" "}
+          />
           <HorizontalCard
             content={{
               icon: plus,
@@ -179,7 +179,6 @@ const IndexPage = ({ intl }) => (
         <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
         <CasesDisputes />
       </section>
-
       <div className={styles.products}>
         <section>
           <div className="px-5 py-3 text-center">

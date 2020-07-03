@@ -12,13 +12,21 @@ import Header from "./header";
 import Footer from "./footer";
 import Sponsors from "../components/sponsors";
 
+import Logo from "../assets/svgs/brand_white.svg";
+import Court from "../assets/svgs/kleros.svg";
+import Curate from "../assets/svgs/curate.svg";
+import Escrow from "../assets/svgs/escrow.svg";
+import T2CR from "../assets/svgs/t2cr.svg";
+import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
+import Ninja from "../assets/svgs/ninja.svg";
+import Linguo from "../assets/svgs/linguo.svg";
+
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header svgs={{ Logo, Court, Curate, Escrow, T2CR, DisputeResolver, Ninja, Linguo }} />
       <main>
-        {children}
-        <Sponsors />
+        {children} <Sponsors />
       </main>
       <Footer />
     </>
