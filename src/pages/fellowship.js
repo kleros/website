@@ -141,8 +141,9 @@ const PHOTOS = {
   Deplano,
 };
 
-const Fellowship = ({ intl }) => {
+const Fellowship = ({ intl, data }) => {
   const [activeKey, setActiveKey] = useState(-1);
+  console.log(data);
   return (
     <Layout>
       <SEO title="Fellowship" />
@@ -195,8 +196,23 @@ const Fellowship = ({ intl }) => {
           <Row className="no-gutters">
             {Config.siteMetadata.teamMembers
               .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
-              .map((member) => (
-                <Link className="no-gutters" style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
+              .map((member, index) => {
+                if (data.allSitePage.edges.find((object) => object.node.path == `/${member.name.toLowerCase().split(" ").slice(-1)}/`))
+                  return (
+                    <Link key={index} className="no-gutters" style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
+                      <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
+                        <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
+                        <div className={styles.overlay}>
+                          <span>{member.name} </span>
+                          <span>{member.title}</span>
+                          <span className="bold">{member.location}</span>
+                          <br />
+                          <span className="bold">Batch {member.batch}</span>
+                        </div>
+                      </Col>
+                    </Link>
+                  );
+                return (
                   <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
                     <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
                     <div className={styles.overlay}>
@@ -207,8 +223,8 @@ const Fellowship = ({ intl }) => {
                       <span className="bold">Batch {member.batch}</span>
                     </div>
                   </Col>
-                </Link>
-              ))}
+                );
+              })}
           </Row>
         </Container>
 
@@ -249,5 +265,17 @@ const Fellowship = ({ intl }) => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query MyQuery {
+    allSitePage {
+      edges {
+        node {
+          path
+        }
+      }
+    }
+  }
+`;
 
 export default injectIntl(Fellowship);
