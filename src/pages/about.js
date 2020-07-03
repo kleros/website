@@ -232,8 +232,8 @@ const About = ({ intl }) => {
           <img src={WindingTree} />
           <img src={BlueFrontiers} />
           <img src={Alice} />
+          <hr style={{ marginTop: "5rem" }} />
         </section>
-        <hr />
       </Container>
     </Layout>
   );

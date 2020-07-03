@@ -6,7 +6,7 @@ import styles from "./styles/sponsors.module.css";
 
 export default ({ extraClass }) => {
   return (
-    <section className={`pt-0 ${extraClass} ${styles.sponsors}`}>
+    <section className={`${extraClass} ${styles.sponsors}`}>
       <div className={styles.euContainer}>
         <EU />
       </div>
