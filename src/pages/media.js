@@ -226,6 +226,7 @@ const Media = ({ intl }) => {
                         id: "media.section-cards.card-2.button",
                       }),
                       href: "Assets",
+                      disabled: true,
                     },
                   }}
                 />
