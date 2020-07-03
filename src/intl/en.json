@@ -428,10 +428,27 @@
       "mentions": {
         "title": "Papers Mentioning Kleros",
         "items": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "1": "Cyberjustice within the Framework of Resolution of Transborder Disputes - M.V. Mazhorina, Kutafin State Law University (MSAL)",
+          "2": "Methods of Resolving Disputes Arising from Smart Contracts - O.F. Zasemkova, Lex russica.",
+          "3": "Artificial Intelligence and the Law: Will Judges Run on Punch Cards - Seda Fabian, 16 Common L. Rev. 4 (2020)",
+          "4": "How to Make Sure My Cryptokitties Are Here Forever? The Complementary Roles of Blockchain and the Law to Bring Trust - Charlotte Ducuing, Volume 10, Issue 2, Cambridge Symposium on Blockchain Regulation and Governance (2019)",
+          "5": "The Role of International Rules in Blockchain-Based Cross-Border Commercial Disputes - 65 Wayne Law Review 1 (2019-2020)",
+          "6": "Should Code Be Law: Smart Contracts, Blockchain, and Boilerplate - Jeff Lingwal and Ramya Mogallapu, UMKC Law Review 285 (2019),",
+          "7": "Online Dispute Resolution for Smart Contracts - Amy Schmitz, Colin Rule, Journal of Dispute Resolution 103 (2019)",
+          "8": "Governance of Smart Contracts in Blockchain Institutions, Howell, Bronwyn E. and Potgieter, Petrus H., SSRN",
+          "9": "Ulex: Open Source Law for Non-Territorial Governance - Bell, Tom W., Ulex: Open Source Law for Non-Territorial Governance, Ulex: Open Source Law for Non-Territorial Governance, 1 J. SPECIAL JURISDICTIONS 1 (2020)",
+          "10": "The Governance of Blockchain Dispute Resolution - Allen, DWE, Lane, AM and Poblet, M, (Forthcoming) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
+          "11": "Blockchain and the Inevitability of Disputes: The Role for Online Dispute Resolution - Orna Rabinovich, Ethan Katsch, Journal of Dispute Resolution (2019)",
+          "12": "Resolving a New Kind of Trade War Through ODR - Amy Schmitz, University of Missouri School of Law Legal Studies Research Paper No. 2020-02",
+          "13": "The Current Landscape of Blockchain-Based, Crowdsourced Arbitration - James Metzger, Macquarie Law Journal (2019)",
+          "14": "The Distributed Stateless Society. Liberty, Manorialism and the State - Alexei Gudkov, SSRN (2019)",
+          "15": "Network Methodology of Private International Law in Conditions of Heterarchy of Normative System - M.V. Mazhorina, Вестник Университета имени О.Е. Кутафина (2019)",
+          "16": "Conflict of Law and “Non-Law” Renovation of the Lex Mercatoria, Smart Contracts and Blockchain Arbitration - M.V. Mazhorina, Lex Russica (2019)",
+          "17": "Designing Online Dispute Resolution - Janet K. Martinez, Journal of Dispute Resolution, Issue 1 (2020)",
+          "18": "Smart Contract and Dispute Resolution by Arbitration - Jong Kyu Han, Journal of Arbitration Studies (2020)",
+          "19": "Blockchain-mediated Licensing: Legal Engineering for Artist Empowerment - Charles Adjovu, and Ewa Fabian, LawArXiv (2020)",
+          "20": "Reliable Decentralized Oracle with Mechanisms for Verification and Disputation - Limao Ma ; Kosuke Kaneko ; Subodh Sharma ; Kouichi Sakurai, Institute of Electrical and Electronic Engineers (2019)",
+          "21": "Challenges for Connecting Citizens and Smart Cities: ICT, E-Governance and Blockchain - Thays A. Oliviera, Miquel Oliver, Helena Ramalhinho, Sustainability - The Sustainable Development of Smart Cities through Digital Innovation (2020)"
         }
       }
     },

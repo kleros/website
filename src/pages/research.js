@@ -18,6 +18,30 @@ import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
 
 import Content from "src/intl/en.json";
 
+const LINKS = [
+  "https://elibrary.ru/item.asp?id=39426452",
+  "https://cyberleninka.ru/article/n/o-sposobah-razresheniya-sporov-voznikayuschih-iz-smart-kontraktov",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/comnlrevi16&section=5",
+  "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/how-to-make-sure-my-cryptokitties-are-here-forever-the-complementary-roles-of-blockchain-and-the-law-to-bring-trust/117DCBB31817F629091C06D956213908",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/waynlr65&section=5",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/umkc88&section=16",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/jdisres2019&section=23",
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423190",
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3605807",
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3334674",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/jdisres2019&section=21",
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3525767",
+  "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/macq19&section=8",
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3489893",
+  "https://cyberleninka.ru/article/n/18359597",
+  "https://cyberleninka.ru/article/n/18240402",
+  "https://scholarship.law.missouri.edu/cgi/viewcontent.cgi?article=1853&context=jdr",
+  "https://www.koreascience.or.kr/article/JAKO202010565090734.page",
+  "https://osf.io/preprints/lawarxiv/kfjxa/",
+  "https://ieeexplore.ieee.org/abstract/document/8951647/",
+  "https://www.mdpi.com/2071-1050/12/7/2926",
+];
+
 const IndexPage = ({ intl }) => (
   <Layout>
     <SEO title={intl.formatMessage({ id: "research.seo-title" })} />
@@ -65,6 +89,7 @@ const IndexPage = ({ intl }) => (
             <HorizontalCard
               content={{
                 text: intl.formatMessage({ id: `research.section-papers.mentions.items.${mention}` }),
+                href: LINKS[index],
               }}
             />
           ))}
