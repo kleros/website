@@ -4,6 +4,12 @@
   background-size: 70%;
 }
 
+.community .telegram {
+  max-width: 8rem;
+  display: block;
+  margin: 2rem auto;
+}
+
 .community > section:nth-child(2) {
   padding-left: 0 !important;
   padding-right: 0 !important;

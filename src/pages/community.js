@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import Members from "src/assets/images/members.png";
 import Contact from "../components/contact";
 
+import Telegram from "src/assets/svgs/telegramColored.svg";
 import Envoy from "src/assets/svgs/envoy.svg";
 import Herald from "src/assets/svgs/herald.svg";
 import Russia from "src/assets/svgs//flags/ru.svg";
@@ -14,6 +15,8 @@ import France from "src/assets/svgs/flags/fr.svg";
 import Spain from "src/assets/svgs/flags/es.svg";
 import SouthKorea from "src/assets/svgs/flags/kr.svg";
 import Portuguese from "src/assets/svgs/flags/pt.svg";
+
+import PoH from "src/assets/svgs/poh.svg";
 
 import VerticalCard from "../components/vertical-card";
 import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
@@ -41,6 +44,8 @@ const Community = ({ intl }) => (
         <h3 className="bigger bold purple mt-5 mb-5 mr-4 ml-4">
           <FormattedMessage id="community.section-members.telegram" />
         </h3>
+
+        <Telegram className={styles.telegram} />
         <a className="purple bold medium" href="t.me/kleros">
           t.me/kleros
         </a>
@@ -102,6 +107,7 @@ const Community = ({ intl }) => (
         <div className={styles.singleCard}>
           <VerticalCard
             content={{
+              icon: PoH,
               title: intl.formatMessage({ id: "community.section-groups.title-poh" }),
               paragraph: "t.me/proofhumanity",
               paragraphHref: "t.me/proofhumanity",

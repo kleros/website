@@ -64,10 +64,9 @@ const CONTENT = {
   presentations: [
     { link: "https://www.youtube.com/embed/m-NGxJfS0mw?start=12", text: "media.section-media.presentations.items.1" },
     { link: "https://www.youtube.com/embed/lPeca1h4auI?start=11", text: "media.section-media.presentations.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.3" },
+    { link: "https://www.youtube.com/embed/ssdgdV_fngI", text: "media.section-media.presentations.items.3" },
     { link: "https://www.youtube.com/embed/PRFn3599CY0?start=23", text: "media.section-media.presentations.items.4" },
     { link: "https://www.youtube.com/embed/keQKNiyzVGs?start=316", text: "media.section-media.presentations.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.6" },
     { link: "https://www.youtube.com/embed/8CAL-Vyc-wc", text: "media.section-media.presentations.items.7" },
     { link: "https://www.youtube.com/embed/DVCzEuEwQGg", text: "media.section-media.presentations.items.8" },
     { link: "https://www.youtube.com/embed/YmA0E5EE3OY", text: "media.section-media.presentations.items.9" },
@@ -208,7 +207,7 @@ const Media = ({ intl }) => {
                       text: intl.formatMessage({
                         id: "media.section-cards.card-1.button",
                       }),
-                      href: "media://court.kleros.io",
+                      href: "../KlerosBrandAssets.zip",
                     },
                   }}
                 />
@@ -226,7 +225,7 @@ const Media = ({ intl }) => {
                       text: intl.formatMessage({
                         id: "media.section-cards.card-2.button",
                       }),
-                      href: "/integrations",
+                      href: "Assets",
                     },
                   }}
                 />

@@ -352,20 +352,6 @@
       "button": "Learn more on Kleros Blog"
     },
     "section-media": {
-      "featured": {
-        "nav-title": "Featured",
-        "title": "Featured",
-        "items": {
-          "defiprime": "Kleros — decentralized court system to adjudicate smart contracts",
-          "thomsonreuters": "Thomson Reuters Media",
-          "cardrates": "Kleros Resolved Online Payment Disputes through Blockchain Technology and a Crowdsourced Jury System",
-          "consensus": "Kleros presenting at Consensus 2018.",
-          "venturebeat": "Kleros joins Thomson Reuters Incubator - VentureBeat",
-          "token2049": "Kleros CEO Federico Ast as part of the Token 2049 panel, with Lisk, Golem, Zencash and more.",
-          "bitcoindotcom": "PR: Justice Protocol Kleros to Host One of the First 'Interactive' Crowd Sales - Bitcoin News",
-          "ethcc": "Federico Ast keynote presentation at EthCC Paris"
-        }
-      },
       "presentations": {
         "nav-title": "Presentations",
         "title": "Presentations",
@@ -375,7 +361,6 @@
           "3": "Federico Ast Presentation at EthCC 3 Paris March 2020",
           "4": "Matheus Alencar Presentation at EthCC 3 Paris March 2020",
           "5": "Ferit Tunçer Presentation at EthCC 3 Paris March 2020",
-          "6": "Federico Ast Presentation at DevCon 5 Osaka October 2019",
           "7": "Plinio Braga Presentation at DevCon 5 Osaka October 2019",
           "8": "Clement Lesaege Presentation at EthCC 2 Paris March 2019",
           "9": "William George Presentation at EthCC 2 Paris March 2019"
@@ -523,7 +508,7 @@
     },
     "section-guild": {
       "title": "The Kleros Guild of Justice",
-      "paragraph-1": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide. The Guild is divided into two degrees, Envoys and Heralds.",
+      "paragraph-1": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide.",
       "paragraph-2": "The Guild is divided into two degrees, Envoys and Heralds.",
 
       "envoy": {
@@ -554,26 +539,26 @@
           "nav-title": "DeFi",
           "title": "Kleros for DeFi",
           "text-1": "Are you a DeFi project looking to curate tokens?",
-          "text-2": "Send them to Kleros",
+          "text-2": "Just use Kleros",
           "used-by": "Used by"
         },
         "marketplaces": {
           "nav-title": "Marketplaces",
           "title": "Kleros for Marketplaces",
           "text-1": "Building a marketplace and need to resolve disputes between users?",
-          "text-2": "Send them to Kleros"
+          "text-2": "Just use Kleros"
         },
         "bounties": {
           "nav-title": "Work & Bounties",
           "title": "Kleros for Work and Bounties Platforms",
           "text-1": "Building a freelancing or bounty platform and need to resolve disputes between users?",
-          "text-2": "Send them to Kleros"
+          "text-2": "Just use Kleros"
         },
         "curation": {
           "nav-title": "User Generated Content Platforms",
           "title": "Kleros for Content Platforms",
           "text-1": "Need a decentralized content moderation system for fighting malicious users? (Hate Speech, Copyright, Spam, Porn)",
-          "text-2": "Send them to Kleros"
+          "text-2": "Just use Kleros"
         }
       },
       "getstarted": {
