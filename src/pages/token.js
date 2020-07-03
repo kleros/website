@@ -89,9 +89,9 @@ const IndexPage = ({ intl }) => (
         <h2 className="purple bold">
           <FormattedMessage id="token.sash.learnMore.title" />
         </h2>
-        <button className="btn btn-secondary">
+        <a href="https://medium.com/kleros/why-kleros-needs-a-native-token-5c6c6e39cdfe" className="btn btn-secondary">
           <FormattedMessage id="token.sash.learnMore.button" />
-        </button>
+        </a>
         <hr />
         <h1 className="purple">
           <FormattedMessage id="token.section-buy" />

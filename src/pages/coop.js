@@ -5,6 +5,7 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
 
+import Form from "src/assets/form.pdf";
 import Subscription from "src/assets/svgs/icon-pen.svg";
 import Statutes from "src/assets/svgs/icon-book.svg";
 
@@ -57,7 +58,7 @@ const Coop = ({ intl }) => (
                 text: intl.formatMessage({
                   id: "coop.sash.first.button",
                 }),
-                href: "",
+                href: Form,
               },
               icon: Subscription,
             },
