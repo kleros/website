@@ -123,13 +123,13 @@ const Book = ({ intl }) => (
                     <FormattedMessage id="book.section-hero.title-download" />
                   </h3>
                   <Container className={styles.buttonWrapper}>
-                    <a href="/../book.epub" target="blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <a rel="noopener noreferrer" target="_blank" href="/../book.epub" target="blank" rel="noopener noreferrer" className="btn btn-primary">
                       EPUB
                     </a>
-                    <a href="/../book.mobi" className="btn btn-primary">
+                    <a rel="noopener noreferrer" target="_blank" href="/../book.mobi" className="btn btn-primary">
                       MOBI
                     </a>
-                    <a href="/../book.pdf" className="btn btn-primary">
+                    <a rel="noopener noreferrer" target="_blank" href="/../book.pdf" className="btn btn-primary">
                       PDF
                     </a>
                   </Container>
