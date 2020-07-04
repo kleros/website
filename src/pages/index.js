@@ -24,6 +24,7 @@ import CU from "../assets/svgs/kleros.svg";
 import CasesDisputes from "src/assets/svgs/illustration-home.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
+import Omen from "src/assets/images/omen.png";
 
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
@@ -216,14 +217,7 @@ const IndexPage = ({ intl, svgs }) => (
               </a>
               <p className="text-center text-purple-darker ">Curate</p>
             </div>
-            <div className="d-inline-block">
-              <a href="https://uniswap.ninja">
-                <Badge>
-                  <Ninja />
-                </Badge>
-              </a>
-              <p className="text-center text-purple-darker ">Uniswap Ninja</p>
-            </div>
+
             <div className="d-inline-block">
               <a href="https://resolve.kleros.io">
                 <Badge>
@@ -233,21 +227,37 @@ const IndexPage = ({ intl, svgs }) => (
               <p className="text-center text-purple-darker ">Dispute Resolver</p>
             </div>
             <div className="d-inline-block">
-              <a href="https://resolve.kleros.io">
+              <a href="https://uniswap.ninja">
+                <Badge>
+                  <Ninja />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker ">Uniswap Ninja</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://cryptounlocked.wetrust.io/">
                 <Badge>
                   <span className={styles.helper} />
-                  <img src={CryptoUnlocked} />
+                  <img src={CryptoUnlocked} className="p-1" />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker ">Crypto Unlocked</p>
             </div>
             <div className="d-inline-block">
-              <a href="https://resolve.kleros.io">
+              <a href="https://realit.io/">
                 <Badge>
-                  <img src={Realitio} />
+                  <img src={Realitio} className="p-2" />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Realitio</p>
+            </div>
+            <div className="d-inline-block">
+              <a href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2">
+                <Badge>
+                  <img src={Omen} className="p-2" />
+                </Badge>
+              </a>
+              <p className="text-center text-purple-darker  ">Omen</p>
             </div>
             <div className="d-inline-block">
               <a href="https://linguo.kleros.io">
