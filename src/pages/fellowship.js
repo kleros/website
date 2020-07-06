@@ -150,7 +150,7 @@ const Fellowship = ({ intl, data }) => {
             {Config.siteMetadata.teamMembers
               .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
               .map((member, index) => {
-                if (data.allSitePage.edges.find((object) => object.node.path == `/${member.name.toLowerCase().split(" ").slice(-1)}/`))
+                if (data.allSitePage.edges.find((object) => object.node.path == `/${member.name.toLowerCase().split(/(\s)/).slice(-1)}/`))
                   return (
                     <Link className="no-gutters" key={index} style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
                       <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
