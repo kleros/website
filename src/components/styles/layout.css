@@ -57,12 +57,12 @@ main > div {
 nav,
 section,
 footer > div:first-child {
-  padding-left: calc(2rem + 1vw) !important;
-  padding-right: calc(2rem + 1vw) !important;
+  padding-left: calc(2rem + 2vw) !important;
+  padding-right: calc(2rem + 2vw) !important;
 }
 
 hr {
-  width: calc(98vw - 4rem);
+  width: calc(96vw - 4rem);
   max-width: 100%;
   margin: auto;
 }

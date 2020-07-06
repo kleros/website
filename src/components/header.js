@@ -154,15 +154,7 @@ class Header extends React.Component {
                 </a>
                 <p className="text-center text-purple-darker ">Dispute Resolver</p>
               </div>
-              <div className="d-inline-block">
-                <a rel="noopener noreferrer" target="_blank" href="https://linguo.kleros.io">
-                  <Badge>
-                    <span className={styles.helper}></span>
-                    <img src={Linguo} />
-                  </Badge>
-                </a>
-                <p className="text-center text-purple-darker ">Linguo</p>
-              </div>
+
               <div className="d-inline-block">
                 <a rel="noopener noreferrer" target="_blank" href="https://tokens.kleros.io">
                   <Badge>
@@ -191,9 +183,17 @@ class Header extends React.Component {
                 </a>
                 <p className="text-center text-purple-darker ">Ninja</p>
               </div>
-
               <div className="d-inline-block">
-                <a rel="noopener noreferrer" target="_blank" href="https://resolve.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://linguo.kleros.io">
+                  <Badge>
+                    <span className={styles.helper}></span>
+                    <img src={Linguo} />
+                  </Badge>
+                </a>
+                <p className="text-center text-purple-darker ">Linguo</p>
+              </div>
+              <div className="d-inline-block">
+                <a rel="noopener noreferrer" target="_blank" href="https://cryptounlocked.wetrust.io/">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={CryptoUnlocked} />
@@ -202,7 +202,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Crypto Unlocked</p>
               </div>
               <div className="d-inline-block">
-                <a rel="noopener noreferrer" target="_blank" href="https://resolve.kleros.io">
+                <a rel="noopener noreferrer" target="_blank" href="https://realit.io">
                   <Badge>
                     <span className={styles.helper}></span>
                     <img src={Realitio} />

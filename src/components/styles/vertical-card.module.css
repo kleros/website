@@ -16,10 +16,11 @@
 }
 
 .verticalCard svg {
+  max-width: 175px;
+  max-height: 175px;
 }
 
 .verticalCard .icon {
-  height: 250px;
   width: auto;
   margin-bottom: 2rem;
 }

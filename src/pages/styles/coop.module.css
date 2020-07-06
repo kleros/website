@@ -1,3 +1,7 @@
+.coop svg {
+  width: 80%;
+}
+
 .coop .steps > h1 {
   color: var(--color-pink);
 }

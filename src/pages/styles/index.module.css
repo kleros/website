@@ -22,6 +22,8 @@
 }
 
 .index .buttonWrapper a {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .index .cards {
