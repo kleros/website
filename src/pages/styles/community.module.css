@@ -6,6 +6,7 @@
 
 .community iframe {
   border-width: 0;
+  max-width: 100%;
 }
 
 .community .telegram {
