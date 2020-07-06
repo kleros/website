@@ -6,19 +6,16 @@
  */
 
 import React from "react";
-
 import styles from "./styles/horizontal-card.module.css";
-
 import { Container } from "react-bootstrap";
-
 import { injectIntl } from "gatsby-plugin-intl";
 
 const HorizontalCard = ({ content, intl }) => (
-  <Container fluid className={styles.horizontalCard}>
+  <Container className={styles.horizontalCard} fluid>
     {content.icon && <content.icon />}
     {!content.href && <span>{content.text}</span>}
     {content.href && (
-      <a href={content.href} target="blank" rel="noopener noreferrer">
+      <a href={content.href} rel="noopener noreferrer" target="blank">
         {content.text}
       </a>
     )}

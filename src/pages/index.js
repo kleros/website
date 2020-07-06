@@ -1,17 +1,13 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
-
 import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
-
-import { Badge, Container, Row, Col } from "react-bootstrap";
-
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import { Badge, Col, Container, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
 import Curate from "../assets/svgs/curate.svg";
@@ -25,14 +21,11 @@ import CasesDisputes from "src/assets/svgs/illustration-home.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import Omen from "src/assets/images/omen.png";
-
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Gavel from "src/assets/svgs/icon-gavel.svg";
-
 import Handshake from "src/assets/svgs/icon-handshake.svg";
-
 import copyright from "src/assets/svgs/icon-copyright.svg";
 import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
 import finance from "src/assets/svgs/icon-finance.svg";
@@ -51,13 +44,12 @@ import otc from "src/assets/svgs/icon-otc.svg";
 import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
-
 import IndexHero from "src/assets/svgs/court-hero.svg";
 
 const IndexPage = ({ intl, svgs }) => (
   <Layout>
-    <SEO title="Home" lang={intl.locale} />
-    <Container fluid className={styles.index}>
+    <SEO lang={intl.locale} title="Home" />
+    <Container className={styles.index} fluid>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="index.section-hero.h1" />
@@ -67,10 +59,10 @@ const IndexPage = ({ intl, svgs }) => (
         </h2>
 
         <Container className={styles.buttonWrapper}>
-          <a href="https://court.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-primary">
+          <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
             <FormattedMessage id="index.section-hero.button-primary" />
           </a>
-          <Link to="/integrations" className="btn btn-secondary">
+          <Link className="btn btn-secondary" to="/integrations">
             <FormattedMessage id="index.section-hero.button-secondary" />
           </Link>
         </Container>
@@ -81,38 +73,38 @@ const IndexPage = ({ intl, svgs }) => (
           as="div"
           figures={[
             {
-              title: intl.formatMessage({
-                id: "index.sash.first.title",
-              }),
+              icon: Scales,
               text: intl.formatMessage({
                 id: "index.sash.first.paragraph",
               }),
-              icon: Scales,
+              title: intl.formatMessage({
+                id: "index.sash.first.title",
+              }),
             },
             {
-              title: intl.formatMessage({
-                id: "index.sash.second.title",
-              }),
+              icon: Epsilon,
               text: intl.formatMessage({
                 id: "index.sash.second.paragraph",
               }),
-              icon: Epsilon,
+              title: intl.formatMessage({
+                id: "index.sash.second.title",
+              }),
             },
             {
-              title: intl.formatMessage({
-                id: "index.sash.third.title",
-              }),
+              icon: Kleros,
               text: intl.formatMessage({
                 id: "index.sash.third.paragraph",
               }),
-              icon: Kleros,
+              title: intl.formatMessage({
+                id: "index.sash.third.title",
+              }),
             },
           ]}
         />
       </section>
       <section className={styles.usecases}>
         <div className="iframe-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560"></iframe>
         </div>
       </section>
       <hr />
@@ -239,7 +231,7 @@ const IndexPage = ({ intl, svgs }) => (
               <a href="https://cryptounlocked.wetrust.io/">
                 <Badge>
                   <span className={styles.helper} />
-                  <img src={CryptoUnlocked} className="p-1" />
+                  <img className="p-1" src={CryptoUnlocked} />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker ">Crypto Unlocked</p>
@@ -247,7 +239,7 @@ const IndexPage = ({ intl, svgs }) => (
             <div className="d-inline-block">
               <a href="https://realit.io/">
                 <Badge>
-                  <img src={Realitio} className="p-2" />
+                  <img className="p-2" src={Realitio} />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Realitio</p>
@@ -255,7 +247,7 @@ const IndexPage = ({ intl, svgs }) => (
             <div className="d-inline-block">
               <a href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2">
                 <Badge>
-                  <img src={Omen} className="p-2" />
+                  <img className="p-2" src={Omen} />
                 </Badge>
               </a>
               <p className="text-center text-purple-darker  ">Omen</p>
@@ -277,45 +269,45 @@ const IndexPage = ({ intl, svgs }) => (
       </div>
       <section>
         <h1 className="mb-5">Join the Justice Revolution</h1>
-        <Container fluid className="p-0">
+        <Container className="p-0" fluid>
           <Row>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
-                  icon: Gavel,
-                  title: intl.formatMessage({
-                    id: "index.section-4.card-1.title",
-                  }),
-                  paragraph: intl.formatMessage({
-                    id: "index.section-4.card-1.paragraph",
-                  }),
                   button: {
-                    variant: "primary",
+                    href: "https://court.kleros.io",
                     text: intl.formatMessage({
                       id: "index.section-4.card-1.button",
                     }),
-                    href: "https://court.kleros.io",
+                    variant: "primary",
                   },
+                  icon: Gavel,
+                  paragraph: intl.formatMessage({
+                    id: "index.section-4.card-1.paragraph",
+                  }),
+                  title: intl.formatMessage({
+                    id: "index.section-4.card-1.title",
+                  }),
                 }}
               />
             </Col>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
-                  icon: Handshake,
-                  title: intl.formatMessage({
-                    id: "index.section-4.card-2.title",
-                  }),
-                  paragraph: intl.formatMessage({
-                    id: "index.section-4.card-2.paragraph",
-                  }),
                   button: {
-                    variant: "secondary",
+                    href: "/integrations",
                     text: intl.formatMessage({
                       id: "index.section-4.card-2.button",
                     }),
-                    href: "/integrations",
+                    variant: "secondary",
                   },
+                  icon: Handshake,
+                  paragraph: intl.formatMessage({
+                    id: "index.section-4.card-2.paragraph",
+                  }),
+                  title: intl.formatMessage({
+                    id: "index.section-4.card-2.title",
+                  }),
                 }}
               />
             </Col>

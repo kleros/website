@@ -2,12 +2,10 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "src/components/layout";
 import SEO from "../components/seo";
-
 import Contact from "../components/contact";
-import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
 import styles from "./styles/bio.module.css";
-
 import Ast from "src/assets/images/ast.png";
 import Lesaege from "src/assets/images/lesaege.png";
 import Malbasic from "src/assets/images/malbasic.png";
@@ -51,7 +49,6 @@ import Monegro from "src/assets/images/monegro.png";
 import Dagnillo from "src/assets/images/dagnillo.png";
 import Piqueras from "src/assets/images/piqueras.png";
 import Bergolla from "src/assets/images/bergolla.png";
-
 import Scott from "src/assets/images/scott.png";
 import Zhao from "src/assets/images/zhao.png";
 import Gudkov from "src/assets/images/gudkov.png";
@@ -85,45 +82,45 @@ import Carrera from "src/assets/images/carrera.png";
 import Lewis from "src/assets/images/lewis.png";
 
 const PHOTOS = {
-  Scott,
-  Zhao,
-  Gudkov,
   Abad,
-  Oguz,
-  Goldstein,
-  Obafemi,
-  Gouvea,
   Felicio,
-  Tineo,
-  Mota,
+  Goldstein,
+  Gouvea,
   Duarte,
-  Robertson,
+  Gudkov,
   Aliyev,
+  Mota,
   Archila,
+  Scott,
+  Bel,
+  Zhao,
   Bhalothia,
   Dean,
-  Bel,
+  Oguz,
   Gray,
-  Huculak,
-  Jara,
-  Lowther,
-  Kulshreshtha,
-  Mouclier,
+  Obafemi,
   Comenale,
   G,
-  Stanescu,
-  Tripathi,
-  Vargas,
+  Tineo,
   Carrera,
-  Lewis,
   Aouidef,
+  Robertson,
   Huculak,
-  Narozhny,
-  Sharma,
+  Huculak,
   Duarte,
-  Dagnillo,
+  Jara,
   Bergolla,
+  Kulshreshtha,
+  Dagnillo,
+  Lowther,
   Deplano,
+  Mouclier,
+  Lewis,
+  Stanescu,
+  Narozhny,
+  Tripathi,
+  Sharma,
+  Vargas,
 };
 
 export default ({ data }) => {
@@ -139,7 +136,7 @@ export default ({ data }) => {
         </section>
         <section className={styles.main}>
           <div>
-            <img src={PHOTOS[post.frontmatter.name.split(" ")[1]]} alt={post.frontmatter.name} />
+            <img alt={post.frontmatter.name} src={PHOTOS[post.frontmatter.name.split(/(\s)/).slice(-1)]} />
             <div className={styles.text}>
               <h3>Bio</h3>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />

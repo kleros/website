@@ -1,21 +1,15 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import George from "src/assets/images/george.png";
-
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
-
 import Fellowship from "src/assets/svgs/fellowship.svg";
 import Book from "src/assets/svgs/book-illustration.svg";
-
 import styles from "./styles/research.module.css";
-import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
-
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-
+import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import Content from "src/intl/en.json";
 
 const PAPERS = ["https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf", "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age"];
@@ -76,8 +70,8 @@ const IndexPage = ({ intl }) => (
           {Object.keys(Content.research["section-papers"].papers.items).map((paper, index) => (
             <HorizontalCard
               content={{
-                text: intl.formatMessage({ id: `research.section-papers.papers.items.${paper}` }),
                 href: PAPERS[index],
+                text: intl.formatMessage({ id: `research.section-papers.papers.items.${paper}` }),
               }}
             />
           ))}
@@ -91,49 +85,49 @@ const IndexPage = ({ intl }) => (
           {Object.keys(Content.research["section-papers"].mentions.items).map((mention, index) => (
             <HorizontalCard
               content={{
-                text: intl.formatMessage({ id: `research.section-papers.mentions.items.${mention}` }),
                 href: MENTIONS[index],
+                text: intl.formatMessage({ id: `research.section-papers.mentions.items.${mention}` }),
               }}
             />
           ))}
         </div>
       </section>
       <section>
-        <Container fluid className="p-0">
+        <Container className="p-0" fluid>
           <Row>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
-                  icon: Fellowship,
-                  title: intl.formatMessage({
-                    id: "research.section-cards.card-1.title",
-                  }),
-
                   button: {
-                    variant: "primary",
+                    href: "/fellowship",
                     text: intl.formatMessage({
                       id: "research.section-cards.card-1.button",
                     }),
-                    href: "/fellowship",
+                    variant: "primary",
                   },
+                  icon: Fellowship,
+
+                  title: intl.formatMessage({
+                    id: "research.section-cards.card-1.title",
+                  }),
                 }}
               />
             </Col>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
-                  icon: Book,
-                  title: intl.formatMessage({
-                    id: "research.section-cards.card-2.title",
-                  }),
-
                   button: {
-                    variant: "secondary",
+                    href: "/book",
                     text: intl.formatMessage({
                       id: "research.section-cards.card-2.button",
                     }),
-                    href: "/book",
+                    variant: "secondary",
                   },
+                  icon: Book,
+
+                  title: intl.formatMessage({
+                    id: "research.section-cards.card-2.title",
+                  }),
                 }}
               />
             </Col>

@@ -1,25 +1,19 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
-
 import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
-
 import Deversifi from "src/assets/images/deversifi.png";
 import Curate1 from "src/assets/images/curate1.png";
 import Curate2 from "src/assets/images/curate2.png";
 import CurateTwoScreen from "src/assets/svgs/curate-twoscreen.svg";
-
 import CurateHero from "src/assets/images/curate-hero.png";
-
 import List from "src/assets/svgs/icon-list.svg";
 import TCR from "src/assets/svgs/icon-tcr.svg";
 import Scales from "src/assets/svgs/icon-scales.svg";
-
 import copyright from "src/assets/svgs/icon-copyright.svg";
 import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
 import finance from "src/assets/svgs/icon-finance.svg";
@@ -38,19 +32,15 @@ import otc from "src/assets/svgs/icon-otc.svg";
 import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
 import payroll from "src/assets/svgs/icon-payroll.svg";
 import www from "src/assets/svgs/icon-www.svg";
-
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
-
-import { Badge, Container, Row, Col } from "react-bootstrap";
-
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-
+import { Badge, Col, Container, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/curate.module.css";
 
 const Curate = ({ intl }) => (
   <Layout>
-    <SEO title="Curate" lang={intl.locale} />
-    <Container fluid className={styles.curate}>
+    <SEO lang={intl.locale} title="Curate" />
+    <Container className={styles.curate} fluid>
       <section className={styles.hero}>
         <h1>
           <FormattedMessage id="curate.section-hero.h1" />
@@ -60,42 +50,42 @@ const Curate = ({ intl }) => (
         </h2>
 
         <Container className={styles.buttonWrapper}>
-          <a href="https://curate.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-primary">
+          <a className="btn btn-primary" href="https://curate.kleros.io" rel="noopener noreferrer" target="blank">
             <FormattedMessage id="curate.section-hero.button-primary" />
           </a>
         </Container>
-        <img src={CurateHero} alt={CurateHero} />
+        <img alt={CurateHero} src={CurateHero} />
       </section>
       <section className="light">
         <Sash
           as="div"
           figures={[
             {
-              title: intl.formatMessage({
-                id: "curate.sash.first.title",
-              }),
+              icon: List,
               text: intl.formatMessage({
                 id: "curate.sash.first.paragraph",
               }),
-              icon: List,
+              title: intl.formatMessage({
+                id: "curate.sash.first.title",
+              }),
             },
             {
-              title: intl.formatMessage({
-                id: "curate.sash.second.title",
-              }),
+              icon: TCR,
               text: intl.formatMessage({
                 id: "curate.sash.second.paragraph",
               }),
-              icon: TCR,
+              title: intl.formatMessage({
+                id: "curate.sash.second.title",
+              }),
             },
             {
-              title: intl.formatMessage({
-                id: "curate.sash.third.title",
-              }),
+              icon: Scales,
               text: intl.formatMessage({
                 id: "curate.sash.third.paragraph",
               }),
-              icon: Scales,
+              title: intl.formatMessage({
+                id: "curate.sash.third.title",
+              }),
             },
           ]}
         />
@@ -177,11 +167,11 @@ const Curate = ({ intl }) => (
           <FormattedMessage id="curate.section-4.h1" />
         </h1>
         <Container className="mt-5 d-flex flex-wrap justify-content-around">
-          <Badge as="a" href="https://www.deversifi.com/" className={styles.badge}>
+          <Badge as="a" className={styles.badge} href="https://www.deversifi.com/">
             <span class={styles.helper}></span>
             <img src={Deversifi} />
           </Badge>
-          <Badge as="a" href="https://uniswap.ninja/" className={styles.badge}>
+          <Badge as="a" className={styles.badge} href="https://uniswap.ninja/">
             <Ninja />
           </Badge>
         </Container>

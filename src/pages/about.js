@@ -1,38 +1,29 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
-
 import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
-
 import OnePager from "src/assets/svgs/icon-onepager.svg";
 import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
-
 import Alice from "src/assets/images/alice.png";
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import Ink from "src/assets/images/ink.png";
 import MarketProtocol from "src/assets/images/marketprotocol.png";
 import BlueFrontiers from "src/assets/images/bluefrontiers.png";
 import WindingTree from "src/assets/images/winding-tree.png";
-
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Telegram from "src/assets/svgs/telegram.svg";
 import Twitter from "src/assets/svgs/twitter.svg";
 import Dribble from "src/assets/svgs/dribble.svg";
-
-import { Badge, Container, Row, Col } from "react-bootstrap";
-
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-
+import { Badge, Col, Container, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/about.module.css";
-
 import Ast from "src/assets/images/ast.png";
 import Lesaege from "src/assets/images/lesaege.png";
 import Malbasic from "src/assets/images/malbasic.png";
@@ -52,7 +43,6 @@ import James from "src/assets/images/james.png";
 import Pichler from "src/assets/images/pichler.png";
 import Huculak from "src/assets/images/huculak.png";
 import Fidel from "src/assets/images/fidel.png";
-
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
 import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
@@ -61,22 +51,20 @@ import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
 import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
 import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
 import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
-
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
-
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
-
 import Config from "../../gatsby-config.js";
+
 const ONEPAGERS = {
   en: OnePagerEN,
-  tr: OnePagerTR,
-  fr: OnePagerFR,
   es: OnePagerES,
+  fr: OnePagerFR,
   ko: OnePagerKO,
-  ru: OnePagerRU,
-  zh: OnePagerZH,
   pt: OnePagerPT,
+  ru: OnePagerRU,
+  tr: OnePagerTR,
+  zh: OnePagerZH,
 };
 
 const WHITE_PAPERS = {
@@ -88,155 +76,153 @@ const YELLOW_PAPERS = {
   en: YellowPaperEN,
 };
 
-const PHOTOS = { Ast, Lesaege, Malbasic, John, Guérin, Alencar, Braga, George, Glemming, Aouidef, Tunçer, Barcelos, Zhang, Dmitrikov, Vitello, James, Pichler, Huculak, Fidel };
+const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, John, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Vitello, Zhang };
 
-const About = ({ intl }) => {
-  return (
-    <Layout>
-      <SEO title="About" lang={intl.locale} />
-      <Container fluid className={styles.about}>
-        <section className={styles.hero}>
-          <h1>
-            <FormattedMessage id="about.section-hero.h1" />
-          </h1>
-          <h2>
-            <FormattedMessage
-              id="about.section-hero.h2"
-              values={{
-                anchor: (children) => (
-                  <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} target="_blank" rel="noopener noreferrer">
-                    {children}
-                  </a>
-                ),
-              }}
-            />
-          </h2>
-        </section>
-        <hr />
-        <section>
-          <h1>
-            {" "}
-            <FormattedMessage id="about.section-2" />
-          </h1>
-          <div className="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </section>
-        <section className="light">
-          <Sash
-            as="div"
-            separator={true}
-            figures={[
-              {
-                title: intl.formatMessage({
-                  id: "about.sash.first.title",
-                }),
-                button: {
-                  text: intl.formatMessage({
-                    id: "about.sash.first.button",
-                  }),
-                  href: ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale],
-                },
-                icon: OnePager,
-              },
-              {
-                title: intl.formatMessage({
-                  id: "about.sash.second.title",
-                }),
-                button: {
-                  text: intl.formatMessage({
-                    id: "about.sash.first.button",
-                  }),
-                  href: WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale],
-                },
-                icon: WhitePaper,
-              },
-              {
-                title: intl.formatMessage({
-                  id: "about.sash.third.title",
-                }),
-                button: {
-                  text: intl.formatMessage({
-                    id: "about.sash.first.button",
-                  }),
-                  href: YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale],
-                },
-                icon: YellowPaper,
-              },
-            ]}
+const About = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title="About" />
+    <Container className={styles.about} fluid>
+      <section className={styles.hero}>
+        <h1>
+          <FormattedMessage id="about.section-hero.h1" />
+        </h1>
+        <h2>
+          <FormattedMessage
+            id="about.section-hero.h2"
+            values={{
+              anchor: (children) => (
+                <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+                  {children}
+                </a>
+              ),
+            }}
           />
-        </section>
-        <section className="masked">
-          <span className="trapezium" />
-          <h1>
-            <FormattedMessage id="about.section-3.h1" />
-          </h1>
-          <h2>
-            <FormattedMessage id="about.section-3.h2" />
-          </h2>
-        </section>
-        <section>
-          <h1>
-            <FormattedMessage id="about.section-4.h1" />
-          </h1>
-          <h2>
-            <FormattedMessage id="about.section-4.h2" />
-          </h2>
-        </section>
-        <Container as="section" fluid className={`no-gutters px-0 ${styles.team}`}>
-          <Row className="no-gutters">
-            {Config.siteMetadata.teamMembers
-              .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
-              .map((member) => (
-                <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                  <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
-                  <div className={styles.overlay}>
-                    <span>{member.name} </span>
-                    <span>{member.title}</span>
-                    {member.links && (
-                      <Row className={`no-gutters ${styles.social}`}>
-                        {member.links.github && (
-                          <a href={member.links.github} rel="noopener noreferrer" target="_blank">
-                            <Github />
-                          </a>
-                        )}
-                        {member.links.linkedin && (
-                          <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
-                            <Linkedin />
-                          </a>
-                        )}
-                        {member.links.twitter && (
-                          <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
-                            <Twitter />
-                          </a>
-                        )}
-                        {member.links.dribble && (
-                          <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
-                            <Dribble />
-                          </a>
-                        )}
-                      </Row>
-                    )}
-                  </div>
-                </Col>
-              ))}
-          </Row>
-        </Container>
-        <section className={styles.partners}>
-          <h2>
-            <FormattedMessage id="about.section-5" />
-          </h2>
-          <img src={Deversifi} />
-          <img src={MarketProtocol} />
-          <img src={Ink} />
-          <img src={WindingTree} />
-          <img src={BlueFrontiers} />
-          <img src={Alice} />
-          <hr style={{ marginTop: "5rem" }} />
-        </section>
+        </h2>
+      </section>
+      <hr />
+      <section>
+        <h1>
+          {" "}
+          <FormattedMessage id="about.section-2" />
+        </h1>
+        <div className="iframe-container">
+          <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" width="560"></iframe>
+        </div>
+      </section>
+      <section className="light">
+        <Sash
+          as="div"
+          figures={[
+            {
+              button: {
+                href: ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale],
+                text: intl.formatMessage({
+                  id: "about.sash.first.button",
+                }),
+              },
+              icon: OnePager,
+              title: intl.formatMessage({
+                id: "about.sash.first.title",
+              }),
+            },
+            {
+              button: {
+                href: WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale],
+                text: intl.formatMessage({
+                  id: "about.sash.first.button",
+                }),
+              },
+              icon: WhitePaper,
+              title: intl.formatMessage({
+                id: "about.sash.second.title",
+              }),
+            },
+            {
+              button: {
+                href: YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale],
+                text: intl.formatMessage({
+                  id: "about.sash.first.button",
+                }),
+              },
+              icon: YellowPaper,
+              title: intl.formatMessage({
+                id: "about.sash.third.title",
+              }),
+            },
+          ]}
+          separator={true}
+        />
+      </section>
+      <section className="masked">
+        <span className="trapezium" />
+        <h1>
+          <FormattedMessage id="about.section-3.h1" />
+        </h1>
+        <h2>
+          <FormattedMessage id="about.section-3.h2" />
+        </h2>
+      </section>
+      <section>
+        <h1>
+          <FormattedMessage id="about.section-4.h1" />
+        </h1>
+        <h2>
+          <FormattedMessage id="about.section-4.h2" />
+        </h2>
+      </section>
+      <Container as="section" className={`no-gutters px-0 ${styles.team}`} fluid>
+        <Row className="no-gutters">
+          {Config.siteMetadata.teamMembers
+            .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
+            .map((member) => (
+              <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
+                <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
+                <div className={styles.overlay}>
+                  <span>{member.name} </span>
+                  <span>{member.title}</span>
+                  {member.links && (
+                    <Row className={`no-gutters ${styles.social}`}>
+                      {member.links.github && (
+                        <a href={member.links.github} rel="noopener noreferrer" target="_blank">
+                          <Github />
+                        </a>
+                      )}
+                      {member.links.linkedin && (
+                        <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
+                          <Linkedin />
+                        </a>
+                      )}
+                      {member.links.twitter && (
+                        <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
+                          <Twitter />
+                        </a>
+                      )}
+                      {member.links.dribble && (
+                        <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
+                          <Dribble />
+                        </a>
+                      )}
+                    </Row>
+                  )}
+                </div>
+              </Col>
+            ))}
+        </Row>
       </Container>
-    </Layout>
-  );
-};
+      <section className={styles.partners}>
+        <h2>
+          <FormattedMessage id="about.section-5" />
+        </h2>
+        <img src={Deversifi} />
+        <img src={MarketProtocol} />
+        <img src={Ink} />
+        <img src={WindingTree} />
+        <img src={BlueFrontiers} />
+        <img src={Alice} />
+        <hr style={{ marginTop: "5rem" }} />
+      </section>
+    </Container>
+  </Layout>
+);
 
 export default injectIntl(About);

@@ -1,12 +1,8 @@
 import React from "react";
-
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl";
-
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Logo from "../assets/svgs/kleros-white.svg";
-
 import Telegram from "src/assets/svgs/icon-telegram.svg";
 import Email from "src/assets/svgs/icon-envelope.svg";
-
 import styles from "./styles/contact.module.css";
 
 const Contact = ({ intl, content }) => (
@@ -18,10 +14,10 @@ const Contact = ({ intl, content }) => (
       <span className="text">{content.title}</span>
     </div>
     <div className={styles.icons}>
-      <a href="https://t.me/kleros" target="blank" rel="noopener noreferrer">
+      <a href="https://t.me/kleros" rel="noopener noreferrer" target="blank">
         <Telegram />
       </a>
-      <a href="mailto:contact@kleros.io" target="blank" rel="noopener noreferrer">
+      <a href="mailto:contact@kleros.io" rel="noopener noreferrer" target="blank">
         <Email />
       </a>
     </div>

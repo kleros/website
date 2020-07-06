@@ -1,11 +1,9 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import Members from "src/assets/images/members.png";
 import Contact from "../components/contact";
-
 import Telegram from "src/assets/svgs/telegramColored.svg";
 import Envoy from "src/assets/svgs/envoy.svg";
 import Herald from "src/assets/svgs/herald.svg";
@@ -15,13 +13,10 @@ import France from "src/assets/svgs/flags/fr.svg";
 import Spain from "src/assets/svgs/flags/es.svg";
 import SouthKorea from "src/assets/svgs/flags/kr.svg";
 import Portuguese from "src/assets/svgs/flags/pt.svg";
-
 import PoH from "src/assets/svgs/poh.svg";
-
 import VerticalCard from "../components/vertical-card";
-import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-
+import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/community.module.css";
 
 const Community = ({ intl }) => (
@@ -40,7 +35,7 @@ const Community = ({ intl }) => (
         <h3 className="bigger bold purple mb-5 mr-4 ml-4">
           <FormattedMessage id="community.section-members.title" />
         </h3>
-        <iframe src="https://www.google.com/maps/d/embed?mid=177hy7Cx7opzdjeaZXjHMRx1LdJsbKYEH" width="900" height="480"></iframe>
+        <iframe height="480" src="https://www.google.com/maps/d/embed?mid=177hy7Cx7opzdjeaZXjHMRx1LdJsbKYEH" width="900"></iframe>
         <h3 className="bigger bold purple mt-5 mb-5 mr-4 ml-4">
           <FormattedMessage id="community.section-members.telegram" />
         </h3>
@@ -56,50 +51,50 @@ const Community = ({ intl }) => (
           <VerticalCard
             content={{
               icon: Russia,
-              title: "русский",
               paragraph: "t.me/kleros_ru",
               paragraphHref: "https://t.me/kleros_ru",
+              title: "русский",
             }}
           />
           <VerticalCard
             content={{
               icon: Turkey,
-              title: "Türkçe",
               paragraph: "t.me/kleros_turkey",
               paragraphHref: "https://t.me/kleros_turkey",
+              title: "Türkçe",
             }}
           />
           <VerticalCard
             content={{
               icon: Spain,
-              title: "Espanol",
               paragraph: "t.me/kleros_espanol",
               paragraphHref: "https://t.me/kleros_espanol",
+              title: "Espanol",
             }}
           />
           <VerticalCard
             content={{
               icon: Portuguese,
-              title: "Portugais",
               paragraph: "t.me/klerosportuguese",
               paragraphHref: "https://t.me/klerosportuguese",
+              title: "Portugais",
             }}
           />
           <VerticalCard
             content={{
               icon: SouthKorea,
-              title: "한국어",
-
               paragraph: "t.me/kleros_kor",
+
               paragraphHref: "https://t.me/kleros_kor",
+              title: "한국어",
             }}
           />
           <VerticalCard
             content={{
               icon: France,
-              title: "Francais",
               paragraph: "t.me/klerosenfrancais",
               paragraphHref: "https://t.me/klerosenfrancais",
+              title: "Francais",
             }}
           />
         </div>
@@ -108,9 +103,9 @@ const Community = ({ intl }) => (
           <VerticalCard
             content={{
               icon: PoH,
-              title: intl.formatMessage({ id: "community.section-groups.title-poh" }),
               paragraph: "t.me/proofhumanity",
               paragraphHref: "t.me/proofhumanity",
+              title: intl.formatMessage({ id: "community.section-groups.title-poh" }),
             }}
           />
         </div>
@@ -127,21 +122,19 @@ const Community = ({ intl }) => (
           <FormattedMessage id="community.section-guild.paragraph-2" />
         </h2>
 
-        <Container fluid className="p-0">
+        <Container className="p-0" fluid>
           <Row>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
+                  button: {
+                    href: "/fellowship",
+                    text: intl.formatMessage({
+                      id: "community.section-guild.envoy.button",
+                    }),
+                    variant: "primary",
+                  },
                   icon: Envoy,
-                  title: intl.formatMessage({
-                    id: "community.section-guild.envoy.title",
-                  }),
-                  paragraph: intl.formatMessage({
-                    id: "community.section-guild.envoy.paragraph",
-                  }),
-                  listTitle: intl.formatMessage({
-                    id: "community.section-guild.envoy.activities.title",
-                  }),
                   list: [
                     intl.formatMessage({
                       id: "community.section-guild.envoy.activities.items.1",
@@ -153,31 +146,30 @@ const Community = ({ intl }) => (
                       id: "community.section-guild.envoy.activities.items.3",
                     }),
                   ],
+                  listTitle: intl.formatMessage({
+                    id: "community.section-guild.envoy.activities.title",
+                  }),
+                  paragraph: intl.formatMessage({
+                    id: "community.section-guild.envoy.paragraph",
+                  }),
 
-                  button: {
-                    variant: "primary",
-                    text: intl.formatMessage({
-                      id: "community.section-guild.envoy.button",
-                    }),
-                    href: "/fellowship",
-                  },
+                  title: intl.formatMessage({
+                    id: "community.section-guild.envoy.title",
+                  }),
                 }}
               />
             </Col>
-            <Col md className="mt-5">
+            <Col className="mt-5" md>
               <VerticalCard
                 content={{
+                  button: {
+                    href: "/book",
+                    text: intl.formatMessage({
+                      id: "community.section-guild.herald.button",
+                    }),
+                    variant: "secondary",
+                  },
                   icon: Herald,
-                  title: intl.formatMessage({
-                    id: "community.section-guild.herald.title",
-                  }),
-                  paragraph: intl.formatMessage({
-                    id: "community.section-guild.herald.paragraph",
-                  }),
-
-                  listTitle: intl.formatMessage({
-                    id: "community.section-guild.herald.activities.title",
-                  }),
                   list: [
                     intl.formatMessage({
                       id: "community.section-guild.herald.activities.items.1",
@@ -190,13 +182,16 @@ const Community = ({ intl }) => (
                     }),
                   ],
 
-                  button: {
-                    variant: "secondary",
-                    text: intl.formatMessage({
-                      id: "community.section-guild.herald.button",
-                    }),
-                    href: "/book",
-                  },
+                  listTitle: intl.formatMessage({
+                    id: "community.section-guild.herald.activities.title",
+                  }),
+                  paragraph: intl.formatMessage({
+                    id: "community.section-guild.herald.paragraph",
+                  }),
+
+                  title: intl.formatMessage({
+                    id: "community.section-guild.herald.title",
+                  }),
                 }}
               />
             </Col>

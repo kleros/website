@@ -1,18 +1,11 @@
-import { useContext, useState, useReducer } from "react";
+import { useState } from "react";
 import React from "react";
-
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
-
-import { Badge, Container, Row, Col, InputGroup, FormControl, Accordion, Card } from "react-bootstrap";
-
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
+import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
 import styles from "./styles/fellowship.module.css";
-
-import Dribble from "src/assets/svgs/dribble.svg";
-
-import Logo from "../assets/svgs/brand_white.svg";
 import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Telegram from "src/assets/svgs/telegram.svg";
@@ -21,50 +14,11 @@ import Slack from "src/assets/svgs/slack.svg";
 import Reddit from "src/assets/svgs/reddit.svg";
 import Ghost from "src/assets/svgs/ghost.svg";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
-
-import Ast from "src/assets/images/ast.png";
-import Lesaege from "src/assets/images/lesaege.png";
-import Malbasic from "src/assets/images/malbasic.png";
-import John from "src/assets/images/john.png";
-import Guérin from "src/assets/images/guerin.png";
-import Alencar from "src/assets/images/alencar.png";
-import Braga from "src/assets/images/braga.png";
-import George from "src/assets/images/george.png";
-import Glemming from "src/assets/images/glemming.png";
-import Tunçer from "src/assets/images/tuncer.png";
-import Barcelos from "src/assets/images/barcelos.png";
-import Zhang from "src/assets/images/zhang.png";
-import Dmitrikov from "src/assets/images/dmitrikov.png";
-import Vitello from "src/assets/images/vitello.png";
-import James from "src/assets/images/james.png";
-import Pichler from "src/assets/images/pichler.png";
-import Fidel from "src/assets/images/fidel.png";
-import Rule from "src/assets/images/rule.png";
-import Dimov from "src/assets/images/dimov.png";
-import Winter from "src/assets/images/winter.png";
 import Narozhny from "src/assets/images/narozhny.png";
-import Raczynski from "src/assets/images/raczynski.png";
 import Sharma from "src/assets/images/sharma.png";
-import Blazevic from "src/assets/images/blazevic.png";
-import Schmitz from "src/assets/images/schmitz.png";
-import Weingast from "src/assets/images/weingast.png";
-import Ober from "src/assets/images/ober.png";
-import Flippi from "src/assets/images/flippi.png";
-import Mauer from "src/assets/images/mauer.png";
-import Nappert from "src/assets/images/nappert.png";
 import Deplano from "src/assets/images/deplano.png";
-import Siri from "src/assets/images/siri.png";
-import Hunn from "src/assets/images/hunn.png";
-import Einy from "src/assets/images/einy.png";
-import Stone from "src/assets/images/stone.png";
-import Sills from "src/assets/images/sills.png";
-import Hadfield from "src/assets/images/hadfield.png";
-import Torres from "src/assets/images/torres.png";
-import Monegro from "src/assets/images/monegro.png";
 import Dagnillo from "src/assets/images/dagnillo.png";
-import Piqueras from "src/assets/images/piqueras.png";
 import Bergolla from "src/assets/images/bergolla.png";
-
 import Scott from "src/assets/images/scott.png";
 import Zhao from "src/assets/images/zhao.png";
 import Gudkov from "src/assets/images/gudkov.png";
@@ -96,49 +50,46 @@ import Tripathi from "src/assets/images/tripathi.png";
 import Vargas from "src/assets/images/vargas.png";
 import Carrera from "src/assets/images/carrera.png";
 import Lewis from "src/assets/images/lewis.png";
-
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
 
 const PHOTOS = {
-  Scott,
-  Zhao,
-  Gudkov,
   Abad,
-  Oguz,
-  Goldstein,
-  Obafemi,
-  Gouvea,
-  Felicio,
-  Tineo,
-  Mota,
-  Duarte,
-  Robertson,
   Aliyev,
   Archila,
-  Bhalothia,
-  Dean,
   Bel,
+  Bergolla,
+  Bhalothia,
+  Carrera,
+  Comenale,
+  Dagnillo,
+  Dean,
+  Deplano,
+  Duarte,
+  Felicio,
+  G,
+  Goldstein,
+  Gouvea,
   Gray,
+  Gudkov,
   Huculak,
   Jara,
-  Lowther,
   Kulshreshtha,
+  Lewis,
+  Lowther,
+  Mota,
   Mouclier,
-  Comenale,
-  G,
+  Narozhny,
+  Obafemi,
+  Oguz,
+  Robertson,
+  Scott,
+  Sharma,
   Stanescu,
+  Tineo,
   Tripathi,
   Vargas,
-  Carrera,
-  Lewis,
-  Huculak,
-  Narozhny,
-  Sharma,
-  Duarte,
-  Dagnillo,
-  Bergolla,
-  Deplano,
+  Zhao,
 };
 
 const Fellowship = ({ intl, data }) => {
@@ -162,7 +113,7 @@ const Fellowship = ({ intl, data }) => {
           </h2>
           <div className={`${styles.social}`}>
             <div>
-              <a className="g-kleros_footer__anchor" rel="noopener noreferrer" target="_blank" href="https://github.com/kleros">
+              <a className="g-kleros_footer__anchor" href="https://github.com/kleros" rel="noopener noreferrer" target="_blank">
                 <Github />
               </a>
               <a className="g-kleros_footer__anchor" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
@@ -189,21 +140,21 @@ const Fellowship = ({ intl, data }) => {
             </div>
           </div>
           <hr style={{ marginTop: "4rem" }} />
-          <h1 style={{ marginTop: "6rem", marginBottom: "4rem" }}>
+          <h1 style={{ marginBottom: "4rem", marginTop: "6rem" }}>
             <FormattedMessage id="fellowship.section-fellows" />
           </h1>
         </section>
 
-        <Container as="section" fluid className={`no-gutters pt-0 px-0 ${styles.team}`}>
+        <Container as="section" className={`no-gutters pt-0 px-0 ${styles.team}`} fluid>
           <Row className="no-gutters">
             {Config.siteMetadata.teamMembers
               .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
               .map((member, index) => {
                 if (data.allSitePage.edges.find((object) => object.node.path == `/${member.name.toLowerCase().split(" ").slice(-1)}/`))
                   return (
-                    <Link key={index} className="no-gutters" style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
-                      <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                        <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
+                    <Link className="no-gutters" key={index} style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
+                      <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
+                        <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
                         <div className={styles.overlay}>
                           <span>{member.name} </span>
                           <span>{member.title}</span>
@@ -215,8 +166,8 @@ const Fellowship = ({ intl, data }) => {
                     </Link>
                   );
                 return (
-                  <Col xs={12} sm={6} md={4} lg={3} xl={2} className={styles.portraitContainer}>
-                    <img style={{ width: "100%" }} src={PHOTOS[member.name.split(" ").slice(-1)]} />
+                  <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
+                    <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
                     <div className={styles.overlay}>
                       <span>{member.name} </span>
                       <span>{member.title}</span>
@@ -233,11 +184,11 @@ const Fellowship = ({ intl, data }) => {
         <section className={styles.questions}>
           <h1 className="text-left bigger">FAQ</h1>
           <div className="tab-content" id="v-pills-tabContent">
-            <Accordion defaultActiveKey="0" className={styles.accordion} activeKey={activeKey} onSelect={(e) => setActiveKey(e)}>
+            <Accordion activeKey={activeKey} className={styles.accordion} defaultActiveKey="0" onSelect={(e) => setActiveKey(e)}>
               {Object.entries(Questions.fellowship["section-faq"]).map((question, index) => (
                 <>
                   <Card key={index}>
-                    <Accordion.Toggle as={Card.Header} eventKey={index} className={styles.cardHeader}>
+                    <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={index}>
                       <span className={`${activeKey === index ? styles.closed : styles.open}`}>
                         <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
                       </span>
@@ -248,7 +199,7 @@ const Fellowship = ({ intl, data }) => {
                           id={`fellowship.section-faq.${index + 1}.a`}
                           values={{
                             anchor: (children) => (
-                              <a href="https://forms.gle/s6nND6jmKriNyDsR8" target="_blank" rel="noopener noreferrer">
+                              <a href="https://forms.gle/s6nND6jmKriNyDsR8" rel="noopener noreferrer" target="_blank">
                                 {children}
                               </a>
                             ),

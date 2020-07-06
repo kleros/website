@@ -6,19 +6,16 @@
  */
 
 import React from "react";
-
 import styles from "./styles/vertical-card.module.css";
-
-import { Button, Row, Col, Container } from "react-bootstrap";
-
-import { injectIntl, Link } from "gatsby-plugin-intl";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link, injectIntl } from "gatsby-plugin-intl";
 
 const isExternal = (href) => /^\/(?!\/)/.test(href);
 
 const VerticalCard = ({ content, intl }) => (
-  <Container fluid className={styles.verticalCard}>
+  <Container className={styles.verticalCard} fluid>
     <Row className="h-100 d-flex">
-      <Col sm className="h-100 d-flex flex-column">
+      <Col className="h-100 d-flex flex-column" sm>
         {content.icon && (
           <span className={styles.icon}>
             <content.icon />
@@ -52,7 +49,7 @@ const VerticalCard = ({ content, intl }) => (
             </Link>
           )}
           {content.button && !isExternal(content.button.href) && (
-            <a className={`btn btn-${content.button.variant} ${content.button.disabled && "disabled"}`} href={content.button.href} target="blank" rel="noopener noreferrer">
+            <a className={`btn btn-${content.button.variant} ${content.button.disabled && "disabled"}`} href={content.button.href} rel="noopener noreferrer" target="blank">
               {content.button.text}
             </a>
           )}
