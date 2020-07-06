@@ -40,7 +40,7 @@ const Community = ({ intl }) => (
         <h3 className="bigger bold purple mb-5 mr-4 ml-4">
           <FormattedMessage id="community.section-members.title" />
         </h3>
-        <img src={Members} />
+        <iframe src="https://www.google.com/maps/d/embed?mid=177hy7Cx7opzdjeaZXjHMRx1LdJsbKYEH" width="640" height="480"></iframe>
         <h3 className="bigger bold purple mt-5 mb-5 mr-4 ml-4">
           <FormattedMessage id="community.section-members.telegram" />
         </h3>

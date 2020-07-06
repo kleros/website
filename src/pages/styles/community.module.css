@@ -4,6 +4,10 @@
   background-size: 70%;
 }
 
+.community iframe {
+  border-width: 0;
+}
+
 .community .telegram {
   max-width: 8rem;
   display: block;
