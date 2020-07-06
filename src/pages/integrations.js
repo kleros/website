@@ -308,19 +308,19 @@ const Integrations = ({ intl }) => (
             <span className={styles.helper}></span>
             <img src={Deversifi} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={DutchX} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={WindingTree} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={Realitio} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={CryptoUnlocked} />
           </Badge>
