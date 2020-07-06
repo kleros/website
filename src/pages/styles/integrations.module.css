@@ -40,6 +40,7 @@
 
 .integrations .items {
   background-color: var(--color-purple-darkest);
+  padding-top: 140px; /* to match the height of the background image */
 }
 
 .integrations .items a {
