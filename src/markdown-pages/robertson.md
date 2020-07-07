@@ -2,7 +2,7 @@
 name: "Mars Robertson"
 title: "Chief Integration Officer"
 image: "/src/assets/images/robertson.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Mars Robertson is the Chief Integration Officer of genesis.re, and has been involved in Kleros since 2017, after meeting the team at one of the presentations worldwide.

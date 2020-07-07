@@ -2,7 +2,7 @@
 name: "Rossana Deplano"
 title: "Lecturer in Law"
 image: "/src/assets/images/deplano.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Dr. Rossana Deplano (LLB, LLM, PhD) is Lecturer in Law at the University of Leicester and Fellow of the Higher Education Academy. Her main research interests lie in the field of public international law, international legal theory and international legal research.

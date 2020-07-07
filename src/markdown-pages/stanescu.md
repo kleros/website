@@ -2,7 +2,7 @@
 name: "Alex Stanescu"
 title: "International Arbitrator"
 image: "/src/assets/images/stanescu.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Alex Stanescu is a lawyer from Romania who has worked on a wide span of legal areas from banking to international business transactions and international arbitration. He holds an LLM in International Arbitration from the University of Bucharest (Romania) and holds an MBA from Deusto University (Spain). He was a Fulbright scholar and a Wien Corporate Responsibility Fellow at Columbia Law School.

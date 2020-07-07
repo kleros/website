@@ -2,7 +2,7 @@
 name: "Nicolás D'Agnillo"
 title: "Financial Analyst"
 image: "/src/assets/images/dagnillo.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Nicolás D'Agnillo graduated as a certified public accountant at the University of Buenos Aires and is completing his Specialization in Finance at UCEMA, one of the top universities in economics in Argentina.

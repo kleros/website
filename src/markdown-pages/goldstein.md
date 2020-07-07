@@ -2,7 +2,7 @@
 name: "Elliot Talbert Goldstein"
 title: "Assistant Director for Digital Marketing"
 image: "/src/assets/images/goldstein.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Throughout his career, Elliot Talbert-Goldstein has conducted research and created tools that focus on using technology to improve communication and understanding. He has an MA in conflict resolution and mediation, is part of the Bosserman Center for Conflict Resolution at Salisbury University, and teaches mediation in the International Program in Conflict Resolution and Mediation at Tel Aviv University. Currently, he is assistant director for digital marketing in the Division of Professional Studies at UMBC (University of Maryland, Baltimore County).

@@ -2,7 +2,7 @@
 name: "Sandeep Bhalothia"
 title: "Technology Arbitrator"
 image: "/src/assets/images/bhalothia.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Sandeep Bhalothia is a graduate from Jindal Global Law School (India). He is a Member (MCIArb) of the Chartered Institute of Arbitrators (CIArb, U.K.) and a SCMA Accredited Mediation Advocate. He specializes in technology contracts of a wide variety, dispute resolution, advisory and employment law. He is currently heading the legal department of a technology startup in Dubai, UAE.

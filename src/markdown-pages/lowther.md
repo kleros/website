@@ -2,7 +2,7 @@
 name: "Jake Lowther"
 title: "International Dispute Resolution Expert"
 image: "/src/assets/images/lowther.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Jake Lowther is an Australian-qualified lawyer with a particular interest in arbitration. Beginning his career at Ashurst, Jake has experience in employment disputes, M&A transactions and construction disputes. He is currently working in Stockholm at the Nordic-Baltic law firm Magnusson.

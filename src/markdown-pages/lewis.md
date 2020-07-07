@@ -2,7 +2,7 @@
 name: "David Lewis"
 title: "International Commercial Mediator and Mediation Scholar"
 image: "/src/assets/images/lewis.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Dr. David Lewis mediates civil/commercial, construction, corporate, and employment disputes. Dr. Lewis’ firm EGADR specialises in corporate and organisational conflict and assists small and medium sized enterprises (SMEs) with the design and implementation of effective dispute resolution infrastructure at all points along the supply chain.

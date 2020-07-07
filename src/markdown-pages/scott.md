@@ -2,7 +2,7 @@
 name: "Eric Martin Scott"
 title: "Public Law & Cyber Security"
 image: "/src/assets/images/scott.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Eric graduated Cum Laude from Southern University Law Center in 2014 with a specialization in Public Law, and received a Master in Management from the Harvard University Extension School in 2009.

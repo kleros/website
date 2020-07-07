@@ -2,7 +2,7 @@
 name: "Mübariz Aliyev"
 title: "Tech Lawyer"
 image: "/src/assets/images/aliyev.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Mübariz Aliyev is a tech lawyer from Azerbaijan with a particular interest in blockchain, AI, data protection and IP. He holds an LL.M. degree from the University of Lausanne (Switzerland) and is completing his Master of Arts degree in IT Law in Estonia.

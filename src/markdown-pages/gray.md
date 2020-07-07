@@ -2,7 +2,7 @@
 name: "Scott Gray"
 title: "Economist"
 image: "/src/assets/images/narozhny.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Scott Gray studied Economics at Fordham University. He worked in finance and politics before getting more involved in the blockchain space in early 2016. Based in New York City, today he is focused on investing in blockchain protocols that increase efficiency and scalability for enterprises.

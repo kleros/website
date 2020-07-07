@@ -2,7 +2,7 @@
 name: "Tian Zhao"
 title: "Systems Engineering"
 image: "/src/assets/images/zhao.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Tian Zhao holds a bachelor degree in Systems Engineering at the University of Toronto.

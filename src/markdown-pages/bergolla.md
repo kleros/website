@@ -2,7 +2,7 @@
 name: "Luis Bergolla"
 title: "Doctoral Student"
 image: "/src/assets/images/bergolla.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Luis Bergolla is a professor of practice at the University of Arizona and a doctoral student at Stanford Law School.

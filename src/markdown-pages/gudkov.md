@@ -2,7 +2,7 @@
 name: "Aleksei Gudkov"
 title: "Researcher"
 image: "/src/assets/images/gudkov.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Dr. Alexei Gudkov earned his Ph.D. in law at the Autonomous University of Barcelona (Spain). He is a researcher at the Higher School of Economics (Moscow) and an industry fellow of University College London Centre for Blockchain Technologies.

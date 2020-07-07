@@ -2,7 +2,7 @@
 name: "Abeer Sharma"
 title: "International Arbitration"
 image: "/src/assets/images/narozhny.png"
-report: "https://duckduckgo.com"
+report: ""
 ---
 
 Abeer Sharma is an Indian dispute resolution lawyer and legal researcher with a multidisciplinary professional interest spanning across public policy, jurisprudence, energy law and international arbitration.
