@@ -4,26 +4,26 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="896.076px" height="810px" viewBox="0 0 896.076 810" enable-background="new 0 0 896.076 810" xml:space="preserve">
 <g>
-	<polygon opacity="0.7" fill="#45464D" points="684.785,62.012 279.391,43.92 43.353,338.768 208.746,732.812 618.195,757.601 
+	<polygon opacity="0.7" fill="#45464D" points="684.785,62.012 279.391,43.92 43.353,338.768 208.746,732.812 618.195,757.601
 		851.266,426.113 	"/>
 	<g>
 		<polygon fill="#656569" points="851.266,426.527 620.33,192.34 559.592,641.584 		"/>
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="200.71" y1="416.9619" x2="620.3301" y2="416.9619">
+		<linearGradient id="kleroslng1" gradientUnits="userSpaceOnUse" x1="200.71" y1="416.9619" x2="620.3301" y2="416.9619">
 			<stop  offset="0" style="stop-color:#A3A2A5"/>
 			<stop  offset="0.2705" style="stop-color:#9F9EA0"/>
 			<stop  offset="0.5607" style="stop-color:#929194"/>
 			<stop  offset="0.8592" style="stop-color:#7C7C80"/>
 			<stop  offset="1" style="stop-color:#707073"/>
 		</linearGradient>
-		<polygon fill="url(#SVGID_1_)" points="200.71,373.854 620.33,192.34 559.592,641.584 		"/>
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="197.9355" y1="367.832" x2="496.0872" y2="72.5576">
+		<polygon fill="url(#kleroslng1)" points="200.71,373.854 620.33,192.34 559.592,641.584 		"/>
+		<linearGradient id="kleroslng2" gradientUnits="userSpaceOnUse" x1="197.9355" y1="367.832" x2="496.0872" y2="72.5576">
 			<stop  offset="0" style="stop-color:#969598"/>
 			<stop  offset="0.3396" style="stop-color:#908F92"/>
 			<stop  offset="0.7917" style="stop-color:#7F7F82"/>
 			<stop  offset="1" style="stop-color:#757578"/>
 		</linearGradient>
-		<polygon fill="url(#SVGID_2_)" points="620.33,192.34 279.391,44.335 200.71,373.854 		"/>
-		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="220.916" y1="363.666" x2="380.1855" y2="679.5057">
+		<polygon fill="url(#kleroslng2)" points="620.33,192.34 279.391,44.335 200.71,373.854 		"/>
+		<linearGradient id="kleroslng3" gradientUnits="userSpaceOnUse" x1="220.916" y1="363.666" x2="380.1855" y2="679.5057">
 			<stop  offset="0" style="stop-color:#9E9EA0"/>
 			<stop  offset="0.2759" style="stop-color:#9B9B9D"/>
 			<stop  offset="0.494" style="stop-color:#919194"/>
@@ -31,7 +31,7 @@
 			<stop  offset="0.8777" style="stop-color:#69696D"/>
 			<stop  offset="1" style="stop-color:#55565A"/>
 		</linearGradient>
-		<polygon fill="url(#SVGID_3_)" points="200.71,373.854 208.746,733.228 559.592,641.584 		"/>
+		<polygon fill="url(#kleroslng3)" points="200.71,373.854 208.746,733.228 559.592,641.584 		"/>
 		<polygon fill="#757578" points="620.33,192.34 684.785,62.427 279.391,44.335 		"/>
 		<polygon fill="#6C6D70" points="684.785,62.427 851.266,426.527 620.33,192.34 		"/>
 		<polygon fill="#6C6D70" points="851.266,426.527 618.195,758.015 559.592,641.584 		"/>
