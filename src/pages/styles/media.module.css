@@ -105,10 +105,11 @@
   .media .nav {
     float: left;
     flex-direction: column;
+    width: 250px;
   }
 
   .media .items > div:nth-child(2) {
-    margin-left: 20rem;
+    margin-left: 280px;
   }
 }
 

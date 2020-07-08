@@ -111,10 +111,11 @@
   .integrations .nav {
     float: left;
     flex-direction: column;
+    width: 300px;
   }
 
   .integrations .items > div:nth-child(2) {
-    margin-left: 29rem;
+    margin-left: 350px;
   }
 }
 
