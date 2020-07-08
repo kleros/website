@@ -42,7 +42,7 @@ const VerticalCard = ({ content, intl }) => (
             ))}
           </ul>
         )}
-        <div className="mt-auto pt-5">
+        <div className="mt-auto pb-3">
           {content.button && isExternal(content.button.href) && (
             <Link className={`btn btn-${content.button.variant} ${content.button.disabled && "disabled"}`} to={content.button.href}>
               {content.button.text}

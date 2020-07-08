@@ -7,7 +7,7 @@ export default ({ extraClass }) => (
   <section className={`${extraClass} ${styles.sponsors}`}>
     <div className={styles.euContainer}>
       <a href='https://ec.europa.eu/research/eic/index.cfm?pg=prizes_blockchains' target='blank' rel='noopener noreferrer'>
-        <EU />
+        <EU className={styles.eu} />
       </a>
     </div>
     <div className={styles.reutersContainer}>

@@ -55,3 +55,16 @@
 .sponsors div {
   margin: auto;
 }
+
+@media (min-width: 1000px) {
+  .euContainer {
+    width: 70% !important;
+  }
+
+  .bpiContainer {
+    width: 20% !important;
+  }
+  .reutersContainer {
+    width: 50% !important;
+  }
+}
