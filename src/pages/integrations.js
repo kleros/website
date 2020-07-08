@@ -38,6 +38,7 @@ import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Photo from "src/assets/svgs/icon-photo.svg";
 import Box from "src/assets/svgs/icon-box.svg";
 import Deversifi from "src/assets/images/deversifi.png";
+import Omen from "src/assets/images/omen.png";
 import WindingTree from "src/assets/images/winding-tree-colored.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
 import IDEX from "src/assets/images/idex.png";
@@ -307,6 +308,10 @@ const Integrations = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={Deversifi} />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={Omen} />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>

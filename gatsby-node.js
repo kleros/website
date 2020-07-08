@@ -11,24 +11,26 @@
 //
 //
 
-const { createFilePath } = require("gatsby-source-filesystem");
-const path = require("path");
+const { createFilePath } = require('gatsby-source-filesystem')
+const path = require('path')
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  if (node.internal.type === "MarkdownRemark") {
-    const { createNodeField } = actions;
-    const slug = createFilePath({ node, getNode, basePath: "markdown" });
+  if (node.internal.type === 'MarkdownRemark') {
+    const { createNodeField } = actions
+    const slug = createFilePath({ node, getNode, basePath: 'markdown' })
 
     createNodeField({
       node,
-      name: "slug",
-      value: slug,
-    });
+      name: 'slug',
+      value: slug
+    })
   }
-};
+}
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions
+
+  createRedirect({ fromPath: '/juror', toPath: '/', isPermanent: true })
 
   return new Promise((resolve) => {
     graphql(`
@@ -47,13 +49,13 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve("./src/templates/bio.js"),
+          component: path.resolve('./src/templates/bio.js'),
           context: {
-            slug: node.fields.slug,
-          },
-        });
-      });
-      resolve();
-    });
-  });
-};
+            slug: node.fields.slug
+          }
+        })
+      })
+      resolve()
+    })
+  })
+}
