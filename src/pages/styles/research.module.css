@@ -20,9 +20,14 @@
   color: var(--color-gray);
 }
 
-.research .director h2 {
+.research .director h2,
+.research .director figure > figcaption > span {
   color: var(--color-purple);
   font-weight: var(--font-weight-bold);
+}
+
+.research .director figcaption {
+  margin-bottom: 3rem;
 }
 
 .research .director p {
@@ -35,4 +40,8 @@
 
 .research .cards > div {
   margin-bottom: 2rem;
+}
+
+.research .researchersTitle {
+  margin-top: 4rem;
 }

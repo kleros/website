@@ -407,6 +407,7 @@
   },
 
   "research": {
+    "seo-title": "Research",
     "section-hero": {
       "h1": "Kleros Research",
       "h2": "Kleros has a very active research team in cryptoeconomics, computer science, business and law."
@@ -414,7 +415,17 @@
     "section-director": {
       "title": "Director of Research",
       "subtitle": "William George, PhD",
-      "paragraph": "William holds Master’s and PhD degrees in mathematics from the University of Toronto. He was subsequently a postdoctoral researcher at the University of Toronto and École Polytechnique (France), where he studied applications of blockchains, particularly to identity management systems. William also previously worked in information security for a Canadian bank, where he was involved in the management of the bank's cryptographic keys."
+      "paragraph": "William holds Master’s and PhD degrees in mathematics from the University of Toronto. He was subsequently a postdoctoral researcher at the University of Toronto and École Polytechnique (France), where he studied applications of blockchains, particularly to identity management systems. William also previously worked in information security for a Canadian bank, where he was involved in the management of the bank's cryptographic keys.",
+      "researchers": {
+        "title": "Researchers",
+        "items": {
+          "1": {
+            "title": "Yann Aouidef, PhD Researcher",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          "2": { "name": "Name", "title": "Title", "text": "" }
+        }
+      }
     },
     "section-papers": {
       "papers": {
