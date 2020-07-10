@@ -15,7 +15,7 @@ const Sash = ({ separator, figures, intl }) => (
     <div className='d-block d-lg-flex'>
       {figures.map((figure, index) => {
         const item = (
-          <Col className={styles.column} key={index}>
+          <Col data-aos='zoom-in-up' data-aos-duration='1500' className={styles.column} key={index}>
             <figure>
               {typeof (figure.icon) === 'function' &&
               <figure.icon />}

@@ -49,6 +49,8 @@ import IndexHero from "src/assets/svgs/court-hero.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "aos/dist/aos.css";
+
 import Archon from "@kleros/archon";
 import BigNumber from "bignumber.js";
 
@@ -205,14 +207,14 @@ class IndexPage extends React.Component {
         <SEO lang={intl.locale} title="Home" />
         <Container className={styles.index} fluid>
           <section className={styles.hero}>
-            <h1>
+            <h1 data-aos='zoom-in-up' data-aos-duration='1500'>
               <FormattedMessage id="index.section-hero.h1" />
             </h1>
-            <h2>
+            <h2 data-aos='zoom-in-up' data-aos-duration='1500'>
               <FormattedMessage id="index.section-hero.h2" />
             </h2>
 
-            <Container className={styles.buttonWrapper}>
+            <Container data-aos="zoom-in-up"  data-aos-duration="1500" className={styles.buttonWrapper}>
               <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
                 <FormattedMessage id="index.section-hero.button-primary" />
               </a>
@@ -220,7 +222,7 @@ class IndexPage extends React.Component {
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
             </Container>
-            <IndexHero />
+            <IndexHero  data-aos='zoom-in-up' data-aos-duration='1500'/>
           </section>
           <section className="light">
             <Sash
@@ -366,11 +368,11 @@ class IndexPage extends React.Component {
             <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
             <CasesDisputes />
           </section>
-          <div className={styles.products}>
+          <div  className={styles.products}>
             <section>
               <div className="px-3 py-3 text-center">
-                <h1 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
-                <div className="d-inline-block">
+                <h1 data-aos="zoom-in-up"  data-aos-duration="1500" className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
+                <div data-aos="zoom-in-up"  data-aos-duration="1500" className="d-inline-block">
                   <a href="https://court.kleros.io">
                     <Badge>
                       <Court />
@@ -378,7 +380,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Court</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos="zoom-in-up"  data-aos-duration="1500" className="d-inline-block">
                   <a href="https://escrow.kleros.io">
                     <Badge>
                       <Escrow />
@@ -387,7 +389,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker ">Escrow</p>
                 </div>
 
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://tokens.kleros.io">
                     <Badge>
                       <T2CR />
@@ -395,7 +397,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">T2CR</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://curate.kleros.io">
                     <Badge>
                       <Curate />
@@ -404,7 +406,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker ">Curate</p>
                 </div>
 
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://resolve.kleros.io">
                     <Badge>
                       <Resolver />
@@ -412,7 +414,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Dispute Resolver</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://uniswap.ninja">
                     <Badge>
                       <Ninja />
@@ -420,7 +422,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Uniswap Ninja</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://cryptounlocked.wetrust.io/">
                     <Badge>
                       <span className={styles.helper} />
@@ -429,7 +431,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Crypto Unlocked</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://realit.io/">
                     <Badge>
                       <img className="p-2" src={Realitio} />
@@ -437,7 +439,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker  ">Realitio</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2">
                     <Badge>
                       <img className="p-2" src={Omen} />
@@ -445,7 +447,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker  ">Omen</p>
                 </div>
-                <div className="d-inline-block">
+                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
                   <a href="https://linguo.kleros.io">
                     <Badge>
                       <Linguo />
