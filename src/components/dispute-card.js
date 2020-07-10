@@ -1,16 +1,12 @@
 import React from 'react'
-import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
-import Logo from '../assets/svgs/kleros-white.svg'
+import { injectIntl } from 'gatsby-plugin-intl'
 import Reward from 'src/assets/svgs/reward.svg'
 import Scales from 'src/assets/svgs/scales.svg'
 import Info from 'src/assets/svgs/info.svg'
 
-import Email from 'src/assets/svgs/icon-envelope.svg'
-import HorizontalCard from '../components/horizontal-card'
-
 import styles from './styles/dispute-card.module.css'
 import Countdown from 'react-countdown-now'
-import { Badge, Col, Container, Row, Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 
 const Completionist = () => <span>You are good to go!</span>
 const renderer = ({ days, hours, minutes, seconds, completed }) => {

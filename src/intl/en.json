@@ -665,5 +665,8 @@
 
   "contact": {
     "title": "Get in Touch"
+  },
+  "404": {
+    "seo-title": "404: Not Found"
   }
 }

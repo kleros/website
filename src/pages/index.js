@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
-import Sponsors from "../components/sponsors";
 import Contact from "../components/contact";
-import { Badge, Col, Container, Row, Card, Button, Spinner } from "react-bootstrap";
+import { Badge, Col, Container, Row, Spinner } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
@@ -17,7 +16,6 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import Resolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
-import CU from "../assets/svgs/kleros.svg";
 import CasesDisputes from "src/assets/svgs/illustration-home.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
@@ -36,15 +34,6 @@ import moderation from "src/assets/svgs/icon-moderation.svg";
 import plus from "src/assets/svgs/icon-plus.svg";
 import smallClaims from "src/assets/svgs/icon-gavel-2.svg";
 import token from "src/assets/svgs/icon-token.svg";
-import restaurant from "src/assets/svgs/icon-fork-n-knife.svg";
-import hotel from "src/assets/svgs/icon-hotel.svg";
-import spam from "src/assets/svgs/icon-spam.svg";
-import social from "src/assets/svgs/icon-speaker.svg";
-import bounty from "src/assets/svgs/icon-bounty.svg";
-import otc from "src/assets/svgs/icon-otc.svg";
-import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
-import payroll from "src/assets/svgs/icon-payroll.svg";
-import www from "src/assets/svgs/icon-www.svg";
 import IndexHero from "src/assets/svgs/court-hero.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -54,9 +43,7 @@ import "aos/dist/aos.css";
 import Archon from "@kleros/archon";
 import BigNumber from "bignumber.js";
 
-import Web3 from "web3";
 import * as EthereumInterface from "src/ethereum/interface";
-import networkMap from "src/ethereum/network-contract-mapping";
 
 const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
 const KLEROS_LIQUID = "0x988b3a538b618c7a603e1c11ab82cd16dbe28069";
@@ -148,6 +135,7 @@ class IndexPage extends React.Component {
               console.error(error);
             });
         });
+        return null;
       });
   };
 
@@ -155,7 +143,6 @@ class IndexPage extends React.Component {
     let counter = 0,
       subcourts = [],
       subcourtsExtra = [],
-      subcourtDetails = [],
       subcourtURIs = [];
 
     while (true) {
@@ -186,7 +173,6 @@ class IndexPage extends React.Component {
           })
         )
       ),
-      subcourtsLoading: false,
       subcourts: await Promise.all(subcourts),
       subcourtsExtra: await Promise.all(subcourtsExtra),
     });
@@ -199,22 +185,22 @@ class IndexPage extends React.Component {
   render() {
     const { intl } = this.props;
 
-    const { subcourtDetails, metaEvidences, disputes, subcourtsExtra, subcourts, subcourtsLoading } = this.state;
+    const { subcourtDetails, metaEvidences, disputes, subcourtsExtra, subcourts } = this.state;
 
     console.log(this.state);
     return (
       <Layout>
-        <SEO lang={intl.locale} title="Home" />
+        <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
           <section className={styles.hero}>
-            <h1 data-aos='zoom-in-up' data-aos-duration='1500'>
+            <h1>
               <FormattedMessage id="index.section-hero.h1" />
             </h1>
-            <h2 data-aos='zoom-in-up' data-aos-duration='1500'>
+            <h2>
               <FormattedMessage id="index.section-hero.h2" />
             </h2>
 
-            <Container data-aos="zoom-in-up"  data-aos-duration="1500" className={styles.buttonWrapper}>
+            <Container className={styles.buttonWrapper}>
               <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
                 <FormattedMessage id="index.section-hero.button-primary" />
               </a>
@@ -222,7 +208,7 @@ class IndexPage extends React.Component {
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
             </Container>
-            <IndexHero  data-aos='zoom-in-up' data-aos-duration='1500'/>
+            <IndexHero />
           </section>
           <section className="light">
             <Sash
@@ -266,13 +252,15 @@ class IndexPage extends React.Component {
               <FormattedMessage id="index.section-disputes.subtitle" />
             </h2>
             <div className={styles.disputesContent}>
-              {!(subcourtDetails && Object.keys(disputes).length == Object.keys(metaEvidences).length) && (
+              {!(subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length) && (
                 <>
-                  <div className={styles.loading}><FormattedMessage id="index.section-disputes.loading" /></div>
+                  <div className={styles.loading}>
+                    <FormattedMessage id="index.section-disputes.loading" />
+                  </div>
                   <Spinner className={styles.spinner} animation="grow" />
                 </>
               )}
-              {subcourtDetails && Object.keys(disputes).length == Object.keys(metaEvidences).length && (
+              {subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length && (
                 <Slider {...sliderSettings}>
                   {Object.entries(this.state.disputes).map((d, i) => (
                     <div key={i}>
@@ -299,7 +287,7 @@ class IndexPage extends React.Component {
           </section>
           <section className={styles.usecases}>
             <div className="iframe-container">
-              <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560" />
+              <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560" />
             </div>
           </section>
           <hr />
@@ -368,11 +356,11 @@ class IndexPage extends React.Component {
             <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
             <CasesDisputes />
           </section>
-          <div  className={styles.products}>
+          <div className={styles.products}>
             <section>
               <div className="px-3 py-3 text-center">
-                <h1 data-aos="zoom-in-up"  data-aos-duration="1500" className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
-                <div data-aos="zoom-in-up"  data-aos-duration="1500" className="d-inline-block">
+                <h1 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
+                <div className="d-inline-block">
                   <a href="https://court.kleros.io">
                     <Badge>
                       <Court />
@@ -380,7 +368,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Court</p>
                 </div>
-                <div data-aos="zoom-in-up"  data-aos-duration="1500" className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://escrow.kleros.io">
                     <Badge>
                       <Escrow />
@@ -389,7 +377,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker ">Escrow</p>
                 </div>
 
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://tokens.kleros.io">
                     <Badge>
                       <T2CR />
@@ -397,7 +385,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">T2CR</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://curate.kleros.io">
                     <Badge>
                       <Curate />
@@ -406,7 +394,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker ">Curate</p>
                 </div>
 
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://resolve.kleros.io">
                     <Badge>
                       <Resolver />
@@ -414,7 +402,7 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Dispute Resolver</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://uniswap.ninja">
                     <Badge>
                       <Ninja />
@@ -422,32 +410,32 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Uniswap Ninja</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://cryptounlocked.wetrust.io/">
                     <Badge>
                       <span className={styles.helper} />
-                      <img className="p-1" src={CryptoUnlocked} />
+                      <img className="p-1" src={CryptoUnlocked} alt="CryptoUnlocked" />
                     </Badge>
                   </a>
                   <p className="text-center text-purple-darker ">Crypto Unlocked</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://realit.io/">
                     <Badge>
-                      <img className="p-2" src={Realitio} />
+                      <img className="p-2" src={Realitio} alt="Realitio" />
                     </Badge>
                   </a>
                   <p className="text-center text-purple-darker  ">Realitio</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2">
                     <Badge>
-                      <img className="p-2" src={Omen} />
+                      <img className="p-2" src={Omen} alt="Omen" />
                     </Badge>
                   </a>
                   <p className="text-center text-purple-darker  ">Omen</p>
                 </div>
-                <div data-aos='zoom-in-up' data-aos-duration='1500' className="d-inline-block">
+                <div className="d-inline-block">
                   <a href="https://linguo.kleros.io">
                     <Badge>
                       <Linguo />

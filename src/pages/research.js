@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 import George from 'src/assets/images/george.png'
 import HorizontalCard from '../components/horizontal-card'
@@ -8,8 +7,8 @@ import VerticalCard from '../components/vertical-card'
 import Fellowship from 'src/assets/svgs/fellowship.svg'
 import Book from 'src/assets/svgs/book-illustration.svg'
 import styles from './styles/research.module.css'
-import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap'
-import { FormattedMessage, Link, injectIntl } from 'gatsby-plugin-intl'
+import { Col, Container, Row } from 'react-bootstrap'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import Content from 'src/intl/en.json'
 import Sash from '../components/sash'
 import Aouidef from 'src/assets/images/aouidef.png'
@@ -42,7 +41,7 @@ const MENTIONS = [
 
 const IndexPage = ({ intl }) => (
   <Layout>
-    <SEO title={intl.formatMessage({ id: 'research.seo-title' })} />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: 'research.seo-title' })} />
     <div className={styles.research}>
       <section className={styles.hero}>
         <h1>

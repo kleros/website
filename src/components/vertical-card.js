@@ -1,13 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import styles from "./styles/vertical-card.module.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import {  Col, Container, Row } from "react-bootstrap";
 import { Link, injectIntl } from "gatsby-plugin-intl";
 
 const isExternal = (href) => /^\/(?!\/)/.test(href);
