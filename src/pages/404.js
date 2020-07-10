@@ -2,9 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styles from './styles/notfoundpage.module.css'
-import { intl } from 'gatsby-plugin-intl'
+import { intl, injectIntl } from 'gatsby-plugin-intl'
 
-const NotFoundPage = () => (
+const NotFoundPage = ({intl}) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({id: '404.seo-title'})} />
     <div className={styles.notfoundpage}>
@@ -16,4 +16,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default injectIntl(NotFoundPage)
