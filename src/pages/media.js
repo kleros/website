@@ -10,38 +10,26 @@ import Photo from "src/assets/svgs/icon-photo.svg";
 import Box from "src/assets/svgs/icon-box.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import Categories from "src/intl/en.json";
-import ThomsonReuters from "src/assets/images/thomsonreuters.png";
-import DefiPrime from "src/assets/images/defiprime.png";
-import CardRates from "src/assets/images/cardrates.png";
-import BitcoinDotCom from "../assets/images/bitcoindotcom.png";
-import VentureBeat from "src/assets/images/venturebeat.png";
-import Token2049 from "src/assets/images/token2049.png";
-import Consensus from "src/assets/images/consensus.png";
-import EthCC from "src/assets/images/ethcc.png";
 import VerticalCard from "../components/vertical-card";
 
 const CONTENT = {
   conference: [
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.1" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.3" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.4" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.6" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.7" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.8" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.9" },
+    { link: "https://www.youtube.com/embed/NqxgMYsw_Ro", text: "media.section-media.conference.items.1" },
+    { link: "https://www.youtube.com/embed/2him_8rUMaA", text: "media.section-media.conference.items.2" },
+    { link: "https://www.youtube.com/embed/JJPcxuXtHAU", text: "media.section-media.conference.items.3" },
+    { link: "https://www.youtube.com/embed/Ga6bbCMKH4A", text: "media.section-media.conference.items.4" },
+    { link: "https://www.youtube.com/embed/zQF-j2nHb50", text: "media.section-media.conference.items.5" },
+    { link: "https://www.youtube.com/embed/sPKJqsmDQjc", text: "media.section-media.conference.items.6" },
+    { link: "https://www.youtube.com/embed/autihwpQPK4", text: "media.section-media.conference.items.7" },
+    { link: "https://www.youtube.com/embed/5xMf5BK__7I", text: "media.section-media.conference.items.8" },
+    { link: "https://www.youtube.com/embed/S2t7BJWoaBs", text: "media.section-media.conference.items.9" },
+    { link: "https://www.youtube.com/embed/zPLK0CDfx7Y", text: "media.section-media.conference.items.10" },
+    { link: "https://www.youtube.com/embed/yvhZvKz2p4Y", text: "media.section-media.conference.items.11" },
+    { link: "https://www.youtube.com/embed/mX3esOessmE", text: "media.section-media.conference.items.12" },
+    { link: "https://www.youtube.com/embed/hC9JgzuXzMk", text: "media.section-media.conference.items.13" },
+    
   ],
-  featured: [
-    { href: "/", icon: DefiPrime, text: "media.section-media.featured.items.defiprime" },
-    { href: "/", icon: ThomsonReuters, text: "media.section-media.featured.items.thomsonreuters" },
-    { href: "/", icon: CardRates, text: "media.section-media.featured.items.cardrates" },
-    { href: "/", icon: Consensus, text: "media.section-media.featured.items.consensus" },
-    { href: "/", icon: VentureBeat, text: "media.section-media.featured.items.venturebeat" },
-    { href: "/", icon: Token2049, text: "media.section-media.featured.items.token2049" },
-    { href: "/", icon: BitcoinDotCom, text: "media.section-media.featured.items.bitcoindotcom" },
-    { href: "/", icon: EthCC, text: "media.section-media.featured.items.ethcc" },
-  ],
+
   presentations: [
     { link: "https://www.youtube.com/embed/m-NGxJfS0mw?start=12", text: "media.section-media.presentations.items.1" },
     { link: "https://www.youtube.com/embed/lPeca1h4auI?start=11", text: "media.section-media.presentations.items.2" },
@@ -54,21 +42,21 @@ const CONTENT = {
   ],
 
   promo: [
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.1" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.3" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.4" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.6" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.7" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.8" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.9" },
+    { link: "https://www.youtube.com/embed/bVL3ZJ8HNwE", text: "media.section-media.promo.items.1" },
+    { link: "https://www.youtube.com/embed/vRhD5WnUX3k", text: "media.section-media.promo.items.2" },
+    { link: "https://www.youtube.com/embed/c6YZId8hbqI", text: "media.section-media.promo.items.3" },
+    { link: "https://www.youtube.com/embed/IMDLJgTKDNw", text: "media.section-media.promo.items.4" },
+    { link: "https://www.youtube.com/embed/-zkRXcd1lMg", text: "media.section-media.promo.items.5" },
+    { link: "https://www.youtube.com/embed/bag2M9rGAbE", text: "media.section-media.promo.items.6" },
+    { link: "https://www.youtube.com/embed/nlFhHeiyB6A", text: "media.section-media.promo.items.7" },
+    { link: "https://www.youtube.com/embed/x0oC0GpDUbM", text: "media.section-media.promo.items.8" },
+    { link: "https://www.youtube.com/embed/M-nzG3C8RUc", text: "media.section-media.promo.items.9" },
   ],
 };
 
 const Media = ({ intl }) => (
   <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({id: 'media.seo-title'})} />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "media.seo-title" })} />
 
     <div className={styles.media}>
       <section className={styles.sectionHeader}>
@@ -138,7 +126,7 @@ const Media = ({ intl }) => (
               {category[0] === "conference" && (
                 <>
                   <div className="iframe-container mt-5">
-                    <iframe title='conference' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="100%"></iframe>
+                    <iframe title="conference" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src="https://www.youtube.com/embed/hC9JgzuXzMk" width="100%"></iframe>
                     <span>
                       <FormattedMessage id="media.section-media.conference.items.1" />
                     </span>

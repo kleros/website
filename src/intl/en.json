@@ -375,15 +375,15 @@
         "nav-title": "Promo Videos",
         "title": "Promo Videos",
         "items": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "7": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "8": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "9": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+          "1": "Kleros Decentralized Courts",
+          "2": "Kleros Courts Explainer",
+          "3": "Dispute Revolution - The Kleros Book",
+          "4": "Kleros Dapp Showcase,",
+          "5": "Kleros Protocol: Curated Lists x Escrow x Athena V2.0",
+          "6": "Kleros - Blockchain Dispute Resolution Built on Ethereal",
+          "7": "Dogelist - P + Epsilon: The Trailer No One Asked For",
+          "8": "Clement Makes Tea",
+          "9": "Kleros Meet The Team"
         }
       },
       "conference": {
@@ -392,15 +392,19 @@
         "subtitle": "Kleros Conference of Decentralized Justice",
         "paragraph": "On March 2nd, 2020, Coopérative Kleros and the Paris Center for Law and Economics (CRED) convened the 'Dispute Revolution: the Birth of Decentralized Justice' conference at the Sainte Barbe Amphitheatre at Paris III New Sorbonne University.",
         "items": {
-          "1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "5": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "6": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "7": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "8": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "9": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+          "1": "Kleros-CRED Dispute Revolution Conference - Introducing Kleros Layer 2",
+          "2": "Kleros-CRED Dispute Revolution Conference - Kleros Handbook of Justice, Augmented",
+          "3": "Kleros-CRED Dispute Revolution Conference - 'Make a Claim', a Layer 2 Company",
+          "4": "Kleros-CRED Dispute Revolution Conference - Legal implications of Decentralized Justice",
+          "5": "Kleros-CRED Dispute Revolution Conference - Kleros-Winding Tree",
+          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justuce Fair?",
+          "7": "Kleros-CRED Dispute Revolution Conference - Decentralized Justice Research Challenges",
+          "8": "Kleros-CRED Dispute Revolution Conference - How to Build a Kleros Integration",
+          "9": "Kleros-CRED Dispute Revolution Conference - Challenges in Legal Design",
+          "10": "Kleros-CRED Dispute Revolution Conference - Introducing the Fellowship of Justice",
+          "11": "Kleros-CRED Dispute Revolution Conference - Kleros: Cryptoeconomics and Applications",
+          "12": "Kleros-CRED Dispute Revolution Conference - Blockchains and Networks Structures",
+          "13": "Kleros-CRED Dispute Revolution Conference - Introduction to Decentralized Justice"
         }
       }
     },
