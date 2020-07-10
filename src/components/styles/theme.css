@@ -203,7 +203,7 @@ input::placeholder {
 }
 
 .slick-list {
-  margin: 2rem !important;
+  margin: 2rem 0 !important;
 }
 
 .slick-track {
