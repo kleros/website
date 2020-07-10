@@ -19,7 +19,7 @@ import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
 import styles from "./styles/footer.module.css";
-import { Button, Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 
 const ONEPAGERS = {

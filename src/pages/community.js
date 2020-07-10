@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
-import Members from 'src/assets/images/members.png'
 import Contact from '../components/contact'
 import Telegram from 'src/assets/svgs/telegramColored.svg'
 import Envoy from 'src/assets/svgs/envoy.svg'
@@ -15,13 +13,13 @@ import SouthKorea from 'src/assets/svgs/flags/kr.svg'
 import Portuguese from 'src/assets/svgs/flags/pt.svg'
 import PoH from 'src/assets/svgs/poh.svg'
 import VerticalCard from '../components/vertical-card'
-import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap'
-import { FormattedMessage, Link, injectIntl } from 'gatsby-plugin-intl'
+import { Col, Container, Row } from 'react-bootstrap'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import styles from './styles/community.module.css'
 
 const Community = ({ intl }) => (
   <Layout>
-    <SEO title='Community' />
+    <SEO lang={intl.locale} title={intl.formatMessage({id: 'community.seo-title'})} />
     <div className={styles.community}>
       <section className={styles.hero}>
         <h1>
@@ -35,7 +33,7 @@ const Community = ({ intl }) => (
         <h3 className='bigger bold purple mb-5 mr-4 ml-4'>
           <FormattedMessage id='community.section-members.title' />
         </h3>
-        <iframe height='480' src='https://www.google.com/maps/d/embed?mid=177hy7Cx7opzdjeaZXjHMRx1LdJsbKYEH' width='900' />
+        <iframe title='Community Map' height='480' src='https://www.google.com/maps/d/embed?mid=177hy7Cx7opzdjeaZXjHMRx1LdJsbKYEH' width='900' />
         <h3 className='bigger bold purple mt-5 mb-5 mr-4 ml-4'>
           <FormattedMessage id='community.section-members.telegram' />
         </h3>

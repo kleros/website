@@ -1,30 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
-import MediaCard from "../components/media-card";
 import Contact from "../components/contact";
-import Magnifier from "src/assets/svgs/icon-magnifier.svg";
 import styles from "./styles/integrations.module.css";
-import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
-import copyright from "src/assets/svgs/icon-copyright.svg";
-import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
-import finance from "src/assets/svgs/icon-finance.svg";
-import freelancing from "src/assets/svgs/icon-freelance.svg";
-import insurance from "src/assets/svgs/icon-shield.svg";
-import moderation from "src/assets/svgs/icon-moderation.svg";
-import plus from "src/assets/svgs/icon-plus.svg";
-import smallClaims from "src/assets/svgs/icon-gavel.svg";
-import token from "src/assets/svgs/icon-token.svg";
-import restaurant from "src/assets/svgs/icon-fork-n-knife.svg";
-import hotel from "src/assets/svgs/icon-hotel.svg";
-import spam from "src/assets/svgs/icon-spam.svg";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Github from "src/assets/svgs/github.svg";
-import bounty from "src/assets/svgs/icon-bounty.svg";
-import otc from "src/assets/svgs/icon-otc.svg";
-import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
-import payroll from "src/assets/svgs/icon-payroll.svg";
-import www from "src/assets/svgs/icon-www.svg";
 import Trade from "src/assets/svgs/icon-trade.svg";
 import ECommerce from "src/assets/svgs/icon-e-commerce.svg";
 import Freelancing from "src/assets/svgs/icon-freelance.svg";
@@ -32,16 +12,9 @@ import Moderation from "src/assets/svgs/icon-moderation.svg";
 import ERC792 from "src/assets/svgs/illustration-erc792.svg";
 import ERC1497 from "src/assets/svgs/illustration-erc1497.svg";
 import Archon from "src/assets/svgs/archon.svg";
-import Scales from "src/assets/svgs/icon-scales.svg";
-import Epsilon from "src/assets/svgs/icon-epsilon.svg";
-import Kleros from "src/assets/svgs/icon-kleros.svg";
-import Photo from "src/assets/svgs/icon-photo.svg";
-import Box from "src/assets/svgs/icon-box.svg";
 import Deversifi from "src/assets/images/deversifi.png";
 import Omen from "src/assets/images/omen.png";
 import WindingTree from "src/assets/images/winding-tree-colored.png";
-import Uniswap from "src/assets/svgs/uniswap.svg";
-import IDEX from "src/assets/images/idex.png";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import DutchX from "src/assets/images/dutchx.png";
@@ -50,69 +23,14 @@ import MarketplaceIllustration from "src/assets/svgs/marketplace.svg";
 import BountiesIllustration from "src/assets/svgs/bounties.svg";
 import CurationIllustration from "src/assets/svgs/curation.svg";
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
-import Transak from "src/assets/images/transak.png";
-import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
+import {  Badge } from "react-bootstrap";
 import Categories from "src/intl/en.json";
-import ThomsonReuters from "src/assets/svgs/thomson-reuters-2.svg";
-import DefiPrime from "src/assets/svgs/defiprime.svg";
-import CardRates from "src/assets/svgs/cr-logo.svg";
-import BitcoinDotCom from "../assets/svgs/bitcoindotcom.svg";
-import VentureBeat from "src/assets/svgs/venture-beat.svg";
-import Token2049 from "src/assets/svgs/token2049.svg";
-import Consensus from "src/assets/svgs/consensus.svg";
-import EthCC from "src/assets/svgs/ethcc.svg";
-import VerticalCard from "../components/vertical-card";
 
-const CONTENT = {
-  conference: [
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.1" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.3" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.4" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.6" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.7" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.8" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.conference.items.9" },
-  ],
-  featured: [
-    { href: "/", icon: DefiPrime, text: "media.section-media.featured.items.defiprime" },
-    { href: "/", icon: ThomsonReuters, text: "media.section-media.featured.items.thomsonreuters" },
-    { href: "/", icon: CardRates, text: "media.section-media.featured.items.cardrates" },
-    { href: "/", icon: Consensus, text: "media.section-media.featured.items.consensus" },
-    { href: "/", icon: VentureBeat, text: "media.section-media.featured.items.venturebeat" },
-    { href: "/", icon: Token2049, text: "media.section-media.featured.items.token2049" },
-    { href: "/", icon: BitcoinDotCom, text: "media.section-media.featured.items.bitcoindotcom" },
-    { href: "/", icon: EthCC, text: "media.section-media.featured.items.ethcc" },
-  ],
-  presentations: [
-    { link: "https://www.youtube.com/embed/m-NGxJfS0mw?start=12", text: "media.section-media.presentations.items.1" },
-    { link: "https://www.youtube.com/embed/lPeca1h4auI?start=11", text: "media.section-media.presentations.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.3" },
-    { link: "https://www.youtube.com/embed/PRFn3599CY0?start=23", text: "media.section-media.presentations.items.4" },
-    { link: "https://www.youtube.com/embed/keQKNiyzVGs?start=316", text: "media.section-media.presentations.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.presentations.items.6" },
-    { link: "https://www.youtube.com/embed/8CAL-Vyc-wc", text: "media.section-media.presentations.items.7" },
-    { link: "https://www.youtube.com/embed/DVCzEuEwQGg", text: "media.section-media.presentations.items.8" },
-    { link: "https://www.youtube.com/embed/YmA0E5EE3OY", text: "media.section-media.presentations.items.9" },
-  ],
 
-  promo: [
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.1" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.2" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.3" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.4" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.5" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.6" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.7" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.8" },
-    { link: "https://www.youtube.com/watch?v=CGjivHpfOl", text: "media.section-media.promo.items.9" },
-  ],
-};
 
 const Integrations = ({ intl }) => (
   <Layout>
-    <SEO title="Integrations" />
+    <SEO lang={intl.locale} title={intl.formatMessage({id: 'integrations.seo-title'})}  />
 
     <div className={styles.integrations}>
       <section className={styles.sectionHeader}>
@@ -149,7 +67,7 @@ const Integrations = ({ intl }) => (
                 <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.title`} />
               </h2>
 
-              {category[0] == "exchanges" && (
+              {category[0] === "exchanges" && (
                 <>
                   <div className={styles.card}>
                     <Trade />
@@ -169,16 +87,16 @@ const Integrations = ({ intl }) => (
 
                     <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
-                      <img src={Deversifi} />
+                      <img src={Deversifi}  alt='Deversifi' />
                     </Badge>
                     <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
-                      <img src={DutchX} />
+                      <img src={DutchX}  alt='DutchX' />
                     </Badge>
                   </div>
                 </>
               )}
-              {category[0] == "marketplaces" && (
+              {category[0] === "marketplaces" && (
                 <>
                   <div className={styles.card}>
                     <ECommerce />
@@ -192,7 +110,7 @@ const Integrations = ({ intl }) => (
                   <MarketplaceIllustration />
                 </>
               )}
-              {category[0] == "bounties" && (
+              {category[0] === "bounties" && (
                 <>
                   <div className={styles.card}>
                     <Freelancing />
@@ -206,7 +124,7 @@ const Integrations = ({ intl }) => (
                   <BountiesIllustration />
                 </>
               )}
-              {category[0] == "curation" && (
+              {category[0] === "curation" && (
                 <>
                   <div className={styles.card}>
                     <Moderation />
@@ -228,7 +146,7 @@ const Integrations = ({ intl }) => (
               <h2>
                 <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.title`} />
               </h2>
-              {category[0] == "erc792" && (
+              {category[0] === "erc792" && (
                 <div className={styles.card}>
                   <h2>
                     <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
@@ -245,7 +163,7 @@ const Integrations = ({ intl }) => (
                   </div>
                 </div>
               )}
-              {category[0] == "erc1497" && (
+              {category[0] === "erc1497" && (
                 <>
                   <div className={styles.card}>
                     <h2>
@@ -264,7 +182,7 @@ const Integrations = ({ intl }) => (
                   </div>
                 </>
               )}
-              {category[0] == "archon" && (
+              {category[0] === "archon" && (
                 <>
                   <div className={styles.card}>
                     <h2>
@@ -307,27 +225,27 @@ const Integrations = ({ intl }) => (
         <div>
           <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Deversifi} />
+            <img src={Deversifi}  alt='Deversifi' />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Omen} />
+            <img src={Omen} alt='Omen'/>
           </Badge>
           <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={DutchX} />
+            <img src={DutchX} alt='DutchX'/>
           </Badge>
           <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={WindingTree} />
+            <img src={WindingTree}  alt='WindingTree'/>
           </Badge>
           <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Realitio} />
+            <img src={Realitio}  alt='Realitio' />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={CryptoUnlocked} />
+            <img src={CryptoUnlocked}  alt='CryptoUnlocked' />
           </Badge>
         </div>
       </section>

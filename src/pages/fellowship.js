@@ -97,7 +97,7 @@ const Fellowship = ({ intl, data }) => {
   console.log(data);
   return (
     <Layout>
-      <SEO title="Fellowship" />
+      <SEO lang={intl.locale} title={intl.formatMessage({id: 'fellowship.seo-title'})}  />
       <div className={styles.fellowship}>
         <section className={`pb-0 ${styles.hero} `}>
           <FellowshipBadge />
@@ -150,11 +150,11 @@ const Fellowship = ({ intl, data }) => {
             {Config.siteMetadata.teamMembers
               .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
               .map((member, index) => {
-                if (data.allSitePage.edges.find((object) => object.node.path == `/${member.name.toLowerCase().split(/(\s)/).slice(-1)}/`))
+                if (data.allSitePage.edges.find((object) => object.node.path === `/${member.name.toLowerCase().split(/(\s)/).slice(-1)}/`))
                   return (
                     <Link className="no-gutters" key={index} style={{ display: "contents" }} to={`/${member.name.toLowerCase().split(" ").slice(-1)}`}>
                       <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
-                        <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
+                        <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} alt={member.name} />
                         <div className={styles.overlay}>
                           <span>{member.name} </span>
                           <span>{member.title}</span>
@@ -167,7 +167,7 @@ const Fellowship = ({ intl, data }) => {
                   );
                 return (
                   <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
-                    <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
+                    <img src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} alt={member.name} />
                     <div className={styles.overlay}>
                       <span>{member.name} </span>
                       <span>{member.title}</span>
@@ -188,12 +188,12 @@ const Fellowship = ({ intl, data }) => {
               {Object.entries(Questions.fellowship["section-faq"]).map((question, index) => (
                 <>
                   <Card key={index}>
-                    <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={index}>
+                    <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={`key${index}`}>
                       <span className={`${activeKey === index ? styles.closed : styles.open}`}>
                         <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
                       </span>
                     </Accordion.Toggle>
-                    <Accordion.Collapse eventKey={index}>
+                    <Accordion.Collapse eventKey={`key${index}`}>
                       <Card.Body className={styles.cardBody}>
                         <FormattedMessage
                           id={`fellowship.section-faq.${index + 1}.a`}

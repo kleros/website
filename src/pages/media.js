@@ -1,36 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 import MediaCard from "../components/media-card";
 import Contact from "../components/contact";
-import Magnifier from "src/assets/svgs/icon-magnifier.svg";
 import styles from "./styles/media.module.css";
-import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
-import copyright from "src/assets/svgs/icon-copyright.svg";
-import eCommerce from "src/assets/svgs/icon-e-commerce.svg";
-import finance from "src/assets/svgs/icon-finance.svg";
-import freelancing from "src/assets/svgs/icon-freelance.svg";
-import insurance from "src/assets/svgs/icon-shield.svg";
-import moderation from "src/assets/svgs/icon-moderation.svg";
-import plus from "src/assets/svgs/icon-plus.svg";
-import smallClaims from "src/assets/svgs/icon-gavel.svg";
-import token from "src/assets/svgs/icon-token.svg";
-import restaurant from "src/assets/svgs/icon-fork-n-knife.svg";
-import hotel from "src/assets/svgs/icon-hotel.svg";
-import spam from "src/assets/svgs/icon-spam.svg";
-import social from "src/assets/svgs/icon-speaker.svg";
-import bounty from "src/assets/svgs/icon-bounty.svg";
-import otc from "src/assets/svgs/icon-otc.svg";
-import crowdfunding from "src/assets/svgs/icon-crowdfunding.svg";
-import payroll from "src/assets/svgs/icon-payroll.svg";
-import www from "src/assets/svgs/icon-www.svg";
-import Scales from "src/assets/svgs/icon-scales.svg";
-import Epsilon from "src/assets/svgs/icon-epsilon.svg";
-import Kleros from "src/assets/svgs/icon-kleros.svg";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+
 import Photo from "src/assets/svgs/icon-photo.svg";
 import Box from "src/assets/svgs/icon-box.svg";
-import { Accordion, Badge, Card, Col, Container, FormControl, InputGroup, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Categories from "src/intl/en.json";
 import ThomsonReuters from "src/assets/images/thomsonreuters.png";
 import DefiPrime from "src/assets/images/defiprime.png";
@@ -90,7 +68,7 @@ const CONTENT = {
 
 const Media = ({ intl }) => (
   <Layout>
-    <SEO title="Media" />
+    <SEO lang={intl.locale} title={intl.formatMessage({id: 'media.seo-title'})} />
 
     <div className={styles.media}>
       <section className={styles.sectionHeader}>
@@ -126,18 +104,18 @@ const Media = ({ intl }) => (
                   <FormattedMessage id={`media.section-media.${category[0]}.paragraph`} />
                 </p>
               )}
-              {category[0] == "featured" && (
+              {category[0] === "featured" && (
                 <div className={styles.cards}>
                   {CONTENT.featured.map((item, index) => (
                     <MediaCard content={{ href: item.href, icon: item.icon, text: intl.formatMessage({ id: item.text }) }} key={index} />
                   ))}
                 </div>
               )}
-              {category[0] == "presentations" && (
+              {category[0] === "presentations" && (
                 <div className={styles.cards}>
                   {CONTENT.presentations.map((item, index) => (
                     <div key={index}>
-                      <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                      <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
                       <span>
                         <FormattedMessage id={item.text} />
                       </span>
@@ -145,11 +123,11 @@ const Media = ({ intl }) => (
                   ))}
                 </div>
               )}
-              {category[0] == "promo" && (
+              {category[0] === "promo" && (
                 <div className={styles.cards}>
                   {CONTENT.promo.map((item, index) => (
                     <div key={index}>
-                      <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                      <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
                       <span>
                         <FormattedMessage id={item.text} />
                       </span>
@@ -157,10 +135,10 @@ const Media = ({ intl }) => (
                   ))}
                 </div>
               )}
-              {category[0] == "conference" && (
+              {category[0] === "conference" && (
                 <>
                   <div className="iframe-container mt-5">
-                    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="100%"></iframe>
+                    <iframe title='conference' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="100%"></iframe>
                     <span>
                       <FormattedMessage id="media.section-media.conference.items.1" />
                     </span>
@@ -168,7 +146,7 @@ const Media = ({ intl }) => (
                   <div className={styles.cards}>
                     {CONTENT.conference.slice(1).map((item, index) => (
                       <div key={index}>
-                        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                        <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
                         <span>
                           <FormattedMessage id={item.text} />
                         </span>

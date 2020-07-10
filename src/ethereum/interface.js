@@ -16,9 +16,6 @@ const imports = {
 }
 
 const web3 = new Web3(new Web3.providers.HttpProvider(process.env.GATSBY_WEB3_PROVIDER_URL))
-console.log(web3)
-
-const instances = {}
 
 export const contractInstance = (interfaceName, address) => new web3.eth.Contract(imports[interfaceName].abi, address)
 
