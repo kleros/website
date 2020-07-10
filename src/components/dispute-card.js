@@ -8,7 +8,7 @@ import styles from './styles/dispute-card.module.css'
 import Countdown from 'react-countdown-now'
 import { Card } from 'react-bootstrap'
 
-const Completionist = () => <span>You are good to go!</span>
+const Completionist = () => <span>passed</span>
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
