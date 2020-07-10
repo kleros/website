@@ -57,6 +57,11 @@
         "paragraph": "Kleros works in a wide variety of industries."
       }
     },
+    "section-disputes": {
+      "title": "See Kleros in action",
+      "subtitle": "Navigate in some of the recent cases",
+      "loading": "Loading"
+    },
     "section-use-case": {
       "h1": "Use Cases",
       "h2": "As the economy becomes global and digital, disputes arise in many areas that cannot be solved by courts or traditional arbitration systems. Kleros can solve them in a fast, affordable and secure way.",

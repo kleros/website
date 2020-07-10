@@ -104,3 +104,31 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+.index .disputes {
+  background-color: var(--color-pink-lightest);
+}
+
+.index .disputesContent {
+  margin-top: 5rem;
+}
+
+.index .disputes h1,
+.index .disputes h2 {
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.index .dotClass {
+  color: red;
+}
+
+.index .spinner {
+  color: var(--color-purple);
+}
+
+.index .loading {
+  margin-bottom: 1rem;
+  font-size: var(--font-size-medium);
+  color: var(--color-purple);
+}

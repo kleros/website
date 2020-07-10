@@ -19,6 +19,7 @@
   --color-blue: #009aff;
   --color-gray: #333;
   --color-gray-light: #999;
+  --color-red: #f60c36;
 }
 
 .white {
@@ -199,4 +200,24 @@ input::placeholder {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
+}
+
+.slick-list {
+  margin: 2rem !important;
+}
+
+.slick-track {
+  margin-bottom: 3rem !important;
+}
+
+.slick-dots > li {
+  transform: scale(2);
+}
+
+.slick-dots > li > button::before {
+  color: var(--color-blue) !important;
+}
+
+*:focus {
+  outline: none;
 }
