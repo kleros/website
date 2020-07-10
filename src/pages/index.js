@@ -244,6 +244,7 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
+          {process.env.GATSBY_WEB3_PROVIDER_URL && (
           <section className={styles.disputes}>
             <h1>
               <FormattedMessage id="index.section-disputes.title" />
@@ -251,40 +252,41 @@ class IndexPage extends React.Component {
             <h2>
               <FormattedMessage id="index.section-disputes.subtitle" />
             </h2>
-            <div className={styles.disputesContent}>
-              {!(subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length) && (
-                <>
-                  <div className={styles.loading}>
-                    <FormattedMessage id="index.section-disputes.loading" />
-                  </div>
-                  <Spinner className={styles.spinner} animation="grow" />
-                </>
-              )}
-              {subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length && (
-                <Slider {...sliderSettings}>
-                  {Object.entries(this.state.disputes).map((d, i) => (
-                    <div key={i}>
-                      <DisputeCard
-                        content={{
-                          court: subcourtDetails[d[1].subcourtID].name,
-                          id: d[0],
-                          title: metaEvidences[d[0]] ? metaEvidences[d[0]].title : "asd",
-                          reward: new BigNumber(subcourtsExtra[d[1].subcourtID].feeForJuror).div(new BigNumber("10").pow(new BigNumber("18"))).toString(),
-                          stake: new BigNumber(subcourtsExtra[d[1].subcourtID].minStake)
-                            .times(new BigNumber(subcourtsExtra[d[1].subcourtID].alpha))
-                            .div("10000")
-                            .div(new BigNumber("10").pow(new BigNumber("18")))
-                            .toString(),
-                          period: PERIODS[parseInt(d[1].period)],
-                          deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[d[1].period]))).toNumber(),
-                        }}
-                      />
+              <div className={styles.disputesContent}>
+                {!(subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length) && (
+                  <>
+                    <div className={styles.loading}>
+                      <FormattedMessage id="index.section-disputes.loading" />
                     </div>
-                  ))}
-                </Slider>
-              )}
-            </div>
+                    <Spinner className={styles.spinner} animation="grow" />
+                  </>
+                )}
+                {subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length && (
+                  <Slider {...sliderSettings}>
+                    {Object.entries(this.state.disputes).map((d, i) => (
+                      <div key={i}>
+                        <DisputeCard
+                          content={{
+                            court: subcourtDetails[d[1].subcourtID].name,
+                            id: d[0],
+                            title: metaEvidences[d[0]] ? metaEvidences[d[0]].title : "asd",
+                            reward: new BigNumber(subcourtsExtra[d[1].subcourtID].feeForJuror).div(new BigNumber("10").pow(new BigNumber("18"))).toString(),
+                            stake: new BigNumber(subcourtsExtra[d[1].subcourtID].minStake)
+                              .times(new BigNumber(subcourtsExtra[d[1].subcourtID].alpha))
+                              .div("10000")
+                              .div(new BigNumber("10").pow(new BigNumber("18")))
+                              .toString(),
+                            period: PERIODS[parseInt(d[1].period)],
+                            deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[d[1].period]))).toNumber(),
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                )}
+              </div>
           </section>
+        )}
           <section className={styles.usecases}>
             <div className="iframe-container">
               <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560" />
