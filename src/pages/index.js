@@ -179,8 +179,8 @@ class IndexPage extends React.Component {
   };
 
   async componentDidMount() {
-    this.getSubcourts();
-    await this.getOpenDisputesOnCourt();
+    // this.getSubcourts();
+    // await this.getOpenDisputesOnCourt();
   }
   render() {
     const { intl } = this.props;
@@ -244,14 +244,14 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-          {process.env.GATSBY_WEB3_PROVIDER_URL && (
-          <section className={styles.disputes}>
-            <h1>
-              <FormattedMessage id="index.section-disputes.title" />
-            </h1>
-            <h2>
-              <FormattedMessage id="index.section-disputes.subtitle" />
-            </h2>
+          {1 == 0 && process.env.GATSBY_WEB3_PROVIDER_URL && (
+            <section className={styles.disputes}>
+              <h1>
+                <FormattedMessage id="index.section-disputes.title" />
+              </h1>
+              <h2>
+                <FormattedMessage id="index.section-disputes.subtitle" />
+              </h2>
               <div className={styles.disputesContent}>
                 {!(subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length) && (
                   <>
@@ -285,8 +285,8 @@ class IndexPage extends React.Component {
                   </Slider>
                 )}
               </div>
-          </section>
-        )}
+            </section>
+          )}
           <section className={styles.usecases}>
             <div className="iframe-container">
               <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560" />
