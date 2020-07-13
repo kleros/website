@@ -32,7 +32,7 @@
 .disputeCard .header svg {
   width: 1.4rem;
   margin-right: 1rem;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
 }
 
 .disputeCard .header > span {

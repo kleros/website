@@ -15,7 +15,7 @@ const imports = {
   PolicyRegistry
 }
 
-const web3 = new Web3(new Web3.providers.HttpProvider(process.env.GATSBY_WEB3_PROVIDER_URL))
+var web3 = new Web3(new Web3.providers.WebsocketProvider(process.env.GATSBY_WEB3_PROVIDER_URL))
 
 export const contractInstance = (interfaceName, address) => new web3.eth.Contract(imports[interfaceName].abi, address)
 
