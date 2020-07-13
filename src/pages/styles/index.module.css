@@ -109,6 +109,13 @@
   background-color: var(--color-pink-lightest);
 }
 
+@media (max-width: 400px) {
+  .index .disputes {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 .index .disputesContent {
   margin-top: 5rem;
 }

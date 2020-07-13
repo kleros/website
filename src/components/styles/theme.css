@@ -208,6 +208,8 @@ input::placeholder {
 
 .slick-track {
   margin-bottom: 3rem !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-dots > li {
