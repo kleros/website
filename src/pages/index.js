@@ -179,8 +179,8 @@ class IndexPage extends React.Component {
   };
 
   async componentDidMount() {
-    // this.getSubcourts();
-    // await this.getOpenDisputesOnCourt();
+    this.getSubcourts();
+    await this.getOpenDisputesOnCourt();
   }
   render() {
     const { intl } = this.props;
@@ -244,7 +244,7 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-          {1 == 0 && process.env.GATSBY_WEB3_PROVIDER_URL && (
+          {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>
               <h1>
                 <FormattedMessage id="index.section-disputes.title" />
