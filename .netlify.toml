@@ -10,7 +10,7 @@ to = "/:splat"
 status = 301
 force = false
 
-[redirects]]
+[[redirects]]
 from = "/ko/*"
 to = "/:splat"
 status = 301
