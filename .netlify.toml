@@ -3,3 +3,13 @@
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+/fr/*  /:splat
+/ko/*  /:splat
+/es/*  /:splat
+/ru/*  /:splat
+/tr/*  /:splat
+/pt/*  /:splat
+/zh/*  /:splat
+/pt-br/*  /:splat

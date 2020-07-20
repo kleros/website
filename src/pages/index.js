@@ -122,7 +122,7 @@ class IndexPage extends React.Component {
 
     openDisputeIDs
       .sort()
-      .slice(-9)
+      .slice(-6)
       .map((arbitratorDispute) => {
         this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
           this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
