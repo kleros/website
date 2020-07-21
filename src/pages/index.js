@@ -39,6 +39,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
+import lscache from "lscache";
+import assert from "assert";
 
 import Archon from "@kleros/archon";
 import BigNumber from "bignumber.js";
@@ -90,6 +92,8 @@ const sliderSettings = {
 
 const PERIODS = ["Evidence", "Commit", "Vote", "Appeal", "Execution"];
 
+const NO_OF_RECENT_DISPUTES = 6;
+
 class IndexPage extends React.Component {
   constructor(props) {
     console.log(process.env.GATSBY_WEB3_PROVIDER_URL);
@@ -122,9 +126,9 @@ class IndexPage extends React.Component {
 
     openDisputeIDs
       .sort()
-      .slice(-6)
+      .slice(-NO_OF_RECENT_DISPUTES)
       .map((arbitratorDispute) => {
-        this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
+        this.getArbitratorDispute(arbitratorDispute).then((arbitratorDisputeDetails) => {
           this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
           this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute)
             .then((metaevidence) => {
@@ -140,6 +144,7 @@ class IndexPage extends React.Component {
   };
 
   getSubcourts = async () => {
+    console.log("Fetching subcourts");
     let counter = 0,
       subcourts = [],
       subcourtsExtra = [],
@@ -159,33 +164,47 @@ class IndexPage extends React.Component {
       subcourtsExtra[i] = this.getCourts(i);
     }
 
-    await this.setState({
-      subcourtDetails: await Promise.all(
-        subcourtURIs.map((promise) =>
-          promise.then((subcourtURI) => {
-            if (subcourtURI.length > 0) {
-              if (subcourtURI.includes("http")) {
-                return fetch(subcourtURI).then((response) => response.json());
-              } else {
-                return fetch("https://ipfs.kleros.io" + subcourtURI).then((response) => response.json());
-              }
+    const subcourtDetails = await Promise.all(
+      subcourtURIs.map((promise) =>
+        promise.then((subcourtURI) => {
+          if (subcourtURI.length > 0) {
+            if (subcourtURI.includes("http")) {
+              return fetch(subcourtURI).then((response) => response.json());
+            } else {
+              return fetch("https://ipfs.kleros.io" + subcourtURI).then((response) => response.json());
             }
-          })
-        )
-      ),
-      subcourts: await Promise.all(subcourts),
-      subcourtsExtra: await Promise.all(subcourtsExtra),
+          }
+        })
+      )
+    );
+    subcourts = await Promise.all(subcourts);
+    subcourtsExtra = await Promise.all(subcourtsExtra);
+
+    await this.setState({
+      subcourtDetails,
+      subcourts,
+      subcourtsExtra,
     });
   };
 
   async componentDidMount() {
-    this.getSubcourts();
+    if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
+      await this.getSubcourts();
+      console.log("court cache set");
+      lscache.set("subcourtDetails", this.state.subcourtDetails, 1440);
+      lscache.set("subcourts", this.state.subcourts, 1440);
+      lscache.set("subcourtsExtra", this.state.subcourtsExtra, 1440);
+    } else {
+      console.log("cache hit");
+      await this.setState({ subcourts: lscache.get("subcourts"), subcourtDetails: lscache.get("subcourtDetails"), subcourtsExtra: lscache.get("subcourtsExtra") });
+    }
+
     await this.getOpenDisputesOnCourt();
   }
   render() {
     const { intl } = this.props;
 
-    const { subcourtDetails, metaEvidences, disputes, subcourtsExtra, subcourts } = this.state;
+    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra } = this.state;
 
     console.log(this.state);
     return (
@@ -253,7 +272,7 @@ class IndexPage extends React.Component {
                 <FormattedMessage id="index.section-disputes.subtitle" />
               </h2>
               <div className={styles.disputesContent}>
-                {!(subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length) && (
+                {!(disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES) && (
                   <>
                     <div className={styles.loading}>
                       <FormattedMessage id="index.section-disputes.loading" />
@@ -261,7 +280,7 @@ class IndexPage extends React.Component {
                     <Spinner className={styles.spinner} animation="grow" />
                   </>
                 )}
-                {subcourtDetails && Object.keys(disputes).length === Object.keys(metaEvidences).length && (
+                {disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES && (
                   <Slider {...sliderSettings}>
                     {Object.entries(this.state.disputes).map((d, i) => (
                       <div key={i}>
