@@ -296,7 +296,6 @@ class IndexPage extends React.Component {
                               .div(new BigNumber("10").pow(new BigNumber("18")))
                               .toString(),
                             period: PERIODS[parseInt(d[1].period)],
-                            deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[d[1].period]))).toNumber(),
                           }}
                         />
                       </div>
