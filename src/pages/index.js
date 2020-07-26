@@ -127,13 +127,13 @@ class IndexPage extends React.Component {
     openDisputeIDs
       .sort()
       .slice(-NO_OF_RECENT_DISPUTES)
-      .map((arbitratorDispute) => {
-        this.getArbitratorDispute(arbitratorDispute).then((arbitratorDisputeDetails) => {
-          this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
-          this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute)
-            .then((metaevidence) => {
+      .map(async (arbitratorDispute) => {
+        await this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
+          await this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
+          await this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute)
+            .then(async (metaevidence) => {
               console.log(metaevidence);
-              this.setState((prevState) => ({ ...prevState, metaEvidences: { ...prevState.metaEvidences, [arbitratorDispute]: metaevidence } }));
+              await this.setState((prevState) => ({ ...prevState, metaEvidences: { ...prevState.metaEvidences, [arbitratorDispute]: metaevidence } }));
             })
             .catch((error) => {
               console.error(error);
@@ -282,6 +282,7 @@ class IndexPage extends React.Component {
                 )}
                 {disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES && (
                   <Slider {...sliderSettings}>
+                    {Object.entries(this.state.disputes).map((d, i) => console.log(d))}
                     {Object.entries(this.state.disputes).map((d, i) => (
                       <div key={i}>
                         <DisputeCard
@@ -296,6 +297,8 @@ class IndexPage extends React.Component {
                               .div(new BigNumber("10").pow(new BigNumber("18")))
                               .toString(),
                             period: PERIODS[parseInt(d[1].period)],
+
+                            deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[new BigNumber("1")]))).toNumber(),
                           }}
                         />
                       </div>
