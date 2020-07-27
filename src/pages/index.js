@@ -96,7 +96,6 @@ const NO_OF_RECENT_DISPUTES = 6;
 
 class IndexPage extends React.Component {
   constructor(props) {
-    console.log(process.env.GATSBY_WEB3_PROVIDER_URL);
     super(props);
     this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY) };
   }
@@ -132,19 +131,19 @@ class IndexPage extends React.Component {
           await this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
           await this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute)
             .then(async (metaevidence) => {
-              console.log(metaevidence);
               await this.setState((prevState) => ({ ...prevState, metaEvidences: { ...prevState.metaEvidences, [arbitratorDispute]: metaevidence } }));
             })
-            .catch((error) => {
-              console.error(error);
-            });
+            .then(() => {
+              lscache.set("disputes", this.state.disputes, 7200);
+              lscache.set("metaEvidences", this.state.metaEvidences, 7200);
+            })
+            .catch((error) => {});
         });
-        return null;
+        return [this.state.disputes, this.state.metaEvidences];
       });
   };
 
   getSubcourts = async () => {
-    console.log("Fetching subcourts");
     let counter = 0,
       subcourts = [],
       subcourtsExtra = [],
@@ -190,23 +189,24 @@ class IndexPage extends React.Component {
   async componentDidMount() {
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();
-      console.log("court cache set");
-      lscache.set("subcourtDetails", this.state.subcourtDetails, 1440);
-      lscache.set("subcourts", this.state.subcourts, 1440);
-      lscache.set("subcourtsExtra", this.state.subcourtsExtra, 1440);
+      lscache.set("subcourtDetails", this.state.subcourtDetails, 14400);
+      lscache.set("subcourts", this.state.subcourts, 14400);
+      lscache.set("subcourtsExtra", this.state.subcourtsExtra, 14400);
     } else {
-      console.log("cache hit");
       await this.setState({ subcourts: lscache.get("subcourts"), subcourtDetails: lscache.get("subcourtDetails"), subcourtsExtra: lscache.get("subcourtsExtra") });
     }
 
-    await this.getOpenDisputesOnCourt();
+    if (!lscache.get("disputes") || !lscache.get("metaEvidences")) {
+      await this.getOpenDisputesOnCourt();
+    } else {
+      await this.setState({ disputes: lscache.get("disputes"), metaEvidences: lscache.get("metaEvidences") });
+    }
   }
   render() {
     const { intl } = this.props;
 
     const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra } = this.state;
 
-    console.log(this.state);
     return (
       <Layout>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
@@ -282,7 +282,6 @@ class IndexPage extends React.Component {
                 )}
                 {disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES && (
                   <Slider {...sliderSettings}>
-                    {Object.entries(this.state.disputes).map((d, i) => console.log(d))}
                     {Object.entries(this.state.disputes).map((d, i) => (
                       <div key={i}>
                         <DisputeCard
