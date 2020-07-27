@@ -1,0 +1,76 @@
+.footer {
+  position: relative;
+}
+
+.footer .scrollback {
+  background: var(--color-purple) !important;
+  width: 4rem !important;
+  font-size: 2rem !important;
+  color: white;
+  border-radius: 100% !important;
+  height: auto !important;
+  position: absolute;
+  top: -1.3rem;
+  left: 80%;
+  box-shadow: none !important;
+  min-width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(300px - 8vw);
+  min-height: 120px;
+}
+
+.footer > div > div > div:nth-child(3) {
+  text-align: -webkit-right;
+}
+
+.footer > div > div > div:nth-child(2) {
+}
+
+.footer svg path {
+  fill: white;
+}
+
+.footer > div > div:nth-child(3) {
+  justify-content: center;
+}
+
+.footer .bottomContainer {
+}
+
+.footer .social {
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.footer .social > a > svg {
+  width: 2rem;
+}
+
+@media (max-width: 500px) {
+  .footer .social > a > svg {
+    width: 1.4rem;
+  }
+}
+
+.footer .subscribe > div > input {
+  height: unset;
+  border: none;
+  z-index: 1;
+}
+
+.footer .subscribe > div > div > button {
+  margin-left: -35px;
+  z-index: 30 !important;
+  width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 300px !important;
+}

@@ -1,0 +1,34 @@
+.sash {
+  background: white;
+  padding: 3vh 0;
+  text-align: center;
+  max-width: 100%;
+}
+
+.sash span {
+  display: block;
+}
+
+.sash figcaption {
+  color: var(--color-gray);
+  padding-top: 2.2rem;
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+}
+
+.sash .text {
+  color: var(--color-gray-light);
+
+  font-size: var(--font-size-medium);
+}
+
+.sash figure {
+}
+
+.sash figure > svg {
+  max-width: 12rem;
+}
+
+.sash .column {
+  padding: 2rem 2vmax;
+}

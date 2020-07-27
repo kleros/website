@@ -1,0 +1,43 @@
+.bio .hero {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: bottom -20vw right 50%;
+  background-size: 70%;
+}
+
+.bio .main {
+  background: linear-gradient(144.65deg, #4d00b4 1.44%, #1e075f 54.29%);
+}
+
+.bio .buttonWrapper {
+  clear: both;
+}
+
+.bio .text {
+  word-break: keep-all;
+}
+
+.bio img {
+  margin: 2rem;
+  margin-top: 0;
+  margin-left: 0;
+  float: left;
+}
+
+.bio p {
+  font-size: var(--font-size-medium);
+  text-align: left;
+  font-weight: var(--font-weight-bold);
+}
+
+.bio h3 {
+  text-align: left;
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-bold);
+}
+
+.bio a {
+}
+
+.bio hr {
+  margin-top: 6rem;
+}

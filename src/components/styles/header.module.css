@@ -1,0 +1,134 @@
+.header {
+  background-color: var(--color-purple-darkest);
+}
+
+.header .brand {
+  width: 8rem;
+  height: auto;
+}
+
+.header a,
+.header button,
+.header p {
+  font-weight: 500;
+}
+
+.header button,
+.header button:hover,
+.header button:active,
+.header button:focus,
+.header button:link {
+  text-align: left;
+  box-shadow: none;
+  background-color: transparent;
+  color: white;
+}
+
+.header span,
+.header span:active,
+.header span:hover,
+.header span:focus,
+.header span:link {
+  box-shadow: none;
+  border: none;
+}
+
+.header .dapps p {
+  font-weight: var(--font-weight-bold);
+}
+
+.header nav div div div {
+  background-color: transparent;
+  opacity: 1;
+  border: none;
+}
+
+.header .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.header .dapps div div span:not(.helper) {
+  background-color: white;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
+  border-radius: 24px;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
+  border: 0.952296px solid #ffffff;
+  width: 8rem;
+  height: 8rem;
+  padding: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .header nav > div > div:nth-child(2) > div > div {
+    margin-top: 1rem !important;
+  }
+
+  .header nav div div:nth-child(1) button:not([class~="collapsed"])::after {
+    background-color: white;
+    content: "";
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    left: 50%;
+    bottom: -29px;
+
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .header nav div div:nth-child(1) button[class~="collapsed"]::after {
+    content: " ";
+    display: inline-block;
+    border-top: 0.6ex solid transparent;
+    border-bottom: 0.6ex solid transparent;
+    border-left: 0.6ex solid;
+    vertical-align: middle;
+    transform: translateY(-0.1rem);
+    margin-left: 0.5rem;
+    transform: rotate(90deg) translateX(0px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .header nav div div:nth-child(1) button[class~="collapsed"]::after {
+    transform: rotate(90deg) translateX(0px);
+  }
+
+  .header nav div div:nth-child(1) button::after {
+    content: " ";
+    display: inline-block;
+    border-top: 0.6ex solid transparent;
+    border-bottom: 0.6ex solid transparent;
+    border-left: 0.6ex solid;
+    vertical-align: middle;
+    transform: translateY(-0.1rem);
+    margin-left: 0.5rem;
+  }
+}
+
+.header nav div:nth-child(2) > div > a:after,
+.header nav div:nth-child(2) > div > a:before {
+  content: none;
+}
+
+.header nav > div > div:nth-child(2) > div > div > a {
+  display: inline;
+  text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+  .header div > div:nth-child(2) > div > div {
+  }
+
+  .header div > div:nth-child(2) > div > a {
+  }
+}

@@ -1,0 +1,120 @@
+.book > .hero h1 {
+  font-size: var(--font-size-bigger);
+  color: var(--color-pink);
+}
+
+.book > .hero h2 {
+  font-size: var(--font-size-bigger);
+  color: white;
+}
+
+.book > .hero {
+  background: bottom / auto no-repeat url("/book-table.svg");
+}
+
+.book > .hero > div > div {
+  justify-content: space-around;
+}
+
+.book .downloadTitle {
+  font-size: var(--font-size-bigger);
+  color: white;
+}
+
+.book .download {
+  align-self: center;
+}
+
+.book .downloadContainer {
+  height: 50%;
+}
+
+.book .chapters h1 {
+  margin-bottom: 5rem;
+}
+
+.book .content > div {
+  margin-bottom: 2rem;
+  background: var(--color-purple);
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: left;
+}
+
+.book .content > div > div:first-child {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2rem;
+}
+
+.book .content > div > div:nth-child(2) {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-pink);
+}
+
+.book .team {
+  text-align: left;
+  max-width: 100%;
+}
+
+.book .team > div > div > img {
+  width: 100%;
+}
+
+.book .portraitContainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+
+.book .portraitContainer {
+  position: relative;
+}
+
+.book .portraitContainer:hover .overlay {
+  display: flex;
+  opacity: 0.8;
+  background-color: var(--color-purple-light);
+}
+
+.book .overlay {
+  padding: 0 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book .overlay span {
+  display: block;
+  font-size: var(--font-size-medium);
+}
+
+.book .overlay span:first-child {
+  font-weight: var(--font-weight-bold);
+}
+
+.book .social {
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.book .social > a > svg {
+  width: 2rem;
+  fill: white;
+}
+
+.book .social path {
+  fill: white;
+}
+
+.book .buttonWrapper {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

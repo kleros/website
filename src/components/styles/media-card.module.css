@@ -1,0 +1,58 @@
+.mediaCard {
+  background: white;
+  border-radius: 12px;
+  text-align: left;
+  padding: 1.6rem;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.mediaCard span:nth-of-type(1) {
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+  display: block;
+}
+
+.mediaCard span:nth-of-type(2) {
+  font-size: var(--font-size-medium);
+  color: var(--color-pink);
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.mediaCard a {
+  background: none;
+  color: var(--color-blue);
+  text-decoration: none;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.mediaCard img {
+  height: 85%;
+  width: auto;
+}
+
+.mediaCard hr {
+  width: 100%;
+  border: 1px solid var(--color-purple-light);
+  margin: 0;
+}
+
+.mediaCard .logoWrapper {
+  height: 4rem;
+}
+
+.mediaCard .main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 70%;
+}
+
+.mediaCard .btn {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}

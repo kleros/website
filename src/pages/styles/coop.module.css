@@ -1,0 +1,23 @@
+.coop svg {
+  width: 80%;
+}
+
+.coop .steps > h1 {
+  color: var(--color-pink);
+}
+
+.coop .steps > div:nth-of-type(1) {
+  background: left / contain no-repeat url("/1.svg");
+}
+
+.coop .steps > div:nth-of-type(2) {
+  background: left / contain no-repeat url("/2.svg");
+}
+
+.coop .steps > div:nth-of-type(3) {
+  background: left / contain no-repeat url("/3.svg");
+}
+
+.coop .steps > div {
+  margin: 5rem 0;
+}

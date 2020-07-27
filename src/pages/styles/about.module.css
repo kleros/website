@@ -1,0 +1,80 @@
+.about {
+  margin-bottom: 0;
+}
+
+.about .team {
+  text-align: left;
+  max-width: 100%;
+}
+
+.about .team > div > div > img {
+  width: 100%;
+}
+
+.about .portraitContainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+
+.about .portraitContainer {
+  position: relative;
+}
+
+.about .portraitContainer:hover .overlay {
+  display: flex;
+  opacity: 0.8;
+  background-color: var(--color-purple-light);
+}
+
+.about .overlay {
+  padding: 0 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .overlay span {
+  display: block;
+  font-size: var(--font-size-medium);
+}
+
+.about .overlay span:first-child {
+  font-weight: var(--font-weight-bold);
+}
+
+.about .social {
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.about .social > a > svg {
+  width: 2rem;
+  fill: white;
+}
+
+.about .social path {
+  fill: white;
+}
+
+.about .partners > img,
+.about .partners > svg {
+  margin: 1rem 2rem;
+  max-width: 250px;
+  max-height: 70px;
+}
+
+.about .partners > h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.about hr {
+}
+
+.about hr:last-of-type {
+  margin-top: 0;
+}

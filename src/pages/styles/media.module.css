@@ -1,0 +1,163 @@
+.media {
+  text-align: left;
+}
+
+.media .sectionHeader {
+  background: linear-gradient(148.16deg, #4d00b4 15.9%, #1e075f 59.16%);
+  text-align: center;
+}
+
+.media input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding: 1.4rem 1.4rem !important;
+}
+
+.media .prepend span {
+  border: 0;
+  background: var(--color-purple-faded);
+  border-top-left-radius: 300px !important;
+  border-bottom-left-radius: 300px !important;
+  outline: unset;
+  padding: 0 3rem;
+}
+
+.media .prepend svg {
+  width: auto;
+}
+
+.media aside {
+  background: red;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+
+.media #v-pills-home-tab {
+  background-color: red !important;
+}
+
+.media .items {
+  background-color: var(--color-purple-darkest);
+}
+
+.media .items a {
+  font-size: var(--font-size-medium);
+}
+
+.media .items a.active {
+  color: white;
+}
+
+.media .items h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.media .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+}
+
+.media .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+
+.media .card-body {
+  padding-left: 0;
+}
+
+.media .card-header {
+  cursor: pointer;
+}
+
+.media .open::before,
+.media .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.media .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.media .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.media .card-body {
+  color: white;
+}
+
+.media .nav {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 800px) {
+  .media .nav {
+    float: left;
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .media .items > div:nth-child(2) {
+    margin-left: 280px;
+  }
+}
+
+.media .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .media .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .media .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.media span {
+  font-weight: var(--font-weight-bold);
+}
+
+.media h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.media h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-bigger);
+  color: var(--color-pink);
+}
+
+.media p {
+  margin-top: 3rem;
+  font-size: var(--font-size-big);
+}
+
+.media iframe {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

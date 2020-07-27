@@ -1,0 +1,53 @@
+[build]
+publish = "public"
+
+[[plugins]]
+package = "netlify-plugin-gatsby-cache"
+
+[[redirects]]
+from = "/fr/*"
+to = "/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/ko/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/es/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/ru/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/tr/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/pt/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/zh/*"
+to = "/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "/pt-br/*"
+to = "/:splat"
+status = 301
+force = false

@@ -1,448 +1,157 @@
-import React from "react";
-import get from "lodash/get";
-import Helmet from "react-helmet";
-import Modal from "react-responsive-modal";
-import theMeta from "../js/helpers.js";
-import { graphql } from "gatsby";
-import Template from "../components/layout";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Sash from '../components/sash'
+import Deversifi from 'src/assets/images/deversifi.png'
+import Uniswap from 'src/assets/svgs/uniswap.svg'
+import IDEX from 'src/assets/images/idex.png'
+import OneInch from 'src/assets/images/1inch.png'
+import Paraswap from 'src/assets/images/paraswap.jpg'
+import Balancer from 'src/assets/images/balancer.png'
+import Bitfinex from 'src/assets/images/bitfinex.png'
+import Kyber from 'src/assets/images/kyber.png'
+import Ninja from 'src/assets/svgs/ninja-black-text.svg'
+import DexBlue from 'src/assets/svgs/dexblue.svg'
+import Loopring from 'src/assets/svgs/loopring.svg'
+import Transak from 'src/assets/images/transak.png'
+import Kleros from 'src/assets/svgs/icon-kleros.svg'
+import Attack from 'src/assets/svgs/icon-thug.svg'
+import Governance from 'src/assets/svgs/icon-gavel.svg'
+import styles from './styles/token.module.css'
+import PNK from 'src/assets/svgs/pnk-token.svg'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
+import { Badge, Container } from 'react-bootstrap'
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
+const IndexPage = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title={intl.formatMessage({id: 'token.seo-title'})} />
+    <div className={styles.token}>
+      <section className={styles.hero}>
+        <h1>
+          <FormattedMessage id='token.section-hero.h1' />
+        </h1>
+        <h2>
+          <FormattedMessage id='token.section-hero.h2' />
+        </h2>
+        <PNK style={{ marginTop: '2rem', width: '10rem' }} />
+      </section>
+      <section className='light'>
+        <h1 className='purple'>
+          <FormattedMessage id='token.sash.title' />
+        </h1>
+        <Sash
+          as='div'
+          figures={[
+            {
+              icon: Kleros,
+              text: intl.formatMessage({
+                id: 'token.sash.first.paragraph'
+              }),
 
-class RootIndex extends React.Component {
-  state = {
-    firstname: "",
-    lastname: "",
-    companyEmail: "",
-    companyName: "",
-    message: "",
-    open: false
-  };
+              title: intl.formatMessage({
+                id: 'token.sash.first.title'
+              })
+            },
+            {
+              icon: Attack,
+              text: intl.formatMessage({
+                id: 'token.sash.second.paragraph'
+              }),
 
-  componentDidMount() {
-    this.setState({
-      biggerThan768px: window.matchMedia("(min-width: 768px)").matches
-    });
-    window
-      .matchMedia("(min-width: 768px)")
-      .addListener(e => this.setState({ biggerThan768px: e.matches }));
-  }
+              title: intl.formatMessage({
+                id: 'token.sash.second.title'
+              })
+            },
+            {
+              icon: Governance,
+              text: intl.formatMessage({
+                id: 'token.sash.third.paragraph'
+              }),
 
-  contentCards = [
-    {
-      title: this.props.intl.formatMessage({
-        id: "token.section-token.subtitle-1"
-      }),
-      content: this.props.intl.formatMessage({
-        id: "token.section-token.paragraph-1"
-      }),
-      src: "/img/token/w2b.png"
-    },
-    {
-      title: this.props.intl.formatMessage({
-        id: "token.section-token.subtitle-2"
-      }),
-      content: this.props.intl.formatMessage({
-        id: "token.section-token.paragraph-2"
-      }),
-      src: "/img/token/w3.png"
-    },
-    {
-      title: this.props.intl.formatMessage({
-        id: "token.section-token.subtitle-3"
-      }),
-      content: this.props.intl.formatMessage({
-        id: "token.section-token.paragraph-3"
-      }),
-      src: "/img/token/w4.png"
-    },
-    {
-      title: this.props.intl.formatMessage({
-        id: "token.section-token.subtitle-4"
-      }),
-      content: this.props.intl.formatMessage({
-        id: "token.section-token.paragraph-4"
-      }),
-      src: "/img/token/w5b.png"
-    }
-  ];
+              title: intl.formatMessage({
+                id: 'token.sash.third.title'
+              })
+            }
+          ]}
+          separator
+        />
+        <h2 className='purple bold'>
+          <FormattedMessage id='token.sash.learnMore.title' />
+        </h2>
+        <a className='btn btn-secondary' href='https://medium.com/kleros/why-kleros-needs-a-native-token-5c6c6e39cdfe'>
+          <FormattedMessage id='token.sash.learnMore.button' />
+        </a>
+        <hr />
+        <h1 className='purple'>
+          <FormattedMessage id='token.section-buy' />
+        </h1>
 
-  onCloseModal = () => {
-    this.setState({ open: false });
-  };
+        <Container className='mt-5 d-flex flex-wrap justify-content-around'>
+          <Badge as='a' className={styles.badge} href='https://www.bitfinex.com/t/PNKETH' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Bitfinex} alt={'Bitfinex'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://uniswap.ninja/' rel='noopener noreferrer' target='blank'>
+            <Ninja />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://uniswap.exchange/' rel='noopener noreferrer' target='blank'>
+            <Uniswap />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://dex.blue/' rel='noopener noreferrer' target='blank'>
+            <DexBlue />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://loopring.org/' rel='noopener noreferrer' target='blank'>
+            <Loopring />
+          </Badge>
 
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() =>
-        this.setState({
-          firstname: "",
-          lastname: "",
-          companyEmail: "",
-          companyName: "",
-          message: "",
-          open: true
-        })
-      )
-      .catch(error => alert(error));
-  };
-
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
-  render() {
-    const { open } = this.state;
-
-    const biggerThan768px = this.state.biggerThan768px || false;
-
-    const siteTitle = "Kleros - Token Page";
-    const data = get(this, "props.data.allContentfulTokenPage.edges")[0].node;
-    const top = data.top;
-
-    const contentCards = this.contentCards;
-
-    return (
-      <Template location={this.props.location}>
-        <Helmet>
-          <html lang="en" />
-          <title>{siteTitle}</title>
-        </Helmet>
-        <Modal
-          open={open}
-          onClose={this.onCloseModal}
-          center
-          classNames={{
-            modal: "customModal"
-          }}
-        >
-          <h2>Message sent!</h2>
-          <p>We will answer you as soon as possible.</p>
-          <p>
-            While waiting for an answer you can join our{" "}
-            <a
-              href="https://t.me/kleros"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Telegram
+          <Badge as='a' className={styles.badge} href='https://idex.market/eth/pnk' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={IDEX} alt={'IDEX'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://kyberswap.com/swap' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Kyber} alt={'Kyber'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://app.deversifi.com/' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Deversifi} alt={'Deversifi'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://transak.com/' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Transak} alt={'Transak'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://1inch.exchange/' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={OneInch} alt={'OneInch'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://paraswap.io/' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Paraswap} alt={'Paraswap'} />
+          </Badge>
+          <Badge as='a' className={styles.badge} href='https://balancer.exchange/' rel='noopener noreferrer' target='blank'>
+            <span class={styles.helper} />
+            <img src={Balancer} alt={'Balancer'} />
+          </Badge>
+        </Container>
+      </section>
+      <section className={styles.otc}>
+        <div>
+          <div className={styles.otcLogo}>
+            <PNK />
+          </div>
+          <div className={styles.otcText}>
+            <span className='bigger bold'>If you are interested in acquiring PNK token OTC, get in&nbsp;touch</span>
+            <p className='big bold pink'>Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the&nbsp;market.</p>
+          </div>
+          <div className={styles.otcButton}>
+            <a className='btn btn-primary' href='https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform'>
+              <FormattedMessage id='token.section-otc.button' />
             </a>
-            .
-          </p>
-        </Modal>
-        <section
-          className="ca_home_top ca_escrow_top"
-          style={{ minHeight: "10vh" }}
-        >
-          <div className="container">
-            <div className="row ca_txt">
-              <div className="col-12 col-md-6 text-center">
-                <h1 style={{ marginTop: "15%", fontSize: "420%" }}>
-                  <FormattedMessage id="token.title" />
-                </h1>
-              </div>
-              <div className="col-12 col-md-6">
-                <img
-                  src={theMeta(top, "Token Page Image").mediaData[0].file.url}
-                  className="illustration_escrow"
-                  alt="Kleros"
-                />
-              </div>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
+    </div>
+  </Layout>
+)
 
-        <section
-          className="ca_escrow_content ca_wave_top_inverted"
-          style={{ paddingTop: "26rem" }}
-        >
-          <div className="container">
-            {contentCards.map((el, num) => {
-              return (
-                <div
-                  key={num}
-                  className={"row " + (num % 2 == 0 ? "ca_left" : "ca_right")}
-                >
-                  <div className="col-12 col-md-1 one" />
-                  <div className="col-12 col-md-5 two">
-                    <h2>{el.title}</h2>
-                    <p>{el.content}</p>
-                  </div>
-                  <div className="col-12 col-md-5 three">
-                    <img
-                      style={{ width: "100%", marginLeft: "0" }}
-                      src={el.src}
-                      alt="Kleros"
-                    />
-                  </div>
-                  <div className="col-12 col-md-1 four" />
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        <section>
-          <div
-            className="container"
-            style={{ marginTop: "30px", marginBottom: "30px" }}
-          >
-            <div
-              style={{
-                borderRadius: "12px",
-                background:
-                  "linear-gradient(111.31deg, #4d00b4 19.55%, #6500b4 40.51%)",
-                marginTop: "20px",
-                padding: "10px",
-                paddingLeft: "15px",
-                paddingRight: "15px",
-                marginBottom: "20px",
-                display: "grid",
-                grid: biggerThan768px
-                  ? "1fr / 3fr [logo] 20fr [text] 7fr [button]"
-                  : "2fr [text] 1fr [button] / 1fr",
-                alignItems: "center"
-              }}
-            >
-              <div
-                style={{
-                  display: biggerThan768px ? "initial" : "none",
-                  grid: "logo"
-                }}
-              >
-                <img src="/img/stake_icon.svg" />
-              </div>
-              <div style={{ grid: "text", textAlign: "start" }}>
-                <h3
-                  className=""
-                  style={{
-                    lineHeight: "normal",
-                    marginBottom: "0",
-                    fontSize: biggerThan768px ? "2rem" : "4rem"
-                  }}
-                >
-                  <FormattedMessage id="token.banner.title" />
-                </h3>
-
-                <p
-                  className=""
-                  style={{
-                    fontSize: biggerThan768px ? "1.3rem" : "2.2rem",
-                    color: "white"
-                  }}
-                >
-                  <FormattedMessage id="token.banner.subtitle" />
-                </p>
-              </div>
-              <div style={{ grid: "button", textAlign: "center" }}>
-                <a
-                  style={{
-                    width: biggerThan768px ? "" : "-webkit-fill-available",
-                    marginTop: biggerThan768px ? "" : "8px"
-                  }}
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
-                  className="ca_button ca_solid_blue"
-                >
-                  <FormattedMessage id="token.banner.button-primary" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Template>
-    );
-  }
-}
-
-export default injectIntl(RootIndex);
-
-export const pageQuery = graphql`
-  query tokenQuery {
-    allContentfulTokenPage(sort: { fields: [id], order: DESC }) {
-      edges {
-        node {
-          top {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          escrow {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          contentCards {
-            title {
-              title
-            }
-            text {
-              text
-              childMarkdownRemark {
-                html
-              }
-            }
-            image {
-              file {
-                url
-              }
-            }
-            link {
-              text {
-                text
-              }
-              url
-              target
-              extraClass
-            }
-          }
-          contentPath {
-            title {
-              title
-            }
-            text {
-              text
-              childMarkdownRemark {
-                html
-              }
-            }
-            image {
-              file {
-                url
-              }
-            }
-            link {
-              text {
-                text
-              }
-              url
-              target
-              extraClass
-            }
-          }
-          contact {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+export default injectIntl(IndexPage)

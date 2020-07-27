@@ -1,335 +1,207 @@
 import React from "react";
-import get from "lodash/get";
-import Helmet from "react-helmet";
-import Modal from "react-responsive-modal";
-import theMeta from "../js/helpers.js";
-import { graphql } from "gatsby";
-import Template from "../components/layout";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import MediaCard from "../components/media-card";
+import Contact from "../components/contact";
+import styles from "./styles/media.module.css";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
-class RootIndex extends React.Component {
-  categories = ["Featured", "Press", "Events", "Articles"];
+import Photo from "src/assets/svgs/icon-photo.svg";
+import Box from "src/assets/svgs/icon-box.svg";
+import { Col, Container, Row } from "react-bootstrap";
+import Categories from "src/intl/en.json";
+import VerticalCard from "../components/vertical-card";
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      mediaFilter: {
-        value: this.props.intl.formatMessage({
-          id: "media.section-media.featured"
-        }),
-        key: "media.section-media.featured"
-      },
-      open: false
-    };
-  }
-  categoryChange = (cat, e = null) => {
-    if (e) e.preventDefault();
-    this.setState({
-      mediaFilter: {
-        value: cat,
-        key: Math.random()
-      }
-    });
-  };
+const CONTENT = {
+  conference: [
+    { link: "https://www.youtube.com/embed/NqxgMYsw_Ro", text: "media.section-media.conference.items.1" },
+    { link: "https://www.youtube.com/embed/2him_8rUMaA", text: "media.section-media.conference.items.2" },
+    { link: "https://www.youtube.com/embed/JJPcxuXtHAU", text: "media.section-media.conference.items.3" },
+    { link: "https://www.youtube.com/embed/Ga6bbCMKH4A", text: "media.section-media.conference.items.4" },
+    { link: "https://www.youtube.com/embed/zQF-j2nHb50", text: "media.section-media.conference.items.5" },
+    { link: "https://www.youtube.com/embed/sPKJqsmDQjc", text: "media.section-media.conference.items.6" },
+    { link: "https://www.youtube.com/embed/autihwpQPK4", text: "media.section-media.conference.items.7" },
+    { link: "https://www.youtube.com/embed/5xMf5BK__7I", text: "media.section-media.conference.items.8" },
+    { link: "https://www.youtube.com/embed/S2t7BJWoaBs", text: "media.section-media.conference.items.9" },
+    { link: "https://www.youtube.com/embed/zPLK0CDfx7Y", text: "media.section-media.conference.items.10" },
+    { link: "https://www.youtube.com/embed/yvhZvKz2p4Y", text: "media.section-media.conference.items.11" },
+    { link: "https://www.youtube.com/embed/mX3esOessmE", text: "media.section-media.conference.items.12" },
+    { link: "https://www.youtube.com/embed/hC9JgzuXzMk", text: "media.section-media.conference.items.13" },
+    
+  ],
 
-  onCloseModal = () => {
-    this.setState({ open: false });
-  };
+  presentations: [
+    { link: "https://www.youtube.com/embed/m-NGxJfS0mw?start=12", text: "media.section-media.presentations.items.1" },
+    { link: "https://www.youtube.com/embed/lPeca1h4auI?start=11", text: "media.section-media.presentations.items.2" },
+    { link: "https://www.youtube.com/embed/ssdgdV_fngI", text: "media.section-media.presentations.items.3" },
+    { link: "https://www.youtube.com/embed/PRFn3599CY0?start=23", text: "media.section-media.presentations.items.4" },
+    { link: "https://www.youtube.com/embed/keQKNiyzVGs?start=316", text: "media.section-media.presentations.items.5" },
+    { link: "https://www.youtube.com/embed/8CAL-Vyc-wc", text: "media.section-media.presentations.items.7" },
+    { link: "https://www.youtube.com/embed/DVCzEuEwQGg", text: "media.section-media.presentations.items.8" },
+    { link: "https://www.youtube.com/embed/YmA0E5EE3OY", text: "media.section-media.presentations.items.9" },
+  ],
 
-  onOpenModal = () => {
-    this.setState({ open: true });
-  };
+  promo: [
+    { link: "https://www.youtube.com/embed/bVL3ZJ8HNwE", text: "media.section-media.promo.items.1" },
+    { link: "https://www.youtube.com/embed/vRhD5WnUX3k", text: "media.section-media.promo.items.2" },
+    { link: "https://www.youtube.com/embed/c6YZId8hbqI", text: "media.section-media.promo.items.3" },
+    { link: "https://www.youtube.com/embed/IMDLJgTKDNw", text: "media.section-media.promo.items.4" },
+    { link: "https://www.youtube.com/embed/-zkRXcd1lMg", text: "media.section-media.promo.items.5" },
+    { link: "https://www.youtube.com/embed/bag2M9rGAbE", text: "media.section-media.promo.items.6" },
+    { link: "https://www.youtube.com/embed/nlFhHeiyB6A", text: "media.section-media.promo.items.7" },
+    { link: "https://www.youtube.com/embed/x0oC0GpDUbM", text: "media.section-media.promo.items.8" },
+    { link: "https://www.youtube.com/embed/M-nzG3C8RUc", text: "media.section-media.promo.items.9" },
+  ],
+};
 
-  render() {
-    var siteTitle = "Kleros";
-    var media = get(this, "props.data.allContentfulMediaEntry.edges");
-    var data = get(this, "props.data.allContentfulMediaPage.edges")[0].node;
+const Media = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "media.seo-title" })} />
 
-    //if (this.state.mediaFilter.key == "")
-    // this.categoryChange(this.categories[0]);
-    // else
-    //   media = media.filter(
-    //     ({ node }) => this.categories.indexOf(this.state.mediaFilter.value) > -1
-    //   );
-    return (
-      <Template location={this.props.location}>
-        <Helmet>
-          <html lang="en" />
-          <title>{siteTitle}</title>
-        </Helmet>
-        <Modal
-          open={this.state.open}
-          onClose={this.onCloseModal}
-          center
-          classNames={{
-            modal: "customModal"
-          }}
-        >
-          <h2>Download Book</h2>
-          <div className="ca_book">
-            <a href="/book/Dispute-Resolution-Kleros.epub" target="_blank">
-              EPUP FORMAT
+    <div className={styles.media}>
+      <section className={styles.sectionHeader}>
+        <h1 className="text-center mb-5">
+          <FormattedMessage id="media.section-hero.h1" />
+        </h1>
+        <a className="btn btn-primary" href="https://blog.kleros.io" rel="noopener noreferrer" target="blank">
+          <FormattedMessage id="media.section-hero.button" />
+        </a>
+      </section>
+      <section className="speaker" />
+      <section className={styles.items}>
+        <div aria-orientation="vertical" className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist">
+          {Object.keys(Categories.media["section-media"]).map((category, index) => (
+            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={index} role="tab">
+              <FormattedMessage id={`media.section-media.${category}.nav-title`} />
             </a>
-            <a href="/book/Dispute-Resolution-Kleros.pdf" target="_blank">
-              PDF FORMAT
-            </a>
-            <a href="/book/Dispute-Resolution-Kleros.mobi" target="_blank">
-              MOBI FORMAT
-            </a>
-          </div>
-        </Modal>
-        <section className="ca_juror_top ca_media_top">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-7">
-                <h1>
-                  <FormattedMessage id="media.title" />
-                </h1>
-                <h6>
-                  <FormattedMessage
-                    id="media.subtitle"
-                    values={{
-                      email: children => (
-                        <a
-                          href="mailto:contact@kleros.io"
-                          title="contact@kleros.io"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {children}
-                        </a>
-                      )
-                    }}
-                  />
-                </h6>
-              </div>
-              <div className="col-12 col-md-5" />
-            </div>
-          </div>
-        </section>
-        <section className="ca_media_content ca_wave_bottom_inverted">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-3">
+          ))}
+        </div>
+        <div className="tab-content" id="v-pills-tabContent">
+          {Object.entries(Categories.media["section-media"]).map((category, index) => (
+            <div className={`tab-pane fade ${!index && "show active"}`} id={`v-pills-${category[0]}`} key={index}>
+              <h2>
+                <FormattedMessage id={`media.section-media.${category[0]}.title`} />
+              </h2>
+              {Categories.media["section-media"][category[0]].subtitle && (
                 <h3>
-                  <h1>
-                    <FormattedMessage id="media.categories" />
-                  </h1>
+                  <FormattedMessage id={`media.section-media.${category[0]}.subtitle`} />
                 </h3>
-                <ul>
-                  <li key={0}>
-                    <a
-                      href="#"
-                      className={
-                        "media.section-media.featured" ==
-                        this.state.mediaFilter.key
-                          ? "ca_selected"
-                          : ""
-                      }
-                      onClick={e =>
-                        this.categoryChange(
-                          this.props.intl.formatMessage({
-                            id: "media.section-media.featured"
-                          }),
-                          e
-                        )
-                      }
-                    >
-                      {this.props.intl.formatMessage({
-                        id: "media.section-media.featured"
-                      })}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-9">
-                <div className="row">
-                  {media.map((el, num) => {
-                    return (
-                      <div key={num} className="col-12 col-md-4">
-                        <div className="ca_img">
-                          <img
-                            src={
-                              el.node.image === null
-                                ? "/img/media/photo.png"
-                                : el.node.image.file.url
-                            }
-                            alt="Kleros"
-                          />
-                        </div>
-                        <div className="ca_txt">
-                          <div className="ca_date">
-                            {new Date(el.node.date).toLocaleDateString(
-                              "en-US",
-                              { month: "long", day: "numeric", year: "numeric" }
-                            )}
-                          </div>
-                          <p>
-                            {el.node.title.title
-                              .split(" ")
-                              .splice(0, 20)
-                              .join(" ")}
-                          </p>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={el.node.link}
-                          >
-                            {el.node.linkText}
-                          </a>
-                        </div>
-                      </div>
-                    );
-                  })}
+              )}
+              {Categories.media["section-media"][category[0]].paragraph && (
+                <p>
+                  <FormattedMessage id={`media.section-media.${category[0]}.paragraph`} />
+                </p>
+              )}
+              {category[0] === "featured" && (
+                <div className={styles.cards}>
+                  {CONTENT.featured.map((item, index) => (
+                    <MediaCard content={{ href: item.href, icon: item.icon, text: intl.formatMessage({ id: item.text }) }} key={index} />
+                  ))}
                 </div>
-              </div>
+              )}
+              {category[0] === "presentations" && (
+                <div className={styles.cards}>
+                  {CONTENT.presentations.map((item, index) => (
+                    <div key={index}>
+                      <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                      <span>
+                        <FormattedMessage id={item.text} />
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {category[0] === "promo" && (
+                <div className={styles.cards}>
+                  {CONTENT.promo.map((item, index) => (
+                    <div key={index}>
+                      <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                      <span>
+                        <FormattedMessage id={item.text} />
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {category[0] === "conference" && (
+                <>
+                  <div className="iframe-container mt-5">
+                    <iframe title="conference" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src="https://www.youtube.com/embed/hC9JgzuXzMk" width="100%"></iframe>
+                    <span>
+                      <FormattedMessage id="media.section-media.conference.items.1" />
+                    </span>
+                  </div>
+                  <div className={styles.cards}>
+                    {CONTENT.conference.slice(1).map((item, index) => (
+                      <div key={index}>
+                        <iframe title={item.text} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="auto" src={item.link} width="100%"></iframe>
+                        <span>
+                          <FormattedMessage id={item.text} />
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
-          </div>
-        </section>
-        <section className="ca_media_cta">
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-1" />
-              <div className="col-12 col-md-10">
-                <h2 className="ca_underlined">
-                  <FormattedMessage id="media.section-book.title" />
-                </h2>
-                <h6>
-                  <FormattedMessage id="media.section-book.subtitle" />
-                </h6>
-                <a
-                  target={
-                    "_" +
-                    theMeta(data.bottomBlock, "Media > Bottom > Buttons > Left")
-                      .referenceData[0].target
-                  }
-                  href="/whitepaper_en.pdf"
-                  className="ca_button ca_solid_blue"
-                >
-                  <FormattedMessage id="media.section-book.button-primary" />
-                </a>
-                <a
-                  onClick={this.onOpenModal}
-                  className="ca_button ca_transparent_blue ca_button_book"
-                >
-                  <FormattedMessage id="media.section-book.button-secondary" />
-                </a>
-              </div>
-              <div className="col-12 col-md-1" />
-            </div>
-          </div>
-        </section>
-      </Template>
-    );
-  }
-}
+          ))}
+        </div>
+      </section>
+      <hr className="mt-5" />
+      <section>
+        <Container className="p-0" fluid>
+          <Row>
+            <Col className="mt-5" md>
+              <VerticalCard
+                content={{
+                  button: {
+                    href: "../KlerosBrandAssets.zip",
+                    text: intl.formatMessage({
+                      id: "media.section-cards.card-1.button",
+                    }),
+                    variant: "primary",
+                  },
+                  icon: Box,
 
-export default injectIntl(RootIndex);
+                  title: intl.formatMessage({
+                    id: "media.section-cards.card-1.title",
+                  }),
+                }}
+              />
+            </Col>
+            <Col className="mt-5" md>
+              <VerticalCard
+                content={{
+                  button: {
+                    disabled: true,
+                    href: "Assets",
+                    text: intl.formatMessage({
+                      id: "media.section-cards.card-2.button",
+                    }),
+                    variant: "secondary",
+                  },
+                  icon: Photo,
 
-export const pageQuery = graphql`
-  query MediaQuery {
-    allContentfulMediaEntry(sort: { fields: [date, title___id], order: DESC }) {
-      edges {
-        node {
-          title {
-            title
-          }
-          date
-          link
-          linkText
-          image {
-            file {
-              url
-            }
-          }
-        }
-      }
-    }
-    allContentfulMediaPage(sort: { fields: [id], order: DESC }) {
-      edges {
-        node {
-          topBlock {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-          bottomBlock {
-            title
-            data {
-              data
-              childMarkdownRemark {
-                html
-              }
-            }
-            mediaData {
-              file {
-                url
-              }
-            }
-            referenceData {
-              __typename
-              ... on Node {
-                ... on ContentfulLink {
-                  text {
-                    text
-                  }
-                  url
-                  extraClass
-                  target
-                }
-                ... on ContentfulHomepageHowSteps {
-                  title {
-                    title
-                  }
-                  text {
-                    text
-                  }
-                  image {
-                    file {
-                      url
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+                  title: intl.formatMessage({
+                    id: "media.section-cards.card-2.title",
+                  }),
+                }}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Contact
+          content={{
+            title: intl.formatMessage({
+              id: "media.section-contact",
+            }),
+          }}
+        />
+      </section>
+    </div>
+  </Layout>
+);
+
+export default injectIntl(Media);

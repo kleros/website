@@ -1,0 +1,67 @@
+.curate .hero {
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
+.curate .hero img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.curate .hero > img {
+  margin-top: 3rem;
+}
+
+.curate .buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.curate .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* space between columns for demo */
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .curate .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .curate .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.curate .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.curate .badge {
+  margin-top: 1.5rem;
+  max-width: 30rem;
+  height: 9rem;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+}
+
+.curate .h1 {
+  margin-bottom: 2rem;
+}

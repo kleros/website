@@ -1,0 +1,271 @@
+.integrations {
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.integrations .sectionHeader {
+  background: linear-gradient(148.16deg, #4d00b4 15.9%, #1e075f 59.16%);
+  text-align: center;
+}
+
+.integrations input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding: 1.4rem 1.4rem !important;
+}
+
+.integrations .prepend span {
+  border: 0;
+  background: var(--color-purple-faded);
+  border-top-left-radius: 300px !important;
+  border-bottom-left-radius: 300px !important;
+  outline: unset;
+  padding: 0 3rem;
+}
+
+.integrations .prepend svg {
+  width: auto;
+}
+
+.integrations aside {
+  background: red;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+
+.integrations #v-pills-home-tab {
+  background-color: red !important;
+}
+
+.integrations .items {
+  background-color: var(--color-purple-darkest);
+  padding-top: 140px; /* to match the height of the background image */
+}
+
+.integrations .items a {
+  font-size: var(--font-size-medium);
+}
+
+.integrations .items a.active {
+  color: white;
+}
+
+.integrations .items h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.integrations .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+}
+
+.integrations .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+
+.integrations .card-body {
+  padding-left: 0;
+}
+
+.integrations .card-header {
+  cursor: pointer;
+}
+
+.integrations .open::before,
+.integrations .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.integrations .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.integrations .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.integrations .card-body {
+  color: white;
+}
+
+.integrations .nav {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.integrations .nav > a {
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .integrations .nav {
+    float: left;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .integrations .items > div:nth-child(2) {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .integrations .nav > a {
+    display: inline-block;
+  }
+
+  .integrations .nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+.integrations .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .integrations .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.integrations span {
+  font-weight: var(--font-weight-bold);
+}
+
+.integrations h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.integrations h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-bigger);
+  color: var(--color-pink);
+}
+
+.integrations p {
+  margin-top: 3rem;
+  font-size: var(--font-size-big);
+}
+
+.integrations iframe {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.integrations .card {
+  background-color: var(--color-purple-faded);
+  border-radius: 36px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.integrations .getstarted > h2:first-child {
+  font-size: var(--font-size-bigger);
+}
+
+.integrations .usecases .card > svg {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.integrations .card > h2 {
+  color: var(--color-pink);
+  margin-bottom: 3rem;
+}
+
+.integrations .card > h3 {
+  color: white;
+}
+
+.integrations .exchanges > span {
+  background: white;
+  box-shadow: 13.34px 13.34px 53.37px rgba(77, 0, 180, 0.25);
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.integrations .exchanges > span > * {
+  width: 20rem;
+}
+
+.integrations .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.integrations .badge {
+  width: 12rem;
+  height: 7rem;
+  background-color: transparent;
+  border-radius: 12px;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .integrations .badge {
+    width: 11rem;
+  }
+}
+
+.integrations .trustedBy .badge {
+  width: 12rem;
+}
+
+.integrations .trustedBy > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.integrations svg,
+.integrations img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.integrations .usedBy {
+  background-color: white;
+  border-radius: 36px;
+}
+
+.integrations small {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  color: white;
+}
+
+.integrations .getstarted h2 {
+  font-size: var(--font-size-medium);
+  text-align: left;
+}

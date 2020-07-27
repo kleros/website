@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="661px" height="754px" viewBox="0 0 661 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>symbol-t2cr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="t2crlinearGradient1">
+            <stop stop-color="#FAF3FF" offset="0%"></stop>
+            <stop stop-color="#D3A9FB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="t2crlinearGradient2">
+            <stop stop-color="#9B01FF" offset="0%"></stop>
+            <stop stop-color="#4D00B4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="symbol-t2cr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(0.000000, 43.000000)">
+            <polygon id="Polygon" fill="url(#t2crlinearGradient1)" points="330.5 0 616.721396 165.25 616.721396 495.75 330.5 661 44.278604 495.75 44.278604 165.25"></polygon>
+            <polygon id="Polygon" fill="url(#t2crlinearGradient1)" transform="translate(331.643599, 331.643599) scale(1, -1) translate(-331.643599, -331.643599) " points="331.643599 61.7543253 565.374566 196.698962 565.374566 466.588235 331.643599 601.532872 97.9126317 466.588235 97.9126317 196.698962"></polygon>
+            <polygon id="Polygon" fill="url(#t2crlinearGradient1)" points="332.787197 107.49827 527.893131 220.142734 527.893131 445.431661 332.787197 558.076125 137.681263 445.431661 137.681263 220.142734"></polygon>
+            <polygon id="Polygon" fill="url(#t2crlinearGradient1)" transform="translate(333.930796, 333.930796) scale(1, -1) translate(-333.930796, -333.930796) " points="333.930796 125.795848 514.180948 229.863322 514.180948 437.99827 333.930796 542.065744 153.680643 437.99827 153.680643 229.863322"></polygon>
+            <g id="Group-5" transform="translate(133.766500, 121.013744)">
+                <polygon id="Polygon" fill="#FFFFFF" transform="translate(202.696849, 211.248294) rotate(-23.000000) translate(-202.696849, -211.248294) " points="193.440277 45.4264951 348.372931 119.264868 352.508268 286.841607 207.668769 377.070094 53.1865023 299.792772 52.8854305 119.994047"></polygon>
+                <path d="M127.743616,61.8268639 L301.398144,69.5244052 L371.704088,224.440804 L272.515458,366.024096 L97.9169111,354.9357 L26.3373064,187.08475 L127.743616,61.8268639 Z M254.43966,152.286676 L128.868114,206.593818 L236.22396,288.757706 L254.43966,152.286676 Z M239.901492,125.073879 L139.549173,82.302913 L118.468938,172.23081 L239.901492,125.073879 Z M214.465685,309.43086 L105.402219,232.342113 L108.040377,336.801952 L214.465685,309.43086 Z M353.406511,224.962536 L279.085326,150.310676 L259.468921,293.862999 L353.406511,224.962536 Z M240.036447,326.222009 L148.055709,350.019073 L256.224552,356.875307 L240.036447,326.222009 Z M338.882491,258.832352 L258.366423,318.203867 L274.365155,349.153295 L338.882491,258.832352 Z M300.797891,92.5770333 L285.159402,124.355627 L343.368667,182.925974 L300.797891,92.5770333 Z M281.313176,77.3699138 L179.096515,73.26285 L263.413098,109.768767 L281.313176,77.3699138 Z M112.486283,92.0655348 L40.8903244,181.555158 L88.7580956,191.591297 L112.486283,92.0655348 Z M85.8717938,209.145926 L37.7732925,199.065636 L87.9603357,316.1008 L85.8717938,209.145926 Z" id="Combined-Shape" fill="url(#t2crlinearGradient2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

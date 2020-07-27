@@ -1,0 +1,76 @@
+.community .hero {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: bottom -20vw right 50%;
+  background-size: 70%;
+}
+
+.community iframe {
+  border-width: 0;
+  max-width: 100%;
+}
+
+.community .telegram {
+  max-width: 8rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+.community > section:nth-child(2) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.community .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.community .singleCard {
+  margin: auto;
+  margin-top: 4rem;
+  width: 33%;
+}
+
+.community .cards > div > div > div > span {
+  height: auto;
+}
+
+.community .cards > div > div > div > a,
+.community .singleCard > div > div > div > a {
+  margin: 0;
+}
+
+.community .cards > div > div > div > span > svg {
+  width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .community .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+  .community .singleCard {
+    margin: auto;
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .community .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.community .groups {
+  background: bottom / auto no-repeat url("/logos-shadow.svg");
+  background-position: top -10vw right 50%;
+  background-size: 70%;
+}

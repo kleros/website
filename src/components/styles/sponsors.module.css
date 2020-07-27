@@ -1,0 +1,70 @@
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  clear: both;
+  padding-top: 2rem;
+}
+
+.sponsors svg {
+  width: auto;
+  max-width: 100%;
+}
+.sponsors div:first-of-type svg {
+}
+
+.sponsors div {
+  align-self: flex-end;
+}
+.sponsors .reuters {
+  padding: 0;
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.sponsors .reuters path {
+  fill: white;
+}
+
+.sponsors .bpi {
+  verticalalign: middle;
+  "-webkit-filter":grayscale(100%) ;
+  filter: grayscale(100%);
+  filter: gray;
+
+  padding: 1rem;
+}
+
+.sponsors .euContainer {
+  display: block;
+  width: 100%;
+}
+
+.sponsors .bpiContainer {
+  display: block;
+  width: 30%;
+}
+
+.sponsors .reutersContainer {
+  display: block;
+  width: 60%;
+}
+
+.sponsors div {
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .euContainer {
+    width: 70% !important;
+  }
+
+  .bpiContainer {
+    width: 20% !important;
+  }
+  .reutersContainer {
+    width: 50% !important;
+  }
+}

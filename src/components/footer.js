@@ -1,206 +1,170 @@
 import React from "react";
-import Modal from "react-responsive-modal";
-import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl";
+import Logo from "../assets/svgs/brand_white.svg";
+import Github from "src/assets/svgs/github.svg";
+import Linkedin from "src/assets/svgs/linkedin.svg";
+import Telegram from "src/assets/svgs/telegram.svg";
+import Twitter from "src/assets/svgs/twitter.svg";
+import Slack from "src/assets/svgs/slack.svg";
+import Reddit from "src/assets/svgs/reddit.svg";
+import Ghost from "src/assets/svgs/ghost.svg";
+import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
+import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
+import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
+import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf";
+import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
+import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
+import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
+import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
+import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
+import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
+import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+import styles from "./styles/footer.module.css";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 
-export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
-  return (
-    <footer className="ca_footer">
-      <Modal
-        open={open}
-        onClose={onCloseModal}
-        center
-        classNames={{
-          modal: "customModal"
-        }}
-      >
-        <h2>Download Book</h2>
-        <div className="ca_book">
-          <a href="/book/Dispute-Resolution-Kleros.epub" target="_blank">
-            EPUB FORMAT
-          </a>
-          <a
-            href="https://ipfs.kleros.io/ipfs/QmZeV32S2VoyUnqJsRRCh75F1fP2AeomVq2Ury2fTt9V4z/Dispute-Resolution-Kleros.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PDF FORMAT
-          </a>
-          <a href="/book/Dispute-Resolution-Kleros.mobi" target="_blank">
-            MOBI FORMAT
-          </a>
-        </div>
-      </Modal>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-1">
-            <a href="/" className="ca_logo">
-              <img src="/img/logo.png" alt="Kleros" />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <nav className="ca_left">
-              <ul>
-                <li key={0}>
-                  <Link to="/about">
-                    <FormattedMessage id="footer.about" />
-                  </Link>
-                </li>
-                <li key={1}>
-                  <a href="https://governance.kleros.io">
-                    <FormattedMessage id="footer.governance" />
-                  </a>
-                </li>
-                <li key={2}>
-                  <Link to="/about#join">
-                    <FormattedMessage id="footer.join" />
-                  </Link>
-                </li>
-                <li key={3}>
-                  <Link to="/faq">
-                    <FormattedMessage id="footer.faq" />
-                  </Link>
-                </li>
-                <li key={4}>
-                  <Link to="/media">
-                    <FormattedMessage id="footer.media" />
-                  </Link>
-                </li>
-                <li key={5}>
-                  <a href="https://blog.kleros.io">
-                    <FormattedMessage id="footer.blog" />
-                  </a>
-                </li>
-                <li key={6}>
-                  <Link to="/assets">
-                    <FormattedMessage id="footer.assets" />
-                  </Link>
-                </li>
-                <li key={7}>
-                  <a href="/whitepaper_en.pdf">
-                    {" "}
-                    <FormattedMessage id="footer.white-paper" />
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="col-6 col-md-2">
-            <nav className="ca_right">
-              <ul>
-                <li key={0}>
-                  <Link to="/escrow">
-                    <FormattedMessage id="footer.escrow" />
-                  </Link>
-                </li>
-                <li key={1}>
-                  <Link to="/curated-list">
-                    <FormattedMessage id="footer.curated-list" />
-                  </Link>
-                </li>
-                <li key={2}>
-                  <Link to="/oracle">
-                    <FormattedMessage id="footer.oracle" />
-                  </Link>
-                </li>
-                <li key={3}>
-                  <Link to="/cooperative">
-                    <FormattedMessage id="footer.cooperative" />
-                  </Link>
-                </li>
-                <li key={4}>
-                  <Link to="/court-tour">
-                    <FormattedMessage id="footer.court-tour" />
-                  </Link>
-                </li>
-                <li key={5}>
-                  <Link to="/token">
-                    <FormattedMessage id="footer.token" />
-                  </Link>
-                </li>
-                <li key={6}>
-                  <a href="https://developer.kleros.io">
-                    {" "}
-                    <FormattedMessage id="footer.developer" />
-                  </a>
-                </li>
+const ONEPAGERS = {
+  en: OnePagerEN,
+  es: OnePagerES,
+  fr: OnePagerFR,
+  ko: OnePagerKO,
+  pt: OnePagerPT,
+  ru: OnePagerRU,
+  tr: OnePagerTR,
+  zh: OnePagerZH,
+};
 
-                <li>
-                  <button className="ca_link_book" onClick={onOpenModal}>
-                    <FormattedMessage id="footer.book" />
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="col-12 col-md-4">
-            <Link to="/juror" className="ca_button ca_transparent_gray-solid">
-              <FormattedMessage id="footer.button-juror" />
-            </Link>
-            <Link to="/partner" className="ca_button ca_transparent_gray">
-              <FormattedMessage id="footer.button-partner" />
-            </Link>
-          </div>
-          <div
-            className="col-12 col-md-3"
-            style={{ textAlign: "-webkit-center" }}
-          >
-            <div className="ca_social">
-              <a
-                key={0}
-                href="https://github.com/kleros"
-                className={"fab fa-github"}
-              ></a>
-              <a
-                key={1}
-                href="https://slack.com/kleros"
-                className={"fab fa-slack"}
-              ></a>
-              <a
-                key={2}
-                href="https://www.reddit.com/r/Kleros/"
-                className={"fab fa-reddit"}
-              ></a>
-              <a
-                key={3}
-                href="https://twitter.com/kleros_io"
-                className={"fab fa-twitter"}
-              ></a>
-              <a
-                key={4}
-                href="https://t.me/kleros"
-                className={"fab fa-telegram"}
-              ></a>
-              <a
-                key={5}
-                href="https://www.linkedin.com/company/kleros"
-                className={"fab fa-linkedin"}
-              ></a>
+const WHITE_PAPERS = {
+  en: WhitePaperEN,
+  es: WhitePaperES,
+};
 
-              <a
-                key={7}
-                href="https://www.facebook.com/kleros.io"
-                className={"fab fa-facebook"}
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 ca_copyright">
-            <nav>
-              <ul>
-                <li key={0}>
-                  <a href=""></a>
-                </li>
-              </ul>
-              <span>
-                {" "}
-                <FormattedMessage id="footer.copyright" />{" "}
-                {new Date().getFullYear()} © Kleros.io
-              </span>
-            </nav>
-          </div>
-        </div>
+const YELLOW_PAPERS = {
+  en: YellowPaperEN,
+};
+
+const Footer = ({ intl }) => (
+  <footer className={styles.footer}>
+    <Container className="p-0" fluid>
+      <Row>
+        <Col className="d-none d-md-block" md={3} xs={0}>
+          <Link to="/">
+            <Logo />
+          </Link>
+        </Col>
+        <Col className={styles.links} md={{ offset: 2, span: 7 }} xl={{ offset: 0, span: 6 }} xs={12}>
+          <Link className="mr-3" to="/about">
+            <FormattedMessage id="footer.about" />
+          </Link>
+          <Link className="mr-3" to="/coop">
+            <FormattedMessage id="footer.cooperative" />
+          </Link>
+          <a className="mr-3" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+            <FormattedMessage id="footer.whitepaper" />
+          </a>
+          <a className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+            <FormattedMessage id="footer.yellowpaper" />
+          </a>
+          <a className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+            <FormattedMessage id="footer.onepager" />
+          </a>
+          <Link className="mr-3" to="/research">
+            <FormattedMessage id="footer.research" />
+          </Link>
+          <Link className="mr-3" to="/token">
+            <FormattedMessage id="footer.pnktoken" />
+          </Link>
+          <a className="mr-3" href="https://developer.kleros.io" rel="noopener noreferrer" target="_blank">
+            <FormattedMessage id="footer.developer" />
+          </a>
+          <Link className="mr-3" to="/integrations">
+            <FormattedMessage id="footer.integrations" />
+          </Link>
+          <a className="mr-3" href="https://governance.kleros.io" rel="noopener noreferrer" target="_blank">
+            <FormattedMessage id="footer.governance" />
+          </a>
+          <Link className="mr-3" to="/escrow">
+            <FormattedMessage id="footer.escrow" />
+          </Link>
+          <Link className="mr-3" to="/curate">
+            <FormattedMessage id="footer.curate" />
+          </Link>
+          <Link className="mr-3" to="/fellowship">
+            <FormattedMessage id="footer.fellowship" />
+          </Link>
+          <Link className="mr-3" to="/community">
+            <FormattedMessage id="footer.community" />
+          </Link>
+          <a className="mr-3" href="https://blog.kleros.io">
+            <FormattedMessage id="footer.blog" />
+          </a>
+          <Link className="mr-3" to="/media">
+            <FormattedMessage id="footer.media" />
+          </Link>
+          <Link className="mr-3" to="/book">
+            <FormattedMessage id="footer.book" />
+          </Link>
+          <Link className="mr-3" to="/faq">
+            <FormattedMessage id="footer.faq" />
+          </Link>
+        </Col>
+        <Col className="d-none d-xl-block">
+          <a className="btn btn-primary d-block mx-0 mt-0" href="https://court.kleros.io">
+            <FormattedMessage id="footer.button-primary" />
+          </a>
+          <Link className="btn btn-secondary d-block mx-0" to="/integrations" variant="secondary">
+            <FormattedMessage id="footer.button-secondary" />
+          </Link>
+        </Col>
+      </Row>
+      <hr className="mt-4 mb-5" />
+      <div className={styles.bottomContainer}>
+        <Row className={styles.social}>
+          <a className="g-kleros_footer__anchor" href="https://github.com/kleros" rel="noopener noreferrer" target="_blank">
+            <Github />
+          </a>
+          <a className="g-kleros_footer__anchor" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
+            <Slack />
+          </a>
+
+          <a className="g-kleros_footer__anchor" href="https://reddit.com/r/Kleros/" rel="noopener noreferrer" target="_blank">
+            <Reddit />
+          </a>
+          <a className="g-kleros_footer__anchor" href="https://twitter.com/kleros_io?" rel="noopener noreferrer" target="_blank">
+            <Twitter />
+          </a>
+
+          <a className="g-kleros_footer__anchor" href="https://blog.kleros.io/" rel="noopener noreferrer" target="_blank">
+            <Ghost />
+          </a>
+
+          <a className="g-kleros_footer__anchor" href="https://t.me/kleros" rel="noopener noreferrer" target="_blank">
+            <Telegram />
+          </a>
+          <a className="g-kleros_footer__anchor" href="https://www.linkedin.com/company/kleros/" rel="noopener noreferrer" target="_blank">
+            <Linkedin />
+          </a>
+        </Row>
+        <Row className="justify-content-center">
+          <p className="text-center text-white ">
+            <FormattedMessage id="footer.subscribe-title" />
+          </p>
+        </Row>
+        <Row className={styles.subscribe}>
+          <Button className="mb-5 mt-1" href="https://cdn.forms-content.sg-form.com/e7cee475-ba0e-11ea-ada4-aada6854d8c2" rel="noopener noreferrer" target="blank" variant="primary">
+            <FormattedMessage id="footer.subscribe-button" />
+          </Button>
+        </Row>
       </div>
-    </footer>
-  );
-});
+    </Container>
+
+    <p className="d-block text-center" id="copyright">
+      <FormattedMessage id="footer.copyright" /> {new Date().getFullYear()} © Kleros
+    </p>
+
+    <Button className={styles.scrollback} href="#gatsby-focus-wrapper">
+      ↑
+    </Button>
+  </footer>
+);
+
+export default injectIntl(Footer);

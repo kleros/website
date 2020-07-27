@@ -1,0 +1,47 @@
+.research {
+  margin-bottom: 4rem;
+}
+
+.research .director {
+  background-color: white;
+}
+
+.research .hero > h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.research .director img {
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.research .director h1 {
+  color: var(--color-gray);
+}
+
+.research .director h2,
+.research .director figure > figcaption > span {
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.research .director figcaption {
+  margin-bottom: 3rem;
+}
+
+.research .director p {
+  color: var(--color-gray-light);
+}
+
+.research .papers > h1 {
+  margin-bottom: 4rem;
+}
+
+.research .cards > div {
+  margin-bottom: 2rem;
+}
+
+.research .researchersTitle {
+  margin-top: 4rem;
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+.text-purple {
+  color: var(--color-purple) !important;
+}
+
+.text-purple-darker {
+  color: var(--color-purple-darker) !important;
+}
+
+.text-purple-darkest {
+  color: var(--color-purple-darkest) !important;
+}
+
+.text-pink {
+  color: var(--color-pink) !important;
+}
+
+.bg-purple {
+  background-color: var(--color-purple) !important;
+}
+
+.bg-purple-darker {
+  background-color: var(--color-purple-darker) !important;
+}
+
+.bg-purple-darkest {
+  background-color: var(--color-purple-darkest) !important;
+}
+
+.bg-pink {
+  background-color: var(--color-pink) !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+}
+
+main {
+  background: linear-gradient(316.86deg, #1e075f 56.13%, #4d00b4 97.68%);
+  word-break: break-word;
+  padding-bottom: 4rem;
+}
+
+main > div {
+  flex: 1;
+  padding-bottom: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+nav,
+section,
+footer > div:first-child {
+  padding-left: calc(2rem + 2vw) !important;
+  padding-right: calc(2rem + 2vw) !important;
+}
+
+hr {
+  width: calc(96vw - 4rem);
+  max-width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1500px) {
+  nav,
+  section,
+  footer > div:first-child {
+    padding-left: calc((100vw - 1400px) / 2) !important;
+    padding-right: calc((100vw - 1400px) / 2) !important;
+  }
+
+  hr {
+    width: calc(1400px - 1.6rem);
+  }
+}
+
+@media (max-width: 1500px) {
+  section.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+footer {
+  margin-top: auto;
+  padding: 4rem 5vw;
+  width: 100%;
+
+  background-color: var(--color-purple);
+}
+footer a,
+footer p,
+footer small {
+  font-size: 18px !important;
+}
+
+#gatsby-focus-wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  margin-bottom: 1.4rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}

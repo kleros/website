@@ -1,0 +1,113 @@
+.contact {
+  background-color: var(--color-purple-faded);
+  border-radius: 37.3588px;
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+
+  place-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.contact .icons a > svg {
+  width: 6rem;
+  height: 6rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  display: inline;
+}
+
+.contact .brand {
+  display: none;
+}
+
+.contact span {
+  color: white;
+  font-size: var(--font-size-bigger);
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.contact .rest {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  display: block;
+  text-align: center;
+}
+
+.contact .icons {
+  grid-column: 1/-1;
+}
+
+@media screen and (min-width: 500px) {
+  .contact {
+    grid: 1fr 1fr / 1fr 2fr;
+    padding: 1rem 1.5rem;
+  }
+
+  .contact .brand {
+    display: block;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    justify-self: start;
+    grid-column: 1;
+    height: 75%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+  }
+
+  .contact .rest {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    text-align: center;
+    display: block;
+  }
+
+  .contact .icons {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .contact {
+    grid: 1fr / [logo] 4fr [text] 16fr [icons] 6fr;
+  }
+
+  .contact .brand {
+    grid-row: 1 / span 1;
+
+    display: block;
+    grid-column: logo;
+    height: 100%;
+  }
+
+  .contact .rest {
+    text-align: left;
+    grid-row: 1 / span 1;
+    grid-column: text;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contact span {
+    grid-column: text;
+    display: block;
+    align-self: center;
+  }
+
+  .contact .icons {
+    grid-row: 1 / span 1;
+
+    justify-self: right;
+    display: block;
+    grid-column: icons;
+    width: max-content;
+  }
+}

@@ -1,0 +1,129 @@
+.fellowship .hero {
+}
+
+.fellowship svg {
+  max-width: 20em;
+}
+
+.fellowship .social {
+  background: var(--color-purple-faded);
+  border-radius: 36px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.fellowship .social > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fellowship .social > div > a {
+  width: 2rem;
+  margin: 1rem;
+}
+
+.fellowship .social > div > a > svg {
+  width: 2rem;
+}
+
+.fellowship .social svg path {
+  fill: white;
+}
+
+.fellowship .portraitContainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+
+.fellowship .portraitContainer {
+  position: relative;
+}
+
+.fellowship .portraitContainer:hover .overlay {
+  display: flex;
+  opacity: 0.8;
+  background-color: var(--color-purple-light);
+}
+
+.fellowship .overlay {
+  padding: 0 1rem;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fellowship .overlay span {
+  display: block;
+  font-size: var(--font-size-medium);
+}
+
+.fellowship .overlay span:first-child {
+  font-weight: var(--font-weight-bold);
+}
+
+.fellowship .questions {
+  background-color: var(--color-purple-darkest);
+}
+
+.fellowship .questions a {
+  font-size: var(--font-size-medium);
+}
+
+.fellowship .questions a.active {
+  color: white;
+}
+
+.fellowship .questions h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.fellowship .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+  text-align: left;
+}
+
+.fellowship .accordion {
+}
+
+.fellowship .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+.fellowship .card-body {
+  padding-left: 0;
+}
+
+.fellowship .card-header {
+  cursor: pointer;
+}
+
+.fellowship .open::before,
+.fellowship .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.fellowship .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.fellowship .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.fellowship .card-body {
+  color: white;
+}

@@ -1,0 +1,141 @@
+.index .hero {
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
+.index .hero img,
+.index .hero svg {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.index .hero > img,
+.index .hero > svg {
+  margin-top: 3rem;
+}
+
+.index .buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.index .buttonWrapper a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.index .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .index .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .index .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* space between columns for demo */
+    grid-gap: 2rem;
+  }
+}
+
+.index .products {
+  background-color: var(--color-pink-lightest);
+  padding: 7rem 0;
+  max-width: 100%;
+}
+
+.index .productsTitle {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-purple);
+}
+
+.index .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.index .products div div span:not(.helper) {
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
+  padding: 14px;
+  border-radius: 24px;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
+  border: 0.952296px solid #ffffff;
+}
+
+.index .products p {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+}
+
+.index .products small {
+  margin-top: 3rem;
+  display: block;
+  text-align: right;
+  color: var(--color-purple);
+  font-size: var(--font-size-medium);
+}
+
+.index .h1 {
+  margin-bottom: 2rem;
+}
+
+.index hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.index .disputes {
+  background-color: var(--color-pink-lightest);
+}
+
+@media (max-width: 400px) {
+  .index .disputes {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+.index .disputesContent {
+  margin-top: 5rem;
+}
+
+.index .disputes h1,
+.index .disputes h2 {
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.index .dotClass {
+  color: red;
+}
+
+.index .spinner {
+  color: var(--color-purple);
+}
+
+.index .loading {
+  margin-bottom: 1rem;
+  font-size: var(--font-size-medium);
+  color: var(--color-purple);
+}

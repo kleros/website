@@ -1,0 +1,112 @@
+.faq {
+  text-align: left;
+}
+
+.faq .sectionHeader {
+  background: linear-gradient(148.16deg, #4d00b4 15.9%, #1e075f 59.16%);
+}
+
+.faq input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding: 1.4rem 1.4rem !important;
+}
+
+.faq .prepend span {
+  border: 0;
+  background: var(--color-purple-faded);
+  border-top-left-radius: 300px !important;
+  border-bottom-left-radius: 300px !important;
+  outline: unset;
+  padding: 0 3rem;
+}
+
+.faq .prepend svg {
+  width: auto;
+}
+
+.faq aside {
+  background: red;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+
+.faq #v-pills-home-tab {
+  background-color: red !important;
+}
+
+.faq .questions {
+  background-color: var(--color-purple-darkest);
+}
+
+.faq .questions a {
+  font-size: var(--font-size-medium);
+}
+
+.faq .questions a.active {
+  color: white;
+}
+
+.faq .questions h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.faq .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+}
+
+.faq .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+
+.faq .card-body {
+  padding-left: 0;
+}
+
+.faq .card-header {
+  cursor: pointer;
+}
+
+.faq .open::before,
+.faq .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.faq .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.faq .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.faq .card-body {
+  color: white;
+}
+
+.faq .nav {
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 800px) {
+  .faq .nav {
+    float: left;
+    flex-direction: column;
+  }
+
+  .faq .questions > div:nth-child(2) {
+    margin-left: 20rem;
+  }
+}

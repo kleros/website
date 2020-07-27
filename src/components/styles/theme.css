@@ -1,0 +1,225 @@
+:root {
+  font-size: 14px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-size-medium: 18px;
+  --font-size-big: 24px;
+  --font-size-bigger: 36px;
+  --font-size-huge: 54px;
+  --color-purple-light: #9013fe; /* (Side menu titles eg. Use Cases, Get Started, Media) */
+  --color-purple: #4d00b4; /* Kleros Main Purple */
+  --color-purple-darker: #6700b4;
+  --color-purple-darkest: #1e075f;
+  --color-purple-faded: #9013fe33;
+  --color-pink-lightest: #f2e3ff;
+  --color-pink-light: #bd73ff;
+  --color-pink: #d8b6ff; /* (90% of all texts when over purple background) */
+  --color-pink-dark: #824ccb; /* (texts when over white background) */
+  --color-blue-light: #7bcbff;
+  --color-blue: #009aff;
+  --color-gray: #333;
+  --color-gray-light: #999;
+  --color-red: #f60c36;
+}
+
+.white {
+  color: white;
+}
+.purple {
+  color: var(--color-purple);
+}
+
+.purple-light {
+  color: var(--color-purple-light);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.medium {
+  font-size: var(--font-size-medium);
+}
+.big {
+  font-size: var(--font-size-big);
+}
+
+.bigger {
+  font-size: var(--font-size-bigger);
+}
+
+.bg-light {
+  background: white;
+}
+
+body {
+  color: white;
+}
+
+footer svg {
+  width: 16rem;
+  height: auto;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: var(--font-size-huge);
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  color: var(--color-pink);
+  font-weight: normal;
+  font-size: var(--font-size-big);
+}
+
+.text {
+  color: var(--color-pink);
+}
+
+a,
+p,
+small {
+  color: var(--color-pink);
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+section.light a:hover {
+  color: var(--color-blue);
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+main .btn,
+footer .btn {
+  margin: auto;
+
+  margin-top: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-weight: 600;
+  border-width: 0;
+  border-radius: 300px;
+  max-width: 30rem;
+  width: auto;
+  font-size: 1.285714286rem;
+  color: white;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+  background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 12px 90px var(--color-blue);
+  background: linear-gradient(270deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0px 12px 90px var(--color-purple-light);
+  background: linear-gradient(270deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
+}
+
+hr {
+  border: 1px solid var(--color-purple-light);
+}
+
+section.masked {
+  background-color: var(--color-purple-darkest);
+  background: center / contain no-repeat url("/logos-shadow.svg");
+  background-size: contain;
+}
+
+section.speaker {
+  background: center / contain no-repeat url("/illustration-speakers.svg");
+  background-color: var(--color-purple-darkest); /* Order is important */
+  background-size: auto;
+}
+
+section.integrations {
+  background: center / contain no-repeat url("/illustration-integrations.svg");
+  background-color: var(--color-purple-darkest); /* Order is important */
+  background-size: auto;
+}
+
+section.light {
+  background-color: white;
+}
+
+input {
+  background-color: var(--color-purple-faded) !important;
+  height: unset;
+  border-radius: 300px !important;
+  background: var(--color-purple-faded);
+  border: none !important;
+  z-index: 1;
+  padding: 0.8rem 2rem !important;
+}
+
+input:enabled {
+  color: white !important;
+}
+input::placeholder {
+  color: var(--color-pink) !important;
+}
+
+.nav-link.active {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.slick-list {
+  margin: 2rem 0 !important;
+}
+
+.slick-track {
+  margin-bottom: 3rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-dots > li {
+  transform: scale(2);
+}
+
+.slick-dots > li > button::before {
+  color: var(--color-blue) !important;
+}
+
+*:focus {
+  outline: none;
+}
