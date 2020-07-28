@@ -477,6 +477,7 @@
     }
   },
   "book": {
+    "seo-title": "Book",
     "section-hero": { "title": "Kleros Book", "subtitle": "Dispute Revolution: The Kleros Handbook of Decentralized Justice.", "title-download": "Read Now" },
     "section-contents": {
       "h1": "Table of Contents",
@@ -514,6 +515,7 @@
     "contributors": "Contributors"
   },
   "token": {
+    "seo-title": "Token",
     "section-hero": {
       "h1": "PNK Token",
       "h2": "Pinakion, the name of Kleros token, was inspired by the token used by Ancient Athenians to draw jurors for their popular trials"
@@ -533,6 +535,7 @@
     }
   },
   "community": {
+    "seo-title": "Community",
     "section-hero": { "h1": "The Kleros Community", "h2": "Kleros is a global community of people driven by legal innovation and blockchain technology." },
     "section-members": {
       "title": "Community Members Around the World",
@@ -564,6 +567,7 @@
     "section-contact": "Would you like to become a member of the Guild? Contact us:"
   },
   "integrations": {
+    "seo-title": "Integrations",
     "section-hero": {
       "h1": "Integrate with Kleros",
       "h2": "Fast, secure and affordable justice as a service.",
@@ -625,6 +629,7 @@
     "section-contact": "Integrate Now"
   },
   "fellowship": {
+    "seo-title": "Fellowship",
     "section-hero": {
       "h1": "Kleros Fellowship of Justice",
       "h2": "A program which gathers experts from different fields to conduct research and work on Kleros. Our Fellows collaborate actively with our core team on the advancement of decentralized justice.",
