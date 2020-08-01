@@ -329,7 +329,7 @@
             "q": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to others jurors?",
             "a": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete."
           },
-          "8": { "q": "Are there time limits for disputes? Do jurors have to respond withing a given period of time?", "a": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution." },
+          "8": { "q": "Are there time limits for disputes? Do jurors have to respond within a given period of time?", "a": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution." },
           "9": { "q": "What happens to jurors who don't respond or review the evidence within the set time frame?", "a": "Jurors who don't give their ruling before the deadline are penalized by losing some of their staked tokens and by not receiving the arbitration fee." }
         }
       },
@@ -338,7 +338,7 @@
         "questions": {
           "1": {
             "q": "In legal systems such as the United States, judges are responsible for instructing jurors and explaining legal nuances. How does Kleros address questions of interpretation of legal terms in the contract?",
-            "a": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros is intended be used for simpler cases, where legal nuances are not as important."
+            "a": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros was intended be used for simpler cases, where legal nuances are not as important."
           },
           "2": {
             "q": "Which are the main legal and regulatory hurdles in setting up Kleros?",
@@ -378,7 +378,7 @@
           "1": "Kleros Decentralized Courts",
           "2": "Kleros Courts Explainer",
           "3": "Dispute Revolution - The Kleros Book",
-          "4": "Kleros Dapp Showcase,",
+          "4": "Kleros DApp Showcase,",
           "5": "Kleros Protocol: Curated Lists x Escrow x Athena V2.0",
           "6": "Kleros - Blockchain Dispute Resolution Built on Ethereal",
           "7": "Dogelist - P + Epsilon: The Trailer No One Asked For",
@@ -397,7 +397,7 @@
           "3": "Kleros-CRED Dispute Revolution Conference - 'Make a Claim', a Layer 2 Company",
           "4": "Kleros-CRED Dispute Revolution Conference - Legal implications of Decentralized Justice",
           "5": "Kleros-CRED Dispute Revolution Conference - Kleros-Winding Tree",
-          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justuce Fair?",
+          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justice Fair?",
           "7": "Kleros-CRED Dispute Revolution Conference - Decentralized Justice Research Challenges",
           "8": "Kleros-CRED Dispute Revolution Conference - How to Build a Kleros Integration",
           "9": "Kleros-CRED Dispute Revolution Conference - Challenges in Legal Design",
@@ -484,7 +484,7 @@
       "chapters": {
         "1": {
           "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
-          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, we implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
         },
         "1": {
           "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
@@ -612,7 +612,7 @@
         "erc1497": {
           "nav-title": "ERC 1497: Evidence Standard",
           "title": "ERC 1497: Evidence Standard",
-          "text-1": "In order to have an interoperable way store agreements between parties and information about agreements, we have developed the ERC-1497: Evidence Standard. The ERC-1497 consists of two categories of information: evidence and meta-evidence. Evidence, as the name hints, is a piece of information that supports a proposition. Meta-evidence, on the other hand is the information about the dispute itself, the agreement, parties involved, ruling options, and others.",
+          "text-1": "In order to have an interoperable way to store agreements between parties and information about agreements, we have developed the ERC-1497: Evidence Standard. The ERC-1497 consists of two categories of information: evidence and meta-evidence. Evidence, as the name hints, is a piece of information that supports a proposition. Meta-evidence, on the other hand is the information about the dispute itself, the agreement, parties involved, ruling options, and others.",
           "button-primary": "Read the full documentation",
           "button-secondary": "Learn more on Github"
         },
