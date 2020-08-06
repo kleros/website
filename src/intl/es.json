@@ -83,6 +83,7 @@
       "small": "*Producto en desarrollo"
     },
     "section-4": {
+      "title": "Únete a la Revolución de la Justicia",
       "card-1": {
         "title": "Participa como Jurado",
         "paragraph": "Gana dinero e imparte justicia al mundo.",
@@ -212,7 +213,7 @@
     },
     "section-4": {
       "h1": "Equipo",
-      "h2": "Somos un equipo internacional e interdisciplinario apasionado por la blockchain y su potencial para transformar el derecho y la gobernanza."
+      "h2": "Somos un equipo internacional e interdisciplinario apasionado por el blockchain y su potencial para transformar el derecho y la gobernanza."
     },
     "section-5": "Socios e Integraciones"
   },
@@ -553,8 +554,8 @@
     },
     "section-buy": "Dónde Comprar PNK",
     "section-otc": {
-      "title": "Compra PNK a través de una transacción OTC",
-      "subtitle": "Para garantizar una distribución justa de tokens, estos se venden a precios reflejados en el mercado.",
+      "title": "Si estás interesado en adquirir tokens OTC, contáctanos.",
+      "subtitle": "Para asegurar equidad en la distribución de tokens, todas las ventas se realizan a valor de mercado.",
       "button": "Contáctanos Aquí"
     }
   },
@@ -613,6 +614,7 @@
       "button": "Contáctanos para soporte en integraciones"
     },
     "section-main": {
+      "usecases-title": "CASOS DE USO",
       "usecases": {
         "exchanges": {
           "nav-title": "DeFi",
@@ -640,6 +642,7 @@
           "text-2": "Usa Kleros"
         }
       },
+      "getstarted-title": "EMPIEZA AHORA",
       "getstarted": {
         "erc792": {
           "nav-title": "ERC-792: Estándar de Arbitraje",
@@ -702,7 +705,7 @@
       },
       "7": {
         "q": "¿Dónde envío mi solicitud?",
-        "a": "Puedes enviar tu aplicación aquí."
+        "a": "Puedes enviar tu aplicación <anchor>aquí</anchor>."
       }
     }
   },

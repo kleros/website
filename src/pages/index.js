@@ -473,7 +473,9 @@ class IndexPage extends React.Component {
             </section>
           </div>
           <section>
-            <h1 className="mb-5">Join the Justice Revolution</h1>
+            <h1 className="mb-5">
+              <FormattedMessage id="index.section-4.title" />
+            </h1>
             <Container className="p-0" fluid>
               <Row>
                 <Col className="mt-5" md>
