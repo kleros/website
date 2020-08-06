@@ -23,14 +23,12 @@ import MarketplaceIllustration from "src/assets/svgs/marketplace.svg";
 import BountiesIllustration from "src/assets/svgs/bounties.svg";
 import CurationIllustration from "src/assets/svgs/curation.svg";
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
-import {  Badge } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 import Categories from "src/intl/en.json";
-
-
 
 const Integrations = ({ intl }) => (
   <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({id: 'integrations.seo-title'})}  />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "integrations.seo-title" })} />
 
     <div className={styles.integrations}>
       <section className={styles.sectionHeader}>
@@ -47,13 +45,18 @@ const Integrations = ({ intl }) => (
       <section className="integrations" />
       <section className={styles.items}>
         <div aria-orientation="vertical" className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist">
-          <p className="purple-light">USECASES</p>
+          <p className="purple-light">
+            {" "}
+            <FormattedMessage id="integrations.section-main.usecases-title" />
+          </p>
           {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
             <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={category} role="tab">
               <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
             </a>
           ))}
-          <p className="purple-light">GET STARTED</p>
+          <p className="purple-light">
+            <FormattedMessage id="integrations.section-main.getstarted-title" />
+          </p>
           {Object.keys(Categories.integrations["section-main"].getstarted).map((category, index) => (
             <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${category == null && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={category} role="tab">
               <FormattedMessage id={`integrations.section-main.getstarted.${category}.nav-title`} />
@@ -79,7 +82,9 @@ const Integrations = ({ intl }) => (
                     </h3>
                   </div>
                   <ExchangeIllustration />
-                  <small>Used by</small>
+                  <small>
+                    <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.used-by`} />
+                  </small>
                   <div className={` ${styles.usedBy} mt-5 d-flex flex-wrap justify-content-around`}>
                     <Badge as="a" className={styles.badge} href="https://uniswap.ninja/" rel="noopener noreferrer" target="blank">
                       <Ninja />
@@ -87,11 +92,11 @@ const Integrations = ({ intl }) => (
 
                     <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
-                      <img src={Deversifi}  alt='Deversifi' />
+                      <img src={Deversifi} alt="Deversifi" />
                     </Badge>
                     <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
-                      <img src={DutchX}  alt='DutchX' />
+                      <img src={DutchX} alt="DutchX" />
                     </Badge>
                   </div>
                 </>
@@ -156,7 +161,7 @@ const Integrations = ({ intl }) => (
                     <a target="blank" rel="noopener noreferrer" className="btn btn-primary" href="https://developer.kleros.io/en/latest/introduction.html">
                       <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
                     </a>
-                    <a  target="blank" rel="noopener noreferrer" className="btn btn-secondary" href="https://github.com/kleros/erc-792">
+                    <a target="blank" rel="noopener noreferrer" className="btn btn-secondary" href="https://github.com/kleros/erc-792">
                       <Github style={{ height: "1.2em", marginRight: "0.6em", width: "auto" }} />
                       <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-secondary`} />
                     </a>
@@ -225,27 +230,27 @@ const Integrations = ({ intl }) => (
         <div>
           <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Deversifi}  alt='Deversifi' />
+            <img src={Deversifi} alt="Deversifi" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Omen} alt='Omen'/>
+            <img src={Omen} alt="Omen" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={DutchX} alt='DutchX'/>
+            <img src={DutchX} alt="DutchX" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={WindingTree}  alt='WindingTree'/>
+            <img src={WindingTree} alt="WindingTree" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Realitio}  alt='Realitio' />
+            <img src={Realitio} alt="Realitio" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={CryptoUnlocked}  alt='CryptoUnlocked' />
+            <img src={CryptoUnlocked} alt="CryptoUnlocked" />
           </Badge>
         </div>
       </section>
