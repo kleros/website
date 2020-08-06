@@ -18,13 +18,19 @@ import WindingTree from "src/assets/images/winding-tree-colored.png";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import DutchX from "src/assets/images/dutchx.png";
-import ExchangeIllustration from "src/assets/svgs/exchange.svg";
+import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
+import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
 import MarketplaceIllustration from "src/assets/svgs/marketplace.svg";
 import BountiesIllustration from "src/assets/svgs/bounties.svg";
 import CurationIllustration from "src/assets/svgs/curation.svg";
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 import { Badge } from "react-bootstrap";
 import Categories from "src/intl/en.json";
+
+const EXCHANGEILLUSTRATIONS = {
+  en: <ExchangeIllustrationEN />,
+  es: <ExchangeIllustrationES />,
+};
 
 const Integrations = ({ intl }) => (
   <Layout>
@@ -81,7 +87,7 @@ const Integrations = ({ intl }) => (
                       <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
                     </h3>
                   </div>
-                  <ExchangeIllustration />
+                  {EXCHANGEILLUSTRATIONS[intl.locale]}
                   <small>
                     <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.used-by`} />
                   </small>
