@@ -240,8 +240,14 @@
       "h2": "如果你想成为合作社成员, 遵循以下步骤. 您的申请将交由其他成员审批."
     },
     "sash": {
-      "first": { "title": "申请表格", "button": "下载" },
-      "second": { "title": "状态", "button": "下载" }
+      "first": {
+        "title": "申请表格",
+        "button": "下载"
+      },
+      "second": {
+        "title": "状态",
+        "button": "下载"
+      }
     },
     "section-steps": {
       "heading": "步骤",
@@ -304,7 +310,10 @@
       "jurors": {
         "title": "评审员",
         "questions": {
-          "1": { "q": "上诉可以在Kleros之外进行吗?", "a": "是的, 可以创建一个可仲裁的智能合同，该合同使用Kleros解决一审争端，并允许在Kleros之外处理上诉." },
+          "1": {
+            "q": "上诉可以在Kleros之外进行吗?",
+            "a": "是的, 可以创建一个可仲裁的智能合同，该合同使用Kleros解决一审争端，并允许在Kleros之外处理上诉."
+          },
           "2": {
             "q": "是否有包含了Kleros可裁决纠纷类型的智能合约模板?",
             "a": "目前有一些模板, 还需要继续扩充. Kleros致力于争议裁决层, 并非智能合约起草. 生态系统中会有其他公司将专注于起草智能合约。为了使用Kleros进行仲裁，智能合约需要遵循我们开发的智能合约标准。如果您有兴趣关注开发，请查看我们的GitHub以获取更多信息，并加入我们的Telegram进行讨论."
@@ -329,8 +338,14 @@
             "q": "陪审员需要提供投票理由吗？ 理由是否对是否向争议各方和其他陪审员公开?",
             "a": "是的, 陪审员以简短的文字形式提供投票理由。 投票结束后，将向争议方以及其他陪审员公开理由."
           },
-          "8": { "q": "争议有时间限制吗？ 陪审员是否必须在给定的时间内进行投票?", "a": "是的, 每个子厅都有一个争议有效时间段，陪审员需要在该时间段内提交其决定。未决案件需要解决时，将通知陪审员." },
-          "9": { "q": "在规定的时间内没有审查证据进行投票的陪审员会怎样？?", "a": "未能在截止日期前做出裁决的陪审员将损失一部分抵押的通证，并且无法收取仲裁费." }
+          "8": {
+            "q": "争议有时间限制吗？ 陪审员是否必须在给定的时间内进行投票?",
+            "a": "是的, 每个子厅都有一个争议有效时间段，陪审员需要在该时间段内提交其决定。未决案件需要解决时，将通知陪审员."
+          },
+          "9": {
+            "q": "在规定的时间内没有审查证据进行投票的陪审员会怎样？?",
+            "a": "未能在截止日期前做出裁决的陪审员将损失一部分抵押的通证，并且无法收取仲裁费."
+          }
         }
       },
       "legal": {
@@ -409,8 +424,14 @@
       }
     },
     "section-cards": {
-      "card-1": { "title": "品牌资产套餐", "button": "下载" },
-      "card-2": { "title": "公司活动照片", "button": "下载" }
+      "card-1": {
+        "title": "品牌资产套餐",
+        "button": "下载"
+      },
+      "card-2": {
+        "title": "公司活动照片",
+        "button": "下载"
+      }
     },
     "section-contact": "媒体咨询"
   },
@@ -432,7 +453,11 @@
             "title": "Yann Aouidef, PhD Researcher",
             "text": "Yann is a Phd candidate at the Paris Center in Law and Economics. His topic thesis is: “Economics and Law of the Blockchain: Applications To Decentralized Justice Mechanisms”. In 2017, Yann accidentally discovered the theoretic aspect of the blockchain through a conference which completely challenged him because of this technology’s characteristics (especially disintermediation) and the potential applications that would derive from it."
           },
-          "2": { "name": "Name", "title": "Title", "text": "" }
+          "2": {
+            "name": "Name",
+            "title": "Title",
+            "text": ""
+          }
         }
       }
     },
@@ -472,19 +497,25 @@
       }
     },
     "section-cards": {
-      "card-1": { "title": "Kleros仲裁研究团队", "button": "了解更多" },
-      "card-2": { "title": "Kleros书籍: '争议裁决'", "button": "了解更多" }
+      "card-1": {
+        "title": "Kleros仲裁研究团队",
+        "button": "了解更多"
+      },
+      "card-2": {
+        "title": "Kleros书籍: '争议裁决'",
+        "button": "了解更多"
+      }
     }
   },
   "book": {
-    "section-hero": { "title": "Kleros书籍", "subtitle": "争议裁决: Kleros去中心化公正手册.", "title-download": "现在阅读" },
+    "section-hero": {
+      "title": "Kleros书籍",
+      "subtitle": "争议裁决: Kleros去中心化公正手册.",
+      "title-download": "现在阅读"
+    },
     "section-contents": {
       "h1": "Table of Contents",
       "chapters": {
-        "1": {
-          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
-          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
-        },
         "1": {
           "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
           "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
@@ -520,10 +551,22 @@
     },
     "sash": {
       "title": "为何Kleros需要通证?",
-      "first": { "title": "激励评审员", "paragraph": "用户需要质押PNK才能有资格参与成为争议裁决陪审员的抽取" },
-      "second": { "title": "保护系统", "paragraph": "PNK通证保护系统免受恶意用户的攻击." },
-      "third": { "title": "平台自治", "paragraph": "PNK通证用于平台自治投票." },
-      "learnMore": { "title": "了解更多为何Kleros需要通证.", "button": "了解更多" }
+      "first": {
+        "title": "激励评审员",
+        "paragraph": "用户需要质押PNK才能有资格参与成为争议裁决陪审员的抽取"
+      },
+      "second": {
+        "title": "保护系统",
+        "paragraph": "PNK通证保护系统免受恶意用户的攻击."
+      },
+      "third": {
+        "title": "平台自治",
+        "paragraph": "PNK通证用于平台自治投票."
+      },
+      "learnMore": {
+        "title": "了解更多为何Kleros需要通证.",
+        "button": "了解更多"
+      }
     },
     "section-buy": "如何拥有PNK",
     "section-otc": {
@@ -533,7 +576,10 @@
     }
   },
   "community": {
-    "section-hero": { "h1": "Kleros社区", "h2": "Kleros社区是一个热衷于法律创新和区块链技术的全球性社区." },
+    "section-hero": {
+      "h1": "Kleros社区",
+      "h2": "Kleros社区是一个热衷于法律创新和区块链技术的全球性社区."
+    },
     "section-members": {
       "title": "社区爱好者遍布全球",
       "telegram": "Kleros主要电报群"
@@ -550,13 +596,27 @@
       "envoy": {
         "title": "特使",
         "paragraph": "特使在公会中的作用是充当社区建设者，管理Kleros在其地区的线上和线下活动，并增加我们社区成员的数量.",
-        "activities": { "title": "示例活动", "items": { "1": "创建和维护区域性电报群.", "2": "创建地区性的社区宣传内容.", "3": "组织线上线下活动." } },
+        "activities": {
+          "title": "示例活动",
+          "items": {
+            "1": "创建和维护区域性电报群.",
+            "2": "创建地区性的社区宣传内容.",
+            "3": "组织线上线下活动."
+          }
+        },
         "button": "了解更多"
       },
       "herald": {
         "title": "先驱",
         "paragraph": "先驱在公会中的作用是在全球范围内提高对Kleros的认识，促进在法律，商业和学术界的采用.",
-        "activities": { "title": "示例活动", "items": { "1": "在公司，政府和学术界的宣传演讲.", "2": "在当地媒体中代表Kleros.", "3": "创造业务发展机会." } },
+        "activities": {
+          "title": "示例活动",
+          "items": {
+            "1": "在公司，政府和学术界的宣传演讲.",
+            "2": "在当地媒体中代表Kleros.",
+            "3": "创造业务发展机会."
+          }
+        },
         "button": "了解更多"
       }
     },
@@ -582,19 +642,19 @@
           "nav-title": "电商",
           "title": "Kleros应用于电商",
           "text-1": "电商平台需要解决用户间纠纷?",
-          "text-2": "直接集成Kleros",
+          "text-2": "直接集成Kleros"
         },
         "bounties": {
           "nav-title": "工作与赏金",
           "title": "Kleros应用于工作与赏金",
           "text-1": "自由职业或赏金平台需要解决用户间的纠纷?",
-          "text-2": "直接集成Kleros",
+          "text-2": "直接集成Kleros"
         },
         "curation": {
           "nav-title": "用户生成的内容平台",
           "title": "Kleros应用于内容平台",
           "text-1": "需要一个去中心化的内容审核系统来对抗恶意用户吗？（仇恨言论，版权，垃圾邮件，色情）",
-          "text-2": "直接集成Kleros",
+          "text-2": "直接集成Kleros"
         }
       },
       "getstarted": {
@@ -664,7 +724,10 @@
   },
   "bio": {
     "section-main": "下载报告",
-    "section-contact": { "title": "加入Kleros公正研究会", "subtitle": "有兴趣加入公正研究会? 请联系<mail>contact@kleros.io</mail>." }
+    "section-contact": {
+      "title": "加入Kleros公正研究会",
+      "subtitle": "有兴趣加入公正研究会? 请联系<mail>contact@kleros.io</mail>."
+    }
   },
 
   "contact": {
