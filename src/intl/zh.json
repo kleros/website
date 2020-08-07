@@ -1,35 +1,676 @@
 {
   "header": {
-    "dapps": "dapps",
-    "integrations": "integrations",
-    "research": "research",
-    "blog": "blog",
-    "about": "about"
+    "dapps": "应用",
+    "integrations": "集成",
+    "research": "研究",
+    "blog": "博客",
+    "about": "关于我们"
   },
+
   "footer": {
-    "about": "About",
-    "cooperative": "Copperative",
-    "whitepaper": "White Paper",
-    "yellowpaper": "Yellow Paper",
-    "onepager": "One Pager",
-    "research": "Research",
-    "pnktoken": "PNK Token",
-    "developer": "Developer",
-    "integrations": "Integrations",
-    "governance": "Governance",
-    "escrow": "Escrow",
-    "curate": "Curate",
-    "fellowship": "Fellowship",
-    "community": "Community",
-    "blog": "Blog",
-    "media": "Media",
-    "book": "Book",
-    "faq": "FAQ",
-    "subscribe-title": "Stay Updated",
-    "subscribe-placeholder": "your@email.com",
-    "subscribe-button": "Subscribe",
-    "button-primary": "Join as a Juror",
-    "button-secondary": "Become a Partner",
-    "copyright": "Copyright"
+    "about": "关于我们",
+    "cooperative": "合作社",
+    "whitepaper": "白皮书",
+    "yellowpaper": "黄皮书",
+    "onepager": "单页简介",
+    "research": "研究",
+    "pnktoken": "PNK通证",
+    "developer": "开发人员",
+    "integrations": "集成",
+    "governance": "治理",
+    "escrow": "托管",
+    "curate": "列表",
+    "fellowship": "合伙",
+    "community": "社区",
+    "blog": "博客",
+    "media": "媒体",
+    "book": "书籍",
+    "faq": "常见问答",
+    "subscribe-title": "订阅",
+    "subscribe-placeholder": "邮件",
+    "subscribe-button": "提交",
+    "button-primary": "加入成为待选陪审员",
+    "button-secondary": "成为合作伙伴",
+    "copyright": "版权"
+  },
+
+  "index": {
+    "seo-title": "主页",
+    "section-hero": {
+      "h1": "去中心化法庭",
+      "h2": "为所有人提供开放的在线争议裁决平台.",
+      "button-primary": "体验Kleros法庭",
+      "button-secondary": "集成您的产品"
+    },
+
+    "sash": {
+      "first": {
+        "title": "点对点",
+        "paragraph": "全球范围的社区成员作为评审员."
+      },
+      "second": {
+        "title": "加密经济学",
+        "paragraph": "区块链和博弈论带来快速，经济和公正的决定."
+      },
+      "third": {
+        "title": "多用途",
+        "paragraph": "Kleros可应用于大量不同领域."
+      }
+    },
+    "section-disputes": {
+      "title": "运行中的Kleros",
+      "subtitle": "浏览最近的纠纷",
+      "loading": "导入中"
+    },
+    "section-use-case": {
+      "h1": "用例",
+      "h2": "随着经济的全球化和数字化，争议出现于众多法院或传统仲裁系统无法解决的领域。 Kleros可以提供快速，经济且安全的解决方式.",
+      "cards": {
+        "1": "小额赔付",
+        "2": "保险",
+        "3": "电商",
+        "4": "财经",
+        "5": "自由职业",
+        "6": "通证列表",
+        "7": "内容审核",
+        "8": "知识产权",
+        "9": "更多"
+      }
+    },
+
+    "section-3": {
+      "h1": "公正即服务",
+      "h2": "您发起维权. Kleros提供裁决."
+    },
+
+    "products": {
+      "h1": "我们的产品和系统集成",
+      "small": "*开发中的产品"
+    },
+    "section-4": {
+      "card-1": {
+        "title": "加入评审员行列",
+        "paragraph": "为世界提供公正的同时获得收入.",
+        "button": "成为评审员"
+      },
+      "card-2": {
+        "title": "与您的系统集成",
+        "paragraph": "了解如何与Klero集成.",
+        "button": "开始"
+      }
+    }
+  },
+  "curate": {
+    "seo-title": "策单",
+
+    "section-hero": {
+      "h1": "Kleros 策单",
+      "h2": "社区自我维护和服务的信息内容。使用Kleros策单创建社区自定义策单.",
+      "button-primary": "创建您的策单"
+    },
+    "sash": {
+      "first": {
+        "title": "列表的世界",
+        "paragraph": "交易所应该列出哪些通证？电商市场可以售卖哪些物品？社交媒体应该删除哪些内容？所有这些问题都可以用策单来管理."
+      },
+      "second": {
+        "title": "增强您的社区",
+        "paragraph": "与Kleros集成, 定义指导方针并由您的社区维护您的策单."
+      },
+      "third": {
+        "title": "公平透明",
+        "paragraph": "Kleros确保策单维护的公平与透明."
+      }
+    },
+    "section-use-case": {
+      "h1": "Kleros 策单应用场景",
+      "cards": {
+        "1": "通证列表",
+        "2": "内容审核",
+        "3": "酒店列表",
+        "4": "餐馆列表",
+        "5": "保险支付",
+        "6": "电商交易",
+        "7": "社交媒体",
+        "8": "反垃圾",
+        "9": "更多"
+      }
+    },
+
+    "section-3": {
+      "h1": "Kleros 策单",
+      "h2": "创建您自己的通证策单，并将信息维护权交到社区手中",
+      "button": "开始使用Kleros策单"
+    },
+    "section-4": {
+      "h1": "谁在使用Kleros策单?"
+    }
+  },
+  "escrow": {
+    "seo-title": "托管",
+
+    "section-hero": {
+      "h1": "Kleros 托管",
+      "h2": "由无需信任的争议裁决确保交易，雇佣和支付的安全.",
+      "button-primary": "试用Kleros托管"
+    },
+    "sash": {
+      "first": {
+        "title": "电商的风险",
+        "paragraph": "在网上与某人签约时，总是存在另一方不履行协议或恶意行事的风险."
+      },
+      "second": {
+        "title": "使用Kleros托管",
+        "paragraph": "如果出现问题，Kleros将解决争议."
+      },
+      "third": {
+        "title": "安全的转账",
+        "paragraph": "借助Kleros托管服务，买卖双方可以确信另一方将履行其义务."
+      }
+    },
+    "section-use-case": {
+      "h1": "Kleros托管应用场景",
+      "cards": {
+        "1": "自由职业",
+        "2": "域名转让",
+        "3": "赏金活动",
+        "4": "电商交易",
+        "5": "工资支付",
+        "6": "众筹管控",
+        "7": "场外交易",
+        "8": "抄袭监管",
+        "9": "更多"
+      }
+    },
+
+    "section-3": {
+      "h1": "借助Kleros确保转账的安全",
+      "h2": "开始使用Kleros托管来降低在线交易中的交易对手风险.",
+      "button": "开始使用Kleros托管"
+    },
+
+    "section-4": {
+      "h1": "将Kleros托管与您的系统集成",
+      "h2": "如果您要构建电子商务平台，请将争议裁决委托给Kleros。专注于您的产品。Kleros将帮您解决纠纷.",
+      "button": "开始集成"
+    }
+  },
+  "about": {
+    "seo-title": "关于",
+
+    "section-hero": {
+      "h1": "关于Kleros",
+      "h2": "Kleros是一个开源的在线争议裁决协议，该协议使用区块链和博弈论公平地裁定争议。开发工作由<anchor>Coopérative Kleros</anchor>协调，这是一家在法国注册成立的法国国际合作社（SCIC）。我们所有的研究和代码开发都是开源的，任何人均可免费使用."
+    },
+    "section-2": "工作原理",
+    "sash": {
+      "first": {
+        "title": "单页简介",
+        "button": "下载"
+      },
+      "second": {
+        "title": "白皮书",
+        "button": "下载"
+      },
+      "third": {
+        "title": "黄皮书",
+        "button": "下载"
+      }
+    },
+    "section-3": {
+      "h1": "使命",
+      "h2": "我们的使命是开发达成公正和个人自由的软件产品."
+    },
+    "section-4": {
+      "h1": "团队",
+      "h2": "我们是一个跨学科并且国际化的对区块链及其改变法律以及治理的潜力充满了热情的一个团队."
+    },
+    "section-5": "合作伙伴 & 系统集成"
+  },
+
+  "coop": {
+    "seo-title": "合作社",
+
+    "section-hero": {
+      "h1": "Kleros合作社",
+      "h2": "Kleros协议开发的协调者是合作社, 注册于法国. 法人详情见 <anchor>这篇文章</anchor>."
+    },
+    "section-2": {
+      "h1": "加入合作社",
+      "h2": "如果你想成为合作社成员, 遵循以下步骤. 您的申请将交由其他成员审批."
+    },
+    "sash": {
+      "first": { "title": "申请表格", "button": "下载" },
+      "second": { "title": "状态", "button": "下载" }
+    },
+    "section-steps": {
+      "heading": "步骤",
+      "title-1": "下载",
+      "text-1": "下载申请表格.",
+      "title-2": "打印",
+      "text-2": "打印并填写表格(请注意最后的手写声明!) . 签名. 扫描.",
+      "title-3": "发送",
+      "text-3": "发送至<mail>lola@kleros.io</mail> ，附带护照/身份证电子版本以及股份押金转账证明."
+    }
+  },
+
+  "faq": {
+    "seo-title": "常见问答",
+
+    "section-hero": {
+      "h1": "常见问答",
+      "search": "搜索问题"
+    },
+
+    "section-faq": {
+      "general": {
+        "title": "常见问题",
+        "questions": {
+          "1": {
+            "q": "互联网上匿名人们的决定可信吗?",
+            "a": "中本聪向我们证明，只要构建正确的激励机制，众多彼此不信任的匿名计算机依然可以达成共识。Kleros将此原则扩展到人为决策：只要激励措施结构正确，许多互不信任的匿名陪审员可以就正确的决定达成共识。要了解有关激励机制的更多信息，请阅读我们的白皮书."
+          },
+          "2": {
+            "q": "Pinakion 总量多少?",
+            "a": "总量10亿."
+          },
+          "3": {
+            "q": "争议双方需要持有pinakion吗?",
+            "a": "不需要, 只有希望参与争议裁决的评审员需要. 争议双方甚至不需要知道什么是pinakoin."
+          },
+          "4": {
+            "q": "评审员身份公开吗?",
+            "a": "不会。由于Kleros做出的决定会影响资源的分配，因此会存在试图贿赂或恐吓评审员的动机。匿名是为了保护陪审员免受恐吓和报复。它还简化了用户成为陪审员的过程，并避免了身份验证的成本。通过提供安全的环境并简化选择过程，Kleros极大的扩大了潜在陪审员的人数。 这将极大的降低仲裁费用并且实现公平公正的去中心化."
+          },
+          "5": {
+            "q": "Kleros 通证配额如何?",
+            "a": "团队: 18%；首次分配: 16%；空投: 4%；后续分配和评审员激励活动: 50%；Kleros合作社开发预留: 12%"
+          },
+          "6": {
+            "q": "Kleros能否成为eBay或Amazon等主流在线零售商使用的平台?",
+            "a": "是的, 使用Kleros, 任何主流电商平台都将拥有一 个快速，经济和透明的争议裁决方式. 联系我们获取更多信息."
+          }
+        }
+      },
+      "integration-partners": {
+        "title": "系统集成 & 合作伙伴",
+        "questions": {
+          "1": {
+            "q": "我们来自X机构，并且想使用Kleros。 但是，由于XYZ原因，我们不能使用匿名陪审员。 我们可以调整Kleros以便仅从预先设定好的陪审员中抽取吗?",
+            "a": "目前无法设定陪审员范围. 任何人都可以抵押PNK参加评审员抽取. 但是，考虑到许多用例的确需要从预先审查好的陪审员中间选取，您可以通过contact@kleros.io与我们联系。我们共同根据您的用例进行方案开发."
+          }
+        }
+      },
+      "jurors": {
+        "title": "评审员",
+        "questions": {
+          "1": { "q": "上诉可以在Kleros之外进行吗?", "a": "是的, 可以创建一个可仲裁的智能合同，该合同使用Kleros解决一审争端，并允许在Kleros之外处理上诉." },
+          "2": {
+            "q": "是否有包含了Kleros可裁决纠纷类型的智能合约模板?",
+            "a": "目前有一些模板, 还需要继续扩充. Kleros致力于争议裁决层, 并非智能合约起草. 生态系统中会有其他公司将专注于起草智能合约。为了使用Kleros进行仲裁，智能合约需要遵循我们开发的智能合约标准。如果您有兴趣关注开发，请查看我们的GitHub以获取更多信息，并加入我们的Telegram进行讨论."
+          },
+          "3": {
+            "q": "是否考虑过如何审查陪审员，以及他们的经验和专业知识，以确保他们有能力参与特定的法庭/争议?",
+            "a": "在去中心化的系统中，审核陪审员的主要问题是：‘谁审核审核员’？这是鸡与蛋的问题。 公共区块链最吸引人的功能之一是任何人都可以加入，因此没有人可以垄断账本."
+          },
+          "4": {
+            "q": "系统如何展示和管理证据?",
+            "a": "提供证据的方式取决于争议的类型。自由职业的争议将需要与保险或付款争议不同的证据。 Kleros合作社为陪审员提供仲裁争议的后端，它的构建方式可以使任何人都可以开发自己的前端。逻辑类似于以太坊钱包：以太坊核心团队为用户提供了一个钱包，但是任何人都可以构建一个以太坊钱包。 例如，这意味着电子商务平台可以构建一个前端，用户可以在不离开该平台的情况下仲裁争议。该前端将调用Kleros的陪审员网络。我们希望生态系统中的更多公司来基于我们的平台构建接口。如要了解更多信息，请阅读有关Kleros合作社生态系统发展的文章."
+          },
+          "5": {
+            "q": "由于陪审员来自全球人士，如何确保他们都明白争议所用的语言?",
+            "a": "Kleros由不同专业类型纠纷的子法庭组成。 语言是专业化参数之一。 例如，可能有一个‘英文网站争议法庭’，‘西班牙语网站争议法庭’，‘法语网站争议法庭’ 等等."
+          },
+          "6": {
+            "q": "如何确保陪审员审查了证据而不是随机投票?",
+            "a": "Kleros无法确保陪审员对证据进行了审查，但是通过制定适当的经济激励措施可以鼓励陪审员进行诚实行事。在没有审查证据的情况下随机投票的陪审员更有可能与多数人投票结果不一致，从而失去他们押注锁定的PNK通证。 因此随着时间的流逝，他们的平均收益会是亏损，从而使这些不诚实的陪审员离开该法庭。 要了解有关激励措施如何在Kleros中发挥作用的更多信息，请阅读白皮书."
+          },
+          "7": {
+            "q": "陪审员需要提供投票理由吗？ 理由是否对是否向争议各方和其他陪审员公开?",
+            "a": "是的, 陪审员以简短的文字形式提供投票理由。 投票结束后，将向争议方以及其他陪审员公开理由."
+          },
+          "8": { "q": "争议有时间限制吗？ 陪审员是否必须在给定的时间内进行投票?", "a": "是的, 每个子厅都有一个争议有效时间段，陪审员需要在该时间段内提交其决定。未决案件需要解决时，将通知陪审员." },
+          "9": { "q": "在规定的时间内没有审查证据进行投票的陪审员会怎样？?", "a": "未能在截止日期前做出裁决的陪审员将损失一部分抵押的通证，并且无法收取仲裁费." }
+        }
+      },
+      "legal": {
+        "title": "法律法规",
+        "questions": {
+          "1": {
+            "q": "在美国这样的法律体系中，法官负责指导陪审员并解释法律面的细致表述。 Kleros如何解决合同中法律条款的细致表述问题?",
+            "a": "在线论坛中的管理员会遵循一些预先设定的规则来确定用户评论是否违反条款条例。在做出决定时，陪审员应遵循先前类似规则，指导他们如何处理法律表述。但是，在项目的早期阶段，Kleros旨在用于较简单的案例，在这些案例中法律表述不那么重要."
+          },
+          "2": {
+            "q": "应用Kleros有没有主要的法律和法规障碍?",
+            "a": "由于其基于密码经济学的创新做法，Kleros暂不被现有国际协议认可为仲裁方式。这可能会成为在“主流”用例中广泛采用的障碍（例如，政府监管机构无法使用Kleros解决信用卡公司与其用户之间的纠纷）。但是，这不应成为其他用例（尤其是加密行业中）采用的障碍。 由于Kleros已经证明它可以解决非主流用例中的争端，我们希望主流行业因此产生兴趣。 最终，仲裁协会将接受Kleros成为其争议仲裁的一种方式。 Kleros平台是一个“可选”系统，这意味着执行是自动的，并且已由同意使用Kleros提供仲裁服务的缔约方事先接受."
+          }
+        }
+      }
+    }
+  },
+
+  "media": {
+    "seo-title": "媒体",
+
+    "section-hero": {
+      "h1": "媒体",
+      "button": "Kleros博客了解更多"
+    },
+    "section-media": {
+      "presentations": {
+        "nav-title": "演讲视频",
+        "title": "演讲视频",
+        "items": {
+          "1": "Clement Lesaege Presentation at EthCC 3 Paris March 2020",
+          "2": "William George Presentation at EthCC 3 Paris March 2020",
+          "3": "Federico Ast Presentation at EthCC 3 Paris March 2020",
+          "4": "Matheus Alencar Presentation at EthCC 3 Paris March 2020",
+          "5": "Ferit Tunçer Presentation at EthCC 3 Paris March 2020",
+          "7": "Plinio Braga Presentation at DevCon 5 Osaka October 2019",
+          "8": "Clement Lesaege Presentation at EthCC 2 Paris March 2019",
+          "9": "William George Presentation at EthCC 2 Paris March 2019"
+        }
+      },
+      "promo": {
+        "nav-title": "介绍视频",
+        "title": "介绍视频",
+        "items": {
+          "1": "Kleros Decentralized Courts",
+          "2": "Kleros Courts Explainer",
+          "3": "Dispute Revolution - The Kleros Book",
+          "4": "Kleros Dapp Showcase,",
+          "5": "Kleros Protocol: Curated Lists x Escrow x Athena V2.0",
+          "6": "Kleros - Blockchain Dispute Resolution Built on Ethereal",
+          "7": "Dogelist - P + Epsilon: The Trailer No One Asked For",
+          "8": "Clement Makes Tea",
+          "9": "Kleros Meet The Team"
+        }
+      },
+      "conference": {
+        "nav-title": "Kleros会展活动",
+        "title": "争议裁决",
+        "subtitle": "Kleros去中心化公正会展活动",
+        "paragraph": "2020年3月2日, Kleros合作社与巴黎法律与经济中心(CRED) 在巴黎第三新索邦大学的Sainte Barbe圆形剧场合作举办了 '争议裁决: 去中心化公正的诞生'会展活动",
+        "items": {
+          "1": "Kleros-CRED Dispute Revolution Conference - Introducing Kleros Layer 2",
+          "2": "Kleros-CRED Dispute Revolution Conference - Kleros Handbook of Justice, Augmented",
+          "3": "Kleros-CRED Dispute Revolution Conference - 'Make a Claim', a Layer 2 Company",
+          "4": "Kleros-CRED Dispute Revolution Conference - Legal implications of Decentralized Justice",
+          "5": "Kleros-CRED Dispute Revolution Conference - Kleros-Winding Tree",
+          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justuce Fair?",
+          "7": "Kleros-CRED Dispute Revolution Conference - Decentralized Justice Research Challenges",
+          "8": "Kleros-CRED Dispute Revolution Conference - How to Build a Kleros Integration",
+          "9": "Kleros-CRED Dispute Revolution Conference - Challenges in Legal Design",
+          "10": "Kleros-CRED Dispute Revolution Conference - Introducing the Fellowship of Justice",
+          "11": "Kleros-CRED Dispute Revolution Conference - Kleros: Cryptoeconomics and Applications",
+          "12": "Kleros-CRED Dispute Revolution Conference - Blockchains and Networks Structures",
+          "13": "Kleros-CRED Dispute Revolution Conference - Introduction to Decentralized Justice"
+        }
+      }
+    },
+    "section-cards": {
+      "card-1": { "title": "品牌资产套餐", "button": "下载" },
+      "card-2": { "title": "公司活动照片", "button": "下载" }
+    },
+    "section-contact": "媒体咨询"
+  },
+
+  "research": {
+    "seo-title": "研究",
+    "section-hero": {
+      "h1": "Kleros研究",
+      "h2": "Kleros 拥有一个非常活跃的研究团队，致力于加密经济，计算机科学，商业和法律领域的研究."
+    },
+    "section-director": {
+      "title": "研究总监",
+      "subtitle": "William George, PhD",
+      "paragraph": "William holds Master’s and PhD degrees in mathematics from the University of Toronto. He was subsequently a postdoctoral researcher at the University of Toronto and École Polytechnique (France), where he studied applications of blockchains, particularly to identity management systems. William also previously worked in information security for a Canadian bank, where he was involved in the management of the bank's cryptographic keys.",
+      "researchers": {
+        "title": "研究员",
+        "items": {
+          "1": {
+            "title": "Yann Aouidef, PhD Researcher",
+            "text": "Yann is a Phd candidate at the Paris Center in Law and Economics. His topic thesis is: “Economics and Law of the Blockchain: Applications To Decentralized Justice Mechanisms”. In 2017, Yann accidentally discovered the theoretic aspect of the blockchain through a conference which completely challenged him because of this technology’s characteristics (especially disintermediation) and the potential applications that would derive from it."
+          },
+          "2": { "name": "Name", "title": "Title", "text": "" }
+        }
+      }
+    },
+    "section-papers": {
+      "papers": {
+        "title": "Kleros论文",
+        "items": {
+          "1": "智能合约预言机：获取现实世界的真实数值",
+          "2": "去中心化的公正: 重塑数字时代的仲裁?"
+        }
+      },
+      "mentions": {
+        "title": "提及Kleros的论文",
+        "items": {
+          "1": "Cyberjustice within the Framework of Resolution of Transborder Disputes - M.V. Mazhorina, Kutafin State Law University (MSAL)",
+          "2": "Methods of Resolving Disputes Arising from Smart Contracts - O.F. Zasemkova, Lex russica.",
+          "3": "Artificial Intelligence and the Law: Will Judges Run on Punch Cards - Seda Fabian, 16 Common L. Rev. 4 (2020)",
+          "4": "How to Make Sure My Cryptokitties Are Here Forever? The Complementary Roles of Blockchain and the Law to Bring Trust - Charlotte Ducuing, Volume 10, Issue 2, Cambridge Symposium on Blockchain Regulation and Governance (2019)",
+          "5": "The Role of International Rules in Blockchain-Based Cross-Border Commercial Disputes - 65 Wayne Law Review 1 (2019-2020)",
+          "6": "Should Code Be Law: Smart Contracts, Blockchain, and Boilerplate - Jeff Lingwal and Ramya Mogallapu, UMKC Law Review 285 (2019),",
+          "7": "Online Dispute Resolution for Smart Contracts - Amy Schmitz, Colin Rule, Journal of Dispute Resolution 103 (2019)",
+          "8": "Governance of Smart Contracts in Blockchain Institutions, Howell, Bronwyn E. and Potgieter, Petrus H., SSRN",
+          "9": "Ulex: Open Source Law for Non-Territorial Governance - Bell, Tom W., Ulex: Open Source Law for Non-Territorial Governance, Ulex: Open Source Law for Non-Territorial Governance, 1 J. SPECIAL JURISDICTIONS 1 (2020)",
+          "10": "The Governance of Blockchain Dispute Resolution - Allen, DWE, Lane, AM and Poblet, M, (Forthcoming) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
+          "11": "Blockchain and the Inevitability of Disputes: The Role for Online Dispute Resolution - Orna Rabinovich, Ethan Katsch, Journal of Dispute Resolution (2019)",
+          "12": "Resolving a New Kind of Trade War Through ODR - Amy Schmitz, University of Missouri School of Law Legal Studies Research Paper No. 2020-02",
+          "13": "The Current Landscape of Blockchain-Based, Crowdsourced Arbitration - James Metzger, Macquarie Law Journal (2019)",
+          "14": "The Distributed Stateless Society. Liberty, Manorialism and the State - Alexei Gudkov, SSRN (2019)",
+          "15": "Network Methodology of Private International Law in Conditions of Heterarchy of Normative System - M.V. Mazhorina, Вестник Университета имени О.Е. Кутафина (2019)",
+          "16": "Conflict of Law and “Non-Law” Renovation of the Lex Mercatoria, Smart Contracts and Blockchain Arbitration - M.V. Mazhorina, Lex Russica (2019)",
+          "17": "Designing Online Dispute Resolution - Janet K. Martinez, Journal of Dispute Resolution, Issue 1 (2020)",
+          "18": "Smart Contract and Dispute Resolution by Arbitration - Jong Kyu Han, Journal of Arbitration Studies (2020)",
+          "19": "Blockchain-mediated Licensing: Legal Engineering for Artist Empowerment - Charles Adjovu, and Ewa Fabian, LawArXiv (2020)",
+          "20": "Reliable Decentralized Oracle with Mechanisms for Verification and Disputation - Limao Ma ; Kosuke Kaneko ; Subodh Sharma ; Kouichi Sakurai, Institute of Electrical and Electronic Engineers (2019)",
+          "21": "Challenges for Connecting Citizens and Smart Cities: ICT, E-Governance and Blockchain - Thays A. Oliviera, Miquel Oliver, Helena Ramalhinho, Sustainability - The Sustainable Development of Smart Cities through Digital Innovation (2020)"
+        }
+      }
+    },
+    "section-cards": {
+      "card-1": { "title": "Kleros仲裁研究团队", "button": "了解更多" },
+      "card-2": { "title": "Kleros书籍: '争议裁决'", "button": "了解更多" }
+    }
+  },
+  "book": {
+    "section-hero": { "title": "Kleros书籍", "subtitle": "争议裁决: Kleros去中心化公正手册.", "title-download": "现在阅读" },
+    "section-contents": {
+      "h1": "Table of Contents",
+      "chapters": {
+        "1": {
+          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
+          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+        },
+        "1": {
+          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
+          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+        },
+        "2": {
+          "title": "Chapter 2, Kleros Cryptoeconomics: Towards a Theory of Decentralized Justice",
+          "paragraph": "This chapter focuses on the technology behind Kleros. In it, experts on game theory, such as Hebrew University professor Eyal Winter and our cryptoeconomic researcher William George try to bring these concepts closer to the layman reader. It also consists of our latest research into social choice theory, different choices of voting mechanisms and their potential impact on Kleros. The remainder of the chapter focuses on helping expand the knowledge base of our expert audience by sharing our experiences with smart contracts, oracles, as well as presenting proposals for Ethereum standards (or ERCs) and the basic policies on which Kleros is built."
+        },
+        "3": {
+          "title": "Chapter 3, Decentralized Justice in Action: From Doges on Trial to the Token Curated Registry",
+          "paragraph": "This chapter is an in-depth analysis of the 'Doges on Trial' experiment, as well as early lessons from the implementation of our T2CR and a wide look at what has been learned about attack vectors, juror behavior and the foundational cryptoeconomics. In the second edition, the chapter is expanded with latest insights into the so-called ‘challenger’s dilemma’ and the experiment we undertook comparing artificial and collective intelligence in the context of Doges on Trial."
+        },
+        "4": {
+          "title": "Chapter 4, Dispute Revolution: A New Justice Paradigm in an Old World",
+          "paragraph": "This chapter deals with the implications this technology might have for law and society. By sharing their experiences in online dispute resolution and research on blockchain law, industry and thought leaders such as Gillian Hadfield, Kate Sills and former Vice-President of the Ugandan Law Society, Alice Namuli give their opinion on how Kleros and decentralized justice might affect the future of law. A veteran international arbitrator, Sophie Nappert gives us a fantastic insight into the rise of algocracy and how humans can respond. In this chapter, particular care is taken to analyze the most critical points of any arbitration system - fairness and compatibility with existing legal frameworks."
+        },
+        "5": {
+          "title": "Chapter 5, The Business of Decentralized Justice",
+          "paragraph": "This chapter tries to paint an image of the way legal business is going to develop and change in the coming years. By bringing in decades of experience in future-centered thinking through conversations with Joe Raczynski, Thomson Reuters resident legal futurist, Colin Rule, the creator of eBay and PayPal’s dispute resolution systems, the author of the seminal book Digital Justice, Orna Rabinovich-Einy, Accord Project founder, Peter Hunn and legal design expert José Torres, we discuss the opportunities and hurdles in building new legal systems for the 21st Century. As added flavour, our Design Lead, Plinio Braga gives us unique, practical insight into designing novel legal applications."
+        },
+        "6": {
+          "title": "Chapter 6, Scaling Up: The Applications of Decentralized Justice",
+          "paragraph": "This chapter focuses on the use cases of Kleros, where we combine the vision and practice to define the key ingredients which will make Kleros the dispute resolution system of the future. Experts from different fields present their research into Kleros as a solution for a plethora of use cases, ranging from decentralized freelancing, marketplaces, gas, energy markets and derivatives trading to fake news, social media and online gaming. This chapter also presents some of our coming platforms, as well as existing ones in the context of creating a thriving dispute resolution ecosystem."
+        }
+      }
+    },
+    "contributors": "贡献者"
+  },
+  "token": {
+    "section-hero": {
+      "h1": "PNK通证",
+      "h2": "Pinakion, 是Kleros的通证名称。取名自古代雅典人用来为大众审判抽取陪审员而使用的令牌"
+    },
+    "sash": {
+      "title": "为何Kleros需要通证?",
+      "first": { "title": "激励评审员", "paragraph": "用户需要质押PNK才能有资格参与成为争议裁决陪审员的抽取" },
+      "second": { "title": "保护系统", "paragraph": "PNK通证保护系统免受恶意用户的攻击." },
+      "third": { "title": "平台自治", "paragraph": "PNK通证用于平台自治投票." },
+      "learnMore": { "title": "了解更多为何Kleros需要通证.", "button": "了解更多" }
+    },
+    "section-buy": "如何拥有PNK",
+    "section-otc": {
+      "title": "通过OTC获取PNK",
+      "subtitle": "为了确保公平，通证会以当前市场反映的价格出售给买家.",
+      "button": "Get in touch here"
+    }
+  },
+  "community": {
+    "section-hero": { "h1": "Kleros社区", "h2": "Kleros社区是一个热衷于法律创新和区块链技术的全球性社区." },
+    "section-members": {
+      "title": "社区爱好者遍布全球",
+      "telegram": "Kleros主要电报群"
+    },
+    "section-groups": {
+      "title": "多语种电报群",
+      "title-poh": "人类识别电报群"
+    },
+    "section-guild": {
+      "title": "Kleros公正协会",
+      "paragraph-1": "公正协会是Kleros的一项大使计划。 其主要目的是凝聚我们的全球社区，并在世界范围内广泛传播去中心化公正的理念.",
+      "paragraph-2": "公会分为两个等级，特使和先驱.",
+
+      "envoy": {
+        "title": "特使",
+        "paragraph": "特使在公会中的作用是充当社区建设者，管理Kleros在其地区的线上和线下活动，并增加我们社区成员的数量.",
+        "activities": { "title": "示例活动", "items": { "1": "创建和维护区域性电报群.", "2": "创建地区性的社区宣传内容.", "3": "组织线上线下活动." } },
+        "button": "了解更多"
+      },
+      "herald": {
+        "title": "先驱",
+        "paragraph": "先驱在公会中的作用是在全球范围内提高对Kleros的认识，促进在法律，商业和学术界的采用.",
+        "activities": { "title": "示例活动", "items": { "1": "在公司，政府和学术界的宣传演讲.", "2": "在当地媒体中代表Kleros.", "3": "创造业务发展机会." } },
+        "button": "了解更多"
+      }
+    },
+
+    "section-contact": "想加入公会吗？ 联系我们:"
+  },
+  "integrations": {
+    "section-hero": {
+      "h1": "Kleros系统集成",
+      "h2": "快速，安全和经济的公正即服务.",
+      "button": "系统集成咨询"
+    },
+    "section-main": {
+      "usecases": {
+        "exchanges": {
+          "nav-title": "DeFi",
+          "title": "Kleros应用于DeFi",
+          "text-1": "DeFi项目寻求通证列表?",
+          "text-2": "直接集成Kleros",
+          "used-by": "应用于"
+        },
+        "marketplaces": {
+          "nav-title": "电商",
+          "title": "Kleros应用于电商",
+          "text-1": "电商平台需要解决用户间纠纷?",
+          "text-2": "直接集成Kleros",
+        },
+        "bounties": {
+          "nav-title": "工作与赏金",
+          "title": "Kleros应用于工作与赏金",
+          "text-1": "自由职业或赏金平台需要解决用户间的纠纷?",
+          "text-2": "直接集成Kleros",
+        },
+        "curation": {
+          "nav-title": "用户生成的内容平台",
+          "title": "Kleros应用于内容平台",
+          "text-1": "需要一个去中心化的内容审核系统来对抗恶意用户吗？（仇恨言论，版权，垃圾邮件，色情）",
+          "text-2": "直接集成Kleros",
+        }
+      },
+      "getstarted": {
+        "erc792": {
+          "nav-title": "ERC 792: 仲裁智能合约标准",
+          "title": "ERC 792: 仲裁智能合约标准",
+          "text-1": "ERC-792: 仲裁智能合约标准提出了一种在以太坊上创建可互操作仲裁的标准方法。该标准包括两种类型的智能合约：仲裁对象和仲裁执行。仲裁对象合约将可强制执行的纠纷发送给仲裁执行智能合约，该合同会自动作出裁定，并将其发回至仲裁对象智能合约，然后由后者执行决定。 ERC-792提供了基本功能，允许智能合约与Kleros法庭及其评审员进行交互。 它为争端和裁决的执行提供了标准化流程.",
+          "button-primary": "阅读完整的文档",
+          "button-secondary": "浏览Github获取更多信息"
+        },
+        "erc1497": {
+          "nav-title": "ERC 1497: 证据提交标准",
+          "title": "ERC 1497: 证据提交标准",
+          "text-1": "为了以一种可互操作的方式存储各方之间的协议和有关协议的信息，我们开发了ERC-1497：证据提交标准。ERC-1497由两类信息组成：裁决证据和纠纷信息。顾名思义，裁决证据是支持裁决结果的信息。 另一方面，纠纷信息是有关纠纷本身，协议，所涉各方，裁决选项等的信息.",
+          "button-primary": "阅读完整的文档",
+          "button-secondary": "浏览Github获取更多信息"
+        },
+        "archon": {
+          "nav-title": "Archon - 以太网仲裁标准接口",
+          "title": "Archon - 以太网仲裁标准接口",
+          "text-1": "Archon是一个JavaScript库，旨在简化与仲裁对象和仲裁执行智能合约间的交互。特别是可以用来处理证据提交标准（ERC 1497）内的许多哈希验证工作。Archon可以与所有遵循ERC 792标准的仲裁对象和仲裁执行智能合约一起使用，并且可以与所有标准化方法进行交互.",
+          "button-primary": "阅读完整的文档",
+          "button-secondary": "浏览Github获取更多信息"
+        }
+      }
+    },
+    "section-trusted-by": "获得顶级项目的信任",
+    "section-contact": "立即集成"
+  },
+  "fellowship": {
+    "section-hero": {
+      "h1": "Kleros公正研究会",
+      "h2": "该计划聚集了来自不同领域的专家，以进行Kleros的研究工作。我们的研究员与我们的核心团队积极合作，促进了去中心化公正的发展.",
+      "conversion-phrase": "关注Kleros社交媒体，以了解何时开放下一批申请."
+    },
+    "section-fellows": "我们的研究员",
+    "section-faq": {
+      "1": {
+        "q": "什么是Kleros公正研究会?",
+        "a": "这是一个为期6个月的研究项目，参与者可以就与Kleros和去中心化公正有关的某个主题进行研究."
+      },
+      "2": {
+        "q": "谁可以参加?",
+        "a": "任何希望进行有关去中心化公正方面研究的人都可以申请参加."
+      },
+      "3": {
+        "q": "该项目的预期结果是什么?",
+        "a": "结果由Kleros团队和参与者在计划开始时达成共识，但通常是涉及Kleros某些特定方面的10至15页报告，."
+      },
+      "4": {
+        "q": "Kleros向参与者提供什么样的支持?",
+        "a": "参与者可以获得Kleros团队的指导，有关用户行为的数据，与生态系统中主要参与者的互动，甚至获得设计支持。我们将竭尽所能为会员提供帮助."
+      },
+      "5": {
+        "q": "你们提供资助吗？",
+        "a": "没有."
+      },
+      "6": {
+        "q": "该项目日常如何运作?",
+        "a": "研究会是一个完全远程的自治项目。没有常规电话会议，也没有进度报告。唯一可交付的成果是将在项目结束时提交的报告."
+      },
+      "7": {
+        "q": "该去哪里申请?",
+        "a": "可以在这里申请<anchor>here</anchor>."
+      }
+    }
+  },
+  "bio": {
+    "section-main": "下载报告",
+    "section-contact": { "title": "加入Kleros公正研究会", "subtitle": "有兴趣加入公正研究会? 请联系<mail>contact@kleros.io</mail>." }
+  },
+
+  "contact": {
+    "title": "联系我们"
+  },
+  "404": {
+    "seo-title": "404: 页面缺失"
   }
 }
