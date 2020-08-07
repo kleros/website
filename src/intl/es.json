@@ -14,7 +14,7 @@
     "onepager": "One Pager",
     "research": "Investigación",
     "pnktoken": "Token PNK",
-    "developer": "Desarrolladores",
+    "developer": "Documentación",
     "integrations": "Integraciones",
     "governance": "Gobernanza",
     "escrow": "Escrow",
@@ -221,7 +221,7 @@
     "seo-title": "Cooperativa",
     "section-hero": {
       "h1": "Coopérative Kleros",
-      "h2": "Coopérative Kleros, una Société Coopérative d’Intérêt Collectif (SCIC) incorporada en Francia, coordina las tareas de desarrollo para el protocolo de Kleros. Lee este artículo para conocer más acerca de la estructura legal."
+      "h2": "Coopérative Kleros, una Société Coopérative d’Intérêt Collectif (SCIC) incorporada en Francia, coordina las tareas de desarrollo para el protocolo de Kleros. Lee <anchor>este artículo</anchor> para conocer más acerca de la estructura legal."
     },
     "section-2": {
       "h1": "Conviértete en miembro de la Cooperativa",
