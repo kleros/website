@@ -9,8 +9,13 @@ import Trade from "src/assets/svgs/icon-trade.svg";
 import ECommerce from "src/assets/svgs/icon-e-commerce.svg";
 import Freelancing from "src/assets/svgs/icon-freelance.svg";
 import Moderation from "src/assets/svgs/icon-moderation.svg";
-import ERC792 from "src/assets/svgs/illustration-erc792.svg";
-import ERC1497 from "src/assets/svgs/illustration-erc1497.svg";
+
+import ERC792EN from "src/assets/svgs/illustration-erc792-en.svg";
+import ERC792ES from "src/assets/svgs/illustration-erc792-es.svg";
+
+import ERC1497EN from "src/assets/svgs/illustration-erc1497-en.svg";
+import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
+
 import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/deversifi.png";
 import Omen from "src/assets/images/omen.png";
@@ -20,9 +25,16 @@ import Realitio from "src/assets/images/realitio.png";
 import DutchX from "src/assets/images/dutchx.png";
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
-import MarketplaceIllustration from "src/assets/svgs/marketplace.svg";
-import BountiesIllustration from "src/assets/svgs/bounties.svg";
-import CurationIllustration from "src/assets/svgs/curation.svg";
+
+import MarketplaceIllustrationEN from "src/assets/svgs/marketplace-en.svg";
+import MarketplaceIllustrationES from "src/assets/svgs/marketplace-es.svg";
+
+import BountiesIllustrationEN from "src/assets/svgs/bounties-en.svg";
+import BountiesIllustrationES from "src/assets/svgs/bounties-es.svg";
+
+import CurationIllustrationEN from "src/assets/svgs/curation-en.svg";
+import CurationIllustrationES from "src/assets/svgs/curation-es.svg";
+
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
 import { Badge } from "react-bootstrap";
 import Categories from "src/intl/en.json";
@@ -30,6 +42,31 @@ import Categories from "src/intl/en.json";
 const EXCHANGEILLUSTRATIONS = {
   en: <ExchangeIllustrationEN />,
   es: <ExchangeIllustrationES />,
+};
+
+const ERC792S = {
+  en: <ERC792EN />,
+  es: <ERC792ES />,
+};
+
+const ERC1497S = {
+  en: <ERC1497EN />,
+  es: <ERC1497ES />,
+};
+
+const BOUNTIES = {
+  en: <BountiesIllustrationEN />,
+  es: <BountiesIllustrationES />,
+};
+
+const CURATIONS = {
+  en: <CurationIllustrationEN />,
+  es: <CurationIllustrationES />,
+};
+
+const MARKETPLACES = {
+  en: <MarketplaceIllustrationEN />,
+  es: <MarketplaceIllustrationES />,
 };
 
 const Integrations = ({ intl }) => (
@@ -118,7 +155,7 @@ const Integrations = ({ intl }) => (
                       <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
                     </h3>
                   </div>
-                  <MarketplaceIllustration />
+                  {MARKETPLACES[intl.locale]}
                 </>
               )}
               {category[0] === "bounties" && (
@@ -132,7 +169,7 @@ const Integrations = ({ intl }) => (
                       <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
                     </h3>
                   </div>
-                  <BountiesIllustration />
+                  {BOUNTIES[intl.locale]}
                 </>
               )}
               {category[0] === "curation" && (
@@ -146,7 +183,7 @@ const Integrations = ({ intl }) => (
                       <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.text-2`} />
                     </h3>
                   </div>
-                  <CurationIllustration />
+                  {CURATIONS[intl.locale]}
                 </>
               )}
             </div>
@@ -162,7 +199,7 @@ const Integrations = ({ intl }) => (
                   <h2>
                     <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
                   </h2>
-                  <ERC792 />
+                  {ERC792S[intl.locale]}
                   <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
                     <a target="blank" rel="noopener noreferrer" className="btn btn-primary" href="https://developer.kleros.io/en/latest/introduction.html">
                       <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
@@ -180,7 +217,7 @@ const Integrations = ({ intl }) => (
                     <h2>
                       <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.text-1`} />
                     </h2>
-                    <ERC1497 />
+                    {ERC1497S[intl.locale]}
                     <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
                       <a target="blank" rel="noopener noreferrer" className="btn btn-primary" href="https://developer.kleros.io/en/latest/erc-1497.html">
                         <FormattedMessage id={`integrations.section-main.getstarted.${category[0]}.button-primary`} />
