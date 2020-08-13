@@ -16,16 +16,26 @@ import styles from "./styles/header.module.css";
 import { Badge, Button, Card, Collapse, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { FormattedMessage, IntlContextConsumer, Link, changeLocale, injectIntl } from "gatsby-plugin-intl";
 
+import EN from "src/assets/svgs/flags/gb-nir.svg";
+import ES from "src/assets/svgs/flags/es.svg";
+import FR from "src/assets/svgs/flags/fr.svg";
+import KO from "src/assets/svgs/flags/kr.svg";
+import PT from "src/assets/svgs/flags/pt.svg";
+import BR from "src/assets/svgs/flags/br.svg";
+import RU from "src/assets/svgs/flags/ru.svg";
+import TR from "src/assets/svgs/flags/tr.svg";
+import ZH from "src/assets/svgs/flags/cn.svg";
+
 const FLAGS = {
-  en: "🇬🇧",
-  es: "🇪🇸",
-  fr: "🇫🇷",
-  ko: "🇰🇷",
-  pt: "🇵🇹",
-  "pt-br": "🇧🇷",
-  ru: "🇷🇺",
-  tr: "🇹🇷",
-  zh: "🇨🇳",
+  en: <EN />,
+  es: <ES />,
+  fr: <FR />,
+  ko: <KO />,
+  pt: <PT />,
+  "pt-br": <BR />,
+  ru: <RU />,
+  tr: <TR />,
+  zh: <ZH />,
 };
 
 class Header extends React.Component {
@@ -65,7 +75,8 @@ class Header extends React.Component {
                           .filter((language) => language !== currentLocale)
                           .map((language) => (
                             <NavDropdown.Item
-                              className="h3 text-right px-2 "
+                              className={` h3 text-right px-2 ${styles.wefw}`}
+                              style={{ backgroundColor: "transparent" }}
                               key={language}
                               onClick={() => {
                                 changeLocale(language);
@@ -77,7 +88,7 @@ class Header extends React.Component {
                           ));
 
                         return (
-                          <NavDropdown alignRight className="d-inline-flex h3" title={FLAGS[currentLocale]}>
+                          <NavDropdown alignRight className={`${styles.flagContainer} d-inline-flex h3`} title={FLAGS[currentLocale]}>
                             {items}
                           </NavDropdown>
                         );
@@ -92,7 +103,8 @@ class Header extends React.Component {
                           .filter((language) => language !== currentLocale)
                           .map((language) => (
                             <NavDropdown.Item
-                              className="h3 text-right px-2"
+                              className={`h3 text-right px-2 ${styles.flag}`}
+                              style={{ backgroundColor: "transparent" }}
                               key={language}
                               onClick={() => {
                                 changeLocale(language);
@@ -104,7 +116,7 @@ class Header extends React.Component {
                           ));
 
                         return (
-                          <NavDropdown alignRight className="d-inline-flex h3" title={FLAGS[currentLocale]}>
+                          <NavDropdown alignRight className={`${styles.flagContainer} d-inline-flex h3`} title={FLAGS[currentLocale]}>
                             {items}
                           </NavDropdown>
                         );

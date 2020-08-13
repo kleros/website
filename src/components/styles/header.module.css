@@ -133,3 +133,12 @@
   .header div > div:nth-child(2) > div > a {
   }
 }
+
+.header svg {
+  width: 3rem;
+}
+
+.header .flagContainer > div {
+  text-align: center;
+  width: auto;
+}
