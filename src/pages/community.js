@@ -39,7 +39,7 @@ const Community = ({ intl }) => (
         </h3>
 
         <Telegram className={styles.telegram} />
-        <a className="purple bold medium" href="t.me/kleros">
+        <a className="purple bold medium" href="https://t.me/kleros">
           t.me/kleros
         </a>
       </section>
