@@ -72,7 +72,7 @@ const FAQ = ({ intl }) => {
                       <React.Fragment key={index}>
                         <Card>
                           <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={`key${index}`}>
-                            <span className={`${activeKey === index ? styles.closed : styles.open}`}>
+                            <span className={`${activeKey === `key${index}` ? styles.closed : styles.open}`}>
                               <FormattedMessage id={`faq.section-faq.${category[0]}.questions.${index + 1}.q`} />
                             </span>
                           </Accordion.Toggle>
