@@ -19,6 +19,7 @@ import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
 import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
+import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
 import styles from "./styles/footer.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -38,6 +39,7 @@ const ONEPAGERS = {
 const WHITE_PAPERS = {
   en: WhitePaperEN,
   es: WhitePaperES,
+  zh: WhitePaperZH,
 };
 
 const YELLOW_PAPERS = {

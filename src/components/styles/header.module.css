@@ -64,10 +64,11 @@
   padding: 14px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .header nav > div > div:nth-child(2) > div > div {
     margin-top: 1rem !important;
     min-width: fit-content;
+    display: flex;
   }
 
   .header nav div div:nth-child(1) button:not([class~="collapsed"])::after {
