@@ -188,7 +188,7 @@ class Header extends React.Component {
                 <p className="text-center text-purple-darker ">Ninja</p>
               </div>
               <div className="d-inline-block">
-                <a href="https://linguo.kleros.io" rel="noopener noreferrer" target="_blank">
+                <a href="https://linguo-beta.netlify.app" rel="noopener noreferrer" target="_blank">
                   <Badge>
                     <span className={styles.helper} />
                     <img src={Linguo} alt="Linguo" />
