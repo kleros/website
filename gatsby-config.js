@@ -377,7 +377,9 @@ module.exports = {
         path: `${__dirname}/src/intl`,
         // supported language
         // languages: [`en`, `ko`, `es`, `ru`, `fr`, "tr", "pt", "zh", "pt-br"],
-        languages: [`en`, `zh`],
+
+        languages: [`en`, `es`, `zh`],
+
         // language file path
         defaultLanguage: `en`,
         // option to redirect to `/en` when connecting `/`

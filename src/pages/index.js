@@ -16,7 +16,8 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import Resolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
-import CasesDisputes from "src/assets/svgs/illustration-home.svg";
+import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
+import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import Omen from "src/assets/images/omen.png";
@@ -88,6 +89,11 @@ const sliderSettings = {
     // settings: "unslick"
     // instead of a settings object
   ],
+};
+
+const CASESDISPUTES = {
+  en: <CasesDisputesEN />,
+  es: <CasesDisputesES />,
 };
 
 const PERIODS = ["Evidence", "Commit", "Vote", "Appeal", "Execution"];
@@ -376,7 +382,7 @@ class IndexPage extends React.Component {
           <section>
             <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
             <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
-            <CasesDisputes />
+            {CASESDISPUTES[intl.locale]}
           </section>
           <div className={styles.products}>
             <section>
@@ -473,7 +479,9 @@ class IndexPage extends React.Component {
             </section>
           </div>
           <section>
-            <h1 className="mb-5">Join the Justice Revolution</h1>
+            <h1 className="mb-5">
+              <FormattedMessage id="index.section-4.title" />
+            </h1>
             <Container className="p-0" fluid>
               <Row>
                 <Col className="mt-5" md>

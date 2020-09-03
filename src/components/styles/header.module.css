@@ -67,6 +67,7 @@
 @media screen and (min-width: 992px) {
   .header nav > div > div:nth-child(2) > div > div {
     margin-top: 1rem !important;
+    min-width: fit-content;
   }
 
   .header nav div div:nth-child(1) button:not([class~="collapsed"])::after {
@@ -113,6 +114,18 @@
     transform: translateY(-0.1rem);
     margin-left: 0.5rem;
   }
+  .header div > div:nth-child(2) > div > div {
+    margin-left: 1.5rem !important;
+  }
+
+  .header div > div:nth-child(2) > div > a {
+    display: inline;
+  }
+
+  .header nav > div > div:nth-child(2) > div > div > a {
+    text-align: right;
+    margin: 0;
+  }
 }
 
 .header nav div:nth-child(2) > div > a:after,
@@ -121,14 +134,18 @@
 }
 
 .header nav > div > div:nth-child(2) > div > div > a {
-  display: inline;
   text-align: right;
+  display: flex;
+}
+.header nav > div > div:nth-child(2) > div > div {
+  display: flex;
 }
 
-@media screen and (max-width: 992px) {
-  .header div > div:nth-child(2) > div > div {
-  }
+.header svg {
+  width: 3rem;
+}
 
-  .header div > div:nth-child(2) > div > a {
-  }
+.header .flagContainer > div {
+  text-align: center;
+  width: auto;
 }

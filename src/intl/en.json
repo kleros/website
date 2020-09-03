@@ -88,6 +88,7 @@
       "small": "*Product under development"
     },
     "section-4": {
+      "title": "Join the Justice Revolution",
       "card-1": {
         "title": "Join as a Juror",
         "paragraph": "Earn money and bring justice to the world.",
@@ -525,8 +526,8 @@
     },
     "section-buy": "Where To Buy PNK",
     "section-otc": {
-      "title": "Buy PNK Through an OTC Transaction",
-      "subtitle": "In order to ensure fair token distribution, tokens are sold to buyers at prices reflected by current market.",
+      "title": "If you are interested in acquiring PNK token OTC, get in touch",
+      "subtitle": "Note that in order to ensure fairness in token distribution, tokens are sold to buyers at prices reflected by the market.",
       "button": "Get in touch here"
     }
   },
@@ -570,6 +571,7 @@
       "button": "Get in touch for integrations support"
     },
     "section-main": {
+      "usecases-title": "USECASES",
       "usecases": {
         "exchanges": {
           "nav-title": "DeFi",
@@ -597,6 +599,7 @@
           "text-2": "Just use Kleros"
         }
       },
+      "getstarted-title": "GET STARTED",
       "getstarted": {
         "erc792": {
           "nav-title": "ERC 792: Arbitration Standard",
