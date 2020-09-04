@@ -13,6 +13,14 @@
   font-weight: 500;
 }
 
+.header .productsTitle {
+  text-align: center;
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-purple);
+  margin-bottom: 0;
+}
+
 .header button,
 .header button:hover,
 .header button:active,

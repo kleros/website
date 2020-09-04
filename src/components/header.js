@@ -130,6 +130,11 @@ class Header extends React.Component {
         </Navbar>
         <Collapse as="section" className={`collapse ${styles.dapps}`} id="collapse">
           <Card>
+            <Card.Title>
+              <h1 className={styles.productsTitle}>
+                <FormattedMessage id="header.dapps-title" />
+              </h1>
+            </Card.Title>
             <Card.Body className="px-5 py-3 text-center">
               <div className="d-inline-block">
                 <a href="https://court.kleros.io" rel="noopener noreferrer" target="_blank">
@@ -158,7 +163,6 @@ class Header extends React.Component {
                 </a>
                 <p className="text-center text-purple-darker ">Dispute Resolver</p>
               </div>
-
               <div className="d-inline-block">
                 <a href="https://tokens.kleros.io" rel="noopener noreferrer" target="_blank">
                   <Badge>
