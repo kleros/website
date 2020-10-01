@@ -75,7 +75,7 @@ class Header extends React.Component {
                           .filter((language) => language !== currentLocale)
                           .map((language) => (
                             <NavDropdown.Item
-                              className={` h3 text-right px-2 ${styles.wefw}`}
+                              className={` h3 text-right px-2`}
                               style={{ backgroundColor: "transparent" }}
                               key={language}
                               onClick={() => {

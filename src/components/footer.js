@@ -104,6 +104,9 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/media">
             <FormattedMessage id="footer.media" />
           </Link>
+          <a className="mr-3" href="https://kleros.io/KlerosBrandAssets.zip">
+            <FormattedMessage id="footer.brand-assets" />
+          </a>
           <Link className="mr-3" to="/book">
             <FormattedMessage id="footer.book" />
           </Link>
