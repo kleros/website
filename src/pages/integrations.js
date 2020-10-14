@@ -23,6 +23,14 @@ import WindingTree from "src/assets/images/winding-tree-colored.png";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import DutchX from "src/assets/images/dutchx.png";
+
+import DeversifiMono from "src/assets/images/deversifi-mono.png";
+import OmenMono from "src/assets/images/omen-mono.png";
+import WindingTreeMono from "src/assets/images/winding-mono.png";
+import CryptoUnlockedMono from "src/assets/images/crypto-unlocked-mono.png";
+import RealitioMono from "src/assets/images/realitio-mono.png";
+import DutchXMono from "src/assets/images/dutch-mono.png";
+
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
 
@@ -85,7 +93,37 @@ const Integrations = ({ intl }) => (
           <FormattedMessage id="integrations.section-hero.button" />
         </a>
       </section>
-      <section className="integrations" />
+      <section className={`${styles.trustedBy}`}>
+        <h2 className="text-center">
+          <FormattedMessage id="integrations.section-trusted-by" />
+        </h2>
+        <div>
+          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={DeversifiMono} alt="Deversifi" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={OmenMono} alt="Omen" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={DutchXMono} alt="DutchX" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={WindingTreeMono} alt="WindingTree" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={RealitioMono} alt="Realitio" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={CryptoUnlockedMono} alt="CryptoUnlocked" />
+          </Badge>
+        </div>
+      </section>
       <section className={styles.items}>
         <div aria-orientation="vertical" className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist">
           <p className="purple-light">
@@ -265,37 +303,6 @@ const Integrations = ({ intl }) => (
             }),
           }}
         />
-      </section>
-      <section className={`${styles.trustedBy} light`}>
-        <h2 className="text-center purple">
-          <FormattedMessage id="integrations.section-trusted-by" />
-        </h2>
-        <div>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={Deversifi} alt="Deversifi" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={Omen} alt="Omen" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={DutchX} alt="DutchX" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={WindingTree} alt="WindingTree" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={Realitio} alt="Realitio" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={CryptoUnlocked} alt="CryptoUnlocked" />
-          </Badge>
-        </div>
       </section>
     </div>
   </Layout>
