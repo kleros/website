@@ -58,7 +58,7 @@ class Header extends React.Component {
               <Link className=" nav-link" to="/research">
                 <FormattedMessage id="header.research" />
               </Link>
-              <Nav.Link className="" href="https://blog.kleros.io" rel="noopener noreferrer" target="_blank">
+              <Nav.Link className="" href="https://blog.kleros.io" rel="noopener noreferrer">
                 <FormattedMessage id="header.blog" />
               </Nav.Link>
               <Link className=" nav-link" to="/about">
