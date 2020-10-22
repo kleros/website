@@ -1,0 +1,71 @@
+.productBadge {
+  display: inline-block;
+  height: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.productBadgePositioner {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hoveredProductBadgePositioner {
+  z-index: 1;
+}
+
+.productBadgeLayout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productBadgeBadge {
+  align-items: center;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+.hoveredProductBadgeBadge {
+  flex-direction: column;
+  height: auto;
+  padding: 8px 0 0;
+  width: 160px;
+}
+
+.productBadgeIcon {
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.hoveredProductBadgeIcon {
+  height: 64px !important;
+  width: 64px !important;
+}
+
+.productBadgeDescription {
+  padding: 0 8px;
+}
+
+.productBadgeDivider {
+  background-color: var(--color-purple-light);
+  border: none;
+  height: 1px;
+  margin: 8px 0;
+  opacity: 0.25;
+  width: 100%;
+}
+
+.productBadgeName {
+  color: var(--color-purple-darker);
+  margin-top: 12px;
+  white-space: nowrap;
+}
