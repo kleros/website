@@ -27,7 +27,6 @@ const CONTENT = {
     { link: "https://www.youtube.com/embed/yvhZvKz2p4Y", text: "media.section-media.conference.items.11" },
     { link: "https://www.youtube.com/embed/mX3esOessmE", text: "media.section-media.conference.items.12" },
     { link: "https://www.youtube.com/embed/hC9JgzuXzMk", text: "media.section-media.conference.items.13" },
-    
   ],
 
   presentations: [
@@ -71,7 +70,7 @@ const Media = ({ intl }) => (
       <section className={styles.items}>
         <div aria-orientation="vertical" className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist">
           {Object.keys(Categories.media["section-media"]).map((category, index) => (
-            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={index} role="tab">
+            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id={`v-pills-${category}-tab`} key={index} role="tab">
               <FormattedMessage id={`media.section-media.${category}.nav-title`} />
             </a>
           ))}
