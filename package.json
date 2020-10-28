@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kleros",
   "dependencies": {
-    "@kleros/archon": "^0.10.4",
+    "@kleros/archon": "^0.12.1",
     "@kleros/binary-arbitrable-proxy-contract": "^2.3.3",
     "@kleros/kleros": "^0.1.2",
     "aos": "^2.3.4",
