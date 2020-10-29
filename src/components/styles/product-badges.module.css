@@ -52,6 +52,7 @@
 }
 
 .productBadgeDescription {
+  color: var(--color-pink-dark);
   padding: 0 8px;
 }
 
