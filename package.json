@@ -41,7 +41,7 @@
     "react-slick": "^0.26.1",
     "replace-in-file": "^6.1.0",
     "slick-carousel": "^1.8.1",
-    "web3": "^1.2.11"
+    "web3": "1.0.37-beta"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
@@ -57,6 +57,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "postinstall": "node ./patch-scrypt.js",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
