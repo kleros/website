@@ -5,12 +5,14 @@
   "version": "0.1.0",
   "author": "Kleros",
   "dependencies": {
-    "@kleros/archon": "^0.10.1",
+    "@kleros/archon": "^0.12.1",
     "@kleros/binary-arbitrable-proxy-contract": "^2.3.3",
     "@kleros/kleros": "^0.1.2",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
+    "classnames": "^2.2.6",
     "electron": "^9.1.0",
+    "framer-motion": "^2.9.4",
     "gatsby": "^2.21.0",
     "gatsby-image": "^2.4.0",
     "gatsby-plugin-create-client-paths": "^2.3.6",
@@ -38,7 +40,6 @@
     "react-media": "^1.10.0",
     "react-slick": "^0.26.1",
     "replace-in-file": "^6.1.0",
-    "scrypt": "^6.0.3",
     "slick-carousel": "^1.8.1",
     "web3": "1.0.0-beta.37"
   },
@@ -55,8 +56,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "postinstall": "node ./patch-scrypt.js",
     "serve": "gatsby serve",
+    "postinstall": "node ./patch-scrypt.js",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },

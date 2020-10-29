@@ -18,10 +18,6 @@ import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
 
 import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/deversifi.png";
-import Omen from "src/assets/images/omen.png";
-import WindingTree from "src/assets/images/winding-tree-colored.png";
-import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
-import Realitio from "src/assets/images/realitio.png";
 import DutchX from "src/assets/images/dutchx.png";
 
 import DeversifiMono from "src/assets/images/deversifi-mono.png";
@@ -131,7 +127,7 @@ const Integrations = ({ intl }) => (
             <FormattedMessage id="integrations.section-main.usecases-title" />
           </p>
           {Object.keys(Categories.integrations["section-main"].usecases).map((category, index) => (
-            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={category} role="tab">
+            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id={`v-pills-${category}-tab`} key={category} role="tab">
               <FormattedMessage id={`integrations.section-main.usecases.${category}.nav-title`} />
             </a>
           ))}
@@ -139,7 +135,7 @@ const Integrations = ({ intl }) => (
             <FormattedMessage id="integrations.section-main.getstarted-title" />
           </p>
           {Object.keys(Categories.integrations["section-main"].getstarted).map((category, index) => (
-            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${category == null && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={category} role="tab">
+            <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${category == null && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id={`v-pills-${category}-tab`} key={category} role="tab">
               <FormattedMessage id={`integrations.section-main.getstarted.${category}.nav-title`} />
             </a>
           ))}

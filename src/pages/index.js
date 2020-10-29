@@ -41,7 +41,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import lscache from "lscache";
-import assert from "assert";
 
 import Archon from "@kleros/archon";
 import BigNumber from "bignumber.js";
@@ -278,7 +277,7 @@ class IndexPage extends React.Component {
                 <FormattedMessage id="index.section-disputes.subtitle" />
               </h2>
               <div className={styles.disputesContent}>
-                {!(disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES) && (
+                {!(disputes && Object.keys(disputes).length === NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length === NO_OF_RECENT_DISPUTES) && (
                   <>
                     <div className={styles.loading}>
                       <FormattedMessage id="index.section-disputes.loading" />
@@ -286,7 +285,7 @@ class IndexPage extends React.Component {
                     <Spinner className={styles.spinner} animation="grow" />
                   </>
                 )}
-                {disputes && Object.keys(disputes).length == NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length == NO_OF_RECENT_DISPUTES && (
+                {disputes && Object.keys(disputes).length === NO_OF_RECENT_DISPUTES && metaEvidences && Object.keys(metaEvidences).length === NO_OF_RECENT_DISPUTES && (
                   <Slider {...sliderSettings}>
                     {Object.entries(this.state.disputes).map((d, i) => (
                       <div key={i}>

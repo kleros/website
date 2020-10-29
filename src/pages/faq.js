@@ -47,7 +47,7 @@ const FAQ = ({ intl }) => {
         <section className={styles.questions}>
           <div aria-orientation="vertical" className={`nav ${styles.nav}`} id="v-pills-tab" role="tablist">
             {Object.keys(Questions.faq["section-faq"]).map((category, index) => (
-              <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id="v-pills-${category}-tab" key={index} onClick={() => setActiveKey(-1)} role="tab">
+              <a aria-controls={`#v-pills-${category}`} aria-selected="true" className={`nav-link ${!index && "active"}`} data-toggle="pill" href={`#v-pills-${category}`} id={`v-pills-${category}-tab`} key={index} onClick={() => setActiveKey(-1)} role="tab">
                 <FormattedMessage id={`faq.section-faq.${category}.title`} />
               </a>
             ))}
