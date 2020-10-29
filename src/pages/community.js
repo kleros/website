@@ -102,7 +102,7 @@ const Community = ({ intl }) => (
             content={{
               icon: PoH,
               paragraph: "t.me/proofhumanity",
-              paragraphHref: "t.me/proofhumanity",
+              paragraphHref: "https://t.me/proofhumanity",
               title: intl.formatMessage({ id: "community.section-groups.title-poh" }),
             }}
           />
