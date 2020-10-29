@@ -4,7 +4,7 @@
     <title>ESP arbitrable arbitrator your platform</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="90.7232337%" y1="22.0726224%" x2="13.9440549%" y2="80.8973596%" id="linearGradient-1">
+        <linearGradient x1="90.7232337%" y1="22.0726224%" x2="13.9440549%" y2="80.8973596%" id="792eslinearGradient-1">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#FAFAFA" offset="100%"></stop>
         </linearGradient>
@@ -14,20 +14,20 @@
             <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0   0 0 0 0 0.705882353  0 0 0 0.516826923 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <linearGradient x1="0%" y1="49.9999777%" x2="100.000024%" y2="49.9999777%" id="linearGradient-4">
+        <linearGradient x1="0%" y1="49.9999777%" x2="100.000024%" y2="49.9999777%" id="792eslinearGradient-4">
             <stop stop-color="#A3A2A5" offset="0%"></stop>
             <stop stop-color="#9F9EA0" offset="27.05%"></stop>
             <stop stop-color="#929194" offset="56.07%"></stop>
             <stop stop-color="#7C7C80" offset="85.92%"></stop>
             <stop stop-color="#707073" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="-0.661193461%" y1="80.1314375%" x2="70.3915924%" y2="24.0826644%" id="linearGradient-5">
+        <linearGradient x1="-0.661193461%" y1="80.1314375%" x2="70.3915924%" y2="24.0826644%" id="792eslinearGradient-5">
             <stop stop-color="#969598" offset="0%"></stop>
             <stop stop-color="#908F92" offset="33.96%"></stop>
             <stop stop-color="#7F7F82" offset="79.17%"></stop>
             <stop stop-color="#757578" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="6.37607994%" y1="-2.83492963%" x2="50.0094516%" y2="85.0511445%" id="linearGradient-6">
+        <linearGradient x1="6.37607994%" y1="-2.83492963%" x2="50.0094516%" y2="85.0511445%" id="792eslinearGradient-6">
             <stop stop-color="#9E9EA0" offset="0%"></stop>
             <stop stop-color="#9B9B9D" offset="27.59%"></stop>
             <stop stop-color="#919194" offset="49.4%"></stop>
@@ -35,7 +35,7 @@
             <stop stop-color="#69696D" offset="87.77%"></stop>
             <stop stop-color="#55565A" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="90.7232337%" y1="22.0726224%" x2="13.9440549%" y2="80.8973596%" id="linearGradient-7">
+        <linearGradient x1="90.7232337%" y1="22.0726224%" x2="13.9440549%" y2="80.8973596%" id="792eslinearGradient-7">
             <stop stop-color="#9013FE" offset="0%"></stop>
             <stop stop-color="#BD73FF" offset="100%"></stop>
         </linearGradient>
@@ -59,7 +59,7 @@
                         <g id="Group-7">
                             <g id="Oval">
                                 <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-                                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <use fill="url(#792eslinearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                             </g>
                         </g>
                     </g>
@@ -68,9 +68,9 @@
                     <polygon id="Path" fill="#45464D" opacity="0.7" points="72.2482644 2.05337118 26.5863503 0 0 33.4640939 18.6291878 78.1865455 64.7478404 81 91 43.3774095"></polygon>
                     <g id="Group">
                         <polygon id="Path" fill="#656569" points="90.9174363 43.3352266 64.9407046 16.804951 58.108618 67.6983273"></polygon>
-                        <polygon id="Path" fill="url(#linearGradient-4)" points="17.7399382 37.3680755 64.9407046 16.804951 58.108618 67.6983273"></polygon>
-                        <polygon id="Path" fill="url(#linearGradient-5)" points="64.9407046 16.804951 26.590335 0.037951049 17.7399382 37.3680755"></polygon>
-                        <polygon id="Path" fill="url(#linearGradient-6)" points="17.7399382 37.3680755 18.643864 78.0803748 58.108618 67.6983273"></polygon>
+                        <polygon id="Path" fill="url(#792eslinearGradient-4)" points="17.7399382 37.3680755 64.9407046 16.804951 58.108618 67.6983273"></polygon>
+                        <polygon id="Path" fill="url(#792eslinearGradient-5)" points="64.9407046 16.804951 26.590335 0.037951049 17.7399382 37.3680755"></polygon>
+                        <polygon id="Path" fill="url(#792eslinearGradient-6)" points="17.7399382 37.3680755 18.643864 78.0803748 58.108618 67.6983273"></polygon>
                         <polygon id="Path" fill="#757578" points="64.9407046 16.804951 72.1908962 2.08753427 26.590335 0.037951049"></polygon>
                         <polygon id="Path" fill="#6C6D70" points="72.1908962 2.08753427 90.9174363 43.3352266 64.9407046 16.804951"></polygon>
                         <polygon id="Path" fill="#6C6D70" points="90.9174363 43.3352266 64.7005501 80.8884126 58.108618 67.6983273"></polygon>
@@ -99,7 +99,7 @@
                     </g>
                     <g id="Oval">
                         <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
-                        <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
+                        <use fill="url(#792eslinearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
                     </g>
                 </g>
             </g>
