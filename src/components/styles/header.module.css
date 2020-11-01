@@ -130,3 +130,13 @@
   text-align: center;
   width: auto;
 }
+
+.header .productsCard:global(:not(.show)) {
+  background-color: red;
+  display: flex;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: none;
+}
