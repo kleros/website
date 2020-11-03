@@ -22,7 +22,7 @@ const products = [
   { name: "Escrow", href: "https://escrow.kleros.io", Icon: Escrow },
   { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR },
   { name: "Curate", href: "https://curate.kleros.io", Icon: Curate },
-  { name: "Dispute Resolver", href: "https://resolver.kleros.io", Icon: DisputeResolver },
+  { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver },
   { name: "Uniswap Ninja", href: "https://uniswap.ninja", Icon: Ninja },
   { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked) },
   { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio) },
