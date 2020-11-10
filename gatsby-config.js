@@ -25,14 +25,6 @@ module.exports = {
         },
       },
       {
-        name: "Lola Guérin",
-        title: "Office Manager",
-        links: {
-          twitter: "https://twitter.com/Haz3lstar",
-          linkedin: "https://www.linkedin.com/in/lola-gu%C3%A9rin-05166782/",
-        },
-      },
-      {
         name: "Stuart James",
         title: "Operations Manager",
         links: {
