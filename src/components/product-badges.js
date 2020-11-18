@@ -27,7 +27,7 @@ const products = [
   { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked) },
   { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio) },
   { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen) },
-  { name: "Linguo", href: "https://linguo-beta.netlify.app/", Icon: Linguo },
+  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo },
 ];
 
 const _ProductBadge = ({ name, hovered, setHoveredName, href, Icon, children }) => {

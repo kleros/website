@@ -463,7 +463,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker  ">Omen</p>
                 </div>
                 <div className="d-inline-block">
-                  <a href="https://linguo-beta.netlify.app">
+                  <a href="https://linguo.kleros.io">
                     <Badge>
                       <Linguo />
                     </Badge>
