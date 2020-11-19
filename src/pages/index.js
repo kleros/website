@@ -314,7 +314,7 @@ class IndexPage extends React.Component {
           )}
           <section className={styles.usecases}>
             <div className="iframe-container">
-              <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/NuSps_2wMQ4" width="560" />
+              <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/wZZ2ipS-jZw" width="560" />
             </div>
           </section>
           <hr />
