@@ -147,6 +147,11 @@ module.exports = {
         links: {},
       },
       {
+        name: "Jimmy Ragosa",
+        title: "Integrations Manager",
+        links: { linkedin: "https://www.linkedin.com/in/jragosa/", twitter: "https://twitter.com/JimmyRagosa" },
+      },
+      {
         name: "Colin Rule",
         title: "Vice President for Online Dispute Resolution, Tyler Technologies",
         links: {},
