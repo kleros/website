@@ -7,10 +7,9 @@ import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
 import Alice from "src/assets/images/alice.png";
 import Deversifi from "src/assets/images/deversifi-bw.png";
-import Ink from "src/assets/images/ink.png";
-import MarketProtocol from "src/assets/images/marketprotocol.png";
-import BlueFrontiers from "src/assets/images/bluefrontiers.png";
 import WindingTree from "src/assets/images/winding-tree.png";
+import Omen from "src/assets/images/omen-mono-2.png";
+import Uniswap from "src/assets/images/uniswap-mono.png";
 import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Twitter from "src/assets/svgs/twitter.svg";
@@ -209,10 +208,8 @@ const About = ({ intl }) => (
           <FormattedMessage id="about.section-5" />
         </h2>
         <img src={Deversifi} alt="Deversifi" />
-        <img src={MarketProtocol} alt="MarketProtocol" />
-        <img src={Ink} alt="Ink" />
-        <img src={WindingTree} alt="WindingTree" />
-        <img src={BlueFrontiers} alt="BlueFrontiers" />
+        <img src={Uniswap} alt="Ink" />
+        <img src={Omen} alt="WindingTree" />
         <img src={Alice} alt="Alice" />
         <hr style={{ marginTop: "5rem" }} />
       </section>
