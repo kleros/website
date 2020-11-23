@@ -19,7 +19,7 @@ import styles from "./styles/product-badges.module.css";
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
 const products = [
   { name: "Court", href: "https://court.kleros.io", Icon: Court },
-  { name: "Escrow", href: "https://escrow.kleros.io", Icon: Escrow },
+  { name: "Escrow", href: "https://kleros.io/escrow", Icon: Escrow },
   { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR },
   { name: "Curate", href: "https://curate.kleros.io", Icon: Curate },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver },
