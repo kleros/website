@@ -171,7 +171,7 @@ const Integrations = ({ intl }) => (
                       <span className={styles.helper}></span>
                       <img src={Deversifi} alt="Deversifi" />
                     </Badge>
-                    <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+                    <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
                       <img src={DutchX} alt="DutchX" />
                     </Badge>
