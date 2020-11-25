@@ -18,19 +18,19 @@ import styles from "./styles/product-badges.module.css";
 
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
 const products = [
-  { name: "Court", href: "https://court.kleros.io", Icon: Court },
+  { name: "Court", href: "https://court.kleros.io", Icon: Court, target: "_blank" },
   { name: "Escrow", href: "https://kleros.io/escrow", Icon: Escrow },
-  { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR },
-  { name: "Curate", href: "https://curate.kleros.io", Icon: Curate },
-  { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver },
-  { name: "Uniswap Ninja", href: "https://uniswap.ninja", Icon: Ninja },
-  { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked) },
-  { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio) },
-  { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen) },
-  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo },
+  { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
+  { name: "Curate", href: "https://kleros.io/curate", Icon: Curate },
+  { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
+  { name: "Uniswap Ninja", href: "https://uniswap.ninja", Icon: Ninja, target: "_blank" },
+  { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked), target: "_blank" },
+  { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
+  { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen), target: "_blank" },
+  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
 ];
 
-const _ProductBadge = ({ name, hovered, setHoveredName, href, Icon, children }) => {
+const _ProductBadge = ({ name, hovered, setHoveredName, href, target, Icon, children }) => {
   return (
     <div className={classnames(styles.productBadgePositioner, { [styles.hoveredProductBadgePositioner]: hovered })}>
       <motion.div
@@ -45,7 +45,7 @@ const _ProductBadge = ({ name, hovered, setHoveredName, href, Icon, children }) 
           }
         }}
       >
-        <a href={hovered && href} rel="noopener noreferrer" target="_blank">
+        <a href={href} rel={target == "_blank" && `noopener noreferrer`} target={target}>
           <div className={classnames(styles.productBadgeBadge, { [styles.hoveredProductBadgeBadge]: hovered })}>
             <Icon className={classnames(styles.productBadgeIcon, { [styles.hoveredProductBadgeIcon]: hovered })} />
             {hovered && (
@@ -62,10 +62,10 @@ const _ProductBadge = ({ name, hovered, setHoveredName, href, Icon, children }) 
     </div>
   );
 };
-const ProductBadge = ({ name, setHoveredName, href, Icon, hoveredName, children }) => {
+const ProductBadge = ({ name, setHoveredName, href, target, Icon, hoveredName, children }) => {
   return (
     <div className={styles.productBadge}>
-      <_ProductBadge name={name} setHoveredName={setHoveredName} href={href} Icon={Icon} />
+      <_ProductBadge name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} />
       <AnimatePresence>
         {name === hoveredName && (
           <_ProductBadge name={name} hovered setHoveredName={setHoveredName} href={href} Icon={Icon}>
@@ -81,8 +81,8 @@ const ProductBadges = () => {
   return (
     <AnimateSharedLayout type="crossfade">
       <div>
-        {products.map(({ name, href, Icon }) => (
-          <ProductBadge key={name} name={name} setHoveredName={setHoveredName} href={href} Icon={Icon} hoveredName={hoveredName}>
+        {products.map(({ name, href, target, Icon }) => (
+          <ProductBadge key={name} name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} hoveredName={hoveredName}>
             <FormattedMessage id={`productDescriptions.${name}`} />
           </ProductBadge>
         ))}
