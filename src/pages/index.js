@@ -396,7 +396,7 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker ">Court</p>
                 </div>
                 <div className="d-inline-block">
-                  <a href="https://escrow.kleros.io">
+                  <a href="https://kleros.io/escrow">
                     <Badge>
                       <Escrow />
                     </Badge>
