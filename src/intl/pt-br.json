@@ -21,7 +21,7 @@
     "governance": "Governança",
     "escrow": "Escrow",
     "curate": "Curate",
-    "fellowship": "Bolsas de Estudo",
+    "fellowship": "Fellowship",
     "community": "Comunidade",
     "blog": "Blog",
     "media": "Mídia",
@@ -489,7 +489,7 @@ AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolu
       }
     },
     "section-cards": {
-      "card-1": { "title": "Kleros Bolsas de Estudo em Justiça", "button": "Saiba Mais" },
+      "card-1": { "title": "Kleros Fellowship de Justiça", "button": "Saiba Mais" },
       "card-2": { "title": "Livro Kleros: 'A Revolução de Disputas'", "button": "Saiba Mais" }
     }
   },
