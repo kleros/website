@@ -20,33 +20,33 @@
     "integrations": "Integrações",
     "governance": "Governança",
     "escrow": "Escrow",
-    "curate": "Curadoria",
-    "fellowship": "Fellowship",
+    "curate": "Curate",
+    "fellowship": "Bolsas de Estudo",
     "community": "Comunidade",
     "blog": "Blog",
     "media": "Mídia",
     "brand-assets": "Assets da Marca",
     "book": "Livro",
-    "faq": "FAQ",
+    "faq": "Perguntas Frequentes",
     "subscribe-title": "Mantenha-se atualizado(a)",
-    "subscribe-placeholder": "seu@email.com",
+    "subscribe-placeholder": "seu@email.com.br",
     "subscribe-button": "Assinar",
-    "button-primary": "Junte-se como Jurado",
+    "button-primary": "Seja um Jurado",
     "button-secondary": "Torne-se um Parceiro",
     "copyright": "Copyright"
   },
 
   "productDescriptions": {
-    "Court": "Os jurados unem-se aos tribunais e decidem as disputas aqui.",
+    "Court": "Os jurados se associam aos tribunais e decidem disputas aqui.",
     "Escrow": "Envie e receba pagamentos em garantia mediados pela Kleros.",
-    "T2CR": "Uma lista de tokens selecionada e categorizada pela Kleros.",
-    "Curate": "Um criador de listas com curadoria de propósito geral.",
+    "T2CR": "Uma lista de tokens selecionados e categorizados pela Kleros.",
+    "Curate": "Um criador de listas de propósito geral com curadoria.",
     "Dispute Resolver": "Crie e opere disputas manualmente.",
-    "Uniswap Ninja": "Um fork da Uniswap que usa Kleros para selecionar os tokens negociáveis.",
-    "Crypto Unlocked": "Kleros é usada para resolver disputas de Oráculos aqui.",
-    "Realitio": "Kleros é usada como uma resposta final às perguntas aqui.",
-    "Omen": "Kleros é usada para estabelecer mercados aqui.",
-    "Linguo": "Um mercado de traduções P2P mediado pela Kleros."
+    "Uniswap Ninja": "Um fork do Uniswap que usa a Kleros para selecionar os tokens negociáveis.",
+    "Crypto Unlocked": "A Kleros é usada para resolver disputas de Oráculos aqui.",
+    "Realitio": "A Kleros é usada como uma resposta final para as perguntas aqui.",
+    "Omen": "A Kleros é usada para liquidar mercados aqui.",
+    "Linguo": "Um marketplace de traduções P2P mediado pela Kleros."
   },
 
   "index": {
@@ -69,12 +69,12 @@
       },
       "third": {
         "title": "Multiuso",
-        "paragraph": "Kleros funciona em uma ampla variedade de indústrias."
+        "paragraph": "A Kleros funciona para uma ampla variedade de indústrias."
       }
     },
     "section-disputes": {
-      "title": "Veja Kleros em ação",
-      "subtitle": "Procure casos recentes",
+      "title": "Veja a Kleros em ação",
+      "subtitle": "Veja os casos recentes",
       "loading": "Carregando"
     },
     "section-use-case": {
@@ -82,10 +82,10 @@
       "h2": "À medida que a economia se torna global e digital, surgem disputas em muitas áreas que não podem ser resolvidas por tribunais ou sistemas tradicionais de arbitragem. A Kleros pode resolvê-los de forma rápida, econômica e segura.",
       "cards": {
         "1": "Pequenas Causas",
-        "2": "Seguro",
+        "2": "Seguros",
         "3": "E-Commerce",
         "4": "Finanças",
-        "5": "Freelancer",
+        "5": "Freelancing",
         "6": "Listagem de Tokens",
         "7": "Moderação de Conteúdo",
         "8": "Propriedade Intelectual",
@@ -95,7 +95,7 @@
 
     "section-3": {
       "h1": "Justiça como um Serviço",
-      "h2": "Você envia seus casos. Kleros envia de volta uma decisão."
+      "h2": "Você envia seus casos. A Kleros envia de volta uma decisão."
     },
 
     "products": {
@@ -105,29 +105,29 @@
     "section-4": {
       "title": "Junte-se à Revolução da Justiça",
       "card-1": {
-        "title": "Junte-se como Jurado",
+        "title": "Seja um Jurado",
         "paragraph": "Ganhe dinheiro e traga justiça ao mundo.",
-        "button": "Junte-se como Jurado"
+        "button": "Seja um Jurado"
       },
       "card-2": {
         "title": "Integre sua Plataforma",
-        "paragraph": "Aprenda como você pode usar Kleros.",
+        "paragraph": "Aprenda como você pode usar a Kleros.",
         "button": "Comece Agora"
       }
     }
   },
   "curate": {
-    "seo-title": "Curadoria",
+    "seo-title": "Curate",
 
     "section-hero": {
-      "h1": "Curadoria Kleros",
-      "h2": "Informações organizadas por sua comunidade para sua comunidade. Crie sua própria lista com curadoria de Kleros.",
+      "h1": "Kleros Curate",
+      "h2": "Informações organizadas pela sua comunidade para a sua comunidade. Crie sua própria lista com curadoria com o Kleros Curate.",
       "button-primary": "Crie Sua Própria Lista"
     },
     "sash": {
       "first": {
         "title": "Um Mundo de Listas",
-        "paragraph": "Quais tokens listar em uma exchange? Quais itens aceitar em um mercado? Qual conteúdo remover em uma plataforma de mídia social? Todos esses são problemas de curadoria de lista."
+        "paragraph": "Quais tokens listar em uma exchange? Quais itens aceitar em um marketplace? Qual conteúdo remover em uma plataforma de mídia social? Todos esses são problemas de curadoria de lista."
       },
       "second": {
         "title": "Empodere Sua Comunidade",
@@ -139,13 +139,13 @@
       }
     },
     "section-use-case": {
-      "h1": "Casos de uso da Curadoria Kleros",
+      "h1": "Casos de uso do Kleros Curate",
       "cards": {
         "1": "Listagem de Tokens",
         "2": "Moderação",
-        "3": "Lista de Hotéis",
-        "4": "Lista de Restaurantes",
-        "5": "Seguro",
+        "3": "Listas de Hotéis",
+        "4": "Listas de Restaurantes",
+        "5": "Seguros",
         "6": "E-Commerce",
         "7": "Social Media",
         "8": "Anti-Spam",
@@ -154,9 +154,9 @@
     },
 
     "section-3": {
-      "h1": "Curadoria Kleros",
-      "h2": "Crie seu próprio registro com curadoria de tokens e coloque o poder da informação nas mãos de sua comunidade.",
-      "button": "Comece a usar a curadoria Kleros"
+      "h1": "Kleros Curate",
+      "h2": "Crie seu próprio registro de tokens com curadoria e coloque o poder da informação nas mãos de sua comunidade.",
+      "button": "Comece a usar o Kleros Curate"
     },
     "section-4": {
       "h1": "Quem está usando?"
@@ -167,7 +167,7 @@
 
     "section-hero": {
       "h1": "Kleros Escrow",
-      "h2": "Negocie, contrate e pagamento garantido por resolução de disputa sem confiança.",
+      "h2": "Negocie, contrate e pague de forma segura através da resolução de disputas sem terceiros de confiança.",
       "button-primary": "Experimente Kleros Escrow"
     },
     "sash": {
@@ -176,19 +176,19 @@
         "paragraph": "Ao contratar alguém online, há sempre o risco de a outra parte não cumprir o acordo ou agir de forma maliciosa."
       },
       "second": {
-        "title": "Use o Escrow da Kleros",
-        "paragraph": "Caso algo dê errado, a disputa será resolvida por Kleros."
+        "title": "Use o Kleros Escrow",
+        "paragraph": "Caso algo dê errado, a disputa será resolvida pela Kleros."
       },
       "third": {
-        "title": "Transacionar com segurança",
-        "paragraph": "Com a Kleros Escrow, o comprador e vendedor podem ter certeza de que a outra parte cumprirá sua obrigação."
+        "title": "Transacione com segurança",
+        "paragraph": "Com o Kleros Escrow, comprador e vendedor podem ter certeza de que a outra parte cumprirá sua obrigação."
       }
     },
     "section-use-case": {
-      "h1": "Casos de uso da Kleros Escrow",
+      "h1": "Casos de uso do Kleros Escrow",
       "cards": {
         "1": "Freelancing",
-        "2": "Transferência de nome de domínio",
+        "2": "Transferência de domínio de internet",
         "3": "Recompensas",
         "4": "E-Commerce",
         "5": "Folha de pagamento",
@@ -200,9 +200,9 @@
     },
 
     "section-3": {
-      "h1": "Proteja suas transações com Kleros",
-      "h2": "Comece a usar Kleros Escrow para reduzir o risco de contraparte em suas transações online.",
-      "button": "Comece a usar Kleros Escrow"
+      "h1": "Proteja suas transações com a Kleros",
+      "h2": "Comece a usar o Kleros Escrow para reduzir o risco de contraparte em suas transações online.",
+      "button": "Comece a usar o Kleros Escrow"
     },
 
     "section-4": {
@@ -215,10 +215,10 @@
     "seo-title": "Sobre",
 
     "section-hero": {
-      "h1": "Sobre Kleros",
-      "h2": "Kleros é um protocolo de resolução de disputas online de código aberto que usa blockchain e crowdsourcing para julgar disputas de maneira justa. Os esforços de desenvolvimento são coordenados pela <anchor>Cooperativa Kleros</anchor>, uma Société Coopérative d'Intérêt Collectif (SCIC) constituída na França. Todas as nossas pesquisas e desenvolvimento de código são de código aberto e gratuitos para qualquer pessoa usar."
+      "h1": "Sobre a Kleros",
+      "h2": "A Kleros é um protocolo de resolução de disputas online de código aberto que usa blockchain e crowdsourcing para julgar disputas de maneira justa. Os esforços de desenvolvimento são coordenados pela <anchor>Cooperativa Kleros</anchor>, uma Société Coopérative d'Intérêt Collectif (SCIC) constituída na França. Todas as nossas pesquisas e desenvolvimento de código são de código aberto e gratuitos para qualquer pessoa usar."
     },
-    "section-2": "Como funciona",
+    "section-2": "Como Funciona",
     "sash": {
       "first": {
         "title": "One Pager",
@@ -235,60 +235,60 @@
     },
     "section-3": {
       "h1": "Missão",
-      "h2": "Nossa missão é desenvolver um software que possibilite o acesso à justiça e à liberdade individual."
+      "h2": "Nossa missão é desenvolver software que possibilite o acesso à justiça e à liberdade individual."
     },
     "section-4": {
       "h1": "Time",
       "h2": "Somos uma equipe multidisciplinar e internacional apaixonada por blockchain e seu potencial para transformar a lei e a governança."
     },
-    "section-5": "Parceiros e integrações"
+    "section-5": "Temos a confiança dos melhores projetos"
   },
 
   "coop": {
     "seo-title": "Cooperativa",
 
     "section-hero": {
-      "h1": "Cooperativa Kleros",
-      "h2": "Os esforços de desenvolvimento para o protocolo Kleros são coordenados pela Coopérative Kleros, uma Société Coopérative d'Intérêt Collectif (SCIC) incorporada na França. Leia <anchor> este artigo </anchor> para saber mais sobre a estrutura jurídica."
+      "h1": "A Cooperativa Kleros",
+      "h2": "Os esforços de desenvolvimento para o protocolo Kleros são coordenados pela Coopérative Kleros, uma Société Coopérative d'Intérêt Collectif (SCIC) incorporada na França. Leia <anchor>este artigo</anchor> para saber mais sobre a estrutura jurídica."
     },
     "section-2": {
       "h1": "Torne-se um membro da cooperativa",
-      "h2": "Se você deseja se associar à Cooperativa, siga os próximos passos. Sua inscrição terá que ser aprovada por outros membros."
+      "h2": "Se você deseja se associar à Cooperativa, siga os próximos passos. Sua inscrição terá de ser aprovada por outros membros."
     },
     "sash": {
-      "first": { "title": "Application Form", "button": "Download" },
-      "second": { "title": "Statutes", "button": "Download" }
+      "first": { "title": "Formulário de Aplicação", "button": "Download" },
+      "second": { "title": "Estatutos", "button": "Download" }
     },
     "section-steps": {
-      "heading": "Steps",
+      "heading": "Passos",
       "title-1": "Download",
-      "text-1": "Download the application form.",
-      "title-2": "Print it",
-      "text-2": "Print it. Fill it in (don't forget the handwritten phrase at the end!) . Sign it. Scan it.",
-      "title-3": "Send it back",
-      "text-3": "Send it back to <mail>cooperative@kleros.io</mail> along with a digital copy of your passport / national ID and with the TxID of your share deposit."
+      "text-1": "Faça o download do formulário.",
+      "title-2": "Imprima",
+      "text-2": "Imprima. Preencha (não se esqueça da frase escrita à mão no final!). Assine. Escaneie.",
+      "title-3": "Envie de volta",
+      "text-3": "Envie de volta para <mail>cooperative@kleros.io</mail> junto com uma cópia digital de seu passaporte / identidade nacional e com o TxID do depósito relativo à sua participação."
     }
   },
 
   "faq": {
-    "seo-title": "FAQ",
+    "seo-title": "Perguntas Frequentes",
 
     "section-hero": {
-      "h1": "Frequently Asked Questions",
-      "search": "Search your question"
+      "h1": "Perguntas Frequentes",
+      "search": "Procure sua pergunta"
     },
 
     "section-faq": {
       "general": {
-        "title": "General",
+        "title": "Geral",
         "questions": {
           "1": {
             "q": "Você pode realmente confiar em uma decisão tomada por um grupo de pessoas anônimas na Internet?",
-            "a": "Satoshi Nakamoto nos ensinou que uma série de computadores anônimos que não confiam em cada um ainda podem chegar a um consenso, desde que os incentivos sejam estruturados corretamente. Kleros estende esse princípio à tomada de decisão humana. Vários jurados anônimos que não confiam uns nos outros podem chegar a um consenso sobre uma decisão certa, desde que os incentivos sejam estruturados corretamente. Para saber mais sobre o sistema de incentivos, leia nosso white paper."
+            "a": "Satoshi Nakamoto nos ensinou que uma série de computadores anônimos que não confiam uns nos outros ainda podem chegar a um consenso, desde que os incentivos sejam estruturados corretamente. A Kleros estende esse princípio à tomada de decisão humana. Vários jurados anônimos que não confiam uns nos outros podem chegar a um consenso sobre uma decisão certa, desde que os incentivos sejam estruturados corretamente. Para saber mais sobre o sistema de incentivos, leia nosso white paper."
           },
           "2": {
             "q": "Quantos pinakion existirão?",
-            "a": "O fornecimento de pinakion é fixado em um bilhão de unidades."
+            "a": "A oferta de pinakion é fixa em um bilhão de unidades."
           },
           "3": {
             "q": "Uma das partes que deseja que um caso seja julgado precisa ter um pinakion?",
@@ -296,24 +296,24 @@
           },
           "4": {
             "q": "A identidade dos jurados é revelada?",
-            "a": "Visto que as decisões tomadas na Kleros afetam a alocação de recursos, há um incentivo para as partes tentarem subornar ou intimidar o tribunal. O anonimato tem como objetivo proteger os jurados de intimidação e retaliação. Também simplifica o processo de tornar os usuários jurados e evita custos de verificação de identidade. Ao fornecer um ambiente seguro e simplificar o processo de seleção, a Kleros amplia muito o grupo de jurados em potencial. Isso resulta em menores custos de arbitragem e na democratização do acesso à justiça."
+            "a": "Visto que as decisões tomadas na Kleros afetam a alocação de recursos, há um incentivo para as partes tentarem subornar ou intimidar o tribunal. O anonimato tem como objetivo proteger os jurados de intimidação e retaliação. Também simplifica o processo usuários se tornarem jurados e evita custos de verificação de identidade. Ao fornecer um ambiente seguro e simplificar o processo de seleção, a Kleros amplia muito o grupo de jurados em potencial. Isso resulta em menores custos de arbitragem e na democratização do acesso à justiça."
           },
           "5": {
-            "q": "Como é a alocação de tokens Kleros?",
-            "a": "Membros da equipe: 18% Primeira rodada de venda de token: 16% Airdrop: 4% Rodadas subsequentes e Programa de incentivo de jurados: 50% Reserva de desenvolvimento cooperativo Kleros: 12%"
+            "q": "Como é a alocação de tokens na Kleros?",
+            "a": "Membros da equipe: 18% Primeira rodada de venda de token: 16% Airdrop: 4% Rodadas subsequentes e Programa de incentivo a jurados: 50% Reserva de desenvolvimento da cooperativa Kleros: 12%"
           },
           "6": {
             "q": "A Kleros poderia se tornar uma plataforma usada por varejistas on-line tradicionais, como eBay ou Amazon?",
-            "a": "Sim, ao adotar a Kleros, qualquer plataforma de e-commerce convencional pode desfrutar de um método de resolução de disputas rápida, acessível e transparente. Se você quiser saber mais, entre em contato conosco."
+            "a": "Sim, ao adotar a Kleros, qualquer plataforma de e-commerce convencional pode desfrutar de um método de resolução de disputas rápido, acessível e transparente. Se você quiser saber mais, entre em contato conosco."
           }
         }
       },
       "integration-partners": {
-        "title": "Integração e Parceiros",
+        "title": "Integração & Parceiros",
         "questions": {
           "1": {
             "q": "Somos da organização X e gostaríamos de usar Kleros. No entanto, por motivos XYZ, não podemos usar jurados anônimos. Podemos ajustar a Kleros para selecionar apenas jurados de um grupo pré-aprovado?",
-            "a": "No momento, não é possível selecionar jurados de uma pool pré-definida. Qualquer pessoa com tokens pode se auto-selecionar para ser sorteado aleatoriamente como jurado. No entanto, entendemos que selecionar jurados de uma pool pré-aprovada é importante em vários contextos. Se for este o seu caso, contacte-nos em contact@kleros.io. Gostaríamos de saber mais sobre seu caso."
+            "a": "No momento, não é possível selecionar jurados de um grupo pré-definido. Qualquer pessoa com tokens pode se auto-selecionar para ser sorteado aleatoriamente como jurado. No entanto, entendemos que selecionar jurados de um grupo pré-aprovado é importante em vários contextos. Se esse for o seu caso, contacte-nos em contact@kleros.io. Gostaríamos de saber mais sobre seu caso."
           }
         }
       },
@@ -323,32 +323,29 @@
           "1": { "q": "Os recursos podem ser gerenciados fora da Kleros?", "a": "Sim, é possível criar um contrato inteligente arbitrável que usa a Kleros para resolver disputas de primeira instância e permite que os recursos sejam tratados fora da Kleros." },
           "2": {
             "q": "Você tem exemplos de contratos que mostram que tipo de disputas podem ser julgadas pela Kleros?",
-            "a": "Embora neste ponto haja alguns exemplos de contratos inteligentes, esta é uma área que requer mais desenvolvimento. A Kleros se concentra no processo de resolução de disputas, não na elaboração do próprio contrato. Outras empresas do ecossistema se concentrarão na elaboração de contratos. Para ser arbitrável pela Kleros, um contrato inteligente precisa seguir um padrão desenvolvido por nós. Confira nosso repositório GitHub para mais informações e participe de nosso grupo oficial no Telegram se você estiver interessado em acompanhar o desenvolvimento."
+            "a": "Embora neste ponto haja alguns exemplos de contratos inteligentes, esta é uma área que requer mais desenvolvimento. A Kleros se concentra no processo de resolução de disputas, não na elaboração do próprio contrato. Outras empresas do ecossistema se concentrarão na elaboração de contratos. Para ser arbitrável pela Kleros, um contrato inteligente precisa seguir um padrão desenvolvido por nós. Confira nosso repositório GitHub para mais informações e participe do nosso grupo oficial no Telegram se você estiver interessado em acompanhar o desenvolvimento."
           },
           "3": {
-            "q": "Você já considerou como os jurados podem ser avaliados, bem como sua experiência e conhecimento, para permitir que participem de tribunais / disputas específicas?",
-            "a": "Em sistemas descentralizados, o principal problema de avaliar jurados é: `Quem avalia as pessoas que vão avaliar os jurados?`, Quem veio primeiro o ovo ou a galinha?. Uma das características mais legais das blockchains públicas é que qualquer pessoa pode entrar, então ninguém consegue monopolizar o livro-razão."
+            "q": "Você já considerou como os jurados podem ser avaliados, bem como sua experiência e conhecimento, para permitir que participem de tribunais/disputas específicas?",
+            "a": "Em sistemas descentralizados, o principal problema de verificar jurados é: `Quem avalia as pessoas que vão verificar os jurados?`, Quem veio primeiro o ovo ou a galinha?. Uma das características mais legais das blockchains públicas é que qualquer pessoa pode participar, então ninguém consegue monopolizar o livro-razão."
           },
           "4": {
             "q": "Como as evidências são apresentadas e gerenciadas pelo sistema?",
-            "a": "A forma como as evidências são apresentadas depende do tipo de disputa. Uma disputa de freelancer exigirá evidências diferentes de uma disputa de seguro ou pagamento, por exemplo. A Cooperativa Kleros fornece um back-end para os jurados arbitrarem disputas. A forma como é construído permite a qualquer pessoa desenvolver o seu próprio front-end. A lógica é semelhante à da carteira Ethereum. O Ethereum Core Team fornece uma carteira aos usuários, mas qualquer um pode construir uma carteira Ethereum. Isso significa, por exemplo, que uma plataforma de e-commerce poderia construir um front end no qual os usuários poderiam arbitrar disputas sem sair da plataforma. O front end entraria em contato com a rede de jurados da Kleros. Esperamos que muitas empresas do ecossistema construam interfaces baseadas em nossa plataforma. Para saber mais, leia este artigo sobre a evolução do ecossistema da Cooperativa Kleros."
+            "a": "A forma como as evidências são apresentadas depende do tipo de disputa. Uma disputa de freelancing exigirá evidências diferentes de uma disputa de seguros ou pagamentos. A Cooperativa Kleros fornece um back-end para os jurados arbitrarem disputas. A forma como ele é construído permite a qualquer pessoa desenvolver o seu próprio front-end. A lógica é semelhante à da carteira Ethereum. O Ethereum Core Team fornece uma carteira aos usuários, mas qualquer um pode construir uma carteira Ethereum. Isso significa, por exemplo, que uma plataforma de e-commerce poderia construir um front end no qual os usuários poderiam arbitrar disputas sem sair da plataforma. O front end entraria em contato com a rede de jurados da Kleros. Esperamos que muitas empresas do ecossistema construam interfaces baseadas em nossa plataforma. Para saber mais, leia este artigo sobre a evolução do ecossistema da Cooperativa Kleros."
           },
           "5": {
-            "q": "Visto que os jurados são escolhidos em uma pool global, como você se certificaria de que todos falassem o idioma em que a disputa é iniciada?",
+            "q": "Visto que os jurados são escolhidos em um pool global, como você se certificaria de que todos falassem o idioma em que a disputa é iniciada?",
             "a": "A Kleros é formada por sub-tribunais especializados em diferentes tipos de disputas. A linguagem é um dos parâmetros de especialização. Por exemplo, poderia haver um “tribunal de disputa de sites em inglês”, “tribunal de disputa de sites em espanhol”, “tribunal de disputa de sites em francês”, etc."
           },
           "6": {
             "q": "Como você sabe que os jurados analisaram as evidências em vez de apenas votar aleatoriamente?",
-            "a": "Kleros não tem uma maneira específica de garantir que os jurados analisem as evidências. A maneira de garantir que os jurados ajam com honestidade é por meio da criação de incentivos econômicos adequados. Os jurados que votam aleatoriamente sem revisar as evidências são mais propensos a votar incoerentemente com a maioria e perder o token que apostaram para ser sorteado. Assim, eles perdem dinheiro. Com o tempo, isso faria com que jurados desonestos deixassem o tribunal. Para saber mais sobre como os incentivos funcionam na Kleros, leia o nosso white paper."
+            "a": "A Kleros não tem uma maneira específica de garantir que os jurados analisem as evidências. A forma de garantir que os jurados ajam com honestidade é por meio da criação de incentivos econômicos adequados. Os jurados que votam aleatoriamente sem revisar as evidências são mais propensos a votar incoerentemente com a maioria e perder os tokens que apostaram para ser sorteado. Assim, na média, eles perdem dinheiro. Com o tempo, isso faria com que jurados desonestos deixassem o tribunal. Para saber mais sobre como os incentivos funcionam na Kleros, leia o nosso white paper."
           },
           "7": {
             "q": "Os jurados são obrigados a fornecer uma justificativa para seu voto? A justificativa é revelada às partes em disputa e a outros jurados?",
-            "a": "Sim, os jurados devem fornecer uma justificativa na forma de um texto curto. A justificativa é então revelada às partes em disputa, bem como a outros jurados, após a votação ser concluída."
+            "a": "Sim, os jurados devem fornecer uma justificativa na forma de um texto curto. A justificativa é então revelada às partes em disputa, bem como aos demais jurados, após a votação ser concluída."
           },
-          "8": {
-            "q": "Existem limites de tempo para disputas? Os jurados devem responder dentro de um determinado período de tempo?",
-            "a": "Sim, cada tribunal tem um prazo dentro do qual os jurados precisam apresentar sua decisão. Os jurados serão notificados de casos pendentes que precisam de resolução."
-          },
+          "8": { "q": "Existem limites de tempo para disputas? Os jurados devem responder dentro de um determinado período de tempo?", "a": "Sim, cada tribunal tem um prazo dentro do qual os jurados precisam apresentar sua decisão. Os jurados serão notificados de casos pendentes que precisam de resolução." },
           "9": { "q": "O que acontece aos jurados que não respondem ou analisam as evidências dentro do prazo definido?", "a": "Os jurados que não proferem sua decisão antes do prazo são penalizados perdendo alguns de seus tokens apostados e não recebendo a taxa de arbitragem." }
         }
       },
@@ -361,7 +358,7 @@
           },
           "2": {
             "q": "Quais são os principais obstáculos legais e regulamentares na criação da Kleros?",
-            "a": "Por sua prática inovadora baseada na criptoeconomia, a Kleros não é reconhecida como arbitragem segundo acordos internacionais. Isso poderia ser um obstáculo para a adoção em casos de uso 'convencionais' (por exemplo, um regulador governamental não poderia usar o Kleros para resolver disputas entre, digamos, uma empresa de cartão de crédito e seus usuários). No entanto, isso não deve ser um obstáculo para a adoção em outros casos de uso (especialmente aqueles dentro da indústria de criptoativos). Como a Kleros é capaz de provar que pode resolver disputas em casos de uso não convencionais, esperamos que surja interesse em casos de uso convencionais. Eventualmente, as associações de arbitragem aceitarão a abordagem Kleros para resolução de disputas. A plataforma Kleros é um sistema 'opt-in', o que significa que a aplicação é automática e pré-aceita pelas partes contratantes que concordam em usar a Kleros como um árbitro."
+            "a": "Por sua prática inovadora baseada na criptoeconomia, a Kleros não é reconhecida como arbitragem segundo acordos internacionais. Isso poderia ser um obstáculo para a adoção em casos de uso “convencionais” (por exemplo, um regulador governamental não poderia usar o Kleros para resolver disputas entre, digamos, uma empresa de cartão de crédito e seus usuários). No entanto, isso não deve ser um obstáculo para a adoção em outros casos de uso (especialmente aqueles dentro da indústria de criptoativos). Como a Kleros é capaz de provar que pode resolver disputas em casos de uso não-convencionais, esperamos que surja interesse em casos de uso convencionais. Eventualmente, as associações de arbitragem aceitarão a abordagem da Kleros para resolução de disputas. A plataforma Kleros é um sistema 'opt-in', o que significa que a aplicação é automática e pré-aceita pelas partes contratantes que concordam em usar a Kleros como um árbitro."
           }
         }
       }
@@ -369,16 +366,16 @@
   },
 
   "media": {
-    "seo-title": "Media",
+    "seo-title": "Mídia",
 
     "section-hero": {
-      "h1": "Media",
-      "button": "Learn more on Kleros Blog"
+      "h1": "Mídia",
+      "button": "Saiba mais no blog Kleros"
     },
     "section-media": {
       "presentations": {
-        "nav-title": "Presentations",
-        "title": "Presentations",
+        "nav-title": "Apresentações",
+        "title": "Apresentações",
         "items": {
           "1": "Apresentação de Clement Lesaege na EthCC 3 Paris março de 2020",
           "2": "Apresentação de William George na EthCC 3 Paris março de 2020",
@@ -391,14 +388,14 @@
         }
       },
       "promo": {
-        "nav-title": "Promo Videos",
+        "nav-title": "Vídeos Promocionais",
         "title": "Vídeos Promocionais",
         "items": {
           "1": "Tribunais descentralizados da Kleros",
           "2": "Informativo tribunais Kleros",
-          "3": "Revolução de disputas - O livro Kleros",
+          "3": "A Revolução de Disputas - O livro Kleros",
           "4": "Kleros DApp Showcase,",
-          "5": "Protocolo Kleros: Listas selecionadas x Escrow x Athena V2.0",
+          "5": "Protocolo Kleros: Listas com Curadoria x Escrow x Athena V2.0",
           "6": "Kleros - Resolução de disputas de blockchain baseada no Ethereum",
           "7": "Dogelist - P + Epsilon: o trailer que ninguém pediu",
           "8": "Clement Faz Chá",
@@ -407,9 +404,9 @@
       },
       "conference": {
         "nav-title": "Conferência Kleros",
-        "title": "Revolução de disputa",
+        "title": "A Revolução das Disputas",
         "subtitle": "Conferência Kleros de Justiça Descentralizada",
-        "paragraph": "Em 2 de março de 2020, a Coopérative Kleros e o Centro de Direito e Economia de Paris (CRED) convocaram a conferência 'Revolução da Disputa: o Nascimento da Justiça Descentralizada' no Anfiteatro Sainte Barbe da Universidade Nova Sorbonne de Paris III.",
+        "paragraph": "Em 2 de março de 2020, a Coopérative Kleros e o Centro de Direito e Economia de Paris (CRED) convocaram a conferência 'Revolução das Disputa: o Nascimento da Justiça Descentralizada' no Anfiteatro Sainte Barbe da III Universidade Nova Sorbonne de Paris.",
         "items": {
           "1": "Conferência Kleros-CRED Dispute Revolution - Apresentando Kleros Layer 2",
           "2": "Conferência Kleros-CRED Dispute Revolution - Manual de Justiça Kleros, Aumentado",
@@ -419,26 +416,26 @@
           "6": "Conferência Kleros-CRED Dispute Revolution - A justiça descentralizada é justa?",
           "7": "Conferência Kleros-CRED Dispute Revolution - Desafios da Pesquisa sobre Justiça Descentralizada",
           "8": "Conferência Kleros-CRED Dispute Revolution - Como Construir uma Integração na Kleros",
-          "9": "Conferência Kleros-CRED Dispute Revolution - Desafios Legais de Projetos",
+          "9": "Conferência Kleros-CRED Dispute Revolution - Desafios em Design Legal",
           "10": "Conferência Kleros-CRED Dispute Revolution - Apresentando o Fellowship de Justiça",
-          "11": "Conferência Kleros-CRED Dispute Revolution - kleros: Cryptoeconomia e Aplicações",
+          "11": "Conferência Kleros-CRED Dispute Revolution - Kleros: Cryptoeconomia e Aplicações",
           "12": "Conferência Kleros-CRED Dispute Revolution - Blockchains e Estruturas de redes",
-          "13": "Conferência Kleros-CRED Dispute Revolution - Introdução a justiça descentrelazida"
+          "13": "Conferência Kleros-CRED Dispute Revolution - Introdução à justiça descentrelazida"
         }
       }
     },
     "section-cards": {
-      "card-1": { "title": "Brand Assets Package", "button": "Download" },
-      "card-2": { "title": "Company Photos", "button": "Download" }
+      "card-1": { "title": "Pacote com assets da Marca", "button": "Download" },
+      "card-2": { "title": "Fotos da Companhia", "button": "Download" }
     },
-    "section-contact": "For Media Queries"
+    "section-contact": "Para consultas de mídia"
   },
 
   "research": {
-    "seo-title": "Research",
+    "seo-title": "Pesquisa",
     "section-hero": {
       "h1": "Pesquisa Kleros",
-      "h2": "A Kleros tem uma equipe de pesquisa muito ativa na áreas de criptoeconomia, ciência da computação, negócios e direito."
+      "h2": "A Kleros tem uma equipe de pesquisa muito ativa nas áreas de cripto economia, ciências da computação, negócios e direito."
     },
     "section-director": {
       "title": "Diretor de Pesquisa",
@@ -457,9 +454,9 @@
     },
     "section-papers": {
       "papers": {
-        "title": " Artigos Kleros",
+        "title": "Artigos Kleros",
         "items": {
-          "1": "Um contrato inteligente da Oracle para aproximar valores numéricos do mundo real",
+          "1": "Um contrato inteligente da Oracle para aproximação de valores numéricos do mundo real",
           "2": "Justiça descentralizada: reinventando a arbitragem para a era digital?"
         }
       },
@@ -475,7 +472,8 @@
           "7": "Resolução de disputas online para contratos inteligentes - Amy Schmitz, Regra de Colin, Journal of Dispute Resolution 103 (2019)",
           "8": "Governança de Contratos Inteligentes em Instituições Blockchain, Howell, Bronwyn E. e Potgieter, Petrus H., SSRN",
           "9": "Ulex: Lei de Código Aberto para Governança Não Territorial - Bell, Tom W., Ulex: Lei de Código Aberto para Governança Não Territorial, Ulex: Lei de Código Aberto para Governança Não Territorial, 1 J. JURISDIÇÕES ESPECIAIS 1 (2020)",
-          "10": "A Governança da Resolução de Disputas de Blockchain - Allen, DWE, Lane, AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
+          "10": "A Governança da Resolução de Disputas de Blockchain - Allen, DWE, Lane,
+AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
           "11": "Blockchain e a inevitabilidade das disputas:O papel da resolução de disputas online -Orna Rabinovich, Ethan Katsch, Journal of Dispute Resolution (2019)",
           "12": "Resolvendo um novo tipo de guerra comercial por meio do ODR - Amy Schmitz, Artigo de Pesquisa de Estudos Legais da Escola de Direito da Universidade de Missouri nº 2020-02",
           "13": "O cenário atual de Blockchain, Arbitragem crowdsourced - James Metzger, Macquarie Law Journal (2019)",
@@ -491,43 +489,48 @@
       }
     },
     "section-cards": {
-      "card-1": { "title": "Kleros Fellowship de justiça", "button": "saiba mais" },
-      "card-2": { "title": "Livro Kleros: 'Dispute Revolution'", "button": "saiba mais" }
+      "card-1": { "title": "Kleros Bolsas de Estudo em Justiça", "button": "Saiba Mais" },
+      "card-2": { "title": "Livro Kleros: 'A Revolução de Disputas'", "button": "Saiba Mais" }
     }
   },
   "book": {
     "seo-title": "Livro",
-    "section-hero": { "title": "Livro Kleros", "subtitle": "Dispute Revolution: O Manual Kleros de Justiça Descentralizada.", "title-download": "Leia Agora" },
+    "section-hero": { "title": "Livro Kleros", "subtitle": "A Revolução de Disputas: O Manual Kleros de Justiça Descentralizada.", "title-download": "Leia Agora" },
     "section-contents": {
       "h1": "Índice",
-      "capítulos": {
+      "chapters": {
         "1": {
           "title": "Capítulo 1, Gênesis: Quando as loterias gregas encontram o direito privado medieval",
           "paragraph": "Este capítulo apresenta os dois princípios históricos nos quais a tecnologia da Kleros é baseada. Por meio de entrevistas em profundidade com três cientistas políticos, Josiah Ober, Peter Stone e Barry Weingast, exploramos as raízes da justiça descentralizada em Atenas, na Europa medieval e como a classificação se encaixa na tradição do pensamento político ocidental. Por último, implementamos esses princípios ao pensar na Kleros como uma potencial Suprema Corte dos DAOs."
         },
         "1": {
           "title": "Capítulo 1, Gênesis: Quando as loterias gregas encontram o direito privado medieval ",
-          "paragraph": "Este capítulo apresenta os dois princípios históricos nos quais a tecnologia de Kleros é baseada. Por meio de entrevistas em profundidade com três cientistas políticos, Josiah Ober, Peter Stone e Barry Weingast, exploramos as raízes da justiça descentralizada em Atenas, em Europa medieval e como a classificação se encaixa na tradição do pensamento político ocidental. Por último, implementamos esses princípios ao pensar em Kleros como uma potencial Suprema Corte dos DAOs. "
+           "paragraph": "Este capítulo apresenta os dois princípios históricos nos quais a tecnologia de Kleros é baseada. Por meio de entrevistas em profundidade com três cientistas políticos, Josiah Ober, Peter Stone e Barry Weingast, exploramos as raízes da justiça descentralizada em Atenas, em Europa medieval e como a classificação se encaixa na tradição do pensamento político ocidental. Por último, implementamos esses princípios ao pensar em Kleros como uma potencial Suprema Corte dos DAOs. "
+
         },
         "2": {
           "title": "Capítulo 2, Criptoeconomia da Kleros: Rumo a uma Teoria de Justiça Descentralizada ",
-          "paragraph": "Este capítulo foca na tecnologia por trás da Kleros. Nele, especialistas em teoria dos jogos, como o professor da Universidade Hebraica Eyal Winter e nosso pesquisador criptoeconômico William George tentam trazer esses conceitos para mais perto do leitor leigo no assunto. Também consiste na nossa pesquisa mais recente sobre a teoria da escolha social, diferentes escolhas de mecanismos de votação e seu impacto potencial na Kleros. O restante do capítulo se concentra em ajudar a expandir a base de conhecimento de nosso público especializado, compartilhando nossas experiências com contratos inteligentes, oráculos, bem como apresentando propostas de padrões Ethereum (ou ERCs) e as políticas básicas sobre as quais a Kleros é construída. "
+           "paragraph": "Este capítulo foca na tecnologia por trás da Kleros. Nele, especialistas em teoria dos jogos, como o professor da Universidade Hebraica Eyal Winter e nosso pesquisador criptoeconômico William George tentam trazer esses conceitos para mais perto do leitor leigo no assunto. Também consiste na nossa pesquisa mais recente sobre a teoria da escolha social, diferentes escolhas de mecanismos de votação e seu impacto potencial na Kleros. O restante do capítulo se concentra em ajudar a expandir a base de conhecimento de nosso público especializado, compartilhando nossas experiências com contratos inteligentes, oráculos, bem como apresentando propostas de padrões Ethereum (ou ERCs) e as políticas básicas sobre as quais a Kleros é construída. "
+
         },
         "3": {
           "title": "Capítulo 3, Justiça Descentralizada em Ação: Dos Doges em Julgamento ao Registro Curado por Token ",
-          "paragraph": "Este capítulo é uma análise aprofundada do experimento 'Doges em Julgamento', bem como as primeiras lições da implementação de nosso T2CR e uma ampla visão do que foi aprendido sobre vetores de ataque, comportamento do jurado e criptoeconomia fundamental. Na segunda edição, o capítulo é expandido com os mais recentes insights sobre os chamados ‘O dilema do desafiante’ e o experimento que empreendemos comparando a inteligência artificial e coletiva no contexto de Doges em Julgamento."
+           "paragraph": "Este capítulo é uma análise aprofundada do experimento 'Doges em Julgamento', bem como as primeiras lições da implementação de nosso T2CR e uma ampla visão do que foi aprendido sobre vetores de ataque, comportamento do jurado e criptoeconomia fundamental. Na segunda edição, o capítulo é expandido com os mais recentes insights sobre os chamados
+‘O dilema do desafiante’ e o experimento que empreendemos comparando a inteligência artificial e coletiva no contexto de Doges em Julgamento."
         },
         "4": {
           "title": "Capítulo 4, Revolução de disputas: um novo paradigma de justiça em um mundo antigo",
-          "paragraph": "Este capítulo trata das implicações que essa tecnologia pode ter para a lei e a sociedade. Ao compartilhar suas experiências em resolução de disputas online e pesquisa sobre legislação de blockchain, líderes da indústria e do pensamento como Gillian Hadfield, Kate Sills e o ex-vice-presidente da Sociedade de Direito de Uganda, Alice Namuli dão suas opiniões sobre como a Kleros e a justiça descentralizada podem afetar o futuro do direito. Uma veterana mediadora internacional, Sophie Nappert nos dá uma visão fantástica sobre o surgimento da algocracia e como os humanos podem responder. Neste capítulo , um cuidado especial é tomado para analisar os pontos mais críticos de qualquer sistema de arbitragem - justiça e compatibilidade com as estruturas legais existentes. "
+           "paragraph": "Este capítulo trata das implicações que essa tecnologia pode ter para a lei e a sociedade. Ao compartilhar suas experiências em resolução de disputas online e pesquisa sobre legislação de blockchain, líderes da indústria e do pensamento como Gillian Hadfield, Kate Sills e o ex-vice-presidente da Sociedade de Direito de Uganda, Alice Namuli dão suas opiniões sobre como a Kleros e a justiça descentralizada podem afetar o futuro do direito. Uma veterana mediadora internacional, Sophie Nappert nos dá uma visão fantástica sobre o surgimento da algocracia e como os humanos podem responder. Neste capítulo , um cuidado especial é tomado para analisar os pontos mais críticos de qualquer sistema de arbitragem - justiça e compatibilidade com as estruturas legais existentes. "
+
         },
         "5": {
           "title": "Capítulo 5, O Negócio da Justiça Descentralizada ",
-          "paragraph": "Este capítulo tenta mostar uma imagem de como o negócio jurídico se desenvolverá e mudará nos próximos anos. Trazendo décadas de experiência em pensamento centrado no futuro por meio de conversas com Joe Raczynski, futurólogo jurídico residente da Thomson Reuters , Colin Rule, o criador dos sistemas de resolução de disputas do eBay e PayPal, autor do livro seminal Justiça Digital, Orna Rabinovich-Einy, fundador do Accord Project, Peter Hunn e o especialista em design jurídico José Torres, discutimos as oportunidades e obstáculos na construção de novos sistemas jurídicos para o século 21. Com um “sabor a mais”, nosso Design Líder, Plínio Braga nos dá uma visão única e prática em projetar novas aplicações jurídicas. "
+           "paragraph": "Este capítulo tenta mostar uma imagem de como o negócio jurídico se desenvolverá e mudará nos próximos anos. Trazendo décadas de experiência em pensamento centrado no futuro por meio de conversas com Joe Raczynski, futurólogo jurídico residente da Thomson Reuters , Colin Rule, o criador dos sistemas de resolução de disputas do eBay e PayPal, autor do livro seminal Justiça Digital, Orna Rabinovich-Einy, fundador do Accord Project, Peter Hunn e o especialista em design jurídico José Torres, discutimos as oportunidades e obstáculos na construção de novos sistemas jurídicos para o século 21. Com um “sabor a mais”, nosso Design Líder, Plínio Braga nos dá uma visão única e prática em projetar novas aplicações jurídicas. "
+
         },
         "6": {
           "title": "Capítulo 6, Expansão: as aplicações da justiça descentralizada ",
-          "paragraph": "Este capítulo é focado nos casos de uso da Kleros, onde combinamos a visão e a prática para definir os ingredientes-chave que farão da Kleros o sistema de resolução de disputas do futuro. Especialistas de diferentes áreas apresentam suas pesquisas na Kleros como um solução para uma infinidade de casos de uso, desde freelancing descentralizado, marketplaces, gás, mercados de energia e negociação de derivativos, fake news, mídia social e jogos online. Este capítulo também apresenta algumas das nossas próximas plataformas, bem como as existentes no contexto de criar um ecossistema de resolução de disputas próspero."
+           "paragraph": "Este capítulo é focado nos casos de uso da Kleros, onde combinamos a visão e a prática para definir os ingredientes-chave que farão da Kleros o sistema de resolução de disputas do futuro. Especialistas de diferentes áreas apresentam suas pesquisas na Kleros como um solução para uma infinidade de casos de uso, desde freelancing descentralizado, marketplaces, gás, mercados de energia e negociação de derivativos, fake news, mídia social e jogos online. Este capítulo também apresenta algumas das nossas próximas plataformas, bem como as existentes no contexto de criar um ecossistema de resolução de disputas próspero."
         }
       }
     },
@@ -537,14 +540,14 @@
     "seo-title": "Token",
     "section-hero": {
       "h1": "PNK Token",
-      "h2": "Pinakion, o nome do token Kleros, foi inspirado no token usado pelos antigos atenienses, com o intuito de atrair jurados para seus populares julgamentos"
+      "h2": "Pinakion, o nome do token Kleros, foi inspirado no token usado pelos antigos atenienses, com o intuito de atrair jurados para seus julgamentos populares"
     },
     "sash": {
       "title": "Por que a Kleros precisa de um token?",
-      "first": { "title": "Incentivos para jurados ", " paragraph ": " Os usuários precisam fazer stake de PNK para serem sorteados como jurados em disputas" },
+      "first": { "title": "Incentivos para jurados "," paragraph ":" Os usuários precisam fazer staking de PNK para serem sorteados como jurados em disputas" },
       "second": { "title": "Proteção contra ataques", "paragraph": "O token PNK protege contra agentes mal-intencionados." },
       "third": { "title": "Governança da plataforma", "paragraph": "O token PNK é usado para votação na governança da plataforma." },
-      "Saiba mais": { "title": " Saiba mais sobre por que a Kleros precisa de um token nativo.", "button": "Saiba mais" }
+      "learnMore": { "title": " Saiba mais sobre por que a Kleros precisa de um token nativo.", "button": "Saiba Mais" }
     },
     "section-buy": "Onde comprar PNK",
     "section-otc": {
@@ -556,12 +559,12 @@
   "community": {
     "seo-title": "Comunidade",
     "section-hero": { "h1": "Comunidade Kleros", "h2": "Kleros é uma comunidade global de pessoas impulsionadas pela inovação legal e tecnologia blockchain." },
-    "Seção de membros": {
+    "section-members": {
       "title": "Membros da comunidade ao redor do mundo",
       "telegram": "Grupo oficial da Kleros no Telegram"
     },
-    "seção-grupos": {
-      "title": "Grupos específicos de idioma",
+    "section-groups": {
+      "title": "Grupos para idiomas específicos",
       "title-poh": "Grupo Prova de Humanidade"
     },
     "section-guild": {
@@ -572,28 +575,25 @@
       "envoy": {
         "title": "Emissários",
         "paragraph": "O papel dos emissários é de atuar como construtores de comunidades, moldando a presença online e offline da Kleros em suas regiões e aumentando o número de membros de nossa comunidade.",
-        "atividades": { "title": "Algumas das atividades", "items": { "1": "Criação e promoção de grupos regionais do Telegram. ", " 2 ": " Produzir conteúdo geral e específico da região sobre a Kleros. ", " 3 ": " Organizar encontros físicos e online." } },
-        "button": "Saiba mais"
+        "activities": { "title": "Algumas das atividades", "items": { "1": "Criação e promoção de grupos regionais do Telegram. ", "2": "Produzir conteúdo geral e específico da região sobre a Kleros.", "3": "Organizar encontros físicos e online." } },
+        "button": "Saiba Mais"
       },
-      "Embaixador": {
+      "herald": {
         "title": "Embaixadores",
-        "paragraph": "O papel dos embaixadores é de aumentar a conscientização da Kleros globalmente, promovendo a adoção no mundo jurídico e empresarial, bem como no meio acadêmico.",
-        "atividades": {
-          "title": "Algumas das atividades",
-          "items": { "1": "Realização de palestras em contextos corporativos, governamentais e acadêmicos de alto nível. ", " 2 ": " Representar a Kleros na mídia local. ", " 3 ": " Criar oportunidades de desenvolvimento de negócios." }
-        },
-        "button": "Saiba mais"
+        "paragraph": "O papel dos embaixadores é de aumentar o reconhecimento da Kleros globalmente, promovendo a adoção no mundo jurídico e empresarial, bem como no meio acadêmico.",
+        "activities": { "title": "Algumas das atividades", "items": { "1": "Realização de palestras em contextos corporativos, governamentais e acadêmicos de alto nível. ", "2": "Representar a Kleros na mídia local.", "3": "Criar oportunidades de desenvolvimento de negócios." } },
+        "button": "Saiba Mais"
       }
     },
 
     "section-contact": "Você gostaria de se tornar um membro da Guilda da Justiça Kleros? Entre em contato conosco:"
   },
   "integrations": {
-    "seo-title": "Integração",
+    "seo-title": "Integrações",
     "section-hero": {
       "h1": "Integrar com a Kleros",
-      "h2": "Justiça como um serviço rápido, seguro e acessível.",
-      "button": "Entre em contato para suporte de integração"
+      "h2": "Justiça como um serviço: rápida, segura e acessível.",
+      "button": "Entre em contato para solicitar suporte com integrações"
     },
     "section-main": {
       "usecases-title": "CASOS DE USO",
@@ -608,61 +608,61 @@
         "marketplaces": {
           "nav-title": "Marketplaces",
           "title": "Kleros para Marketplaces",
-          "text-1": "Criando um Marketplace ou necessita resolver disputas entre usuários?",
+          "text-1": "Criando um marketplace e precisa resolver disputas entre usuários?",
           "text-2": "Use a Kleros"
         },
         "bounties": {
           "nav-title": "Trabalho e Recompensas",
-          "title": "Kleros para plataformas freelancers e plataformas de recompensas",
-          "text-1": "Você está construindo uma plataforma freelancer ou de recompensa e precisa resolver disputas entre usuários?",
+          "title": "Kleros para plataformas de freelancing e de recompensas",
+          "text-1": "Você está construindo uma plataforma de freelancing ou de recompensas e precisa resolver disputas entre usuários?",
           "text-2": "Use a Kleros"
         },
         "curation": {
           "nav-title": "Plataformas de conteúdo gerado pelo usuário",
           "title": "Kleros para Plataformas de Conteúdo",
-          "text-1": " Você precisa de um sistema de moderação de conteúdo descentralizado para combater usuários mal-intencionados? (Discurso de ódio, direitos autorais, spam, pornografia)",
+          "text-1": " Você precisa de um sistema descentralizado de moderação de conteúdo para combater usuários mal-intencionados? (discurso de ódio, direitos autorais, spam, pornografia)",
           "text-2": "Use a Kleros"
         }
       },
-      "getstarted-title": "INICIAR",
+      "getstarted-title": "COMECE AGORA",
       "getstarted": {
         "erc792": {
           "nav-title": "ERC 792: Arbitragem Padrão",
-          "title": "ERC 792: Arbitragem Padrão",
-          "text-1": "ERC-792: Arbitragem Padrão propõe uma forma padrão de criar arbitragem interoperável no Ethereum. O padrão consiste em dois tipos de contratos inteligentes: Arbitráveis e árbitro. Os contratos arbitráveis enviam disputas executórias ao contrato inteligente do Árbitro, que apresenta uma decisão e a envia de volta aos contratos arbitráveis, que então executam a decisão. O ERC-792 fornece funções básicas para permitir que contratos inteligentes interajam com o Tribunal da Kleros e outros árbitros. Ele fornece um fluxo padronizado para disputas e execução de decisões.",
-          "button-primary": "Leia o documento completo",
+          "title": "ERC 792: Arbitration Standard",
+          "text-1": "O  ERC-792: Arbitration Standard propõe uma forma padrão para criar arbitragem no Ethereum de forma interoperável . O padrão consiste em dois tipos de contratos inteligentes: Arbitrable (arbitráveis) e Arbitrabtor (árbitro). Os contratos arbitráveis enviam disputas executáveis ao contrato inteligente do árbitro, que apresenta uma decisão e a envia de volta aos contratos arbitráveis, que então executam a decisão. O ERC-792 fornece funções básicas para permitir que contratos inteligentes interajam com o Tribunal da Kleros e outros árbitros. Ele fornece um fluxo padronizado para disputas e execução de decisões.",
+          "button-primary": "Leia a documentação completa",
           "button-secondary": "Saiba mais no Github"
         },
         "erc1497": {
-          "nav-title": "ERC 1497: Evidência padrão",
-          "title": "ERC 1497: Evidência padrão",
-          "text-1": "Para ter uma maneira interoperável de armazenar acordos entre as partes e informações sobre acordos, desenvolvemos o ERC-1497: Evidência padrão. O ERC-1497 consiste em duas categorias de informações: evidências e meta-evidências. A evidência, como o nome sugere, é um pedaço de informação que apóia uma proposição. Meta-evidências, por outro lado, são as informações sobre a disputa em si, o acordo, as partes envolvidas, opções de decisão e outros.",
+          "nav-title": "ERC 1497: Evidence Standard",
+          "title": "ERC 1497: Evidence Standard",
+          "text-1": "Para ter uma maneira interoperável de armazenar os acordos entre as partes e informações sobre os acordos, desenvolvemos o ERC-1497: Evidence Standard. O ERC-1497 consiste de duas categorias de informações: evidências e meta-evidências. A evidência, como o nome sugere, é um pedaço de informação que apoia uma proposição. Meta-evidências, por outro lado, são as informações sobre a disputa em si, o acordo, as partes envolvidas, opções de decisão e outros.",
           "button-primary": "Leia o documento completo",
           "button-secondary": "Saiba mais no Github"
         },
         "archon": {
-          "nav-title": "Archon - API Ethereum Arbitragem Padrão",
-          "title": "Archon - API Ethereum Arbitragem Padrão",
-          "text-1": "Archon é uma biblioteca javascript escrita para facilitar a interação com contatos de Arbitráveis e árbitro. Em particular, o Archon pode ser usado para cuidar de grande parte do trabalho de validação de hash que faz parte do Padrão de Evidência (ERC 1497). O Archon pode ser usado com todos os contratos deArbitráveis e árbitro que seguem o padrão ERC 792 e tem a funcionalidade de interagir com todos os métodos padronizados.",
-          "button-primary": "Leia o documento completo",
+          "nav-title": "Archon - Ethereum Arbitration Standard API ",
+          "title": "Archon - Ethereum Arbitration Standard API ",
+          "text-1": "O Archon é uma biblioteca JavaScript escrita para facilitar a interação com contatos arbitráveis e árbitros. Em particular, o Archon pode ser usado para cuidar de grande parte do trabalho de validação que faz parte do Padrão de Evidência (ERC 1497). O Archon pode ser usado com todos os contratos arbitráveis e árbitros que seguem o padrão ERC 792 e tem a funcionalidade de interagir com todos os métodos padronizados.",
+          "button-primary": "Leia a documentação completa",
           "button-secondary": "Saiba mais no Github"
         }
       }
     },
     "section-trusted-by": "Aprovado pelos principais projetos",
-    "section-contact": "Integre Now"
+    "section-contact": "Integre Agora"
   },
   "fellowship": {
     "seo-title": "Fellowship",
     "section-hero": {
-      "h1": "Kleros Fellowship da Justiça",
+      "h1": "Kleros Fellowship de Justiça",
       "h2": "Um programa que reúne especialistas de diferentes áreas para realizar pesquisas e trabalhar na Kleros. Nossos Fellows colaboram ativamente com nossa equipe principal no avanço da justiça descentralizada.",
       "conversion-phrase": "Siga a Kleros nas redes sociais para saber quando a aplicação para o próximo lote serão abertos."
     },
     "section-fellows": "Conheça nossos Fellows",
     "section-faq": {
       "1": {
-        "q": "O que é a Kleros Fellowship da Justice?",
+        "q": "O que é a Kleros Fellowship de Justiça?",
         "a": "É um programa remoto de 6 meses onde os participantes realizam algumas pesquisas sobre algum tópico relacionado a Kleros e a justiça descentralizada."
       },
       "2": {
@@ -671,19 +671,19 @@
       },
       "3": {
         "q": "Qual é o resultado esperado do programa?",
-        "a": "O resultado é acordado pela equipe Kleros e o participante no início do programa, mas normalmente é um relatório de 10 a 15 páginas sobre algum aspecto específico da Kleros."
+        "a": "O resultado é acordado entre equipe da Kleros e o participante no início do programa, mas normalmente é um relatório de 10 a 15 páginas sobre algum aspecto específico da Kleros."
       },
       "4": {
         "q": "Que tipo de suporte a Kleros dá aos participantes?",
-        "a": "Os participantes podem contar com a equipe Kleros para orientação, dados sobre o comportamento do usuário, apresentações aos principais atores do ecossistema e até suporte com design. Tentaremos ajudar os Fellows de todas as maneiras que pudermos."
+        "a": "Os participantes podem contar com a equipe Kleros para mentoria, dados sobre o comportamento do usuário, apresentações aos principais atores do ecossistema e até suporte com design. Tentaremos ajudar os Fellows de todas as maneiras que pudermos."
       },
       "5": {
-        "q": "Você oferece subsídios?",
+        "q": "Vocês oferecem subsídios?",
         "a": "Não."
       },
       "6": {
         "q": "E como é o dia a dia?",
-        "a": "O fellowship é um programa totalmente remoto e autônomo. Não há chamadas regulares nem relatórios de progresso. A única entrega é o relatório a ser apresentado no final do programa."
+        "a": "O fellowship é um programa totalmente remoto e autônomo. Não há reuniões regulares nem relatórios de progresso. A única entrega é o relatório a ser apresentado no final do programa."
       },
       "7": {
         "q": "Onde posso me inscrever?",
