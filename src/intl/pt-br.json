@@ -472,8 +472,7 @@
           "7": "Resolução de disputas online para contratos inteligentes - Amy Schmitz, Regra de Colin, Journal of Dispute Resolution 103 (2019)",
           "8": "Governança de Contratos Inteligentes em Instituições Blockchain, Howell, Bronwyn E. e Potgieter, Petrus H., SSRN",
           "9": "Ulex: Lei de Código Aberto para Governança Não Territorial - Bell, Tom W., Ulex: Lei de Código Aberto para Governança Não Territorial, Ulex: Lei de Código Aberto para Governança Não Territorial, 1 J. JURISDIÇÕES ESPECIAIS 1 (2020)",
-          "10": "A Governança da Resolução de Disputas de Blockchain - Allen, DWE, Lane,
-AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
+          "10": "A Governança da Resolução de Disputas de Blockchain - Allen, DWE, Lane, AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolution’, Harvard Negotiation Law Review, vol. 25",
           "11": "Blockchain e a inevitabilidade das disputas:O papel da resolução de disputas online -Orna Rabinovich, Ethan Katsch, Journal of Dispute Resolution (2019)",
           "12": "Resolvendo um novo tipo de guerra comercial por meio do ODR - Amy Schmitz, Artigo de Pesquisa de Estudos Legais da Escola de Direito da Universidade de Missouri nº 2020-02",
           "13": "O cenário atual de Blockchain, Arbitragem crowdsourced - James Metzger, Macquarie Law Journal (2019)",
@@ -515,8 +514,7 @@ AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolu
         },
         "3": {
           "title": "Capítulo 3, Justiça Descentralizada em Ação: Dos Doges em Julgamento ao Registro Curado por Token ",
-           "paragraph": "Este capítulo é uma análise aprofundada do experimento 'Doges em Julgamento', bem como as primeiras lições da implementação de nosso T2CR e uma ampla visão do que foi aprendido sobre vetores de ataque, comportamento do jurado e criptoeconomia fundamental. Na segunda edição, o capítulo é expandido com os mais recentes insights sobre os chamados
-‘O dilema do desafiante’ e o experimento que empreendemos comparando a inteligência artificial e coletiva no contexto de Doges em Julgamento."
+           "paragraph": "Este capítulo é uma análise aprofundada do experimento 'Doges em Julgamento', bem como as primeiras lições da implementação de nosso T2CR e uma ampla visão do que foi aprendido sobre vetores de ataque, comportamento do jurado e criptoeconomia fundamental. Na segunda edição, o capítulo é expandido com os mais recentes insights sobre os chamados ‘O dilema do desafiante’ e o experimento que empreendemos comparando a inteligência artificial e coletiva no contexto de Doges em Julgamento."
         },
         "4": {
           "title": "Capítulo 4, Revolução de disputas: um novo paradigma de justiça em um mundo antigo",
@@ -671,7 +669,7 @@ AM e Poblet, M, (a ser publicado) ‘The Governance of Blockchain Dispute Resolu
       },
       "3": {
         "q": "Qual é o resultado esperado do programa?",
-        "a": "O resultado é acordado entre a equipe da Kleros e o participante no início do programa, mas normalmente é um relatório de 10 a 15 páginas sobre algum aspecto específico da Kleros."
+        "a": "O resultado é acordado entre equipe da Kleros e o participante no início do programa, mas normalmente é um relatório de 10 a 15 páginas sobre algum aspecto específico da Kleros."
       },
       "4": {
         "q": "Que tipo de suporte a Kleros dá aos participantes?",
