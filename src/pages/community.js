@@ -58,7 +58,7 @@ const Community = ({ intl }) => (
             content={{
               icon: Turkey,
               paragraph: "t.me/kleros_turkey",
-              paragraphHref: "https://t.me/kleros_turkey",
+              paragraphHref: "https://t.me/klerosturkey",
               title: "Türkçe",
             }}
           />
