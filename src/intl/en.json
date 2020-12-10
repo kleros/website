@@ -457,7 +457,8 @@
         "title": "Kleros Papers",
         "items": {
           "1": "A Smart Contract Oracle for Approximating Real-World, Real Number Values",
-          "2": "Decentralised justice: reinventing arbitration for the digital age?"
+          "2": "Decentralised justice: reinventing arbitration for the digital age?",
+          "3": "Kleros Long Paper v1.0.0"
         }
       },
       "mentions": {
