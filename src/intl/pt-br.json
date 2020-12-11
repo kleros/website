@@ -461,14 +461,8 @@
       "papers": {
         "title": "Artigos Kleros",
         "items": {
-<<<<<<< HEAD
           "1": "Um contrato inteligente da Oracle para aproximação de valores numéricos do mundo real",
           "2": "Justiça descentralizada: reinventando a arbitragem para a era digital?"
-=======
-          "1": "Um contrato inteligente da Oracle para aproximar valores numéricos do mundo real",
-          "2": "Justiça descentralizada: reinventando a arbitragem para a era digital?",
-          "3": "Kleros Long Paper v1.0.0"
->>>>>>> refactor(research): add Kleros Long Paper v1.0.0
         }
       },
       "mentions": {
