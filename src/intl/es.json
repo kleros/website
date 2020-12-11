@@ -450,7 +450,8 @@
         "title": "Artículos de Kleros",
         "items": {
           "1": "«A Smart Contract Oracle for Approximating Real-World, Real Number Values» [Un oráculo de smart contracts para calcular valores del mundo real]",
-          "2": "«Decentralised justice: reinventing arbitration for the digital age?» [Justicia descentralizada: ¿Reinvención del arbitraje para la era digital?]."
+          "2": "«Decentralised justice: reinventing arbitration for the digital age?» [Justicia descentralizada: ¿Reinvención del arbitraje para la era digital?].",
+          "3": "Kleros Long Paper v1.0.0"
         }
       },
       "mentions": {
