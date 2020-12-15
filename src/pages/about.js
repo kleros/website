@@ -37,6 +37,7 @@ import Pichler from "src/assets/images/pichler.png";
 import Huculak from "src/assets/images/huculak.png";
 import Fidel from "src/assets/images/fidel.png";
 import Ragosa from "src/assets/images/ragosa.jpg";
+import Piqueras from "src/assets/images/piqueras.png";
 
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
@@ -71,7 +72,7 @@ const YELLOW_PAPERS = {
   en: YellowPaperEN,
 };
 
-const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, John, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Vitello, Zhang, Ragosa };
+const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, John, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Vitello, Zhang, Ragosa, Piqueras };
 
 const About = ({ intl }) => (
   <Layout>

@@ -242,7 +242,7 @@ module.exports = {
       },
       {
         name: "Enrique Piqueras",
-        title: "Former Lead Developer",
+        title: "Developer",
         links: {},
       },
       {
