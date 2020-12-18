@@ -1,7 +1,7 @@
 ---
 name: "Agustina Perez Comenale"
 title: "Attorney and Notary"
-report: ""
+report: "https://ipfs.kleros.io/ipfs/Qmchz1yWFU4oCQw3BUcNnHRYpEXBrJwajHp3ukfyeKLqDN"
 ---
 
 Agustina is an attorney and notary graduated from the University of Montevideo. She obtained a postgraduate degree in Notarial Updating Law and now she is in the last stage of her LLM with a final research paper on smart legal contracts, both degrees from the University of Montevideo.
