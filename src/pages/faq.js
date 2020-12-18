@@ -23,9 +23,6 @@ const FAQ = ({ intl }) => {
     dispatch({ field: e.target.name, value: e.target.value });
   };
 
-  console.log(state.search);
-  console.log(activeKey);
-
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "faq.seo-title" })} />
@@ -60,7 +57,6 @@ const FAQ = ({ intl }) => {
                   <FormattedMessage id={`faq.section-faq.${category[0]}.title`} />
                 </h2>
                 <Accordion
-                  defaultActiveKey={1}
                   className={styles.accordion}
                   onSelect={(e) => {
                     setActiveKey(e);

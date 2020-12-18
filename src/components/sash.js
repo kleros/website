@@ -25,7 +25,6 @@ const Sash = ({ separator, figures, intl }) => (
           </Col>
         );
 
-        console.log(typeof figure.icon);
         if (index !== figures.length - 1 && separator) {
           return (
             <React.Fragment key={index}>

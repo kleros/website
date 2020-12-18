@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles/vertical-card.module.css";
-import {  Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link, injectIntl } from "gatsby-plugin-intl";
 
 const isExternal = (href) => /^\/(?!\/)/.test(href);
@@ -30,8 +30,8 @@ const VerticalCard = ({ content, intl }) => (
 
         {content.listTitle && (
           <ul>
-            {content.list.map((item) => (
-              <li>{item}</li>
+            {content.list.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         )}

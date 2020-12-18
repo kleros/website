@@ -94,10 +94,9 @@ const PHOTOS = {
 
 const Fellowship = ({ intl, data }) => {
   const [activeKey, setActiveKey] = useState(-1);
-  console.log(data);
   return (
     <Layout>
-      <SEO lang={intl.locale} title={intl.formatMessage({id: 'fellowship.seo-title'})}  />
+      <SEO lang={intl.locale} title={intl.formatMessage({ id: "fellowship.seo-title" })} />
       <div className={styles.fellowship}>
         <section className={`pb-0 ${styles.hero} `}>
           <FellowshipBadge />
@@ -184,12 +183,12 @@ const Fellowship = ({ intl, data }) => {
         <section className={styles.questions}>
           <h1 className="text-left bigger">FAQ</h1>
           <div className="tab-content" id="v-pills-tabContent">
-            <Accordion activeKey={activeKey} className={styles.accordion} defaultActiveKey="0" onSelect={(e) => setActiveKey(e)}>
+            <Accordion activeKey={activeKey} className={styles.accordion} onSelect={(e) => setActiveKey(e)}>
               {Object.entries(Questions.fellowship["section-faq"]).map((question, index) => (
-                <>
-                  <Card key={index}>
+                <React.Fragment key={index}>
+                  <Card>
                     <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={`key${index}`}>
-                      <span className={`${activeKey === index ? styles.closed : styles.open}`}>
+                      <span className={`${activeKey == `key${index}` ? styles.closed : styles.open}`}>
                         <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
                       </span>
                     </Accordion.Toggle>
@@ -209,7 +208,7 @@ const Fellowship = ({ intl, data }) => {
                     </Accordion.Collapse>
                   </Card>
                   <hr style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }} />
-                </>
+                </React.Fragment>
               ))}
             </Accordion>
           </div>

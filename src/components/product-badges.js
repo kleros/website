@@ -45,7 +45,7 @@ const _ProductBadge = ({ name, hovered, setHoveredName, href, target, Icon, chil
           }
         }}
       >
-        <a href={href} rel={target == "_blank" && `noopener noreferrer`} target={target}>
+        <a href={href} rel={target == "_blank" ? `noopener noreferrer` : ""} target={target}>
           <div className={classnames(styles.productBadgeBadge, { [styles.hoveredProductBadgeBadge]: hovered })}>
             <Icon className={classnames(styles.productBadgeIcon, { [styles.hoveredProductBadgeIcon]: hovered })} />
             {hovered && (

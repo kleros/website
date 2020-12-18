@@ -101,7 +101,7 @@ const About = ({ intl }) => (
           <FormattedMessage id="about.section-2" />
         </h1>
         <div className="iframe-container">
-          <iframe title="How It Works" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" width="560" />
+          <iframe title="How It Works" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/IMDLJgTKDNw" width="560" />
         </div>
       </section>
       <section className="light">
@@ -169,8 +169,8 @@ const About = ({ intl }) => (
         <Row className="no-gutters">
           {Config.siteMetadata.teamMembers
             .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
-            .map((member) => (
-              <Col className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
+            .map((member, index) => (
+              <Col key={index} className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
                 <img alt={member.name} src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
                 <div className={styles.overlay}>
                   <span>{member.name} </span>
