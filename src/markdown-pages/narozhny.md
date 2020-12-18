@@ -4,4 +4,7 @@ title: "Civil Law Attorney"
 report: "https://ipfs.kleros.io/ipfs/QmdH7vuFVATLqdsvWXBBq38fUX2jRp7tbiQ1MvBr8SDxBc"
 ---
 
-Dmitry is a civil law attorney and project manager based in Russia. In the past couple of years, Dmitry has studied deeply the application of blockchain in dispute resolution. As a specialist in commercial litigation, civil and corporate law, Dmitry will bring his experience as an attorney to Kleros. He is already a long time follower of the project and has contributed with Kleros Ethos based article you can see here. During his participation in the Fellowship, Dmitry will conduct research on how to help integrate Kleros in the framework for online dispute resolution of the European Union.
+Dmitry Narozhny is a lawyer based in Russia, specializing in commercial court litigation, civil and corporate law, and bankruptcy. He is Member of the Russian Advocate Board. Dmitry is also the first graduate of the Kleros Fellowship Program.
+
+Kleros’ dispute resolution technique meets the highest level of internationally
+recognized due process requirements. The main purpose of this Report is to deliver a model of Kleros' consumer redress scheme which is compliant to any identifiable regulatory coordinate system for conducting dispute resolution procedures.

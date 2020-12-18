@@ -4,8 +4,6 @@ title: "International Arbitration"
 report: "https://ipfs.kleros.io/ipfs/QmaMQ6xse2o8ZqECD9gF2LWD9gVdb8h8FfVe9cmiFnKiTR"
 ---
 
-Abeer Sharma is an Indian dispute resolution lawyer and legal researcher with a multidisciplinary professional interest spanning across public policy, jurisprudence, energy law and international arbitration.
+Abeer Sharma is an alumnus of Queen Mary, University of London and the University of Delhi, with an educational background in law and humanities. Admitted to the bar in India, he practises litigation and international dispute resolution, with professional experience in four jurisdictions. A keen researcher, he is an expert in topics including international commercial and investment law, law and technology, and international dispute resolution. He has recently been awarded the Presidential Ph.D. Scholarship by Hong Kong University, where he will research dispute systems design for the electronic sports industry.
 
-He is highly optimistic about the potential for new technologies to disrupt the contemporary regulatory framework and the theory and practice of law, and is an avid supporter of reformation to bring the existing legal regime up to date with the 21st century.
-
-During the Fellowship, Abeer will conduct research on the potential of Kleros as an arbitration method for long term contracts, in particular, within the oil and gas industry.
+Long-term contracts are a special category of contracts where the obligations of the contracting parties are spread over many years – sometimes up to decades. While used in a range of different transactions, they are most famously used in lucrative supply contracts in primary resource industries such as coal mining, liquified natural gas, electricity, and nuclear power supply contracts.
