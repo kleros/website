@@ -1,7 +1,6 @@
 ---
 name: "Esthefania Vargas"
 title: "Attorney"
-image: "/src/assets/images/vargas.png"
 report: ""
 ---
 

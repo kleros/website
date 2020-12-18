@@ -1,7 +1,6 @@
 ---
 name: "Kizzy Mota"
 title: "Digital Law Specialist and Mediator"
-image: "/src/assets/images/mota.png"
 report: ""
 ---
 

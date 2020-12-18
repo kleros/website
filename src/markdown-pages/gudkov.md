@@ -1,7 +1,6 @@
 ---
 name: "Aleksei Gudkov"
 title: "Researcher"
-image: "/src/assets/images/gudkov.png"
 report: ""
 ---
 

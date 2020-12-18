@@ -1,7 +1,6 @@
 ---
 name: "Mauricio Duarte"
 title: "Attorney and Notary, Specialist in Energy Infrastructure Investment Law"
-image: "/src/assets/images/duarte.png"
 report: "https://file.globalupload.io/ArDuY3mT88.pdf"
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Sandeep Bhalothia"
 title: "Technology Arbitrator"
-image: "/src/assets/images/bhalothia.png"
 report: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Jake Lowther"
 title: "International Dispute Resolution Expert"
-image: "/src/assets/images/lowther.png"
 report: ""
 ---
 

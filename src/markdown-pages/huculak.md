@@ -1,7 +1,6 @@
 ---
 name: "Lorens Huculak"
 title: "Digital Entrepreneur"
-image: "/src/assets/images/huculak.png"
 report: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Flavio Freitas Gouvea"
 title: "Lawyer, Mediator and Smart Contract Developer"
-image: "/src/assets/images/gouvea.png"
 report: ""
 ---
 

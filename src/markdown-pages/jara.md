@@ -1,7 +1,6 @@
 ---
 name: "José María de la Jara"
 title: "Arbitration Attorney"
-image: "/src/assets/images/jara.png"
 report: ""
 ---
 

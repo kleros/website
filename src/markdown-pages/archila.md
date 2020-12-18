@@ -1,7 +1,6 @@
 ---
 name: "Paolo Archila"
 title: "Attorney and Notary Public"
-image: "/src/assets/images/archila.png"
 report: ""
 ---
 

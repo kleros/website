@@ -1,7 +1,6 @@
 ---
 name: "Shraddha Kulshreshtha"
 title: "Commercial and Business Lawyer"
-image: "/src/assets/images/kulshreshtha.png"
 report: ""
 ---
 

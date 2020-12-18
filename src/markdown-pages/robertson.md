@@ -1,7 +1,6 @@
 ---
 name: "Mars Robertson"
 title: "Chief Integration Officer"
-image: "/src/assets/images/robertson.png"
 report: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Mauricio Virues Carrera"
 title: "Alternative Dispute Resolution Professional"
-image: "/src/assets/images/carrera.png"
 report: ""
 ---
 

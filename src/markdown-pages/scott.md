@@ -1,7 +1,6 @@
 ---
 name: "Eric Martin Scott"
 title: "Public Law & Cyber Security"
-image: "/src/assets/images/scott.png"
 report: ""
 ---
 

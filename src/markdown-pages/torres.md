@@ -1,7 +1,6 @@
 ---
 name: "José Fernando Torres Varela,"
 title: "Lawyer"
-image: "/src/assets/images/torres.png"
 report: ""
 ---
 

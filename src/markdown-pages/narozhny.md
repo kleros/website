@@ -1,7 +1,6 @@
 ---
 name: "Dmitry Narozhny"
 title: "Civil Law Attorney"
-image: "/src/assets/images/narozhny.png"
 report: "https://ipfs.kleros.io/ipfs/QmdH7vuFVATLqdsvWXBBq38fUX2jRp7tbiQ1MvBr8SDxBc"
 ---
 

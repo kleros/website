@@ -1,7 +1,6 @@
 ---
 name: "Abeer Sharma"
 title: "International Arbitration"
-image: "/src/assets/images/narozhny.png"
 report: "https://ipfs.kleros.io/ipfs/QmaMQ6xse2o8ZqECD9gF2LWD9gVdb8h8FfVe9cmiFnKiTR"
 ---
 

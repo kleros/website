@@ -1,7 +1,6 @@
 ---
 name: "Emmanuel Mouclier"
 title: "Legaltech Entrepreneur"
-image: "/src/assets/images/moculier.png"
 report: ""
 ---
 

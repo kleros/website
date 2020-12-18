@@ -1,7 +1,6 @@
 ---
 name: "Scott Gray"
 title: "Economist"
-image: "/src/assets/images/narozhny.png"
 report: ""
 ---
 

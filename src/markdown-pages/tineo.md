@@ -1,7 +1,6 @@
 ---
 name: "Julieta Fernández Tineo"
 title: "Digital Law Specialist"
-image: "/src/assets/images/tineo.png"
 report: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Mübariz Aliyev"
 title: "Tech Lawyer"
-image: "/src/assets/images/aliyev.png"
 report: ""
 ---
 

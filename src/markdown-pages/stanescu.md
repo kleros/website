@@ -1,7 +1,6 @@
 ---
 name: "Alex Stanescu"
 title: "International Arbitrator"
-image: "/src/assets/images/stanescu.png"
 report: ""
 ---
 

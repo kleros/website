@@ -1,7 +1,6 @@
 ---
 name: "Anjali Tripathi"
 title: "Law Student"
-image: "/src/assets/images/tripathi.png"
 report: ""
 ---
 

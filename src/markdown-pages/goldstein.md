@@ -1,7 +1,6 @@
 ---
 name: "Elliot Talbert Goldstein"
 title: "Assistant Director for Digital Marketing"
-image: "/src/assets/images/goldstein.png"
 report: ""
 ---
 

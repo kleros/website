@@ -1,7 +1,6 @@
 ---
 name: "Rossana Deplano"
 title: "Lecturer in Law"
-image: "/src/assets/images/deplano.png"
 report: ""
 ---
 

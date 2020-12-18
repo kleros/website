@@ -87,6 +87,10 @@ const PHOTOS = {
 export default ({ data }) => {
   const post = data.markdownRemark;
   const intl = useIntl();
+
+  const photoName = post.fields.slug.split(/\//)[1];
+  const photoNameCapitalized = photoName.charAt(0).toUpperCase() + photoName.slice(1);
+
   return (
     <Layout>
       <SEO title="Community" />
@@ -97,7 +101,7 @@ export default ({ data }) => {
         </section>
         <section className={styles.main}>
           <div>
-            <img alt={post.frontmatter.name} src={PHOTOS[post.frontmatter.name.split(/(\s)/).slice(-1)]} />
+            <img alt={post.frontmatter.name} src={PHOTOS[photoNameCapitalized]} />
             <div className={styles.text}>
               <h3>Bio</h3>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -123,10 +127,12 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       html
       frontmatter {
         name
-        image
         title
         report
       }

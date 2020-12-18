@@ -1,7 +1,6 @@
 ---
 name: "David Lewis"
 title: "International Commercial Mediator and Mediation Scholar"
-image: "/src/assets/images/lewis.png"
 report: ""
 ---
 

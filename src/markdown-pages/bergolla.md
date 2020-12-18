@@ -1,7 +1,6 @@
 ---
 name: "Luis Bergolla"
 title: "Doctoral Student"
-image: "/src/assets/images/bergolla.png"
 report: ""
 ---
 

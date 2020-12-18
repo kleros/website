@@ -1,7 +1,6 @@
 ---
 name: "Agustina Perez Comenale"
 title: "Attorney and Notary"
-image: "/src/assets/images/comenale.png"
 report: ""
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: "Sahelê Felicio"
 title: "Corporate Lawyer"
-image: "/src/assets/images/felicio.png"
 report: ""
 ---
 

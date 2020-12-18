@@ -1,7 +1,6 @@
 ---
 name: "Robert Dean"
 title: "Construction Arbitrator"
-image: "/src/assets/images/dean.png"
 report: ""
 ---
 

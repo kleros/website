@@ -1,7 +1,6 @@
 ---
 name: "David Abad"
 title: "Architect and Mediator in Construction Industry"
-image: "/src/assets/images/abad.png"
 report: ""
 ---
 

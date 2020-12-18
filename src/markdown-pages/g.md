@@ -1,7 +1,6 @@
 ---
 name: "Diana I. Santana G."
 title: "Attorney"
-image: "/src/assets/images/g.png"
 report: ""
 ---
 

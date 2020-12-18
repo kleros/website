@@ -1,7 +1,6 @@
 ---
 name: "Tian Zhao"
 title: "Systems Engineering"
-image: "/src/assets/images/zhao.png"
 report: ""
 ---
 

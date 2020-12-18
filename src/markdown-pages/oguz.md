@@ -1,7 +1,6 @@
 ---
 name: "Dorukhan Korkut Oguz"
 title: "Corporate Lawyer and Legal Researcher"
-image: "/src/assets/images/oguz.png"
 report: ""
 ---
 

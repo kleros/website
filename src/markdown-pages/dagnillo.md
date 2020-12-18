@@ -1,7 +1,6 @@
 ---
 name: "Nicolás D'Agnillo"
 title: "Financial Analyst"
-image: "/src/assets/images/dagnillo.png"
 report: ""
 ---
 

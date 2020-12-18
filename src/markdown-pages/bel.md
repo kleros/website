@@ -1,7 +1,6 @@
 ---
 name: "Marta García Bel"
 title: " International Arbitration Lawyer"
-image: "/src/assets/images/bel.png"
 report: ""
 ---
 

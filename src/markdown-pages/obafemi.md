@@ -1,7 +1,6 @@
 ---
 name: "Faith Obafemi"
 title: "Co-Founder, Head of Strategy, Future-Proof Intelligence"
-image: "/src/assets/images/obafemi.png"
 report: ""
 ---
 
