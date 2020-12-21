@@ -98,16 +98,16 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/community">
             <FormattedMessage id="footer.community" />
           </Link>
-          <a className="mr-3" href="https://blog.kleros.io">
+          <a className="mr-3" href="https://blog.kleros.io" rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.blog" />
           </a>
           <Link className="mr-3" to="/media">
             <FormattedMessage id="footer.media" />
           </Link>
-          <a className="mr-3" href="https://kleros.io/KlerosBrandAssets.zip">
+          <a className="mr-3" href="https://kleros.io/KlerosBrandAssets.zip" target="_blank" rel="noopener noreferrer">
             <FormattedMessage id="footer.brand-assets" />
           </a>
-          <a className="mr-3" href="https://www.zazzle.com/store/kleros">
+          <a className="mr-3" href="https://www.zazzle.com/store/kleros" target="_blank" rel="noopener noreferrer">
             <FormattedMessage id="footer.store" />
           </a>
           <Link className="mr-3" to="/book">
