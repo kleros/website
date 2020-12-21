@@ -107,6 +107,9 @@ const Footer = ({ intl }) => (
           <a className="mr-3" href="https://kleros.io/KlerosBrandAssets.zip">
             <FormattedMessage id="footer.brand-assets" />
           </a>
+          <a className="mr-3" href="https://www.zazzle.com/store/kleros">
+            <FormattedMessage id="footer.store" />
+          </a>
           <Link className="mr-3" to="/book">
             <FormattedMessage id="footer.book" />
           </Link>

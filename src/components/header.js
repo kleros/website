@@ -44,16 +44,19 @@ class Header extends React.Component {
               <Button aria-controls="collapse" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#collapse" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.dapps" />
               </Button>
-              <Link className=" nav-link" to="/integrations">
+              <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
               </Link>
-              <Link className=" nav-link" to="/research">
+              <Link className="nav-link" to="/research">
                 <FormattedMessage id="header.research" />
               </Link>
-              <Nav.Link className="" href="https://blog.kleros.io" rel="noopener noreferrer">
+              <Nav.Link className="nav-link" href="https://blog.kleros.io" rel="noopener noreferrer">
                 <FormattedMessage id="header.blog" />
               </Nav.Link>
-              <Link className=" nav-link" to="/about">
+              <Nav.Link className="nav-link" href="https://www.zazzle.com/store/kleros" rel="noopener noreferrer">
+                <FormattedMessage id="header.store" />
+              </Nav.Link>
+              <Link className="nav-link" to="/about">
                 <FormattedMessage id="header.about" />
               </Link>
             </Nav>
