@@ -310,7 +310,7 @@ module.exports = {
       { name: "Shraddha Kulshreshtha", title: "Commercial and Business Lawyer", location: "India", batch: 3 },
       { name: "Emmanuel Mouclier", title: "Legaltech Entrepreneur", location: "France", batch: 3 },
       { name: "Agustina Perez Comenale", title: "Attorney and Notary", location: "Uruguay", batch: 3 },
-      { name: "Diana I. Santana G.", title: "Attorney", location: "Mexico", batch: 3 },
+      { name: "Diana Itzel Santana Galindo", title: "Attorney", location: "Mexico", batch: 3 },
       { name: "Alex Stanescu", title: "International Arbitrator", location: "Romania", batch: 3 },
       { name: "Anjali Tripathi", title: "Law Student", location: "India", batch: 3 },
       { name: "Esthefania Vargas", title: "Attorney", location: "Colombia", batch: 3 },

@@ -1,7 +1,7 @@
 ---
-name: "Diana I. Santana G."
+name: "Diana Itzel Santana Galindo"
 title: "Attorney"
-report: ""
+report: "https://ipfs.kleros.io/ipfs/QmW81Rff1ePQ7VuwcnRwARdGce52qbX77kur55Xju3jnSx"
 ---
 
 Diana I. Santana G. is a Mexican attorney graduated from Universidad Panamericana. She also holds an LLM in Comparative and International Dispute Resolution at Queen Mary's University of London. She has experience in different arbitration institutions such as the Korean Commercial Arbitration Board (KCAB International), the Beijing Arbitration Commission (BAC/BIAC), and the Hong Kong International Arbitration Centre (HKIAC).

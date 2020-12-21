@@ -44,7 +44,7 @@ import Lowther from "src/assets/images/lowther.png";
 import Kulshreshtha from "src/assets/images/kulshreshtha.png";
 import Mouclier from "src/assets/images/mouclier.png";
 import Comenale from "src/assets/images/comenale.png";
-import G from "src/assets/images/g.png";
+import Galindo from "src/assets/images/galindo.png";
 import Stanescu from "src/assets/images/stanescu.png";
 import Tripathi from "src/assets/images/tripathi.png";
 import Vargas from "src/assets/images/vargas.png";
@@ -67,7 +67,7 @@ const PHOTOS = {
   Deplano,
   Duarte,
   Felicio,
-  G,
+  Galindo,
   Goldstein,
   Gouvea,
   Gray,
