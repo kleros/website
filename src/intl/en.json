@@ -48,7 +48,8 @@
     "Crypto Unlocked": "Kleros is used to settle Oracle disputes here.",
     "Realitio": "Kleros is used as a final answerer to questions here.",
     "Omen": "Kleros is used to settle markets here.",
-    "Linguo": "A P2P translations marketplace mediated by Kleros."
+    "Linguo": "A P2P translations marketplace mediated by Kleros.",
+    "Revoke": "Revoke ERC20 allowances you gave earlier, easily."
   },
 
   "index": {

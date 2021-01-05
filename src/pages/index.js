@@ -16,6 +16,7 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import Resolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
+import Revoke from "../assets/svgs/revoke.svg";
 import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
 import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
@@ -420,7 +421,14 @@ class IndexPage extends React.Component {
                   </a>
                   <p className="text-center text-purple-darker ">Curate</p>
                 </div>
-
+                <div className="d-inline-block">
+                  <a href="https://linguo.kleros.io" target="_blank" rel="noopener noreferrer">
+                    <Badge>
+                      <Linguo />
+                    </Badge>
+                  </a>
+                  <p className="text-center text-purple-darker ">Linguo</p>
+                </div>
                 <div className="d-inline-block">
                   <a href="https://resolve.kleros.io" target="_blank" rel="noopener noreferrer">
                     <Badge>
@@ -463,12 +471,12 @@ class IndexPage extends React.Component {
                   <p className="text-center text-purple-darker  ">Omen</p>
                 </div>
                 <div className="d-inline-block">
-                  <a href="https://linguo.kleros.io" target="_blank" rel="noopener noreferrer">
+                  <a href="https://revoke.cash" target="_blank" rel="noopener noreferrer">
                     <Badge>
-                      <Linguo />
+                      <Revoke />
                     </Badge>
                   </a>
-                  <p className="text-center text-purple-darker ">Linguo*</p>
+                  <p className="text-center text-purple-darker ">Revoke</p>
                 </div>
                 <br />
                 <small>

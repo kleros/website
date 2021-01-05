@@ -13,6 +13,7 @@ import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import Omen from "src/assets/images/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
+import Revoke from "../assets/svgs/revoke.svg";
 
 import styles from "./styles/product-badges.module.css";
 
@@ -22,12 +23,13 @@ const products = [
   { name: "Escrow", href: "https://kleros.io/escrow", Icon: Escrow },
   { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Curate", href: "https://kleros.io/curate", Icon: Curate },
+  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
   { name: "Uniswap Ninja", href: "https://uniswap.ninja", Icon: Ninja, target: "_blank" },
   { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked), target: "_blank" },
   { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
   { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen), target: "_blank" },
-  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
+  { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
 ];
 
 const _ProductBadge = ({ name, hovered, setHoveredName, href, target, Icon, children }) => {
