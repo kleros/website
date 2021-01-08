@@ -8,8 +8,10 @@ import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
 import Alice from "src/assets/images/alice.png";
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import WindingTree from "src/assets/images/winding-tree.png";
-import Omen from "src/assets/images/omen-mono-2.png";
-import Uniswap from "src/assets/images/uniswap-mono.png";
+import Omen from "src/assets/svgs/omen_logo.svg";
+import Union from "src/assets/svgs/union.svg";
+import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
+import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Twitter from "src/assets/svgs/twitter.svg";
@@ -208,10 +210,25 @@ const About = ({ intl }) => (
         <h2>
           <FormattedMessage id="about.section-5" />
         </h2>
-        <img src={Deversifi} alt="Deversifi" />
-        <img src={Uniswap} alt="Ink" />
-        <img src={Omen} alt="WindingTree" />
-        <img src={Alice} alt="Alice" />
+        <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
+          <Omen />
+        </a>
+        <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <img src={Deversifi} alt="Deversifi" />
+        </a>
+
+        <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
+          <Uniswap />
+        </a>
+
+        <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
+          <Union />
+        </a>
+
+        <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
+          <img src={DemocracyEarth} alt="DemocracyEarth" />
+        </a>
+
         <hr style={{ marginTop: "5rem" }} />
       </section>
     </Container>

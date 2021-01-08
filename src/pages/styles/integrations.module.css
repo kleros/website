@@ -40,7 +40,7 @@
 
 .integrations .items {
   background-color: var(--color-purple-darkest);
-  padding-top: 140px; /* to match the height of the background image */
+  padding-top: calc(2vw); /* to match the height of the background image */
 }
 
 .integrations .items a {
@@ -243,7 +243,9 @@
 }
 
 .integrations .trustedBy .badge {
-  width: 12rem;
+  width: auto;
+  max-width: 250px;
+  max-height: 60px;
 }
 
 .integrations .trustedBy > div {

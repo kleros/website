@@ -61,11 +61,12 @@
   fill: white;
 }
 
-.about .partners > img,
-.about .partners > svg {
-  margin: 1rem 2rem;
+.about .partners img,
+.about .partners svg {
+  margin: 2rem;
+  margin-top: 1rem;
   max-width: 250px;
-  max-height: 70px;
+  max-height: 60px;
 }
 
 .about .partners > h2 {

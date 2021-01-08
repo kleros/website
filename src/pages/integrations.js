@@ -22,10 +22,14 @@ import DutchX from "src/assets/images/dutchx.png";
 
 import DeversifiMono from "src/assets/images/deversifi-mono.png";
 import OmenMono from "src/assets/images/omen-mono.png";
+import Omen from "src/assets/svgs/omen_logo.svg";
 import WindingTreeMono from "src/assets/images/winding-mono.png";
 import CryptoUnlockedMono from "src/assets/images/crypto-unlocked-mono.png";
 import RealitioMono from "src/assets/images/realitio-mono.png";
 import DutchXMono from "src/assets/images/dutch-mono.png";
+import Uniswap from "src/assets/svgs/uniswap_logo.svg";
+import Union from "src/assets/svgs/union.svg";
+import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
 
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
@@ -94,29 +98,25 @@ const Integrations = ({ intl }) => (
           <FormattedMessage id="integrations.section-trusted-by" />
         </h2>
         <div>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <Omen />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://deversifi.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={DeversifiMono} alt="Deversifi" />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={OmenMono} alt="Omen" />
+            <Uniswap />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={DutchXMono} alt="DutchX" />
+            <Union />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://windingtree.com/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={WindingTreeMono} alt="WindingTree" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://realit.io/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={RealitioMono} alt="Realitio" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://cryptounlocked.wetrust.io/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={CryptoUnlockedMono} alt="CryptoUnlocked" />
+            <img src={DemocracyEarth} alt="DemocracyEarth" />
           </Badge>
         </div>
       </section>
