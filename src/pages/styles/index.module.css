@@ -139,3 +139,15 @@
   font-size: var(--font-size-medium);
   color: var(--color-purple);
 }
+
+.index .partners img,
+.index .partners svg {
+  margin: 2rem;
+  margin-top: 1rem;
+  max-width: 250px;
+  max-height: 60px;
+}
+
+.index .partners > h2 {
+  font-weight: var(--font-weight-bold);
+}

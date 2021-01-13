@@ -8,6 +8,11 @@ import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
 import { Badge, Col, Container, Row, Spinner } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
+import OmenSVG from "src/assets/svgs/omen_logo.svg";
+import Deversifi from "src/assets/images/deversifi-bw.png";
+import Union from "src/assets/svgs/union.svg";
+import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
+import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
 import Curate from "../assets/svgs/curate.svg";
@@ -234,6 +239,29 @@ class IndexPage extends React.Component {
               </Link>
             </Container>
             <IndexHero />
+          </section>
+          <section className={styles.partners}>
+            <h2>
+              <FormattedMessage id="about.section-5" />
+            </h2>
+            <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
+              <OmenSVG />
+            </a>
+            <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
+              <img src={Deversifi} alt="Deversifi" />
+            </a>
+
+            <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
+              <Uniswap />
+            </a>
+
+            <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
+              <Union />
+            </a>
+
+            <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
+              <img src={DemocracyEarth} alt="DemocracyEarth" />
+            </a>
           </section>
           <section className="light">
             <Sash
