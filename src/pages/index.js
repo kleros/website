@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Sash from "../components/sash";
+import Sponsors from "src/components/sponsors";
+
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
@@ -220,7 +222,7 @@ class IndexPage extends React.Component {
     const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra } = this.state;
 
     return (
-      <Layout>
+      <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
           <section className={styles.hero}>
@@ -267,6 +269,7 @@ class IndexPage extends React.Component {
               <img src={API3} alt="API3" />
             </a>
           </section>
+          <Sponsors />
           <section className="light">
             <Sash
               as="div"

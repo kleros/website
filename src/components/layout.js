@@ -19,11 +19,11 @@ import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, omitSponsors }) => (
   <>
     <Header svgs={{ Court, Curate, DisputeResolver, Escrow, Linguo, Logo, Ninja, T2CR }} />
     <main>
-      {children} <Sponsors />
+      {children} {!omitSponsors && <Sponsors />}
     </main>
     <Footer />
   </>
