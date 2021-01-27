@@ -13,6 +13,7 @@ import Deversifi from "src/assets/images/deversifi-bw.png";
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
 import Uniswap from "src/assets/svgs/uniswap_logo.svg";
+import API3 from "src/assets/images/api3_mono.png";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
 import Curate from "../assets/svgs/curate.svg";
@@ -261,6 +262,9 @@ class IndexPage extends React.Component {
 
             <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
               <img src={DemocracyEarth} alt="DemocracyEarth" />
+            </a>
+            <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
+              <img src={API3} alt="API3" />
             </a>
           </section>
           <section className="light">

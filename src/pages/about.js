@@ -11,6 +11,7 @@ import WindingTree from "src/assets/images/winding-tree.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
+import API3 from "src/assets/images/api3_mono.png";
 import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
@@ -228,7 +229,9 @@ const About = ({ intl }) => (
         <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
           <img src={DemocracyEarth} alt="DemocracyEarth" />
         </a>
-
+        <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
+          <img src={API3} alt="API3" />
+        </a>
         <hr style={{ marginTop: "5rem" }} />
       </section>
     </Container>
