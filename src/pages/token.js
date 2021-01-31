@@ -91,9 +91,6 @@ const IndexPage = ({ intl }) => (
             <span class={styles.helper} />
             <img src={Bitfinex} alt={"Bitfinex"} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://uniswap.ninja/" rel="noopener noreferrer" target="blank">
-            <Ninja />
-          </Badge>
           <Badge as="a" className={styles.badge} href="https://uniswap.exchange/" rel="noopener noreferrer" target="blank">
             <Uniswap />
           </Badge>
