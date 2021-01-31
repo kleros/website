@@ -446,7 +446,7 @@ class IndexPage extends React.Component {
                       <T2CR />
                     </Badge>
                   </a>
-                  <p className="text-center text-purple-darker ">T2CR</p>
+                  <p className="text-center text-purple-darker">Tokens</p>
                 </div>
                 <div className="d-inline-block">
                   <a href={`https://kleros.io/${intl.locale}/curate`}>

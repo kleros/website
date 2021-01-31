@@ -41,7 +41,7 @@
   "productDescriptions": {
     "Court": "Jurors join courts and rule on disputes here.",
     "Escrow": "Send and receive escrowed payments mediated by Kleros.",
-    "T2CR": "A token list curated and categorized by Kleros.",
+    "Tokens": "A token list curated and categorized by Kleros.",
     "Curate": "A general purpose curated list creator.",
     "Dispute Resolver": "Create and operate disputes manually.",
     "Uniswap Ninja": "A fork of Uniswap that uses Kleros to curate the tradable tokens.",

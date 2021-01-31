@@ -21,7 +21,7 @@ const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} /
 const products = [
   { name: "Court", href: "https://court.kleros.io", Icon: Court, target: "_blank" },
   { name: "Escrow", href: "https://kleros.io/escrow", Icon: Escrow },
-  { name: "T2CR", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
+  { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Curate", href: "https://kleros.io/curate", Icon: Curate },
   { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
