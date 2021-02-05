@@ -290,12 +290,12 @@
             "a": "Satoshi Nakamoto taught us that a number of anonymous computers who do not trust each can still reach consensus, provided incentives are correctly structured. Kleros extends this principle to human decision making. A number of anonymous jurors who do not trust each other can reach consensus on a right decision, provided incentives are correctly structured. To learn more about the incentive system, read our white paper."
           },
           "2": {
-            "q": "How many pinakion will exist?",
-            "a": "The supply of pinakion is fixed at one billion units."
+            "q": "How many PNK will exist?",
+            "a": "The supply of PNK is fixed at one billion units."
           },
           "3": {
-            "q": "Does a party who wants to have a case adjudicated need to have pinakion?",
-            "a": "No, only jurors will need pinakion in order to be drawn. Parties don’t even need to know what a pinakion is."
+            "q": "Does a party who wants to have a case adjudicated need to have PNK?",
+            "a": "No, only jurors will need PNK in order to be drawn. Parties don’t even need to know what a PNK is."
           },
           "4": {
             "q": "Is the identity of jurors revealed?",
