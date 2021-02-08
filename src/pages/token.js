@@ -91,6 +91,10 @@ const IndexPage = ({ intl }) => (
             <span class={styles.helper} />
             <img src={Bitfinex} alt={"Bitfinex"} />
           </Badge>
+          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
+            <span class={styles.helper} />
+            <img src={Deversifi} alt={"Deversifi"} />
+          </Badge>
           <Badge as="a" className={styles.badge} href="https://uniswap.exchange/" rel="noopener noreferrer" target="blank">
             <Uniswap />
           </Badge>
@@ -100,7 +104,6 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://loopring.org/" rel="noopener noreferrer" target="blank">
             <Loopring />
           </Badge>
-
           <Badge as="a" className={styles.badge} href="https://idex.market/eth/pnk" rel="noopener noreferrer" target="blank">
             <span class={styles.helper} />
             <img src={IDEX} alt={"IDEX"} />
@@ -109,10 +112,7 @@ const IndexPage = ({ intl }) => (
             <span class={styles.helper} />
             <img src={Kyber} alt={"Kyber"} />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
-            <span class={styles.helper} />
-            <img src={Deversifi} alt={"Deversifi"} />
-          </Badge>
+
           <Badge as="a" className={styles.badge} href="https://transak.com/" rel="noopener noreferrer" target="blank">
             <span class={styles.helper} />
             <img src={Transak} alt={"Transak"} />
