@@ -291,7 +291,7 @@
           },
           "2": {
             "q": "How many PNK will exist?",
-            "a": "The supply of PNK is fixed at one billion units."
+            "a": "The total supply is 764,626,704 PNK at the moment. This could only be changed through a governance vote."
           },
           "3": {
             "q": "Does a party who wants to have a case adjudicated need to have PNK?",

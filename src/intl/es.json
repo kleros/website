@@ -267,7 +267,7 @@
           },
           "2": {
             "q": "¿Cuántas unidades del token de Kleros (PNK) serán creadas?",
-            "a": "La cantidad máxima de PNK está fijada en 1.000 millones de unidades."
+            "a": "La cantidad total de tokens actualmente es de 764,626,704 PNK. Esto sólo podría ser modificado por medio de una propuesta de gobernanza."
           },
           "3": {
             "q": "Si una de las partes quiere que se juzgue su caso, ¿necesita tener PNK?",
