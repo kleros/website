@@ -38,12 +38,12 @@
   },
   "index": {
     "seo-title": "Inicio",
+    "banner": "Participa en el Programa de Incentivos para Jurados",
     "section-hero": {
       "h1": "Justicia Descentralizada",
       "h2": "Una plataforma abierta de resolución de disputas en línea que imparte justicia para todos.",
       "button-primary": "Prueba Kleros",
-      "button-secondary": "Integra tu Producto",
-      "button-ternary": "Participa en el Programa de Incentivos para Jurados"
+      "button-secondary": "Integra tu Producto"
     },
     "sash": {
       "first": {

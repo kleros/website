@@ -54,12 +54,12 @@
 
   "index": {
     "seo-title": "Homepage",
+    "banner": "Join Kleros Juror Incentive Program",
     "section-hero": {
       "h1": "Decentralized Courts",
       "h2": "An open online dispute resolution platform bringing justice for all.",
       "button-primary": "Try Kleros Court",
-      "button-secondary": "Integrate Your Product",
-      "button-ternary": "Join Kleros Juror Incentive Program"
+      "button-secondary": "Integrate Your Product"
     },
 
     "sash": {

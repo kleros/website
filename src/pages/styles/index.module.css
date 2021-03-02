@@ -1,3 +1,30 @@
+.index .banner {
+  background-color: var(--color-purple-light);
+  height: 32px;
+  font-size: var(--font-size-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index .banner a {
+  color: white;
+}
+
+.index .banner svg {
+  height: 24px;
+  margin: 0 10px;
+  width: auto;
+}
+
+.index .banner svg:last-child {
+  height: 16px;
+}
+
+.index .banner svg:last-child > path {
+  fill: white;
+}
+
 .index .hero {
   margin-bottom: 0;
   padding-bottom: 0 !important;

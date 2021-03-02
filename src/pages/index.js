@@ -18,6 +18,8 @@ import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import API3 from "src/assets/images/api3_mono.png";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
+import RightArrow from "../assets/svgs/right-arrow.svg";
+import Logo from "../assets/svgs/kleros-white.svg";
 import Curate from "../assets/svgs/curate.svg";
 import Escrow from "../assets/svgs/escrow.svg";
 import T2CR from "../assets/svgs/t2cr.svg";
@@ -225,6 +227,13 @@ class IndexPage extends React.Component {
       <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
+          <div className={styles.banner}>
+            <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+              <Logo />
+              <FormattedMessage id="index.banner" />
+              <RightArrow />
+            </a>
+          </div>
           <section className={styles.hero}>
             <h1>
               <FormattedMessage id="index.section-hero.h1" />
@@ -234,14 +243,8 @@ class IndexPage extends React.Component {
             </h2>
 
             <Container className={styles.buttonWrapper}>
-              {/*
               <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
                 <FormattedMessage id="index.section-hero.button-primary" />
-              </a>
-              */}
-
-              <a className="btn btn-primary" href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" rel="noopener noreferrer" target="blank">
-                <FormattedMessage id="index.section-hero.button-ternary" />
               </a>
               <Link className="btn btn-secondary" to="/integrations">
                 <FormattedMessage id="index.section-hero.button-secondary" />
