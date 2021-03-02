@@ -234,15 +234,18 @@ class IndexPage extends React.Component {
             </h2>
 
             <Container className={styles.buttonWrapper}>
+              {/*
               <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
                 <FormattedMessage id="index.section-hero.button-primary" />
+              </a>
+              */}
+
+              <a className="btn btn-primary" href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" rel="noopener noreferrer" target="blank">
+                <FormattedMessage id="index.section-hero.button-ternary" />
               </a>
               <Link className="btn btn-secondary" to="/integrations">
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
-              <a className="btn btn-primary" href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" rel="noopener noreferrer" target="blank">
-                <FormattedMessage id="index.section-hero.button-ternary" />
-              </a>
             </Container>
             <IndexHero />
           </section>
