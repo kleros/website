@@ -113,7 +113,7 @@ const NO_OF_RECENT_DISPUTES = 6;
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY) };
+    this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY), loading: true };
   }
 
   getCourts = async (subcourtID) => EthereumInterface.call("KlerosLiquid", KLEROS_LIQUID, "courts", subcourtID);
@@ -203,6 +203,7 @@ class IndexPage extends React.Component {
   };
 
   async componentDidMount() {
+    this.setState({ loading: true });
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();
       lscache.set("subcourtDetails", this.state.subcourtDetails, 14400);
@@ -217,6 +218,8 @@ class IndexPage extends React.Component {
     } else {
       await this.setState({ disputes: lscache.get("disputes"), metaEvidences: lscache.get("metaEvidences") });
     }
+
+    this.setState({ loading: false });
   }
 
   onDismiss = async () => {
@@ -227,13 +230,13 @@ class IndexPage extends React.Component {
   render() {
     const { intl } = this.props;
 
-    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra } = this.state;
+    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra, loading } = this.state;
 
     return (
       <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
-          {!lscache.get("dismissBanner") && (
+          {!loading && !lscache.get("dismissBanner") && (
             <div className={styles.banner}>
               <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
                 <Logo />
