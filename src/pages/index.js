@@ -203,7 +203,7 @@ class IndexPage extends React.Component {
   };
 
   async componentDidMount() {
-    this.setState({ loading: true });
+    this.setState({ loading: false });
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();
       lscache.set("subcourtDetails", this.state.subcourtDetails, 14400);
@@ -218,8 +218,6 @@ class IndexPage extends React.Component {
     } else {
       await this.setState({ disputes: lscache.get("disputes"), metaEvidences: lscache.get("metaEvidences") });
     }
-
-    this.setState({ loading: false });
   }
 
   onDismiss = async () => {
