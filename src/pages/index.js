@@ -218,6 +218,12 @@ class IndexPage extends React.Component {
       await this.setState({ disputes: lscache.get("disputes"), metaEvidences: lscache.get("metaEvidences") });
     }
   }
+
+  onDismiss = async () => {
+    lscache.set("dismissBanner", true, 43200);
+    this.forceUpdate();
+  };
+
   render() {
     const { intl } = this.props;
 
@@ -227,13 +233,16 @@ class IndexPage extends React.Component {
       <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
-          <div className={styles.banner}>
-            <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
-              <Logo />
-              <FormattedMessage id="index.banner" />
-              <RightArrow />
-            </a>
-          </div>
+          {!lscache.get("dismissBanner") && (
+            <div className={styles.banner}>
+              <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+                <Logo />
+                <FormattedMessage id="index.banner" />
+                <RightArrow />
+              </a>
+              <button onClick={this.onDismiss}>×</button>
+            </div>
+          )}
           <section className={styles.hero}>
             <h1>
               <FormattedMessage id="index.section-hero.h1" />
