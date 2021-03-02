@@ -18,6 +18,8 @@ import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import API3 from "src/assets/images/api3_mono.png";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
+import RightArrow from "../assets/svgs/right-arrow.svg";
+import Logo from "../assets/svgs/kleros-white.svg";
 import Curate from "../assets/svgs/curate.svg";
 import Escrow from "../assets/svgs/escrow.svg";
 import T2CR from "../assets/svgs/t2cr.svg";
@@ -111,7 +113,7 @@ const NO_OF_RECENT_DISPUTES = 6;
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY) };
+    this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY), loading: true };
   }
 
   getCourts = async (subcourtID) => EthereumInterface.call("KlerosLiquid", KLEROS_LIQUID, "courts", subcourtID);
@@ -201,6 +203,7 @@ class IndexPage extends React.Component {
   };
 
   async componentDidMount() {
+    this.setState({ loading: false });
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();
       lscache.set("subcourtDetails", this.state.subcourtDetails, 14400);
@@ -216,15 +219,31 @@ class IndexPage extends React.Component {
       await this.setState({ disputes: lscache.get("disputes"), metaEvidences: lscache.get("metaEvidences") });
     }
   }
+
+  onDismiss = async () => {
+    lscache.set("dismissBanner", true, 43200);
+    this.forceUpdate();
+  };
+
   render() {
     const { intl } = this.props;
 
-    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra } = this.state;
+    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra, loading } = this.state;
 
     return (
       <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
         <Container className={styles.index} fluid>
+          {!loading && !lscache.get("dismissBanner") && (
+            <div className={styles.banner}>
+              <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+                <Logo />
+                <FormattedMessage id="index.banner" />
+                <RightArrow />
+              </a>
+              <button onClick={this.onDismiss}>×</button>
+            </div>
+          )}
           <section className={styles.hero}>
             <h1>
               <FormattedMessage id="index.section-hero.h1" />

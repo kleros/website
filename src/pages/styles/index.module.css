@@ -1,3 +1,50 @@
+.index .banner {
+  background-color: var(--color-purple-light);
+  height: 32px;
+  font-size: var(--font-size-medium);
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 12fr 1fr;
+  grid-column-gap: 8px;
+}
+
+.index .banner a {
+  grid-column-start: 2;
+  color: white;
+}
+
+.index .banner svg {
+  height: 24px;
+  margin: 0 10px;
+  width: auto;
+}
+
+@media (max-width: 568px) {
+  .index .banner svg {
+    display: none;
+  }
+}
+
+.index .banner svg:last-child {
+  height: 16px;
+}
+
+.index .banner svg:last-child > path {
+  fill: white;
+}
+
+.index .banner button {
+  border: none;
+  background: transparent;
+  color: white;
+  margin-left: auto;
+  margin-right: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
 .index .hero {
   margin-bottom: 0;
   padding-bottom: 0 !important;
