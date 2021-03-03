@@ -19,7 +19,8 @@ import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
 import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/deversifi.png";
 import DutchX from "src/assets/images/dutchx.png";
-
+import Gnosis from "src/assets/svgs/gnosis-logo.svg";
+import API3 from "src/assets/images/api3_mono.png";
 import DeversifiMono from "src/assets/images/deversifi-mono.png";
 import OmenMono from "src/assets/images/omen-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
@@ -117,6 +118,16 @@ const Integrations = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={DemocracyEarth} alt="DemocracyEarth" />
+          </Badge>
+
+          <Badge as="a" className={styles.badge} href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <Gnosis />
+          </Badge>
+
+          <Badge as="a" className={styles.badge} href="https://api3.org/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={API3} alt="API3" />
           </Badge>
         </div>
       </section>

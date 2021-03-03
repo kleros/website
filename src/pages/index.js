@@ -14,8 +14,9 @@ import OmenSVG from "src/assets/svgs/omen_logo.svg";
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
-import Uniswap from "src/assets/svgs/uniswap_logo.svg";
+import Gnosis from "src/assets/svgs/gnosis-logo.svg";
 import API3 from "src/assets/images/api3_mono.png";
+import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
 import RightArrow from "../assets/svgs/right-arrow.svg";
@@ -29,6 +30,7 @@ import Linguo from "../assets/svgs/linguo.svg";
 import Revoke from "../assets/svgs/revoke.svg";
 import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
 import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
+import ProductsIllustration from "src/assets/images/products-illustration.png";
 import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
 import Realitio from "src/assets/images/realitio.png";
 import Omen from "src/assets/images/omen.png";
@@ -260,35 +262,7 @@ class IndexPage extends React.Component {
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
             </Container>
-            <IndexHero />
           </section>
-          <section className={styles.partners}>
-            <h2>
-              <FormattedMessage id="about.section-5" />
-            </h2>
-            <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
-              <OmenSVG />
-            </a>
-            <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
-              <img src={Deversifi} alt="Deversifi" />
-            </a>
-
-            <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
-              <Uniswap />
-            </a>
-
-            <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
-              <Union />
-            </a>
-
-            <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-              <img src={DemocracyEarth} alt="DemocracyEarth" />
-            </a>
-            <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
-              <img src={API3} alt="API3" />
-            </a>
-          </section>
-          <Sponsors />
           <section className="light">
             <Sash
               as="div"
@@ -323,6 +297,40 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
+          <section className={styles.partners}>
+            <h2>
+              <FormattedMessage id="about.section-5" />
+            </h2>
+            <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
+              <OmenSVG />
+            </a>
+            <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
+              <img src={Deversifi} alt="Deversifi" />
+            </a>
+
+            <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
+              <Uniswap />
+            </a>
+
+            <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
+              <Union />
+            </a>
+
+            <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
+              <img src={DemocracyEarth} alt="DemocracyEarth" />
+            </a>
+            <a href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
+              <Gnosis />
+            </a>
+            <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
+              <img src={API3} alt="API3" />
+            </a>
+          </section>
+          <section className="light">
+            <img src={ProductsIllustration} style={{}} />
+          </section>
+          <Sponsors />
+
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>
               <h1>
@@ -438,107 +446,7 @@ class IndexPage extends React.Component {
             <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
             {CASESDISPUTES[intl.locale]}
           </section>
-          <div className={styles.products}>
-            <section>
-              <div className="px-3 py-3 text-center">
-                <h1 className={styles.productsTitle}>{intl.formatMessage({ id: "index.products.h1" })}</h1>
-                <div className="d-inline-block">
-                  <a href="https://court.kleros.io" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <Court />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Court</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href={`https://kleros.io/${intl.locale}/escrow`}>
-                    <Badge>
-                      <Escrow />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Escrow</p>
-                </div>
 
-                <div className="d-inline-block">
-                  <a href="https://tokens.kleros.io" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <T2CR />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker">Tokens</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href={`https://kleros.io/${intl.locale}/curate`}>
-                    <Badge>
-                      <Curate />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Curate</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://linguo.kleros.io" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <Linguo />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Linguo</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://resolve.kleros.io" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <Resolver />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Dispute Resolver</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://uniswap.ninja" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <Ninja />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Uniswap Ninja</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://cryptounlocked.wetrust.io/" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <span className={styles.helper} />
-                      <img className="p-1" src={CryptoUnlocked} alt="CryptoUnlocked" />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Crypto Unlocked</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://realit.io/" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <img className="p-2" src={Realitio} alt="Realitio" />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker  ">Realitio</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <img className="p-2" src={Omen} alt="Omen" />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker  ">Omen</p>
-                </div>
-                <div className="d-inline-block">
-                  <a href="https://revoke.cash" target="_blank" rel="noopener noreferrer">
-                    <Badge>
-                      <Revoke />
-                    </Badge>
-                  </a>
-                  <p className="text-center text-purple-darker ">Revoke</p>
-                </div>
-                <br />
-                <small>
-                  <FormattedMessage id="index.products.small" />
-                </small>
-              </div>
-            </section>
-          </div>
           <section>
             <h1 className="mb-5">
               <FormattedMessage id="index.section-4.title" />

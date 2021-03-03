@@ -6,6 +6,7 @@
     "research": "Research",
     "blog": "Blog",
     "store": "Store",
+    "docs": "Docs",
     "about": "About"
   },
 
@@ -17,7 +18,7 @@
     "onepager": "One Pager",
     "research": "Research",
     "pnktoken": "PNK Token",
-    "developer": "Developers",
+    "developer": "Docs",
     "integrations": "Integrations",
     "governance": "Governance",
     "escrow": "Escrow",
@@ -56,8 +57,8 @@
     "seo-title": "Homepage",
     "banner": "Join Kleros Juror Incentive Program",
     "section-hero": {
-      "h1": "Decentralized Courts",
-      "h2": "An open online dispute resolution platform bringing justice for all.",
+      "h1": "The Justice Protocol",
+      "h2": "Kleros is a decentralized arbitration service for the disputes of the new economy.",
       "button-primary": "Try Kleros Court",
       "button-secondary": "Integrate Your Product"
     },

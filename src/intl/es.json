@@ -6,6 +6,7 @@
     "research": "Investigación",
     "blog": "Blog",
     "store": "Tienda",
+    "docs": "Docs",
     "about": "Nosotros"
   },
   "footer": {
@@ -40,8 +41,8 @@
     "seo-title": "Inicio",
     "banner": "Participa en el Programa de Incentivos para Jurados",
     "section-hero": {
-      "h1": "Justicia Descentralizada",
-      "h2": "Una plataforma abierta de resolución de disputas en línea que imparte justicia para todos.",
+      "h1": "El Protocolo de la Justicia",
+      "h2": "Un servicio de arbitraje descentralizado para las disputas de la nueva economía.",
       "button-primary": "Prueba Kleros",
       "button-secondary": "Integra tu Producto"
     },

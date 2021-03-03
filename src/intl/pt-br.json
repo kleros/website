@@ -6,6 +6,7 @@
     "research": "Pesquisa",
     "blog": "Blog",
     "store": "Loja",
+    "docs": "Docs",
     "about": "Sobre"
   },
   "footer": {
@@ -16,7 +17,7 @@
     "onepager": "One Pager",
     "research": "Pesquisa",
     "pnktoken": "Token PNK",
-    "developer": "Desenvolvedores",
+    "developer": "Documentação",
     "integrations": "Integrações",
     "governance": "Governança",
     "escrow": "Escrow",
@@ -52,8 +53,8 @@
     "seo-title": "Início",
     "banner": "Participe do Programa de Incentivos para Jurados",
     "section-hero": {
-      "h1": "Justiça Descentralizada",
-      "h2": "Uma plataforma aberta de resolução de disputas online trazendo justiça para todos.",
+      "h1": "O Protocolo de Justiça",
+      "h2": "Um serviço descentralizado de arbitragem para a resolução de disputas na nova economia.",
       "button-primary": "Experimente o Tribunal Kleros",
       "button-secondary": "Integre Seu Produto"
     },
