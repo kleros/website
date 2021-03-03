@@ -23,24 +23,23 @@ import styles from "./styles/about.module.css";
 import Ast from "src/assets/images/ast.png";
 import Lesaege from "src/assets/images/lesaege.png";
 import Malbasic from "src/assets/images/malbasic.png";
-import John from "src/assets/images/john.png";
 import Guérin from "src/assets/images/guerin.png";
 import Alencar from "src/assets/images/alencar.png";
 import Braga from "src/assets/images/braga.png";
 import George from "src/assets/images/george.png";
 import Glemming from "src/assets/images/glemming.png";
 import Aouidef from "src/assets/images/aouidef.png";
-import Tunçer from "src/assets/images/tuncer.png";
+import Tunçer from "src/assets/images/tuncer.jpg";
 import Barcelos from "src/assets/images/barcelos.png";
 import Zhang from "src/assets/images/zhang.png";
 import Dmitrikov from "src/assets/images/dmitrikov.png";
-import Vitello from "src/assets/images/vitello.png";
 import James from "src/assets/images/james.png";
 import Pichler from "src/assets/images/pichler.png";
 import Huculak from "src/assets/images/huculak.png";
 import Fidel from "src/assets/images/fidel.png";
 import Ragosa from "src/assets/images/ragosa.jpg";
-import Piqueras from "src/assets/images/piqueras.png";
+import Vassallo from "src/assets/images/vassallo.png";
+import Jain from "src/assets/images/jain.png";
 
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
@@ -75,7 +74,7 @@ const YELLOW_PAPERS = {
   en: YellowPaperEN,
 };
 
-const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, John, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Vitello, Zhang, Ragosa, Piqueras };
+const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Ragosa, Vassallo, Jain };
 
 const About = ({ intl }) => (
   <Layout>
