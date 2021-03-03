@@ -152,6 +152,16 @@ module.exports = {
         links: { linkedin: "https://www.linkedin.com/in/jragosa/", twitter: "https://twitter.com/JimmyRagosa" },
       },
       {
+        name: "Annabelle Vassallo",
+        title: "Office Manager",
+        links: { linkedin: "", twitter: "" },
+      },
+      {
+        name: "Shaleen Jain",
+        title: "Smart Contract Developer",
+        links: { linkedin: "https://www.linkedin.com/in/shaleen-jain/", twitter: "" },
+      },
+      {
         name: "Colin Rule",
         title: "Vice President for Online Dispute Resolution, Tyler Technologies",
         links: {},
