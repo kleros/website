@@ -1,6 +1,7 @@
 .index .banner {
   background-color: var(--color-purple-light);
-  height: 42px;
+  height: auto;
+  padding: 6.5px 0;
   font-size: var(--font-size-medium);
 
   display: grid;
