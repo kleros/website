@@ -6,7 +6,7 @@
     "research": "研究",
     "blog": "博客",
     "store": "商店",
-    "docs": "Docs",
+    "docs": "文档",
     "about": "关于我们"
   },
 
@@ -41,7 +41,7 @@
 
   "index": {
     "seo-title": "主页",
-    "banner": "",
+    "banner": "加入Kleros评审员激励计划",
     "section-hero": {
       "h1": "仲裁协议层",
       "h2": "Kleros是新时代经济纠纷的去中心化仲裁服务协议层",
