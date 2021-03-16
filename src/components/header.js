@@ -30,8 +30,15 @@ const FLAGS = {
   zh: <ZH />,
 };
 
+const STORE_URLS = {
+  en: "https://www.zazzle.com/",
+  es: "https://www.zazzle.es/",
+  "pt-br": "https://www.zazzle.com.br/",
+};
+
 class Header extends React.Component {
   render() {
+    const { intl } = this.props;
     return (
       <header className={styles.header}>
         <Navbar collapseOnSelect expand="md" variant="dark">
@@ -56,7 +63,7 @@ class Header extends React.Component {
               <Nav.Link className="nav-link" href="https://kleros.gitbook.io" target="_blank" rel="noopener noreferrer">
                 <FormattedMessage id="header.docs" />
               </Nav.Link>
-              <Nav.Link className="nav-link" href="https://www.zazzle.com/store/kleros" target="_blank" rel="noopener noreferrer">
+              <Nav.Link className="nav-link" href={`${STORE_URLS[intl.locale] || STORE_URLS.en}store/kleros`} target="_blank" rel="noopener noreferrer">
                 <FormattedMessage id="header.store" />
               </Nav.Link>
               <Link className="nav-link" to="/about">
