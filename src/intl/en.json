@@ -1,6 +1,7 @@
 {
   "header": {
     "dapps": "Products",
+    "services": "Services",
     "dapps-title": "Our Products & Integrations",
     "integrations": "Integrations",
     "research": "Research",
@@ -50,7 +51,10 @@
     "Realitio": "Kleros is used as a final answerer to questions here.",
     "Omen": "Kleros is used to settle markets here.",
     "Linguo": "A P2P translations marketplace mediated by Kleros.",
-    "Revoke": "Revoke ERC20 allowances you gave earlier, easily."
+    "Revoke": "Revoke ERC20 allowances you gave earlier, easily.",
+    "Governor": "Kleros can used to resolve governance disputes.",
+    "Oracle": "Kleros can be used to resolve oracle disputes.",
+    "Proof of Humanity": "A list of people curated in a decentralized way"
   },
 
   "index": {

@@ -5,6 +5,8 @@ import React, { useState } from "react";
 
 import Court from "../assets/svgs/kleros.svg";
 import Escrow from "../assets/svgs/escrow.svg";
+import Oracle from "../assets/svgs/oracle.svg";
+
 import T2CR from "../assets/svgs/t2cr.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
@@ -18,20 +20,15 @@ import Revoke from "../assets/svgs/revoke.svg";
 import styles from "./styles/product-badges.module.css";
 
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
-const products = [
-  { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: T2CR, target: "_blank" },
-
-  { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
-  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
-  { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
-  { name: "Uniswap Ninja", href: "https://uniswap.ninja", Icon: Ninja, target: "_blank" },
-  { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked), target: "_blank" },
-  { name: "Realitio", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
-  { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen), target: "_blank" },
-  { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
+const services = [
+  { name: "Court", href: "https://court.kleros.io", Icon: Court, target: "_blank" },
+  { name: "Oracle", href: "https://court.kleros.io", Icon: Oracle, target: "_blank" },
+  { name: "Governor", href: "https://court.kleros.io", Icon: Court, target: "_blank" },
+  { name: "Escrow", href: "https://kleros.io/escrow", Icon: Escrow, target: "_blank" },
+  { name: "Curate", href: "https://kleros.io/curate", Icon: Curate, target: "_blank" },
 ];
 
-const _ProductBadge = ({ name, hovered, setHoveredName, href, target, Icon, children }) => {
+const _ServiceBadge = ({ name, hovered, setHoveredName, href, target, Icon, children }) => {
   return (
     <div className={classnames(styles.productBadgePositioner, { [styles.hoveredProductBadgePositioner]: hovered })}>
       <motion.div
@@ -63,32 +60,32 @@ const _ProductBadge = ({ name, hovered, setHoveredName, href, target, Icon, chil
     </div>
   );
 };
-const ProductBadge = ({ name, setHoveredName, href, target, Icon, hoveredName, children }) => {
+const ServiceBadge = ({ name, setHoveredName, href, target, Icon, hoveredName, children }) => {
   return (
     <div className={styles.productBadge}>
-      <_ProductBadge name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} />
+      <_ServiceBadge name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} />
       <AnimatePresence>
         {name === hoveredName && (
-          <_ProductBadge name={name} hovered setHoveredName={setHoveredName} href={href} Icon={Icon}>
+          <_ServiceBadge name={name} hovered setHoveredName={setHoveredName} href={href} Icon={Icon}>
             {children}
-          </_ProductBadge>
+          </_ServiceBadge>
         )}
       </AnimatePresence>
     </div>
   );
 };
-const ProductBadges = () => {
+const ServiceBadges = () => {
   const [hoveredName, setHoveredName] = useState();
   return (
     <AnimateSharedLayout type="crossfade">
       <div>
-        {products.map(({ name, href, target, Icon }) => (
-          <ProductBadge key={name} name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} hoveredName={hoveredName}>
+        {services.map(({ name, href, target, Icon }) => (
+          <ServiceBadge key={name} name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} hoveredName={hoveredName}>
             <FormattedMessage id={`productDescriptions.${name}`} />
-          </ProductBadge>
+          </ServiceBadge>
         ))}
       </div>
     </AnimateSharedLayout>
   );
 };
-export default ProductBadges;
+export default ServiceBadges;
