@@ -159,7 +159,11 @@ module.exports = {
       {
         name: "Shaleen Jain",
         title: "Smart Contract Developer",
-        links: { linkedin: "https://www.linkedin.com/in/shaleen-jain/", twitter: "" },
+        links: {
+          linkedin: "https://www.linkedin.com/in/shaleen-jain/",
+          twitter: "https://twitter.com/shalzzj",
+          github: "https://github.com/shalzz",
+        },
       },
       {
         name: "Colin Rule",
