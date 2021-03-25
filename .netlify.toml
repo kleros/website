@@ -5,16 +5,16 @@ publish = "public"
 package = "netlify-plugin-gatsby-cache"
 
 [[redirects]]
-from = "http://www.kleros.io/*" 
-to = "https://kleros.io/:splat"
-status = 301
-force = true
+  from = "http://www.kleros.io/*" 
+  to = "https://kleros.io/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
-from = "https://www.kleros.io/*" 
-to = "https://kleros.io/:splat"
-status = 301
-force = true
+  from = "https://www.kleros.io/*" 
+  to = "https://kleros.io/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
 from = "/fr/*"
