@@ -11,7 +11,7 @@ import France from "src/assets/svgs/flags/fr.svg";
 import Spain from "src/assets/svgs/flags/es.svg";
 import SouthKorea from "src/assets/svgs/flags/kr.svg";
 import Portuguese from "src/assets/svgs/flags/pt.svg";
-import PoH from "src/assets/svgs/poh.svg";
+import PoH from "src/assets/svgs/poh-logo.svg";
 import VerticalCard from "../components/vertical-card";
 import { Col, Container, Row } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
