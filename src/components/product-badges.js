@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Court from "../assets/svgs/kleros.svg";
 import Escrow from "../assets/svgs/escrow.svg";
 import T2CR from "../assets/svgs/t2cr.svg";
+import POH from "../assets/svgs/poh-logo.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
@@ -19,7 +20,7 @@ import styles from "./styles/product-badges.module.css";
 
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
 const products = [
-  { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: T2CR, target: "_blank" },
+  { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: POH, target: "_blank" },
 
   { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
