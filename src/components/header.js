@@ -4,6 +4,7 @@ import Logo from "../assets/svgs/brand_white.svg";
 import styles from "./styles/header.module.css";
 
 import ProductBadges from "./product-badges";
+import ServiceBadges from "./service-badges";
 
 import { Button, Card, Collapse, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { FormattedMessage, IntlContextConsumer, Link, changeLocale, injectIntl } from "gatsby-plugin-intl";
@@ -40,7 +41,7 @@ class Header extends React.Component {
   render() {
     const { intl } = this.props;
     return (
-      <header className={styles.header}>
+      <header className={styles.header} id="header">
         <Navbar collapseOnSelect expand="md" variant="dark">
           <Link className="navbar-brand" to="/">
             <Logo className={styles.brand} />
@@ -48,8 +49,11 @@ class Header extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className={styles.responsiveNavbarNav} id="responsive-navbar-nav">
             <Nav className="m-auto">
-              <Button aria-controls="collapse" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#collapse" data-toggle="collapse" variant="outline-*">
+              <Button aria-controls="#products" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#products" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.dapps" />
+              </Button>
+              <Button aria-controls="#services" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#services" data-toggle="collapse" variant="outline-*">
+                <FormattedMessage id="header.services" />
               </Button>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
@@ -133,18 +137,32 @@ class Header extends React.Component {
             </Media>
           </Navbar.Collapse>
         </Navbar>
-        <Collapse className="collapse" id="collapse">
-          <Card className={styles.productsCard}>
-            <Card.Title>
-              <h1 className={styles.productsTitle}>
-                <FormattedMessage id="header.dapps-title" />
-              </h1>
-            </Card.Title>
-            <Card.Body className="px-5 py-3 text-center">
-              <ProductBadges />
-            </Card.Body>
-          </Card>
-        </Collapse>
+        <div className="panel">
+          <Collapse className="collapse" id="products" data-parent="#header">
+            <Card className={styles.productsCard}>
+              <Card.Title>
+                <h1 className={styles.productsTitle}>
+                  <FormattedMessage id="header.dapps-title" />
+                </h1>
+              </Card.Title>
+              <Card.Body className="px-5 py-3 text-center">
+                <ProductBadges />
+              </Card.Body>
+            </Card>
+          </Collapse>
+        </div>
+        <div className="panel">
+          <Collapse className="collapse" id="services" data-parent="#header">
+            <Card className={styles.productsCard}>
+              <Card.Title>
+                <h1 className={styles.productsTitle}>Our Services</h1>
+              </Card.Title>
+              <Card.Body className="px-5 py-3 text-center">
+                <ServiceBadges />
+              </Card.Body>
+            </Card>
+          </Collapse>
+        </div>
       </header>
     );
   }
