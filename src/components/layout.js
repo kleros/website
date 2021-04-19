@@ -28,7 +28,7 @@ const Layout = ({ children, omitSponsors }) => (
       <link rel="canonical" href="https://kleros.io/" />
       <meta property="og:title" content="Kleros - The Justice Protocol" />
       <meta property="og:description" content="Kleros is a decentralized arbitration service for the disputes of the new economy." />
-      <meta property="og:image" content={MetaCard} />
+      <meta property="og:image" content={`https://kleros.io${MetaCard}`} />
       <meta property="og:url" content="https://kleros.io/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:site_name" content="Kleros" />
