@@ -9,6 +9,7 @@ import Reddit from "src/assets/svgs/reddit.svg";
 import Ghost from "src/assets/svgs/ghost.svg";
 import Medium from "src/assets/svgs/medium.svg";
 import Discord from "src/assets/svgs/discord.svg";
+import Soundcloud from "src/assets/images/soundcloud.png";
 
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
@@ -144,6 +145,9 @@ const Footer = ({ intl }) => (
           </a>
           <a className="" href="https://twitter.com/kleros_io?" rel="noopener noreferrer" target="_blank">
             <Twitter />
+          </a>
+          <a className="" href="https://soundcloud.com/cooperative-kleros" rel="noopener noreferrer" target="_blank">
+            <img src={Soundcloud} />
           </a>
 
           <a className="" href="https://blog.kleros.io/" rel="noopener noreferrer" target="_blank">
