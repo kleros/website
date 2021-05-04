@@ -5,9 +5,9 @@ import Sash from "../components/sash";
 import Deversifi from "src/assets/images/deversifi.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
 import IDEX from "src/assets/images/idex.png";
-import OneInch from "src/assets/images/1inch.png";
+import OneInch from "src/assets/svgs/OneInch.svg";
 import Paraswap from "src/assets/images/paraswap.jpg";
-import Balancer from "src/assets/images/balancer.png";
+import Balancer from "src/assets/svgs/balancer.svg";
 import Bitfinex from "src/assets/images/bitfinex.png";
 import Kyber from "src/assets/images/kyber.png";
 import Ninja from "src/assets/svgs/ninja-black-text.svg";
@@ -98,9 +98,6 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://uniswap.exchange/" rel="noopener noreferrer" target="blank">
             <Uniswap />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://dex.blue/" rel="noopener noreferrer" target="blank">
-            <DexBlue />
-          </Badge>
           <Badge as="a" className={styles.badge} href="https://loopring.org/" rel="noopener noreferrer" target="blank">
             <Loopring />
           </Badge>
@@ -118,16 +115,14 @@ const IndexPage = ({ intl }) => (
             <img src={Transak} alt={"Transak"} />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://1inch.exchange/" rel="noopener noreferrer" target="blank">
-            <span class={styles.helper} />
-            <img src={OneInch} alt={"OneInch"} />
+            <OneInch />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://paraswap.io/" rel="noopener noreferrer" target="blank">
             <span class={styles.helper} />
             <img src={Paraswap} alt={"Paraswap"} />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://balancer.exchange/" rel="noopener noreferrer" target="blank">
-            <span class={styles.helper} />
-            <img src={Balancer} alt={"Balancer"} />
+            <Balancer />
           </Badge>
         </Container>
       </section>
