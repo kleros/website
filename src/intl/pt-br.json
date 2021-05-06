@@ -1,6 +1,7 @@
 {
   "header": {
     "dapps": "Produtos",
+    "services": "Serviços",
     "dapps-title": "Nossos Produtos & Integrações",
     "integrations": "Integrações",
     "research": "Pesquisa",
@@ -38,16 +39,20 @@
     "copyright": "Copyright"
   },
   "productDescriptions": {
-    "Court": "Os jurados se associam aos tribunais e decidem disputas aqui.",
-    "Escrow": "Envie e receba pagamentos em garantia mediados pela Kleros.",
-    "T2CR": "Uma lista de tokens selecionados e categorizados pela Kleros.",
-    "Curate": "Um criador de listas de propósito geral com curadoria.",
+    "Court": "Jurados se juntam às cortes e decidem disputas aqui.",
+    "Escrow": "Envie e receba pagamentos em contas-garantia mediados pela Kleros.",
+    "Tokens": "Uma lista curadas e categorizadas pela Kleros.",
+    "Curate": "Um criador de listas curadas de propósito greal.",
     "Dispute Resolver": "Crie e opere disputas manualmente.",
-    "Uniswap Ninja": "Um fork do Uniswap que usa a Kleros para selecionar os tokens negociáveis.",
-    "Crypto Unlocked": "A Kleros é usada para resolver disputas de Oráculos aqui.",
-    "Realitio": "A Kleros é usada como uma resposta final para as perguntas aqui.",
-    "Omen": "A Kleros é usada para liquidar mercados aqui.",
-    "Linguo": "Um marketplace de traduções P2P mediado pela Kleros."
+    "Uniswap Ninja": "Um  fork do Uniswap que utiliza a Kleros para curadoria dos tokens negociáveis.",
+    "Crypto Unlocked": "Aqui a Kleros é utilizada para resovler disputas de oráculos.",
+    "Realitio": "Aqui a Kleros é utilizada como a fonte final de respostas para questões.",
+    "Omen": "Aqui a Kleros é utilizada para resolver disputas de mercados de predição.",
+    "Linguo": "Um marketplace de traduções P2P mediado pela Kleros.",
+    "Revoke": "Revogue permissões ERC20 que você deu anteriormente de forma fácil.",
+    "Governor": "A Kleros pode ser usada para resolver disputas de governança.",
+    "Oracle": "A Kleros pode ser usada para resolver disputas de oráculos.",
+    "Proof of Humanity": "Uma lista de pessoas curada de maneira descentralizada."
   },
   "index": {
     "seo-title": "Início",
