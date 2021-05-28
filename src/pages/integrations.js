@@ -29,6 +29,8 @@ import CryptoUnlockedMono from "src/assets/images/crypto-unlocked-mono.png";
 import RealitioMono from "src/assets/images/realitio-mono.png";
 import DutchXMono from "src/assets/images/dutch-mono.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
+import UniswapWhite from "src/assets/svgs/uniswap_logo.svg";
+
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
 
@@ -109,7 +111,7 @@ const Integrations = ({ intl }) => (
           </Badge>
           <Badge as="a" className={styles.badge} href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <Uniswap />
+            <UniswapWhite />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
