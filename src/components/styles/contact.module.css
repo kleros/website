@@ -47,7 +47,7 @@
 @media screen and (min-width: 500px) {
   .contact {
     grid: 1fr 1fr / 1fr 2fr;
-    padding: 1rem 1.5rem;
+    padding: 2rem 2.5rem;
   }
 
   .contact .brand {
