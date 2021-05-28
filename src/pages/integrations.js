@@ -90,7 +90,7 @@ const Integrations = ({ intl }) => (
         <h2 className="text-center mb-5">
           <FormattedMessage id="integrations.section-hero.h2" />
         </h2>
-        <a className="btn btn-primary" href="mailto:contact@kleros.io" rel="noopener noreferrer" target="blank">
+        <a className="btn btn-primary" href="mailto:integrations@kleros.io" rel="noopener noreferrer" target="blank">
           <FormattedMessage id="integrations.section-hero.button" />
         </a>
       </section>
