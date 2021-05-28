@@ -28,7 +28,9 @@ import WindingTreeMono from "src/assets/images/winding-mono.png";
 import CryptoUnlockedMono from "src/assets/images/crypto-unlocked-mono.png";
 import RealitioMono from "src/assets/images/realitio-mono.png";
 import DutchXMono from "src/assets/images/dutch-mono.png";
-import Uniswap from "src/assets/svgs/uniswap_logo.svg";
+import Uniswap from "src/assets/svgs/uniswap.svg";
+import UniswapWhite from "src/assets/svgs/uniswap_logo.svg";
+
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
 
@@ -90,7 +92,7 @@ const Integrations = ({ intl }) => (
         <h2 className="text-center mb-5">
           <FormattedMessage id="integrations.section-hero.h2" />
         </h2>
-        <a className="btn btn-primary" href="mailto:contact@kleros.io" rel="noopener noreferrer" target="blank">
+        <a className="btn btn-primary" href="mailto:integrations@kleros.io" rel="noopener noreferrer" target="blank">
           <FormattedMessage id="integrations.section-hero.button" />
         </a>
       </section>
@@ -109,7 +111,7 @@ const Integrations = ({ intl }) => (
           </Badge>
           <Badge as="a" className={styles.badge} href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <Uniswap />
+            <UniswapWhite />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
@@ -174,17 +176,13 @@ const Integrations = ({ intl }) => (
                     <FormattedMessage id={`integrations.section-main.usecases.${category[0]}.used-by`} />
                   </small>
                   <div className={` ${styles.usedBy} mt-5 d-flex flex-wrap justify-content-around`}>
-                    <Badge as="a" className={styles.badge} href="https://uniswap.ninja/" rel="noopener noreferrer" target="blank">
-                      <Ninja />
+                    <Badge as="a" className={styles.badge} href="https://tokenlists.org/token-list?url=t2crtokens.eth" rel="noopener noreferrer" target="blank">
+                      <Uniswap />
                     </Badge>
 
                     <Badge as="a" className={styles.badge} href="https://app.deversifi.com/" rel="noopener noreferrer" target="blank">
                       <span className={styles.helper}></span>
                       <img src={Deversifi} alt="Deversifi" />
-                    </Badge>
-                    <Badge as="a" className={styles.badge} href="https://fairdex.net/" rel="noopener noreferrer" target="blank">
-                      <span className={styles.helper}></span>
-                      <img src={DutchX} alt="DutchX" />
                     </Badge>
                   </div>
                 </>
