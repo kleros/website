@@ -1,0 +1,18 @@
+.career .hero {
+  height: 200px;
+}
+.career .mission {
+  height: 200px;
+
+  h2 {
+    color: red;
+  }
+}
+
+.career .culture {
+  height: 200px;
+}
+
+.career .positions {
+  height: 200px;
+}
