@@ -1,18 +1,91 @@
 .career .hero {
-  height: 200px;
+  height: 0px;
 }
 .career .mission {
-  height: 200px;
-
-  h2 {
-    color: red;
-  }
+  height: 1000px;
+  padding-top: 500px;
 }
 
 .career .culture {
-  height: 200px;
+  height: 400px;
 }
 
 .career .positions {
-  height: 200px;
+  height: 400px;
+}
+
+.career .carousel img {
+  max-width: auto;
+}
+
+.career .topslider :global(.slick-list) {
+  margin-left: 60px;
+}
+
+.career .bottomslider :global(.slick-list) {
+  margin-right: 60px;
+  height: 400px;
+}
+
+.career .carousel {
+  position: relative;
+  top: 600px;
+}
+
+.career .topslider {
+  margin-bottom: 16px;
+}
+
+.career .topslider :global(.slick-track) {
+  align-items: baseline;
+  display: flex;
+}
+
+.career :global(.slick-track) > div {
+  /* width: auto !important; */
+  /* max-width: 100%; */
+}
+
+.career :global(.slick-track) > div > div {
+  margin: 16px;
+  margin-bottom: 0;
+  margin-top: auto;
+  /* max-width: 100%; */
+}
+
+.career :global(.slick-track) > div > div > div {
+  /* width: auto !important; */
+  /* max-width: 100%; */
+}
+
+.career .topslider :global(.slick-track) > div:nth-child(3n) img {
+  max-height: 290px;
+}
+
+.career .topslider :global(.slick-track) > div:nth-child(3n + 1) img {
+  max-height: 350px;
+}
+
+.career .topslider :global(.slick-track) > div:nth-child(3n + 2) img {
+  max-height: 320px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n) img {
+  max-height: 350px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n + 1) img {
+  max-height: 290px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n + 2) img {
+  max-height: 320px;
+}
+
+.career :global(.slick-dots) > li > button::before {
+  color: white !important;
+}
+
+.career :global(.slick-dots) > li {
+  transform: scale(2);
 }
