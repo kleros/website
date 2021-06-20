@@ -16,6 +16,8 @@ import Osaka4 from "src/assets/images/career/osaka-4.png";
 import Osaka5 from "src/assets/images/career/osaka-5.png";
 import Osaka6 from "src/assets/images/career/osaka-6.jpg";
 
+// import Silhouette from "src/assets/svgs/icosahedron-silhouette.svg";
+
 const sliderSettings = {
   dots: false,
   infinite: true,
@@ -50,7 +52,7 @@ const sliderSettings = {
       },
     },
     {
-      breakpoint: 400,
+      breakpoint: 600,
       settings: "unslick",
     },
   ],
@@ -70,48 +72,48 @@ const Career = ({ intl }) => (
         <Button>
           <FormattedMessage id="career.section-hero.button-primary" />
         </Button>
-      </section>
-      <section className={styles.carousel}>
-        <Slider className={styles.topslider} {...sliderSettings}>
-          <div>
-            <img className="rounded" src={Osaka1} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka2} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka3} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka4} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka5} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka6} />
-          </div>
-        </Slider>
-        <Slider className={styles.bottomslider} {...sliderSettings}>
-          <div>
-            <img className="rounded" src={Osaka1} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka2} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka3} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka4} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka5} />
-          </div>
-          <div>
-            <img className="rounded" src={Osaka6} />
-          </div>
-        </Slider>
+        <div className={styles.sliders}>
+          <Slider className={styles.topslider} {...sliderSettings}>
+            <div>
+              <img className="rounded" src={Osaka1} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka2} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka3} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka4} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka5} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka6} />
+            </div>
+          </Slider>
+          <Slider className={styles.bottomslider} {...sliderSettings}>
+            <div>
+              <img className="rounded" src={Osaka1} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka2} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka3} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka4} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka5} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka6} />
+            </div>
+          </Slider>
+        </div>
       </section>
       <section className={`light ${styles.mission}`}>
         <h1>
@@ -128,6 +130,18 @@ const Career = ({ intl }) => (
         <h2>
           <FormattedMessage id="career.section-culture.h2" />
         </h2>
+        <div>
+          <div>
+            <img className="rounded" src={Osaka1} />
+            <img className="rounded" src={Osaka2} />
+            <img className="rounded" src={Osaka3} />
+          </div>
+          <div>
+            <img className="rounded" src={Osaka4} />
+            <img className="rounded" src={Osaka5} />
+            <img className="rounded" src={Osaka6} />
+          </div>
+        </div>
       </section>
       <section className={`light {styles.positions} `}>
         <h1>

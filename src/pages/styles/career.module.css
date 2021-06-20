@@ -1,13 +1,47 @@
 .career .hero {
-  height: 0px;
+  background: repeating-linear-gradient(red 0, var(--color-purple) 50%, white 50%, white 100%);
+  background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 45%, white 45%, white 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 200px, center center;
 }
+
 .career .mission {
-  height: 1000px;
-  padding-top: 500px;
+  padding-top: 0;
+  /* TODO background: linear-gradient(210deg, transparent 67%, red 67%), linear-gradient(-120deg, transparent 50%, green 100%); */
+}
+
+.career .sliders {
+  margin-top: 64px;
+}
+
+.career .sliders > div > div {
+  margin-bottom: 32px;
 }
 
 .career .culture {
-  height: 400px;
+}
+
+.career .culture > div {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: calc(16px + 1vw);
+}
+
+.career .culture > div > div {
+  height: fit-content;
+  display: grid;
+  grid-row-gap: calc(16px + 1vw);
+}
+
+.career .culture > div > div:first-child {
+  justify-self: end;
+  justify-items: end;
+  grid-template-rows: min(21vw, 300px) min(26vw, 371px) min(21vw, 300px);
+}
+
+.career .culture > div > div:nth-child(2) {
+  grid-template-rows: min(24vw, 335.5px) min(20vw, 300px) min(24vw, 335.5px);
 }
 
 .career .positions {
@@ -28,8 +62,7 @@
 }
 
 .career .carousel {
-  position: relative;
-  top: 600px;
+  /* background: repeating-linear-gradient(var(--color-purple) 0, var(--color-purple) 50%, white 50%, white 100%); */
 }
 
 .career .topslider {
