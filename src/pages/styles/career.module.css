@@ -52,7 +52,7 @@
   width: min(12vw, 160px);
   height: min(12vw, 160px);
   font-size: min(12vw, 160px);
-  border-radius: var(--border-radius);
+  border-radius: min(2vw, var(--border-radius));
 }
 
 .career .culture > .images > .modal > div:nth-child(1) {
