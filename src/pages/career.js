@@ -15,8 +15,7 @@ import Osaka3 from "src/assets/images/career/osaka-3.png";
 import Osaka4 from "src/assets/images/career/osaka-4.png";
 import Osaka5 from "src/assets/images/career/osaka-5.png";
 import Osaka6 from "src/assets/images/career/osaka-6.jpg";
-
-// import Silhouette from "src/assets/svgs/icosahedron-silhouette.svg";
+import Play from "src/assets/svgs/play.svg";
 
 const sliderSettings = {
   dots: false,
@@ -141,41 +140,46 @@ const Career = ({ intl }) => (
             <img className="rounded" src={Osaka5} />
             <img className="rounded" src={Osaka6} />
           </div>
-          <div className={styles.modal}>
-            <div>
+          <div className={styles.values}>
+            <div className={styles.valueContainer}>
               <span className={styles.top}>
                 <FormattedMessage id="career.section-culture.illustration.top" />
               </span>
             </div>
 
-            <div>
+            <div className={styles.valueContainer}>
               <span className={styles.topLeft}>
                 <FormattedMessage id="career.section-culture.illustration.top-left" />
               </span>
             </div>
 
-            <div>
+            <div className={styles.valueContainer}>
               <span className={styles.topRight}>
                 <FormattedMessage id="career.section-culture.illustration.top-right" />
               </span>
             </div>
 
-            <div>
+            <div className={styles.valueContainer}>
               <span className={styles.bottom}>
                 <FormattedMessage id="career.section-culture.illustration.bottom" />
               </span>
             </div>
 
-            <div>
+            <div className={styles.valueContainer}>
               <span className={styles.bottomLeft}>
                 <FormattedMessage id="career.section-culture.illustration.bottom-left" />
               </span>
             </div>
 
-            <div>
+            <div className={styles.valueContainer}>
               <span className={styles.bottomRight}>
                 <FormattedMessage id="career.section-culture.illustration.bottom-right" />
               </span>
+            </div>
+            <div className={styles.playContainer}>
+              <Button href="https://www.youtube.com/watch?v=wZZ2ipS-jZw&t=34s" target="_blank" rel="noopener noreferrer">
+                <Play />
+              </Button>
             </div>
           </div>
         </div>

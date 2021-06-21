@@ -27,9 +27,10 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: calc(16px + 1vw);
   position: relative;
+  font-size: min(12vw, 160px);
 }
 
-.career .culture > .images > .modal {
+.career .culture > .images > .values {
   position: absolute;
   background-color: transparent;
   justify-self: center;
@@ -37,45 +38,58 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.career .culture > .images > .modal span {
+.career .culture > .images > .values span {
   transform: rotate(-45deg);
   font-size: 0.13em;
   font-weight: var(--font-weight-bold);
 }
 
-.career .culture > .images > .modal > div {
+.career .culture > .images > .values > .valueContainer {
   display: flex;
   place-content: center;
   place-items: center;
   background-color: var(--color-purple-light);
   transform: rotateY(0deg) rotate(45deg);
-  width: min(12vw, 160px);
-  height: min(12vw, 160px);
-  font-size: min(12vw, 160px);
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
   border-radius: min(2vw, var(--border-radius));
 }
 
-.career .culture > .images > .modal > div:nth-child(1) {
+.career .culture .valueContainer:nth-child(1) {
   align-self: end;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.35em;
 }
-.career .culture > .images > .modal > div:nth-child(2) {
+.career .culture .valueContainer:nth-child(2) {
   align-self: end;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.3em;
 }
-.career .culture > .images > .modal > div:nth-child(3) {
+.career .culture .valueContainer:nth-child(3) {
   align-self: end;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.35em;
 }
 
-.career .culture > .images > .modal > div:nth-child(4) {
-  margin-top: 0.2em;
+.career .culture .valueContainer:nth-child(4) {
+  margin-top: 0.35em;
 }
-.career .culture > .images > .modal > div:nth-child(5) {
-  margin-top: 1.2em;
+.career .culture .valueContainer:nth-child(5) {
+  margin-top: 1.3em;
 }
-.career .culture > .images > .modal > div:nth-child(6) {
-  margin-top: 0.2em;
+.career .culture .valueContainer:nth-child(6) {
+  margin-top: 0.35em;
+}
+
+.career .culture .playContainer {
+  position: absolute;
+  place-self: center;
+  width: 1em;
+}
+
+.career .culture .playContainer a {
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  height: auto;
 }
 
 .career .culture > .images > div {
