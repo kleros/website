@@ -1,0 +1,21 @@
+import React from "react";
+import { injectIntl } from "gatsby-plugin-intl";
+import Reward from "src/assets/svgs/reward.svg";
+import Scales from "src/assets/svgs/scales.svg";
+import Info from "src/assets/svgs/info.svg";
+
+import styles from "./styles/position-card.module.css";
+import Countdown from "react-countdown-now";
+import { Card } from "react-bootstrap";
+
+const PositionCard = ({ intl, content }) => (
+  <div className={styles.positionCard}>
+    <a href={content.href} rel="noopener noreferrer" target="_blank">
+      <span className={styles.department}>{content.department}</span>
+      <span className="big bold">{content.role}</span>
+      <span className={styles.location}>{content.location}</span>
+    </a>
+  </div>
+);
+
+export default injectIntl(PositionCard);

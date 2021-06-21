@@ -1,0 +1,35 @@
+.positionCard {
+  background-color: var(--color-purple-light);
+  color: white;
+  border-radius: var(--border-radius);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.positionCard > a {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.positionCard a:hover {
+  color: white;
+}
+
+.positionCard .department {
+  border-style: solid;
+  border-color: white;
+  border-radius: 300px;
+  width: fit-content;
+  padding: 8px 32px;
+  margin-bottom: 24px;
+}
+
+.positionCard .department:after {
+}
+
+.positionCard .location {
+  margin: 16px 0;
+}

@@ -1,5 +1,4 @@
 .career .hero {
-  background: repeating-linear-gradient(red 0, var(--color-purple) 50%, white 50%, white 100%);
   background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 45%, white 45%, white 100%);
   background-repeat: no-repeat;
   background-position: 50% 200px, center center;
@@ -108,8 +107,17 @@
   grid-template-rows: min(24vw, 335.5px) min(20vw, 300px) min(24vw, 335.5px);
 }
 
+.career .team {
+  height: fit-content;
+  width: auto;
+  padding-top: 0;
+  margin-top: 128px;
+  background: linear-gradient(15deg, white 0, white 65%, var(--color-purple-darkest) 65 yyyy%, var(--color-purple-darkest) 100%);
+}
+
 .career .positions {
   height: 400px;
+  color: black;
 }
 
 .career .carousel img {
@@ -126,7 +134,7 @@
 }
 
 .career .carousel {
-  /* background: repeating-linear-gradient(var(--color-purple) 0, var(--color-purple) 50%, white 50%, white 100%); */
+  /* background: repeating-linear-gradient(var(--color-purple-light) 0, var(--color-purple) 50%, white 50%, white 100%); */
 }
 
 .career .topslider {
@@ -138,19 +146,16 @@
   display: flex;
 }
 
-.career :global(.slick-track) > div {
+.career .sliders :global(.slick-track) > div {
   /* width: auto !important; */
   /* max-width: 100%; */
 }
 
-.career :global(.slick-track) > div > div {
+.career .sliders :global(.slick-track) > div > div {
   margin: 16px;
   margin-bottom: 0;
   margin-top: auto;
   /* max-width: 100%; */
-}
-
-.career :global(.slick-track) > div > div > div {
 }
 
 .career .topslider :global(.slick-track) > div:nth-child(3n) img {
@@ -177,10 +182,10 @@
   max-height: 320px;
 }
 
-.career :global(.slick-dots) > li > button::before {
+.career .sliders :global(.slick-dots) > li > button::before {
   color: white !important;
 }
 
-.career :global(.slick-dots) > li {
+.career .sliders :global(.slick-dots) > li {
   transform: scale(2);
 }

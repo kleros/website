@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Contact from "../components/contact";
+import PositionCard from "../components/position-card";
+
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/career.module.css";
@@ -55,6 +57,18 @@ const sliderSettings = {
       settings: "unslick",
     },
   ],
+};
+
+const positionsSliderSettings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 77000,
+  variableWidth: true,
 };
 
 const Career = ({ intl }) => (
@@ -177,20 +191,42 @@ const Career = ({ intl }) => (
               </span>
             </div>
             <div className={styles.playContainer}>
-              <Button href="https://www.youtube.com/watch?v=wZZ2ipS-jZw&t=34s" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/watch?v=wZZ2ipS-jZw&t=34s" target="_blank" rel="noopener noreferrer">
                 <Play />
-              </Button>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section className={`light {styles.positions} `}>
+      <section className={styles.team}>
+        <div>
+          <img className="rounded" src={Osaka1} />
+        </div>
+      </section>
+      <section className={`light ${styles.positions} `}>
         <h1>
           <FormattedMessage id="career.section-positions.h1" />
         </h1>
         <h2>
           <FormattedMessage id="career.section-positions.h2" />
         </h2>
+        <Slider className={styles.positionsSlider} {...positionsSliderSettings}>
+          <div>
+            <PositionCard content={{ department: "Engineering", role: "Full-Stack Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+          </div>
+          <div>
+            <PositionCard content={{ department: "Engineering", role: "Full-Stack Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+          </div>
+          <div>
+            <PositionCard content={{ department: "Engineering", role: "Ethereum Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+          </div>
+          <div>
+            <PositionCard content={{ department: "Engineering", role: "Back-End Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+          </div>
+          <div>
+            <PositionCard content={{ department: "Engineering", role: "Product Manager", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+          </div>
+        </Slider>
       </section>
 
       <section>
