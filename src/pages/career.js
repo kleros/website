@@ -130,7 +130,7 @@ const Career = ({ intl }) => (
         <h2>
           <FormattedMessage id="career.section-culture.h2" />
         </h2>
-        <div>
+        <div className={styles.images}>
           <div>
             <img className="rounded" src={Osaka1} />
             <img className="rounded" src={Osaka2} />
@@ -140,6 +140,43 @@ const Career = ({ intl }) => (
             <img className="rounded" src={Osaka4} />
             <img className="rounded" src={Osaka5} />
             <img className="rounded" src={Osaka6} />
+          </div>
+          <div className={styles.modal}>
+            <div>
+              <span className={styles.top}>
+                <FormattedMessage id="career.section-culture.illustration.top" />
+              </span>
+            </div>
+
+            <div>
+              <span className={styles.topLeft}>
+                <FormattedMessage id="career.section-culture.illustration.top-left" />
+              </span>
+            </div>
+
+            <div>
+              <span className={styles.topRight}>
+                <FormattedMessage id="career.section-culture.illustration.top-right" />
+              </span>
+            </div>
+
+            <div>
+              <span className={styles.bottom}>
+                <FormattedMessage id="career.section-culture.illustration.bottom" />
+              </span>
+            </div>
+
+            <div>
+              <span className={styles.bottomLeft}>
+                <FormattedMessage id="career.section-culture.illustration.bottom-left" />
+              </span>
+            </div>
+
+            <div>
+              <span className={styles.bottomRight}>
+                <FormattedMessage id="career.section-culture.illustration.bottom-right" />
+              </span>
+            </div>
           </div>
         </div>
       </section>
