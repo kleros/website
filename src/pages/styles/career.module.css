@@ -62,31 +62,31 @@
 
 .career .culture .valueContainer:nth-child(1) {
   align-self: end;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.3em;
 }
 .career .culture .valueContainer:nth-child(2) {
   align-self: end;
-  margin-bottom: 1.3em;
+  margin-bottom: 1.25em;
 }
 .career .culture .valueContainer:nth-child(3) {
   align-self: end;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.3em;
 }
 
 .career .culture .valueContainer:nth-child(4) {
-  margin-top: 0.35em;
+  margin-top: 0.3em;
 }
 .career .culture .valueContainer:nth-child(5) {
-  margin-top: 1.3em;
+  margin-top: 1.25em;
 }
 .career .culture .valueContainer:nth-child(6) {
-  margin-top: 0.35em;
+  margin-top: 0.3em;
 }
 
 .career .culture .playContainer {
   position: absolute;
   place-self: center;
-  width: 1em;
+  width: 0.8em;
 }
 
 .career .culture .playContainer a {

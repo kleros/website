@@ -4,16 +4,16 @@
   border-radius: var(--border-radius);
   margin-left: 16px;
   margin-right: 16px;
-  min-height: 232px;
   text-align: left;
 }
 
 .positionCard > a {
+  min-height: 264px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   color: white;
+  flex: 1;
 }
 
 .positionCard a:hover {
@@ -40,6 +40,7 @@
 .positionCard .department {
   border-style: solid;
   border-color: white;
+  border-width: 2px;
   border-radius: 300px;
   width: fit-content;
   padding: 8px 32px;
@@ -49,5 +50,5 @@
 }
 
 .positionCard .location {
-  margin: 16px 0;
+  margin-top: 16px;
 }

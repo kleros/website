@@ -16,8 +16,8 @@ const PositionCard = ({ intl, content }) => (
         <span className={styles.department}>{content.department}</span>
         <RightArrow />
       </div>
-      <span className="big bold">{content.role}</span>
-      <span className={styles.location}>{content.location}</span>
+      <div className="big bold">{content.role}</div>
+      <div className={styles.location}>{content.location}</div>
     </a>
   </div>
 );

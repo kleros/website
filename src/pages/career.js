@@ -17,8 +17,35 @@ import Osaka3 from "src/assets/images/career/osaka-3.png";
 import Osaka4 from "src/assets/images/career/osaka-4.png";
 import Osaka5 from "src/assets/images/career/osaka-5.png";
 import Osaka6 from "src/assets/images/career/osaka-6.jpg";
+import Assembly21 from "src/assets/images/career/assembly2-1.png";
+import Assembly22 from "src/assets/images/career/assembly2-2.jpg";
+import Bushido1 from "src/assets/images/career/bushido-1.png";
+import Bushido2 from "src/assets/images/career/bushido-2.png";
+import Bushido3 from "src/assets/images/career/bushido-3.png";
+import Devcon41 from "src/assets/images/career/devcon4-1.jpg";
+import Devcon42 from "src/assets/images/career/devcon4-2.jpg";
+import Devcon5 from "src/assets/images/career/devcon5.png";
+import EthCC21 from "src/assets/images/career/ethcc2-1.png";
+import EthCC2BookLaunch from "src/assets/images/career/ethcc2-book-launch.jpeg";
+import Fede1 from "src/assets/images/career/fede-1.png";
+import Fede2 from "src/assets/images/career/fede-2.png";
+import Icosahedron1 from "src/assets/images/career/icosahedron-1.png";
+import Icosahedron2 from "src/assets/images/career/icosahedron-2.png";
+import KlerosConference1 from "src/assets/images/career/kleros-conference-1.jpg";
+import Talk1 from "src/assets/images/career/talk-1.png";
+import Talk2 from "src/assets/images/career/talk-2.png";
+import Talk3 from "src/assets/images/career/talk-3.png";
+import Talk4 from "src/assets/images/career/talk-4.png";
+import Talk5 from "src/assets/images/career/talk-5.png";
+import Talk6 from "src/assets/images/career/talk-6.png";
+import Talk7 from "src/assets/images/career/talk-7.png";
+import Talk8 from "src/assets/images/career/talk-8.png";
+import Talk9 from "src/assets/images/career/talk-9.png";
+import Team1 from "src/assets/images/career/team-1.png";
+import William1 from "src/assets/images/career/william-1.png";
+import William2 from "src/assets/images/career/william-2.png";
+
 import Play from "src/assets/svgs/play.svg";
-// import Decorator from "src/assets/svgs/decorator.svg";
 
 const sliderSettings = {
   dots: false,
@@ -63,7 +90,7 @@ const positionsSliderSettings = {
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   arrows: false,
   autoplaySpeed: 7000,
   variableWidth: false,
@@ -110,6 +137,15 @@ const Career = ({ intl }) => (
         <div className={styles.sliders}>
           <Slider className={styles.topslider} {...sliderSettings}>
             <div>
+              <img className="rounded" src={Bushido2} />
+            </div>
+            <div>
+              <img className="rounded" src={Bushido3} />
+            </div>
+            <div>
+              <img className="rounded" src={Osaka1} />
+            </div>
+            <div>
               <img className="rounded" src={Osaka1} />
             </div>
             <div>
@@ -126,26 +162,57 @@ const Career = ({ intl }) => (
             </div>
             <div>
               <img className="rounded" src={Osaka6} />
+            </div>
+
+            <div>
+              <img className="rounded" src={Assembly22} />
+            </div>
+            <div>
+              <img className="rounded" src={Devcon41} />
+            </div>
+            <div>
+              <img className="rounded" src={Devcon42} />
+            </div>
+            <div>
+              <img className="rounded" src={Devcon5} />
+            </div>
+            <div>
+              <img className="rounded" src={KlerosConference1} />
             </div>
           </Slider>
           <Slider className={styles.bottomslider} {...sliderSettings}>
             <div>
-              <img className="rounded" src={Osaka1} />
+              <img className="rounded" src={Talk1} />
             </div>
             <div>
-              <img className="rounded" src={Osaka2} />
+              <img className="rounded" src={Talk2} />
             </div>
             <div>
-              <img className="rounded" src={Osaka3} />
+              <img className="rounded" src={William1} />
             </div>
             <div>
-              <img className="rounded" src={Osaka4} />
+              <img className="rounded" src={William2} />
             </div>
             <div>
-              <img className="rounded" src={Osaka5} />
+              <img className="rounded" src={Talk4} />
             </div>
             <div>
-              <img className="rounded" src={Osaka6} />
+              <img className="rounded" src={Talk5} />
+            </div>
+            <div>
+              <img className="rounded" src={Talk6} />
+            </div>
+            <div>
+              <img className="rounded" src={Talk7} />
+            </div>
+            <div>
+              <img className="rounded" src={Talk8} />
+            </div>
+            <div>
+              <img className="rounded" src={Talk9} />
+            </div>
+            <div>
+              <img className="rounded" src={EthCC2BookLaunch} />
             </div>
           </Slider>
         </div>
@@ -167,14 +234,14 @@ const Career = ({ intl }) => (
         </h2>
         <div className={styles.images}>
           <div>
-            <img className="rounded" src={Osaka1} />
-            <img className="rounded" src={Osaka2} />
-            <img className="rounded" src={Osaka3} />
+            <img className="rounded" src={Osaka6} />
+            <img className="rounded" src={Talk2} />
+            <img className="rounded" src={Talk7} />
           </div>
           <div>
-            <img className="rounded" src={Osaka4} />
-            <img className="rounded" src={Osaka5} />
-            <img className="rounded" src={Osaka6} />
+            <img className="rounded" src={Osaka3} />
+            <img className="rounded" src={Devcon42} />
+            <img className="rounded" src={KlerosConference1} />
           </div>
           <div className={styles.values}>
             <div className={styles.valueContainer}>
@@ -222,7 +289,7 @@ const Career = ({ intl }) => (
       </section>
       <section className={styles.team}>
         <div>
-          <img className="rounded" src={Osaka1} />
+          <img className="rounded" src={EthCC2BookLaunch} />
         </div>
       </section>
       <section className={`light ${styles.positions}`} id="positions">
@@ -234,19 +301,16 @@ const Career = ({ intl }) => (
         </h2>
         <Slider className={styles.positionsSlider} {...positionsSliderSettings}>
           <div>
-            <PositionCard content={{ department: "Engineering", role: "Full-Stack Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+            <PositionCard content={{ department: "Engineering", role: "Full Stack Developer", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/538779-full-stack-developer-blockchain-legaltech-fintech" }} />
           </div>
           <div>
-            <PositionCard content={{ department: "Engineering", role: "Full-Stack Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+            <PositionCard content={{ department: "Engineering", role: "Frontend Developer", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1126483-frontend-developer-blockchain-legaltech-fintech" }} />
           </div>
           <div>
-            <PositionCard content={{ department: "Engineering", role: "Ethereum Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+            <PositionCard content={{ department: "Marketing", role: "Communications Manager", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1033811-communications-manager" }} />
           </div>
           <div>
-            <PositionCard content={{ department: "Engineering", role: "Back-End Developer", location: "France • Lisbon • Remote", href: "https://google.com" }} />
-          </div>
-          <div>
-            <PositionCard content={{ department: "Engineering", role: "Product Manager", location: "France • Lisbon • Remote", href: "https://google.com" }} />
+            <PositionCard content={{ department: "Product", role: "Product Manager", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1279076-product-manager" }} />
           </div>
         </Slider>
       </section>
