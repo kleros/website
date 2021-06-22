@@ -104,7 +104,7 @@ const Career = ({ intl }) => (
         <h2>
           <FormattedMessage id="career.section-hero.h2" />
         </h2>
-        <Button>
+        <Button href="#positions">
           <FormattedMessage id="career.section-hero.button-primary" />
         </Button>
         <div className={styles.sliders}>
@@ -225,7 +225,7 @@ const Career = ({ intl }) => (
           <img className="rounded" src={Osaka1} />
         </div>
       </section>
-      <section className={`light ${styles.positions} `}>
+      <section className={`light ${styles.positions}`} id="positions">
         <h1>
           <FormattedMessage id="career.section-positions.h1" />
         </h1>
