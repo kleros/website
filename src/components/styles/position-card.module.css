@@ -17,7 +17,7 @@
 }
 
 .positionCard a:hover {
-  color: white;
+  color: white !important;
 }
 
 .positionCard .header {
