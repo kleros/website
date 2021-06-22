@@ -122,7 +122,7 @@ const positionsSliderSettings = {
 
 const Career = ({ intl }) => (
   <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({ id: "community.seo-title" })} />
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "career.seo-title" })} />
     <div className={styles.career}>
       <section className={`${styles.hero}`}>
         <h1>
@@ -137,13 +137,16 @@ const Career = ({ intl }) => (
         <div className={styles.sliders}>
           <Slider className={styles.topslider} {...sliderSettings}>
             <div>
+              <img className="rounded" src={Osaka4} />
+            </div>
+            <div>
+              <img className="rounded" src={KlerosConference1} />
+            </div>
+            <div>
               <img className="rounded" src={Bushido2} />
             </div>
             <div>
               <img className="rounded" src={Bushido3} />
-            </div>
-            <div>
-              <img className="rounded" src={Osaka1} />
             </div>
             <div>
               <img className="rounded" src={Osaka1} />
@@ -154,16 +157,13 @@ const Career = ({ intl }) => (
             <div>
               <img className="rounded" src={Osaka3} />
             </div>
-            <div>
-              <img className="rounded" src={Osaka4} />
-            </div>
+
             <div>
               <img className="rounded" src={Osaka5} />
             </div>
             <div>
               <img className="rounded" src={Osaka6} />
             </div>
-
             <div>
               <img className="rounded" src={Assembly22} />
             </div>
@@ -175,9 +175,6 @@ const Career = ({ intl }) => (
             </div>
             <div>
               <img className="rounded" src={Devcon5} />
-            </div>
-            <div>
-              <img className="rounded" src={KlerosConference1} />
             </div>
           </Slider>
           <Slider className={styles.bottomslider} {...sliderSettings}>
