@@ -4,6 +4,8 @@
   border-radius: var(--border-radius);
   margin-left: 16px;
   margin-right: 16px;
+  min-height: 232px;
+  text-align: left;
 }
 
 .positionCard > a {
@@ -18,13 +20,29 @@
   color: white;
 }
 
+.positionCard .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.positionCard .header svg {
+  width: 16px;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.positionCard .header svg > path {
+  fill: white;
+}
+
 .positionCard .department {
   border-style: solid;
   border-color: white;
   border-radius: 300px;
   width: fit-content;
   padding: 8px 32px;
-  margin-bottom: 24px;
 }
 
 .positionCard .department:after {

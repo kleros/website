@@ -18,6 +18,7 @@ import Osaka4 from "src/assets/images/career/osaka-4.png";
 import Osaka5 from "src/assets/images/career/osaka-5.png";
 import Osaka6 from "src/assets/images/career/osaka-6.jpg";
 import Play from "src/assets/svgs/play.svg";
+// import Decorator from "src/assets/svgs/decorator.svg";
 
 const sliderSettings = {
   dots: false,
@@ -25,7 +26,7 @@ const sliderSettings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 3,
-  autoplay: false,
+  autoplay: true,
   arrows: false,
   autoplaySpeed: 5000,
   variableWidth: true,
@@ -46,15 +47,12 @@ const sliderSettings = {
       },
     },
     {
-      breakpoint: 800,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: false,
       },
-    },
-    {
-      breakpoint: 600,
-      settings: "unslick",
     },
   ],
 };
@@ -67,8 +65,32 @@ const positionsSliderSettings = {
   slidesToScroll: 1,
   autoplay: true,
   arrows: false,
-  autoplaySpeed: 77000,
-  variableWidth: true,
+  autoplaySpeed: 7000,
+  variableWidth: false,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const Career = ({ intl }) => (
