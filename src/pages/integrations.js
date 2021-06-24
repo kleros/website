@@ -21,6 +21,8 @@ import Deversifi from "src/assets/images/deversifi.png";
 import DutchX from "src/assets/images/dutchx.png";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
 import API3 from "src/assets/images/api3_mono.png";
+import Unslashed from "src/assets/images/unslashed.png";
+import Polkamarkets from "src/assets/images/polkamarkets.png";
 import DeversifiMono from "src/assets/images/deversifi-mono.png";
 import OmenMono from "src/assets/images/omen-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
@@ -121,15 +123,21 @@ const Integrations = ({ intl }) => (
             <span className={styles.helper}></span>
             <img src={DemocracyEarth} alt="DemocracyEarth" />
           </Badge>
-
           <Badge as="a" className={styles.badge} href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <Gnosis />
           </Badge>
-
           <Badge as="a" className={styles.badge} href="https://api3.org/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <img src={API3} alt="API3" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={Unslashed} alt="Unslashed" />
+          </Badge>
+          <Badge as="a" className={styles.badge} href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
+            <span className={styles.helper}></span>
+            <img src={Polkamarkets} alt="Polkamarkets" />
           </Badge>
         </div>
       </section>
