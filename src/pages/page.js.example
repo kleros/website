@@ -1,0 +1,18 @@
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Contact from "../components/contact";
+import { Col, Container, Row } from "react-bootstrap";
+import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
+import styles from "./styles/page.module.css";
+
+const Page = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "page.seo-title" })} />
+    <div className={styles.page}>
+      <section className={styles.hero}></section>
+    </div>
+  </Layout>
+);
+
+export default injectIntl(Page);

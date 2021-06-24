@@ -92,6 +92,13 @@ section {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+  section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
 footer {
   margin-top: auto;
   padding: 4rem 5vw;
