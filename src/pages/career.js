@@ -230,15 +230,15 @@ const Career = ({ intl }) => (
           <FormattedMessage id="career.section-culture.h2" />
         </h2>
         <div className={styles.images}>
-          <div>
+          <div className={styles.left}>
             <img className="rounded" src={Osaka6} />
             <img className="rounded" src={Talk2} />
             <img className="rounded" src={Talk7} />
           </div>
-          <div>
+          <div className={styles.right}>
             <img className="rounded" src={Osaka3} />
             <img className="rounded" src={Devcon42} />
-            <img className="rounded" src={KlerosConference1} />
+            <img className="rounded" src={Osaka4} />
           </div>
           <div className={styles.values}>
             <div className={styles.valueContainer}>

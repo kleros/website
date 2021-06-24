@@ -35,7 +35,30 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: calc(16px + 1vw);
   position: relative;
-  font-size: min(12vw, 160px);
+  font-size: min(11vw, 128px);
+}
+.career .culture > .images > div {
+  height: fit-content;
+  display: grid;
+  grid-row-gap: calc(8px + 1vw);
+}
+
+.career .culture > .images div.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-purple-light);
+  opacity: 0.3;
+}
+
+.career .imageContainer {
+  position: relative;
+  width: auto;
+}
+
+.career .imageContainer:hover .overlay {
 }
 
 .career .culture > .images > .values {
@@ -45,6 +68,7 @@
   justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  opacity: 0.9;
 }
 .career .culture > .images > .values span {
   transform: rotate(-45deg);
@@ -101,19 +125,16 @@
 }
 
 .career .culture > .images > div {
-  height: fit-content;
-  display: grid;
-  grid-row-gap: calc(16px + 1vw);
 }
 
 .career .culture > .images > div:first-child {
   justify-self: end;
   justify-items: end;
-  grid-template-rows: min(21vw, 300px) min(26vw, 371px) min(21vw, 300px);
+  grid-template-rows: repeat(3, min(33vw, 372px));
 }
 
 .career .culture > .images > div:nth-child(2) {
-  grid-template-rows: min(24vw, 335.5px) min(20vw, 300px) min(24vw, 335.5px);
+  grid-template-rows: repeat(3, min(33vw, 372px));
 }
 
 .career .team {
