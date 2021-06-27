@@ -733,6 +733,36 @@
       }
     }
   },
+
+  "career": {
+    "seo-title": "Carreiras",
+    "section-hero": {
+      "h1": "Junte-se à Kleros e Ajude a Construir o Futuro da Justiça",
+      "h2": "Confira nossas vagas abertas, nós estamos ansiosos para conhecer você!",
+      "button-primary": "Veja as vagas abertas"
+    },
+    "section-mission": {
+      "h1": "Missão",
+      "h2": "Nossa missão é desenvolver software que promova acesso à justiça e à liberdade individual."
+    },
+    "section-culture": {
+      "h1": "Cultura",
+      "h2": "Nós somos um time interdisciplinar e internacional apaixonado por blockchain e o seu potencial de transformar as leis e a governança.",
+      "illustration": {
+        "top": "Colaboração",
+        "top-left": "Inovação",
+        "top-right": "Diversidade",
+        "bottom": "Empoderamento",
+        "bottom-left": "Flexibilidade",
+        "bottom-right": "Paixão"
+      }
+    },
+    "section-positions": {
+      "h1": "Vagas Abertas",
+      "h2": "Confira nossas vagas abertas e inscreva-se abaixo."
+    }
+  },
+
   "bio": {
     "section-main": "Baixe o relatório",
     "section-contact": {
