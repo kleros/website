@@ -1,6 +1,7 @@
 {
   "header": {
     "dapps": "Productos",
+    "services": "Servicios",
     "dapps-title": "Nuestros Productos e Integraciones",
     "integrations": "Integraciones",
     "research": "Investigación",
@@ -715,6 +716,28 @@
         "a": "Puedes enviar tu aplicación <anchor>aquí</anchor>."
       }
     }
+  },
+  "career": {
+    "seo-title": "Carreras",
+    "section-hero": {
+      "h1": "Únete a Kleros y Ayuda a Construir el Futuro de la Justicia",
+      "h2": "Mira nuestras búsquedas abiertas. ¡Queremos conocerte!",
+      "button-primary": "Explorar Posiciones Abiertas"
+    },
+    "section-mission": { "h1": "Misión", "h2": "Nuestra misión es desarrollar software que facilite el acceso a la justicia y a la libertad individual." },
+    "section-culture": {
+      "h1": "Cultura",
+      "h2": "Somos un equipo internacional y multidisciplinario apasionado por el blockchain y su potencial para transformar las leyes y el gobierno.",
+      "illustration": {
+        "top": "Colaboración",
+        "top-left": "Innovación",
+        "top-right": "Diversidad",
+        "bottom": "Empoderamiento",
+        "bottom-left": "Flexibilidad",
+        "bottom-right": "Pasión"
+      }
+    },
+    "section-positions": { "h1": "Open Positions", "h2": "Revisa nuestras búsquedas abiertas y aplica aquí abajo." }
   },
   "bio": {
     "section-main": "Descargar el Informe",

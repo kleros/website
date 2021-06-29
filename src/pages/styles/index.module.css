@@ -197,3 +197,21 @@
 .index .partners > h2 {
   font-weight: var(--font-weight-bold);
 }
+
+.index :global(.slick-list) {
+  margin: 2rem 0 !important;
+}
+
+.index :global(.slick-track) {
+  margin-bottom: 3rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index :global(.slick-dots) > li {
+  transform: scale(2);
+}
+
+.index :global(.slick-dots) > li > button::before {
+  color: var(--color-blue) !important;
+}

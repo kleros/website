@@ -1,0 +1,54 @@
+.positionCard {
+  background-color: var(--color-purple-light);
+  color: white;
+  border-radius: var(--border-radius);
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: left;
+}
+
+.positionCard > a {
+  min-height: 264px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex: 1;
+}
+
+.positionCard a:hover {
+  color: white !important;
+}
+
+.positionCard .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.positionCard .header svg {
+  width: 16px;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.positionCard .header svg > path {
+  fill: white;
+}
+
+.positionCard .department {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 300px;
+  width: fit-content;
+  padding: 8px 32px;
+}
+
+.positionCard .department:after {
+}
+
+.positionCard .location {
+  margin-top: 16px;
+}

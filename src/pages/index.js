@@ -14,6 +14,8 @@ import OmenSVG from "src/assets/svgs/omen_logo.svg";
 import Deversifi from "src/assets/images/deversifi-bw.png";
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
+import Unslashed from "src/assets/images/unslashed.png";
+import Polkamarkets from "src/assets/images/polkamarkets.png";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
 import API3 from "src/assets/images/api3_mono.png";
 import Uniswap from "src/assets/svgs/uniswap_logo.svg";
@@ -324,6 +326,12 @@ class IndexPage extends React.Component {
             </a>
             <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
               <img src={API3} alt="API3" />
+            </a>
+            <a href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
+              <img src={Unslashed} alt="Unslashed" />
+            </a>
+            <a href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
+              <img src={Polkamarkets} alt="Polkamarkets" />
             </a>
           </section>
           <section className="light">

@@ -23,6 +23,7 @@
     "integrations": "Integrations",
     "governance": "Governance",
     "escrow": "Escrow",
+    "career": "Career",
     "curate": "Curate",
     "fellowship": "Fellowship",
     "community": "Community",
@@ -695,6 +696,29 @@
       }
     }
   },
+  "career": {
+    "seo-title": "Career",
+    "section-hero": {
+      "h1": "Join Kleros and Help Build the Future of Justice",
+      "h2": "Check our open positions, we're eager to meet you!",
+      "button-primary": "Explore open positions"
+    },
+    "section-mission": { "h1": "Mission", "h2": "Our mission is to develop software enabling access to justice and individual freedom." },
+    "section-culture": {
+      "h1": "Culture",
+      "h2": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance.",
+      "illustration": {
+        "top": "Collaboration",
+        "top-left": "Innovation",
+        "top-right": "Diversity",
+        "bottom": "Empowerment",
+        "bottom-left": "Flexibility",
+        "bottom-right": "Passion"
+      }
+    },
+    "section-positions": { "h1": "Open Positions", "h2": "Check our open positions and apply below." }
+  },
+
   "bio": {
     "section-main": "Download the Report",
     "section-contact": { "title": "Join Kleros Fellowship", "subtitle": "Interested in joining Kleros Fellowship? Message us via <mail>contact@kleros.io</mail>." }

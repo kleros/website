@@ -1,0 +1,239 @@
+.career .hero {
+  background-image: linear-gradient(180deg, transparent 0, transparent 65%, white 65%, white 100%), url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 65%, white 65%, white 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 00px, center center;
+  padding-bottom: 8px;
+}
+
+.career .mission {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 450px;
+
+  background: transparent;
+
+  background: linear-gradient(10deg, transparent, transparent 49.8%, white 50%, white 50%) left top/50% auto no-repeat, linear-gradient(-10deg, transparent, transparent 49.8%, white 50%, white 50%) right top/50% auto no-repeat;
+  background-repeat: no-repeat;
+}
+
+.career .culture {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.career .sliders {
+  margin-top: 64px;
+}
+
+.career .sliders > div > div {
+  margin-bottom: 32px;
+}
+
+.career .culture > .images {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: calc(16px + 1vw);
+  position: relative;
+  font-size: min(11vw, 128px);
+}
+.career .culture > .images > div {
+  height: fit-content;
+  display: grid;
+  grid-row-gap: calc(8px + 1vw);
+}
+
+.career .culture > .images div.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-purple-light);
+  opacity: 0.3;
+}
+
+.career .imageContainer {
+  position: relative;
+  width: auto;
+}
+
+.career .imageContainer:hover .overlay {
+}
+
+.career .culture > .images > .values {
+  position: absolute;
+  background-color: transparent;
+  justify-self: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  opacity: 0.9;
+}
+.career .culture > .images > .values span {
+  transform: rotate(-45deg);
+  font-size: 0.13em;
+  font-weight: var(--font-weight-bold);
+}
+
+.career .culture > .images > .values > .valueContainer {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-color: var(--color-purple-light);
+  transform: rotateY(0deg) rotate(45deg);
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  border-radius: min(2vw, var(--border-radius));
+
+  opacity: 0; /* To disable */
+}
+
+.career .culture .valueContainer:nth-child(1) {
+  align-self: end;
+  margin-bottom: 0.3em;
+}
+.career .culture .valueContainer:nth-child(2) {
+  align-self: end;
+  margin-bottom: 1.25em;
+}
+.career .culture .valueContainer:nth-child(3) {
+  align-self: end;
+  margin-bottom: 0.3em;
+}
+
+.career .culture .valueContainer:nth-child(4) {
+  margin-top: 0.3em;
+}
+.career .culture .valueContainer:nth-child(5) {
+  margin-top: 1.25em;
+}
+.career .culture .valueContainer:nth-child(6) {
+  margin-top: 0.3em;
+}
+
+.career .culture .playContainer {
+  position: absolute;
+  place-self: center;
+  width: 0.8em;
+}
+
+.career .culture .playContainer a {
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  height: auto;
+}
+
+.career .culture > .images > div {
+}
+
+.career .culture > .images > div:first-child {
+  justify-self: end;
+  justify-items: end;
+  grid-template-rows: repeat(3, min(33vw, 372px));
+}
+
+.career .culture > .images > div:nth-child(2) {
+  grid-template-rows: repeat(3, min(33vw, 372px));
+}
+
+.career .team {
+  height: fit-content;
+  width: auto;
+  padding-top: 0;
+  margin-top: 128px;
+  background: linear-gradient(10deg, white 0, white 64.9%, var(--color-purple-darkest) 65%, var(--color-purple-darkest) 100%);
+}
+
+.career .positions {
+  background: linear-gradient(white 0, white 80%, var(--color-purple-darkest) 80%, var(--color-purple-darkest) 100%);
+}
+
+.career .positionsSlider {
+  margin-top: 80px;
+}
+
+.career .carousel img {
+  max-width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .career .bottomslider {
+    display: none;
+  }
+
+  .career .topslider :global(.slick-track) > div {
+    padding: 24px;
+  }
+}
+
+.career :global(.slick-track),
+.career :global(.slick-list) {
+  max-height: 400px;
+}
+
+@media screen and (min-width: 600px) {
+  .career .hero {
+    background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 45%, white 45%, white 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 200px, center center;
+  }
+
+  .career .topslider :global(.slick-list) {
+    margin-left: 60px;
+  }
+  .career .topslider {
+    margin-bottom: 16px;
+  }
+
+  .career .topslider :global(.slick-track) {
+    align-items: baseline;
+    display: flex;
+  }
+
+  .career .sliders :global(.slick-track) > div > div {
+    margin: 16px;
+    margin-bottom: 0;
+    margin-top: auto;
+    /* max-width: 100%; */
+  }
+
+  .career .topslider :global(.slick-track) > div:nth-child(3n) img {
+    max-height: 290px;
+  }
+
+  .career .topslider :global(.slick-track) > div:nth-child(3n + 1) img {
+    max-height: 350px;
+  }
+
+  .career .topslider :global(.slick-track) > div:nth-child(3n + 2) img {
+    max-height: 320px;
+  }
+}
+
+.career .bottomslider :global(.slick-list) {
+  margin-right: 60px;
+  height: 400px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n) img {
+  max-height: 350px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n + 1) img {
+  max-height: 290px;
+}
+
+.career .bottomslider :global(.slick-track) > div:nth-child(3n + 2) img {
+  max-height: 320px;
+}
+
+.career .sliders :global(.slick-dots) > li > button::before {
+  color: white !important;
+}
+
+.career .sliders :global(.slick-dots) > li {
+  transform: scale(2);
+}
