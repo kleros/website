@@ -731,6 +731,29 @@
       }
     }
   },
+  "career": {
+    "seo-title": "招聘",
+    "section-hero": {
+      "h1": "加入Kleros构建公正的未来",
+      "h2": "Kleros热情的欢迎大家的加入!",
+      "button-primary": "浏览招聘职位"
+    },
+    "section-mission": { "h1": "使命", "h2": "我们的使命是通过软件技术的开发提供给普通大众公正与自由." },
+    "section-culture": {
+      "h1": "文化",
+      "h2": "我们是一个国际化的跨学科团队，热衷于区块链技术，以及致力于实现其为法律和治理带来变革的巨大潜力.",
+      "illustration": {
+        "top": "合作",
+        "top-left": "创新",
+        "top-right": "多元",
+        "bottom": "赋权",
+        "bottom-left": "灵活",
+        "bottom-right": "热情"
+      }
+    },
+    "section-positions": { "h1": "职位空缺", "h2": "了解并申请我们的空缺职位." }
+  },
+
   "bio": {
     "section-main": "下载报告",
     "section-contact": {
