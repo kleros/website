@@ -13,7 +13,21 @@ import Content from "src/intl/en.json";
 import Sash from "../components/sash";
 import Aouidef from "src/assets/images/aouidef.png";
 
-const PAPERS = ["https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf", "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age", "https://kleros.io/yellowpaper.pdf"];
+const PAPERS = [
+  "https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf",
+  "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age",
+  "https://kleros.io/yellowpaper.pdf",
+  "https://stanford-jblp.pubpub.org/pub/birth-of-decentralized-justice/release/1",
+  "https://www.frontiersin.org/articles/10.3389/fbloc.2021.564551/full",
+];
+
+const PAPERS_CONTENT = [
+  "A Smart Contract Oracle for Approximating Real-World, Real Number Values",
+  "Decentralised justice: reinventing arbitration for the digital age?",
+  "Kleros Long Paper v2.0.0",
+  "When Online Dispute Resolution Meets Blockchain: The Birth of Decentralized Justice",
+  "Decentralized Justice: A Comparative Analysis of Blockchain Online Dispute Resolution Projects",
+];
 
 const MENTIONS = [
   "https://elibrary.ru/item.asp?id=39426452",
@@ -101,7 +115,7 @@ const IndexPage = ({ intl }) => (
             <HorizontalCard
               content={{
                 href: PAPERS[index],
-                text: intl.formatMessage({ id: `research.section-papers.papers.items.${paper}` }),
+                text: PAPERS_CONTENT[index],
               }}
             />
           ))}
