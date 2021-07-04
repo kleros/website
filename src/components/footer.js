@@ -67,7 +67,7 @@ const Footer = ({ intl }) => (
           <a className="mr-3" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.whitepaper" />
           </a>
-          <a className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+          <a className="mr-3" href="yellowpaper.pdf" rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.yellowpaper" />
           </a>
           <a className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
