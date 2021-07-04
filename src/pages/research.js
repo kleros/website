@@ -13,7 +13,13 @@ import Content from "src/intl/en.json";
 import Sash from "../components/sash";
 import Aouidef from "src/assets/images/aouidef.png";
 
-const PAPERS = ["https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf", "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age", "https://kleros.io/yellowpaper.pdf"];
+const PAPERS = [
+  "https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf",
+  "https://globalarbitrationreview.com/article/1226075/decentralised-justice-reinventing-arbitration-for-the-digital-age",
+  "https://kleros.io/yellowpaper.pdf",
+  "https://stanford-jblp.pubpub.org/pub/birth-of-decentralized-justice/release/1",
+  "https://www.frontiersin.org/articles/10.3389/fbloc.2021.564551/full",
+];
 
 const MENTIONS = [
   "https://elibrary.ru/item.asp?id=39426452",
