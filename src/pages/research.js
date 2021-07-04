@@ -21,6 +21,14 @@ const PAPERS = [
   "https://www.frontiersin.org/articles/10.3389/fbloc.2021.564551/full",
 ];
 
+const PAPERS_CONTENT = [
+  "A Smart Contract Oracle for Approximating Real-World, Real Number Values",
+  "Decentralised justice: reinventing arbitration for the digital age?",
+  "Kleros Long Paper v2.0.0",
+  "When Online Dispute Resolution Meets Blockchain: The Birth of Decentralized Justice",
+  "Decentralized Justice: A Comparative Analysis of Blockchain Online Dispute Resolution Projects",
+];
+
 const MENTIONS = [
   "https://elibrary.ru/item.asp?id=39426452",
   "https://cyberleninka.ru/article/n/o-sposobah-razresheniya-sporov-voznikayuschih-iz-smart-kontraktov",
@@ -107,7 +115,7 @@ const IndexPage = ({ intl }) => (
             <HorizontalCard
               content={{
                 href: PAPERS[index],
-                text: intl.formatMessage({ id: `research.section-papers.papers.items.${paper}` }),
+                text: PAPERS_CONTENT[index],
               }}
             />
           ))}
