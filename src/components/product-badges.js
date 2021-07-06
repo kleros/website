@@ -10,9 +10,9 @@ import POH from "../assets/svgs/poh-logo.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
-import CryptoUnlocked from "src/assets/images/crypto-unlocked.png";
-import Realitio from "src/assets/images/realitio.png";
-import Omen from "src/assets/images/omen.png";
+import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.png";
+import Realitio from "src/assets/images/third-party-logos/realitio.png";
+import Omen from "src/assets/images/third-party-logos/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
 import Revoke from "../assets/svgs/revoke.svg";
 

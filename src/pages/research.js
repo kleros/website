@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import George from "src/assets/images/george.png";
+import George from "src/assets/images/person/george.png";
 import HorizontalCard from "../components/horizontal-card";
 import VerticalCard from "../components/vertical-card";
 import Fellowship from "src/assets/svgs/fellowship.svg";
@@ -11,7 +11,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Content from "src/intl/en.json";
 import Sash from "../components/sash";
-import Aouidef from "src/assets/images/aouidef.png";
+import Aouidef from "src/assets/images/person/aouidef.png";
 
 const PAPERS = [
   "https://drops.dagstuhl.de/opus/volltexte/2019/11396/pdf/OASIcs-Tokenomics-2019-6.pdf",
