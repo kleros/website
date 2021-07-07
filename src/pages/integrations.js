@@ -17,24 +17,24 @@ import ERC1497EN from "src/assets/svgs/illustration-erc1497-en.svg";
 import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
 
 import Archon from "src/assets/svgs/archon.svg";
-import Deversifi from "src/assets/images/deversifi.png";
-import DutchX from "src/assets/images/dutchx.png";
+import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
+import DutchX from "src/assets/images/third-party-logos/dutchx.png";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
-import API3 from "src/assets/images/api3_mono.png";
-import Unslashed from "src/assets/images/unslashed.png";
-import Polkamarkets from "src/assets/images/polkamarkets.png";
-import DeversifiMono from "src/assets/images/deversifi-mono.png";
-import OmenMono from "src/assets/images/omen-mono.png";
+import API3 from "src/assets/images/third-party-logos/api3_mono.png";
+import Unslashed from "src/assets/images/third-party-logos/unslashed.png";
+import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets.png";
+import DeversifiMono from "src/assets/images/third-party-logos/deversifi-mono.png";
+import OmenMono from "src/assets/images/third-party-logos/omen-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
-import WindingTreeMono from "src/assets/images/winding-mono.png";
-import CryptoUnlockedMono from "src/assets/images/crypto-unlocked-mono.png";
-import RealitioMono from "src/assets/images/realitio-mono.png";
-import DutchXMono from "src/assets/images/dutch-mono.png";
+import WindingTreeMono from "src/assets/images/third-party-logos/winding-mono.png";
+import CryptoUnlockedMono from "src/assets/images/third-party-logos/crypto-unlocked-mono.png";
+import RealitioMono from "src/assets/images/third-party-logos/realitio-mono.png";
+import DutchXMono from "src/assets/images/third-party-logos/dutch-mono.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
 import UniswapWhite from "src/assets/svgs/uniswap_logo.svg";
 
 import Union from "src/assets/svgs/union.svg";
-import DemocracyEarth from "src/assets/images/democracy_earth_logo.png";
+import DemocracyEarth from "src/assets/images/third-party-logos/democracy_earth_logo.png";
 
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
