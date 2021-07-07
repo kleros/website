@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import Sash from "../components/sash";
 import HorizontalCard from "../components/horizontal-card";
 import Contact from "../components/contact";
-import Deversifi from "src/assets/images/deversifi.png";
+import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
 import CurateTwoScreen from "src/assets/svgs/curate-twoscreen.svg";
 import CurateHero from "src/assets/images/curate-hero.png";
 import List from "src/assets/svgs/icon-list.svg";
