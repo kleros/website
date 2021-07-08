@@ -90,6 +90,10 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d" rel="noopener noreferrer" target="blank">
             <Uniswap />
           </Badge>
+          <Badge as="a" className={styles.badge} href="https://www.bitfinex.com/t/PNKETH" rel="noopener noreferrer" target="blank">
+            <span class={styles.helper} />
+            <img src={Bitfinex} alt={"Bitfinex"} />
+          </Badge>
           <Badge as="a" className={styles.badge} href="https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d" rel="noopener noreferrer" target="blank">
             <img src={Sushiswap} alt={"Sushiswap"} />
           </Badge>
@@ -114,10 +118,7 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://1inch.exchange/" rel="noopener noreferrer" target="blank">
             <OneInch />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://www.bitfinex.com/t/PNKETH" rel="noopener noreferrer" target="blank">
-            <span class={styles.helper} />
-            <img src={Bitfinex} alt={"Bitfinex"} />
-          </Badge>
+
           <Badge as="a" className={styles.badge} href="https://www.gate.io/trade/PNK_USDT" rel="noopener noreferrer" target="blank">
             <GateIO />
           </Badge>
