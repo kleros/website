@@ -1,11 +1,10 @@
 {
-  "name": "Kleros",
+  "name": "KlerosWebsite",
   "private": true,
   "description": "Kleros",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Kleros",
   "dependencies": {
-    "@kleros/archon": "^0.12.1",
     "@kleros/binary-arbitrable-proxy-contract": "^2.3.3",
     "@kleros/kleros": "^0.1.2",
     "aos": "^2.3.4",
@@ -42,7 +41,7 @@
     "react-slick": "^0.26.1",
     "replace-in-file": "^6.1.0",
     "slick-carousel": "^1.8.1",
-    "web3": "1.0.0-beta.37"
+    "web3": "^1.4.0"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
@@ -58,7 +57,6 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "postinstall": "node ./patch-scrypt.js",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
@@ -74,7 +72,7 @@
     "printWidth": 280
   },
   "engines": {
-  "node": ">=10.0.0 <11.0.0",
-  "yarn": "^1.22.0"
-}
+    "node": ">=14.0.0",
+    "yarn": "^1.22.0"
+  }
 }
