@@ -1,5 +1,6 @@
 import classnames from "classnames";
 import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
+import { FormattedMessage } from "gatsby-plugin-intl";
 import React, { useState } from "react";
 
 import Court from "../assets/svgs/kleros.svg";
@@ -17,8 +18,6 @@ import Linguo from "../assets/svgs/linguo.svg";
 import Revoke from "../assets/svgs/revoke.svg";
 
 import styles from "./styles/product-badges.module.css";
-
-import { FormattedMessage, IntlContextConsumer, Link, changeLocale, injectIntl } from "gatsby-plugin-intl";
 
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
 const services = [
@@ -75,13 +74,13 @@ const ServiceBadge = ({ name, setHoveredName, href, target, Icon, hoveredName, c
     </div>
   );
 };
-const ServiceBadges = ({ intl }) => {
+const ServiceBadges = () => {
   const [hoveredName, setHoveredName] = useState();
   return (
     <AnimateSharedLayout type="crossfade">
       <div>
         {services.map(({ name, href, target, Icon }) => (
-          <ServiceBadge key={name} name={intl.formatMessage({ id: `productDescriptions.${name}` })} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} hoveredName={hoveredName}>
+          <ServiceBadge key={name} name={name} setHoveredName={setHoveredName} href={href} target={target} Icon={Icon} hoveredName={hoveredName}>
             <FormattedMessage id={`productDescriptions.${name}`} />
           </ServiceBadge>
         ))}
@@ -89,4 +88,4 @@ const ServiceBadges = ({ intl }) => {
     </AnimateSharedLayout>
   );
 };
-export default injectIntl(ServiceBadges);
+export default ServiceBadges;

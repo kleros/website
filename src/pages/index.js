@@ -57,6 +57,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import lscache from "lscache";
 
+import Archon from "@kleros/archon";
 import BigNumber from "bignumber.js";
 
 import * as EthereumInterface from "src/ethereum/interface";
@@ -116,37 +117,27 @@ const NO_OF_RECENT_DISPUTES = 6;
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { archon: new Archon(process.env.GATSBY_WEB3_PROVIDER_URL, IPFS_GATEWAY), loading: true };
   }
 
   getCourts = async (subcourtID) => EthereumInterface.call("KlerosLiquid", KLEROS_LIQUID, "courts", subcourtID);
 
-  estimateGasOfGetSubcourt = (subcourtID) => EthereumInterface.estimateGas("KlerosLiquid", KLEROS_LIQUID, ADDRESS_ZERO, 0, "getSubcourt", subcourtID);
-  getSubcourt = async (subcourtID) => EthereumInterface.call("KlerosLiquid", KLEROS_LIQUID, "getSubcourt", subcourtID);
+  estimateGasOfGetSubcourt = (subcourtID) => EthereumInterface.estimateGas("KlerosLiquid", "0x988b3a538b618c7a603e1c11ab82cd16dbe28069", ADDRESS_ZERO, 0, "getSubcourt", subcourtID);
+  getSubcourt = async (subcourtID) => EthereumInterface.call("KlerosLiquid", "0x988b3a538b618c7a603e1c11ab82cd16dbe28069", "getSubcourt", subcourtID);
 
   getSubCourtDetails = async (subcourtID) => EthereumInterface.call("PolicyRegistry", "0xCf1f07713d5193FaE5c1653C9f61953D048BECe4", "policies", subcourtID);
 
-  getArbitratorDispute = async (arbitratorDisputeID) => EthereumInterface.call("KlerosLiquid", KLEROS_LIQUID, "disputes", arbitratorDisputeID);
+  getArbitratorDispute = async (arbitratorDisputeID) => EthereumInterface.call("KlerosLiquid", "0x988b3a538b618c7a603e1c11ab82cd16dbe28069", "disputes", arbitratorDisputeID);
 
   getMetaEvidence = (arbitrableAddress, arbitratorDisputeID) =>
-    EthereumInterface.contractInstance("IEvidence", arbitrableAddress)
-      .getPastEvents("Dispute", {
-        fromBlock: 10400000,
-        toBlock: "latest",
-        filter: {
-          _arbitrator: KLEROS_LIQUID,
-          _disputeID: arbitratorDisputeID,
-        },
-      })
-      .then((disputeEvents) =>
-        EthereumInterface.contractInstance("IEvidence", arbitrableAddress)
-          .getPastEvents("MetaEvidence", { fromBlock: 7303699, toBlock: "latest", filter: { _metaEvidenceID: disputeEvents[0].returnValues._metaEvidenceID.toString() } })
-          .then((metaevidence) => fetch("https://ipfs.kleros.io" + metaevidence[0].returnValues._evidence))
-          .then((response) => response.json())
-      );
+    this.state.archon.arbitrable
+      .getDispute(arbitrableAddress, "0x988b3a538b618c7a603e1c11ab82cd16dbe28069", arbitratorDisputeID)
+      .then((response) => EthereumInterface.contractInstance("IEvidence", arbitrableAddress).getPastEvents("MetaEvidence", { fromBlock: 7303699, toBlock: "latest", filter: { _metaEvidenceID: response.metaEvidenceID } }))
+      .then((metaevidence) => fetch("https://ipfs.kleros.io" + metaevidence[0].returnValues._evidence))
+      .then((response) => response.json());
 
   getOpenDisputesOnCourt = async () => {
-    const contractInstance = EthereumInterface.contractInstance("KlerosLiquid", KLEROS_LIQUID);
+    const contractInstance = EthereumInterface.contractInstance("KlerosLiquid", "0x988b3a538b618c7a603e1c11ab82cd16dbe28069");
 
     const drawEvents = await contractInstance.getPastEvents("Draw", { fromBlock: 10400000, toBlock: "latest" });
 
@@ -158,11 +149,15 @@ class IndexPage extends React.Component {
       .map(async (arbitratorDispute) => {
         await this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
           await this.setState((prevState) => ({ ...prevState, disputes: { ...prevState.disputes, [arbitratorDispute]: arbitratorDisputeDetails } }));
-          const metaevidence = await this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute);
-          await this.setState((prevState) => ({ ...prevState, metaEvidences: { ...prevState.metaEvidences, [arbitratorDispute]: metaevidence } }));
-
-          lscache.set("disputes", this.state.disputes, 7200);
-          lscache.set("metaEvidences", this.state.metaEvidences, 7200);
+          await this.getMetaEvidence(arbitratorDisputeDetails.arbitrated, arbitratorDispute)
+            .then(async (metaevidence) => {
+              await this.setState((prevState) => ({ ...prevState, metaEvidences: { ...prevState.metaEvidences, [arbitratorDispute]: metaevidence } }));
+            })
+            .then(() => {
+              lscache.set("disputes", this.state.disputes, 7200);
+              lscache.set("metaEvidences", this.state.metaEvidences, 7200);
+            })
+            .catch((error) => {});
         });
         return [this.state.disputes, this.state.metaEvidences];
       });
@@ -237,7 +232,7 @@ class IndexPage extends React.Component {
   render() {
     const { intl } = this.props;
 
-    const { disputes, metaEvidences, subcourts, subcourtDetails, subcourtsExtra, loading } = this.state;
+    const { metaEvidences, disputes, subcourts, subcourtDetails, subcourtsExtra, loading } = this.state;
 
     return (
       <Layout omitSponsors>
@@ -369,7 +364,7 @@ class IndexPage extends React.Component {
                           content={{
                             court: subcourtDetails[d[1].subcourtID].name,
                             id: d[0],
-                            title: metaEvidences[d[0]] ? metaEvidences[d[0]].title : "Failed to load metaevidence.",
+                            title: metaEvidences[d[0]] ? metaEvidences[d[0]].title : "asd",
                             reward: new BigNumber(subcourtsExtra[d[1].subcourtID].feeForJuror).div(new BigNumber("10").pow(new BigNumber("18"))).toString(),
                             stake: new BigNumber(subcourtsExtra[d[1].subcourtID].minStake)
                               .times(new BigNumber(subcourtsExtra[d[1].subcourtID].alpha))
@@ -378,7 +373,7 @@ class IndexPage extends React.Component {
                               .toString(),
                             period: PERIODS[parseInt(d[1].period)],
 
-                            deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[new BigNumber(d[1].period)]))).toNumber(),
+                            deadline: new BigNumber("1000").times(new BigNumber(d[1].lastPeriodChange).plus(new BigNumber(subcourts[d[1].subcourtID].timesPerPeriod[new BigNumber("1")]))).toNumber(),
                           }}
                         />
                       </div>
