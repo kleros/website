@@ -9,6 +9,8 @@ import ServiceBadges from "./service-badges";
 import { Button, Card, Collapse, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { FormattedMessage, IntlContextConsumer, Link, changeLocale, injectIntl } from "gatsby-plugin-intl";
 
+import IconDapps from "src/assets/svgs/icon-dapps.svg";
+
 import EN from "src/assets/svgs/flags/gb-nir.svg";
 import ES from "src/assets/svgs/flags/es.svg";
 import FR from "src/assets/svgs/flags/fr.svg";
@@ -18,6 +20,27 @@ import BR from "src/assets/svgs/flags/br.svg";
 import RU from "src/assets/svgs/flags/ru.svg";
 import TR from "src/assets/svgs/flags/tr.svg";
 import ZH from "src/assets/svgs/flags/cn.svg";
+
+import Court from "../assets/svgs/kleros.svg";
+import Escrow from "../assets/svgs/escrow.svg";
+import T2CR from "../assets/svgs/t2cr.svg";
+import POH from "../assets/svgs/poh-logo.svg";
+import Curate from "../assets/svgs/curate.svg";
+import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
+import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.png";
+import Realitio from "src/assets/images/third-party-logos/realitio.png";
+import Omen from "src/assets/images/third-party-logos/omen.png";
+import Linguo from "../assets/svgs/linguo.svg";
+import Revoke from "../assets/svgs/revoke.svg";
+import Gnosis from "../assets/svgs/gnosis.svg";
+import Unslashed from "../assets/svgs/unslashed.svg";
+import Polka from "../assets/images/third-party-logos/polkamarkets.png";
+import Sushi from "../assets/images/third-party-logos/sushi.png";
+import Zerion from "../assets/svgs/third-party-logos/zerion/logos/svg/blue-logo.svg";
+import Uniswap from "../assets/svgs/third-party-logos/uniswap/default.svg";
+import CLR from "../assets/images/third-party-logos/clr-fund.png";
+import Gitcoin from "../assets/svgs/third-party-logos/gitcoin/logo/duotone/positive.svg";
+import RCN from "../assets/svgs/third-party-logos/ripio.svg";
 
 const FLAGS = {
   en: <EN />,
@@ -30,6 +53,31 @@ const FLAGS = {
   tr: <TR />,
   zh: <ZH />,
 };
+const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
+
+const products = [
+  { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: POH, target: "_blank" },
+  { name: "Escrow", href: "https://www.escrow.kleros.io/", Icon: Escrow, target: "_blank" },
+  { name: "Curate", href: "https://www.curate.kleros.io/", Icon: Curate, target: "_blank" },
+  { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
+  { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
+  { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
+];
+
+const integrations = [
+  { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked), target: "_blank" },
+  { name: "Reality", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
+  { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen), target: "_blank" },
+  { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
+  { name: "Gnosis", href: "https://gnosis-safe.io/", Icon: Gnosis, target: "_blank" },
+  { name: "Polkamarkets", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Polkamarkets", Polka), target: "_blank" },
+  { name: "Sushi", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
+  { name: "Zerion", href: "https://zerion.io/", Icon: Zerion, target: "_blank" },
+  { name: "Uniswap", href: "https://uniswap.io/", Icon: Uniswap, target: "_blank" },
+  { name: "clr.fund", href: "https://clr.fund/", Icon: PNGToIcon("CLR", CLR), target: "_blank" },
+  { name: "Gitcoin", href: "https://gitcoin.co/", Icon: Gitcoin, target: "_blank" },
+  { name: "Ripio Credit", href: "https://https://rcn.finance/", Icon: RCN, target: "_blank" },
+];
 
 const STORE_URLS = {
   en: "https://www.zazzle.com/",
@@ -58,6 +106,12 @@ class Header extends React.Component {
               <Button aria-controls="#services" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#services" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.services" />
               </Button>
+              <NavDropdown title="Usecases" id="usecases" className={styles.usecases}>
+                <NavDropdown.Link eventKey="4.1">Escrow</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.2">Governance</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.3">Curation</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.4">Oracle</NavDropdown.Item>
+              </NavDropdown>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
               </Link>
@@ -143,13 +197,16 @@ class Header extends React.Component {
         <div className="panel">
           <Collapse className="collapse" id="products" data-parent="#header">
             <Card className={styles.productsCard}>
-              <Card.Title>
-                <h1 className={styles.productsTitle}>
-                  <FormattedMessage id="header.dapps-title" />
-                </h1>
-              </Card.Title>
+              <Card.Header>
+                <span>
+                  <IconDapps />
+                </span>
+                <FormattedMessage id="header.dapps-header" />
+              </Card.Header>
+
               <Card.Body className="px-5 py-3 text-center">
-                <ProductBadges />
+                <ProductBadges title="Products" items={products} />
+                <ProductBadges title="Integrations" items={integrations} />
               </Card.Body>
             </Card>
           </Collapse>

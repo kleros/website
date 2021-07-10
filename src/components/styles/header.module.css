@@ -13,8 +13,38 @@
   font-weight: 500;
 }
 
-.productsCard {
-  padding: 3rem 1rem 1rem;
+.header .productsCard :global(.card-body) {
+  display: flex;
+  margin-top: 24px;
+}
+
+.header .productsCard :global(.card-body) > div:first-child {
+  margin-right: 80px;
+}
+
+.header .productsCard :global(.card-header) {
+  background-color: white;
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 16px;
+  padding: 24px;
+}
+
+.header .productsCard :global(.card-header) > span {
+  height: 16px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  margin-right: 8px;
+}
+
+.header .productsCard :global(.card-header) > span > svg {
+  height: 16px;
+  width: auto;
+}
+
+.header .usecases div {
+  background-color: white !important;
 }
 
 .header .productsTitle {
@@ -23,6 +53,7 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-purple);
   margin-bottom: 0;
+  padding-top: 24px;
 }
 
 .header button,

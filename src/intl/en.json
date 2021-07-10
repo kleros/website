@@ -1,7 +1,8 @@
 {
   "header": {
-    "dapps": "Products",
+    "dapps": "DApps",
     "services": "Usecases",
+    "dapps-header": "Dapps connected to Kleros",
     "dapps-title": "Our Products & Integrations",
     "integrations": "Integrations",
     "research": "Research",
