@@ -49,9 +49,6 @@ class Header extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className={styles.responsiveNavbarNav} id="responsive-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link className="nav-link" href="https://court.kleros.io" target="_blank" rel="noopener noreferrer">
-                Court
-              </Nav.Link>
               <Button aria-controls="#products" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#products" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.dapps" />
               </Button>
@@ -157,6 +154,9 @@ class Header extends React.Component {
         <div className="panel">
           <Collapse className="collapse" id="services" data-parent="#header">
             <Card className={styles.productsCard}>
+              <Card.Title>
+                <h1 className={styles.productsTitle}>Our Services</h1>
+              </Card.Title>
               <Card.Body className="px-5 py-3 text-center">
                 <ServiceBadges />
               </Card.Body>
