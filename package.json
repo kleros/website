@@ -1,11 +1,10 @@
 {
-  "name": "Kleros",
+  "name": "KlerosWebsite",
   "private": true,
   "description": "Kleros",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Kleros",
   "dependencies": {
-    "@kleros/archon": "^1.2.4",
     "@kleros/binary-arbitrable-proxy-contract": "^2.3.3",
     "@kleros/kleros": "^0.1.2",
     "aos": "^2.3.4",
@@ -41,7 +40,8 @@
     "react-media": "^1.10.0",
     "react-slick": "^0.26.1",
     "replace-in-file": "^6.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "web3": "^1.4.0"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
