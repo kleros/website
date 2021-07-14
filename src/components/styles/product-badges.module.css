@@ -26,8 +26,10 @@
 .productBadgeBadge {
   align-items: center;
   background: white;
-  border-radius: 24px;
-  box-shadow: 4.76148px 4.76148px 19.0459px rgba(77, 0, 180, 0.25), -4.76148px -4.76148px 19.0459px #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
   display: flex;
   height: 64px;
   justify-content: center;
@@ -42,8 +44,8 @@
 }
 
 .productBadgeIcon {
-  height: 32px !important;
-  width: 32px !important;
+  height: 48px !important;
+  width: 48px !important;
 }
 
 .hoveredProductBadgeIcon {
@@ -66,7 +68,14 @@
 }
 
 .productBadgeName {
-  color: var(--color-purple-darker);
+  color: var(--color-gray-light);
   margin-top: 12px;
   white-space: nowrap;
+}
+
+.title {
+  color: var(--color-gray);
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 32px;
 }
