@@ -165,6 +165,8 @@ video {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .iframe-container iframe {

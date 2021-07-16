@@ -277,7 +277,7 @@ const Career = ({ intl }) => (
               </span>
             </div>
             <div className={styles.playContainer}>
-              <a href="https://www.youtube.com/watch?v=wZZ2ipS-jZw&t=34s" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/watch?v=wZZ2ipS-jZw" target="_blank" rel="noopener noreferrer">
                 <Play />
               </a>
             </div>

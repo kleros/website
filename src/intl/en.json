@@ -720,6 +720,43 @@
     },
     "section-positions": { "h1": "Open Positions", "h2": "Check our open positions and apply below." }
   },
+  "incubator": {
+    "seo-title": "Incubator",
+    "section-hero": { "h1": "Kleros Incubator", "h2": "A program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol.", "button-primary": "Apply Now" },
+    "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
+    "section-how-it-works": {
+      "h1": "How it Works",
+      "h2": "The program has a duration of 12 weeks during which participants have a number of workshops covering different of building a project in the blockchain indus.",
+      "div-learn": {
+        "title": "learn",
+        "items": {
+          "1": { "header": "Week 1", "body": "Welcome and Orientation" },
+          "2": { "header": "Week 2", "body": "Lean Canvas: Strategy Design" },
+          "3": { "header": "Week 3", "body": "User Interviews: Strategy Validation" },
+          "4": { "header": "Week 4", "body": "Prototyping" }
+        }
+      },
+      "div-build": {
+        "title": "build",
+        "items": {
+          "5": { "header": "Week 5", "body": "UX/UI for Web3" },
+          "6": { "header": "Week 6", "body": "Smart Contract Security (part 1)" },
+          "7": { "header": "Week 7", "body": "Smart Contract Security (part 2)" },
+          "8": { "header": "Week 8", "body": "Web3 Implementation" }
+        }
+      },
+      "div-grow": {
+        "title": "grow",
+        "items": {
+          "9": { "header": "Week 9", "body": "Marketing & Community Building" },
+          "10": { "header": "Week 10", "body": "Building an Investment Deck" },
+          "11": { "header": "Week 11", "body": "Fundraising Tactics and Legal" },
+          "12": { "header": "Week 12", "body": "Final Rehearsal & Demo Day" }
+        }
+      }
+    },
+    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" }
+  },
 
   "bio": {
     "section-main": "Download the Report",
