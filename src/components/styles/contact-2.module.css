@@ -7,7 +7,7 @@
   grid-column-gap: 2rem;
 
   place-items: center;
-  padding: 1rem 1.5rem;
+  padding: 16px 32px;
 }
 
 .contact2 .icons a > svg {
@@ -24,7 +24,7 @@
 
 .contact2 span {
   color: white;
-  font-size: var(--font-size-bigger);
+  font-size: var(--font-size-big);
   grid-row-start: 1;
   grid-row-end: 1;
   grid-column: 1 / span 2;
@@ -44,9 +44,11 @@
   grid-column: 1/-1;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 580px) {
   .contact2 {
     grid: 1fr 1fr / 1fr 2fr;
+    max-height: 180px;
+    padding: 16px;
   }
 
   .contact2 .brand {
@@ -62,7 +64,7 @@
 
   .contact2 .rest {
     grid-column: 2 / span 2;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 1;
     text-align: center;
     display: block;
   }
@@ -76,6 +78,7 @@
 @media screen and (min-width: 850px) {
   .contact2 {
     grid: 1fr / [logo] 4fr [text] 16fr [icons] 6fr;
+    padding: 8px 16px;
   }
 
   .contact2 .brand {
