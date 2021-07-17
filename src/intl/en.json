@@ -755,7 +755,8 @@
         }
       }
     },
-    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" }
+    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
+    "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" }
   },
 
   "bio": {

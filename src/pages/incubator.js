@@ -1,10 +1,12 @@
 import React from "react";
+import { useReducer, useState } from "react";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Contact from "../components/contact";
+import Contact from "../components/contact-2";
 import IncubatorCard from "../components/incubator-card";
 
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Container, Row, Button, Accordion, Card } from "react-bootstrap";
 import { FormattedMessage, injectIntl, intl } from "gatsby-plugin-intl";
 import styles from "./styles/incubator.module.css";
 import BookLaunch from "src/assets/images/career/ethcc2-book-launch.jpeg";
@@ -37,10 +39,13 @@ import Block5 from "src/assets/images/block/block5.png";
 import Block6 from "src/assets/images/block/block6.png";
 import Block7 from "src/assets/images/block/block7.png";
 import Block8 from "src/assets/images/block/block8.png";
+import Questions from "src/intl/en.json";
 
 import Play from "src/assets/svgs/play.svg";
 
 const Incubator = ({ intl }) => {
+  const [activeKey, setActiveKey] = useState(-1);
+
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "incubator.seo-title" })} />
@@ -145,15 +150,49 @@ const Incubator = ({ intl }) => {
             </div>
           </div>
         </section>
-
-        <section>
+        <section className="light">
           <Contact
             content={{
               title: intl.formatMessage({
-                id: "contact.title",
+                id: "incubator.section-contact.title",
               }),
+              bgColor: "#9013fe",
+              callToActionText: intl.formatMessage({ id: "incubator.section-contact.button-primary" }),
             }}
           />
+        </section>
+        <section className={styles.questions}>
+          <h1 className="text-center huge">Frequently Asked Questions</h1>
+          <div className="tab-content" id="v-pills-tabContent">
+            <Accordion activeKey={activeKey} className={styles.accordion} onSelect={(e) => setActiveKey(e)}>
+              {Object.entries(Questions.fellowship["section-faq"]).map((question, index) => (
+                <React.Fragment key={index}>
+                  <Card>
+                    <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={`key${index}`}>
+                      <span className={`${activeKey == `key${index}` ? styles.closed : styles.open}`}>
+                        <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
+                      </span>
+                    </Accordion.Toggle>
+                    <Accordion.Collapse eventKey={`key${index}`}>
+                      <Card.Body className={styles.cardBody}>
+                        <FormattedMessage
+                          id={`fellowship.section-faq.${index + 1}.a`}
+                          values={{
+                            anchor: (children) => (
+                              <a href="https://forms.gle/s6nND6jmKriNyDsR8" rel="noopener noreferrer" target="_blank">
+                                {children}
+                              </a>
+                            ),
+                          }}
+                        />
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                  <hr style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }} />
+                </React.Fragment>
+              ))}
+            </Accordion>
+          </div>
         </section>
       </div>
     </Layout>

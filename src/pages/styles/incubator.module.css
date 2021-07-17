@@ -131,3 +131,70 @@
 .incubator .where .images > div:nth-child(2) {
   grid-template-rows: repeat(3, min(33vw, 372px));
 }
+
+.incubator .questions {
+  background: linear-gradient(0deg, #1e075f 68.05%, #4d00b4 100%);
+  text-align: left;
+}
+
+.incubator .questions a {
+  font-size: var(--font-size-medium);
+}
+
+.incubator .questions a.active {
+  color: white;
+}
+
+.incubator .questions h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.incubator .accordion {
+  margin-top: 80px;
+}
+
+.incubator .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+}
+
+.incubator .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+
+.incubator .card-body {
+  padding-left: 0;
+}
+
+.incubator .card-header {
+  cursor: pointer;
+}
+
+.incubator .open::before,
+.incubator .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.incubator .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.incubator .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.incubator .card-body {
+  color: white;
+}
+
+.incubator .contact {
+  background-color: var(--color-purple);
+}
