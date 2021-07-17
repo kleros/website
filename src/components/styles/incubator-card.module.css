@@ -1,0 +1,57 @@
+.incubatorCard {
+  color: white;
+  border-radius: var(--border-radius);
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: left;
+  min-width: 250px;
+  width: 20%;
+  margin-top: 32px;
+}
+
+.incubatorCard > a {
+  min-height: 264px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex: 1;
+}
+
+.incubatorCard a:hover {
+  color: white !important;
+}
+
+.incubatorCard .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.incubatorCard .header svg {
+  width: 16px;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.incubatorCard .header svg > path {
+  fill: white;
+}
+
+.incubatorCard .department {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 300px;
+  width: fit-content;
+  padding: 8px 32px;
+  font-size: 14px;
+}
+
+.incubatorCard .department:after {
+}
+
+.incubatorCard .location {
+  margin-top: 16px;
+}

@@ -42,7 +42,7 @@ class Header extends React.Component {
     const { intl } = this.props;
     return (
       <header className={styles.header} id="header">
-        <Navbar collapseOnSelect expand="md" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark">
           <Link className="navbar-brand" to="/">
             <Logo className={styles.brand} />
           </Link>
@@ -74,7 +74,7 @@ class Header extends React.Component {
                 <FormattedMessage id="header.about" />
               </Link>
             </Nav>
-            <Media queries={{ notCollapsed: "(min-width: 768px)" }}>
+            <Media queries={{ notCollapsed: "(min-width: 992px)" }}>
               {(matches) =>
                 matches.notCollapsed ? (
                   <Nav style={{ justifyContent: "flex-end", width: "8rem" }}>
