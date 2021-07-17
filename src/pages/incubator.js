@@ -43,6 +43,8 @@ import Questions from "src/intl/en.json";
 
 import Play from "src/assets/svgs/play.svg";
 
+const applyNowHref = "https://docs.google.com/document/d/17qUlNz4FoipQgjv4FT_eexx0_AM7uYwF7IELZRPBsWM/edit";
+
 const Incubator = ({ intl }) => {
   const [activeKey, setActiveKey] = useState(-1);
 
@@ -57,9 +59,9 @@ const Incubator = ({ intl }) => {
           <h2>
             <FormattedMessage id="incubator.section-hero.h2" />
           </h2>
-          <Button href="#apply">
+          <a className="btn btn-primary" href={applyNowHref} target="_blank" rel="noopener noreferrer">
             <FormattedMessage id="incubator.section-hero.button-primary" />
-          </Button>
+          </a>
         </section>
         <section className={`light ${styles.apply}`}>
           <div className="iframe-container">
@@ -158,6 +160,7 @@ const Incubator = ({ intl }) => {
               }),
               bgColor: "#9013fe",
               callToActionText: intl.formatMessage({ id: "incubator.section-contact.button-primary" }),
+              callToActionHref: applyNowHref,
             }}
           />
         </section>

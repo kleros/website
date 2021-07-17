@@ -13,7 +13,7 @@ const Contact = ({ intl, content }) => (
       <span className="text">{content.title}</span>
     </div>
     <div className={styles.icons}>
-      <a className="btn btn-primary mt-0" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
+      <a className="btn btn-primary mt-0" href={content.callToActionHref} rel="noopener noreferrer" target="blank">
         {content.callToActionText}
       </a>
     </div>
