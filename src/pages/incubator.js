@@ -168,21 +168,36 @@ const Incubator = ({ intl }) => {
           <h1 className="text-center huge">Frequently Asked Questions</h1>
           <div className="tab-content" id="v-pills-tabContent">
             <Accordion activeKey={activeKey} className={styles.accordion} onSelect={(e) => setActiveKey(e)}>
-              {Object.entries(Questions.fellowship["section-faq"]).map((question, index) => (
+              {Object.entries(Questions.incubator["section-faq"]).map((question, index) => (
                 <React.Fragment key={index}>
-                  <Card>
+                  <Card style={{ whiteSpace: "pre-line" }}>
                     <Accordion.Toggle as={Card.Header} className={styles.cardHeader} eventKey={`key${index}`}>
                       <span className={`${activeKey == `key${index}` ? styles.closed : styles.open}`}>
-                        <FormattedMessage id={`fellowship.section-faq.${index + 1}.q`} />
+                        <FormattedMessage id={`incubator.section-faq.${index + 1}.q`} />
                       </span>
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey={`key${index}`}>
                       <Card.Body className={styles.cardBody}>
                         <FormattedMessage
-                          id={`fellowship.section-faq.${index + 1}.a`}
+                          id={`incubator.section-faq.${index + 1}.a`}
                           values={{
                             anchor: (children) => (
-                              <a href="https://forms.gle/s6nND6jmKriNyDsR8" rel="noopener noreferrer" target="_blank">
+                              <a href="https://theblock.cafe/" rel="noopener noreferrer" target="_blank">
+                                {children}
+                              </a>
+                            ),
+                            anchor1: (children) => (
+                              <a href="https://docs.google.com/document/d/17qUlNz4FoipQgjv4FT_eexx0_AM7uYwF7IELZRPBsWM/edit" rel="noopener noreferrer" target="_blank">
+                                {children}
+                              </a>
+                            ),
+                            anchor2: (children) => (
+                              <a href="https://kleros.io/book/" rel="noopener noreferrer" target="_blank">
+                                {children}
+                              </a>
+                            ),
+                            anchor3: (children) => (
+                              <a href="https://tokenlog.xyz/kleros/dapp-ideas" rel="noopener noreferrer" target="_blank">
                                 {children}
                               </a>
                             ),
