@@ -720,6 +720,79 @@
     },
     "section-positions": { "h1": "Open Positions", "h2": "Check our open positions and apply below." }
   },
+  "incubator": {
+    "seo-title": "Incubator",
+    "section-hero": { "h1": "Kleros Incubator", "h2": "A program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol.", "button-primary": "Apply Now" },
+    "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
+    "section-how-it-works": {
+      "h1": "How it Works",
+      "h2": "The program has a duration of 12 weeks during which participants have a number of workshops covering different of building a project in the blockchain indus.",
+      "div-learn": {
+        "title": "learn",
+        "items": {
+          "1": { "header": "Week 1", "body": "Welcome and Orientation" },
+          "2": { "header": "Week 2", "body": "Lean Canvas: Strategy Design" },
+          "3": { "header": "Week 3", "body": "User Interviews: Strategy Validation" },
+          "4": { "header": "Week 4", "body": "Prototyping" }
+        }
+      },
+      "div-build": {
+        "title": "build",
+        "items": {
+          "5": { "header": "Week 5", "body": "UX/UI for Web3" },
+          "6": { "header": "Week 6", "body": "Smart Contract Security (part 1)" },
+          "7": { "header": "Week 7", "body": "Smart Contract Security (part 2)" },
+          "8": { "header": "Week 8", "body": "Web3 Implementation" }
+        }
+      },
+      "div-grow": {
+        "title": "grow",
+        "items": {
+          "9": { "header": "Week 9", "body": "Marketing & Community Building" },
+          "10": { "header": "Week 10", "body": "Building an Investment Deck" },
+          "11": { "header": "Week 11", "body": "Fundraising Tactics and Legal" },
+          "12": { "header": "Week 12", "body": "Final Rehearsal & Demo Day" }
+        }
+      }
+    },
+    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
+    "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" },
+    "section-faq": {
+      "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
+      "2": {
+        "q": "What happens at the Kleros Incubator?",
+        "a": "Participants take part in a 3 month incubation program that helps them kickstart or grow their project. The incubation process is conducted <anchor>at the Block co-working space</anchor> in Lisbon and consists of a number of workshops including strategy, prototyping, smart contract security, marketing and fundraising. The program ends with a demo day where teams present their progress to a panel of investors and the wider community."
+      },
+      "3": {
+        "q": "How is the program structured?",
+        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
+      },
+      "4": { "q": "Because of XYZ reasons, we're unable to go to Lisbon. Can we participate in the program remotely?", "a": "There is a mandatory initial period of 1 month when the full team is expected to be in Lisbon. However, it is advised that " },
+      "5": {
+        "q": "Who can apply?",
+        "a": "Early stage teams building companies or projects connected to the Kleros protocol are welcome to apply. This includes arbitrable Dapps that could benefit from Kleros protocol in its escrow, curation and oracle use cases as well as companies that seek to foster the adoption of the Kleros protocol through other means."
+      },
+      "6": {
+        "q": "Where do I apply?",
+        "a": "The application process starts by filling <anchor1>this form</anchor1>. If you’re selected to the next stage, you will have an interview with the Kleros executive team to discuss your idea, the problem you’re solving, your value proposition, the team and your user acquisition strategy. The decision will be made after that interview."
+      },
+      "7": {
+        "q": "Where can I find some ideas about companies which could be based on Kleros?",
+        "a": "Chapter 6 of the <anchor2>Kleros Book</anchor2> discusses Kleros use cases in depth. You can find lots of inspiration here. Also feel free to use this <anchor3>online tool</anchor3> and to engage in discussions with members of the community in the Kleros Telegram group."
+      },
+      "8": { "q": "How much do you invest?", "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects." },
+      "9": { "q": "Who reviews the applications?", "a": "Different members of the Kleros team review the applications, including the founders." },
+      "10": { "q": "We've already raised funding. Can we still apply?", "a": "Yes." },
+      "11": {
+        "q": "We don't really need the money. Does it still make sense to apply?",
+        "a": "Funding is just a small part of what the Kleros Incubator can do for your project. The incubation process will also give you support in strategy, development, marketing and community building. So you are welcome to apply to the incubator."
+      },
+      "12": { "q": "I don’t have a team. Can I apply as a solo founder?", "a": "Yes." },
+      "13": { "q": "Can I apply more than once with the same idea?", "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch." }
+    },
+    "14": { "q": "Our team already participated in another incubator/accelerator, can we still apply?", "a": "Yes." },
+    "15": { "q": "What happens after the program ends?", "a": "Your team can relocate to wherever you feel more comfortable working. We will still count on the Coopérative Kleros for advice and support to make your project succeed." }
+  },
 
   "bio": {
     "section-main": "Download the Report",

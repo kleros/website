@@ -1,0 +1,201 @@
+.incubator .hero {
+  background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 00px, center center;
+  padding-bottom: 64px;
+}
+
+.incubator .mission {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 450px;
+
+  background: linear-gradient(10deg, transparent, transparent 49.8%, white 50%, white 50%) left top/50% auto no-repeat, linear-gradient(-10deg, transparent, transparent 49.8%, white 50%, white 50%) right top/50% auto no-repeat;
+  background-repeat: no-repeat;
+}
+
+.incubator .culture {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.incubator .sliders {
+  margin-top: 64px;
+}
+
+.incubator .sliders > div > div {
+  margin-bottom: 32px;
+}
+
+.incubator .culture > .images {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: calc(16px + 1vw);
+  position: relative;
+  font-size: min(11vw, 128px);
+}
+.incubator .culture > .images > div {
+  height: fit-content;
+  display: grid;
+  grid-row-gap: calc(8px + 1vw);
+}
+
+.incubator .culture > .images div.overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-purple-light);
+  opacity: 0.3;
+}
+
+.incubator .imageContainer {
+  position: relative;
+  width: auto;
+}
+
+.incubator .imageContainer:hover .overlay {
+}
+
+.incubator .team {
+  height: fit-content;
+  width: auto;
+  padding-top: 0;
+  margin-top: 128px;
+  background: linear-gradient(10deg, white 0, white 64.9%, var(--color-purple-darkest) 65%, var(--color-purple-darkest) 100%);
+}
+
+.incubator .positions {
+  background: linear-gradient(white 0, white 80%, var(--color-purple-darkest) 80%, var(--color-purple-darkest) 100%);
+}
+
+@media screen and (min-width: 600px) {
+  .incubator .hero {
+    background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 200px, center center;
+  }
+}
+
+.incubator .apply :global(.iframe-container) {
+  max-width: 1200px;
+  margin-bottom: 96px;
+}
+
+.incubator .decorator {
+  background: url("/decoration.png") repeat;
+  height: 142px;
+}
+
+.incubator .howItWorks .learn {
+  font-size: 32px;
+  color: var(--color-blue);
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+
+.incubator .howItWorks .build {
+  font-size: 32px;
+  color: var(--color-purple-light);
+  margin-bottom: 64px;
+}
+
+.incubator .howItWorks .grow {
+  font-size: 32px;
+  color: var(--color-purple);
+  margin-bottom: 64px;
+}
+
+.incubator .where .images {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: calc(16px + 1vw);
+  position: relative;
+  font-size: min(11vw, 128px);
+}
+
+.incubator .where > .images > div {
+  height: fit-content;
+  display: grid;
+  grid-row-gap: calc(8px + 1vw);
+}
+
+.incubator .where .images > div:first-child {
+  justify-self: end;
+  justify-items: end;
+  grid-template-rows: repeat(3, min(33vw, 372px));
+}
+
+.incubator .where .images > div:nth-child(2) {
+  grid-template-rows: repeat(3, min(33vw, 372px));
+}
+
+.incubator .questions {
+  background: linear-gradient(0deg, #1e075f 68.05%, #4d00b4 100%);
+  text-align: left;
+}
+
+.incubator .questions a {
+  font-size: var(--font-size-medium);
+}
+
+.incubator .questions a.active {
+  color: white;
+}
+
+.incubator .questions h2 {
+  color: white;
+  font-size: var(--font-size-bigger);
+}
+
+.incubator .accordion {
+  margin-top: 80px;
+}
+
+.incubator .accordion div {
+  background-color: transparent !important;
+  border: none;
+  font-size: var(--font-size-medium);
+}
+
+.incubator .accordion div.card-header {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-bold);
+  padding-left: 0;
+}
+
+.incubator .card-body {
+  padding-left: 0;
+}
+
+.incubator .card-header {
+  cursor: pointer;
+}
+
+.incubator .open::before,
+.incubator .closed::before {
+  color: var(--color-blue);
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+.incubator .open::before {
+  content: "+";
+  vertical-align: middle;
+}
+
+.incubator .closed::before {
+  content: "-";
+  vertical-align: sub;
+}
+
+.incubator .card-body {
+  color: white;
+}
+
+.incubator .contact {
+  background-color: var(--color-purple);
+}
