@@ -754,42 +754,41 @@
     "section-positions": { "h1": "职位空缺", "h2": "了解并申请我们的空缺职位." }
   },
   "incubator": {
-    "seo-title": "Incubator",
-    "section-hero": { "h1": "Kleros Incubator", "h2": "A program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol.", "button-primary": "Apply Now" },
-    "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
+    "section-hero": { "h1": "Kleros 孵化器", "h2": "由 Coopérative Kleros 主办的计划，为愿意创建与 Kleros 协议相关的项目或 Dapp 的团队提供系统集成和财务支持.", "button-primary": "现在申请" },
+    "section-apply": { "h1": "申请资格", "h2": "所有正在构建去中心化应用程序或其他工具以促进采用 Kleros 协议的团队均有资格申请." },
     "section-how-it-works": {
-      "h1": "How it Works",
-      "h2": "The program has a duration of 12 weeks during which participants have a number of workshops covering different aspects of building a project in the Blockchain industry.",
+      "h1": "孵化方式",
+      "h2": "该计划的持续时间为 12 周，在此期间，参与者将通过工作坊的方式构建具有各自特色的区块链项目.",
       "div-learn": {
-        "title": "learn",
+        "title": "学习",
         "items": {
-          "1": { "header": "Week 1", "body": "Welcome and Orientation" },
-          "2": { "header": "Week 2", "body": "Lean Canvas: Strategy Design" },
-          "3": { "header": "Week 3", "body": "User Interviews: Strategy Validation" },
-          "4": { "header": "Week 4", "body": "Prototyping" }
+          "1": { "header": "第一周", "body": "欢迎和介绍" },
+          "2": { "header": "第二周", "body": "精益画布：战略设计" },
+          "3": { "header": "第三周", "body": "用户采访: 战略验证" },
+          "4": { "header": "第四周", "body": "原型构建" }
         }
       },
       "div-build": {
-        "title": "build",
+        "title": "构建",
         "items": {
-          "5": { "header": "Week 5", "body": "UX/UI for Web3" },
-          "6": { "header": "Week 6", "body": "Smart Contract Security (part 1)" },
-          "7": { "header": "Week 7", "body": "Smart Contract Security (part 2)" },
-          "8": { "header": "Week 8", "body": "Web3 Implementation" }
+          "5": { "header": "第五周", "body": "构建Web3用户界面" },
+          "6": { "header": "第六周", "body": "智能合约的安全性(part 1)" },
+          "7": { "header": "第七周", "body": "智能合约的安全性 (part 2)" },
+          "8": { "header": "第八周", "body": "Web3的执行部署" }
         }
       },
       "div-grow": {
-        "title": "grow",
+        "title": "发展",
         "items": {
-          "9": { "header": "Week 9", "body": "Marketing & Community Building" },
-          "10": { "header": "Week 10", "body": "Building an Investment Deck" },
-          "11": { "header": "Week 11", "body": "Fundraising Tactics and Legal" },
-          "12": { "header": "Week 12", "body": "Final Rehearsal & Demo Day" }
+          "9": { "header": "第九周", "body": "市场及社区建设" },
+          "10": { "header": "第十周", "body": "构建投资平台" },
+          "11": { "header": "第十一周", "body": "筹款策略和法规" },
+          "12": { "header": "第十二周", "body": "排练和演示日" }
         }
       }
     },
-    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
-    "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" },
+    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. :flag-pt:", "button-primary": "现在申请" },
+    "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
     "section-faq": {
       "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
       "2": {
