@@ -24,6 +24,7 @@
     "governance": "治理",
     "escrow": "托管",
     "curate": "列表",
+    "incubator": "孵化器",
     "fellowship": "研究会",
     "community": "社区",
     "blog": "博客",
@@ -755,6 +756,7 @@
     "section-positions": { "h1": "职位空缺", "h2": "了解并申请我们的空缺职位." }
   },
   "incubator": {
+    "seo-title": "孵化器",
     "section-hero": { "h1": "Kleros 孵化器", "h2": "由 Coopérative Kleros 主办的计划，为愿意创建与 Kleros 协议相关的项目或 Dapp 的团队提供系统集成和财务支持.", "button-primary": "现在申请" },
     "section-apply": { "h1": "申请资格", "h2": "所有正在构建去中心化应用程序或其他工具以促进采用 Kleros 协议的团队均有资格申请." },
     "section-how-it-works": {
@@ -788,7 +790,7 @@
         }
       }
     },
-    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. :flag-pt:", "button-primary": "现在申请" },
+    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. 🇵🇹", "button-primary": "现在申请" },
     "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
     "section-faq": {
       "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
