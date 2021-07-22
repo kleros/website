@@ -65,7 +65,7 @@ const Incubator = ({ intl }) => {
         </section>
         <section className={`light ${styles.apply}`}>
           <div className="iframe-container">
-            <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://youtu.be/8E44eZOvvvU" width="560" />
+            <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/8E44eZOvvvU" width="560" />
           </div>
           <h1>
             <FormattedMessage id="incubator.section-apply.h1" />
