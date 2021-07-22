@@ -763,42 +763,92 @@
     }
   },
   "incubator": {
-    "seo-title": "Incubator",
-    "section-hero": { "h1": "Kleros Incubator", "h2": "A program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol.", "button-primary": "Apply Now" },
-    "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
+    "seo-title": "Encubadora",
+    "section-hero": {
+      "h1": "Encubadora Kleros",
+      "h2": "Um programa organizado pela Coopérative Kleros que provê um espaço físico e suporte financeiro para times que desejam criar projetos ou Dapps conectados ao protocolo Kleros.",
+      "button-primary": "Inscreva-se Agora"
+    },
+    "section-apply": {
+      "h1": "Quem Pode Se Inscrever",
+      "h2": "Times que estão criando aplicações descentralizadas ou outras ferraments que irão fomentar a adoção do protocolo Kleros."
+    },
     "section-how-it-works": {
-      "h1": "How it Works",
-      "h2": "The program has a duration of 12 weeks during which participants have a number of workshops covering different aspects of building a project in the Blockchain industry.",
+      "h1": "Como Funciona",
+      "h2": "O programa tem a duração de 12 semanas, durante as quais os times participam de workshops cobrindo os diferentes aspectos da construção de um projeto na indústria de Blockchain.",
       "div-learn": {
-        "title": "learn",
+        "title": "aprenda",
         "items": {
-          "1": { "header": "Week 1", "body": "Welcome and Orientation" },
-          "2": { "header": "Week 2", "body": "Lean Canvas: Strategy Design" },
-          "3": { "header": "Week 3", "body": "User Interviews: Strategy Validation" },
-          "4": { "header": "Week 4", "body": "Prototyping" }
+          "1": {
+            "header": "Semana 1",
+            "body": "Boas-Vindas e Orientação"
+          },
+          "2": {
+            "header": "Semana 2",
+            "body": "Lean Canvas: Design da Estratégia"
+          },
+          "3": {
+            "header": "Semana 3",
+            "body": "Entrevistas com Usuários: Validação da Estratégia"
+          },
+          "4": {
+            "header": "Semana 4",
+            "body": "Prototipação"
+          }
         }
       },
       "div-build": {
-        "title": "build",
+        "title": "crie",
         "items": {
-          "5": { "header": "Week 5", "body": "UX/UI for Web3" },
-          "6": { "header": "Week 6", "body": "Smart Contract Security (part 1)" },
-          "7": { "header": "Week 7", "body": "Smart Contract Security (part 2)" },
-          "8": { "header": "Week 8", "body": "Web3 Implementation" }
+          "5": {
+            "header": "Semana 5",
+            "body": "UX/UI para Web3"
+          },
+          "6": {
+            "header": "Semana 6",
+            "body": "Segurança de Smart Contracts (parte 1)"
+          },
+          "7": {
+            "header": "Semana 7",
+            "body": "Segurança de Smart Contracts (parte 2)"
+          },
+          "8": {
+            "header": "Semana 8",
+            "body": "Implementação na Web3"
+          }
         }
       },
       "div-grow": {
-        "title": "grow",
+        "title": "cresça",
         "items": {
-          "9": { "header": "Week 9", "body": "Marketing & Community Building" },
-          "10": { "header": "Week 10", "body": "Building an Investment Deck" },
-          "11": { "header": "Week 11", "body": "Fundraising Tactics and Legal" },
-          "12": { "header": "Week 12", "body": "Final Rehearsal & Demo Day" }
+          "9": {
+            "header": "Semana 9",
+            "body": "Marketing & Construção de uma Comunidade"
+          },
+          "10": {
+            "header": "Semana 10",
+            "body": "Criando um Pitch para Investidores"
+          },
+          "11": {
+            "header": "Semana 11",
+            "body": "Táticas e Aspectos Legais de Captação de Recursos"
+          },
+          "12": {
+            "header": "Semana 12",
+            "body": "Ensaio Final & Demo"
+          }
         }
       }
     },
-    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
-    "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" },
+    "section-where": {
+      "h1": "Onde Acontece",
+      "h2": "O programa de encubação acontece no The Block, um espaço de co-working na linda cidade de Lisboa. 🇵🇹",
+      "button-primary": "Inscreva-se Agora"
+    },
+    "section-contact": {
+      "title": "Seja parte da revolução da justiça!",
+      "button-primary": "Inscreva-se Agora"
+    },
     "section-faq": {
       "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
       "2": {

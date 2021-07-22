@@ -43,7 +43,7 @@ import Questions from "src/intl/en.json";
 
 import Play from "src/assets/svgs/play.svg";
 
-const applyNowHref = "https://docs.google.com/document/d/17qUlNz4FoipQgjv4FT_eexx0_AM7uYwF7IELZRPBsWM/edit";
+const applyNowHref = "https://forms.gle/kuFz5EgoRVG3DogSA";
 
 const Incubator = ({ intl }) => {
   const [activeKey, setActiveKey] = useState(-1);
@@ -65,7 +65,7 @@ const Incubator = ({ intl }) => {
         </section>
         <section className={`light ${styles.apply}`}>
           <div className="iframe-container">
-            <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/wZZ2ipS-jZw" width="560" />
+            <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/8E44eZOvvvU" width="560" />
           </div>
           <h1>
             <FormattedMessage id="incubator.section-apply.h1" />
