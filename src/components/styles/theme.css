@@ -152,20 +152,10 @@ footer .btn {
   background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
 }
 
-.btn-primary:hover {
-  box-shadow: 0px 12px 90px var(--color-blue);
-  background: linear-gradient(270deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
-}
-
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:focus {
   background: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
-}
-
-.btn-secondary:hover {
-  box-shadow: 0px 12px 90px var(--color-purple-light);
-  background: linear-gradient(270deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
 }
 
 hr {
@@ -191,7 +181,7 @@ section.integrations {
 }
 
 section.light {
-  background-color: white;
+  background-color: white !important;
 }
 
 input {

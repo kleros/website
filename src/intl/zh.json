@@ -24,6 +24,7 @@
     "governance": "治理",
     "escrow": "托管",
     "curate": "列表",
+    "incubator": "孵化器",
     "fellowship": "研究会",
     "community": "社区",
     "blog": "博客",
@@ -37,7 +38,8 @@
     "subscribe-button": "提交",
     "button-primary": "加入成为待选陪审员",
     "button-secondary": "成为合作伙伴",
-    "copyright": "版权"
+    "copyright": "版权",
+    "career": "职业"
   },
 
   "index": {
@@ -752,6 +754,78 @@
       }
     },
     "section-positions": { "h1": "职位空缺", "h2": "了解并申请我们的空缺职位." }
+  },
+  "incubator": {
+    "seo-title": "孵化器",
+    "section-hero": { "h1": "Kleros 孵化器", "h2": "由 Coopérative Kleros 主办的计划，为愿意创建与 Kleros 协议相关的项目或 Dapp 的团队提供系统集成和财务支持.", "button-primary": "现在申请" },
+    "section-apply": { "h1": "申请资格", "h2": "所有正在构建去中心化应用程序或其他工具以促进采用 Kleros 协议的团队均有资格申请." },
+    "section-how-it-works": {
+      "h1": "孵化方式",
+      "h2": "该计划的持续时间为 12 周，在此期间，参与者将通过工作坊的方式构建具有各自特色的区块链项目.",
+      "div-learn": {
+        "title": "学习",
+        "items": {
+          "1": { "header": "第一周", "body": "欢迎和介绍" },
+          "2": { "header": "第二周", "body": "精益画布：战略设计" },
+          "3": { "header": "第三周", "body": "用户采访: 战略验证" },
+          "4": { "header": "第四周", "body": "原型构建" }
+        }
+      },
+      "div-build": {
+        "title": "构建",
+        "items": {
+          "5": { "header": "第五周", "body": "构建Web3用户界面" },
+          "6": { "header": "第六周", "body": "智能合约的安全性(part 1)" },
+          "7": { "header": "第七周", "body": "智能合约的安全性 (part 2)" },
+          "8": { "header": "第八周", "body": "Web3的执行部署" }
+        }
+      },
+      "div-grow": {
+        "title": "发展",
+        "items": {
+          "9": { "header": "第九周", "body": "市场及社区建设" },
+          "10": { "header": "第十周", "body": "构建投资平台" },
+          "11": { "header": "第十一周", "body": "筹款策略和法规" },
+          "12": { "header": "第十二周", "body": "排练和演示日" }
+        }
+      }
+    },
+    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. 🇵🇹", "button-primary": "现在申请" },
+    "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
+    "section-faq": {
+      "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
+      "2": {
+        "q": "What happens at the Kleros Incubator?",
+        "a": "Participants take part in a 3 month incubation program that helps them kickstart or grow their project. The incubation process is conducted <anchor>at the Block co-working space</anchor> in Lisbon and consists of a number of workshops including strategy, prototyping, smart contract security, marketing and fundraising. The program ends with a demo day where teams present their progress to a panel of investors and the wider community."
+      },
+      "3": {
+        "q": "How is the program structured?",
+        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
+      },
+      "4": {
+        "q": "Who can apply?",
+        "a": "Early stage teams building companies or projects connected to the Kleros protocol are welcome to apply. This includes arbitrable Dapps that could benefit from Kleros protocol in its escrow, curation and oracle use cases as well as companies that seek to foster the adoption of the Kleros protocol through other means."
+      },
+      "5": {
+        "q": "Where do I apply?",
+        "a": "The application process starts by filling <anchor1>this form</anchor1>. If you’re selected to the next stage, you will have an interview with the Kleros executive team to discuss your idea, the problem you’re solving, your value proposition, the team and your user acquisition strategy. The decision will be made after that interview."
+      },
+      "6": {
+        "q": "Where can I find some ideas about companies which could be based on Kleros?",
+        "a": "Chapter 6 of the <anchor2>Kleros Book</anchor2> discusses Kleros use cases in depth. You can find lots of inspiration here. Also feel free to use this <anchor3>online tool</anchor3> and to engage in discussions with members of the community in the Kleros Telegram group."
+      },
+      "7": { "q": "How much do you invest?", "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects." },
+      "8": { "q": "Who reviews the applications?", "a": "Different members of the Kleros team review the applications, including the founders." },
+      "9": { "q": "We've already raised funding. Can we still apply?", "a": "Yes." },
+      "10": {
+        "q": "We don't really need the money. Does it still make sense to apply?",
+        "a": "Funding is just a small part of what the Kleros Incubator can do for your project. The incubation process will also give you support in strategy, development, marketing and community building. So you are welcome to apply to the incubator."
+      },
+      "11": { "q": "I don’t have a team. Can I apply as a solo founder?", "a": "Yes." },
+      "12": { "q": "Can I apply more than once with the same idea?", "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch." },
+      "13": { "q": "Our team already participated in another incubator/accelerator, can we still apply?", "a": "Yes." },
+      "14": { "q": "What happens after the program ends?", "a": "Your team can relocate to wherever you feel more comfortable working. We will still count on the Coopérative Kleros for advice and support to make your project succeed." }
+    }
   },
 
   "bio": {
