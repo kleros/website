@@ -43,8 +43,18 @@
   width: auto;
 }
 
-.header .usecases div {
+.header .usecases div,
+.header .research div,
+.header .governance div,
+.header .docs div,
+.header .about div {
   background-color: white !important;
+}
+
+.header .usecases div a,
+.header .research div a,
+.header .governance div a {
+  color: var(--color-gray) !important;
 }
 
 .header .productsTitle {

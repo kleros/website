@@ -21,6 +21,19 @@ import RU from "src/assets/svgs/flags/ru.svg";
 import TR from "src/assets/svgs/flags/tr.svg";
 import ZH from "src/assets/svgs/flags/cn.svg";
 
+import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
+import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
+import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
+import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf";
+import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
+import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
+import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
+import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
+import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
+import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
+import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
+import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+
 import Court from "../assets/svgs/kleros.svg";
 import Escrow from "../assets/svgs/escrow.svg";
 import T2CR from "../assets/svgs/t2cr.svg";
@@ -54,6 +67,27 @@ const FLAGS = {
   zh: <ZH />,
 };
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
+
+const ONEPAGERS = {
+  en: OnePagerEN,
+  es: OnePagerES,
+  fr: OnePagerFR,
+  ko: OnePagerKO,
+  pt: OnePagerPT,
+  ru: OnePagerRU,
+  tr: OnePagerTR,
+  zh: OnePagerZH,
+};
+
+const WHITE_PAPERS = {
+  en: WhitePaperEN,
+  es: WhitePaperES,
+  zh: WhitePaperZH,
+};
+
+const YELLOW_PAPERS = {
+  en: YellowPaperEN,
+};
 
 const products = [
   { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: POH, target: "_blank" },
@@ -103,33 +137,95 @@ class Header extends React.Component {
               <Button aria-controls="#products" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#products" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.dapps" />
               </Button>
-              <Button aria-controls="#services" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#services" data-toggle="collapse" variant="outline-*">
-                <FormattedMessage id="header.services" />
-              </Button>
+
               <NavDropdown title="Usecases" id="usecases" className={styles.usecases}>
-                <NavDropdown.Link eventKey="4.1">Escrow</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.2">Governance</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.3">Curation</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.4">Oracle</NavDropdown.Item>
+                <Link className="dropdown-item" to="/escrow">
+                  <FormattedMessage id="footer.escrow" />
+                </Link>
+                <Link className="d-none dropdown-item" to="/governance">
+                  <FormattedMessage id="footer.governance" />
+                </Link>
+                <Link className="dropdown-item" to="/curate">
+                  <FormattedMessage id="header.curation" />
+                </Link>
+                <Link className="d-none dropdown-item" to="/oracle">
+                  <FormattedMessage id="header.oracle" />
+                </Link>
               </NavDropdown>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
               </Link>
-              <Link className="nav-link" to="/research">
-                <FormattedMessage id="header.research" />
-              </Link>
-              <Nav.Link className="nav-link" href="https://blog.kleros.io" target="_blank" rel="noopener noreferrer">
-                <FormattedMessage id="header.blog" />
-              </Nav.Link>
-              <Nav.Link className="nav-link" href="https://kleros.gitbook.io" target="_blank" rel="noopener noreferrer">
-                <FormattedMessage id="header.docs" />
-              </Nav.Link>
-              <Nav.Link className="nav-link" href={`${STORE_URLS[intl.locale] || STORE_URLS.en}store/kleros`} target="_blank" rel="noopener noreferrer">
-                <FormattedMessage id="header.store" />
-              </Nav.Link>
-              <Link className="nav-link" to="/about">
-                <FormattedMessage id="header.about" />
-              </Link>
+              <NavDropdown title="R&D" id="research" className={styles.research}>
+                <Link className="dropdown-item" to="/research">
+                  <FormattedMessage id="header.research" />
+                </Link>
+                <Link className="dropdown-item" to="/fellowship">
+                  <FormattedMessage id="footer.fellowship" />
+                </Link>
+                <Link className="dropdown-item" to="/incubator">
+                  <FormattedMessage id="footer.incubator" />
+                </Link>
+              </NavDropdown>
+              <NavDropdown title="Governance" id="governance" className={styles.governance}>
+                <Link className="dropdown-item" to="/token">
+                  <FormattedMessage id="footer.pnktoken" />
+                </Link>
+                <NavDropdown.Item href="https://forum.kleros.io" target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="header.forum" />
+                </NavDropdown.Item>
+                <NavDropdown.Item href="https://snapshot.org/#/kleros" target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="header.voting" />
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Docs" id="docs" className={styles.docs}>
+                <NavDropdown.Item href="https://kleros.gitbook.io/docs/" target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="footer.developer" />
+                </NavDropdown.Item>
+                <a className="dropdown-item" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]}>
+                  <FormattedMessage id="footer.whitepaper" />
+                </a>
+                <a className="dropdown-item" href="yellowpaper.pdf" rel="noopener noreferrer" target="_blank">
+                  <FormattedMessage id="footer.yellowpaper" />
+                </a>
+                <a className="dropdown-item" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+                  <FormattedMessage id="footer.onepager" />
+                </a>
+                <a className="dropdown-item" href="https://kleros.io/KlerosBrandAssets.zip" target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="footer.brand-assets" />
+                </a>
+              </NavDropdown>
+              <NavDropdown title="About" id="about" className={styles.about}>
+                <Link className="dropdown-item" to="/about">
+                  <FormattedMessage id="footer.about" />
+                </Link>
+                <NavDropdown.Item href="https://blog.kleros.io" target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="footer.blog" />
+                </NavDropdown.Item>
+                <Link className="dropdown-item" to="/book">
+                  <FormattedMessage id="footer.book" />
+                </Link>
+                <Link className="dropdown-item" to="/career">
+                  <FormattedMessage id="footer.career" />
+                </Link>
+                <Link className="dropdown-item" to="/coop">
+                  <FormattedMessage id="footer.cooperative" />
+                </Link>
+                <Link className="dropdown-item" to="/community">
+                  <FormattedMessage id="footer.community" />
+                </Link>
+
+                <Link className="dropdown-item" to="/faq">
+                  <FormattedMessage id="footer.faq" />
+                </Link>
+
+                <Link className="dropdown-item" to="/media">
+                  <FormattedMessage id="footer.media" />
+                </Link>
+
+                <NavDropdown.Item href={`${STORE_URLS[intl.locale] || STORE_URLS.en}store/kleros`} target="_blank" rel="noopener noreferrer">
+                  <FormattedMessage id="header.store" />
+                </NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Media queries={{ notCollapsed: "(min-width: 992px)" }}>
               {(matches) =>
