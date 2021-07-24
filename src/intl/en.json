@@ -10,7 +10,9 @@
     "store": "Store",
     "docs": "Docs",
     "about": "About",
-    "curation": "Curation"
+    "curation": "Curation",
+    "forum": "Forum",
+    "voting": "Voting"
   },
 
   "footer": {

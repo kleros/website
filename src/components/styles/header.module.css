@@ -19,7 +19,7 @@
 }
 
 .header .productsCard :global(.card-body) > div:first-child {
-  margin-right: 80px;
+  margin-right: 120px;
 }
 
 .header .productsCard :global(.card-header) {
@@ -49,6 +49,10 @@
 .header .docs div,
 .header .about div {
   background-color: white !important;
+}
+
+.header :global(.dropdown-toggle)::after {
+  vertical-align: middle;
 }
 
 .header .usecases div a,

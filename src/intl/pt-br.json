@@ -1,6 +1,7 @@
 {
   "header": {
     "dapps": "DApps",
+    "dapps-header": "Dapps conectado a Kleros",
     "services": "Casos de uso",
     "dapps-title": "Nossos Produtos & Integrações",
     "integrations": "Integrações",
@@ -8,7 +9,10 @@
     "blog": "Blog",
     "store": "Loja",
     "docs": "Docs",
-    "about": "Sobre"
+    "about": "Sobre",
+    "curation": "Curadoria",
+    "forum": "Fórum",
+    "voting": "Votação"
   },
   "footer": {
     "about": "Sobre",
@@ -36,7 +40,9 @@
     "subscribe-button": "Assinar",
     "button-primary": "Seja um Jurado",
     "button-secondary": "Torne-se um Parceiro",
-    "copyright": "Copyright"
+    "copyright": "Copyright",
+    "career": "Carreira",
+    "incubator": "Incubadora"
   },
   "productDescriptions": {
     "Court": "Jurados se juntam às cortes e decidem disputas aqui.",
