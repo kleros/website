@@ -187,7 +187,7 @@ const Incubator = ({ intl }) => {
                               </a>
                             ),
                             anchor1: (children) => (
-                              <a href="https://docs.google.com/document/d/17qUlNz4FoipQgjv4FT_eexx0_AM7uYwF7IELZRPBsWM/edit" rel="noopener noreferrer" target="_blank">
+                              <a href={applyNowHref} rel="noopener noreferrer" target="_blank">
                                 {children}
                               </a>
                             ),
