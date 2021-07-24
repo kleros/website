@@ -1,14 +1,18 @@
 {
   "header": {
-    "dapps": "应用",
-    "services": "服务",
+    "dapps": "DApps",
+    "dapps-header": "连接到 Kleros 的 Dapps",
+    "services": "用例",
     "dapps-title": "我们的产品和系统集成",
     "integrations": "集成",
     "research": "研究",
     "blog": "博客",
     "store": "商店",
     "docs": "文档",
-    "about": "关于我们"
+    "about": "关于我们",
+    "curation": "策展",
+    "forum": "论坛",
+    "voting": "表决"
   },
 
   "footer": {

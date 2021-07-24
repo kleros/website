@@ -1,3 +1,7 @@
+/* Tried my best there to standardize colors, font-sizes and such but there are irregularities
+   scattered all over the repo because the actual visual design output was lacking a standardization.
+   So, expect to see non-standard values.
+ */
 :root {
   font-size: 14px;
   --font-weight-normal: 400;

@@ -1,14 +1,18 @@
 {
   "header": {
-    "dapps": "Products",
-    "services": "Services",
+    "dapps": "DApps",
+    "services": "Usecases",
+    "dapps-header": "Dapps connected to Kleros",
     "dapps-title": "Our Products & Integrations",
     "integrations": "Integrations",
     "research": "Research",
     "blog": "Blog",
     "store": "Store",
     "docs": "Docs",
-    "about": "About"
+    "about": "About",
+    "curation": "Curation",
+    "forum": "Forum",
+    "voting": "Voting"
   },
 
   "footer": {
