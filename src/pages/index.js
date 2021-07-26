@@ -6,9 +6,11 @@ import Sponsors from "src/components/sponsors";
 
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
+import CardHighlight from "../components/card-highlight";
+
 import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
-import { Badge, Col, Container, Row, Spinner } from "react-bootstrap";
+import { Badge, Col, Container, Row, Spinner, Button } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import OmenSVG from "src/assets/svgs/omen_logo.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi-bw.png";
@@ -29,6 +31,7 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import Resolver from "../assets/svgs/dispute-resolver.svg";
 import Ninja from "../assets/svgs/ninja.svg";
 import Linguo from "../assets/svgs/linguo.svg";
+import Play from "src/assets/svgs/play.svg";
 import Revoke from "../assets/svgs/revoke.svg";
 import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
 import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
@@ -268,6 +271,9 @@ class IndexPage extends React.Component {
               <Link className="btn btn-secondary" to="/integrations">
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
+              <a className={styles.playButton} href="https://court.kleros.io" rel="noopener noreferrer" target="blank" style={{ height: "54px", marginTop: "1.5rem" }}>
+                <Play />
+              </a>
             </Container>
           </section>
           <section className="light">
