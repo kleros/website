@@ -11,7 +11,7 @@
 
 .sash figcaption {
   color: var(--color-gray);
-  padding-top: 2.2rem;
+  padding-top: 44px;
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
 }
@@ -26,9 +26,11 @@
 }
 
 .sash figure > svg {
-  max-width: 12rem;
+  max-width: 126px;
 }
 
 .sash .column {
-  padding: 2rem 2vmax;
+  border: 1px solid #e5e5e5;
+  border-radius: var(--border-radius);
+  max-width: 500px;
 }

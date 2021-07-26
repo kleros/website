@@ -134,7 +134,7 @@ class Header extends React.Component {
               <Nav.Link className="nav-link" href="https://court.kleros.io" target="_blank" rel="noopener noreferrer">
                 Court
               </Nav.Link>
-              <Button aria-controls="#products" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 collapsed" data-target="#products" data-toggle="collapse" variant="outline-*">
+              <Button aria-controls="#products" type="button" aria-expanded="false" className="position-relative px-lg-2 pl-0 pt-1 collapsed" data-target="#products" data-toggle="collapse" variant="outline-*">
                 <FormattedMessage id="header.dapps" />
               </Button>
 
