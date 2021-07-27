@@ -56,5 +56,6 @@ $spacers: map-merge(
   $spacers
 );
 
-$input-btn-padding-y: 0.75rem;
+$input-btn-padding-y: 0.71875rem; // 11.5 px when 16 px font size.
 $input-btn-padding-x: 2rem;
+$btn-line-height: 22px;

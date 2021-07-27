@@ -144,13 +144,13 @@ footer .btn {
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus {
-  background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-blue-light) 100%);
+  background: var(--color-blue);
 }
 
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background: linear-gradient(90deg, var(--color-purple-light) 0%, var(--color-pink-light) 100%);
+  background: var(--color-purple-light);
 }
 
 hr {
@@ -206,4 +206,9 @@ input::placeholder {
 
 *:focus {
   outline: none;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  filter: gray;
 }

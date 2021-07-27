@@ -15,24 +15,21 @@
 .sponsors div:first-of-type svg {
 }
 
+.sponsors .eu {
+}
+
 .sponsors div {
   align-self: flex-end;
 }
 .sponsors .reuters {
   padding: 0;
-  filter: grayscale(100%);
-  filter: gray;
 }
 
 .sponsors .reuters path {
-  fill: white;
 }
 
 .sponsors .bpi {
   verticalalign: middle;
-  "-webkit-filter":grayscale(100%) ;
-  filter: grayscale(100%);
-  filter: gray;
 
   padding: 1rem;
 }

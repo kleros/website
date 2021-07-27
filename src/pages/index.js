@@ -12,15 +12,15 @@ import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
 import { Badge, Col, Container, Row, Spinner, Button } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
-import OmenSVG from "src/assets/svgs/omen_logo.svg";
-import Deversifi from "src/assets/images/third-party-logos/deversifi-bw.png";
-import Union from "src/assets/svgs/union.svg";
-import DemocracyEarth from "src/assets/images/third-party-logos/democracy_earth_logo.png";
-import Unslashed from "src/assets/images/third-party-logos/unslashed.png";
-import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets.png";
+import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
+import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
+import Union from "src/assets/svgs/third-party-logos/union/logo.svg";
+import DemocracyEarth from "src/assets/images/third-party-logos/democracy/vertical.png";
+import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
+import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
-import API3 from "src/assets/images/third-party-logos/api3_mono.png";
-import Uniswap from "src/assets/svgs/uniswap_logo.svg";
+import API3 from "src/assets/images/third-party-logos/api3/dark.png";
+import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
 import styles from "./styles/index.module.css";
 import Court from "../assets/svgs/kleros.svg";
 import RightArrow from "../assets/svgs/right-arrow.svg";
@@ -271,7 +271,7 @@ class IndexPage extends React.Component {
               <Link className="btn btn-secondary" to="/integrations">
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
-              <a className={styles.playButton} href="https://court.kleros.io" rel="noopener noreferrer" target="blank" style={{ height: "54px", marginTop: "1.5rem" }}>
+              <a className={styles.playButton} href="https://court.kleros.io" rel="noopener noreferrer" target="blank" style={{ height: "45px", marginTop: "1.5rem" }}>
                 <Play />
               </a>
             </Container>
@@ -310,7 +310,7 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-          <section className={styles.partners}>
+          <section className={`light pt-0 ${styles.partners}`}>
             <h2>
               <FormattedMessage id="about.section-5" />
             </h2>
@@ -330,7 +330,7 @@ class IndexPage extends React.Component {
             </a>
 
             <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-              <img src={DemocracyEarth} alt="DemocracyEarth" />
+              <img src={DemocracyEarth} alt="DemocracyEarth" style={{ maxHeight: "240px" }} />
             </a>
             <a href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
               <Gnosis />
@@ -339,16 +339,12 @@ class IndexPage extends React.Component {
               <img src={API3} alt="API3" />
             </a>
             <a href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
-              <img src={Unslashed} alt="Unslashed" />
+              <Unslashed />
             </a>
             <a href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
-              <img src={Polkamarkets} alt="Polkamarkets" />
+              <Polkamarkets />
             </a>
           </section>
-          <section className="light">
-            <img src={ProductsIllustration} style={{}} />
-          </section>
-          <Sponsors />
 
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>
@@ -394,13 +390,8 @@ class IndexPage extends React.Component {
               </div>
             </section>
           )}
-          <section className={styles.usecases}>
-            <div className="iframe-container">
-              <iframe title="Kleros Explainer" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen frameBorder="0" height="315" src="https://www.youtube.com/embed/wZZ2ipS-jZw" width="560" />
-            </div>
-          </section>
-          <hr />
-          <section>
+
+          <section className="light">
             <h1>{intl.formatMessage({ id: "index.section-use-case.h1" })}</h1>
             <h2>{intl.formatMessage({ id: "index.section-use-case.h2" })}</h2>
             <div className={styles.cards}>
@@ -460,13 +451,8 @@ class IndexPage extends React.Component {
               />
             </div>
           </section>
-          <section>
-            <h1>{intl.formatMessage({ id: "index.section-3.h1" })}</h1>
-            <h2>{intl.formatMessage({ id: "index.section-3.h2" })}</h2>
-            {CASESDISPUTES[intl.locale]}
-          </section>
 
-          <section>
+          <section className="light">
             <h1 className="mb-5">
               <FormattedMessage id="index.section-4.title" />
             </h1>
@@ -515,8 +501,7 @@ class IndexPage extends React.Component {
               </Row>
             </Container>
           </section>
-          <hr />
-          <section>
+          <section className="light">
             <Contact
               content={{
                 title: intl.formatMessage({
@@ -525,6 +510,7 @@ class IndexPage extends React.Component {
               }}
             />
           </section>
+          <Sponsors variant="light" />
         </Container>
       </Layout>
     );
