@@ -13,9 +13,6 @@ const Contact = ({ intl, content }) => (
       <span className="text">{content.title}</span>
     </div>
     <div className={styles.icons}>
-      <a href="https://t.me/kleros" rel="noopener noreferrer" target="blank">
-        <Telegram />
-      </a>
       <a href="mailto:contact@kleros.io" rel="noopener noreferrer" target="blank">
         <Email />
       </a>

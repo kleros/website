@@ -1,5 +1,4 @@
 .verticalCard {
-  background: var(--color-purple-faded);
   border-radius: 12px;
   text-align: left;
   padding: 2.6rem;
@@ -7,7 +6,8 @@
   height: 100%;
   overflow: auto;
   text-align: center;
-  border-radius: 37.3588px;
+  border: 1px solid #e5e5e5;
+  border-radius: var(--border-radius);
 }
 .verticalCard img {
   width: 12rem;
@@ -28,14 +28,14 @@
 
 .verticalCard .title {
   font-size: var(--font-size-bigger);
-  color: white;
+  color: var(--color-gray);
   font-weight: var(--font-weight-bold);
   display: block;
 }
 
 .verticalCard .paragraph {
   font-size: var(--font-size-medium);
-  color: var(--color-pink);
+  color: var(--color-gray-light);
   display: block;
   margin-bottom: 3rem;
 }
