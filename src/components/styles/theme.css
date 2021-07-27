@@ -181,7 +181,7 @@ section.integrations {
 }
 
 section.light {
-  background-color: white !important;
+  background-color: white;
 }
 
 input {
