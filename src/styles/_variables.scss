@@ -1,0 +1,61 @@
+/* Override boostrap variables here */
+
+$text-primary: rgba(0, 0, 0, 0.85);
+$text-secondary: rgba(0, 0, 0, 0.45);
+$stroke: #ccc;
+$grey-light: #fafafa;
+$grey-dark: #6c6c6c;
+$orange: #ff9900;
+
+$red: #f60c36;
+$green: #00c42b;
+$blue: #009aff;
+
+$btn-border-radius: 3px;
+
+$spacer: 0.5rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 1,
+    ),
+    2: (
+      $spacer * 2,
+    ),
+    3: $spacer * 3,
+    4: (
+      $spacer * 4,
+    ),
+    5: (
+      $spacer * 5,
+    ),
+    6: (
+      $spacer * 6,
+    ),
+    7: (
+      $spacer * 7,
+    ),
+    8: (
+      $spacer * 8,
+    ),
+    9: (
+      $spacer * 9,
+    ),
+    10: (
+      $spacer * 10,
+    ),
+    11: (
+      $spacer * 11,
+    ),
+    12: (
+      $spacer * 12,
+    ),
+  ),
+  $spacers
+);
+
+$input-btn-padding-y: 0.71875rem; // 11.5 px when 16 px font size.
+$input-btn-padding-x: 2rem;
+$btn-line-height: 22px;

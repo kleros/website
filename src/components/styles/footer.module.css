@@ -4,18 +4,21 @@
 
 .footer .scrollback {
   background: var(--color-purple) !important;
-  width: 4rem !important;
+  width: 5rem !important;
   font-size: 2rem !important;
+  font-weight: 400;
+  transform: rotate(-90deg);
   color: white;
   border-radius: 100% !important;
-  height: auto !important;
+  height: 5rem;
   position: absolute;
-  top: -1.3rem;
+  top: -2.5rem;
   left: 80%;
   box-shadow: none !important;
   min-width: auto !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 1.6rem;
+  padding-right: 0.5rem;
 }
 
 .footer .links {

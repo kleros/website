@@ -189,7 +189,7 @@ const Footer = ({ intl }) => (
     </p>
 
     <Button className={styles.scrollback} href="#gatsby-focus-wrapper">
-      ↑
+      ➜
     </Button>
   </footer>
 );

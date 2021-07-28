@@ -1,0 +1,4 @@
+@import "variables"; // Overriden variables.
+@import "~bootstrap/scss/bootstrap"; // Bootstrap styling. It is required to import variables before bootstrap. Changing the order will break styling.
+@import "layout";
+@import "theme";

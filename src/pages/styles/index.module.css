@@ -47,6 +47,9 @@
 }
 
 .index .hero {
+  background-image: url("/icosahedron-silhouette.svg"), linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 100px, center center;
 }
 
 .index .hero img,
@@ -65,6 +68,12 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .index .buttonWrapper {
+    width: 400px;
+  }
 }
 
 .index .buttonWrapper a {
@@ -190,12 +199,11 @@
 .index .partners svg {
   margin: 2rem;
   margin-top: 1rem;
-  max-width: 250px;
-  max-height: 60px;
+  max-width: 200px;
+  max-height: 80px;
 }
 
 .index .partners > h2 {
-  font-weight: var(--font-weight-bold);
 }
 
 .index :global(.slick-list) {
@@ -214,4 +222,7 @@
 
 .index :global(.slick-dots) > li > button::before {
   color: var(--color-blue) !important;
+}
+
+.index .playButton {
 }

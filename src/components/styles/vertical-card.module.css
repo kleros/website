@@ -1,13 +1,14 @@
 .verticalCard {
-  background: var(--color-purple-faded);
-  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
   text-align: left;
   padding: 2.6rem;
 
   height: 100%;
   overflow: auto;
   text-align: center;
-  border-radius: 37.3588px;
+  border: 1px solid #e5e5e5;
+  border-radius: var(--border-radius);
 }
 .verticalCard img {
   width: 12rem;
@@ -28,16 +29,16 @@
 
 .verticalCard .title {
   font-size: var(--font-size-bigger);
-  color: white;
+  color: var(--color-gray);
   font-weight: var(--font-weight-bold);
   display: block;
 }
 
 .verticalCard .paragraph {
   font-size: var(--font-size-medium);
-  color: var(--color-pink);
+  color: var(--color-gray-light);
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .verticalCard a.paragraph:hover {
@@ -47,6 +48,7 @@
 .verticalCard .listTitle {
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
+  color: var(--color-gray);
 }
 
 .verticalCard ul {
@@ -56,12 +58,11 @@
 .verticalCard li {
   list-style: none;
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-pink);
+  color: var(--color-gray-light);
 }
 
 .verticalCard li:before {
   content: "→ ";
   vertical-align: text-bottom;
-  color: white;
+  color: var(--color-gray-light);
 }

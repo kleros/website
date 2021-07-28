@@ -73,7 +73,6 @@ const IndexPage = ({ intl }) => (
               }),
             },
           ]}
-          separator
         />
         <h2 className="purple bold">
           <FormattedMessage id="token.sash.learnMore.title" />
