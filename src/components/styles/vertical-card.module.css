@@ -9,6 +9,7 @@
   text-align: center;
   border: 1px solid #e5e5e5;
   border-radius: var(--border-radius);
+  max-width: 500px;
 }
 .verticalCard img {
   width: 12rem;
