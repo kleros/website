@@ -39,7 +39,7 @@
   font-size: var(--font-size-medium);
   color: var(--color-gray-light);
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .verticalCard a.paragraph:hover {
@@ -49,6 +49,7 @@
 .verticalCard .listTitle {
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
+  color: var(--color-gray);
 }
 
 .verticalCard ul {
@@ -58,12 +59,11 @@
 .verticalCard li {
   list-style: none;
   font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-pink);
+  color: var(--color-gray-light);
 }
 
 .verticalCard li:before {
   content: "→ ";
   vertical-align: text-bottom;
-  color: white;
+  color: var(--color-gray-light);
 }
