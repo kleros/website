@@ -150,7 +150,7 @@ const Media = ({ intl }) => (
       <section>
         <Container className="p-0" fluid>
           <Row>
-            <Col className="mt-5" md>
+            <Col className="mt-5 w-50" md>
               <VerticalCard
                 content={{
                   button: {
@@ -164,25 +164,6 @@ const Media = ({ intl }) => (
 
                   title: intl.formatMessage({
                     id: "media.section-cards.card-1.title",
-                  }),
-                }}
-              />
-            </Col>
-            <Col className="mt-5" md>
-              <VerticalCard
-                content={{
-                  button: {
-                    disabled: true,
-                    href: "Assets",
-                    text: intl.formatMessage({
-                      id: "media.section-cards.card-2.button",
-                    }),
-                    variant: "secondary",
-                  },
-                  icon: Photo,
-
-                  title: intl.formatMessage({
-                    id: "media.section-cards.card-2.title",
                   }),
                 }}
               />
