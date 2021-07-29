@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 
+require("bootstrap/dist/js/bootstrap.min.js");
 require("./src/styles/app.scss");
