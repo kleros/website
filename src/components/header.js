@@ -46,7 +46,7 @@ import Omen from "src/assets/images/third-party-logos/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
 import Revoke from "../assets/svgs/revoke.svg";
 import Gnosis from "../assets/svgs/gnosis.svg";
-import Unslashed from "../assets/svgs/unslashed.svg";
+import Unslashed from "../assets/svgs/third-party-logos/unslashed/logo.svg";
 import Polka from "../assets/images/third-party-logos/polkamarkets.png";
 import Sushi from "../assets/images/third-party-logos/sushi.png";
 import Zerion from "../assets/svgs/third-party-logos/zerion/logos/svg/blue-logo.svg";
@@ -110,7 +110,8 @@ const integrations = [
   { name: "Uniswap", href: "https://uniswap.io/", Icon: Uniswap, target: "_blank" },
   { name: "clr.fund", href: "https://clr.fund/", Icon: PNGToIcon("CLR", CLR), target: "_blank" },
   { name: "Gitcoin", href: "https://gitcoin.co/", Icon: Gitcoin, target: "_blank" },
-  { name: "Ripio Credit", href: "https://https://rcn.finance/", Icon: RCN, target: "_blank" },
+  { name: "Ripio Credit", href: "https://rcn.finance/", Icon: RCN, target: "_blank" },
+  { name: "Unslashed", href: "https://unslashed.finance/", Icon: Unslashed, target: "_blank" },
 ];
 
 const STORE_URLS = {
