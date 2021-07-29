@@ -54,13 +54,22 @@
     "Dispute Resolver": "Create and operate disputes manually.",
     "Uniswap Ninja": "A fork of Uniswap that uses Kleros to curate the tradable tokens.",
     "Crypto Unlocked": "Kleros is used to settle Oracle disputes here.",
-    "Realitio": "Kleros is used as a final answerer to questions here.",
+    "Reality": "Kleros is used as a final answerer to questions here.",
     "Omen": "Kleros is used to settle markets here.",
     "Linguo": "A P2P translations marketplace mediated by Kleros.",
     "Revoke": "Revoke ERC20 allowances you gave earlier, easily.",
     "Governor": "Kleros can used to resolve governance disputes.",
     "Oracle": "Kleros can be used to resolve oracle disputes.",
-    "Proof of Humanity": "A list of people curated in a decentralized way"
+    "Proof of Humanity": "A list of people curated in a decentralized way.",
+    "Gnosis": "Securely create, trade, and hold digital assets on Ethereum.",
+    "Polkamarkets": "Polkamarkets is a Autonomous Prediction Market Protocol built for cross-chain information exchange and trading.",
+    "Sushi": "Swap, earn, stack yields, lend, borrow, leverage all on one decentralized, community driven platform.",
+    "Zerion": "Zerion is the easiest way to build and manage your entire DeFi portfolio from one place.",
+    "Uniswap": "A fully decentralized protocol for automated liquidity provision on Ethereum.",
+    "clr.fund": "Clr.fund is a protocol for efficiently allocating funds to public goods that benefit the Ethereum Network according to the preferences of the Ethereum Community.",
+    "Gitcoin": "Freelancing on Ethereum.",
+    "Ripio Credit": "RCN is an open-source global credit network that connects lenders, borrowers and loan originators on the blockchain.",
+    "Unslashed": "Insurance for decentralized finance."
   },
 
   "index": {
