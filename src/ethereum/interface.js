@@ -33,3 +33,5 @@ export const estimateGas = (interfaceName, instanceAddress, from, value, method,
   contractInstance(interfaceName, instanceAddress)
     .methods[method](...args)
     .estimateGas({ from, value });
+
+export { Web3 };

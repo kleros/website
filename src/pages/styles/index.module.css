@@ -67,12 +67,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem;
 }
 
 @media (max-width: 900px) {
   .index .buttonWrapper {
-    width: 400px;
   }
 }
 
