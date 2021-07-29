@@ -216,6 +216,31 @@ class IndexPage extends React.Component {
 
   async componentDidMount() {
     this.setState({ loading: false });
+
+    fetch("https://api.thegraph.com/subgraphs/name/salgozino/klerosboard", {
+      headers: {
+        Accept: "*/*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `
+        {
+          klerosCounters {
+            disputesCount
+            activeJurors
+            tokenStaked
+            totalTokenRedistributed
+            totalETHFees
+          }
+        }
+    `,
+      }),
+      method: "POST",
+      mode: "cors",
+    })
+      .then((r) => r.json())
+      .then((r) => this.setState({ klerosCounters: r.data.klerosCounters[0] }));
+
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();
       lscache.set("subcourtDetails", this.state.subcourtDetails, 14400);
@@ -240,8 +265,9 @@ class IndexPage extends React.Component {
   render() {
     const { intl } = this.props;
 
-    const { disputes, metaEvidences, subcourts, subcourtDetails, subcourtsExtra, loading } = this.state;
-
+    const { disputes, metaEvidences, subcourts, subcourtDetails, subcourtsExtra, loading, klerosCounters } = this.state;
+    console.log(this.state);
+    console.log(EthereumInterface.Web3.utils.fromWei("123123123123123123"));
     return (
       <Layout omitSponsors>
         <SEO lang={intl.locale} title={intl.formatMessage({ id: "index.seo-title" })} />
@@ -264,7 +290,7 @@ class IndexPage extends React.Component {
               <FormattedMessage id="index.section-hero.h2" />
             </h2>
 
-            <Container className={styles.buttonWrapper}>
+            <div className={styles.buttonWrapper}>
               <a className="btn btn-primary" href="https://court.kleros.io" rel="noopener noreferrer" target="blank">
                 <FormattedMessage id="index.section-hero.button-primary" />
               </a>
@@ -274,7 +300,29 @@ class IndexPage extends React.Component {
               <a className={styles.playButton} href="https://court.kleros.io" rel="noopener noreferrer" target="blank" style={{ height: "45px", marginTop: "1.5rem" }}>
                 <Play />
               </a>
-            </Container>
+            </div>
+            <div className="mt-10 d-flex flex-wrap justify-content-around bold text-left">
+              <div className="m-3">
+                <div className="huge">{(klerosCounters && (parseInt(EthereumInterface.Web3.utils.fromWei(klerosCounters.tokenStaked)) / 1000000).toFixed(0)) || "150"}M</div>
+                <div>PNK staked on courts</div>
+              </div>
+              <div className="m-3">
+                <div className="huge">{(klerosCounters && parseInt(EthereumInterface.Web3.utils.fromWei(klerosCounters.totalETHFees)).toFixed(0)) || "350+"}</div>
+                <div>Ether paid to jurors</div>
+              </div>
+              <div className="m-3">
+                <div className="huge">{(klerosCounters && (parseInt(EthereumInterface.Web3.utils.fromWei(klerosCounters.totalTokenRedistributed)) / 1000000).toFixed(2)) || "2"}M</div>
+                <div>PNK redisributed</div>
+              </div>
+              <div className="m-3">
+                <div className="huge">{(klerosCounters && klerosCounters.activeJurors) || "800+"}</div>
+                <div>Active jurors</div>
+              </div>
+              <div className="m-3">
+                <div className="huge">{(klerosCounters && klerosCounters.disputesCount) || "900+"}</div>
+                <div>Disputes</div>
+              </div>
+            </div>
           </section>
           <section className="light">
             <Sash
