@@ -9,7 +9,8 @@
 .faq input {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  padding: 1.4rem 1.4rem !important;
+  border: none !important;
+  padding-left: 0 !important;
 }
 
 .faq .prepend span {
@@ -17,12 +18,17 @@
   background: var(--color-purple-faded);
   border-top-left-radius: 300px !important;
   border-bottom-left-radius: 300px !important;
-  outline: unset;
-  padding: 0 3rem;
+  outline: none;
+  padding: 0 1.25rem;
 }
 
 .faq .prepend svg {
   width: auto;
+  height: 16px;
+}
+
+.faq .prepend {
+  margin-right: 0;
 }
 
 .faq aside {
