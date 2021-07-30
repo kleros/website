@@ -297,7 +297,7 @@ class IndexPage extends React.Component {
               <Link className="btn btn-secondary" to="/integrations">
                 <FormattedMessage id="index.section-hero.button-secondary" />
               </Link>
-              <a className={styles.playButton} href="https://court.kleros.io" rel="noopener noreferrer" target="blank" style={{ height: "45px", marginTop: "1.5rem" }}>
+              <a className={styles.playButton} href="https://youtu.be/wZZ2ipS-jZw" rel="noopener noreferrer" target="blank" style={{ height: "45px", marginTop: "1.5rem" }}>
                 <Play />
               </a>
             </div>
