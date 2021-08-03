@@ -49,6 +49,14 @@
 .header .docs div,
 .header .about div {
   background-color: white !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+  border-radius: 3px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header :global(.dropdown-toggle)::after {
@@ -57,8 +65,26 @@
 
 .header .usecases div a,
 .header .research div a,
-.header .governance div a {
-  color: var(--color-gray) !important;
+.header .governance div a,
+.header .docs div a,
+.header .about div a {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0px;
+  padding-left: 16px;
+}
+
+.header .usecases div a:hover,
+.header .research div a:hover,
+.header .governance div a:hover,
+.header .docs div a:hover,
+.header .about div a:hover {
+  padding-left: 13.3px;
+  background-color: rgba(0, 154, 255, 0.06);
+  border-left: 3px solid #009AFF;
 }
 
 .header .productsTitle {
