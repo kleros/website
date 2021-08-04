@@ -312,7 +312,7 @@ class IndexPage extends React.Component {
               </div>
               <div className="m-3">
                 <div className="huge">{(klerosCounters && (parseInt(EthereumInterface.Web3.utils.fromWei(klerosCounters.totalTokenRedistributed)) / 1000000).toFixed(2)) || "2"}M</div>
-                <div>PNK redisributed</div>
+                <div>PNK redistributed</div>
               </div>
               <div className="m-3">
                 <div className="huge">{(klerosCounters && klerosCounters.activeJurors) || "800+"}</div>
