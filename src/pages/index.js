@@ -301,7 +301,7 @@ class IndexPage extends React.Component {
                 <Play />
               </a>
             </div>
-            <div className="mt-10 d-flex flex-wrap justify-content-around bold text-left">
+            <div className="mt-10 d-flex flex-wrap justify-content-around bold">
               <div className="m-3">
                 <div className="huge">{(klerosCounters && (parseInt(EthereumInterface.Web3.utils.fromWei(klerosCounters.tokenStaked)) / 1000000).toFixed(0)) || "150"}M</div>
                 <div>PNK staked on courts</div>
