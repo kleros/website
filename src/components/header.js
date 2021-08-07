@@ -105,7 +105,7 @@ const integrations = [
   { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
   { name: "Gnosis", href: "https://gnosis-safe.io/", Icon: Gnosis, target: "_blank" },
   { name: "Polkamarkets", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Polkamarkets", Polka), target: "_blank" },
-  { name: "Sushi", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
+  { name: "Sushi", href: "https://sushi.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
   { name: "Zerion", href: "https://zerion.io/", Icon: Zerion, target: "_blank" },
   { name: "Uniswap", href: "https://uniswap.io/", Icon: Uniswap, target: "_blank" },
   { name: "clr.fund", href: "https://clr.fund/", Icon: PNGToIcon("CLR", CLR), target: "_blank" },
