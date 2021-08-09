@@ -92,7 +92,7 @@ const YELLOW_PAPERS = {
 const products = [
   { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: POH, target: "_blank" },
   { name: "Escrow", href: "https://www.escrow.kleros.io/", Icon: Escrow, target: "_blank" },
-  { name: "Curate", href: "https://www.curate.kleros.io/", Icon: Curate, target: "_blank" },
+  { name: "Curate", href: "https://curate.kleros.io/tcr/0x99A0f0e0d9Ee776D791D2E55c215d05ccF7286fC", Icon: Curate, target: "_blank" },
   { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
