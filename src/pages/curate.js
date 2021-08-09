@@ -37,7 +37,7 @@ const Curate = ({ intl }) => (
         </h2>
 
         <Container className={styles.buttonWrapper}>
-          <a className="btn btn-primary" href="https://curate.kleros.io" rel="noopener noreferrer" target="blank">
+          <a className="btn btn-primary" href="https://curate.kleros.io/tcr/0x99A0f0e0d9Ee776D791D2E55c215d05ccF7286fC" rel="noopener noreferrer" target="blank">
             <FormattedMessage id="curate.section-hero.button-primary" />
           </a>
         </Container>
@@ -145,7 +145,7 @@ const Curate = ({ intl }) => (
         <h2>
           <FormattedMessage id="curate.section-3.h2" />
         </h2>
-        <a href="https://curate.kleros.io" target="blank" rel="noopener noreferrer" className="btn btn-secondary">
+        <a href="https://curate.kleros.io/tcr/0x99A0f0e0d9Ee776D791D2E55c215d05ccF7286fC" target="blank" rel="noopener noreferrer" className="btn btn-secondary">
           <FormattedMessage id="curate.section-3.button" />
         </a>
       </section>
