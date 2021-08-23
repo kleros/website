@@ -52,6 +52,18 @@
   margin-bottom: 3rem;
 }
 
+.footer .social > a {
+  margin: 1rem;
+  display: flex;
+  flex-basis: 13%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 860px){
+  .footer .social > a { flex-basis: auto; }
+}
+
 .footer .social > a > svg,
 .footer .social > a > img {
   width: 2rem;

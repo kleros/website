@@ -91,8 +91,8 @@ const YELLOW_PAPERS = {
 
 const products = [
   { name: "Proof of Humanity", href: "https://www.proofofhumanity.id/", Icon: POH, target: "_blank" },
-  { name: "Escrow", href: "https://www.escrow.kleros.io/", Icon: Escrow, target: "_blank" },
-  { name: "Curate", href: "https://www.curate.kleros.io/", Icon: Curate, target: "_blank" },
+  { name: "Escrow", href: "https://escrow.kleros.io/", Icon: Escrow, target: "_blank" },
+  { name: "Curate", href: "https://curate.kleros.io/tcr/0x99A0f0e0d9Ee776D791D2E55c215d05ccF7286fC", Icon: Curate, target: "_blank" },
   { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
@@ -105,7 +105,7 @@ const integrations = [
   { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
   { name: "Gnosis", href: "https://gnosis-safe.io/", Icon: Gnosis, target: "_blank" },
   { name: "Polkamarkets", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Polkamarkets", Polka), target: "_blank" },
-  { name: "Sushi", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
+  { name: "Sushi", href: "https://sushi.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
   { name: "Zerion", href: "https://zerion.io/", Icon: Zerion, target: "_blank" },
   { name: "Uniswap", href: "https://uniswap.io/", Icon: Uniswap, target: "_blank" },
   { name: "clr.fund", href: "https://clr.fund/", Icon: PNGToIcon("CLR", CLR), target: "_blank" },
