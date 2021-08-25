@@ -214,11 +214,9 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/community">
                   <FormattedMessage id="footer.community" />
                 </Link>
-
-                <Link className="dropdown-item" to="/faq">
+                <NavDropdown.Item href="https://kleros.gitbook.io/docs/kleros-faq" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage id="footer.faq" />
-                </Link>
-
+                </NavDropdown.Item>
                 <Link className="dropdown-item" to="/media">
                   <FormattedMessage id="footer.media" />
                 </Link>
