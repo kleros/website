@@ -11,7 +11,7 @@ import Balancer from "src/assets/svgs/balancer.svg";
 import Bitfinex from "src/assets/images/third-party-logos/bitfinex.png";
 import Kyber from "src/assets/images/third-party-logos/kyber.png";
 import Loopring from "src/assets/svgs/loopring.svg";
-import Transak from "src/assets/images/third-party-logos/transak.png";
+import Guardarian from "src/assets/svgs/third-party-logos/guardarian/main.svg";
 import GateIO from "src/assets/svgs/gateio.svg";
 import OKEX from "src/assets/svgs/okex.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
@@ -117,16 +117,14 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://1inch.exchange/" rel="noopener noreferrer" target="blank">
             <OneInch />
           </Badge>
-
           <Badge as="a" className={styles.badge} href="https://www.gate.io/trade/PNK_USDT" rel="noopener noreferrer" target="blank">
             <GateIO />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://www.okex.com/markets/spot-info/pnk-usdt" rel="noopener noreferrer" target="blank">
             <OKEX />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://transak.com/" rel="noopener noreferrer" target="blank">
-            <span class={styles.helper} />
-            <img src={Transak} alt={"Transak"} />
+          <Badge as="a" className={styles.badge} href="https://guardarian.com/" rel="noopener noreferrer" target="blank">
+            <Guardarian />
           </Badge>
         </Container>
       </section>
