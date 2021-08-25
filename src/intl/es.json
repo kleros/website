@@ -781,7 +781,7 @@
       }
     },
     "section-where": { "h1": "Dónde Se Desarrolla", "h2": "El programa de incubación se desarrolla en el espacio de co-working The Block en la hermosa ciudad de Lisboa. 🇵🇹", "button-primary": "Apply Now" },
-    "section-conta t": { "title": "¡Sé parte de la revolución de la justicia!", "button-primary": "Aplica Ahora" },
+    "section-contact": { "title": "¡Sé parte de la revolución de la justicia!", "button-primary": "Aplica Ahora" },
     "section-faq": {
       "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
       "2": {
