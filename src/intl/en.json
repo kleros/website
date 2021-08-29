@@ -736,7 +736,11 @@
   },
   "incubator": {
     "seo-title": "Incubator",
-    "section-hero": { "h1": "Kleros Incubator", "h2": "A program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol.", "button-primary": "Apply Now" },
+    "section-hero": {
+      "h1": "Kleros Incubator",
+      "h2": "A program that provides company building, up to $50,000 in funding, housing and travel support to teams willing to create projects or Dapps connected to the Kleros protocol. A $1M pool is available in follow-up funding for promising teams graduating from the program.",
+      "button-primary": "Apply Now"
+    },
     "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
     "section-how-it-works": {
       "h1": "How it Works",

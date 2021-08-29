@@ -747,7 +747,11 @@
   },
   "incubator": {
     "seo-title": "Incubadora",
-    "section-hero": { "h1": "Kleros Incubadora", "h2": "Un programa organizado por la Cooperativa Kleros que provee asistencia financiera y de gestión a equipos que deseen desarrollar proyectos o Dapps conectados al protocolo Kleros.", "button-primary": "Aplica Ahora" },
+    "section-hero": {
+      "h1": "Kleros Incubadora",
+      "h2": "Un programa que ofrece asesoramiento en construcción de empresas, gastos pagos y hasta $50,000 en financiamiento para equipos que quieran crear proyectos o Dapps conectados al protocolo Kleros. Un fondo de $1 millón está disponible para brindar financiamiento adicional a los equipos más prometedores que se gradúen del programa.",
+      "button-primary": "Aplica Ahora"
+    },
     "section-apply": { "h1": "Quién Puede Aplicar", "h2": "Equipos que están construyendo aplicaciones descentralizadas u otras herramientas que contribuyan a incrementar la adopción del protocolo Kleros." },
     "section-how-it-works": {
       "h1": "Cómo Funciona",
