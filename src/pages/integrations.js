@@ -26,7 +26,7 @@ import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets-mono.
 import DeversifiMono from "src/assets/images/third-party-logos/deversifi-mono.png";
 import OmenMono from "src/assets/images/third-party-logos/omen-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
-import Hats from "src/assets/svgs/third-party-logos/hats/hats_mono.svg";
+import Hats from "src/assets/svgs/third-party-logos/hats/hats_text_mono.svg";
 import WindingTreeMono from "src/assets/images/third-party-logos/winding-mono.png";
 import CryptoUnlockedMono from "src/assets/images/third-party-logos/crypto-unlocked-mono.png";
 import RealitioMono from "src/assets/images/third-party-logos/realitio-mono.png";
