@@ -40,6 +40,7 @@ import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.
 import Realitio from "src/assets/images/third-party-logos/realitio.png";
 import Omen from "src/assets/images/third-party-logos/omen.png";
 import Scales from "src/assets/svgs/icon-scales.svg";
+import Hats from "src/assets/svgs/third-party-logos/hats/hats.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Gavel from "src/assets/svgs/icon-gavel.svg";
@@ -391,6 +392,9 @@ class IndexPage extends React.Component {
             </a>
             <a href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
               <Polkamarkets />
+            </a>
+            <a href="https://hats.finance/" rel="noopener noreferrer" target="blank">
+              <Hats />
             </a>
           </section>
 
