@@ -40,7 +40,7 @@ import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.
 import Realitio from "src/assets/images/third-party-logos/realitio.png";
 import Omen from "src/assets/images/third-party-logos/omen.png";
 import Scales from "src/assets/svgs/icon-scales.svg";
-import Hats from "src/assets/svgs/third-party-logos/hats/hats.svg";
+import Hats from "src/assets/svgs/third-party-logos/hats/hats_text.svg";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Gavel from "src/assets/svgs/icon-gavel.svg";
