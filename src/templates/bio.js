@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Contact from "../components/contact";
 import { useIntl } from "gatsby-plugin-intl";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
+import Kleros from "src/assets/svgs/icon-kleros.svg";
 import styles from "./styles/bio.module.css";
 import Aouidef from "src/assets/images/person/aouidef.png";
 import Narozhny from "src/assets/images/person/narozhny.png";
@@ -126,7 +127,7 @@ export default ({ data }) => {
           <hr />
         </section>
         <section className="pt-1">
-          <Contact content={{ icon: FellowshipBadge, title: intl.formatMessage({ id: "bio.section-contact.title" }) }} />
+          <Contact content={{ title: intl.formatMessage({ id: "bio.section-contact.title" }) }} />
         </section>
       </div>
     </Layout>
