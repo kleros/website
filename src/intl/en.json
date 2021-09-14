@@ -190,22 +190,22 @@
     "seo-title": "Escrow",
 
     "section-hero": {
-      "h1": "Kleros Escrow",
+      "h1": "Escrow",
       "h2": "Trade, hire and pay secured by trustless dispute resolution.",
       "button-primary": "Try Kleros Escrow"
     },
     "sash": {
       "first": {
         "title": "The Risk of Online Commerce",
-        "paragraph": "When contracting someone online there is always the risk of the other party not fulfilling the agreement, or acting maliciously."
+        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes  manually is a closed and costly solution."
       },
       "second": {
-        "title": "Use Kleros Escrow",
-        "paragraph": "In case something goes wrong, the dispute will be resolved by Kleros."
+        "title": "Decentralize your Dispute Resolution",
+        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved in by Kleros Court in a decentralized and open manner."
       },
       "third": {
-        "title": "Transact Securely",
-        "paragraph": "With Kleros Escrow, buyer and seller can be confident that the other party will fulfill their obligation."
+        "title": "Secure transactions on your platform",
+        "paragraph": "With Kleros Escrow, your users can be confident that the other party in their P2P transaction will always fulfill their obligations."
       }
     },
     "section-use-case": {
@@ -218,7 +218,7 @@
         "5": "Payroll",
         "6": "Crowdfunding Milestones",
         "7": "OTC",
-        "8": "Plagiarism",
+        "8": "NFTs",
         "9": "More"
       }
     },
@@ -226,7 +226,17 @@
     "section-3": {
       "h1": "Secure Your Transactions With Kleros",
       "h2": "Start using Kleros Escrow to reduce counterparty risk in your online transactions.",
-      "button": "Start Using Kleros Escrow"
+      "button": "Learn More"
+    },
+
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Escrow",
+      "card-1-text": "Using Kleros Escrow, you can transact in the blockchain ecosystem for services, products, and assets using our simple solution with a level of trust not yet known outside the traditional commerce space. If a dispute happens, it will be adjudicated by crowdsourced jurors selected and incentivized by the Kleros protocol.",
+      "card-1-button": "Try Kleros Escrow",
+      "card-2-title": "Integrate",
+      "card-2-text": "Take a look at Kleros Escrow SDK documentation and get in touch with us to integrate the Escrow feature into your marketplace.",
+      "card-2-button": "Kleros Escrow SDK"
     },
 
     "section-4": {
