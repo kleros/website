@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Contact from "../components/contact";
 import { useIntl } from "gatsby-plugin-intl";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
+import Kleros from "src/assets/svgs/icon-kleros.svg";
 import styles from "./styles/bio.module.css";
 import Aouidef from "src/assets/images/person/aouidef.png";
 import Narozhny from "src/assets/images/person/narozhny.png";
@@ -86,6 +87,7 @@ const PHOTOS = {
 
 export default ({ data }) => {
   const post = data.markdownRemark;
+  const frontmatter = post.frontmatter;
   const intl = useIntl();
 
   const photoName = post.fields.slug.split(/\//)[1];
@@ -96,8 +98,8 @@ export default ({ data }) => {
       <SEO title="Community" />
       <div className={styles.bio}>
         <section className={styles.hero}>
-          <h1>{post.frontmatter.name}</h1>
-          <h2>{post.frontmatter.title}</h2>
+          <h1>{frontmatter.name}</h1>
+          <h2>{frontmatter.title}</h2>
         </section>
         <section className={styles.main}>
           <div>
@@ -107,9 +109,17 @@ export default ({ data }) => {
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </div>
-          <div className={styles.buttonWrapper}>
-            {post.frontmatter.report && (
-              <a className="btn btn-primary" href={post.frontmatter.report} target="blank" rel="noopener noreferrer">
+          <div className={`pt-8 ${styles.embedWrapper}`}>
+            {frontmatter.embedTitle && <div className="mb-2">{frontmatter.embedTitle}</div>}
+            {frontmatter.embed && (
+              <div className={styles.embed}>
+                <iframe width="560" height="315" src={frontmatter.embed} title={frontmatter.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            )}
+          </div>
+          <div className={`mt-6 ${styles.buttonWrapper}`}>
+            {frontmatter.report && (
+              <a className="btn btn-primary" href={frontmatter.report} target="blank" rel="noopener noreferrer">
                 Download the Report
               </a>
             )}
@@ -117,7 +127,7 @@ export default ({ data }) => {
           <hr />
         </section>
         <section className="pt-1">
-          <Contact content={{ icon: FellowshipBadge, title: intl.formatMessage({ id: "bio.section-contact.title" }) }} />
+          <Contact content={{ title: intl.formatMessage({ id: "bio.section-contact.title" }) }} />
         </section>
       </div>
     </Layout>
@@ -125,7 +135,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       fields {
         slug
@@ -135,6 +145,8 @@ export const query = graphql`
         name
         title
         report
+        embed
+        embedTitle
       }
     }
   }

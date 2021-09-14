@@ -1,7 +1,9 @@
 ---
 name: "Tian Zhao"
 title: "Systems Engineering"
-report: ""
+report: "https://blog.kleros.io/tian-zhao-my-kleros-fellowship-experience-as-a-digital-product-designer/"
+embed: "https://www.youtube.com/embed/S2t7BJWoaBs"
+embedTitle: "Learn about Tian's experience as a Kleros Fellow"
 ---
 
 Tian Zhao holds a bachelor degree in Systems Engineering at the University of Toronto.
