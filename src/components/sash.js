@@ -14,12 +14,12 @@ const Sash = ({ separator, figures, intl }) => (
             <figcaption>
               <span>{figure.title}</span>
             </figcaption>
+            {figure.text && <span className={`mt-5 ${styles.text}`}>{figure.text}</span>}
             {figure.button && (
               <a className={`btn btn-${index % 2 === 0 ? "primary" : "secondary"} mt-8 ${styles.button}`} href={figure.button.href} rel="noopener noreferrer" target="blank">
                 {figure.button.text}
               </a>
             )}
-            {figure.text && <span className={`mt-5 ${styles.text}`}>{figure.text}</span>}
           </figure>
         </Col>
       );
