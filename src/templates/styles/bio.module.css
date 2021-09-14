@@ -8,7 +8,8 @@
   background: linear-gradient(144.65deg, #4d00b4 1.44%, #1e075f 54.29%);
 }
 
-.bio .buttonWrapper {
+.bio .buttonWrapper,
+.bio .embedWrapper {
   clear: both;
 }
 
