@@ -7,6 +7,7 @@ import Sponsors from "src/components/sponsors";
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
 import CardHighlight from "../components/card-highlight";
+import TrustedBy from "src/components/trusted-by";
 
 import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
@@ -359,44 +360,8 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-          <section className={`light pt-0 ${styles.partners}`}>
-            <h2>
-              <FormattedMessage id="about.section-5" />
-            </h2>
-            <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
-              <OmenSVG />
-            </a>
-            <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
-              <img src={Deversifi} alt="Deversifi" />
-            </a>
 
-            <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
-              <Uniswap />
-            </a>
-
-            <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
-              <Union />
-            </a>
-
-            <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-              <img src={DemocracyEarth} alt="DemocracyEarth" style={{ maxHeight: "240px" }} />
-            </a>
-            <a href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
-              <Gnosis />
-            </a>
-            <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
-              <img src={API3} alt="API3" />
-            </a>
-            <a href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
-              <Unslashed />
-            </a>
-            <a href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
-              <Polkamarkets />
-            </a>
-            <a href="https://hats.finance/" rel="noopener noreferrer" target="blank">
-              <Hats />
-            </a>
-          </section>
+          <TrustedBy />
 
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>
