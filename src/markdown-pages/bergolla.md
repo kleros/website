@@ -1,7 +1,7 @@
 ---
 name: "Luis Bergolla"
 title: "Doctoral Student"
-report: ""
+report: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3918485"
 ---
 
 Luis Bergolla is a professor of practice at the University of Arizona and a doctoral student at Stanford Law School.

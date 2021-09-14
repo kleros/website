@@ -1,7 +1,7 @@
 ---
 name: "Aleksei Gudkov"
 title: "Researcher"
-report: ""
+report: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3755762"
 ---
 
 Dr. Alexei Gudkov earned his Ph.D. in law at the Autonomous University of Barcelona (Spain). He is a researcher at the Higher School of Economics (Moscow) and an industry fellow of University College London Centre for Blockchain Technologies.

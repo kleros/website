@@ -1,7 +1,7 @@
 ---
 name: "Rossana Deplano"
 title: "Lecturer in Law"
-report: ""
+report: "http://data.parliament.uk/writtenevidence/committeeevidence.svc/evidencedocument/democracy-and-digital-technologies-committee/democracy-and-digital-technologies/written/104568.html"
 ---
 
 Dr. Rossana Deplano (LLB, LLM, PhD) is Lecturer in Law at the University of Leicester and Fellow of the Higher Education Academy. Her main research interests lie in the field of public international law, international legal theory and international legal research.
