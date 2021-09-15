@@ -4,7 +4,7 @@
   justify-content: center;
   background-image: linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
   background-repeat: no-repeat;
-  margin-bottom: -4.4vw;
+  margin-bottom: min(-24px, max(-64px, -4.4vw));
   padding-bottom: 0;
 }
 
@@ -12,12 +12,15 @@
 .escrow .hero img {
   align-self: center;
   width: 80vw;
+  max-width: 1152.02px;
 }
 
 .escrow .playButton {
   display: inline-block;
   align-self: center;
   width: 8.8vw;
+  min-width: 48px;
+  max-width: 128px;
 }
 
 .escrow .dappImage svg {
