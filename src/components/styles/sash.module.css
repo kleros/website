@@ -22,17 +22,24 @@
   font-size: var(--font-size-medium);
 }
 
-.sash figure {
-}
-
-.sash figure > svg {
-  max-width: 126px;
-}
-
 .sash .column {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
 
   border: 1px solid #e5e5e5;
   border-radius: var(--border-radius);
   max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sash .column svg {
+  max-width: 126px;
+  height: auto;
+}
+
+.sash .column .button {
+  margin-bottom: 0px;
 }
