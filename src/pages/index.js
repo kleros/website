@@ -361,7 +361,60 @@ class IndexPage extends React.Component {
             />
           </section>
 
-          <TrustedBy />
+          <TrustedBy
+            partners={[
+              {
+                href: "https://omen.eth.link/",
+                icon: OmenSVG,
+                name: "Omen"
+              },
+              {
+                href: "https://www.deversifi.com/",
+                icon: Deversifi,
+                name: "Deversifi"
+              },
+              {
+                href: "https://uniswap.org/",
+                icon: Uniswap,
+                name: "Uniswap"
+              },
+              {
+                href: "https://www.unn.finance/",
+                icon: Union,
+                name: "Union"
+              },
+              {
+                href: "https://democracy.earth/",
+                icon: DemocracyEarth,
+                name: "DemocracyEarth"
+              },
+              {
+                href: "https://gnosis.io/",
+                icon: Gnosis,
+                name: "Gnosis"
+              },
+              {
+                href: "https://api3.org/",
+                icon: API3,
+                name: "API3"
+              },
+              {
+                href: "https://unslashed.finance/",
+                icon: Unslashed,
+                name: "Unslashed"
+              },
+              {
+                href: "https://www.polkamarkets.com/",
+                icon: Polkamarkets,
+                name: "Polkamarkets"
+              },
+              {
+                href: "https://hats.finance/",
+                icon: Hats,
+                name: "Hats"
+              }
+            ]}
+          />
 
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>
