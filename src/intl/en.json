@@ -245,6 +245,124 @@
       "button": "Integrate Now"
     }
   },
+  "governance": {
+    "seo-title": "Governance",
+
+    "section-hero": {
+      "h1": "Governance",
+      "h2": "Streamline and secure your DAO governance by integrating Kleros Court to enable optimistic decision-making aligned with your constitution.",
+      "button-primary": "Try Kleros governance"
+    },
+    "sash": {
+      "first": {
+        "title": "Secure your DAO Governance",
+        "paragraph": "Protect your DAO from mistakes and attacks by using Kleros as a Supreme Court to uphold its constitution and ensure the correct implementation of proposals."
+      },
+      "second": {
+        "title": "Speed up execution",
+        "paragraph": "Delegate more powers/funds to your DAO executive team for fast decisions and let Kleros Court provide a fair ruling if there is a disagreement in the community about their use."
+      },
+      "third": {
+        "title": "Trustless on-chain execution",
+        "paragraph": "Trustless on-chain execution of governance proposals implementation based on the outcome of off-chain votes."
+      }
+    },
+    "section-use-case": {
+      "h1": "Governance Use Cases",
+      "cards": {
+        "1": "DAO Supreme Court",
+        "2": "Optimistic Governance",
+        "3": "Control of Grant Funds",
+        "4": "Protection Against Governance Attacks",
+        "5": "DAO to DAO Collaboration",
+        "6": "More"
+      }
+    },
+
+    "section-3": {
+      "h1": "Integrate Kleros with your DAO",
+      "h2": "Implement your off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
+      "button": "Learn More"
+    },
+
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Integrate Kleros Governor",
+      "card-1-text": "Get in touch to integrate Kleros Governor in your DAO",
+      "card-1-button": "Get in touch",
+      "card-2-title": "Governor",
+      "card-2-text": "As an open and neutral arbitration system, Kleros can be a useful tool to integrate with the governance of DAOs that want to ensure that their process is fully decentralized.",
+      "card-2-button": "Try Kleros Governor",
+      "card-3-title": "Reality Module",
+      "card-3-text": "Using the Reality module from the Zodiac app in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
+      "card-3-button": "Use it with Gnosis Safe"
+    },
+
+    "section-4": {
+      "h1": "Integrate governance in Your Platform",
+      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
+      "button": "Integrate Now"
+    }
+  },
+  "oracle": {
+    "seo-title": "Oracle",
+
+    "section-hero": {
+      "h1": "oracle",
+      "h2": "Trade, hire and pay secured by trustless dispute resolution.",
+      "button-primary": "Try Kleros oracle"
+    },
+    "sash": {
+      "first": {
+        "title": "The Risk of Online Commerce",
+        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes  manually is a closed and costly solution."
+      },
+      "second": {
+        "title": "Decentralize your Dispute Resolution",
+        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved in by Kleros Court in a decentralized and open manner."
+      },
+      "third": {
+        "title": "Secure transactions on your platform",
+        "paragraph": "With Kleros oracle, your users can be confident that the other party in their P2P transaction will always fulfill their obligations."
+      }
+    },
+    "section-use-case": {
+      "h1": "Kleros oracle Use Cases",
+      "cards": {
+        "1": "Freelancing",
+        "2": "Domain Name Transfer",
+        "3": "Bounties",
+        "4": "E-Commerce",
+        "5": "Payroll",
+        "6": "Crowdfunding Milestones",
+        "7": "OTC",
+        "8": "NFTs",
+        "9": "More"
+      }
+    },
+
+    "section-3": {
+      "h1": "Secure Your Transactions With Kleros",
+      "h2": "Start using Kleros oracle to reduce counterparty risk in your online transactions.",
+      "button": "Learn More"
+    },
+
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "oracle",
+      "card-1-text": "Using Kleros oracle, you can transact in the blockchain ecosystem for services, products, and assets using our simple solution with a level of trust not yet known outside the traditional commerce space. If a dispute happens, it will be adjudicated by crowdsourced jurors selected and incentivized by the Kleros protocol.",
+      "card-1-button": "Try Kleros oracle",
+      "card-2-title": "Integrate",
+      "card-2-text": "Take a look at Kleros oracle SDK documentation and get in touch with us to integrate the Escrow feature into your marketplace.",
+      "card-2-button": "Kleros oracle SDK"
+    },
+
+    "section-4": {
+      "h1": "Integrate oracle in Your Platform",
+      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
+      "button": "Integrate Now"
+    }
+  },
   "about": {
     "seo-title": "About",
 
