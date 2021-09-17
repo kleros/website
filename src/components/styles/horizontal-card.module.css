@@ -8,7 +8,8 @@
   display: flex;
 }
 
-.horizontalCard svg {
+.horizontalCard svg,
+.horizontalCard img {
   width: 4rem;
   height: 4rem;
 
