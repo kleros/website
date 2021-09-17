@@ -35,7 +35,8 @@
   justify-content: space-between;
 }
 
-.sash .column svg {
+.sash .column svg,
+.sash .column img {
   max-width: 126px;
   height: auto;
 }
