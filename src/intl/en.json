@@ -308,59 +308,48 @@
     "seo-title": "Oracle",
 
     "section-hero": {
-      "h1": "oracle",
-      "h2": "Trade, hire and pay secured by trustless dispute resolution.",
-      "button-primary": "Try Kleros oracle"
+      "h1": "Oracle",
+      "h2": "Link your product to the physical and digital world by enabling it to verify any event outcome on-chain.",
+      "button-primary": "Try Kleros Oracle"
     },
     "sash": {
       "first": {
-        "title": "The Risk of Online Commerce",
-        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes  manually is a closed and costly solution."
+        "title": "Connection to the world",
+        "paragraph": "Our general-purpose oracle enables you to verify any event, especially those that could not be directly sourced from a data feed."
       },
       "second": {
-        "title": "Decentralize your Dispute Resolution",
-        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved in by Kleros Court in a decentralized and open manner."
+        "title": "Efficient resolution of any question",
+        "paragraph": "A bond escalation mechanism allows for most questions to be answered quickly in a decentralized manner."
       },
       "third": {
-        "title": "Secure transactions on your platform",
-        "paragraph": "With Kleros oracle, your users can be confident that the other party in their P2P transaction will always fulfill their obligations."
+        "title": "Subjective Oracle Capability",
+        "paragraph": "Kleros arbitration resolves fairly the more controversial subjective outcomes in case of disputes."
       }
     },
     "section-use-case": {
-      "h1": "Kleros oracle Use Cases",
+      "h1": "Oracle Use Cases",
       "cards": {
-        "1": "Freelancing",
-        "2": "Domain Name Transfer",
-        "3": "Bounties",
-        "4": "E-Commerce",
-        "5": "Payroll",
-        "6": "Crowdfunding Milestones",
-        "7": "OTC",
-        "8": "NFTs",
-        "9": "More"
+        "1": "Prediction Markets",
+        "2": "Social Betting",
+        "3": "Gaming",
+        "4": "Futarchy",
+        "5": "Insurance",
+        "6": "More"
       }
     },
-
     "section-3": {
-      "h1": "Secure Your Transactions With Kleros",
-      "h2": "Start using Kleros oracle to reduce counterparty risk in your online transactions.",
+      "h1": "Verify any real world events on-chain",
+      "h2": "Crowd-sourced on-chain smart contract oracle system in collaboration with Reality.eth Your descentralized and fair source of truth.",
       "button": "Learn More"
     },
-
     "start-now": {
       "h1": "Start Now",
-      "card-1-title": "oracle",
-      "card-1-text": "Using Kleros oracle, you can transact in the blockchain ecosystem for services, products, and assets using our simple solution with a level of trust not yet known outside the traditional commerce space. If a dispute happens, it will be adjudicated by crowdsourced jurors selected and incentivized by the Kleros protocol.",
-      "card-1-button": "Try Kleros oracle",
-      "card-2-title": "Integrate",
-      "card-2-text": "Take a look at Kleros oracle SDK documentation and get in touch with us to integrate the Escrow feature into your marketplace.",
-      "card-2-button": "Kleros oracle SDK"
-    },
-
-    "section-4": {
-      "h1": "Integrate oracle in Your Platform",
-      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
-      "button": "Integrate Now"
+      "card-1-title": "Kleros Oracle",
+      "card-1-text": "Kleros Oracle is a product combining Kleros dispute resolution with Reality.eth cryptoeconomic mechanism for verifying real world events on-chain, to delivever a subjective oracle solution able to answer absolutely any question with a publicly verifiable answer.",
+      "card-1-button": "Try Kleros Oracle",
+      "card-2-title": "Integrate Kleros Oracle",
+      "card-2-text": "Get in touch to integrate the Oracle feature into your marketplace.",
+      "card-2-button": "Get in Touch"
     }
   },
   "about": {
