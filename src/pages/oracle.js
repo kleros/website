@@ -139,7 +139,7 @@ const Oracle = ({ intl }) => (
           <FormattedMessage id='oracle.section-3.h2' />
         </h2>
         <a
-          href='https://kleros.gitbook.io/docs/products/escrow'
+          href='https://kleros.gitbook.io/docs/products/oracle'
           rel="noopener noreferrer"
           target="blank"
           className='btn btn-secondary'
@@ -179,7 +179,7 @@ const Oracle = ({ intl }) => (
                 id: 'oracle.start-now.card-2-title'
               }),
               button: {
-                href: 'https://kleros.gitbook.io/docs/integrations/integration-tools/escrow-sdk',
+                href: 'https://kleros.gitbook.io/docs/integrations/types-of-integrations/how-to-use-reality.eth-+-kleros-as-an-oracle',
                 text: intl.formatMessage(
                   { id: 'oracle.start-now.card-2-button' }
                 ),

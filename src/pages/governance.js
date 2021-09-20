@@ -44,7 +44,7 @@ const Governance = ({ intl }) => (
         titleID="governance.section-hero.h1"
         subtitleID="governance.section-hero.h2"
         BackgroundSVG={GovernanceHero}
-        href="https://governor.kleros.io"
+        href="https://www.youtube.com/watch?v=HDSZsl1Zk4c"
       />
 
       <section className='light'>
@@ -182,7 +182,7 @@ const Governance = ({ intl }) => (
           <FormattedMessage id='governance.section-3.h2' />
         </h2>
         <a
-          href='https://kleros.gitbook.io/docs/products/escrow'
+          href='https://kleros.gitbook.io/docs/integrations/types-of-integrations/how-to-use-reality.eth-+-kleros-as-an-oracle'
           rel="noopener noreferrer"
           target="blank"
           className='btn btn-secondary'
@@ -207,7 +207,7 @@ const Governance = ({ intl }) => (
                 id: 'governance.start-now.card-1-title'
               }),
               button: {
-                href: "https://governance.kleros.io/",
+                href: "https://kleros.gitbook.io/docs/integrations/integrations-faq",
                 text: intl.formatMessage(
                   { id: 'governance.start-now.card-1-button' }
                 ),
@@ -243,7 +243,7 @@ const Governance = ({ intl }) => (
                 id: 'governance.start-now.card-3-title'
               }),
               button: {
-                href: 'https://kleros.gitbook.io/docs/integrations/integration-tools/escrow-sdk',
+                href: 'https://gnosis-safe.io/app',
                 text: intl.formatMessage(
                   { id: 'governance.start-now.card-3-button' }
                 ),

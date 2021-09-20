@@ -1,33 +1,5 @@
-.escrow .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
-  background-repeat: no-repeat;
-  margin-bottom: min(-24px, max(-64px, -4.4vw));
-  padding-bottom: 0;
-}
-
-.escrow .hero svg,
-.escrow .hero img {
-  align-self: center;
-  width: 80vw;
-  max-width: 1152.02px;
-}
-
-.escrow .playButton {
-  display: inline-block;
-  align-self: center;
-  width: 8.8vw;
-  min-width: 48px;
-  max-width: 128px;
-}
-
 .escrow .dappImage svg {
   border-radius: 12px;
-}
-
-.escrow .usecases {
 }
 
 .escrow .buttonWrapper {
@@ -36,32 +8,6 @@
   margin: auto;
   justify-content: space-around;
   align-content: space-between;
-}
-
-.escrow .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* space between columns for demo */
-  grid-gap: 2rem;
-  margin-top: 4rem;
-}
-
-@media (max-width: 1200px) {
-  .escrow .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* space between columns for demo */
-    grid-gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .escrow .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* space between columns for demo */
-    grid-gap: 2rem;
-  }
 }
 
 .escrow .helper {

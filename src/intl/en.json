@@ -187,8 +187,8 @@
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Integrate Kleros Curation",
-      "card-1-text": "Get in touch to integrate Kleros Curation",
-      "card-1-button": "Get in Touch",
+      "card-1-text": "Take a look at how Curate works and get in touch to integrate Kleros Curation",
+      "card-1-button": "Kleros Curate Tutorial",
       "card-2-title": "Curate",
       "card-2-text": "Kleros Curate is a dapp that can be used to create open curated registries of just about anything using financial incentives and Kleros dispute resolution technology to ensure a list stays on topic and that each entry is compliant to the predefined acceptance criteria.",
       "card-2-button": "Try Kleros Curate",
@@ -206,8 +206,7 @@
 
     "section-hero": {
       "h1": "Escrow",
-      "h2": "Trade, hire and pay secured by trustless dispute resolution.",
-      "button-primary": "Try Kleros Escrow"
+      "h2": "Trade, hire and pay secured by trustless dispute resolution."
     },
     "sash": {
       "first": {
@@ -252,21 +251,15 @@
       "card-2-title": "Integrate",
       "card-2-text": "Take a look at Kleros Escrow SDK documentation and get in touch with us to integrate the Escrow feature into your marketplace.",
       "card-2-button": "Kleros Escrow SDK"
-    },
-
-    "section-4": {
-      "h1": "Integrate Escrow in Your Platform",
-      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
-      "button": "Integrate Now"
     }
+
   },
   "governance": {
     "seo-title": "Governance",
 
     "section-hero": {
       "h1": "Governance",
-      "h2": "Streamline and secure your DAO governance by integrating Kleros Court to enable optimistic decision-making aligned with your constitution.",
-      "button-primary": "Try Kleros governance"
+      "h2": "Streamline and secure your DAO governance by integrating Kleros Court to enable optimistic decision-making aligned with your constitution."
     },
     "sash": {
       "first": {
@@ -295,7 +288,7 @@
     },
 
     "section-3": {
-      "h1": "Integrate Kleros with your DAO",
+      "h1": "Improve your governance processes with Kleros",
       "h2": "Implement your off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
       "button": "Learn More"
     },
@@ -303,29 +296,23 @@
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Integrate Kleros Governor",
-      "card-1-text": "Get in touch to integrate Kleros Governor in your DAO",
-      "card-1-button": "Get in touch",
+      "card-1-text": "Check our Integrations FAQs and get in contact with us!",
+      "card-1-button": "Integrations FAQs",
       "card-2-title": "Governor",
       "card-2-text": "As an open and neutral arbitration system, Kleros can be a useful tool to integrate with the governance of DAOs that want to ensure that their process is fully decentralized.",
       "card-2-button": "Try Kleros Governor",
       "card-3-title": "Reality Module",
       "card-3-text": "Using the Reality module from the Zodiac app in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
       "card-3-button": "Use it with Gnosis Safe"
-    },
-
-    "section-4": {
-      "h1": "Integrate governance in Your Platform",
-      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
-      "button": "Integrate Now"
     }
+
   },
   "oracle": {
     "seo-title": "Oracle",
 
     "section-hero": {
       "h1": "Oracle",
-      "h2": "Link your product to the physical and digital world by enabling it to verify any event outcome on-chain.",
-      "button-primary": "Try Kleros Oracle"
+      "h2": "Link your product to the physical and digital world by enabling it to verify any event outcome on-chain."
     },
     "sash": {
       "first": {
