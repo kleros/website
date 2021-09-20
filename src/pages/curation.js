@@ -1,0 +1,282 @@
+import React from 'react';
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+
+import UseCasesHero from 'src/components/usecases-hero.js';
+import CurationHero from 'src/assets/svgs/curation-hero.svg';
+import Sash from '../components/sash'
+import HexIconList from 'src/assets/svgs/hex-icon-list.svg';
+import HexIconCurate from 'src/assets/svgs/hex-icon-curate.svg';
+import HexIconBalance from 'src/assets/svgs/hex-icon-balance.svg';
+import HexIconHandshake from '../assets/svgs/hex-icon-handshake.svg';
+import IconLogoCurate from '../assets/svgs/icon-logo-curate.svg';
+import IconCurate from '../assets/svgs/icon-curate.svg';
+import CurationExample from 'src/assets/svgs/curation-example.svg';
+import UseCases from 'src/components/usecases-usecases.js';
+import CircleIconToken from '../assets/icons/token.png';
+import CircleIconSpeech from '../assets/icons/moderation.png';
+import CircleIconCharity from '../assets/svgs/circle-icon-charity.svg';
+import CircleIconRestaurant from '../assets/icons/restaurant.png';
+import CircleIconInsurance from '../assets/icons/insurance.png';
+import CircleIconECommerce from '../assets/icons/e-commerce.png';
+import CircleIconMegaphone from '../assets/icons/social.png';
+import CircleIconAntiSpam from '../assets/icons/spam.png';
+import CircleIconPlus from '../assets/icons/plus.png';
+import { Container } from 'react-bootstrap'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
+import styles from './styles/curation.module.css'
+import TrustedBy from '../components/trusted-by';
+import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
+import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
+import Union from "src/assets/svgs/third-party-logos/union/logo.svg";
+import DemocracyEarth from "src/assets/images/third-party-logos/democracy/vertical.png";
+import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
+import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
+import Gnosis from "src/assets/svgs/gnosis-logo.svg";
+import API3 from "src/assets/images/third-party-logos/api3/dark.png";
+import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
+import Hats from "src/assets/svgs/third-party-logos/hats/hats_text.svg";
+import Contact from '../components/contact';
+
+const Curation = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title={intl.formatMessage({id: 'curation.seo-title'})} />
+    <Container className={styles.curation} fluid>
+      <UseCasesHero
+        titleID="curation.section-hero.h1"
+        subtitleID="curation.section-hero.h2"
+        BackgroundSVG={CurationHero}
+        href="https://curate.kleros.io/"
+      />
+
+      <section className='light'>
+        <Sash
+          as='div'
+          figures={[
+            {
+              icon: HexIconList,
+              text: intl.formatMessage({
+                id: 'curation.sash.first.paragraph'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.sash.first.title'
+              })
+            },
+            {
+              icon: HexIconCurate,
+              text: intl.formatMessage({
+                id: 'curation.sash.second.paragraph'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.sash.second.title'
+              })
+            },
+            {
+              icon: HexIconBalance,
+              text: intl.formatMessage({
+                id: 'curation.sash.third.paragraph'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.sash.third.title'
+              })
+            }
+          ]}
+        />
+      </section>
+
+      <TrustedBy
+        partners={[
+          {
+            href: "https://omen.eth.link/",
+            icon: OmenSVG,
+            name: "Omen"
+          },
+          {
+            href: "https://www.deversifi.com/",
+            icon: Deversifi,
+            name: "Deversifi"
+          },
+          {
+            href: "https://uniswap.org/",
+            icon: Uniswap,
+            name: "Uniswap"
+          },
+          {
+            href: "https://www.unn.finance/",
+            icon: Union,
+            name: "Union"
+          },
+          {
+            href: "https://democracy.earth/",
+            icon: DemocracyEarth,
+            name: "DemocracyEarth"
+          },
+          {
+            href: "https://gnosis.io/",
+            icon: Gnosis,
+            name: "Gnosis"
+          },
+          {
+            href: "https://api3.org/",
+            icon: API3,
+            name: "API3"
+          },
+          {
+            href: "https://unslashed.finance/",
+            icon: Unslashed,
+            name: "Unslashed"
+          },
+          {
+            href: "https://www.polkamarkets.com/",
+            icon: Polkamarkets,
+            name: "Polkamarkets"
+          },
+          {
+            href: "https://hats.finance/",
+            icon: Hats,
+            name: "Hats"
+          }
+        ]}
+      />
+
+      <section className={`light ${styles.dappImage}`}>
+        <CurationExample />
+      </section>
+
+      <UseCases
+        titleID="curation.section-use-case.h1"
+        figures={[
+          {
+            icon: CircleIconToken,
+            textID: 'curation.section-use-case.cards.1'
+          },
+          {
+            icon: CircleIconSpeech,
+            textID: 'curation.section-use-case.cards.2'
+          },
+          {
+            icon: CircleIconCharity,
+            textID: 'curation.section-use-case.cards.3'
+          },
+          {
+            icon: CircleIconRestaurant,
+            textID: 'curation.section-use-case.cards.4'
+          },
+          {
+            icon: CircleIconInsurance,
+            textID: 'curation.section-use-case.cards.5'
+          },
+          {
+            icon: CircleIconECommerce,
+            textID: 'curation.section-use-case.cards.6'
+          },
+          {
+            icon: CircleIconMegaphone,
+            textID: 'curation.section-use-case.cards.7'
+          },
+          {
+            icon: CircleIconAntiSpam,
+            textID: 'curation.section-use-case.cards.8'
+          },
+          {
+            icon: CircleIconPlus,
+            textID: 'curation.section-use-case.cards.9'
+          ,}
+        ]}
+      />
+
+      <section className="light">
+        <span className='trapezium' />
+        <h1>
+          <FormattedMessage id='curation.section-3.h1' />
+        </h1>
+        <h2>
+          <FormattedMessage id='curation.section-3.h2' />
+        </h2>
+        <a
+          href='https://kleros.gitbook.io/docs/products/curate'
+          rel="noopener noreferrer"
+          target="blank"
+          className='btn btn-secondary'
+        >
+          <FormattedMessage id='curation.section-3.button' />
+        </a>
+      </section>
+
+      <section className='light'>
+        <h1>
+          <FormattedMessage id='curation.start-now.h1' />
+        </h1>
+        <Sash
+          as='div'
+          figures={[
+            {
+              icon: HexIconHandshake,
+              text: intl.formatMessage({
+                id: 'curation.start-now.card-1-text'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.start-now.card-1-title'
+              }),
+              button: {
+                href: "https://kleros.gitbook.io/docs/products/curate/kleros-curate-tutorial",
+                text: intl.formatMessage(
+                  { id: 'curation.start-now.card-1-button' }
+                ),
+              }
+            }
+          ]}
+        />
+        <Sash
+          as='div'
+          style={{paddingTop: 0}}
+          figures={[
+            {
+              icon: IconLogoCurate,
+              text: intl.formatMessage({
+                id: 'curation.start-now.card-2-text'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.start-now.card-2-title'
+              }),
+              button: {
+                href: "https://curate.kleros.io/",
+                text: intl.formatMessage(
+                  { id: 'curation.start-now.card-2-button' }
+                ),
+              }
+            },
+            {
+              icon: IconCurate,
+              text: intl.formatMessage({
+                id: 'curation.start-now.card-3-text'
+              }),
+              title: intl.formatMessage({
+                id: 'curation.start-now.card-3-title'
+              }),
+              button: {
+                href: 'https://tokens.kleros.io/tokens',
+                text: intl.formatMessage(
+                  { id: 'curation.start-now.card-3-button' }
+                ),
+              }
+            }
+          ]}
+        />
+      </section>
+
+      <section className="light">
+        <Contact
+          content={{
+            title: intl.formatMessage({
+              id: "contact.title",
+            }),
+          }}
+        />
+      </section>
+
+    </Container>
+  </Layout>
+)
+
+export default injectIntl(Curation);
