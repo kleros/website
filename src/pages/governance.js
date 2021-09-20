@@ -12,7 +12,7 @@ import Kleros from 'src/assets/svgs/icon-kleros.svg';
 import KlerosPink from 'src/assets/svgs/kleros-pink.svg';
 import Community from 'src/assets/svgs/icon-community.svg';
 import Handshake from 'src/assets/svgs/icon-handshake.svg'
-import RealityModule from "src/assets/images/reality-module.png";
+import Safesnap from 'src/assets/images/third-party-logos/gnosis-safesnap.png';
 import TrustedBy from 'src/components/trusted-by';
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
@@ -235,7 +235,7 @@ const Governance = ({ intl }) => (
               }
             },
             {
-              icon: RealityModule,
+              icon: Safesnap,
               text: intl.formatMessage({
                 id: 'governance.start-now.card-3-text'
               }),

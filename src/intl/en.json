@@ -301,9 +301,9 @@
       "card-2-title": "Governor",
       "card-2-text": "As an open and neutral arbitration system, Kleros can be a useful tool to integrate with the governance of DAOs that want to ensure that their process is fully decentralized.",
       "card-2-button": "Try Kleros Governor",
-      "card-3-title": "Reality Module",
-      "card-3-text": "Using the Reality module from the Zodiac app in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
-      "card-3-button": "Use it with Gnosis Safe"
+      "card-3-title": "Gnosis SafeSnap",
+      "card-3-text": "Using the SafeSnap governance module from Gnosis Safe in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
+      "card-3-button": "Try SafeSnap"
     }
 
   },
