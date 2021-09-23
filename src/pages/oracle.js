@@ -36,7 +36,6 @@ const Oracle = ({ intl }) => (
         titleID="oracle.section-hero.h1"
         subtitleID="oracle.section-hero.h2"
         BackgroundSVG={OracleHero}
-        href="https://reality.eth.link/app/"
       />
 
       <section className='light'>

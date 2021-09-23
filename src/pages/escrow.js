@@ -45,7 +45,6 @@ const Escrow = ({ intl }) => (
         titleID="escrow.section-hero.h1"
         subtitleID="escrow.section-hero.h2"
         BackgroundSVG={EscrowShield}
-        href="https://escrow.kleros.io"
       />
 
       <section className='light'>

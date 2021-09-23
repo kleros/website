@@ -46,7 +46,6 @@ const Curation = ({ intl }) => (
         titleID="curation.section-hero.h1"
         subtitleID="curation.section-hero.h2"
         BackgroundSVG={CurationHero}
-        href="https://curate.kleros.io/"
       />
 
       <section className='light'>
