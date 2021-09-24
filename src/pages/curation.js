@@ -194,7 +194,7 @@ const Curation = ({ intl }) => (
                 id: 'curation.start-now.card-1-title'
               }),
               button: {
-                href: "https://kleros.gitbook.io/docs/products/curate/kleros-curate-tutorial",
+                href: "mailto:contact@kleros.io",
                 text: intl.formatMessage(
                   { id: 'curation.start-now.card-1-button' }
                 ),

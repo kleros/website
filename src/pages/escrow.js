@@ -166,7 +166,7 @@ const Escrow = ({ intl }) => (
                 id: 'escrow.start-now.card-2-title'
               }),
               button: {
-                href: 'https://kleros.gitbook.io/docs/integrations/integration-tools/escrow-sdk',
+                href: 'mailto:contact@kleros.io',
                 text: intl.formatMessage(
                   { id: 'escrow.start-now.card-2-button' }
                 ),

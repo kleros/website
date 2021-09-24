@@ -178,7 +178,7 @@ const Oracle = ({ intl }) => (
                 id: 'oracle.start-now.card-2-title'
               }),
               button: {
-                href: 'https://kleros.gitbook.io/docs/integrations/types-of-integrations/how-to-use-reality.eth-+-kleros-as-an-oracle',
+                href: 'mailto:contact@kleros.io',
                 text: intl.formatMessage(
                   { id: 'oracle.start-now.card-2-button' }
                 ),

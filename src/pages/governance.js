@@ -141,7 +141,7 @@ const Governance = ({ intl }) => (
                 id: 'governance.start-now.card-1-title'
               }),
               button: {
-                href: "https://kleros.gitbook.io/docs/integrations/integrations-faq",
+                href: "mailto:contact@kleros.io",
                 text: intl.formatMessage(
                   { id: 'governance.start-now.card-1-button' }
                 ),
