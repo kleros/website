@@ -27,15 +27,11 @@ import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import styles from './styles/curation.module.css'
 import TrustedBy from '../components/trusted-by';
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
-import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
-import Union from "src/assets/svgs/third-party-logos/union/logo.svg";
-import DemocracyEarth from "src/assets/images/third-party-logos/democracy/vertical.png";
-import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
-import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
-import Gnosis from "src/assets/svgs/gnosis-logo.svg";
-import API3 from "src/assets/images/third-party-logos/api3/dark.png";
 import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
-import Hats from "src/assets/svgs/third-party-logos/hats/hats_text.svg";
+import Sushi from "src/assets/images/third-party-logos/sushiswap.png";
+import Zerion from "../assets/images/third-party-logos/zerion/png/blue-logo-and-text-transparent.png";
+import Paraswap from "src/assets/images/third-party-logos/paraswap.jpg";
+import ClrFund from "src/assets/images/third-party-logos/clr-fund-text.png";
 import Contact from '../components/contact';
 
 const Curation = ({ intl }) => (
@@ -91,50 +87,30 @@ const Curation = ({ intl }) => (
             name: "Omen"
           },
           {
-            href: "https://www.deversifi.com/",
-            icon: Deversifi,
-            name: "Deversifi"
-          },
-          {
             href: "https://uniswap.org/",
             icon: Uniswap,
             name: "Uniswap"
           },
           {
-            href: "https://www.unn.finance/",
-            icon: Union,
-            name: "Union"
+            href: "https://uniswap.org/",
+            icon: Sushi,
+            name: "Sushi"
           },
           {
-            href: "https://democracy.earth/",
-            icon: DemocracyEarth,
-            name: "DemocracyEarth"
+            href: "https://uniswap.org/",
+            icon: Zerion,
+            name: "Zerion"
           },
           {
-            href: "https://gnosis.io/",
-            icon: Gnosis,
-            name: "Gnosis"
+            href: "https://uniswap.org/",
+            icon: Paraswap,
+            name: "Paraswap"
           },
           {
-            href: "https://api3.org/",
-            icon: API3,
-            name: "API3"
+            href: "https://uniswap.org/",
+            icon: ClrFund,
+            name: "clr.fund"
           },
-          {
-            href: "https://unslashed.finance/",
-            icon: Unslashed,
-            name: "Unslashed"
-          },
-          {
-            href: "https://www.polkamarkets.com/",
-            icon: Polkamarkets,
-            name: "Polkamarkets"
-          },
-          {
-            href: "https://hats.finance/",
-            icon: Hats,
-            name: "Hats"
-          }
         ]}
       />
 

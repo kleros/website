@@ -16,7 +16,7 @@ import IconOracle from "src/assets/svgs/icon-oracle.svg";
 import TrustedBy from 'src/components/trusted-by';
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
 import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
-import Gnosis from "src/assets/svgs/gnosis-logo.svg";
+import Gnosis from "src/assets/images/third-party-logos/gnosis-safe-logo.png";
 import UseCases from 'src/components/usecases-usecases.js';
 import CircleIconTrendUp from 'src/assets/svgs/circle-icon-trend-up.svg';
 import CircleIconDices from 'src/assets/svgs/circle-icon-dices.svg';
