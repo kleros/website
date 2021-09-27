@@ -9,6 +9,13 @@
   margin-top: 4rem;
 }
 
+@media (max-width: 320px) {
+  .usecases .cards svg,
+  .usecases .cards img{
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .usecases .cards {
     display: grid;
