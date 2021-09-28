@@ -151,7 +151,7 @@
     "sash": {
       "first": {
         "title": "A World of Lists",
-        "paragraph": "What tokens to list in an exchange? What items to accept in a marketplace? Which content to remove in a social media platform? List curation solves these problems."
+        "paragraph": "What tokens to list in an exchange? What items to accept in a marketplace? Which content to remove on a social media platform? List curation solves these problems."
       },
       "second": {
         "title": "Empower Your Community",
@@ -189,7 +189,7 @@
       "card-1-text": "Get in touch to integrate Kleros Curation into your project.",
       "card-1-button": "Get in touch",
       "card-2-title": "Curate",
-      "card-2-text": "Kleros Curate is a dapp that can be used to create open curated registries of just about anything using financial incentives and Kleros dispute resolution technology to ensure a list stays on topic and that each entry is compliant to the predefined acceptance criteria.",
+      "card-2-text": "Kleros Curate is a dapp that can be used to create open curated registries of just about anything using financial incentives and Kleros dispute resolution technology to ensure a list stays on topic and that each entry is compliant with the predefined acceptance criteria.",
       "card-2-button": "Try Kleros Curate",
       "card-3-title": "Tokens",
       "card-3-text": "Kleros Tokens is an open and decentralized curated registry of tokens. In other words, it is a community-managed list of ERC-20 tokens (including their name, ticker,  logo and address) open to any project and curated by the power of Kleros arbitration and economic incentives.",
@@ -206,15 +206,15 @@
     "sash": {
       "first": {
         "title": "The Risk of Online Commerce",
-        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes  manually is a closed and costly solution."
+        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes manually is a closed and costly solution."
       },
       "second": {
         "title": "Decentralize your Dispute Resolution",
-        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved in by Kleros Court in a decentralized and open manner."
+        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved by Kleros Court in a decentralized and open manner."
       },
       "third": {
         "title": "Secure transactions on your platform",
-        "paragraph": "With Kleros Escrow, your users can be confident that the other party in their P2P transaction will always fulfill their obligations."
+        "paragraph": "With Kleros Escrow, your users can be confident that the other party in their P2P transaction will always fulfil their obligations."
       }
     },
     "section-use-case": {
@@ -335,14 +335,14 @@
       }
     },
     "section-3": {
-      "h1": "Verify any real world events on-chain",
-      "h2": "Crowd-sourced on-chain smart contract oracle system in collaboration with Reality.eth Your descentralized and fair source of truth.",
+      "h1": "Verify any real-world events on-chain",
+      "h2": "Crowd-sourced on-chain smart contract oracle system in collaboration with Reality.eth Your decentralized and fair source of truth.",
       "button": "Learn More"
     },
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Kleros Oracle",
-      "card-1-text": "Kleros Oracle is a product combining Kleros dispute resolution with Reality.eth cryptoeconomic mechanism for verifying real world events on-chain, to delivever a subjective oracle solution able to answer absolutely any question with a publicly verifiable answer.",
+      "card-1-text": "Kleros Oracle is a product combining Kleros dispute resolution with Reality.eth cryptoeconomic mechanism for verifying real-world events on-chain, to deliver a subjective oracle solution able to answer absolutely any question with a publicly verifiable answer.",
       "card-1-button": "Try Kleros Oracle",
       "card-2-title": "Integrate Kleros Oracle",
       "card-2-text": "Get in touch to integrate Kleros Oracle into your project.",
