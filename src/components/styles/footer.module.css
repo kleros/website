@@ -26,7 +26,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: calc(340px - 7vw);
-  min-height: 120px;
+  min-height: 140px;
 }
 
 .footer > div > div > div:nth-child(3) {
@@ -60,8 +60,10 @@
   justify-content: center;
 }
 
-@media only screen and (min-width: 860px){
-  .footer .social > a { flex-basis: auto; }
+@media only screen and (min-width: 860px) {
+  .footer .social > a {
+    flex-basis: auto;
+  }
 }
 
 .footer .social > a > svg,
