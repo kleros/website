@@ -31,6 +31,21 @@
   fill: white;
 }
 
+.fellowship .testimonials{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.52%
+}
+
+.fellowship .testimonials .video{
+  position: absolute;
+  left: 4%;
+  top: 4%;
+  width: 92%;
+  height: 92%;
+}
+
 .fellowship .portraitContainer .overlay {
   position: absolute;
   top: 0;
@@ -126,4 +141,30 @@
 
 .fellowship .card-body {
   color: white;
+}
+
+.fellowship .arrow-prev,
+.fellowship .arrow-next {
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.fellowship .arrow-prev {
+    left: -25px;
+}
+
+.fellowship .arrow-next {
+    right: -25px;
 }
