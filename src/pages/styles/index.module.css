@@ -214,13 +214,5 @@
   margin-right: auto;
 }
 
-.index :global(.slick-dots) > li {
-  transform: scale(2);
-}
-
-.index :global(.slick-dots) > li > button::before {
-  color: var(--color-blue) !important;
-}
-
 .index .playButton {
 }

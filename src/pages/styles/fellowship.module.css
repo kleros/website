@@ -35,7 +35,7 @@
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.52%
+  padding-bottom: 56%
 }
 
 .fellowship .testimonials .video{
@@ -167,4 +167,10 @@
 
 .fellowship .arrow-next {
     right: -25px;
+}
+
+.fellowship :global(.slick-track) {
+  margin-bottom: 1rem !important;
+  margin-left: auto;
+  margin-right: auto;
 }
