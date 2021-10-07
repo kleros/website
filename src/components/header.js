@@ -143,14 +143,14 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/escrow">
                   <FormattedMessage id="footer.escrow" />
                 </Link>
-                <Link className="d-none dropdown-item" to="/governance">
+                <Link className="dropdown-item" to="/governance">
                   <FormattedMessage id="footer.governance" />
                 </Link>
-                <Link className="dropdown-item" to="/curate">
+                <Link className="dropdown-item" to="/curation">
                   <FormattedMessage id="header.curation" />
                 </Link>
-                <Link className="d-none dropdown-item" to="/oracle">
-                  <FormattedMessage id="header.oracle" />
+                <Link className="dropdown-item" to="/oracle">
+                  <FormattedMessage id="footer.oracle" />
                 </Link>
               </NavDropdown>
               <Link className="nav-link" to="/integrations">

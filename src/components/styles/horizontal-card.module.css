@@ -8,10 +8,17 @@
   display: flex;
 }
 
-.horizontalCard svg {
+@media (max-width: 320px) {
+  .horizontalCard {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.horizontalCard svg,
+.horizontalCard img {
   width: 4rem;
   height: 4rem;
-
   margin-right: 2rem;
 }
 

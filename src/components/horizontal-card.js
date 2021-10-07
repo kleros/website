@@ -12,7 +12,8 @@ import { injectIntl } from 'gatsby-plugin-intl'
 
 const HorizontalCard = ({ content, intl }) => (
   <Container className={styles.horizontalCard} fluid>
-    {content.icon && <content.icon className={styles.icon} />}
+    {typeof content.icon === "function" && <content.icon />}
+    {typeof content.icon === "string" && <img src={content.icon} alt={content.text} />}
     {!content.href && <span className={styles.text}>{content.text}</span>}
     {content.href && (
       <a href={content.href} rel='noopener noreferrer' target='blank'>

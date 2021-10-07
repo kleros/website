@@ -1,0 +1,10 @@
+.partners img,
+.partners svg {
+  margin: 2rem;
+  margin-top: 1rem;
+  max-width: 200px;
+  max-height: 80px;
+}
+
+.partners > h2 {
+}
