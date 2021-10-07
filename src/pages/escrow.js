@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
+import UseCasesHero from 'src/components/usecases-hero.js';
+import EscrowShield from 'src/assets/svgs/escrow-shield.svg';
 import Sash from '../components/sash'
-import HorizontalCard from '../components/horizontal-card'
-import Contact from '../components/contact'
-import EscrowTwoScreen from 'src/assets/svgs/escrow-twoscreens.svg'
-import EscrowHero from 'src/assets/svgs/escrow-hero.svg'
 import Warning from 'src/assets/svgs/icon-warning.svg'
-import EscrowIcon from 'src/assets/svgs/icon-escrow.svg'
 import Kleros from 'src/assets/svgs/icon-kleros.svg'
-import copyright from 'src/assets/svgs/icon-copyright.svg'
+import EscrowIcon from 'src/assets/svgs/icon-escrow.svg'
+import UseCases from 'src/components/usecases-usecases.js';
+import Contact from '../components/contact'
+import EscrowCard from 'src/assets/svgs/escrow-card.svg';
+import Handshake from 'src/assets/svgs/icon-handshake.svg'
+import EscrowExample from 'src/assets/svgs/escrow-example.svg'
+import nfts from 'src/assets/svgs/icon-nfts.svg'
 import eCommerce from 'src/assets/svgs/icon-e-commerce.svg'
 import freelancing from 'src/assets/svgs/icon-freelance.svg'
 import plus from 'src/assets/svgs/icon-plus.svg'
@@ -19,28 +23,19 @@ import crowdfunding from 'src/assets/svgs/icon-crowdfunding.svg'
 import payroll from 'src/assets/svgs/icon-payroll.svg'
 import www from 'src/assets/svgs/icon-www.svg'
 import { Container } from 'react-bootstrap'
-import { FormattedMessage, Link, injectIntl } from 'gatsby-plugin-intl'
+import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import styles from './styles/escrow.module.css'
 
 const Escrow = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({id: 'escrow.seo-title'})} />
     <Container className={styles.escrow} fluid>
-      <section className={styles.hero}>
-        <h1>
-          <FormattedMessage id='escrow.section-hero.h1' />
-        </h1>
-        <h2>
-          <FormattedMessage id='escrow.section-hero.h2' />
-        </h2>
+      <UseCasesHero
+        titleID="escrow.section-hero.h1"
+        subtitleID="escrow.section-hero.h2"
+        BackgroundSVG={EscrowShield}
+      />
 
-        <Container className={styles.buttonWrapper}>
-          <a className='btn btn-primary' href='https://escrow.kleros.io' rel='noopener noreferrer' target='blank'>
-            <FormattedMessage id='escrow.section-hero.button-primary' />
-          </a>
-        </Container>
-        <EscrowHero />
-      </section>
       <section className='light'>
         <Sash
           as='div'
@@ -55,7 +50,7 @@ const Escrow = ({ intl }) => (
               })
             },
             {
-              icon: EscrowIcon,
+              icon: Kleros,
               text: intl.formatMessage({
                 id: 'escrow.sash.second.paragraph'
               }),
@@ -64,7 +59,7 @@ const Escrow = ({ intl }) => (
               })
             },
             {
-              icon: Kleros,
+              icon: EscrowIcon,
               text: intl.formatMessage({
                 id: 'escrow.sash.third.paragraph'
               }),
@@ -76,67 +71,53 @@ const Escrow = ({ intl }) => (
         />
       </section>
 
-      <section className={styles.usecases}>
-        <h1>{intl.formatMessage({ id: 'escrow.section-use-case.h1' })}</h1>
-        <div className={styles.cards}>
-          <HorizontalCard
-            content={{
-              icon: freelancing,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.1' })
-            }}
-          />
-          <HorizontalCard
-            content={{
-              icon: www,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.2' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: bounty,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.3' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: eCommerce,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.4' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: payroll,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.5' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: crowdfunding,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.6' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: otc,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.7' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: copyright,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.8' })
-            }}
-          />{' '}
-          <HorizontalCard
-            content={{
-              icon: plus,
-              text: intl.formatMessage({ id: 'escrow.section-use-case.cards.9' })
-            }}
-          />
-        </div>
+      <section className={`light ${styles.dappImage}`}>
+        <EscrowExample />
       </section>
 
-      <section className='masked'>
+      <UseCases
+        titleID="escrow.section-use-case.h1"
+        figures={[
+          {
+            icon: freelancing,
+            textID: 'escrow.section-use-case.cards.1'
+          },
+          {
+            icon: www,
+            textID: 'escrow.section-use-case.cards.2'
+          },
+          {
+            icon: bounty,
+            textID: 'escrow.section-use-case.cards.3'
+          },
+          {
+            icon: eCommerce,
+            textID: 'escrow.section-use-case.cards.4'
+          },
+          {
+            icon: payroll,
+            textID: 'escrow.section-use-case.cards.5'
+          },
+          {
+            icon: crowdfunding,
+            textID: 'escrow.section-use-case.cards.6'
+          },
+          {
+            icon: otc,
+            textID: 'escrow.section-use-case.cards.7'
+          },
+          {
+            icon: nfts,
+            textID: 'escrow.section-use-case.cards.8'
+          },
+          {
+            icon: plus,
+            textID: 'escrow.section-use-case.cards.9'
+          ,}
+        ]}
+      />
+
+      <section className="light">
         <span className='trapezium' />
         <h1>
           <FormattedMessage id='escrow.section-3.h1' />
@@ -144,35 +125,67 @@ const Escrow = ({ intl }) => (
         <h2>
           <FormattedMessage id='escrow.section-3.h2' />
         </h2>
-        <a href='https://escrow.kleros.io' className='btn btn-secondary'>
+        <a
+          href='https://kleros.gitbook.io/docs/products/escrow'
+          rel="noopener noreferrer"
+          target="blank"
+          className='btn btn-secondary'
+        >
           <FormattedMessage id='escrow.section-3.button' />
         </a>
       </section>
-      <section>
+
+      <section className='light'>
         <h1>
-          <FormattedMessage id='escrow.section-4.h1' />
+          <FormattedMessage id='escrow.start-now.h1' />
         </h1>
-        <h2>
-          <FormattedMessage id='escrow.section-4.h2' />
-        </h2>
-        <Link to='/integrations' className='btn btn-primary'>
-          <FormattedMessage id='escrow.section-4.button' />
-        </Link>
+        <Sash
+          as='div'
+          figures={[
+            {
+              icon: EscrowCard,
+              text: intl.formatMessage({
+                id: 'escrow.start-now.card-1-text'
+              }),
+              title: intl.formatMessage({
+                id: 'escrow.start-now.card-1-title'
+              }),
+              button: {
+                href: "https://escrow.kleros.io/",
+                text: intl.formatMessage(
+                  { id: 'escrow.start-now.card-1-button' }
+                ),
+              }
+            },
+            {
+              icon: Handshake,
+              text: intl.formatMessage({
+                id: 'escrow.start-now.card-2-text'
+              }),
+              title: intl.formatMessage({
+                id: 'escrow.start-now.card-2-title'
+              }),
+              button: {
+                href: 'mailto:contact@kleros.io',
+                text: intl.formatMessage(
+                  { id: 'escrow.start-now.card-2-button' }
+                ),
+              }
+            }
+          ]}
+        />
       </section>
-      <div />
-      <section className='nopadding'>
-        <EscrowTwoScreen />
-      </section>
-      <hr />
-      <section>
+
+      <section className="light">
         <Contact
           content={{
             title: intl.formatMessage({
-              id: 'contact.title'
-            })
+              id: "contact.title",
+            }),
           }}
         />
       </section>
+
     </Container>
   </Layout>
 )

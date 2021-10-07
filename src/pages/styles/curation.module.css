@@ -1,8 +1,8 @@
-.escrow .dappImage svg {
+.curation .dappImage svg {
   border-radius: 12px;
 }
 
-.escrow .buttonWrapper {
+.curation .buttonWrapper {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -10,14 +10,14 @@
   align-content: space-between;
 }
 
-.escrow .helper {
+.curation .helper {
   /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.escrow .badge {
+.curation .badge {
   margin-top: 1.5rem;
   max-width: 30rem;
   height: 9rem;
@@ -26,7 +26,6 @@
   border-radius: 12px;
 }
 
-.escrow .h1 {
+.curation .h1 {
   margin-bottom: 2rem;
 }
-

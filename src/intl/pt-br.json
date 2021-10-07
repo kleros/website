@@ -25,8 +25,9 @@
     "developer": "Documentação",
     "integrations": "Integrações",
     "governance": "Governança",
+    "oracle": "Oracle",
     "escrow": "Escrow",
-    "curate": "Curate",
+    "curate": "Curation",
     "fellowship": "Fellowship",
     "community": "Comunidade",
     "blog": "Blog",
@@ -125,94 +126,200 @@
       }
     }
   },
-  "curate": {
+  "curation": {
     "seo-title": "Curate",
     "section-hero": {
-      "h1": "Kleros Curate",
-      "h2": "Informações organizadas pela sua comunidade para a sua comunidade. Crie sua própria lista com curadoria com o Kleros Curate.",
-      "button-primary": "Crie Sua Própria Lista"
+      "h1": "Curate",
+      "h2": "Informações organizadas pela sua comunidade para a sua comunidade."
     },
     "sash": {
       "first": {
         "title": "Um Mundo de Listas",
-        "paragraph": "Quais tokens listar em uma exchange? Quais itens aceitar em um marketplace? Qual conteúdo remover em uma plataforma de mídia social? Todos esses são problemas de curadoria de lista."
+        "paragraph": "Quais tokens listar em uma exchange? Que itens aceitar em um marketplace? Que conteúdo remover em uma plataforma de mídias sociais? A curadoria de listas resolve esses problemas."
       },
       "second": {
         "title": "Empodere Sua Comunidade",
-        "paragraph": "Integre-se com a Kleros, defina diretrizes e deixe sua comunidade cuidar da curadoria."
+        "paragraph": "Faça uma integração com a Kleros, defina as diretrizes e deixe a sua comunidade cuidar da curadoria."
       },
       "third": {
         "title": "Justiça e Transparência",
-        "paragraph": "Kleros se certificará de que as decisões de curadoria sejam feitas de forma justa e transparente."
+        "paragraph": "A Kleros se certificará de que as decisões de curadoria serão tomadas de forma justa e transparente."
       }
     },
     "section-use-case": {
-      "h1": "Casos de uso do Kleros Curate",
+      "h1": "Casos de Uso do Kleros Curate",
       "cards": {
         "1": "Listagem de Tokens",
         "2": "Moderação",
-        "3": "Listas de Hotéis",
-        "4": "Listas de Restaurantes",
+        "3": "Listagem de Hotéis",
+        "4": "Listagem de Restaurantes",
         "5": "Seguros",
         "6": "E-Commerce",
-        "7": "Social Media",
+        "7": "Mídias Sociais",
         "8": "Anti-Spam",
-        "9": "More"
+        "9": "Mais"
       }
     },
     "section-3": {
-      "h1": "Kleros Curate",
-      "h2": "Crie seu próprio registro de tokens com curadoria e coloque o poder da informação nas mãos de sua comunidade.",
-      "button": "Comece a usar o Kleros Curate"
+      "h1": "Crie Sua Própria Lista!",
+      "h2": "Crie o seu próprio registro de tokens com curadoria e coloque o poder da informação nas mãos da sua comunidade.",
+      "button": "Saiba Mais"
     },
-    "section-4": {
-      "h1": "Quem está usando?"
+    "start-now": {
+      "h1": "Comece Agora",
+      "card-1-title": "Integre-se ao Kleros Curate",
+      "card-1-text": "Entre em contato para fazer uma integração do Kleros Curate com o seu projeto.",
+      "card-1-button": "Entre em contato",
+      "card-2-title": "Curate",
+      "card-2-text": "O Kleros Curate é um dapp que pode ser usado para criar registros abertos com curadoria de basicamente tudo, usando incentivos financeiros e a tecnologia de resolução de disputas da Kleros, para garantir que a lista se mantenha coerente e que cada item esteja em conformidade com os critérios de aceitação predefinidos.",
+      "card-2-button": "Experimente o Kleros Curate",
+      "card-3-title": "Tokens",
+      "card-3-text": "O Kleros Tokens é um registro de tokens aberto, descentralizado e com curadoria. Em outras palavras, trata-se de uma lista de tokens ERC-20 (incluindo nome, ticker, logo e endereço), gerida pela comunidade, aberta a qualquer projeto e curada pelo poder de arbitragem da Kleros e incentivos econômicos.",
+      "card-3-button": "Experimente o Kleros Tokens"
     }
   },
   "escrow": {
     "seo-title": "Escrow",
     "section-hero": {
-      "h1": "Kleros Escrow",
-      "h2": "Negocie, contrate e pague de forma segura através da resolução de disputas sem terceiros de confiança.",
-      "button-primary": "Experimente Kleros Escrow"
+      "h1": "Escrow",
+      "h2": "Negocie, contrate e pague de forma segura através da resolução de disputas trustless."
     },
     "sash": {
       "first": {
-        "title": "Os riscos do comércio online",
-        "paragraph": "Ao contratar alguém online, há sempre o risco de a outra parte não cumprir o acordo ou agir de forma maliciosa."
+        "title": "O Risco do Comércio Online",
+        "paragraph": "Ao se contratar alguém online, sempre existe o risco da contraparte não cumprir o acordo. Resolver as disputas manualmente é uma solução fechada e custosa."
       },
       "second": {
-        "title": "Use o Kleros Escrow",
-        "paragraph": "Caso algo dê errado, a disputa será resolvida pela Kleros."
+        "title": "Descentralize sua Resolução de Disputas",
+        "paragraph": "Em caso de discordância entre usuários do seu protocolo, a disputa será resolvida pela Corte da Kleros, de forma aberta e descentralizada."
       },
       "third": {
-        "title": "Transacione com segurança",
-        "paragraph": "Com o Kleros Escrow, comprador e vendedor podem ter certeza de que a outra parte cumprirá sua obrigação."
+        "title": "Proteja as transações na sua plataforma",
+        "paragraph": "Com o Kleros Escrow, seus usuários podem confiar que a contraparte das suas transações P2P sempre cumprirá suas obrigações."
       }
     },
     "section-use-case": {
-      "h1": "Casos de uso do Kleros Escrow",
+      "h1": "Casos de Uso do Kleros Escrow",
       "cards": {
         "1": "Freelancing",
-        "2": "Transferência de domínio de internet",
+        "2": "Transferência de Domínios de Internet",
         "3": "Recompensas",
         "4": "E-Commerce",
-        "5": "Folha de pagamento",
+        "5": "Folhas de Pagamento",
         "6": "Marcos de Crowdfunding",
         "7": "OTC",
-        "8": "Plágio",
+        "8": "NFTs",
         "9": "Mais"
       }
     },
     "section-3": {
-      "h1": "Proteja suas transações com a Kleros",
-      "h2": "Comece a usar o Kleros Escrow para reduzir o risco de contraparte em suas transações online.",
-      "button": "Comece a usar o Kleros Escrow"
+      "h1": "Proteja suas Transações com a Kleros",
+      "h2": "Comece usando o Kleros Escrow para reduzir o risco da contraparte nas suas transações online.",
+      "button": "Saiba Mais"
     },
-    "section-4": {
-      "h1": "Integre o Escrow em sua plataforma",
-      "h2": "Se você estiver construindo uma plataforma de comércio eletrônico, delegue a resolução de disputas à Kleros. Concentre-se no seu produto. A Kleros vai cuidar das disputas.",
-      "button": "Integre agora"
+    "start-now": {
+      "h1": "Comece Agora",
+      "card-1-title": "Escrow",
+      "card-1-text": "Utilizando o Kleros Escrow, você pode fazer transações de serviços, produtos e ativos no ecossistema blockchain usando nossa solução simples com um nível de confiança ainda desconhecido fora do espaço de comércio tradicional. Se uma disputa acontece, ela será julgada por jurados da comunidade, selecionados e incentivados pelo protocolo Kleros.",
+      "card-1-button": "Experimente o Kleros Escrow",
+      "card-2-title": "Integre-se ao Kleros Escrow",
+      "card-2-text": "Entre em contato para fazer uma integração do Kleros Escrow com o seu projeto.",
+      "card-2-button": "Entre em contato"
+    }
+  },
+  "governance": {
+    "seo-title": "Governança",
+    "section-hero": {
+      "h1": "Governança",
+      "h2": "Simplifique e proteja a governança da sua DAO integrando-se à Corte da Kleros para permitir tomadas de decisão otimistas, alinhadas com a sua constituição."
+    },
+    "sash": {
+      "first": {
+        "title": "Proteja a Governança da sua DAO",
+        "paragraph": "Proteja sua DAO de erros e ataques utilizando a Kleros como a Suprema Corte para defender sua constituição e assegurar a correta implementação de propostas."
+      },
+      "second": {
+        "title": "Acelere a execução",
+        "paragraph": "Delegue mais poder/fundos ao time executivo da sua DAO para tomadas de decisão mais rápidas e deixe a Corte da Kleros fornecer uma decisão justa em caso de desacordo na comunidade sobre o seu uso."
+      },
+      "third": {
+        "title": "Execução trustless on-chain",
+        "paragraph": "Execução trustless on-chain da implementação de propostas de governança baseada no resultado de votações off-chain."
+      }
+    },
+    "section-use-case": {
+      "h1": "Casos de Uso de Governança",
+      "cards": {
+        "1": "Suprema Corte para DAOs",
+        "2": "Governança Otimista",
+        "3": "Controle de Fundos de Subsídios",
+        "4": "Proteção Contra Ataques à Governança",
+        "5": "Colaboração entre DAOs",
+        "6": "Mais"
+      }
+    },
+    "section-3": {
+      "h1": "Aprimore seu processo de governança com a Kleros",
+      "h2": "Implemente suas decisões de governança feitas off-chain sem depender de um terceiro de confiança para executá-las on-chain",
+      "button": "Saiba Mais"
+    },
+    "start-now": {
+      "h1": "Comece Agora",
+      "card-1-title": "Integre-se ao Kleros Governor",
+      "card-1-text": "Entre em contato para fazer uma integração do Kleros Governor com a sua DAO.",
+      "card-1-button": "Entre em contato",
+      "card-2-title": "Governor",
+      "card-2-text": "Como um sistema de arbitragem aberto e neutro, a Kleros pode ser uma ferramenta útil para se integrar à governança de DAOs que desejam garantir que seus processos são totalmente descentralizados.",
+      "card-2-button": "Experimente o Kleros Governor",
+      "card-3-title": "Gnosis SafeSnap",
+      "card-3-text": "Utilizando o módulo de governança SafeSnap do Gnosis Safe em conjunto com a Corte da Kleros como árbitro de última instância, qualquer DAO pode implementar suas decisões de governança off-chain sem a dependência de qualquer terceiro de confiança para executá-las on-chain.",
+      "card-3-button": "Experimente o SafeSnap"
+    }
+  },
+  "oracle": {
+    "seo-title": "Oracle",
+    "section-hero": {
+      "h1": "Oracle",
+      "h2": "Connecte o seu produto ao mundo físico e digital, permitindo-lhe fazer verificação on-chain do resultado de qualquer evento."
+    },
+    "sash": {
+      "first": {
+        "title": "Conexão com o mundo",
+        "paragraph": "Nosso oráculo de propósito geral lhe permite verificar qualquer evento, especialmente aqueles que não podem ser diretamente obtidos através de um feed de dados."
+      },
+      "second": {
+        "title": "Resolução eficiente de qualquer pergunta",
+        "paragraph": "Um mecanismo de escalonamento de bonds que permite que a maioria das perguntas possa ser respondida de forma rápida e descentralizada."
+      },
+      "third": {
+        "title": "Oráculos Subjetivos",
+        "paragraph": "A arbitragem da Kleros resolve de forma justa até os mais controversos resultados subjetivos em caso de disputa."
+      }
+    },
+    "section-use-case": {
+      "h1": "Casos de Uso para o Oráculo",
+      "cards": {
+        "1": "Mercados de Predição",
+        "2": "Apostas",
+        "3": "Jogos",
+        "4": "Futarquia",
+        "5": "Seguros",
+        "6": "Mais"
+      }
+    },
+    "section-3": {
+      "h1": "Verifique quaisquer eventos do mundo real on-chain",
+      "h2": "Sistema de oráculos crowd-sourced e on-chain em colaboração com o Reality.eth. Sua fonte da verdade justa e descentralizada.",
+      "button": "Saiba Mais"
+    },
+    "start-now": {
+      "h1": "Comece Agora",
+      "card-1-title": "Kleros Oracle",
+      "card-1-text": "O Kleros Oracle é um produto que combina a resolução de disputas da Kleros com o mecanismo criptoeconômico do Reality.eth para a verificação de eventos do mundo real on-chain, para entregar uma solução de oráculo subjetivo capaz de responder absolutamente qualquer pergunta com uma resposta publicamente verificável.",
+      "card-1-button": "Experimente o Kleros Oracle",
+      "card-2-title": "Integre-se ao Kleros Oracle",
+      "card-2-text": "Entre em contato para fazer uma integração do Kleros Oracle com o seu projeto.",
+      "card-2-button": "Entre em contato"
     }
   },
   "about": {
