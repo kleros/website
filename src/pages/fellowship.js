@@ -179,6 +179,14 @@ const TESTIMONIALS = [
     name: "Paolo Archila",
     videoID: "y68f3KEtKpc"
   },
+  {
+    name: "Jose Torres",
+    videoID: "AjXU5S8ofbM"
+  },
+  {
+    name: "Alexei Gudkov",
+    videoID: "7l7KG2Nx71w"
+  },
 ];
 
 const Fellowship = ({ intl, data }) => {
