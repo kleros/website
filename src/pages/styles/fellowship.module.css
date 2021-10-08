@@ -174,3 +174,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.fellowship :global(.slick-dots) > li {
+  transform: scale(2);
+}
+
+.fellowship :global(.slick-dots) > li > button::before {
+  color: #6CC5FF !important;
+}
