@@ -1,5 +1,5 @@
-import { useState } from "react";
 import React from "react";
+import { useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -52,6 +52,11 @@ import Carrera from "src/assets/images/person/carrera.png";
 import Lewis from "src/assets/images/person/lewis.png";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
+import Slider from "react-slick";
+import ArrowRight from "src/assets/svgs/arrow-button-right.svg";
+import ArrowLeft from "src/assets/svgs/arrow-button-left.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PHOTOS = {
   Abad,
@@ -92,8 +97,101 @@ const PHOTOS = {
   Zhao,
 };
 
+const Arrow = ({ onClick, left, right }) => (
+  <div
+    className={right ? styles.arrowNext : styles.arrowPrev}
+    onClick={onClick}
+  >
+    {left && <ArrowLeft />}
+    {right && <ArrowRight />}
+  </div>
+);
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: false,
+  arrows: true,
+  nextArrow: <Arrow right />,
+  prevArrow: <Arrow left />,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ]
+};
+
+const TESTIMONIALS = [
+  {
+    name: "Diana Itzel",
+    videoID: "3Q2ZANpmh2A"
+  },
+  {
+    name: "Jake Lowther",
+    videoID: "P5kHvPzImY8"
+  },
+  {
+    name: "Agustina Perez",
+    videoID: "w6U8sKsRqhY"
+  },
+  {
+    name: "Dmitry Narozhny",
+    videoID: "FaMfSzUUMKs"
+  },
+  {
+    name: "Esthefania Vargas",
+    videoID: "4pWqT_qVqkI"
+  },
+  {
+    name: "Elliot Talbert-Goldstein",
+    videoID: "z8KY9WjVfMQ"
+  },
+  {
+    name: "Tian Zhao",
+    videoID: "SARq8fTM5l8"
+  },
+  {
+    name: "Luis Bergolla",
+    videoID: "ULKBM15Td3U"
+  },
+  {
+    name: "Paolo Archila",
+    videoID: "y68f3KEtKpc"
+  },
+  {
+    name: "Jose Torres",
+    videoID: "AjXU5S8ofbM"
+  },
+  {
+    name: "Alexei Gudkov",
+    videoID: "7l7KG2Nx71w"
+  },
+];
+
 const Fellowship = ({ intl, data }) => {
   const [activeKey, setActiveKey] = useState(-1);
+
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "fellowship.seo-title" })} />
@@ -106,6 +204,28 @@ const Fellowship = ({ intl, data }) => {
           <h2>
             <FormattedMessage id="fellowship.section-hero.h2" />
           </h2>
+          <hr className="my-5" />
+          <h2 className="white bold">
+            Testimonials
+          </h2>
+          <Slider {...sliderSettings}>
+            {
+              TESTIMONIALS.map(({ name, videoID }, i) => (
+                <div className={styles.testimonials} key={i}>
+                  <iframe
+                    className={styles.video}
+                    src={"https://www.youtube.com/embed/" + videoID}
+                    title={name}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                  />
+                </div>
+              ))
+            }
+          </Slider>
           <hr className="my-5" />
           <h2 className="white bold">
             <FormattedMessage id="fellowship.section-hero.conversion-phrase" />

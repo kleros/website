@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg923"
+   sodipodi:docname="arrow-button-right.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata929">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs927" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2512"
+     inkscape:window-height="1392"
+     id="namedview925"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-29.389831"
+     inkscape:cy="12"
+     inkscape:window-x="2608"
+     inkscape:window-y="48"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg923" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12.1244 7.30268L11.6037 7.83028C11.3785 8.05605 11.3832 8.42441 11.613 8.64543L14.4396 11.3737H7.6981C7.38612 11.3737 7.13514 11.628 7.13514 11.9441V12.7046C7.13514 13.0207 7.38612 13.2749 7.6981 13.2749H14.4396L11.613 16.0032C11.3855 16.2242 11.3808 16.5926 11.6037 16.8184L12.1244 17.346C12.3426 17.5694 12.6991 17.5694 12.9196 17.346L17.4796 12.726C17.7001 12.5049 17.7001 12.1437 17.4796 11.9203L12.9196 7.30268C12.7014 7.07929 12.3449 7.07929 12.1244 7.30268Z"
+     fill="#009AFF"
+     id="path921"
+     style="fill:#6cc5ff;fill-opacity:1" />
+</svg>

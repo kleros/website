@@ -244,3 +244,11 @@ input::placeholder {
   background-color: rgba(0, 154, 255, 0.06);
   border-left: 3px solid #009AFF;
 }
+
+:global(.slick-dots) > li {
+  transform: scale(2);
+}
+
+:global(.slick-dots) > li > button::before {
+  color: var(--color-blue) !important;
+}
