@@ -228,7 +228,21 @@ const Fellowship = ({ intl, data }) => {
           </Slider>
           <hr className="my-5" />
           <h2 className="white bold">
-            <FormattedMessage id="fellowship.section-hero.conversion-phrase" />
+            <FormattedMessage
+              id="fellowship.section-hero.conversion-phrase"
+              values={{
+                anchor: (children) => (
+                  <a
+                    href="https://forms.gle/s6nND6jmKriNyDsR8"
+                    href="https://blog.kleros.io/the-kleros-fellowship-of-justice-5th-generation-applications-open"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {children}
+                  </a>
+                ),
+              }}
+            />
           </h2>
           <div className={`${styles.social}`}>
             <div>
