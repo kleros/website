@@ -187,6 +187,14 @@ const TESTIMONIALS = [
     name: "Alexei Gudkov",
     videoID: "7l7KG2Nx71w"
   },
+  {
+    name: "Mauricio Duarte",
+    videoID: "WGh0BfW89Yw"
+  },
+  {
+    name: "Abeer Sharma",
+    videoID: "8tjO-SdhZ6E"
+  }
 ];
 
 const Fellowship = ({ intl, data }) => {
