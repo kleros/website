@@ -241,7 +241,6 @@ const Fellowship = ({ intl, data }) => {
               values={{
                 anchor: (children) => (
                   <a
-                    href="https://forms.gle/s6nND6jmKriNyDsR8"
                     href="https://blog.kleros.io/the-kleros-fellowship-of-justice-5th-generation-applications-open"
                     rel="noopener noreferrer"
                     target="_blank"
