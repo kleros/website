@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Contact from "../components/contact";
-import PositionCard from "../components/position-card";
 
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
@@ -84,42 +83,6 @@ const sliderSettings = {
   ],
 };
 
-const positionsSliderSettings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: false,
-  arrows: false,
-  autoplaySpeed: 7000,
-  variableWidth: false,
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-      },
-    },
-    {
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-    {
-      breakpoint: 700,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
-
 const Career = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({ id: "career.seo-title" })} />
@@ -131,7 +94,7 @@ const Career = ({ intl }) => (
         <h2>
           <FormattedMessage id="career.section-hero.h2" />
         </h2>
-        <Button href="#positions">
+        <Button href="https://angel.co/company/kleros/jobs" rel="noopener noreferrer" target="blank">
           <FormattedMessage id="career.section-hero.button-primary" />
         </Button>
         <div className={styles.sliders}>
@@ -296,23 +259,12 @@ const Career = ({ intl }) => (
         <h2>
           <FormattedMessage id="career.section-positions.h2" />
         </h2>
-        <Slider className={styles.positionsSlider} {...positionsSliderSettings}>
-          <div>
-            <PositionCard content={{ department: "Engineering", role: "Full Stack Developer", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/538779-full-stack-developer-blockchain-legaltech-fintech" }} />
-          </div>
-          <div>
-            <PositionCard content={{ department: "Engineering", role: "Frontend Developer", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1126483-frontend-developer-blockchain-legaltech-fintech" }} />
-          </div>
-          <div>
-            <PositionCard content={{ department: "Marketing", role: "Communications Manager", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1033811-communications-manager" }} />
-          </div>
-          <div>
-            <PositionCard content={{ department: "Product", role: "Product Manager", location: "France • Lisbon • Remote", href: "https://angel.co/company/kleros/jobs/1279076-product-manager" }} />
-          </div>
-        </Slider>
+        <Button href="https://angel.co/company/kleros/jobs" rel="noopener noreferrer" target="blank">
+          <FormattedMessage id="career.section-hero.button-primary" />
+        </Button>
       </section>
 
-      <section>
+      <section className="light">
         <Contact
           content={{
             title: intl.formatMessage({
