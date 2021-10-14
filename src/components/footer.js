@@ -91,8 +91,11 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/escrow">
             <FormattedMessage id="footer.escrow" />
           </Link>
-          <Link className="mr-3" to="/curate">
+          <Link className="mr-3" to="/curation">
             <FormattedMessage id="footer.curate" />
+          </Link>
+          <Link className="mr-3" to="/oracle">
+            <FormattedMessage id="footer.oracle" />
           </Link>
           <Link className="mr-3" to="/fellowship">
             <FormattedMessage id="footer.fellowship" />
