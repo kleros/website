@@ -45,7 +45,7 @@ module.exports = {
         title: "DApp Developer",
         links: {
           twitter: "https://twitter.com/satello3",
-          linkedin: "https://www.linkedin.com/in/samvitello/",
+          linkedin: "https://www.linkedin.com/in/samvitello/",mts
           github: "https://github.com/satello",
         },
       },
@@ -62,8 +62,8 @@ module.exports = {
         name: "Matheus Alencar",
         title: "DApp Developer",
         links: {
-          twitter: "https://twitter.com/mtsalenc",
-          github: "https://github.com/mtsalenc",
+          twitter: "https://twitter.com/eccentricexit",
+          github: "https://github.com/eccentricexit",
         },
       },
       {
