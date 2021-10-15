@@ -45,7 +45,7 @@ module.exports = {
         title: "DApp Developer",
         links: {
           twitter: "https://twitter.com/satello3",
-          linkedin: "https://www.linkedin.com/in/samvitello/",mts
+          linkedin: "https://www.linkedin.com/in/samvitello/",
           github: "https://github.com/satello",
         },
       },
