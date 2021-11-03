@@ -3,11 +3,13 @@
 }
 
 .escrow .buttonWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-around;
-  align-content: space-between;
+  display: "flex";
+  flexWrap: "wrap";
+  justifyContent: "center";
+}
+
+.escrow .buttonWrapper > a {
+  margin: 16px 32px;
 }
 
 .escrow .helper {
