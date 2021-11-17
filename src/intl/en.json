@@ -814,14 +814,10 @@
         "a": "Participants can count on the Kleros team for mentorship, data on user behavior, introductions to key players in the ecosystem and even support with design. We will try to help Fellows in every way we can."
       },
       "5": {
-        "q": "Do you offer grants?",
-        "a": "No."
-      },
-      "6": {
         "q": "How does the day to day look like?",
         "a": "The Fellowship is a fully remote and autonomous program. There are no regular calls nor progress reports. The only deliverable is the report to be presented at the end of the program."
       },
-      "7": {
+      "6": {
         "q": "Where can I apply?",
         "a": "You can apply <anchor>here</anchor>."
       }
