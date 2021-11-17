@@ -834,14 +834,10 @@
         "a": "Os participantes podem contar com a equipe Kleros para mentoria, dados sobre o comportamento do usuário, introduções aos principais atores do ecossistema ou até mesmo suporte com design. Tentaremos ajudar os fellows de todas as formas possíveis."
       },
       "5": {
-        "q": "Vocês oferecem subsídios?",
-        "a": "Não."
-      },
-      "6": {
         "q": "E como é o dia a dia?",
         "a": "O fellowship é um programa totalmente remoto e autônomo. Não há reuniões regulares nem relatórios de progresso. A única entrega é o relatório a ser apresentado no final do programa."
       },
-      "7": {
+      "6": {
         "q": "Onde posso me inscrever?",
         "a": "Increva-se aqui <anchor>here</anchor>."
       }
