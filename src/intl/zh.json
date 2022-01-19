@@ -704,7 +704,7 @@
     },
     "section-groups": {
       "title": "多语种电报群",
-      "title-poh": "人类识别电报群"
+      "title-poh": "人性证明电报群"
     },
     "section-guild": {
       "title": "Kleros公正协会",
@@ -893,72 +893,72 @@
         }
       }
     },
-    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. 🇵🇹", "button-primary": "现在申请" },
+    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽里斯本市的Block共享办公空间进行. 🇵🇹", "button-primary": "现在申请" },
     "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
     "section-faq": {
       "1": {
-        "q": "What is the Kleros Incubator?",
-        "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol."
+        "q": "Kleros孵育器为何?",
+        "a": "Kleros孵育器为一项目计画资助由Kleros企业合作社。而此为当帮助愿意建立于Kleros协议之上的所有开发计画项目提供各开发机会及金援支持。"
       },
       "2": {
-        "q": "What happens at the Kleros Incubator?",
-        "a": "Participants take part in a 3 month incubation program that helps them kickstart or grow their project. The incubation process is conducted <anchor>at the Block co-working space</anchor> in Lisbon and consists of a number of workshops including strategy, prototyping, smart contract security, marketing and fundraising. The program ends with a demo day where teams present their progress to a panel of investors and the wider community."
+        "q": "Kleros孵育计画将关于什么?",
+        "a": "参与者将花费3个月的时间于此计画来帮助其目标建立及计画起飞。此孵育计画将实施于<anchor>区块共同空间</anchor>于们的里斯本办公中心，而其内容将包含一系列之工作坊，包含策略进展，计画原型设计，智能合约安全检测，商业行销，及资金筹募。此孵育计画将最终以一报告演示日告终，而这天也将会是一大好机会来使计画项目团队来向广泛社群及潜力投资者来展现其达成之成果。"
       },
       "3": {
-        "q": "When does the program start?",
-        "a": "Follow Kleros on social media to learn when applications for the next batch open."
+        "q": "孵育计画将从何时开始?",
+        "a": "追踪Kleros于各方社交平台来为关于下一梯开放申请的最新资讯!!"
       },
       "4": {
-        "q": "How is the program structured?",
-        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
+        "q": "此孵育计画之主要架构设计为何?",
+        "a": "此计画将包含一系列之周单位工作坊，而其将涵盖一区块链计画将需要之不同区域范围。\n\n第一周. 迎欢见面会。 \n第二周. 学习白板:策略设计。\n第三周. 用户采访:策略验证。\n第四周. 计画原型设计。\n\n第五周. We3世界之UX/UX(用户体验/用户介面设计)。\n第六周. 智能合约安全(第一部分)。\n第七周. 智能合约安全(第二部分)。\n第八周. Web3实际部署导入。\n\n第九周. 商业行销&社群建立\n第十周. 建立一投资平台。\n第十一周. 筹资战术及法律须知。\n第十二周. 排练回顾&最终报告演示日"
       },
       "5": {
-        "q": "Who can apply?",
-        "a": "Early stage teams building companies or projects connected to the Kleros protocol are welcome to apply. This includes arbitrable Dapps that could benefit from Kleros protocol in its escrow, curation and oracle use cases as well as companies that seek to foster the adoption of the Kleros protocol through other means."
+        "q": "谁能申请?",
+        "a": "任何欲建立于Kleros协议之上之早期开发计画项目或公司皆能申请至此孵育计画。此包含想导入运用Kleros托管服务，预言机服务，或其他任何服务的Dapp(去中央化应用程式)计画及公司。"
       },
       "6": {
-        "q": "Where do I apply?",
-        "a": "The application process starts by filling <anchor1>this form</anchor1>. If you’re selected to the next stage, you will have an interview with the Kleros executive team to discuss your idea, the problem you’re solving, your value proposition, the team and your user acquisition strategy. The decision will be made after that interview."
+        "q": "哪里申请?",
+        "a": "此申请过程将从填入<anchor1>此报名表</anchor1>开始。如您有幸被成功选上进入下一阶段，您将会与Kleros执行团队直接面试来讨论您的开发主意，目前面对问题状况，目标价值方向，工作团队，及用户进展策略。此最终结果将于面试数天后被公告。"
       },
       "7": {
-        "q": "What's the deadline to apply?",
-        "a": "Follow Kleros on social media to learn when applications for the next batch open."
+        "q": "申请截止日期为何?",
+        "a": "追踪Kleros于各方社交平台来为更多最新申请梯次消息!!"
       },
       "8": {
-        "q": "Where can I find some ideas about companies which could be based on Kleros?",
-        "a": "Chapter 6 of the <anchor2>Kleros Book</anchor2> discusses Kleros use cases in depth. You can find lots of inspiration here. Also feel free to use this <anchor3>online tool</anchor3> and to engage in discussions with members of the community in the Kleros Telegram group."
+        "q": "我应该从何处开始寻找好的计划项目主意来建立于Kleros之上呢?",
+        "a": "<anchor2>Kleros书籍</anchor2>中第六章的深度用途讨论将提供许多好想法!!也欢迎来使用此<anchor3>线上工具</anchor3>并将讨论延续带入Kleros的大家庭社群于Telegram。"
       },
       "9": {
-        "q": "How much do you invest?",
-        "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects."
+        "q": "我将会需要为此投资多少?",
+        "a": "Kleros企业合作社将会出资提供初期之计画起步费用，并招待您整个计划团队至美丽的里斯本城市。于孵育计画期间，额外计画开销投资也将频繁由Kleros所分担提供。"
       },
       "10": {
-        "q": "Who reviews the applications?",
-        "a": "Different members of the Kleros team review the applications, including the founders."
+        "q": "谁将检视孵育计画的申请候选者?",
+        "a": "多方不同的Kleros团队成员将一一检视申请候选者，其中也包含Kleros资助家。"
       },
       "11": {
-        "q": "We've already raised funding. Can we still apply?",
-        "a": "Yes."
+        "q": "我们的计画已先前筹资过了。请问我们还能申请吗?",
+        "a": "可以，欢迎参与!"
       },
       "12": {
-        "q": "We don't really need the money. Does it still make sense to apply?",
-        "a": "Funding is just a small part of what the Kleros Incubator can do for your project. The incubation process will also give you support in strategy, development, marketing and community building. So you are welcome to apply to the incubator."
+        "q": "我们的计画项目并不太需要资助。于此情况还是欢迎来审请吗?",
+        "a": "资助仅是Kleros孵育计画的一小部分。整体孵育计画将包含策略进展，开发设计，商业行销，及社群建立等多范围领域。所以当然欢迎您来申请!!"
       },
       "13": {
-        "q": "I don’t have a team. Can I apply as a solo founder?",
-        "a": "Yes."
+        "q": "我还没有一完整工作团队。请问我还是能独自申请吗?",
+        "a": "是的。欢迎挑战!"
       },
       "14": {
-        "q": "Can I apply more than once with the same idea?",
-        "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch."
+        "q": "请问我能以一相同计画主意来申请多次吗?",
+        "a": "不能于同一申请梯次。但如果您计画被不幸拒绝于此梯次，我们欢迎您再次挑战于下次开放申请梯次。"
       },
       "15": {
-        "q": "Our team already participated in another incubator/accelerator, can we still apply?",
-        "a": "Yes."
+        "q": "我们有些团队成员正现重复参与另一孵育计画，请问我们还是能申请吗?",
+        "a": "是的，没问题。"
       },
       "16": {
-        "q": "What happens after the program ends?",
-        "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed."
+        "q": "孵育计画结束后，下一步是什么?",
+        "a": "您的计画团队能回归至您最合适之工作环境。您将依然能持续向Kleros企业合作社来请求顾问支持来使您的计画能更进一步迈向未来!!"
       }
     }
   },
