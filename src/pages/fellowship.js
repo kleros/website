@@ -26,16 +26,10 @@ import Goldstein from "src/assets/images/person/goldstein.png";
 import Obafemi from "src/assets/images/person/obafemi.png";
 import Tineo from "src/assets/images/person/tineo.png";
 import Duarte from "src/assets/images/person/duarte.png";
-import Aliyev from "src/assets/images/person/aliyev.png";
 import Archila from "src/assets/images/person/archila.png";
-import Bhalothia from "src/assets/images/person/bhalothia.png";
-import Dean from "src/assets/images/person/dean.png";
-import Bel from "src/assets/images/person/bel.png";
 import Lowther from "src/assets/images/person/lowther.png";
-import Kulshreshtha from "src/assets/images/person/kulshreshtha.png";
 import Comenale from "src/assets/images/person/comenale.png";
 import Galindo from "src/assets/images/person/galindo.png";
-import Stanescu from "src/assets/images/person/stanescu.png";
 import Tripathi from "src/assets/images/person/tripathi.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
@@ -49,26 +43,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 const PHOTOS = {
   Abad,
-  Aliyev,
   Archila,
-  Bel,
   Bergolla,
-  Bhalothia,
   Carrera,
   Comenale,
-  Dean,
   Deplano,
   Duarte,
   Galindo,
   Goldstein,
   Gudkov,
-  Kulshreshtha,
   Lowther,
   Narozhny,
   Obafemi,
   Scott,
   Sharma,
-  Stanescu,
   Tineo,
   Tripathi,
   Vargas,
