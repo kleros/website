@@ -28,7 +28,10 @@ import styles from './styles/escrow.module.css'
 
 const Escrow = ({ intl }) => (
   <Layout>
-    <SEO lang={intl.locale} title={intl.formatMessage({id: 'escrow.seo-title'})} />
+    <SEO
+      lang={intl.locale}
+      title={intl.formatMessage({id: 'escrow.seo-title'})}
+    />
     <Container className={styles.escrow} fluid>
       <UseCasesHero
         titleID="escrow.section-hero.h1"
@@ -125,14 +128,27 @@ const Escrow = ({ intl }) => (
         <h2>
           <FormattedMessage id='escrow.section-3.h2' />
         </h2>
-        <a
-          href='https://kleros.gitbook.io/docs/products/escrow'
-          rel="noopener noreferrer"
-          target="blank"
-          className='btn btn-secondary'
-        >
-          <FormattedMessage id='escrow.section-3.button' />
-        </a>
+        <div className={styles.buttonWrapper}>
+          <a
+            href='https://kleros.gitbook.io/docs/products/escrow'
+            rel="noopener noreferrer"
+            target="blank"
+            className='btn btn-secondary'
+          >
+            <FormattedMessage id='escrow.section-3.button-1' />
+          </a>
+          <a
+            href={
+              "https://kleros.gitbook.io/docs/products/escrow/" +
+              "new-in-progress-kleros-escrow-tutorial"
+            }
+            rel="noopener noreferrer"
+            target="blank"
+            className='btn btn-secondary'
+          >
+            <FormattedMessage id='escrow.section-3.button-2' />
+          </a>
+        </div>
       </section>
 
       <section className='light'>

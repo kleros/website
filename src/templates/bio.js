@@ -119,8 +119,13 @@ export default ({ data }) => {
           </div>
           <div className={`mt-6 ${styles.buttonWrapper}`}>
             {frontmatter.report && (
-              <a className="btn btn-primary" href={frontmatter.report} target="blank" rel="noopener noreferrer">
+              <a style={{ margin: "8px" }} className="btn btn-primary" href={frontmatter.report} target="blank" rel="noopener noreferrer">
                 Download the Report
+              </a>
+            )}
+            {frontmatter.spanishReport && (
+              <a style={{ margin: "8px" }} className="btn btn-primary" href={frontmatter.spanishReport} target="blank" rel="noopener noreferrer">
+                Descarga el reporte en Español
               </a>
             )}
           </div>
@@ -145,6 +150,7 @@ export const query = graphql`
         name
         title
         report
+        spanishReport
         embed
         embedTitle
       }
