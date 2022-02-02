@@ -23,6 +23,7 @@ import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
 import styles from "./styles/footer.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
@@ -46,6 +47,7 @@ const WHITE_PAPERS = {
 
 const YELLOW_PAPERS = {
   en: YellowPaperEN,
+  zh: YellowPaperZH,
 };
 
 const Footer = ({ intl }) => (
@@ -67,7 +69,7 @@ const Footer = ({ intl }) => (
           <a className="mr-3" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.whitepaper" />
           </a>
-          <a className="mr-3" href="/yellowpaper.pdf" rel="noopener noreferrer" target="_blank">
+          <a className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.yellowpaper" />
           </a>
           <a className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
