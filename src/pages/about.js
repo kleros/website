@@ -52,6 +52,7 @@ import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
 import Config from "../../gatsby-config.js";
 
 const ONEPAGERS = {
@@ -72,6 +73,7 @@ const WHITE_PAPERS = {
 
 const YELLOW_PAPERS = {
   en: YellowPaperEN,
+  zh: YellowPaperZH,
 };
 
 const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Ragosa, Vassallo, Jain };

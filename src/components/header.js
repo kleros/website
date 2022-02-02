@@ -33,6 +33,7 @@ import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
 
 import Court from "../assets/svgs/kleros.svg";
 import Escrow from "../assets/svgs/escrow.svg";
@@ -87,6 +88,7 @@ const WHITE_PAPERS = {
 
 const YELLOW_PAPERS = {
   en: YellowPaperEN,
+  zh: YellowPaperZH,
 };
 
 const products = [
@@ -185,7 +187,7 @@ class Header extends React.Component {
                 <a className="dropdown-item" href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]}>
                   <FormattedMessage id="footer.whitepaper" />
                 </a>
-                <a className="dropdown-item" href="yellowpaper.pdf" rel="noopener noreferrer" target="_blank">
+                <a className="dropdown-item" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
                   <FormattedMessage id="footer.yellowpaper" />
                 </a>
                 <a className="dropdown-item" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
