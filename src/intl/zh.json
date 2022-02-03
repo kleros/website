@@ -160,7 +160,7 @@
       "card-1-text": "了解如何将Kleros列表与您的产品集成.",
       "card-1-button": "联系我们",
       "card-2-title": "列表",
-      "card-2-text": "Kleros列表是一个可用于创建几乎所有内容的开放式管理注册表dapp，它使用经济激励和Kleros争议裁决方案确保列表的一致性，并且每个条目都符合预先定义的标准.",
+      "card-2-text": "Kleros列表是一个可用于创建几乎所有内容的开放式管理注册表DApp，它使用经济激励和Kleros争议裁决方案确保列表的一致性，并且每个条目都符合预先定义的标准.",
       "card-2-button": "试用Kleros列表",
       "card-3-title": "通证列表",
       "card-3-text": "Kleros通证列表是一个开放且去中心化的通证注册表。 换句话说，它是一个由社区管理的ERC-20通证列表（包括它们的名称、代码、标识和地址），对任何项目开放，并由强有力的Kleros仲裁协议和经济激励确保它的维护管理.",
@@ -398,8 +398,8 @@
             "a": "目前PNK总供应量为764,626,704. 仅可通过治理投票对此进行更改。"
           },
           "3": {
-            "q": "争议双方需要持有pinakion吗?",
-            "a": "不需要, 只有希望参与争议裁决的陪审员需要. 争议双方甚至不需要知道什么是pinakoin."
+            "q": "争议双方需要持有Pinakion吗?",
+            "a": "不需要, 只有希望参与争议裁决的陪审员需要. 争议双方甚至不需要知道什么是Pinakoin."
           },
           "4": {
             "q": "陪审员身份公开吗?",
@@ -493,29 +493,29 @@
         "nav-title": "演讲视频",
         "title": "演讲视频",
         "items": {
-          "1": "Clement Lesaege Presentation at EthCC 3 Paris March 2020",
-          "2": "William George Presentation at EthCC 3 Paris March 2020",
-          "3": "Federico Ast Presentation at EthCC 3 Paris March 2020",
-          "4": "Matheus Alencar Presentation at EthCC 3 Paris March 2020",
-          "5": "Ferit Tunçer Presentation at EthCC 3 Paris March 2020",
-          "7": "Plinio Braga Presentation at DevCon 5 Osaka October 2019",
-          "8": "Clement Lesaege Presentation at EthCC 2 Paris March 2019",
-          "9": "William George Presentation at EthCC 2 Paris March 2019"
+          "1": "Clement Lesaege 演讲于 EthCC 3 巴黎 2020年 3月",
+          "2": "William George 演讲于 EthCC 3 巴黎 2020年 3月",
+          "3": "Federico Ast 演讲于 EthCC 3 巴黎 2020年 3月",
+          "4": "Matheus Alencar 演讲于 EthCC 3 巴黎 2020年 3月",
+          "5": "Ferit Tunçer 演讲于 EthCC 3 巴黎 2020年 3月",
+          "7": "Plinio Braga 演讲于 DevCon 5 大阪 2019年 10月",
+          "8": "Clement Lesaege 演讲于 EthCC 2 巴黎 2019年 3月",
+          "9": "William George 演讲于 EthCC 2 巴黎 2019年 3月"
         }
       },
       "promo": {
         "nav-title": "介绍视频",
         "title": "介绍视频",
         "items": {
-          "1": "Kleros Decentralized Courts",
-          "2": "Kleros Courts Explainer",
-          "3": "Dispute Revolution - The Kleros Book",
-          "4": "Kleros Dapp Showcase,",
-          "5": "Kleros Protocol: Curated Lists x Escrow x Athena V2.0",
-          "6": "Kleros - Blockchain Dispute Resolution Built on Ethereal",
-          "7": "Dogelist - P + Epsilon: The Trailer No One Asked For",
-          "8": "Clement Makes Tea",
-          "9": "Kleros Meet The Team"
+          "1": "Kleros去中央化法庭",
+          "2": "Kleros法庭解释",
+          "3": "争议革命 – Kleros之书",
+          "4": "Kleros Dapp展示",
+          "5": "Kleros协议: 策展列表 x 第三方托管 x 雅典娜 V2.0",
+          "6": "Kleros – 区块链争议解决建立于Ethereal",
+          "7": "Doge列表 – P + Epsilon: 无人预测到的预告",
+          "8": "Clement泡茶",
+          "9": "认识Kleros团队"
         }
       },
       "conference": {
@@ -524,19 +524,19 @@
         "subtitle": "Kleros去中心化公正会展活动",
         "paragraph": "2020年3月2日, Kleros合作社与巴黎法律与经济中心(CRED) 在巴黎第三新索邦大学的Sainte Barbe圆形剧场合作举办了 '争议裁决: 去中心化公正的诞生'会展活动",
         "items": {
-          "1": "Kleros-CRED Dispute Revolution Conference - Introducing Kleros Layer 2",
-          "2": "Kleros-CRED Dispute Revolution Conference - Kleros Handbook of Justice, Augmented",
-          "3": "Kleros-CRED Dispute Revolution Conference - 'Make a Claim', a Layer 2 Company",
-          "4": "Kleros-CRED Dispute Revolution Conference - Legal implications of Decentralized Justice",
-          "5": "Kleros-CRED Dispute Revolution Conference - Kleros-Winding Tree",
-          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justuce Fair?",
-          "7": "Kleros-CRED Dispute Revolution Conference - Decentralized Justice Research Challenges",
-          "8": "Kleros-CRED Dispute Revolution Conference - How to Build a Kleros Integration",
-          "9": "Kleros-CRED Dispute Revolution Conference - Challenges in Legal Design",
-          "10": "Kleros-CRED Dispute Revolution Conference - Introducing the Fellowship of Justice",
-          "11": "Kleros-CRED Dispute Revolution Conference - Kleros: Cryptoeconomics and Applications",
-          "12": "Kleros-CRED Dispute Revolution Conference - Blockchains and Networks Structures",
-          "13": "Kleros-CRED Dispute Revolution Conference - Introduction to Decentralized Justice"
+          "1": "Kleros-CRED 争议解决会议 – 介绍Kleros L2第二层",
+          "2": "Kleros-CRED 争议解决会议 – Kleros司法正义手册",
+          "3": "Kleros-CRED 争议解决会议 – ‘进行宣称’，一L2第二层公司",
+          "4": "Kleros-CRED 争议解决会议 – 去中央化正义之法律意涵",
+          "5": "Kleros-CRED 争议解决会议 – Kleros-Winding Tree",
+          "6": "Kleros-CRED 争议解决会议 – 去中央化正义是否公平?",
+          "7": "Kleros-CRED 争议解决会议 – 去中央化正义之研究挑战",
+          "8": "Kleros-CRED 争议解决会议 – 如何与Kleros合作集成?",
+          "9": "Kleros-CRED 争议解决会议 – 法律设计挑战",
+          "10": "Kleros-CRED 争议解决会议 – 介绍司法正义研究会",
+          "11": "Kleros-CRED 争议解决会议 – Kleros: 加密经济和应用程式",
+          "12": "Kleros-CRED 争议解决会议 – 区块链和网路架构",
+          "13": "Kleros-CRED 争议解决会议 – 去中央化正义介绍"
         }
       }
     },
@@ -562,13 +562,13 @@
     "section-director": {
       "title": "研究总监",
       "subtitle": "William George, PhD",
-      "paragraph": "William holds Master’s and PhD degrees in mathematics from the University of Toronto. He was subsequently a postdoctoral researcher at the University of Toronto and École Polytechnique (France), where he studied applications of blockchains, particularly to identity management systems. William also previously worked in information security for a Canadian bank, where he was involved in the management of the bank's cryptographic keys.",
+      "paragraph": "William持有多伦多大学的数学硕士和PhD学位。其后从事博士研究员于多伦多大学及École Polytechnique大学(法国)，研究区块链应用，专攻关于身分管理系统。William也先前曾担任过加拿大著名银行的资讯安全监管，主要牵涉与银行加密钥键管理。",
       "researchers": {
         "title": "研究员",
         "items": {
           "1": {
-            "title": "Yann Aouidef, PhD Researcher",
-            "text": "Yann is a Phd candidate at the Paris Center in Law and Economics. His topic thesis is: “Economics and Law of the Blockchain: Applications To Decentralized Justice Mechanisms”. In 2017, Yann accidentally discovered the theoretic aspect of the blockchain through a conference which completely challenged him because of this technology’s characteristics (especially disintermediation) and the potential applications that would derive from it."
+            "title": "Yann Aouidef, PhD 研究员",
+            "text": "Yann为Phd候选人于巴黎中央法律及经济研究院。其研究主题为: “区块链经济和法律: 去中央化司法正义机制之应用” 。于2017，Yann于一碰巧会议中意外发现区块链世界，而此科技特性(特别是去中间人参与特性) 深深改改变他的人生观点，并让他踏入区块链应用开发领域。"
           },
           "2": {
             "name": "Name",
@@ -584,7 +584,7 @@
         "items": {
           "1": "智能合约预言机：获取现实世界的真实数值",
           "2": "去中心化的公正: 重塑数字时代的仲裁?",
-          "3": "Kleros Long Paper v1.0.0"
+          "3": "Kleros 黄皮书 v1.0.0"
         }
       },
       "mentions": {
@@ -635,28 +635,28 @@
       "h1": "Table of Contents",
       "chapters": {
         "1": {
-          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
-          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+          "title": "章节1，创世纪:当希腊乐透遇上中世纪私人法",
+          "paragraph": "此章节介绍两启发Kleros的重要历史性宗旨。其将包含与Josiah Ober， Peter Stone，和 Barry Weingast，三位政治科学家的深度面谈，而我们将会探索去中央化正义之足迹于雅典，中世纪欧洲，及符合西方世界传统政治思考之抽选模式。最终，我们将总和所有讨论内容，并探讨Kleros成为DAO世界最高法庭的可能性。"
         },
         "2": {
-          "title": "Chapter 2, Kleros Cryptoeconomics: Towards a Theory of Decentralized Justice",
-          "paragraph": "This chapter focuses on the technology behind Kleros. In it, experts on game theory, such as Hebrew University professor Eyal Winter and our cryptoeconomic researcher William George try to bring these concepts closer to the layman reader. It also consists of our latest research into social choice theory, different choices of voting mechanisms and their potential impact on Kleros. The remainder of the chapter focuses on helping expand the knowledge base of our expert audience by sharing our experiences with smart contracts, oracles, as well as presenting proposals for Ethereum standards (or ERCs) and the basic policies on which Kleros is built."
+          "title": "章节2，Kleros加密经济:朝向去中央化正义理论",
+          "paragraph": "于此章节，我们将会专注于Kleros背后的支撑技术。于此，博弈理论专家，希伯来大学教授Eyal Winter和我们的加密经济研究总管William George将会深入讨论，并将讨论内容简单解释让所有人易了。此将包含最新研究关于社交选择理论，不同投票机制，及其可能影响于Kleros开发。此章节最终也会谈及到智能合约，预言机数据，以太坊提议标准ERC和Kleros正开发建立的基本方向。"
         },
         "3": {
-          "title": "Chapter 3, Decentralized Justice in Action: From Doges on Trial to the Token Curated Registry",
-          "paragraph": "This chapter is an in-depth analysis of the 'Doges on Trial' experiment, as well as early lessons from the implementation of our T2CR and a wide look at what has been learned about attack vectors, juror behavior and the foundational cryptoeconomics. In the second edition, the chapter is expanded with latest insights into the so-called ‘challenger’s dilemma’ and the experiment we undertook comparing artificial and collective intelligence in the context of Doges on Trial."
+          "title": "章节3，去中央化正义行动:从Doges受审到代币策展登记",
+          "paragraph": "此章节将深入解析 'Doges受审实验’ 和一些早期案例关于T2CR发展，并尝试检讨目前已知的攻击领域，陪审员行为，以及加密经济基础。于第二版刷，此章节已被扩充与最新资讯，其中包含 '挑战者悖论’ 以及其他于Doges受审后续讨论到的人工及群体智慧决策情况。"
         },
         "4": {
-          "title": "Chapter 4, Dispute Revolution: A New Justice Paradigm in an Old World",
-          "paragraph": "This chapter deals with the implications this technology might have for law and society. By sharing their experiences in online dispute resolution and research on blockchain law, industry and thought leaders such as Gillian Hadfield, Kate Sills and former Vice-President of the Ugandan Law Society, Alice Namuli give their opinion on how Kleros and decentralized justice might affect the future of law. A veteran international arbitrator, Sophie Nappert gives us a fantastic insight into the rise of algocracy and how humans can respond. In this chapter, particular care is taken to analyze the most critical points of any arbitration system - fairness and compatibility with existing legal frameworks."
+          "title": "章节4，争议革命:一新司法正义模范于现世界",
+          "paragraph": "此章节包含一系列可能改变法律及社会的相关联科技。藉由分享其知识经验于网路争议解决及区块链法律相关研究，业界领导人如Gillian Hadfield，Kate Sills，及前任乌干达法律社会副总Alice Namuli将会分享其意见对于Kleros，并讨论此去中央化司法正义将如何影响整个法律业界的未来发展。经验国际仲裁者，Sophie Nappert也将会分享其宝贵解析关于演算法抬头趋势及我们人类如何应对为此。于此章节，我们也将注目来分析仲裁系统最重要的一点 – 公平性及互通性与现行法律架构。"
         },
         "5": {
-          "title": "Chapter 5, The Business of Decentralized Justice",
-          "paragraph": "This chapter tries to paint an image of the way legal business is going to develop and change in the coming years. By bringing in decades of experience in future-centered thinking through conversations with Joe Raczynski, Thomson Reuters resident legal futurist, Colin Rule, the creator of eBay and PayPal’s dispute resolution systems, the author of the seminal book Digital Justice, Orna Rabinovich-Einy, Accord Project founder, Peter Hunn and legal design expert José Torres, we discuss the opportunities and hurdles in building new legal systems for the 21st Century. As added flavour, our Design Lead, Plinio Braga gives us unique, practical insight into designing novel legal applications."
+          "title": "章节5，去中央化正义商业模式",
+          "paragraph": "此章节将会关注法律相关商业近期及未来之发展模式。藉由讨论与数十年经验老手，包含Thomas Reuters法律未来学家Joe Racynski， eBay和Paypal争议解决系统创建者Colin Rule，数位正义一书作者Orna Rabinovich-Einy，Accord计画创始者Peter Hunn，以及法学设计专家José Torres，我们将会探讨21世纪新法律设计系统的各类相关发展机会及挑战。此外，我们的设计总监Plinio Braga，也将会给我们独特及实惠资讯关于设计新兴法律相关应用程式。"
         },
         "6": {
-          "title": "Chapter 6, Scaling Up: The Applications of Decentralized Justice",
-          "paragraph": "This chapter focuses on the use cases of Kleros, where we combine the vision and practice to define the key ingredients which will make Kleros the dispute resolution system of the future. Experts from different fields present their research into Kleros as a solution for a plethora of use cases, ranging from decentralized freelancing, marketplaces, gas, energy markets and derivatives trading to fake news, social media and online gaming. This chapter also presents some of our coming platforms, as well as existing ones in the context of creating a thriving dispute resolution ecosystem."
+          "title": "章节6，扩张起步:去中央化正义应用程式",
+          "paragraph": "此章节将会注重于Kleros的各项使用案例，而我们将会综合理念和实际状况来定义关键要素来使Kleros成为未来重要的争议解决。各项领域专家将会展现其研究成果关于Kleros使用案例，其将包含去中央化自由职业平台，商业平台，能源及预测市场交易所，假新闻，社交媒体平台管理，及线上游戏相关应用。此章节也将介绍我们些许未来即将登场及现有的开发应用程式平台，并提供一讨论空间为创建一更加活耀的争议解决生态系。"
         }
       }
     },
@@ -690,7 +690,7 @@
     "section-otc": {
       "title": "通过OTC获取PNK",
       "subtitle": "为了确保公平，通证会以当前市场反映的价格出售给买家.",
-      "button": "Get in touch here"
+      "button": "联系于此"
     }
   },
   "community": {
@@ -910,7 +910,7 @@
       },
       "4": {
         "q": "此孵育计画之主要架构设计为何?",
-        "a": "此计画将包含一系列之周单位工作坊，而其将涵盖一区块链计画将需要之不同区域范围。\n\n第一周. 迎欢见面会。 \n第二周. 学习白板:策略设计。\n第三周. 用户采访:策略验证。\n第四周. 计画原型设计。\n\n第五周. We3世界之UX/UX(用户体验/用户介面设计)。\n第六周. 智能合约安全(第一部分)。\n第七周. 智能合约安全(第二部分)。\n第八周. Web3实际部署导入。\n\n第九周. 商业行销&社群建立\n第十周. 建立一投资平台。\n第十一周. 筹资战术及法律须知。\n第十二周. 排练回顾&最终报告演示日"
+        "a": "此计画将包含一系列之周单位工作坊，而其将涵盖一区块链计画将需要之不同区域范围。\n\n第一周. 迎欢见面会。 \n第二周. 学习白板:策略设计。\n第三周. 用户采访:策略验证。\n第四周. 计画原型设计。\n\n第五周. Web3世界之UX/UI(用户体验/用户介面设计)。\n第六周. 智能合约安全(第一部分)。\n第七周. 智能合约安全(第二部分)。\n第八周. Web3实际部署导入。\n\n第九周. 商业行销&社群建立\n第十周. 建立一投资平台。\n第十一周. 筹资战术及法律须知。\n第十二周. 排练回顾&最终报告演示日"
       },
       "5": {
         "q": "谁能申请?",
