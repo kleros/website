@@ -147,9 +147,9 @@ module.exports = {
         links: {},
       },
       {
-        name: "Jimmy Ragosa",
+        name: "Guangmian Kung",
         title: "Integrations Manager",
-        links: { linkedin: "https://www.linkedin.com/in/jragosa/", twitter: "https://twitter.com/JimmyRagosa" },
+        links: { linkedin: "https://www.linkedin.com/in/guangmian-kung-10398626/", github: "https://github.com/gmkung" },
       },
       {
         name: "Annabelle Vassallo",
