@@ -158,7 +158,7 @@ class IndexPage extends React.Component {
     const openDisputeIDs = [...new Set(drawEvents.map((result) => result.returnValues._disputeID))];
 
     openDisputeIDs
-      .sort()
+      .sort((a, b) => a - b)
       .slice(-NO_OF_RECENT_DISPUTES)
       .map(async (arbitratorDispute) => {
         await this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
