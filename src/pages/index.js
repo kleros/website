@@ -276,7 +276,7 @@ class IndexPage extends React.Component {
         <Container className={styles.index} fluid>
           {!loading && !lscache.get("dismissBanner") && (
             <div className={styles.banner}>
-              <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+              <a href="https://forum.kleros.io/t/kip-46-extension-of-juror-incentive-program/669" target="_blank" rel="noopener noreferrer">
                 <Logo />
                 <FormattedMessage id="index.banner" />
                 <RightArrow />
