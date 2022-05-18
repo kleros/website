@@ -37,7 +37,7 @@ import James from "src/assets/images/person/james.png";
 import Pichler from "src/assets/images/person/pichler.png";
 import Huculak from "src/assets/images/person/huculak.png";
 import Fidel from "src/assets/images/person/fidel.png";
-import Guangmian from "src/assets/images/person/guangmian.jpg";
+import Kung from "src/assets/images/person/kung.png";
 import Vassallo from "src/assets/images/person/vassallo.png";
 import Jain from "src/assets/images/person/jain.png";
 
@@ -76,7 +76,7 @@ const YELLOW_PAPERS = {
   zh: YellowPaperZH,
 };
 
-const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Guangmian, Vassallo, Jain };
+const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Kung, Vassallo, Jain };
 
 const About = ({ intl }) => (
   <Layout>
