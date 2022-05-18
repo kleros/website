@@ -27,9 +27,10 @@
     "integrations": "Integrations",
     "governance": "Governance",
     "escrow": "Escrow",
+    "oracle": "Oracle",
     "career": "Careers",
     "incubator": "Incubator",
-    "curate": "Curate",
+    "curate": "Curation",
     "fellowship": "Fellowship",
     "community": "Community",
     "blog": "Blog",
@@ -140,18 +141,17 @@
       }
     }
   },
-  "curate": {
-    "seo-title": "Curate",
+  "curation": {
+    "seo-title": "Curation",
 
     "section-hero": {
-      "h1": "Kleros Curate",
-      "h2": "Information organized by your community for your community. Create your own curated list with Kleros Curate.",
-      "button-primary": "Create Your Own List"
+      "h1": "Curation",
+      "h2": "Information organized by your community for your community."
     },
     "sash": {
       "first": {
         "title": "A World of Lists",
-        "paragraph": "What tokens to list in an exchange? What items to accept in a marketplace? Which content to remove in a social media platform? All these are problems of list curation."
+        "paragraph": "What tokens to list in an exchange? What items to accept in a marketplace? Which content to remove on a social media platform? List curation solves these problems."
       },
       "second": {
         "title": "Empower Your Community",
@@ -178,34 +178,43 @@
     },
 
     "section-3": {
-      "h1": "Kleros Curate",
+      "h1": "Create Your Own List!",
       "h2": "Create your own token curated registry and put the information power in the hands of your community.",
-      "button": "Start Using Kleros Curate"
+      "button": "Learn More"
     },
-    "section-4": {
-      "h1": "Who is Using This?"
+
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Integrate Kleros Curation",
+      "card-1-text": "Get in touch to integrate Kleros Curation into your project.",
+      "card-1-button": "Get in touch",
+      "card-2-title": "Curate",
+      "card-2-text": "Kleros Curate is a dapp that can be used to create open curated registries of just about anything using financial incentives and Kleros dispute resolution technology to ensure a list stays on topic and that each entry is compliant with the predefined acceptance criteria.",
+      "card-2-button": "Try Kleros Curate",
+      "card-3-title": "Tokens",
+      "card-3-text": "Kleros Tokens is an open and decentralized curated registry of tokens. In other words, it is a community-managed list of ERC-20 tokens (including their name, ticker,  logo and address) open to any project and curated by the power of Kleros arbitration and economic incentives.",
+      "card-3-button": "Try Kleros Tokens"
     }
   },
   "escrow": {
     "seo-title": "Escrow",
 
     "section-hero": {
-      "h1": "Kleros Escrow",
-      "h2": "Trade, hire and pay secured by trustless dispute resolution.",
-      "button-primary": "Try Kleros Escrow"
+      "h1": "Escrow",
+      "h2": "Trade, hire and pay secured by trustless dispute resolution."
     },
     "sash": {
       "first": {
         "title": "The Risk of Online Commerce",
-        "paragraph": "When contracting someone online there is always the risk of the other party not fulfilling the agreement, or acting maliciously."
+        "paragraph": "When contracting someone online, there is always the risk of the other party not fulfilling the agreement. Resolving the disputes manually is a closed and costly solution."
       },
       "second": {
-        "title": "Use Kleros Escrow",
-        "paragraph": "In case something goes wrong, the dispute will be resolved by Kleros."
+        "title": "Decentralize your Dispute Resolution",
+        "paragraph": "In case a disagreement occurs between users of your protocol, the dispute will be resolved by Kleros Court in a decentralized and open manner."
       },
       "third": {
-        "title": "Transact Securely",
-        "paragraph": "With Kleros Escrow, buyer and seller can be confident that the other party will fulfill their obligation."
+        "title": "Secure transactions on your platform",
+        "paragraph": "With Kleros Escrow, your users can be confident that the other party in their P2P transaction will always fulfil their obligations."
       }
     },
     "section-use-case": {
@@ -218,7 +227,7 @@
         "5": "Payroll",
         "6": "Crowdfunding Milestones",
         "7": "OTC",
-        "8": "Plagiarism",
+        "8": "NFTs",
         "9": "More"
       }
     },
@@ -226,13 +235,119 @@
     "section-3": {
       "h1": "Secure Your Transactions With Kleros",
       "h2": "Start using Kleros Escrow to reduce counterparty risk in your online transactions.",
-      "button": "Start Using Kleros Escrow"
+      "button-1": "Learn More",
+      "button-2": "How to use"
     },
 
-    "section-4": {
-      "h1": "Integrate Escrow in Your Platform",
-      "h2": "If you're building an e-commerce platform, delegate dispute resolution to Kleros. Focus on your product. Kleros will take care of the disputes.",
-      "button": "Integrate Now"
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Escrow",
+      "card-1-text": "Using Kleros Escrow, you can transact in the blockchain ecosystem for services, products, and assets using our simple solution with a level of trust not yet known outside the traditional commerce space. If a dispute happens, it will be adjudicated by crowdsourced jurors selected and incentivized by the Kleros protocol.",
+      "card-1-button": "Try Kleros Escrow",
+      "card-2-title": "Integrate Kleros Escrow",
+      "card-2-text": "Get in touch to integrate Kleros Escrow into your project.",
+      "card-2-button": "Get in touch"
+    }
+
+  },
+  "governance": {
+    "seo-title": "Governance",
+
+    "section-hero": {
+      "h1": "Governance",
+      "h2": "Streamline and secure your DAO governance by integrating Kleros Court to enable optimistic decision-making aligned with your constitution."
+    },
+    "sash": {
+      "first": {
+        "title": "Secure your DAO Governance",
+        "paragraph": "Protect your DAO from mistakes and attacks by using Kleros as a Supreme Court to uphold its constitution and ensure the correct implementation of proposals."
+      },
+      "second": {
+        "title": "Speed up execution",
+        "paragraph": "Delegate more powers/funds to your DAO executive team for fast decisions and let Kleros Court provide a fair ruling if there is a disagreement in the community about their use."
+      },
+      "third": {
+        "title": "Trustless on-chain execution",
+        "paragraph": "Trustless on-chain execution of governance proposals implementation based on the outcome of off-chain votes."
+      }
+    },
+    "section-use-case": {
+      "h1": "Governance Use Cases",
+      "cards": {
+        "1": "DAO Supreme Court",
+        "2": "Optimistic Governance",
+        "3": "Control of Grant Funds",
+        "4": "Protection Against Governance Attacks",
+        "5": "DAO to DAO Collaboration",
+        "6": "More"
+      }
+    },
+
+    "section-3": {
+      "h1": "Improve your governance processes with Kleros",
+      "h2": "Implement your off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
+      "button": "Learn More"
+    },
+
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Integrate Kleros Governor",
+      "card-1-text": "Get in touch to integrate Kleros Governor into your DAO.",
+      "card-1-button": "Get in touch",
+      "card-2-title": "Governor",
+      "card-2-text": "As an open and neutral arbitration system, Kleros can be a useful tool to integrate with the governance of DAOs that want to ensure that their process is fully decentralized.",
+      "card-2-button": "Try Kleros Governor",
+      "card-3-title": "Gnosis SafeSnap",
+      "card-3-text": "Using the SafeSnap governance module from Gnosis Safe in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
+      "card-3-button": "Try SafeSnap"
+    }
+
+  },
+  "oracle": {
+    "seo-title": "Oracle",
+
+    "section-hero": {
+      "h1": "Oracle",
+      "h2": "Link your product to the physical and digital world by enabling it to verify any event outcome on-chain."
+    },
+    "sash": {
+      "first": {
+        "title": "Connection to the world",
+        "paragraph": "Our general-purpose oracle enables you to verify any event, especially those that could not be directly sourced from a data feed."
+      },
+      "second": {
+        "title": "Efficient resolution of any question",
+        "paragraph": "A bond escalation mechanism allows for most questions to be answered quickly in a decentralized manner."
+      },
+      "third": {
+        "title": "Subjective Oracle Capability",
+        "paragraph": "Kleros arbitration resolves fairly the more controversial subjective outcomes in case of disputes."
+      }
+    },
+    "section-use-case": {
+      "h1": "Oracle Use Cases",
+      "cards": {
+        "1": "Prediction Markets",
+        "2": "Social Betting",
+        "3": "Gaming",
+        "4": "Futarchy",
+        "5": "Insurance",
+        "6": "More"
+      }
+    },
+    "section-3": {
+      "h1": "Verify any real-world events on-chain",
+      "h2": "Crowd-sourced on-chain smart contract oracle system in collaboration with Reality.eth Your decentralized and fair source of truth.",
+      "button": "Learn More"
+    },
+    "start-now": {
+      "h1": "Start Now",
+      "card-1-title": "Kleros Oracle",
+      "card-1-text": "Kleros Oracle is a product combining Kleros dispute resolution with Reality.eth cryptoeconomic mechanism for verifying real-world events on-chain, to deliver a subjective oracle solution able to answer absolutely any question with a publicly verifiable answer.",
+      "card-1-button": "Try Kleros Oracle",
+      "card-2-title": "Integrate Kleros Oracle",
+      "card-2-text": "Get in touch to integrate Kleros Oracle into your project.",
+      "card-2-button": "Get in touch"
     }
   },
   "about": {
@@ -678,7 +793,7 @@
     "section-hero": {
       "h1": "Kleros Fellowship of Justice",
       "h2": "A program which gathers experts from different fields to conduct research and work on Kleros. Our Fellows collaborate actively with our core team on the advancement of decentralized justice.",
-      "conversion-phrase": "Follow Kleros on social media to know when applications for the next batch open."
+      "conversion-phrase": "Applications are now open for the fifth batch of the Fellowship. Learn more and apply <anchor>here</anchor>!"
     },
     "section-fellows": "Meet our Fellows",
     "section-faq": {
@@ -699,14 +814,10 @@
         "a": "Participants can count on the Kleros team for mentorship, data on user behavior, introductions to key players in the ecosystem and even support with design. We will try to help Fellows in every way we can."
       },
       "5": {
-        "q": "Do you offer grants?",
-        "a": "No."
-      },
-      "6": {
         "q": "How does the day to day look like?",
         "a": "The Fellowship is a fully remote and autonomous program. There are no regular calls nor progress reports. The only deliverable is the report to be presented at the end of the program."
       },
-      "7": {
+      "6": {
         "q": "Where can I apply?",
         "a": "You can apply <anchor>here</anchor>."
       }
@@ -776,12 +887,18 @@
     "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at The Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
     "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" },
     "section-faq": {
-      "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
+      "1": {
+        "q": "What is the Kleros Incubator?",
+        "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol."
+      },
       "2": {
         "q": "What happens at the Kleros Incubator?",
         "a": "Participants take part in a 3 month incubation program that helps them kickstart or grow their project. The incubation process is conducted <anchor>at the Block co-working space</anchor> in Lisbon and consists of a number of workshops including strategy, prototyping, smart contract security, marketing and fundraising. The program ends with a demo day where teams present their progress to a panel of investors and the wider community."
       },
-      "3": { "q": "When does the program start?", "a": "The 2021 batch will take place in Lisbon from October 18th to January 17th, 2022." },
+      "3": {
+        "q": "When does the program start?",
+        "a": "Follow Kleros on social media to learn when applications for the next batch open."
+      },
       "4": {
         "q": "How is the program structured?",
         "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
@@ -794,23 +911,46 @@
         "q": "Where do I apply?",
         "a": "The application process starts by filling <anchor1>this form</anchor1>. If you’re selected to the next stage, you will have an interview with the Kleros executive team to discuss your idea, the problem you’re solving, your value proposition, the team and your user acquisition strategy. The decision will be made after that interview."
       },
-      "7": { "q": "What's the deadline to apply?", "a": "The application deadline for the 2021 incubation program is September 6th, 2021." },
-
+      "7": {
+        "q": "What's the deadline to apply?",
+        "a": "Follow Kleros on social media to learn when applications for the next batch open."
+      },
       "8": {
         "q": "Where can I find some ideas about companies which could be based on Kleros?",
         "a": "Chapter 6 of the <anchor2>Kleros Book</anchor2> discusses Kleros use cases in depth. You can find lots of inspiration here. Also feel free to use this <anchor3>online tool</anchor3> and to engage in discussions with members of the community in the Kleros Telegram group."
       },
-      "9": { "q": "How much do you invest?", "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects." },
-      "10": { "q": "Who reviews the applications?", "a": "Different members of the Kleros team review the applications, including the founders." },
-      "11": { "q": "We've already raised funding. Can we still apply?", "a": "Yes." },
+      "9": {
+        "q": "How much do you invest?",
+        "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects."
+      },
+      "10": {
+        "q": "Who reviews the applications?",
+        "a": "Different members of the Kleros team review the applications, including the founders."
+      },
+      "11": {
+        "q": "We've already raised funding. Can we still apply?",
+        "a": "Yes."
+      },
       "12": {
         "q": "We don't really need the money. Does it still make sense to apply?",
         "a": "Funding is just a small part of what the Kleros Incubator can do for your project. The incubation process will also give you support in strategy, development, marketing and community building. So you are welcome to apply to the incubator."
       },
-      "13": { "q": "I don’t have a team. Can I apply as a solo founder?", "a": "Yes." },
-      "14": { "q": "Can I apply more than once with the same idea?", "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch." },
-      "15": { "q": "Our team already participated in another incubator/accelerator, can we still apply?", "a": "Yes." },
-      "16": { "q": "What happens after the program ends?", "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed." }
+      "13": {
+        "q": "I don’t have a team. Can I apply as a solo founder?",
+        "a": "Yes."
+      },
+      "14": {
+        "q": "Can I apply more than once with the same idea?",
+        "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch."
+      },
+      "15": {
+        "q": "Our team already participated in another incubator/accelerator, can we still apply?",
+        "a": "Yes."
+      },
+      "16": {
+        "q": "What happens after the program ends?",
+        "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed."
+      }
     }
   },
 

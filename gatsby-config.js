@@ -62,8 +62,8 @@ module.exports = {
         name: "Matheus Alencar",
         title: "DApp Developer",
         links: {
-          twitter: "https://twitter.com/mtsalenc",
-          github: "https://github.com/mtsalenc",
+          twitter: "https://twitter.com/eccentricexit",
+          github: "https://github.com/eccentricexit",
         },
       },
       {
@@ -147,9 +147,9 @@ module.exports = {
         links: {},
       },
       {
-        name: "Jimmy Ragosa",
+        name: "Guangmian Kung",
         title: "Integrations Manager",
-        links: { linkedin: "https://www.linkedin.com/in/jragosa/", twitter: "https://twitter.com/JimmyRagosa" },
+        links: { linkedin: "https://www.linkedin.com/in/guangmian-kung-10398626/", github: "https://github.com/gmkung" },
       },
       {
         name: "Annabelle Vassallo",

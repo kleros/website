@@ -7,6 +7,7 @@ import Sponsors from "src/components/sponsors";
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
 import CardHighlight from "../components/card-highlight";
+import TrustedBy from "src/components/trusted-by";
 
 import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
@@ -157,7 +158,7 @@ class IndexPage extends React.Component {
     const openDisputeIDs = [...new Set(drawEvents.map((result) => result.returnValues._disputeID))];
 
     openDisputeIDs
-      .sort()
+      .sort((a, b) => a - b)
       .slice(-NO_OF_RECENT_DISPUTES)
       .map(async (arbitratorDispute) => {
         await this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
@@ -275,7 +276,7 @@ class IndexPage extends React.Component {
         <Container className={styles.index} fluid>
           {!loading && !lscache.get("dismissBanner") && (
             <div className={styles.banner}>
-              <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+              <a href="https://forum.kleros.io/t/kip-46-extension-of-juror-incentive-program/669" target="_blank" rel="noopener noreferrer">
                 <Logo />
                 <FormattedMessage id="index.banner" />
                 <RightArrow />
@@ -359,44 +360,61 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-          <section className={`light pt-0 ${styles.partners}`}>
-            <h2>
-              <FormattedMessage id="about.section-5" />
-            </h2>
-            <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
-              <OmenSVG />
-            </a>
-            <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
-              <img src={Deversifi} alt="Deversifi" />
-            </a>
 
-            <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
-              <Uniswap />
-            </a>
-
-            <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
-              <Union />
-            </a>
-
-            <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-              <img src={DemocracyEarth} alt="DemocracyEarth" style={{ maxHeight: "240px" }} />
-            </a>
-            <a href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
-              <Gnosis />
-            </a>
-            <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
-              <img src={API3} alt="API3" />
-            </a>
-            <a href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
-              <Unslashed />
-            </a>
-            <a href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
-              <Polkamarkets />
-            </a>
-            <a href="https://hats.finance/" rel="noopener noreferrer" target="blank">
-              <Hats />
-            </a>
-          </section>
+          <TrustedBy
+            partners={[
+              {
+                href: "https://omen.eth.link/",
+                icon: OmenSVG,
+                name: "Omen"
+              },
+              {
+                href: "https://www.deversifi.com/",
+                icon: Deversifi,
+                name: "Deversifi"
+              },
+              {
+                href: "https://uniswap.org/",
+                icon: Uniswap,
+                name: "Uniswap"
+              },
+              {
+                href: "https://www.unn.finance/",
+                icon: Union,
+                name: "Union"
+              },
+              {
+                href: "https://democracy.earth/",
+                icon: DemocracyEarth,
+                name: "DemocracyEarth"
+              },
+              {
+                href: "https://gnosis.io/",
+                icon: Gnosis,
+                name: "Gnosis"
+              },
+              {
+                href: "https://api3.org/",
+                icon: API3,
+                name: "API3"
+              },
+              {
+                href: "https://unslashed.finance/",
+                icon: Unslashed,
+                name: "Unslashed"
+              },
+              {
+                href: "https://www.polkamarkets.com/",
+                icon: Polkamarkets,
+                name: "Polkamarkets"
+              },
+              {
+                href: "https://hats.finance/",
+                icon: Hats,
+                name: "Hats"
+              }
+            ]}
+          />
 
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>

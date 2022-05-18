@@ -37,7 +37,7 @@ import James from "src/assets/images/person/james.png";
 import Pichler from "src/assets/images/person/pichler.png";
 import Huculak from "src/assets/images/person/huculak.png";
 import Fidel from "src/assets/images/person/fidel.png";
-import Ragosa from "src/assets/images/person/ragosa.jpg";
+import Kung from "src/assets/images/person/kung.png";
 import Vassallo from "src/assets/images/person/vassallo.png";
 import Jain from "src/assets/images/person/jain.png";
 
@@ -52,6 +52,7 @@ import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
+import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
 import Config from "../../gatsby-config.js";
 
 const ONEPAGERS = {
@@ -72,9 +73,10 @@ const WHITE_PAPERS = {
 
 const YELLOW_PAPERS = {
   en: YellowPaperEN,
+  zh: YellowPaperZH,
 };
 
-const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Ragosa, Vassallo, Jain };
+const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Kung, Vassallo, Jain };
 
 const About = ({ intl }) => (
   <Layout>

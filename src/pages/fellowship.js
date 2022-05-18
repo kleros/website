@@ -1,5 +1,5 @@
-import { useState } from "react";
 import React from "react";
+import { useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -17,83 +17,155 @@ import FellowshipBadge from "src/assets/svgs/fellowship.svg";
 import Narozhny from "src/assets/images/person/narozhny.png";
 import Sharma from "src/assets/images/person/sharma.png";
 import Deplano from "src/assets/images/person/deplano.png";
-import Dagnillo from "src/assets/images/person/dagnillo.png";
 import Bergolla from "src/assets/images/person/bergolla.png";
 import Scott from "src/assets/images/person/scott.png";
 import Zhao from "src/assets/images/person/zhao.png";
 import Gudkov from "src/assets/images/person/gudkov.png";
 import Abad from "src/assets/images/person/abad.png";
-import Oguz from "src/assets/images/person/oguz.png";
 import Goldstein from "src/assets/images/person/goldstein.png";
 import Obafemi from "src/assets/images/person/obafemi.png";
-import Gouvea from "src/assets/images/person/gouvea.png";
-import Felicio from "src/assets/images/person/felicio.png";
 import Tineo from "src/assets/images/person/tineo.png";
-import Mota from "src/assets/images/person/mota.png";
 import Duarte from "src/assets/images/person/duarte.png";
-import Robertson from "src/assets/images/person/robertson.png";
-import Aliyev from "src/assets/images/person/aliyev.png";
 import Archila from "src/assets/images/person/archila.png";
-import Bhalothia from "src/assets/images/person/bhalothia.png";
-import Dean from "src/assets/images/person/dean.png";
-import Bel from "src/assets/images/person/bel.png";
-import Gray from "src/assets/images/person/gray.png";
-import Huculak from "src/assets/images/person/huculak.png";
-import Jara from "src/assets/images/person/jara.png";
 import Lowther from "src/assets/images/person/lowther.png";
-import Kulshreshtha from "src/assets/images/person/kulshreshtha.png";
-import Mouclier from "src/assets/images/person/mouclier.png";
 import Comenale from "src/assets/images/person/comenale.png";
 import Galindo from "src/assets/images/person/galindo.png";
-import Stanescu from "src/assets/images/person/stanescu.png";
 import Tripathi from "src/assets/images/person/tripathi.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
-import Lewis from "src/assets/images/person/lewis.png";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
+import Slider from "react-slick";
+import ArrowRight from "src/assets/svgs/arrow-button-right.svg";
+import ArrowLeft from "src/assets/svgs/arrow-button-left.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PHOTOS = {
   Abad,
-  Aliyev,
   Archila,
-  Bel,
   Bergolla,
-  Bhalothia,
   Carrera,
   Comenale,
-  Dagnillo,
-  Dean,
   Deplano,
   Duarte,
-  Felicio,
   Galindo,
   Goldstein,
-  Gouvea,
-  Gray,
   Gudkov,
-  Huculak,
-  Jara,
-  Kulshreshtha,
-  Lewis,
   Lowther,
-  Mota,
-  Mouclier,
   Narozhny,
   Obafemi,
-  Oguz,
-  Robertson,
   Scott,
   Sharma,
-  Stanescu,
   Tineo,
   Tripathi,
   Vargas,
   Zhao,
 };
 
+const Arrow = ({ onClick, left, right }) => (
+  <div
+    className={right ? styles.arrowNext : styles.arrowPrev}
+    onClick={onClick}
+  >
+    {left && <ArrowLeft />}
+    {right && <ArrowRight />}
+  </div>
+);
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: false,
+  arrows: true,
+  nextArrow: <Arrow right />,
+  prevArrow: <Arrow left />,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ]
+};
+
+const TESTIMONIALS = [
+  {
+    name: "Diana Itzel",
+    videoID: "3Q2ZANpmh2A"
+  },
+  {
+    name: "Jake Lowther",
+    videoID: "P5kHvPzImY8"
+  },
+  {
+    name: "Agustina Perez",
+    videoID: "w6U8sKsRqhY"
+  },
+  {
+    name: "Dmitry Narozhny",
+    videoID: "FaMfSzUUMKs"
+  },
+  {
+    name: "Esthefania Vargas",
+    videoID: "4pWqT_qVqkI"
+  },
+  {
+    name: "Elliot Talbert-Goldstein",
+    videoID: "z8KY9WjVfMQ"
+  },
+  {
+    name: "Tian Zhao",
+    videoID: "SARq8fTM5l8"
+  },
+  {
+    name: "Luis Bergolla",
+    videoID: "ULKBM15Td3U"
+  },
+  {
+    name: "Paolo Archila",
+    videoID: "y68f3KEtKpc"
+  },
+  {
+    name: "Jose Torres",
+    videoID: "AjXU5S8ofbM"
+  },
+  {
+    name: "Alexei Gudkov",
+    videoID: "7l7KG2Nx71w"
+  },
+  {
+    name: "Mauricio Duarte",
+    videoID: "WGh0BfW89Yw"
+  },
+  {
+    name: "Abeer Sharma",
+    videoID: "8tjO-SdhZ6E"
+  }
+];
+
 const Fellowship = ({ intl, data }) => {
   const [activeKey, setActiveKey] = useState(-1);
+
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "fellowship.seo-title" })} />
@@ -108,7 +180,42 @@ const Fellowship = ({ intl, data }) => {
           </h2>
           <hr className="my-5" />
           <h2 className="white bold">
-            <FormattedMessage id="fellowship.section-hero.conversion-phrase" />
+            Testimonials
+          </h2>
+          <Slider {...sliderSettings}>
+            {
+              TESTIMONIALS.map(({ name, videoID }, i) => (
+                <div className={styles.testimonials} key={i}>
+                  <iframe
+                    className={styles.video}
+                    src={"https://www.youtube.com/embed/" + videoID}
+                    title={name}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                  />
+                </div>
+              ))
+            }
+          </Slider>
+          <hr className="my-5" />
+          <h2 className="white bold">
+            <FormattedMessage
+              id="fellowship.section-hero.conversion-phrase"
+              values={{
+                anchor: (children) => (
+                  <a
+                    href="https://blog.kleros.io/the-kleros-fellowship-of-justice-5th-generation-applications-open"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {children}
+                  </a>
+                ),
+              }}
+            />
           </h2>
           <div className={`${styles.social}`}>
             <div>

@@ -12,7 +12,7 @@
 
   background: transparent;
 
-  background: linear-gradient(10deg, transparent, transparent 49.8%, white 50%, white 50%) left top/50% auto no-repeat, linear-gradient(-10deg, transparent, transparent 49.8%, white 50%, white 50%) right top/50% auto no-repeat;
+  background: linear-gradient(10deg, transparent, transparent 49.7%, white 50%, white 50%) left top/50.01% auto no-repeat, linear-gradient(-10deg, transparent, transparent 49.7%, white 50%, white 50%) right top/50.01% auto no-repeat;
   background-repeat: no-repeat;
 }
 
@@ -148,11 +148,6 @@
 }
 
 .career .positions {
-  background: linear-gradient(white 0, white 80%, var(--color-purple-darkest) 80%, var(--color-purple-darkest) 100%);
-}
-
-.career .positionsSlider {
-  margin-top: 80px;
 }
 
 .career .carousel img {

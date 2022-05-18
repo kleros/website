@@ -1,0 +1,31 @@
+.oracle .dappImage svg {
+  border-radius: 12px;
+}
+
+.oracle .buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.oracle .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.oracle .badge {
+  margin-top: 1.5rem;
+  max-width: 30rem;
+  height: 9rem;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+}
+
+.oracle .h1 {
+  margin-bottom: 2rem;
+}

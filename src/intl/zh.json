@@ -26,8 +26,9 @@
     "developer": "开发人员",
     "integrations": "集成",
     "governance": "治理",
+    "oracle": "预言机",
     "escrow": "托管",
-    "curate": "列表",
+    "curate": "策展",
     "incubator": "孵化器",
     "fellowship": "研究会",
     "community": "社区",
@@ -114,72 +115,76 @@
       }
     }
   },
-  "curate": {
-    "seo-title": "策单",
-
+  "curation": {
+    "seo-title": "列表",
     "section-hero": {
-      "h1": "Kleros 策单",
-      "h2": "社区自我维护和服务的信息内容。使用Kleros策单创建社区自定义策单.",
-      "button-primary": "创建您的策单"
+      "h1": "列表",
+      "h2": "由您的社区自主组织的信息精选列表."
     },
     "sash": {
       "first": {
         "title": "列表的世界",
-        "paragraph": "交易所应该列出哪些通证？电商市场可以售卖哪些物品？社交媒体应该删除哪些内容？所有这些问题都可以用策单来管理."
+        "paragraph": "哪些代币要在交易所上市？ 在线市场上架哪些商品？ 社交媒体平台删除哪些内容？ 精选列表完全解决了这些问题."
       },
       "second": {
-        "title": "增强您的社区",
-        "paragraph": "与Kleros集成, 定义指导方针并由您的社区维护您的策单."
+        "title": "赋能与社区",
+        "paragraph": "与Kleros集成，您的社区可以通过预定的指导方针来自主管理精选列表."
       },
       "third": {
-        "title": "公平透明",
-        "paragraph": "Kleros确保策单维护的公平与透明."
+        "title": "公平与透明",
+        "paragraph": "Kleros将确保以公平和透明的方式确定精选列表."
       }
     },
     "section-use-case": {
-      "h1": "Kleros 策单应用场景",
+      "h1": "Kleros列表应用场景",
       "cards": {
         "1": "通证列表",
         "2": "内容审核",
         "3": "酒店列表",
         "4": "餐馆列表",
         "5": "保险支付",
-        "6": "电商交易",
+        "6": "电子商务",
         "7": "社交媒体",
         "8": "反欺诈",
         "9": "更多"
       }
     },
-
     "section-3": {
-      "h1": "Kleros 策单",
-      "h2": "创建您自己的通证策单，并将信息维护权交到社区手中",
-      "button": "开始使用Kleros策单"
+      "h1": "创建您自己的通证列表!",
+      "h2": "创建您自己的通证注册表，并将信息控制器权交到您的社区手中.",
+      "button": "了解更多"
     },
-    "section-4": {
-      "h1": "谁在使用Kleros策单?"
+    "start-now": {
+      "h1": "立即开始",
+      "card-1-title": "集成Kleros列表",
+      "card-1-text": "了解如何将Kleros列表与您的产品集成.",
+      "card-1-button": "联系我们",
+      "card-2-title": "列表",
+      "card-2-text": "Kleros列表是一个可用于创建几乎所有内容的开放式管理注册表DApp，它使用经济激励和Kleros争议裁决方案确保列表的一致性，并且每个条目都符合预先定义的标准.",
+      "card-2-button": "试用Kleros列表",
+      "card-3-title": "通证列表",
+      "card-3-text": "Kleros通证列表是一个开放且去中心化的通证注册表。 换句话说，它是一个由社区管理的ERC-20通证列表（包括它们的名称、代码、标识和地址），对任何项目开放，并由强有力的Kleros仲裁协议和经济激励确保它的维护管理.",
+      "card-3-button": "试用Kleros通证列表"
     }
   },
   "escrow": {
     "seo-title": "托管",
-
     "section-hero": {
-      "h1": "Kleros 托管",
-      "h2": "由无需信任的争议解决方案保障交易、雇佣和支付的安全.",
-      "button-primary": "试用Kleros托管"
+      "h1": "托管",
+      "h2": "免信任的争议裁决方案为交易、雇佣和支付提供保障."
     },
     "sash": {
       "first": {
-        "title": "电商的风险",
-        "paragraph": "在网上与某人签约时，总是存在另一方不履行协议或恶意行事的风险."
+        "title": "在线商务的风险",
+        "paragraph": "在网上进行交易时，总是存在某一方不履行协议的风险。 手动解决争议是一种封闭且成本高昂的解决方案."
       },
       "second": {
-        "title": "使用Kleros托管",
-        "paragraph": "如果出现问题，Kleros将解决争议."
+        "title": "去中心化您的争议裁决",
+        "paragraph": "如果您的用户之间发生分歧，争议将由去中心化的Kleros法院以公开的方式解决."
       },
       "third": {
-        "title": "安全的转账",
-        "paragraph": "借助Kleros托管服务，买卖双方可以确信另一方将履行其义务."
+        "title": "确保您平台上的交易安全",
+        "paragraph": "使用Kleros托管，您的用户可以确信其点对点交易中的另一方将始终履行其合约."
       }
     },
     "section-use-case": {
@@ -187,26 +192,124 @@
       "cards": {
         "1": "自由职业",
         "2": "域名转让",
-        "3": "赏金活动",
-        "4": "电商交易",
+        "3": "赏金",
+        "4": "电子商务",
         "5": "工资支付",
-        "6": "众筹管控",
+        "6": "众筹里程碑",
         "7": "场外交易",
-        "8": "抄袭监管",
+        "8": "非同质化代币",
         "9": "更多"
       }
     },
-
     "section-3": {
-      "h1": "借助Kleros确保转账的安全",
-      "h2": "开始使用Kleros托管来降低线上交易的对手方风险.",
-      "button": "开始使用Kleros托管"
+      "h1": "使用Kleros确保您的交易安全",
+      "h2": "开始使用Kleros托管来降低在线交易中的交易对手风险.",
+      "button-1": "了解更多",
+      "button-2": "如何使用"
     },
-
-    "section-4": {
-      "h1": "将Kleros托管与您的系统集成",
-      "h2": "如果您要构建电子商务平台，请将争议裁决委托给Kleros。专注于您的产品。Kleros将帮您解决纠纷.",
-      "button": "开始集成"
+    "start-now": {
+      "h1": "立即开始",
+      "card-1-title": "托管",
+      "card-1-text": "使用我们这个简单的Kleros托管解决方案, 您可以在区块链生态系统中进行服务、产品和资产的交易过程中，获得传统商业领域之外尚属未知的信任保障。 如果发生争议，将由Kleros协议选择和激励的众包陪审员进行裁决.",
+      "card-1-button": "试用Kleros托管",
+      "card-2-title": "集成Kleros托管",
+      "card-2-text": "了解如何将Kleros托管与您的产品集成.",
+      "card-2-button": "联系我们"
+    }
+  },
+  "governance": {
+    "seo-title": "治理",
+    "section-hero": {
+      "h1": "治理",
+      "h2": "确保DAO治理的安全性可以通过集成Kleros法庭来精简，实现遵从宪法的决策优化."
+    },
+    "sash": {
+      "first": {
+        "title": "确保DAO治理的安全",
+        "paragraph": "通过使用Kleros作为最高法院来维护其宪法并确保提案的正确实施，从而确保您的DAO避免错误和免受攻击."
+      },
+      "second": {
+        "title": "增强执行效率",
+        "paragraph": "将更多权力/资金委托给您的DAO执行团队以快速做出使用和分配决策，如果社区对其决策存在分歧，Kleros法庭将能提供公平裁决."
+      },
+      "third": {
+        "title": "免信任链上执行",
+        "paragraph": "治理提案基于链下投票结果进行免信任链上执行."
+      }
+    },
+    "section-use-case": {
+      "h1": "Kleros治理应用场景",
+      "cards": {
+        "1": "DAO最高法庭",
+        "2": "最优化治理",
+        "3": "拨款基金管理",
+        "4": "防范治理攻击",
+        "5": "DAO之间的合作",
+        "6": "更多"
+      }
+    },
+    "section-3": {
+      "h1": "使用Kleros改进您的治理流程",
+      "h2": "无需依赖任何可信方在链上执行您的链下治理决策.",
+      "button": "了解更多"
+    },
+    "start-now": {
+      "h1": "立即开始",
+      "card-1-title": "集成Kleros治理",
+      "card-1-text": "了解如何将Kleros治理与您的DAO集成.",
+      "card-1-button": "联系我们",
+      "card-2-title": "治理",
+      "card-2-text": "作为一个开放和中立的仲裁系统，Kleros与DAOs的集成可以确保DAO治理流程的完全去中心化.",
+      "card-2-button": "试用Kleros治理",
+      "card-3-title": "Gnosis SafeSnap",
+      "card-3-text": "使用来自Gnosis Safe的SafeSnap治理模块，结合Kleros法庭作为其最终仲裁提供者，任何DAO现在都无需依赖可信方在链上执行其链下治理决策.",
+      "card-3-button": "试用SafeSnap"
+    }
+  },
+  "oracle": {
+    "seo-title": "预言机",
+    "section-hero": {
+      "h1": "预言机",
+      "h2": "通过对任何事件结果进行链上验证，将您的产品与现实和数字世界对接."
+    },
+    "sash": {
+      "first": {
+        "title": "世界的连接",
+        "paragraph": "我们的通用预言机能够验证任何事件结果，尤其是那些无法从数据源中直接获取到的."
+      },
+      "second": {
+        "title": "任何问题的高效方案",
+        "paragraph": "激励升级机制提供了一个去中心化的方式，对大多数问题进行迅速解答."
+      },
+      "third": {
+        "title": "主观决断预言机",
+        "paragraph": "Kleros仲裁公平地解决争议中更具争议的主观性结果."
+      }
+    },
+    "section-use-case": {
+      "h1": "预言机应用场景",
+      "cards": {
+        "1": "预测市场",
+        "2": "社交投注",
+        "3": "游戏领域",
+        "4": "市场自治",
+        "5": "保险市场",
+        "6": "更多..."
+      }
+    },
+    "section-3": {
+      "h1": "链上验证现实世界中的任何事件",
+      "h2": "与Reality.eth合作的众包链上智能合约预言机系统,为您提供去中心化和公平的真相来源.",
+      "button": "了解更多"
+    },
+    "start-now": {
+      "h1": "立即开始",
+      "card-1-title": "Kleros预言机",
+      "card-1-text": "Kleros预言机是Kleros争议裁决协议与Reality.eth加密经济机制相结合的产品，用于链上验证现实世界中的事件，能够提供主观性预言机解决方案，适用于几乎任何可公开可验证答案的问题.",
+      "card-1-button": "试用Kleros预言机",
+      "card-2-title": "集成Kleros预言机",
+      "card-2-text": "了解如何将Kleros预言机与您的产品集成.",
+      "card-2-button": "联系我们"
     }
   },
   "about": {
@@ -295,8 +398,8 @@
             "a": "目前PNK总供应量为764,626,704. 仅可通过治理投票对此进行更改。"
           },
           "3": {
-            "q": "争议双方需要持有pinakion吗?",
-            "a": "不需要, 只有希望参与争议裁决的陪审员需要. 争议双方甚至不需要知道什么是pinakoin."
+            "q": "争议双方需要持有Pinakion吗?",
+            "a": "不需要, 只有希望参与争议裁决的陪审员需要. 争议双方甚至不需要知道什么是Pinakoin."
           },
           "4": {
             "q": "陪审员身份公开吗?",
@@ -390,29 +493,29 @@
         "nav-title": "演讲视频",
         "title": "演讲视频",
         "items": {
-          "1": "Clement Lesaege Presentation at EthCC 3 Paris March 2020",
-          "2": "William George Presentation at EthCC 3 Paris March 2020",
-          "3": "Federico Ast Presentation at EthCC 3 Paris March 2020",
-          "4": "Matheus Alencar Presentation at EthCC 3 Paris March 2020",
-          "5": "Ferit Tunçer Presentation at EthCC 3 Paris March 2020",
-          "7": "Plinio Braga Presentation at DevCon 5 Osaka October 2019",
-          "8": "Clement Lesaege Presentation at EthCC 2 Paris March 2019",
-          "9": "William George Presentation at EthCC 2 Paris March 2019"
+          "1": "Clement Lesaege 演讲于 EthCC 3 巴黎 2020年 3月",
+          "2": "William George 演讲于 EthCC 3 巴黎 2020年 3月",
+          "3": "Federico Ast 演讲于 EthCC 3 巴黎 2020年 3月",
+          "4": "Matheus Alencar 演讲于 EthCC 3 巴黎 2020年 3月",
+          "5": "Ferit Tunçer 演讲于 EthCC 3 巴黎 2020年 3月",
+          "7": "Plinio Braga 演讲于 DevCon 5 大阪 2019年 10月",
+          "8": "Clement Lesaege 演讲于 EthCC 2 巴黎 2019年 3月",
+          "9": "William George 演讲于 EthCC 2 巴黎 2019年 3月"
         }
       },
       "promo": {
         "nav-title": "介绍视频",
         "title": "介绍视频",
         "items": {
-          "1": "Kleros Decentralized Courts",
-          "2": "Kleros Courts Explainer",
-          "3": "Dispute Revolution - The Kleros Book",
-          "4": "Kleros Dapp Showcase,",
-          "5": "Kleros Protocol: Curated Lists x Escrow x Athena V2.0",
-          "6": "Kleros - Blockchain Dispute Resolution Built on Ethereal",
-          "7": "Dogelist - P + Epsilon: The Trailer No One Asked For",
-          "8": "Clement Makes Tea",
-          "9": "Kleros Meet The Team"
+          "1": "Kleros去中央化法庭",
+          "2": "Kleros法庭解释",
+          "3": "争议革命 – Kleros之书",
+          "4": "Kleros Dapp展示",
+          "5": "Kleros协议: 策展列表 x 第三方托管 x 雅典娜 V2.0",
+          "6": "Kleros – 区块链争议解决建立于Ethereal",
+          "7": "Doge列表 – P + Epsilon: 无人预测到的预告",
+          "8": "Clement泡茶",
+          "9": "认识Kleros团队"
         }
       },
       "conference": {
@@ -421,19 +524,19 @@
         "subtitle": "Kleros去中心化公正会展活动",
         "paragraph": "2020年3月2日, Kleros合作社与巴黎法律与经济中心(CRED) 在巴黎第三新索邦大学的Sainte Barbe圆形剧场合作举办了 '争议裁决: 去中心化公正的诞生'会展活动",
         "items": {
-          "1": "Kleros-CRED Dispute Revolution Conference - Introducing Kleros Layer 2",
-          "2": "Kleros-CRED Dispute Revolution Conference - Kleros Handbook of Justice, Augmented",
-          "3": "Kleros-CRED Dispute Revolution Conference - 'Make a Claim', a Layer 2 Company",
-          "4": "Kleros-CRED Dispute Revolution Conference - Legal implications of Decentralized Justice",
-          "5": "Kleros-CRED Dispute Revolution Conference - Kleros-Winding Tree",
-          "6": "Kleros-CRED Dispute Revolution Conference - Is Decentralized Justuce Fair?",
-          "7": "Kleros-CRED Dispute Revolution Conference - Decentralized Justice Research Challenges",
-          "8": "Kleros-CRED Dispute Revolution Conference - How to Build a Kleros Integration",
-          "9": "Kleros-CRED Dispute Revolution Conference - Challenges in Legal Design",
-          "10": "Kleros-CRED Dispute Revolution Conference - Introducing the Fellowship of Justice",
-          "11": "Kleros-CRED Dispute Revolution Conference - Kleros: Cryptoeconomics and Applications",
-          "12": "Kleros-CRED Dispute Revolution Conference - Blockchains and Networks Structures",
-          "13": "Kleros-CRED Dispute Revolution Conference - Introduction to Decentralized Justice"
+          "1": "Kleros-CRED 争议解决会议 – 介绍Kleros L2第二层",
+          "2": "Kleros-CRED 争议解决会议 – Kleros司法正义手册",
+          "3": "Kleros-CRED 争议解决会议 – ‘进行宣称’，一L2第二层公司",
+          "4": "Kleros-CRED 争议解决会议 – 去中央化正义之法律意涵",
+          "5": "Kleros-CRED 争议解决会议 – Kleros-Winding Tree",
+          "6": "Kleros-CRED 争议解决会议 – 去中央化正义是否公平?",
+          "7": "Kleros-CRED 争议解决会议 – 去中央化正义之研究挑战",
+          "8": "Kleros-CRED 争议解决会议 – 如何与Kleros合作集成?",
+          "9": "Kleros-CRED 争议解决会议 – 法律设计挑战",
+          "10": "Kleros-CRED 争议解决会议 – 介绍司法正义研究会",
+          "11": "Kleros-CRED 争议解决会议 – Kleros: 加密经济和应用程式",
+          "12": "Kleros-CRED 争议解决会议 – 区块链和网路架构",
+          "13": "Kleros-CRED 争议解决会议 – 去中央化正义介绍"
         }
       }
     },
@@ -459,13 +562,13 @@
     "section-director": {
       "title": "研究总监",
       "subtitle": "William George, PhD",
-      "paragraph": "William holds Master’s and PhD degrees in mathematics from the University of Toronto. He was subsequently a postdoctoral researcher at the University of Toronto and École Polytechnique (France), where he studied applications of blockchains, particularly to identity management systems. William also previously worked in information security for a Canadian bank, where he was involved in the management of the bank's cryptographic keys.",
+      "paragraph": "William持有多伦多大学的数学硕士和PhD学位。其后从事博士研究员于多伦多大学及École Polytechnique大学(法国)，研究区块链应用，专攻关于身分管理系统。William也先前曾担任过加拿大著名银行的资讯安全监管，主要牵涉与银行加密钥键管理。",
       "researchers": {
         "title": "研究员",
         "items": {
           "1": {
-            "title": "Yann Aouidef, PhD Researcher",
-            "text": "Yann is a Phd candidate at the Paris Center in Law and Economics. His topic thesis is: “Economics and Law of the Blockchain: Applications To Decentralized Justice Mechanisms”. In 2017, Yann accidentally discovered the theoretic aspect of the blockchain through a conference which completely challenged him because of this technology’s characteristics (especially disintermediation) and the potential applications that would derive from it."
+            "title": "Yann Aouidef, PhD 研究员",
+            "text": "Yann为Phd候选人于巴黎中央法律及经济研究院。其研究主题为: “区块链经济和法律: 去中央化司法正义机制之应用” 。于2017，Yann于一碰巧会议中意外发现区块链世界，而此科技特性(特别是去中间人参与特性) 深深改改变他的人生观点，并让他踏入区块链应用开发领域。"
           },
           "2": {
             "name": "Name",
@@ -481,7 +584,7 @@
         "items": {
           "1": "智能合约预言机：获取现实世界的真实数值",
           "2": "去中心化的公正: 重塑数字时代的仲裁?",
-          "3": "Kleros Long Paper v1.0.0"
+          "3": "Kleros 黄皮书 v1.0.0"
         }
       },
       "mentions": {
@@ -532,28 +635,28 @@
       "h1": "Table of Contents",
       "chapters": {
         "1": {
-          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
-          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
+          "title": "章节1，创世纪:当希腊乐透遇上中世纪私人法",
+          "paragraph": "此章节介绍两启发Kleros的重要历史性宗旨。其将包含与Josiah Ober， Peter Stone，和 Barry Weingast，三位政治科学家的深度面谈，而我们将会探索去中央化正义之足迹于雅典，中世纪欧洲，及符合西方世界传统政治思考之抽选模式。最终，我们将总和所有讨论内容，并探讨Kleros成为DAO世界最高法庭的可能性。"
         },
         "2": {
-          "title": "Chapter 2, Kleros Cryptoeconomics: Towards a Theory of Decentralized Justice",
-          "paragraph": "This chapter focuses on the technology behind Kleros. In it, experts on game theory, such as Hebrew University professor Eyal Winter and our cryptoeconomic researcher William George try to bring these concepts closer to the layman reader. It also consists of our latest research into social choice theory, different choices of voting mechanisms and their potential impact on Kleros. The remainder of the chapter focuses on helping expand the knowledge base of our expert audience by sharing our experiences with smart contracts, oracles, as well as presenting proposals for Ethereum standards (or ERCs) and the basic policies on which Kleros is built."
+          "title": "章节2，Kleros加密经济:朝向去中央化正义理论",
+          "paragraph": "于此章节，我们将会专注于Kleros背后的支撑技术。于此，博弈理论专家，希伯来大学教授Eyal Winter和我们的加密经济研究总管William George将会深入讨论，并将讨论内容简单解释让所有人易了。此将包含最新研究关于社交选择理论，不同投票机制，及其可能影响于Kleros开发。此章节最终也会谈及到智能合约，预言机数据，以太坊提议标准ERC和Kleros正开发建立的基本方向。"
         },
         "3": {
-          "title": "Chapter 3, Decentralized Justice in Action: From Doges on Trial to the Token Curated Registry",
-          "paragraph": "This chapter is an in-depth analysis of the 'Doges on Trial' experiment, as well as early lessons from the implementation of our T2CR and a wide look at what has been learned about attack vectors, juror behavior and the foundational cryptoeconomics. In the second edition, the chapter is expanded with latest insights into the so-called ‘challenger’s dilemma’ and the experiment we undertook comparing artificial and collective intelligence in the context of Doges on Trial."
+          "title": "章节3，去中央化正义行动:从Doges受审到代币策展登记",
+          "paragraph": "此章节将深入解析 'Doges受审实验’ 和一些早期案例关于T2CR发展，并尝试检讨目前已知的攻击领域，陪审员行为，以及加密经济基础。于第二版刷，此章节已被扩充与最新资讯，其中包含 '挑战者悖论’ 以及其他于Doges受审后续讨论到的人工及群体智慧决策情况。"
         },
         "4": {
-          "title": "Chapter 4, Dispute Revolution: A New Justice Paradigm in an Old World",
-          "paragraph": "This chapter deals with the implications this technology might have for law and society. By sharing their experiences in online dispute resolution and research on blockchain law, industry and thought leaders such as Gillian Hadfield, Kate Sills and former Vice-President of the Ugandan Law Society, Alice Namuli give their opinion on how Kleros and decentralized justice might affect the future of law. A veteran international arbitrator, Sophie Nappert gives us a fantastic insight into the rise of algocracy and how humans can respond. In this chapter, particular care is taken to analyze the most critical points of any arbitration system - fairness and compatibility with existing legal frameworks."
+          "title": "章节4，争议革命:一新司法正义模范于现世界",
+          "paragraph": "此章节包含一系列可能改变法律及社会的相关联科技。藉由分享其知识经验于网路争议解决及区块链法律相关研究，业界领导人如Gillian Hadfield，Kate Sills，及前任乌干达法律社会副总Alice Namuli将会分享其意见对于Kleros，并讨论此去中央化司法正义将如何影响整个法律业界的未来发展。经验国际仲裁者，Sophie Nappert也将会分享其宝贵解析关于演算法抬头趋势及我们人类如何应对为此。于此章节，我们也将注目来分析仲裁系统最重要的一点 – 公平性及互通性与现行法律架构。"
         },
         "5": {
-          "title": "Chapter 5, The Business of Decentralized Justice",
-          "paragraph": "This chapter tries to paint an image of the way legal business is going to develop and change in the coming years. By bringing in decades of experience in future-centered thinking through conversations with Joe Raczynski, Thomson Reuters resident legal futurist, Colin Rule, the creator of eBay and PayPal’s dispute resolution systems, the author of the seminal book Digital Justice, Orna Rabinovich-Einy, Accord Project founder, Peter Hunn and legal design expert José Torres, we discuss the opportunities and hurdles in building new legal systems for the 21st Century. As added flavour, our Design Lead, Plinio Braga gives us unique, practical insight into designing novel legal applications."
+          "title": "章节5，去中央化正义商业模式",
+          "paragraph": "此章节将会关注法律相关商业近期及未来之发展模式。藉由讨论与数十年经验老手，包含Thomas Reuters法律未来学家Joe Racynski， eBay和Paypal争议解决系统创建者Colin Rule，数位正义一书作者Orna Rabinovich-Einy，Accord计画创始者Peter Hunn，以及法学设计专家José Torres，我们将会探讨21世纪新法律设计系统的各类相关发展机会及挑战。此外，我们的设计总监Plinio Braga，也将会给我们独特及实惠资讯关于设计新兴法律相关应用程式。"
         },
         "6": {
-          "title": "Chapter 6, Scaling Up: The Applications of Decentralized Justice",
-          "paragraph": "This chapter focuses on the use cases of Kleros, where we combine the vision and practice to define the key ingredients which will make Kleros the dispute resolution system of the future. Experts from different fields present their research into Kleros as a solution for a plethora of use cases, ranging from decentralized freelancing, marketplaces, gas, energy markets and derivatives trading to fake news, social media and online gaming. This chapter also presents some of our coming platforms, as well as existing ones in the context of creating a thriving dispute resolution ecosystem."
+          "title": "章节6，扩张起步:去中央化正义应用程式",
+          "paragraph": "此章节将会注重于Kleros的各项使用案例，而我们将会综合理念和实际状况来定义关键要素来使Kleros成为未来重要的争议解决。各项领域专家将会展现其研究成果关于Kleros使用案例，其将包含去中央化自由职业平台，商业平台，能源及预测市场交易所，假新闻，社交媒体平台管理，及线上游戏相关应用。此章节也将介绍我们些许未来即将登场及现有的开发应用程式平台，并提供一讨论空间为创建一更加活耀的争议解决生态系。"
         }
       }
     },
@@ -587,7 +690,7 @@
     "section-otc": {
       "title": "通过OTC获取PNK",
       "subtitle": "为了确保公平，通证会以当前市场反映的价格出售给买家.",
-      "button": "Get in touch here"
+      "button": "联系于此"
     }
   },
   "community": {
@@ -601,7 +704,7 @@
     },
     "section-groups": {
       "title": "多语种电报群",
-      "title-poh": "人类识别电报群"
+      "title-poh": "人性证明电报群"
     },
     "section-guild": {
       "title": "Kleros公正协会",
@@ -703,7 +806,7 @@
     "section-hero": {
       "h1": "Kleros公正研究会",
       "h2": "该计划聚集了来自不同领域的专家，以进行Kleros的研究工作。我们的研究员与我们的核心团队积极合作，促进了去中心化公正的发展.",
-      "conversion-phrase": "关注Kleros社交媒体，以了解何时开放下一批申请."
+      "conversion-phrase": "第五期研究员的申请现已开放， <anchor>点此</anchor>了解更多并申请"
     },
     "section-fellows": "我们的研究员",
     "section-faq": {
@@ -724,14 +827,10 @@
         "a": "参与者可以获得Kleros团队的指导，有关用户行为的数据，与生态系统中主要参与者的互动，甚至获得设计支持。我们将竭尽所能为会员提供帮助."
       },
       "5": {
-        "q": "你们提供资助吗？",
-        "a": "没有."
-      },
-      "6": {
         "q": "该项目日常如何运作?",
         "a": "研究会是一个完全远程的自治项目。没有常规电话会议，也没有进度报告。唯一可交付的成果是将在项目结束时提交的报告."
       },
-      "7": {
+      "6": {
         "q": "该去哪里申请?",
         "a": "可以在这里申请<anchor>here</anchor>."
       }
@@ -794,44 +893,73 @@
         }
       }
     },
-    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽的里斯本市的共享办公空间Block进行. 🇵🇹", "button-primary": "现在申请" },
+    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽里斯本市的Block共享办公空间进行. 🇵🇹", "button-primary": "现在申请" },
     "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
     "section-faq": {
-      "1": { "q": "What is the Kleros Incubator?", "a": "The Kleros Incubator is a program hosted by the Coopérative Kleros that provides company building and financial support to teams willing to create projects or Dapps connected to the Kleros protocol." },
-      "2": {
-        "q": "What happens at the Kleros Incubator?",
-        "a": "Participants take part in a 3 month incubation program that helps them kickstart or grow their project. The incubation process is conducted <anchor>at the Block co-working space</anchor> in Lisbon and consists of a number of workshops including strategy, prototyping, smart contract security, marketing and fundraising. The program ends with a demo day where teams present their progress to a panel of investors and the wider community."
+      "1": {
+        "q": "Kleros孵育器为何?",
+        "a": "Kleros孵育器为一项目计画资助由Kleros企业合作社。而此为当帮助愿意建立于Kleros协议之上的所有开发计画项目提供各开发机会及金援支持。"
       },
-      "3": { "q": "When does the program start?", "a": "The 2021 batch will take place in Lisbon from October 18th to January 17th, 2022." },
+      "2": {
+        "q": "Kleros孵育计画将关于什么?",
+        "a": "参与者将花费3个月的时间于此计画来帮助其目标建立及计画起飞。此孵育计画将实施于<anchor>区块共同空间</anchor>于们的里斯本办公中心，而其内容将包含一系列之工作坊，包含策略进展，计画原型设计，智能合约安全检测，商业行销，及资金筹募。此孵育计画将最终以一报告演示日告终，而这天也将会是一大好机会来使计画项目团队来向广泛社群及潜力投资者来展现其达成之成果。"
+      },
+      "3": {
+        "q": "孵育计画将从何时开始?",
+        "a": "追踪Kleros于各方社交平台来为关于下一梯开放申请的最新资讯!!"
+      },
       "4": {
-        "q": "How is the program structured?",
-        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
+        "q": "此孵育计画之主要架构设计为何?",
+        "a": "此计画将包含一系列之周单位工作坊，而其将涵盖一区块链计画将需要之不同区域范围。\n\n第一周. 迎欢见面会。 \n第二周. 学习白板:策略设计。\n第三周. 用户采访:策略验证。\n第四周. 计画原型设计。\n\n第五周. Web3世界之UX/UI(用户体验/用户介面设计)。\n第六周. 智能合约安全(第一部分)。\n第七周. 智能合约安全(第二部分)。\n第八周. Web3实际部署导入。\n\n第九周. 商业行销&社群建立\n第十周. 建立一投资平台。\n第十一周. 筹资战术及法律须知。\n第十二周. 排练回顾&最终报告演示日"
       },
       "5": {
-        "q": "Who can apply?",
-        "a": "Early stage teams building companies or projects connected to the Kleros protocol are welcome to apply. This includes arbitrable Dapps that could benefit from Kleros protocol in its escrow, curation and oracle use cases as well as companies that seek to foster the adoption of the Kleros protocol through other means."
+        "q": "谁能申请?",
+        "a": "任何欲建立于Kleros协议之上之早期开发计画项目或公司皆能申请至此孵育计画。此包含想导入运用Kleros托管服务，预言机服务，或其他任何服务的Dapp(去中央化应用程式)计画及公司。"
       },
       "6": {
-        "q": "Where do I apply?",
-        "a": "The application process starts by filling <anchor1>this form</anchor1>. If you’re selected to the next stage, you will have an interview with the Kleros executive team to discuss your idea, the problem you’re solving, your value proposition, the team and your user acquisition strategy. The decision will be made after that interview."
+        "q": "哪里申请?",
+        "a": "此申请过程将从填入<anchor1>此报名表</anchor1>开始。如您有幸被成功选上进入下一阶段，您将会与Kleros执行团队直接面试来讨论您的开发主意，目前面对问题状况，目标价值方向，工作团队，及用户进展策略。此最终结果将于面试数天后被公告。"
       },
-      "7": { "q": "What's the deadline to apply?", "a": "The application deadline for the 2021 incubation program is September 6th, 2021." },
-
+      "7": {
+        "q": "申请截止日期为何?",
+        "a": "追踪Kleros于各方社交平台来为更多最新申请梯次消息!!"
+      },
       "8": {
-        "q": "Where can I find some ideas about companies which could be based on Kleros?",
-        "a": "Chapter 6 of the <anchor2>Kleros Book</anchor2> discusses Kleros use cases in depth. You can find lots of inspiration here. Also feel free to use this <anchor3>online tool</anchor3> and to engage in discussions with members of the community in the Kleros Telegram group."
+        "q": "我应该从何处开始寻找好的计划项目主意来建立于Kleros之上呢?",
+        "a": "<anchor2>Kleros书籍</anchor2>中第六章的深度用途讨论将提供许多好想法!!也欢迎来使用此<anchor3>线上工具</anchor3>并将讨论延续带入Kleros的大家庭社群于Telegram。"
       },
-      "9": { "q": "How much do you invest?", "a": "The Coopérative Kleros provides initial funding for team members to move to Lisbon during the incubation program and will provide additional funding as an investment to the most promising projects." },
-      "10": { "q": "Who reviews the applications?", "a": "Different members of the Kleros team review the applications, including the founders." },
-      "11": { "q": "We've already raised funding. Can we still apply?", "a": "Yes." },
+      "9": {
+        "q": "我将会需要为此投资多少?",
+        "a": "Kleros企业合作社将会出资提供初期之计画起步费用，并招待您整个计划团队至美丽的里斯本城市。于孵育计画期间，额外计画开销投资也将频繁由Kleros所分担提供。"
+      },
+      "10": {
+        "q": "谁将检视孵育计画的申请候选者?",
+        "a": "多方不同的Kleros团队成员将一一检视申请候选者，其中也包含Kleros资助家。"
+      },
+      "11": {
+        "q": "我们的计画已先前筹资过了。请问我们还能申请吗?",
+        "a": "可以，欢迎参与!"
+      },
       "12": {
-        "q": "We don't really need the money. Does it still make sense to apply?",
-        "a": "Funding is just a small part of what the Kleros Incubator can do for your project. The incubation process will also give you support in strategy, development, marketing and community building. So you are welcome to apply to the incubator."
+        "q": "我们的计画项目并不太需要资助。于此情况还是欢迎来审请吗?",
+        "a": "资助仅是Kleros孵育计画的一小部分。整体孵育计画将包含策略进展，开发设计，商业行销，及社群建立等多范围领域。所以当然欢迎您来申请!!"
       },
-      "13": { "q": "I don’t have a team. Can I apply as a solo founder?", "a": "Yes." },
-      "14": { "q": "Can I apply more than once with the same idea?", "a": "Not in the same batch. But if your application is rejected, you can try again in the next batch." },
-      "15": { "q": "Our team already participated in another incubator/accelerator, can we still apply?", "a": "Yes." },
-      "16": { "q": "What happens after the program ends?", "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed." }
+      "13": {
+        "q": "我还没有一完整工作团队。请问我还是能独自申请吗?",
+        "a": "是的。欢迎挑战!"
+      },
+      "14": {
+        "q": "请问我能以一相同计画主意来申请多次吗?",
+        "a": "不能于同一申请梯次。但如果您计画被不幸拒绝于此梯次，我们欢迎您再次挑战于下次开放申请梯次。"
+      },
+      "15": {
+        "q": "我们有些团队成员正现重复参与另一孵育计画，请问我们还是能申请吗?",
+        "a": "是的，没问题。"
+      },
+      "16": {
+        "q": "孵育计画结束后，下一步是什么?",
+        "a": "您的计画团队能回归至您最合适之工作环境。您将依然能持续向Kleros企业合作社来请求顾问支持来使您的计画能更进一步迈向未来!!"
+      }
     }
   },
 

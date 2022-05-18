@@ -1,0 +1,31 @@
+.usecasesHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
+  background-repeat: no-repeat;
+  margin-bottom: min(-24px, max(-64px, -4.4vw));
+  padding-bottom: 0;
+}
+
+.usecasesHero .h1 {
+}
+
+.usecasesHero .subtitle {
+  max-width: 830px;
+  min-height: 2.4em;
+}
+
+.usecasesHero svg,
+.usecasesHero img {
+  height: 34vw;
+  max-height: 490px;
+}
+
+.usecasesHero .playButton {
+  display: inline-block;
+  width: 8.8vw;
+  min-width: 48px;
+  max-width: 128px;
+}
