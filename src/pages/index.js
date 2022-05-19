@@ -158,7 +158,7 @@ class IndexPage extends React.Component {
     const openDisputeIDs = [...new Set(drawEvents.map((result) => result.returnValues._disputeID))];
 
     openDisputeIDs
-      .sort()
+      .sort((a, b) => a - b)
       .slice(-NO_OF_RECENT_DISPUTES)
       .map(async (arbitratorDispute) => {
         await this.getArbitratorDispute(arbitratorDispute).then(async (arbitratorDisputeDetails) => {
@@ -276,7 +276,7 @@ class IndexPage extends React.Component {
         <Container className={styles.index} fluid>
           {!loading && !lscache.get("dismissBanner") && (
             <div className={styles.banner}>
-              <a href="https://blog.kleros.io/the-launch-of-the-kleros-juror-incentive-program/" target="_blank" rel="noopener noreferrer">
+              <a href="https://forum.kleros.io/t/kip-46-extension-of-juror-incentive-program/669" target="_blank" rel="noopener noreferrer">
                 <Logo />
                 <FormattedMessage id="index.banner" />
                 <RightArrow />

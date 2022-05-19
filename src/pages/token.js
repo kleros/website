@@ -99,7 +99,7 @@ const IndexPage = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://balancer.exchange/" rel="noopener noreferrer" target="blank">
             <Balancer />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://kyberswap.com/swap" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://kyberswap.com/#/swap" rel="noopener noreferrer" target="blank">
             <span class={styles.helper} />
             <img src={Kyber} alt={"Kyber"} />
           </Badge>
