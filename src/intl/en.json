@@ -248,7 +248,6 @@
       "card-2-text": "Get in touch to integrate Kleros Escrow into your project.",
       "card-2-button": "Get in touch"
     }
-
   },
   "governance": {
     "seo-title": "Governance",
@@ -301,7 +300,6 @@
       "card-3-text": "Using the SafeSnap governance module from Gnosis Safe in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
       "card-3-button": "Try SafeSnap"
     }
-
   },
   "oracle": {
     "seo-title": "Oracle",
@@ -729,7 +727,8 @@
     "section-hero": {
       "h1": "Integrate with Kleros",
       "h2": "Fast, secure and affordable justice as a service.",
-      "button": "Get in touch for integrations support"
+      "guide": "View our integration guides",
+      "button": "Get in touch for integratfion support"
     },
     "section-main": {
       "usecases-title": "USECASES",
