@@ -14,11 +14,6 @@
   padding: 1.4rem 1.4rem !important;
 }
 
-.integrations .buttonWrapper a{
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .integrations .prepend span {
   border: 0;
   background: var(--color-purple-faded);
