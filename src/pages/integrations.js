@@ -95,9 +95,14 @@ const Integrations = ({ intl }) => (
         <h2 className="text-center mb-5">
           <FormattedMessage id="integrations.section-hero.h2" />
         </h2>
-        <a className="btn btn-primary" href="mailto:integrations@kleros.io" rel="noopener noreferrer" target="blank">
-          <FormattedMessage id="integrations.section-hero.button" />
-        </a>
+        <div className={styles.buttonWrapper}>
+          <a className="btn btn-primary" href="https://kleros.gitbook.io/docs/integrations/types-of-integrations" rel="noopener noreferrer" target="blank">
+            <FormattedMessage id="integrations.section-hero.guide" />
+          </a>
+          <a className="btn btn-secondary" href="mailto:integrations@kleros.io" rel="noopener noreferrer" target="blank">
+            <FormattedMessage id="integrations.section-hero.button" />
+          </a>
+        </div>
       </section>
       <section className={`${styles.trustedBy}`}>
         <h2 className="text-center">
