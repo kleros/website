@@ -92,22 +92,22 @@ const Curation = ({ intl }) => (
             name: "Uniswap"
           },
           {
-            href: "https://uniswap.org/",
+            href: "https://sushi.com/",
             icon: Sushi,
             name: "Sushi"
           },
           {
-            href: "https://uniswap.org/",
+            href: "https://zerion.io/",
             icon: Zerion,
             name: "Zerion"
           },
           {
-            href: "https://uniswap.org/",
+            href: "https://www.paraswap.io/",
             icon: Paraswap,
             name: "Paraswap"
           },
           {
-            href: "https://uniswap.org/",
+            href: "https://clr.fund/#/",
             icon: ClrFund,
             name: "clr.fund"
           },
