@@ -28,6 +28,7 @@
     "governance": "Governance",
     "escrow": "Escrow",
     "oracle": "Oracle",
+    "moderate": "Kleros Moderate",
     "career": "Careers",
     "incubator": "Incubator",
     "curate": "Curation",
@@ -299,6 +300,45 @@
       "card-3-title": "Gnosis SafeSnap",
       "card-3-text": "Using the SafeSnap governance module from Gnosis Safe in conjunction with Kleros Court as final arbitrator, any DAO can now implement their off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
       "card-3-button": "Try SafeSnap"
+    }
+  },
+  "moderate": {
+    "seo-title": "Kleros Moderate",
+
+    "section-hero": {
+      "h1": "Kleros Moderate"
+    },
+    "solution": {
+      "title": "Solution",
+      "paragraph": "Kleros Moderate uses solid cryptoeconomics for fair and transparent moderation in your social media channels."
+    },
+    "sash": {
+      "title": "How it Works",
+      "first": {
+        "title": "Request to ban a user",
+        "paragraph": "A request is made to ban a user in a Telegram group."
+      },
+      "second": {
+        "title": "A bond is deposited",
+        "paragraph": "A minimum bond is deposited to support the ban on Reality.eth"
+      },
+      "third": {
+        "title": "The ban can be contested",
+        "paragraph": "If any party thinks the ban is unfair, they can double the bond to unban the member."
+      },
+      "fourth": {
+        "title": "In case of dispute",
+        "paragraph": "If the disagreement escalates, the case will be resolved in Kleros."
+      },
+      "fifth": {
+        "title": "Easy to add evidence",
+        "paragraph": "Evidence can be added directly from the group and is stored securely in IPFS."
+      },
+      "sixth": {
+        "title": "Final decision",
+        "paragraph": "Kleros makes a ruling and the user is either banned or has their reputation cleared."
+      },
+      "call-to-action": "Start Now"
     }
   },
   "oracle": {
