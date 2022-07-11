@@ -337,9 +337,9 @@
       "sixth": {
         "title": "Final decision",
         "paragraph": "Kleros makes a ruling and the user is either banned or has their reputation cleared."
-      },
-      "call-to-action": "Start Now"
-    }
+      }
+    },
+    "call-to-action": "Start Now"
   },
   "oracle": {
     "seo-title": "Oracle",
