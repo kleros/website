@@ -24,7 +24,7 @@ import Contact from '../components/contact';
 const Moderate = ({ intl }) => {
   const [vw, setVW] = useState();
   useEffect(() => {
-    if (typeof window != undefined) {
+    if (window != undefined) {
       const handleResize = () => setVW(window.innerWidth);
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
