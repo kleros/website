@@ -22,11 +22,13 @@ import styles from './styles/moderate.module.css'
 import Contact from '../components/contact';
 
 const Moderate = ({ intl }) => {
-  const [vw, setVW] = useState(window.innerWidth);
+  const [vw, setVW] = useState();
   useEffect(() => {
-    const handleResize = () => setVW(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    if (typeof window != undefined) {
+      const handleResize = () => setVW(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
   return (
     <Layout>
@@ -38,7 +40,7 @@ const Moderate = ({ intl }) => {
         />
 
         <section className={`grey ${styles.dappImage}`}>
-          {vw > 900 ? <ModerateExample /> : <ModerateExampleMobile />}
+          {vw <= 900 ? <ModerateExampleMobile /> : <ModerateExample />}
         </section>
 
         <section className="grey">
