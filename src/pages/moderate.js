@@ -25,6 +25,7 @@ const Moderate = ({ intl }) => {
   const [vw, setVW] = useState();
   useEffect(() => {
     if (window != undefined) {
+      setVW(window.innerWidth);
       const handleResize = () => setVW(window.innerWidth);
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
