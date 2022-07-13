@@ -22,9 +22,11 @@ import styles from './styles/moderate.module.css'
 import Contact from '../components/contact';
 
 const Moderate = ({ intl }) => {
-  const [vw, setVW] = useState(window ? window.innerWidth : undefined);
+  const [vw, setVW] = useState(
+    typeof window != "undefined" ? window.innerWidth : undefined
+  );
   useEffect(() => {
-    if (window != undefined) {
+    if (typeof window != "undefined") {
       const handleResize = () => setVW(window.innerWidth);
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
