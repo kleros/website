@@ -18,19 +18,21 @@ import HexIconGavel from "src/assets/svgs/icon-gavel.svg";
 import ModerateExample from 'src/assets/svgs/moderate-example.svg';
 import ModerateExampleMobile from 'src/assets/svgs/moderate-example-mobile.svg';
 import styles from './styles/moderate.module.css'
-
 import Contact from '../components/contact';
 
+const isBrowser = typeof window !== "undefined"
+const IS_MOBILE_MEDIA_QUERY = "(max-width: 900px)";
+
 const Moderate = ({ intl }) => {
-  const [vw, setVW] = useState(
-    typeof window != "undefined" ? window.innerWidth : undefined
+  const [isMobile, setIsMobile] = useState(
+    isBrowser ? window.matchMedia(IS_MOBILE_MEDIA_QUERY).matches : undefined
   );
   useEffect(() => {
-    if (typeof window != "undefined") {
-      const handleResize = () => setVW(window.innerWidth);
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
+    const handleResize = () =>
+      setIsMobile(window.matchMedia(IS_MOBILE_MEDIA_QUERY).matches);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
     <Layout>
@@ -42,7 +44,8 @@ const Moderate = ({ intl }) => {
         />
 
         <section className={`grey ${styles.dappImage}`}>
-          {vw <= 900 ? <ModerateExampleMobile /> : <ModerateExample />}
+          { isBrowser && isMobile && <ModerateExampleMobile /> }
+          { isBrowser && !isMobile && <ModerateExample /> }
         </section>
 
         <section className="grey">
