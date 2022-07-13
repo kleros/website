@@ -69,6 +69,7 @@ const Moderate = ({ intl }) => {
         <section className='light'>
           <h1>{intl.formatMessage({id: "moderate.sash.title"})}</h1>
           <Sash
+            className={styles.mobileNoPadding}
             as='div'
             figures={[
               {
@@ -101,6 +102,7 @@ const Moderate = ({ intl }) => {
             ]}
           />
           <Sash
+            className={styles.mobileNoPadding}
             as="div"
             figures={[
               {

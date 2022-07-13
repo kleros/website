@@ -40,3 +40,9 @@
 .moderate .worksWithLogos svg {
   max-width: 64px;
 }
+
+@media (max-width: 1199px){
+  .moderate .mobileNoPadding {
+    padding: 0;
+  }
+}

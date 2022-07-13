@@ -3,8 +3,8 @@ import styles from "./styles/sash.module.css";
 import { Col } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 
-const Sash = ({ style, separator, figures }) => (
-  <div style={style} className={`d-block d-xl-flex justify-content-center ${styles.sash}`}>
+const Sash = ({ style, separator, figures, className }) => (
+  <div style={style} className={`d-block d-xl-flex justify-content-center ${styles.sash} ${className}`}>
     {figures.map((figure, index) => {
       const item = (
         <Col className={`px-4 pb-6 pt-6 mx-auto mx-xl-2 my-4 my-xl-0 ${styles.column}`} key={index}>
