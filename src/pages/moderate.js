@@ -138,7 +138,7 @@ const Moderate = ({ intl }) => {
 
         <section className="light">
           <a
-            href='https://kleros.gitbook.io/docs/products/oracle'
+            href='https://docs.google.com/forms/d/e/1FAIpQLSeyiPUYFXKoNYWjjpiYNxUNj00uXJJLnM2VeVskpT_UsY9xvA/viewform'
             rel="noopener noreferrer"
             target="blank"
             className='btn btn-secondary'
