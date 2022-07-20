@@ -154,6 +154,9 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/oracle">
                   <FormattedMessage id="footer.oracle" />
                 </Link>
+                <Link className="dropdown-item" to="/moderate">
+                  <FormattedMessage id="footer.moderate" />
+                </Link>
               </NavDropdown>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />

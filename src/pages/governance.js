@@ -36,7 +36,7 @@ const Governance = ({ intl }) => (
         href="https://www.youtube.com/watch?v=HDSZsl1Zk4c"
       />
 
-      <section className='light'>
+      <section className='grey'>
         <Sash
           as='div'
           figures={[
@@ -71,11 +71,12 @@ const Governance = ({ intl }) => (
         />
       </section>
 
-      <section className={`light ${styles.dappImage}`}>
+      <section className={`grey ${styles.dappImage}`}>
         <GovernorExample />
       </section>
 
       <UseCases
+        className="grey"
         titleID='governance.section-use-case.h1'
         figures={
           [
@@ -107,8 +108,7 @@ const Governance = ({ intl }) => (
         }
       />
 
-      <section className="light">
-        <span className='trapezium' />
+      <section className="grey">
         <h1>
           <FormattedMessage id='governance.section-3.h1' />
         </h1>
@@ -124,6 +124,7 @@ const Governance = ({ intl }) => (
           <FormattedMessage id='governance.section-3.button' />
         </a>
       </section>
+      <span className="trapezium"/>
 
       <section className='light'>
         <h1>

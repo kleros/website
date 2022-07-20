@@ -1,0 +1,48 @@
+.moderate .dappImage svg {
+  border-radius: 12px;
+}
+
+.moderate .buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.moderate .helper {
+  /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.moderate .badge {
+  margin-top: 1.5rem;
+  max-width: 30rem;
+  height: 9rem;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+}
+
+.moderate .h1 {
+  margin-bottom: 2rem;
+}
+
+.moderate .worksWithLogos {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.moderate .worksWithLogos svg {
+  max-width: 64px;
+}
+
+@media (max-width: 1199px){
+  .moderate .mobileNoPadding {
+    padding: 0;
+  }
+}

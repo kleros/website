@@ -44,7 +44,7 @@ const Curation = ({ intl }) => (
         BackgroundSVG={CurationHero}
       />
 
-      <section className='light'>
+      <section className='grey'>
         <Sash
           as='div'
           figures={[
@@ -80,6 +80,7 @@ const Curation = ({ intl }) => (
       </section>
 
       <TrustedBy
+        className="grey"
         partners={[
           {
             href: "https://omen.eth.link/",
@@ -114,11 +115,12 @@ const Curation = ({ intl }) => (
         ]}
       />
 
-      <section className={`light ${styles.dappImage}`}>
+      <section className={`grey ${styles.dappImage}`}>
         <CurationExample />
       </section>
 
       <UseCases
+        className="grey"
         titleID="curation.section-use-case.h1"
         figures={[
           {
@@ -160,8 +162,7 @@ const Curation = ({ intl }) => (
         ]}
       />
 
-      <section className="light">
-        <span className='trapezium' />
+      <section className="grey">
         <h1>
           <FormattedMessage id='curation.section-3.h1' />
         </h1>
@@ -177,6 +178,7 @@ const Curation = ({ intl }) => (
           <FormattedMessage id='curation.section-3.button' />
         </a>
       </section>
+      <span className="trapezium"/>
 
       <section className='light'>
         <h1>

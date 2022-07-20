@@ -153,7 +153,6 @@ const About = ({ intl }) => (
         />
       </section>
       <section className="masked">
-        <span className="trapezium" />
         <h1>
           <FormattedMessage id="about.section-3.h1" />
         </h1>

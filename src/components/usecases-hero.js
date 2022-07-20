@@ -16,9 +16,11 @@ const UseCasesHero = ({ titleID, subtitleID, BackgroundSVG, href }) => (
     <h1>
       <FormattedMessage id={titleID} />
     </h1>
-    <h2 className={styles.subtitle}>
-      <FormattedMessage id={subtitleID} />
-    </h2>
+    {subtitleID &&
+      <h2 className={styles.subtitle}>
+        <FormattedMessage id={subtitleID} />
+      </h2>
+    }
     <BackgroundSVG />
     {href && (
       <a

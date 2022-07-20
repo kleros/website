@@ -39,7 +39,7 @@ const Escrow = ({ intl }) => (
         BackgroundSVG={EscrowShield}
       />
 
-      <section className='light'>
+      <section className='grey'>
         <Sash
           as='div'
           figures={[
@@ -74,11 +74,12 @@ const Escrow = ({ intl }) => (
         />
       </section>
 
-      <section className={`light ${styles.dappImage}`}>
+      <section className={`grey ${styles.dappImage}`}>
         <EscrowExample />
       </section>
 
       <UseCases
+        className="grey"
         titleID="escrow.section-use-case.h1"
         figures={[
           {
@@ -120,8 +121,7 @@ const Escrow = ({ intl }) => (
         ]}
       />
 
-      <section className="light">
-        <span className='trapezium' />
+      <section className="grey">
         <h1>
           <FormattedMessage id='escrow.section-3.h1' />
         </h1>
@@ -150,6 +150,7 @@ const Escrow = ({ intl }) => (
           </a>
         </div>
       </section>
+      <span className="trapezium"/>
 
       <section className='light'>
         <h1>

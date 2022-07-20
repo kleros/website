@@ -38,7 +38,7 @@ const Oracle = ({ intl }) => (
         BackgroundSVG={OracleHero}
       />
 
-      <section className='light'>
+      <section className='grey'>
         <Sash
           as='div'
           figures={[
@@ -74,6 +74,7 @@ const Oracle = ({ intl }) => (
       </section>
 
       <TrustedBy
+        className="grey"
         partners={[
           {
             href: "https://omen.eth.link/",
@@ -93,11 +94,12 @@ const Oracle = ({ intl }) => (
         ]}
       />
 
-      <section className={`light ${styles.dappImage}`}>
+      <section className={`grey ${styles.dappImage}`}>
         <OracleExample />
       </section>
 
       <UseCases
+        className="grey"
         titleID='oracle.section-use-case.h1'
         figures={
           [
@@ -129,8 +131,7 @@ const Oracle = ({ intl }) => (
         }
       />
 
-      <section className="light">
-        <span className='trapezium' />
+      <section className="grey">
         <h1>
           <FormattedMessage id='oracle.section-3.h1' />
         </h1>
@@ -146,6 +147,7 @@ const Oracle = ({ intl }) => (
           <FormattedMessage id='oracle.section-3.button' />
         </a>
       </section>
+      <span className="trapezium" />
 
       <section className='light'>
         <h1>
