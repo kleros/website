@@ -138,7 +138,7 @@ const Moderate = ({ intl }) => {
 
         <section className="light">
           <a
-            href='https://docs.google.com/forms/d/e/1FAIpQLSeyiPUYFXKoNYWjjpiYNxUNj00uXJJLnM2VeVskpT_UsY9xvA/viewform'
+            href='https://forms.gle/3Yteu5YFTZoWGhXv7'
             rel="noopener noreferrer"
             target="blank"
             className='btn btn-secondary'
