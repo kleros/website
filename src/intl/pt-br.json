@@ -891,19 +891,19 @@
         "items": {
           "1": {
             "header": "Semana 1",
-            "body": "Boas-Vindas e Orientação"
+            "body": "Desenho de Estratégia"
           },
           "2": {
             "header": "Semana 2",
-            "body": "Lean Canvas: Design da Estratégia"
+            "body": "Entrevistas com Usuários"
           },
           "3": {
             "header": "Semana 3",
-            "body": "Entrevistas com Usuários: Validação da Estratégia"
+            "body": "Construindo uma Comunidade"
           },
           "4": {
             "header": "Semana 4",
-            "body": "Prototipação"
+            "body": "Design UX/UI"
           }
         }
       },
@@ -912,19 +912,19 @@
         "items": {
           "5": {
             "header": "Semana 5",
-            "body": "UX/UI para Web3"
+            "body": "Desenho de Mecanismos"
           },
           "6": {
             "header": "Semana 6",
-            "body": "Segurança de Smart Contracts (parte 1)"
+            "body": "Ataques Econômicos"
           },
           "7": {
             "header": "Semana 7",
-            "body": "Segurança de Smart Contracts (parte 2)"
+            "body": "Introdução aos Smart Contracts"
           },
           "8": {
             "header": "Semana 8",
-            "body": "Implementação na Web3"
+            "body": "Segurança de Smart Contracts"
           }
         }
       },
@@ -933,19 +933,15 @@
         "items": {
           "9": {
             "header": "Semana 9",
-            "body": "Marketing & Construção de uma Comunidade"
+            "body": "Avaliando Riscos Legais"
           },
           "10": {
             "header": "Semana 10",
-            "body": "Criando um Pitch para Investidores"
+            "body": "Como Conseguir Financiamento"
           },
           "11": {
             "header": "Semana 11",
-            "body": "Táticas e Aspectos Legais de Captação de Recursos"
-          },
-          "12": {
-            "header": "Semana 12",
-            "body": "Ensaio Final & Demo"
+            "body": "Demo Day"
           }
         }
       }
