@@ -120,7 +120,7 @@ const Incubator = ({ intl }) => {
               <FormattedMessage id="incubator.section-how-it-works.div-grow.title" />
             </div>
             <div className="d-flex flex-wrap justify-content-center">
-              {[9, 10, 11, 12].map((itemNumber) => (
+              {[9, 10, 11].map((itemNumber) => (
                 <IncubatorCard
                   content={{
                     department: intl.formatMessage({ id: `incubator.section-how-it-works.div-grow.items.${itemNumber}.header` }),
