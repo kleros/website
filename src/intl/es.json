@@ -28,7 +28,7 @@
     "escrow": "Escrow",
     "curate": "Curate",
     "oracle": "Oracle",
-    "incubator": "Incubatora",
+    "incubator": "Incubadora",
     "fellowship": "Fellowship",
     "community": "Comunidad",
     "blog": "Blog",
@@ -876,28 +876,27 @@
       "div-learn": {
         "title": "Aprender",
         "items": {
-          "1": { "header": "Semana 1", "body": "Bienvenida y Orientación" },
-          "2": { "header": "Semana 2", "body": "Lean Canvas: Diseño de Estrategia" },
-          "3": { "header": "Semana 3", "body": "Entrevistas con Usuarios: Validación de Estrategia" },
-          "4": { "header": "Semana 4", "body": "Prototipado" }
+          "1": { "header": "Semana 1", "body": "Diseño de Estrategia" },
+          "2": { "header": "Semana 2", "body": "Entrevistas con Usuarios" },
+          "3": { "header": "Semana 3", "body": "Construyendo una Comunidad" },
+          "4": { "header": "Semana 4", "body": "Diseño UX/UI" }
         }
       },
       "div-build": {
         "title": "Construir",
         "items": {
-          "5": { "header": "Semana 5", "body": "UX/UI para Web3" },
-          "6": { "header": "Semana 6", "body": "Seguridad de Smart Contracts (parte 1)" },
-          "7": { "header": "Semana 7", "body": "Seguridad de Smart Contracts (parte 2)" },
-          "8": { "header": "Semana 8", "body": "Implementación en Web3" }
+          "5": { "header": "Semana 5", "body": "Diseño de Mecanismos" },
+          "6": { "header": "Semana 6", "body": "Ataques Económicos" },
+          "7": { "header": "Semana 7", "body": "Introducción a los Smart Contracts" },
+          "8": { "header": "Semana 8", "body": "Seguridad en los Smart Contracts" }
         }
       },
       "div-grow": {
         "title": "Crecer",
         "items": {
-          "9": { "header": "Semana 9", "body": "Marketing & Comunidad" },
-          "10": { "header": "Semana 10", "body": "Construyendo un Deck de Inversión" },
-          "11": { "header": "Semana 11", "body": "Fundraising y Aspectos Legales" },
-          "12": { "header": "Semana 12", "body": "Demo Day" }
+          "9": { "header": "Semana 9", "body": "Evaluación de Riesgos Legales" },
+          "10": { "header": "Semana 10", "body": "Conseguir Fondos" },
+          "11": { "header": "Semana 11", "body": "Demo Day" }
         }
       }
     },

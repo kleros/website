@@ -898,28 +898,27 @@
       "div-learn": {
         "title": "learn",
         "items": {
-          "1": { "header": "Week 1", "body": "Welcome and Orientation" },
-          "2": { "header": "Week 2", "body": "Lean Canvas: Strategy Design" },
-          "3": { "header": "Week 3", "body": "User Interviews: Strategy Validation" },
-          "4": { "header": "Week 4", "body": "Prototyping" }
+          "1": { "header": "Week 1", "body": "Strategy Design" },
+          "2": { "header": "Week 2", "body": "User Interviews" },
+          "3": { "header": "Week 3", "body": "Community Building" },
+          "4": { "header": "Week 4", "body": "UX/UI Design" }
         }
       },
       "div-build": {
         "title": "build",
         "items": {
-          "5": { "header": "Week 5", "body": "UX/UI for Web3" },
-          "6": { "header": "Week 6", "body": "Smart Contract Security (part 1)" },
-          "7": { "header": "Week 7", "body": "Smart Contract Security (part 2)" },
-          "8": { "header": "Week 8", "body": "Web3 Implementation" }
+          "5": { "header": "Week 5", "body": "Mechanism Design" },
+          "6": { "header": "Week 6", "body": "Economic Attacks" },
+          "7": { "header": "Week 7", "body": "Introduction to Smart Contracts" },
+          "8": { "header": "Week 8", "body": "Smart Contract Security" }
         }
       },
       "div-grow": {
         "title": "grow",
         "items": {
-          "9": { "header": "Week 9", "body": "Marketing & Community Building" },
-          "10": { "header": "Week 10", "body": "Building an Investment Deck" },
-          "11": { "header": "Week 11", "body": "Fundraising Tactics and Legal" },
-          "12": { "header": "Week 12", "body": "Final Rehearsal & Demo Day" }
+          "9": { "header": "Week 9", "body": "Assessing Legal Risks" },
+          "10": { "header": "Week 10", "body": "Fundraising" },
+          "11": { "header": "Week 11", "body": "Demo Day" }
         }
       }
     },
