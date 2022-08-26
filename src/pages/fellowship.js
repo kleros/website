@@ -30,7 +30,6 @@ import Archila from "src/assets/images/person/archila.png";
 import Lowther from "src/assets/images/person/lowther.png";
 import Comenale from "src/assets/images/person/comenale.png";
 import Galindo from "src/assets/images/person/galindo.png";
-import Tripathi from "src/assets/images/person/tripathi.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
 import Config from "../../gatsby-config.js";
@@ -58,7 +57,6 @@ const PHOTOS = {
   Scott,
   Sharma,
   Tineo,
-  Tripathi,
   Vargas,
   Zhao,
 };
