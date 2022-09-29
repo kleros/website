@@ -179,7 +179,7 @@ class Header extends React.Component {
                 <NavDropdown.Item href="https://forum.kleros.io" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage id="header.forum" />
                 </NavDropdown.Item>
-                <NavDropdown.Item href="https://snapshot.org/#/kleros" target="_blank" rel="noopener noreferrer">
+                <NavDropdown.Item href="https://snapshot.org/#/kleros.eth" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage id="header.voting" />
                 </NavDropdown.Item>
               </NavDropdown>
