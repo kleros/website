@@ -87,9 +87,9 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/integrations">
             <FormattedMessage id="footer.integrations" />
           </Link>
-          <a className="mr-3" href="https://governance.kleros.io" rel="noopener noreferrer" target="_blank">
+          <Link className="mr-3" to="/governance">
             <FormattedMessage id="footer.governance" />
-          </a>
+          </Link>
           <Link className="mr-3" to="/escrow">
             <FormattedMessage id="footer.escrow" />
           </Link>
