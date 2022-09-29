@@ -838,25 +838,29 @@
     "section-faq": {
       "1": {
         "q": "What's the Kleros Fellowship of Justice?",
-        "a": "It's a 6 month remote program where participants conduct some research on some topic connected to Kleros and decentralized justice."
+        "a": "The Fellowship of Justice is a remote program lasting approximately 6 months where participants can contribute in some way to the decentralized justice ecosystem. Participants may engage in a wide range of activities, including conducting research, building applications, bolstering outreach and awareness efforts, and increasing adoption of Kleros."
       },
       "2": {
-        "q": "Who can participate?",
-        "a": "Anyone wishing to conduct some research about decentralized justice can apply to participate."
+        "q": "Who can participate in the Fellowship?",
+        "a": "Anybody familiar with Kleros who is passionate about contributing to the decentralized justice movement may apply. We have no mandatory educational or professional qualification criteria."
       },
       "3": {
         "q": "What is the expected outcome from the program?",
-        "a": "The outcome is agreed by Kleros team and the participant at the beginning of the program, but it typically is a 10 to 15 pages report about some specific aspect of Kleros."
+        "a": "The outcome is agreed between the Kleros team and the participant at the beginning of the program, but typically will be some relevant work product or output achievable in approximately 6 months of part-time effort."
       },
       "4": {
         "q": "What kind of support does Kleros give to participants?",
-        "a": "Participants can count on the Kleros team for mentorship, data on user behavior, introductions to key players in the ecosystem and even support with design. We will try to help Fellows in every way we can."
+        "a": "Participants can count on the Kleros team for mentorship, advice, and obtaining relevant data and information. The Kleros team will also leverage its extensive network to introduce Fellows to key players in the web3 ecosystem and provide Fellows with design support.  We will help our Fellows disseminate their work and explore further opportunities to provide Fellows with platforms to discuss and share their output. We will try to help our Fellows in every way we can."
       },
       "5": {
-        "q": "How does the day to day look like?",
-        "a": "The Fellowship is a fully remote and autonomous program. There are no regular calls nor progress reports. The only deliverable is the report to be presented at the end of the program."
+        "q": "What does the day-to-day of the Fellowship look like?",
+        "a": "The Kleros Fellowship is a remote, part-time program and Fellows are free to adapt their working style as they see fit. Fellows will be expected to attend monthly Fellowship calls where they will update the cohort and the Kleros team on their progress, but are also welcome to have individual meetings with members of the Kleros team where needed. We invite Fellows to collaborate with each other and form teams if they desire, and Fellows are more than welcome to attend our community calls and any other events that we host or are a part of."
       },
       "6": {
+        "q": "What is the application process like?",
+        "a": "The application process has three stages. Fellows will first be required to fill out an initial questionnaire and provide their CV. Shortlisted candidates will then be invited to an interview with the Kleros team in order to assess their knowledge of the decentralized justice ecosystem and to evaluate their Fellowship proposals. Subsequently shortlisted candidates will finally be asked to submit a final proposal following the interviews, on which basis the final selection shall be made."
+      },
+      "7": {
         "q": "Where can I apply?",
         "a": "You can apply <anchor>here</anchor>."
       }

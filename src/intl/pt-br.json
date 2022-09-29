@@ -818,28 +818,32 @@
     "section-fellows": "Conheça nossos Fellows",
     "section-faq": {
       "1": {
-        "q": "O que é a Kleros Fellowship de Justiça?",
-        "a": "É um programa remoto de 6 meses onde os participantes realizam uma pesquisa sobre algum tópico relacionado a Kleros e a justiça descentralizada."
+        "q": "O que é a Kleros Fellowship of Justice?",
+        "a": "A Fellowship of Justice é um programa remoto que dura aproximadamente 6 meses onde os participantes podem contribuir de alguma forma para o ecossistema de justiça descentralizada. Os participantes podem se engajar em uma ampla gama de atividades, incluindo a realização de pesquisas, a construção de aplicações, o reforço dos esforços de divulgação e conscientização, e o aumento da adoção da Kleros."
       },
       "2": {
-        "q": "Quem pode participar?",
-        "a": "Qualquer pessoa que deseje realizar pesquisas sobre justiça descentralizada pode se inscrever para participar."
+        "q": "Quem pode participar do Fellowship?",
+        "a": "Qualquer pessoa familiarizada com a Kleros que esteja apaixonada por contribuir para o movimento da justiça descentralizada pode se candidatar. Não temos critérios obrigatórios de qualificação educacional ou profissional."
       },
       "3": {
         "q": "Qual é o resultado esperado do programa?",
-        "a": "O resultado é acordado entre equipe da Kleros e o participante no início do programa, mas normalmente é um relatório de 10 a 15 páginas sobre algum aspecto específico da Kleros."
+        "a": "O resultado é acordado entre a equipe da Kleros e o participante no início do programa, mas normalmente será algum produto de trabalho relevante ou produto alcançável em aproximadamente 6 meses de esforço em tempo parcial."
       },
       "4": {
-        "q": "Que tipo de suporte a Kleros dá aos participantes?",
-        "a": "Os participantes podem contar com a equipe Kleros para mentoria, dados sobre o comportamento do usuário, introduções aos principais atores do ecossistema ou até mesmo suporte com design. Tentaremos ajudar os fellows de todas as formas possíveis."
+        "q": "Que tipo de apoio a Kleros dá aos participantes? ",
+        "a": "Os participantes podem contar com a equipe Kleros para orientação, aconselhamento e obtenção de dados e informações relevantes. A equipe da Kleros também aproveitará sua extensa rede para apresentar os Fellows aos principais participantes do ecossistema web3 e fornecer aos Fellows suporte no projeto.  Ajudaremos nossos Fellows a divulgar seu trabalho e explorar outras oportunidades para fornecer aos Fellows plataformas para discutir e compartilhar seus resultados. Tentaremos ajudar nossos bolsistas de todas as maneiras que pudermos."
       },
       "5": {
-        "q": "E como é o dia a dia?",
-        "a": "O fellowship é um programa totalmente remoto e autônomo. Não há reuniões regulares nem relatórios de progresso. A única entrega é o relatório a ser apresentado no final do programa."
+        "q": "Como é o dia-a-dia na Fellowship?",
+        "a": "A Kleros Fellowship é um programa remoto, em tempo parcial e os Fellows são livres para adaptar seu estilo de trabalho como acharem melhor. Espera-se que os membros da Kleros Fellowship participem de chamadas mensais onde atualizarão os demais participantes e a equipe Kleros sobre seu progresso, mas também são bem-vindos a ter reuniões individuais com membros da equipe Kleros onde for necessário. Convidamos os Fellows a colaborar uns com os outros e formar equipes, se desejarem, e os Fellows são mais do que bem-vindos a participar de nossas chamadas comunitárias e de quaisquer outros eventos que hospedamos ou dos quais fazemos parte."
       },
       "6": {
-        "q": "Onde posso me inscrever?",
-        "a": "Increva-se aqui <anchor>here</anchor>."
+        "q": "Como é o processo de inscrição?",
+        "a": "O processo de inscrição tem três etapas. Primeiramente, os interessados deverão preencher um questionário inicial e fornecer seu currículo. Os candidatos pré-selecionados serão então convidados para uma entrevista com a equipe Kleros, a fim de avaliar seus conhecimentos sobre o ecossistema de justiça descentralizada e avaliar suas propostas de bolsa de estudos. Posteriormente, os candidatos pré-selecionados serão finalmente convidados a apresentar uma proposta final após as entrevistas, com base na qual será feita a seleção final."
+      },
+      "7": {
+        "q": "Onde posso me candidatar?",
+        "a": "Você pode se inscrever <anchor>aqui</anchor>."
       }
     }
   },
