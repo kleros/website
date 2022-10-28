@@ -44,6 +44,7 @@ import Tripathi from "src/assets/images/person/tripathi.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
 import Lewis from "src/assets/images/person/lewis.png";
+import Mohammadi from "src/assets/images/person/mohammadi.png";
 
 const PHOTOS = {
   Abad,
@@ -79,6 +80,7 @@ const PHOTOS = {
   Mouclier,
   Lewis,
   Stanescu,
+  Mohammadi,
   Narozhny,
   Tripathi,
   Sharma,
