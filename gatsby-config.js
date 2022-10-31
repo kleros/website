@@ -330,6 +330,7 @@ module.exports = {
       { name: "Esthefania Vargas", title: "Attorney", location: "Colombia", batch: 3 },
       { name: "Mauricio Virues Carrera", title: "Dispute Resolution Professional", location: "Mexico", batch: 3 },
       { name: "Dr. David Lewis", title: "Corporate and Organisational Mediator", location: "USA", batch: 3 },
+      { name: "Milad Mohammadi", title: "Technology Consultant", location: "USA", batch: 5 },
     ],
   },
 

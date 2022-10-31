@@ -4,85 +4,47 @@ import Layout from "src/components/layout";
 import SEO from "../components/seo";
 import Contact from "../components/contact";
 import { useIntl } from "gatsby-plugin-intl";
-import FellowshipBadge from "src/assets/svgs/fellowship.svg";
-import Kleros from "src/assets/svgs/icon-kleros.svg";
 import styles from "./styles/bio.module.css";
-import Aouidef from "src/assets/images/person/aouidef.png";
 import Narozhny from "src/assets/images/person/narozhny.png";
 import Sharma from "src/assets/images/person/sharma.png";
 import Deplano from "src/assets/images/person/deplano.png";
-import Dagnillo from "src/assets/images/person/dagnillo.png";
 import Bergolla from "src/assets/images/person/bergolla.png";
 import Scott from "src/assets/images/person/scott.png";
 import Zhao from "src/assets/images/person/zhao.png";
 import Gudkov from "src/assets/images/person/gudkov.png";
 import Abad from "src/assets/images/person/abad.png";
-import Oguz from "src/assets/images/person/oguz.png";
 import Goldstein from "src/assets/images/person/goldstein.png";
 import Obafemi from "src/assets/images/person/obafemi.png";
-import Gouvea from "src/assets/images/person/gouvea.png";
-import Felicio from "src/assets/images/person/felicio.png";
 import Tineo from "src/assets/images/person/tineo.png";
-import Mota from "src/assets/images/person/mota.png";
 import Duarte from "src/assets/images/person/duarte.png";
-import Robertson from "src/assets/images/person/robertson.png";
-import Aliyev from "src/assets/images/person/aliyev.png";
 import Archila from "src/assets/images/person/archila.png";
-import Bhalothia from "src/assets/images/person/bhalothia.png";
-import Dean from "src/assets/images/person/dean.png";
-import Bel from "src/assets/images/person/bel.png";
-import Gray from "src/assets/images/person/gray.png";
-import Huculak from "src/assets/images/person/huculak.png";
-import Jara from "src/assets/images/person/jara.png";
 import Lowther from "src/assets/images/person/lowther.png";
-import Kulshreshtha from "src/assets/images/person/kulshreshtha.png";
-import Mouclier from "src/assets/images/person/mouclier.png";
 import Comenale from "src/assets/images/person/comenale.png";
 import Galindo from "src/assets/images/person/galindo.png";
-import Stanescu from "src/assets/images/person/stanescu.png";
-import Tripathi from "src/assets/images/person/tripathi.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
-import Lewis from "src/assets/images/person/lewis.png";
+import Mohammadi from "src/assets/images/person/mohammadi.png";
 
 const PHOTOS = {
   Abad,
-  Felicio,
-  Goldstein,
-  Gouvea,
-  Duarte,
-  Gudkov,
-  Aliyev,
-  Mota,
   Archila,
-  Scott,
-  Bel,
-  Zhao,
-  Bhalothia,
-  Dean,
-  Oguz,
-  Gray,
-  Obafemi,
-  Comenale,
-  Galindo,
-  Tineo,
-  Carrera,
-  Aouidef,
-  Robertson,
-  Huculak,
-  Jara,
   Bergolla,
-  Kulshreshtha,
-  Dagnillo,
-  Lowther,
+  Carrera,
+  Comenale,
   Deplano,
-  Mouclier,
-  Lewis,
-  Stanescu,
+  Duarte,
+  Galindo,
+  Goldstein,
+  Gudkov,
+  Lowther,
+  Mohammadi,
   Narozhny,
-  Tripathi,
+  Obafemi,
+  Scott,
   Sharma,
+  Tineo,
   Vargas,
+  Zhao,
 };
 
 export default ({ data }) => {
