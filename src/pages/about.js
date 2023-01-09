@@ -5,12 +5,6 @@ import Sash from "../components/sash";
 import OnePager from "src/assets/svgs/icon-onepager.svg";
 import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
-import Deversifi from "src/assets/images/third-party-logos/deversifi-bw.png";
-import Omen from "src/assets/svgs/omen_logo.svg";
-import Union from "src/assets/svgs/union.svg";
-import DemocracyEarth from "src/assets/images/third-party-logos/democracy_earth_logo.png";
-import API3 from "src/assets/images/third-party-logos/api3_mono.png";
-import Uniswap from "src/assets/svgs/uniswap_logo.svg";
 import { Container } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/about.module.css";
@@ -140,33 +134,6 @@ const About = ({ intl }) => (
         <h2>
           <FormattedMessage id="about.section-4.h2" />
         </h2>
-      </section>
-      <section className={styles.partners}>
-        <h2>
-          <FormattedMessage id="about.section-5" />
-        </h2>
-        <a href="https://omen.eth.link/" rel="noopener noreferrer" target="blank">
-          <Omen />
-        </a>
-        <a href="https://www.deversifi.com/" rel="noopener noreferrer" target="blank">
-          <img src={Deversifi} alt="Deversifi" />
-        </a>
-
-        <a href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
-          <Uniswap />
-        </a>
-
-        <a href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
-          <Union />
-        </a>
-
-        <a href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-          <img src={DemocracyEarth} alt="DemocracyEarth" />
-        </a>
-        <a href="https://api3.org/" rel="noopener noreferrer" target="blank">
-          <img src={API3} alt="API3" />
-        </a>
-        <hr style={{ marginTop: "5rem" }} />
       </section>
     </Container>
   </Layout>
