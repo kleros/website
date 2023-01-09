@@ -49,6 +49,12 @@ const YELLOW_PAPERS = {
   zh: YellowPaperZH,
 };
 
+const Anchor = (intl) => ((children) => (
+  <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+    {children}
+  </a>
+));
+
 const About = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title={intl.formatMessage({ id: "about.seo-title" })} />
@@ -61,11 +67,7 @@ const About = ({ intl }) => (
           <FormattedMessage
             id="about.section-hero.h2"
             values={{
-              anchor: (children) => (
-                <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
-                  {children}
-                </a>
-              ),
+              anchor: Anchor(intl)
             }}
           />
         </h2>
