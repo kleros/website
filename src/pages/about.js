@@ -5,41 +5,15 @@ import Sash from "../components/sash";
 import OnePager from "src/assets/svgs/icon-onepager.svg";
 import YellowPaper from "src/assets/svgs/icon-yellowpaper.svg";
 import WhitePaper from "src/assets/svgs/icon-whitepaper.svg";
-import Alice from "src/assets/images/third-party-logos/alice.png";
 import Deversifi from "src/assets/images/third-party-logos/deversifi-bw.png";
-import WindingTree from "src/assets/images/third-party-logos/winding-tree.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
 import Union from "src/assets/svgs/union.svg";
 import DemocracyEarth from "src/assets/images/third-party-logos/democracy_earth_logo.png";
 import API3 from "src/assets/images/third-party-logos/api3_mono.png";
 import Uniswap from "src/assets/svgs/uniswap_logo.svg";
-import Github from "src/assets/svgs/github.svg";
-import Linkedin from "src/assets/svgs/linkedin.svg";
-import Twitter from "src/assets/svgs/twitter.svg";
-import Dribble from "src/assets/svgs/dribble.svg";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/about.module.css";
-import Ast from "src/assets/images/person/ast.png";
-import Lesaege from "src/assets/images/person/lesaege.png";
-import Malbasic from "src/assets/images/person/malbasic.png";
-import Guérin from "src/assets/images/person/guerin.png";
-import Alencar from "src/assets/images/person/alencar.png";
-import Braga from "src/assets/images/person/braga.png";
-import George from "src/assets/images/person/george.png";
-import Glemming from "src/assets/images/person/glemming.png";
-import Aouidef from "src/assets/images/person/aouidef.png";
-import Tunçer from "src/assets/images/person/tuncer.jpg";
-import Barcelos from "src/assets/images/person/barcelos.png";
-import Zhang from "src/assets/images/person/zhang.png";
-import Dmitrikov from "src/assets/images/person/dmitrikov.png";
-import James from "src/assets/images/person/james.png";
-import Pichler from "src/assets/images/person/pichler.png";
-import Huculak from "src/assets/images/person/huculak.png";
-import Fidel from "src/assets/images/person/fidel.png";
-import Kung from "src/assets/images/person/kung.png";
-import Vassallo from "src/assets/images/person/vassallo.png";
-import Jain from "src/assets/images/person/jain.png";
 
 import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
 import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
@@ -53,7 +27,6 @@ import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
 import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
-import Config from "../../gatsby-config.js";
 
 const ONEPAGERS = {
   en: OnePagerEN,
@@ -75,8 +48,6 @@ const YELLOW_PAPERS = {
   en: YellowPaperEN,
   zh: YellowPaperZH,
 };
-
-const PHOTOS = { Alencar, Aouidef, Ast, Barcelos, Braga, Dmitrikov, George, Glemming, Fidel, Lesaege, Guérin, Malbasic, Huculak, James, Pichler, Tunçer, Zhang, Kung, Vassallo, Jain };
 
 const About = ({ intl }) => (
   <Layout>
@@ -168,45 +139,6 @@ const About = ({ intl }) => (
           <FormattedMessage id="about.section-4.h2" />
         </h2>
       </section>
-      <Container as="section" className={`no-gutters px-0 ${styles.team}`} fluid>
-        <Row className="no-gutters">
-          {Config.siteMetadata.teamMembers
-            .filter((member) => PHOTOS[member.name.split(" ").slice(-1)] != null)
-            .map((member, index) => (
-              <Col key={index} className={styles.portraitContainer} lg={3} md={4} sm={6} xl={2} xs={12}>
-                <img alt={member.name} src={PHOTOS[member.name.split(" ").slice(-1)]} style={{ width: "100%" }} />
-                <div className={styles.overlay}>
-                  <span>{member.name} </span>
-                  <span>{member.title}</span>
-                  {member.links && (
-                    <Row className={`no-gutters ${styles.social}`}>
-                      {member.links.github && (
-                        <a href={member.links.github} rel="noopener noreferrer" target="_blank">
-                          <Github />
-                        </a>
-                      )}
-                      {member.links.linkedin && (
-                        <a href={member.links.linkedin} rel="noopener noreferrer" target="_blank">
-                          <Linkedin />
-                        </a>
-                      )}
-                      {member.links.twitter && (
-                        <a href={member.links.twitter} rel="noopener noreferrer" target="_blank">
-                          <Twitter />
-                        </a>
-                      )}
-                      {member.links.dribble && (
-                        <a href={member.links.dribble} rel="noopener noreferrer" target="_blank">
-                          <Dribble />
-                        </a>
-                      )}
-                    </Row>
-                  )}
-                </div>
-              </Col>
-            ))}
-        </Row>
-      </Container>
       <section className={styles.partners}>
         <h2>
           <FormattedMessage id="about.section-5" />
