@@ -66,6 +66,6 @@
 
 [[redirects]]
   from = "/industries"
-  to = "https://www.notion.so/kleros/Use-cases-directory-acf664cf199242e1be7871ddd17f2b6d"
+  to = "https://kleros.notion.site/Industry-Guides-acf664cf199242e1be7871ddd17f2b6d"
   status = 301
   force = false
