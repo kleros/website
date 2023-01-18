@@ -33,6 +33,7 @@ import Galindo from "src/assets/images/person/galindo.png";
 import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
 import Mohammadi from "src/assets/images/person/mohammadi.png";
+import Oladimeji from "src/assets/images/person/oladimeji.png";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
 import Slider from "react-slick";
@@ -56,6 +57,7 @@ const PHOTOS = {
   Mohammadi,
   Narozhny,
   Obafemi,
+  Oladimeji,
   Scott,
   Sharma,
   Tineo,
