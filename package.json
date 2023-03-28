@@ -43,7 +43,7 @@
     "replace-in-file": "^6.1.0",
     "sass": "^1.36.0",
     "slick-carousel": "^1.8.1",
-    "web3": "^1.4.0"
+    "web3": "1.4.0"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
@@ -78,7 +78,7 @@
     "yarn": "^1.22.0"
   },
   "volta": {
-    "node": "16.19.1",
+    "node": "14.21.3",
     "yarn": "1.22.19"
   }
 }
