@@ -231,11 +231,6 @@ module.exports = {
         links: {},
       },
       {
-        name: "Santiago Siri",
-        title: "President, Democracy Earth Foundation",
-        links: {},
-      },
-      {
         name: "Primavera de Flippi",
         title: "Faculty Associate at the Berkman Center for Internet & Society at Harvard Law School",
         links: {},
