@@ -16,7 +16,6 @@ import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
 import Union from "src/assets/svgs/third-party-logos/union/logo.svg";
-import DemocracyEarth from "src/assets/images/third-party-logos/democracy/vertical.png";
 import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
 import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
@@ -382,11 +381,6 @@ class IndexPage extends React.Component {
                 href: "https://www.unn.finance/",
                 icon: Union,
                 name: "Union"
-              },
-              {
-                href: "https://democracy.earth/",
-                icon: DemocracyEarth,
-                name: "DemocracyEarth"
               },
               {
                 href: "https://gnosis.io/",
