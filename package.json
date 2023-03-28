@@ -43,7 +43,7 @@
     "replace-in-file": "^6.1.0",
     "sass": "^1.36.0",
     "slick-carousel": "^1.8.1",
-    "web3": "^1.4.0"
+    "web3": "1.8.2"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",
