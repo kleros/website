@@ -35,7 +35,6 @@ import Uniswap from "src/assets/svgs/uniswap.svg";
 import UniswapWhite from "src/assets/svgs/uniswap_logo.svg";
 
 import Union from "src/assets/svgs/union.svg";
-import DemocracyEarth from "src/assets/images/third-party-logos/democracy_earth_logo.png";
 
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
@@ -124,10 +123,6 @@ const Integrations = ({ intl }) => (
           <Badge as="a" className={styles.badge} href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <Union />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://democracy.earth/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={DemocracyEarth} alt="DemocracyEarth" />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
