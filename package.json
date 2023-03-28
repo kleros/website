@@ -25,7 +25,7 @@
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-plugin-sharp": "^2.6.0",
     "gatsby-source-filesystem": "^2.3.14",
-    "gatsby-transformer-remark": "^2.8.20",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.0",
     "jquery": "^3.5.1",
     "latinize": "^0.4.1",
