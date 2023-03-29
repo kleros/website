@@ -2,7 +2,7 @@
 
 The new Kleros website.
 
-## :warning::warning::warning
+## :warning::warning::warning:
 
 Warning to contributors: do not push any changes to the lock file, it will break the build. We are planning a migration to the latest major version of Gatsby to address this issue.
 
