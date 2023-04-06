@@ -267,6 +267,7 @@ class IndexPage extends React.Component {
     const { intl } = this.props;
 
     const { disputes, metaEvidences, subcourts, subcourtDetails, subcourtsExtra, loading, klerosCounters } = this.state;
+    // should the console logs be removed?
     console.log(this.state);
     console.log(EthereumInterface.Web3.utils.fromWei("123123123123123123"));
     return (

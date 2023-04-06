@@ -57,7 +57,9 @@
 
 .header .usecases div a,
 .header .research div a,
-.header .governance div a {
+.header .governance div a,
+.header .docs div a,
+.header .about div a {
   color: var(--color-gray) !important;
 }
 
@@ -96,7 +98,7 @@
   border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .header nav > div > div:nth-child(2) > div > div {
     margin-top: 1rem !important;
     min-width: fit-content;
@@ -121,7 +123,7 @@
   }
 
   .header nav div div:nth-child(1) button[class~="collapsed"]::after {
-    content: " ";
+    content: "";
     display: inline-block;
     border-top: 0.6ex solid transparent;
     border-bottom: 0.6ex solid transparent;
@@ -134,17 +136,18 @@
 }
 @media screen and (max-width: 992px) {
   .header nav div div:nth-child(1) button[class~="collapsed"]::after {
-    transform: rotate(90deg) translateX(0px);
+    transform: rotate(0deg) translateX(0px);
   }
 
   .header nav div div:nth-child(1) button::after {
-    content: " ";
+    content: "";
     display: inline-block;
     border-top: 0.6ex solid transparent;
     border-bottom: 0.6ex solid transparent;
     border-left: 0.6ex solid;
     vertical-align: middle;
     transform: translateY(-0.1rem);
+    transform: rotate(90deg) translateX(0px);
     margin-left: 0.5rem;
   }
 }
@@ -159,13 +162,15 @@
   text-align: right;
 }
 
-@media screen and (max-width: 992px) {
+/* 
+  Any specific code to be added here? Let me know!
+  @media screen and (max-width: 992px) {
   .header div > div:nth-child(2) > div > div {
   }
 
   .header div > div:nth-child(2) > div > a {
   }
-}
+} */
 
 .header svg {
   width: 3rem;
