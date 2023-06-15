@@ -31,6 +31,7 @@
     "moderate": "Kleros Moderate",
     "career": "Careers",
     "incubator": "Incubator",
+    "education": "Education",
     "curate": "Curation",
     "fellowship": "Fellowship",
     "community": "Community",
@@ -943,7 +944,7 @@
       },
       "4": {
         "q": "How is the program structured?",
-        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\nWeek 2. Lean Canvas: Strategy Design.\nWeek 3. User Interviews: Strategy Validation.\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\nWeek 6. Smart Contract Security (part 1)\nWeek 7. Smart Contract Security (part 2)\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\nWeek 10. Building an Investment Deck\nWeek 11. Fundraising Tactics and Legal\nWeek 12. Final Rehearsal & Demo Day"
+        "a": "The program consists in a series of weekly workshops covering the different aspects of building a blockchain project.\n\nWeek 1. Welcome and Orientation.\n\nWeek 2. Lean Canvas: Strategy Design.\n\nWeek 3. User Interviews: Strategy Validation.\n\nWeek 4. Prototyping\n\nWeek 5. UX/UI for Web3\n\nWeek 6. Smart Contract Security (part 1)\n\nWeek 7. Smart Contract Security (part 2)\n\nWeek 8. Web3 Implementation\n\nWeek 9. Marketing & Community Building\n\nWeek 10. Building an Investment Deck\n\nWeek 11. Fundraising Tactics and Legal\n\nWeek 12. Final Rehearsal & Demo Day"
       },
       "5": {
         "q": "Who can apply?",
@@ -993,6 +994,46 @@
         "q": "What happens after the program ends?",
         "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed."
       }
+    }
+  },
+  "education": {
+    "seo-title": "Kleros Education",
+
+    "section-hero": {
+      "h1": "Kleros Education",
+      "h2": "Experience how disputes are resolved using Blockchain and Game Theory."
+    },
+    "sash": {
+      "first": {
+        "title": "Students",
+        "paragraph": "Gain practical knowledge and deepen understanding of Web 3.\n\nExperience real-life examples to understand game theory & crypto economic incentives.\n\nHigh engagement by creating case studies for students of any field.\n\nFirst step to work in Web3."
+      },
+      "second": {
+        "title": "Universities",
+        "paragraph": "Provide access to the best Web3 technology for your students.\n\nMaintain high quality content and adaptability to new eras → + Reputation.\n\nGenerate organic marketing opportunities from the program, resulting in more future students and media exposure."
+      },
+      "third": {
+        "title": "Professors",
+        "paragraph": "Learning about new technologies.\n\nCreate cases to explain the content of their course using Kleros Demo Court.\n\nWorking with a motivated group of students.\n\nThere are plenty of cases across different universities in which Blockchain related optative courses have an exponential higher demand that any other."
+      }
+    },
+
+    "section-3": {
+      "h1": "Benefits & Objectives",
+      "h2": "Whether you’re a student or an academic, Kleros offers a unique opportunity to explore real-world use cases in your chosen field. Enhance student engagement by seamlessly integrating Kleros into your coursework. Imagine you’re studying marketing. With Kleros, you can create captivating scenarios like a dispute between a freelance startup service provider and a client, involving a discussion on the tools employed by the provider."
+    },
+
+    "instances": {
+      "h1": "There are ",
+      "h2": "4 different instances:",
+      "card-1-title": "1. Evidence Period",
+      "card-1-text": "Anyone can submit evidence to the case.",
+      "card-2-title": "2. Voting Period",
+      "card-2-text": "Jurors analyze evidence and vote.",
+      "card-3-title": "3. Appeal",
+      "card-3-text": "Avoided in the demo, but in real Court an appeal could be created.",
+      "card-4-title": "4. Execution",
+      "card-4-text": "Jurors decision is enforced and rewards can be tracked on Etherscan."
     }
   },
 

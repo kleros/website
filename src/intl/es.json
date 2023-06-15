@@ -218,7 +218,6 @@
       "card-2-text": "Ponte en contacto con nosotros para integrar Kleros Escrow en tu proyecto.",
       "card-2-button": "Contáctanos"
     }
-
   },
   "governance": {
     "seo-title": "Governance",
@@ -271,7 +270,6 @@
       "card-3-text": "Al utilizar el módulo de gobernanza SafeSnap de Gnosis Safe junto con Kleros Court como árbitro final, cualquier DAO puede implementar su decisión de gobernanza fuera de la Blockchain sin tener que depender de ninguna parte de confianza para ejecutarlas en la Blockchain.",
       "card-3-button": "Pruebe SafeSnap"
     }
-
   },
   "oracle": {
     "seo-title": "Oracle",
@@ -851,7 +849,10 @@
       "h2": "Mira nuestras búsquedas abiertas. ¡Queremos conocerte!",
       "button-primary": "Explorar Posiciones Abiertas"
     },
-    "section-mission": { "h1": "Misión", "h2": "Nuestra misión es desarrollar software que facilite el acceso a la justicia y a la libertad individual." },
+    "section-mission": {
+      "h1": "Misión",
+      "h2": "Nuestra misión es desarrollar software que facilite el acceso a la justicia y a la libertad individual."
+    },
     "section-culture": {
       "h1": "Cultura",
       "h2": "Somos un equipo internacional y multidisciplinario apasionado por el blockchain y su potencial para transformar las leyes y el gobierno.",
@@ -864,7 +865,10 @@
         "bottom-right": "Pasión"
       }
     },
-    "section-positions": { "h1": "Open Positions", "h2": "Revisa nuestras búsquedas abiertas y aplica aquí abajo." }
+    "section-positions": {
+      "h1": "Open Positions",
+      "h2": "Revisa nuestras búsquedas abiertas y aplica aquí abajo."
+    }
   },
   "incubator": {
     "seo-title": "Incubadora",
@@ -873,7 +877,10 @@
       "h2": "Un programa que ofrece asesoramiento en construcción de empresas, gastos pagos y hasta $50,000 en financiamiento para equipos que quieran crear proyectos o Dapps conectados al protocolo Kleros. Un fondo de $1 millón está disponible para brindar financiamiento adicional a los equipos más prometedores que se gradúen del programa.",
       "button-primary": "Aplica Ahora"
     },
-    "section-apply": { "h1": "Quién Puede Aplicar", "h2": "Equipos que están construyendo aplicaciones descentralizadas u otras herramientas que contribuyan a incrementar la adopción del protocolo Kleros." },
+    "section-apply": {
+      "h1": "Quién Puede Aplicar",
+      "h2": "Equipos que están construyendo aplicaciones descentralizadas u otras herramientas que contribuyan a incrementar la adopción del protocolo Kleros."
+    },
     "section-how-it-works": {
       "h1": "Cómo Funciona",
       "h2": "El programa tiene una duración de 12 semanas durante las cuales los participantes tienen una serie de talleres que cubren distintos aspectos sobre la construcción de un proyecto en la industria del blockchain.",
@@ -891,21 +898,37 @@
         "items": {
           "5": { "header": "Semana 5", "body": "Diseño de Mecanismos" },
           "6": { "header": "Semana 6", "body": "Ataques Económicos" },
-          "7": { "header": "Semana 7", "body": "Introducción a los Smart Contracts" },
-          "8": { "header": "Semana 8", "body": "Seguridad en los Smart Contracts" }
+          "7": {
+            "header": "Semana 7",
+            "body": "Introducción a los Smart Contracts"
+          },
+          "8": {
+            "header": "Semana 8",
+            "body": "Seguridad en los Smart Contracts"
+          }
         }
       },
       "div-grow": {
         "title": "Crecer",
         "items": {
-          "9": { "header": "Semana 9", "body": "Evaluación de Riesgos Legales" },
+          "9": {
+            "header": "Semana 9",
+            "body": "Evaluación de Riesgos Legales"
+          },
           "10": { "header": "Semana 10", "body": "Conseguir Fondos" },
           "11": { "header": "Semana 11", "body": "Demo Day" }
         }
       }
     },
-    "section-where": { "h1": "Dónde Se Desarrolla", "h2": "El programa de incubación se desarrolla en el espacio de co-working The Block en la hermosa ciudad de Lisboa. 🇵🇹", "button-primary": "Apply Now" },
-    "section-contact": { "title": "¡Sé parte de la revolución de la justicia!", "button-primary": "Aplica Ahora" },
+    "section-where": {
+      "h1": "Dónde Se Desarrolla",
+      "h2": "El programa de incubación se desarrolla en el espacio de co-working The Block en la hermosa ciudad de Lisboa. 🇵🇹",
+      "button-primary": "Apply Now"
+    },
+    "section-contact": {
+      "title": "¡Sé parte de la revolución de la justicia!",
+      "button-primary": "Aplica Ahora"
+    },
     "section-faq": {
       "1": {
         "q": "What is the Kleros Incubator?",
@@ -971,6 +994,43 @@
         "q": "What happens after the program ends?",
         "a": "Your team can relocate to wherever you feel more comfortable working. You will still count on the Coopérative Kleros for advice and support to make your project succeed."
       }
+    }
+  },
+  "education": {
+    "seo-title": "Educación de Kleros",
+
+    "section-hero": {
+      "h1": "Educación de Kleros",
+      "h2": "Experimente cómo se resuelven las disputas usando Blockchain y Teoría de Juegos"
+    },
+    "sash": {
+      "first": {
+        "title": "Estudiantes",
+        "paragraph": "Adquiere conocimientos prácticos y profundiza tu entendimiento sobre Web3. Experimenta ejemplos de la vida real para entender la teoría de juegos y los incentivos económicos de las criptomonedas. Aumenta la participación al crear estudios de caso para estudiantes de cualquier campo. Primer paso para trabajar en Web3."
+      },
+      "second": {
+        "title": "Universidades",
+        "paragraph": "Proporciona acceso a la mejor tecnología de Web3 para tus estudiantes. Mantén contenido de alta calidad y adaptabilidad a nuevas eras → + Reputación. Genera oportunidades de marketing orgánico a partir del programa, resultando en más estudiantes futuros y exposición mediática."
+      },
+      "third": {
+        "title": "Profesores",
+        "paragraph": "Aprendizaje sobre nuevas tecnologías. Crea casos para explicar el contenido de su curso utilizando Kleros Demo Court. Trabajando con un grupo de estudiantes motivados. Hay una gran cantidad de casos en diferentes universidades en los que los cursos optativos relacionados con Blockchain tienen una demanda exponencialmente mayor que cualquier otra."
+      }
+    },
+
+    "section-3": {
+      "h1": "Beneficios & Objetivos",
+      "h2": "Ya seas estudiante o académico, Kleros ofrece una oportunidad única para explorar casos de uso reales en tu campo elegido. Mejora la participación de los estudiantes integrando sin problemas Kleros en tu plan de estudios. Imagina que estás estudiando marketing. Con Kleros, puedes crear escenarios cautivadores como una disputa entre un proveedor de servicios de inicio independiente y un cliente, que implica una discusión sobre las herramientas empleadas por el proveedor."
+    },
+
+    "start-now": {
+      "h1": "Existen 4 instancias diferentes:",
+      "card-1-title": "Integra Kleros Governor",
+      "card-1-text": "Ponte en contacto para integrar Kleros Governor en tu DAO.",
+      "card-2-title": "Governor",
+      "card-2-text": "Como sistema de arbitraje abierto y neutral, Kleros puede ser una herramienta útil para integrar con la gobernanza de las DAOs que quieren asegurarse de que su proceso está completamente descentralizado.",
+      "card-3-title": "Gnosis SafeSnap",
+      "card-3-text": "Utilizando el módulo de gobernanza SafeSnap de Gnosis Safe en conjunto con Kleros Court como árbitro final, cualquier DAO puede ahora implementar su decisión de gobernanza fuera de la cadena sin tener que depender de ninguna parte de confianza para ejecutarlas en la cadena."
     }
   },
   "bio": {

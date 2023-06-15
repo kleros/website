@@ -171,6 +171,9 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/incubator">
                   <FormattedMessage id="footer.incubator" />
                 </Link>
+                <Link className="dropdown-item" to="/education">
+                  <FormattedMessage id="footer.education" />
+                </Link>
               </NavDropdown>
               <NavDropdown title="Governance" id="governance" className={styles.governance}>
                 <Link className="dropdown-item" to="/token">
