@@ -68,7 +68,7 @@ const About = ({ intl }) => (
               },
               icon: WhitePaper,
               title: intl.formatMessage({
-                id: "about.sash.second.title",
+                id: "about.sash.first.title",
               }),
             },
             {
@@ -80,7 +80,7 @@ const About = ({ intl }) => (
               },
               icon: YellowPaper,
               title: intl.formatMessage({
-                id: "about.sash.third.title",
+                id: "about.sash.second.title",
               }),
             },
           ]}
