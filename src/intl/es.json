@@ -19,7 +19,6 @@
     "cooperative": "Cooperativa",
     "whitepaper": "White Paper",
     "yellowpaper": "Yellow Paper",
-    "onepager": "One Pager",
     "research": "Investigación",
     "pnktoken": "Token PNK",
     "developer": "Documentación",
@@ -329,14 +328,10 @@
     "section-2": "Cómo Funciona",
     "sash": {
       "first": {
-        "title": "One Pager",
-        "button": "Descargar"
-      },
-      "second": {
         "title": "White Paper",
         "button": "Descargar"
       },
-      "third": {
+      "second": {
         "title": "Yellow Paper",
         "button": "Descargar"
       }

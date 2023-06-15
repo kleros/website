@@ -21,14 +21,6 @@ import RU from "src/assets/svgs/flags/ru.svg";
 import TR from "src/assets/svgs/flags/tr.svg";
 import ZH from "src/assets/svgs/flags/cn.svg";
 
-import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
-import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
-import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
-import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf";
-import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
-import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
-import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
-import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
@@ -68,17 +60,6 @@ const FLAGS = {
   zh: <ZH />,
 };
 const PNGToIcon = (alt, PNG) => (props) => <img alt={alt} src={PNG} {...props} />;
-
-const ONEPAGERS = {
-  en: OnePagerEN,
-  es: OnePagerES,
-  fr: OnePagerFR,
-  ko: OnePagerKO,
-  pt: OnePagerPT,
-  ru: OnePagerRU,
-  tr: OnePagerTR,
-  zh: OnePagerZH,
-};
 
 const WHITE_PAPERS = {
   en: WhitePaperEN,
@@ -192,9 +173,6 @@ class Header extends React.Component {
                 </a>
                 <a className="dropdown-item" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
                   <FormattedMessage id="footer.yellowpaper" />
-                </a>
-                <a className="dropdown-item" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
-                  <FormattedMessage id="footer.onepager" />
                 </a>
                 <a className="dropdown-item" href="https://kleros.io/KlerosBrandAssets.zip" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage id="footer.brand-assets" />
