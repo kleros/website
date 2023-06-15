@@ -11,14 +11,6 @@ import Medium from "src/assets/svgs/medium.svg";
 import Discord from "src/assets/svgs/discord.svg";
 import Soundcloud from "src/assets/images/third-party-logos/soundcloud.png";
 
-import OnePagerEN from "../assets/books-papers-flyers/onepager_en.pdf";
-import OnePagerTR from "../assets/books-papers-flyers/onepager_tr.pdf";
-import OnePagerFR from "../assets/books-papers-flyers/onepager_fr.pdf";
-import OnePagerES from "../assets/books-papers-flyers/onepager_es.pdf";
-import OnePagerKO from "../assets/books-papers-flyers/onepager_ko.pdf";
-import OnePagerPT from "../assets/books-papers-flyers/onepager_pt.pdf";
-import OnePagerRU from "../assets/books-papers-flyers/onepager_ru.pdf";
-import OnePagerZH from "../assets/books-papers-flyers/onepager_zh.pdf";
 import WhitePaperEN from "../assets/books-papers-flyers/whitepaper_en.pdf";
 import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
@@ -27,17 +19,6 @@ import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
 import styles from "./styles/footer.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
-
-const ONEPAGERS = {
-  en: OnePagerEN,
-  es: OnePagerES,
-  fr: OnePagerFR,
-  ko: OnePagerKO,
-  pt: OnePagerPT,
-  ru: OnePagerRU,
-  tr: OnePagerTR,
-  zh: OnePagerZH,
-};
 
 const WHITE_PAPERS = {
   en: WhitePaperEN,
@@ -71,9 +52,6 @@ const Footer = ({ intl }) => (
           </a>
           <a className="mr-3" href={YELLOW_PAPERS[intl.locale] || YELLOW_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
             <FormattedMessage id="footer.yellowpaper" />
-          </a>
-          <a className="mr-3" href={ONEPAGERS[intl.locale] || ONEPAGERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
-            <FormattedMessage id="footer.onepager" />
           </a>
           <Link className="mr-3" to="/research">
             <FormattedMessage id="footer.research" />
