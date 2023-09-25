@@ -26,12 +26,13 @@ import { Container } from 'react-bootstrap'
 import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import styles from './styles/curation.module.css'
 import TrustedBy from '../components/trusted-by';
+import Ledger from "../assets/images/third-party-logos/ledger-horizontal.png";
+import Etherscan from "../assets/images/third-party-logos/etherscan-horizontal.png";
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
 import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
-import Sushi from "src/assets/images/third-party-logos/sushiswap.png";
+import Sushi from "src/assets/images/third-party-logos/sushi-horizontal.png";
 import Zerion from "../assets/images/third-party-logos/zerion/png/blue-logo-and-text-transparent.png";
-import Paraswap from "src/assets/images/third-party-logos/paraswap.jpg";
-import ClrFund from "src/assets/images/third-party-logos/clr-fund-text.png";
+import Paraswap from "src/assets/images/third-party-logos/paraswap-horizontal.png";
 import Contact from '../components/contact';
 
 const Curation = ({ intl }) => (
@@ -83,6 +84,16 @@ const Curation = ({ intl }) => (
         className="grey"
         partners={[
           {
+            href: "https://etherscan.io",
+            icon: Etherscan,
+            name: "Etherscan"
+          },
+          {
+            href: "https://ledger.com",
+            icon: Ledger,
+            name: "Ledger"
+          },
+          {
             href: "https://omen.eth.link/",
             icon: OmenSVG,
             name: "Omen"
@@ -106,12 +117,8 @@ const Curation = ({ intl }) => (
             href: "https://www.paraswap.io/",
             icon: Paraswap,
             name: "Paraswap"
-          },
-          {
-            href: "https://clr.fund/#/",
-            icon: ClrFund,
-            name: "clr.fund"
-          },
+          }
+          
         ]}
       />
 
