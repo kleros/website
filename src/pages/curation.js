@@ -86,12 +86,14 @@ const Curation = ({ intl }) => (
           {
             href: "https://etherscan.io",
             icon: Etherscan,
-            name: "Etherscan"
+            name: "Etherscan",
+            mobile: true,
           },
           {
             href: "https://ledger.com",
             icon: Ledger,
-            name: "Ledger"
+            name: "Ledger",
+            mobile: true,
           },
           {
             href: "https://omen.eth.link/",
@@ -101,12 +103,14 @@ const Curation = ({ intl }) => (
           {
             href: "https://uniswap.org/",
             icon: Uniswap,
-            name: "Uniswap"
+            name: "Uniswap",
+            mobile: true,
           },
           {
             href: "https://sushi.com/",
             icon: Sushi,
-            name: "Sushi"
+            name: "Sushi",
+            mobile: true,
           },
           {
             href: "https://zerion.io/",
@@ -116,7 +120,8 @@ const Curation = ({ intl }) => (
           {
             href: "https://www.paraswap.io/",
             icon: Paraswap,
-            name: "Paraswap"
+            name: "Paraswap",
+            mobile: true,
           }
           
         ]}

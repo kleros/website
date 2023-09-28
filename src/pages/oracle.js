@@ -81,27 +81,32 @@ const Oracle = ({ intl }) => (
           {
             href: "https://1inch.io/",
             icon: OneInch,
-            name: "1Inch"
+            name: "1Inch",
+            mobile: true,
           },
           {
             href: "https://omen.eth.link/",
             icon: OmenSVG,
-            name: "Omen"
+            name: "Omen",
+            mobile: true,
           },
           {
             href: "https://nexter.fi/",
             icon: Nexter,
-            name: "Nexter"
+            name: "Nexter",
+            mobile: true,
           },
           {
             href: "https://www.polkamarkets.com/",
             icon: Polkamarkets,
-            name: "Polkamarkets"
+            name: "Polkamarkets",
+            mobile: true,
           },
           {
             href: "https://gnosis.io/",
             icon: Gnosis,
-            name: "Gnosis"
+            name: "Gnosis",
+            mobile: true,
           }
         ]}
       />
