@@ -381,6 +381,11 @@ class IndexPage extends React.Component {
                 name: "Omen",
               },
               {
+                href: "https://etherscan.io/",
+                icon: Etherscan,
+                name: "Etherscan",
+              },
+              {
                 href: "https://aragon.org/",
                 icon: Aragon,
                 name: "Aragon",
