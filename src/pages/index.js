@@ -369,11 +369,13 @@ class IndexPage extends React.Component {
                 href: "https://www.unn.finance/",
                 icon: Ledger,
                 name: "Ledger",
+                mobile: true,
               },
               {
                 href: "https://1inch.io",
                 icon: OneInch,
                 name: "1Inch",
+                mobile: true,
               },
               {
                 href: "https://omen.eth.link/",
@@ -384,6 +386,7 @@ class IndexPage extends React.Component {
                 href: "https://etherscan.io/",
                 icon: Etherscan,
                 name: "Etherscan",
+                mobile: true,
               },
               {
                 href: "https://aragon.org/",
@@ -415,6 +418,7 @@ class IndexPage extends React.Component {
                 href: "https://gnosis.io/",
                 icon: Gnosis,
                 name: "Gnosis",
+                mobile: true,
               },
               {
                 href: "https://api3.org/",

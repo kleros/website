@@ -9,7 +9,7 @@ const TrustedBy = ({ partners, className="light" }) => (
     </h2>
     {
       partners.map((partner) => (
-        <a href={partner.href} rel="noopener noreferrer" target="blank">
+        <a href={partner.href} rel="noopener noreferrer" target="blank" className={partner.mobile ? "" : styles.no_mobile}>
           {typeof partner.icon === "function" && <partner.icon />}
           {typeof partner.icon === "string" && <img src={partner.icon} alt={partner.name} />}
         </a>
