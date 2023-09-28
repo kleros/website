@@ -26,27 +26,29 @@ import WhitePaperES from "../assets/books-papers-flyers/whitepaper_es.pdf";
 import WhitePaperZH from "../assets/books-papers-flyers/whitepaper_zh.pdf";
 import YellowPaperEN from "../assets/books-papers-flyers/yellowpaper_en.pdf";
 import YellowPaperZH from "../assets/books-papers-flyers/yellowpaper_zh.pdf";
-
 import Court from "../assets/svgs/kleros.svg";
 import Escrow from "../assets/svgs/escrow.svg";
 import T2CR from "../assets/svgs/t2cr.svg";
 import POH from "../assets/svgs/poh-logo.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
-import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.png";
 import Realitio from "src/assets/images/third-party-logos/realitio.png";
 import Omen from "src/assets/images/third-party-logos/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
-import Revoke from "../assets/svgs/revoke.svg";
 import Gnosis from "../assets/svgs/gnosis.svg";
 import Unslashed from "../assets/svgs/third-party-logos/unslashed/logo.svg";
 import Polka from "../assets/images/third-party-logos/polkamarkets.png";
 import Sushi from "../assets/images/third-party-logos/sushi.png";
 import Zerion from "../assets/svgs/third-party-logos/zerion/logos/svg/blue-logo.svg";
 import Uniswap from "../assets/svgs/third-party-logos/uniswap/default.svg";
-import CLR from "../assets/images/third-party-logos/clr-fund.png";
 import Gitcoin from "../assets/svgs/third-party-logos/gitcoin/logo/duotone/positive.svg";
-import RCN from "../assets/svgs/third-party-logos/ripio.svg";
+import Ledger from "../assets/images/third-party-logos/ledger-square.png";
+import Etherscan from "../assets/images/third-party-logos/etherscan.png";
+import CowSwap from "../assets/images/third-party-logos/cowswap.png";
+import Galxe from "../assets/images/third-party-logos/galxe.png";
+import PolygonID from "../assets/images/third-party-logos/polygonid.png";
+import Aragon from "../assets/images/third-party-logos/aragon.png";
+import OneInch from "../assets/images/third-party-logos/1inch.png";
 
 const FLAGS = {
   en: <EN />,
@@ -82,18 +84,21 @@ const products = [
 ];
 
 const integrations = [
-  { name: "Crypto Unlocked", href: "https://cryptounlocked.wetrust.io", Icon: PNGToIcon("Crypto Unlocked", CryptoUnlocked), target: "_blank" },
-  { name: "Reality", href: "https://realit.io", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
+  { name: "Ledger", href: "https://www.ledger.com/", Icon: PNGToIcon("Ledger", Ledger), target: "_blank" },
+  { name: "Etherscan", href: "https://etherscan.io/", Icon: PNGToIcon("Etherscan", Etherscan), target: "_blank" },
+  { name: "CowSwap", href: "https://cowswap.exchange/", Icon: PNGToIcon("CowSwap", CowSwap), target: "_blank" },
+  { name: "Galxe", href: "https://www.galxe.com/", Icon: PNGToIcon("Galxe", Galxe), target: "_blank" },
+  { name: "PolygonID", href: "https://polygon.technology/polygon-id", Icon: PNGToIcon("PolygonID", PolygonID), target: "_blank" },
+  { name: "Aragon", href: "https://aragon.org/", Icon: PNGToIcon("Aragon", Aragon), target: "_blank" },
+  { name: "1Inch", href: "https://1inch.io/", Icon: PNGToIcon("1Inch", OneInch), target: "_blank" },
+  { name: "Reality", href: "https://reality.eth.limo", Icon: PNGToIcon("Realitio", Realitio), target: "_blank" },
   { name: "Omen", href: "https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV/#/0x592af74865799e1ed509afef002a6eca26e1caa2", Icon: PNGToIcon("Omen", Omen), target: "_blank" },
-  { name: "Revoke", href: "https://revoke.cash", Icon: Revoke, target: "_blank" },
   { name: "Gnosis", href: "https://gnosis-safe.io/", Icon: Gnosis, target: "_blank" },
   { name: "Polkamarkets", href: "https://www.polkamarkets.com/", Icon: PNGToIcon("Polkamarkets", Polka), target: "_blank" },
   { name: "Sushi", href: "https://sushi.com/", Icon: PNGToIcon("Sushi", Sushi), target: "_blank" },
   { name: "Zerion", href: "https://zerion.io/", Icon: Zerion, target: "_blank" },
   { name: "Uniswap", href: "https://uniswap.io/", Icon: Uniswap, target: "_blank" },
-  { name: "clr.fund", href: "https://clr.fund/", Icon: PNGToIcon("CLR", CLR), target: "_blank" },
   { name: "Gitcoin", href: "https://gitcoin.co/", Icon: Gitcoin, target: "_blank" },
-  { name: "Ripio Credit", href: "https://rcn.finance/", Icon: RCN, target: "_blank" },
   { name: "Unslashed", href: "https://unslashed.finance/", Icon: Unslashed, target: "_blank" },
 ];
 
@@ -281,11 +286,13 @@ class Header extends React.Component {
                 </span>
                 <FormattedMessage id="header.dapps-header" />
               </Card.Header>
-
               <Card.Body className="px-5 py-3 text-center">
                 <ProductBadges title="Products" items={products} />
                 <ProductBadges title="Integrations" items={integrations} />
               </Card.Body>
+              <Card.Header>
+                <b>Check out the complete Kleros Partners Ecosystem <a target="_blank" href="https://kleros.world">here</a></b>.
+              </Card.Header>
             </Card>
           </Collapse>
         </div>

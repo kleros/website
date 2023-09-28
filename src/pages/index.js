@@ -14,8 +14,9 @@ import Contact from "../components/contact";
 import { Badge, Col, Container, Row, Spinner, Button } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
 import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
-import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
-import Union from "src/assets/svgs/third-party-logos/union/logo.svg";
+import RhinoFi from "src/assets/images/third-party-logos/rhinofi-horizontal.png";
+
+import Etherscan from "../assets/images/third-party-logos/etherscan-horizontal.png";
 import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
 import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
 import Gnosis from "src/assets/svgs/gnosis-logo.svg";
@@ -36,11 +37,13 @@ import Revoke from "../assets/svgs/revoke.svg";
 import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
 import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
 import ProductsIllustration from "src/assets/images/products-illustration.png";
-import CryptoUnlocked from "src/assets/images/third-party-logos/crypto-unlocked.png";
-import Realitio from "src/assets/images/third-party-logos/realitio.png";
-import Omen from "src/assets/images/third-party-logos/omen.png";
 import Scales from "src/assets/svgs/icon-scales.svg";
 import Hats from "src/assets/svgs/third-party-logos/hats/hats_text.svg";
+import Ledger from "../assets/images/third-party-logos/ledger-horizontal.png";
+import OneInch from "../assets/images/third-party-logos/1inch-horizontal.png";
+import Zerion from "../assets/images/third-party-logos/zerion-horizontal.png";
+import Aragon from "../assets/images/third-party-logos/aragon-horizontal.png";
+import PolygonID from "../assets/images/third-party-logos/polygonid-logo.png";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Gavel from "src/assets/svgs/icon-gavel.svg";
@@ -363,50 +366,80 @@ class IndexPage extends React.Component {
           <TrustedBy
             partners={[
               {
-                href: "https://omen.eth.link/",
-                icon: OmenSVG,
-                name: "Omen"
+                href: "https://www.unn.finance/",
+                icon: Ledger,
+                name: "Ledger",
+                mobile: true,
               },
               {
-                href: "https://www.deversifi.com/",
-                icon: Deversifi,
-                name: "Deversifi"
+                href: "https://1inch.io",
+                icon: OneInch,
+                name: "1Inch",
+                mobile: true,
+              },
+              {
+                href: "https://omen.eth.link/",
+                icon: OmenSVG,
+                name: "Omen",
+              },
+              {
+                href: "https://etherscan.io/",
+                icon: Etherscan,
+                name: "Etherscan",
+                mobile: true,
+              },
+              {
+                href: "https://aragon.org/",
+                icon: Aragon,
+                name: "Aragon",
+              },
+              {
+                href: "https://www.rhino.fi",
+                icon: RhinoFi,
+                name: "Rhino.fi",
+              },
+              {
+                href: "https://polygon.technology/polygon-id",
+                icon: PolygonID,
+                name: "PolygonID",
+              },
+              {
+                href: "https://zerion.io",
+                icon: Zerion,
+                name: "Zerion",
               },
               {
                 href: "https://uniswap.org/",
                 icon: Uniswap,
-                name: "Uniswap"
+                name: "Uniswap",
               },
-              {
-                href: "https://www.unn.finance/",
-                icon: Union,
-                name: "Union"
-              },
+
               {
                 href: "https://gnosis.io/",
                 icon: Gnosis,
-                name: "Gnosis"
+                name: "Gnosis",
+                mobile: true,
               },
               {
                 href: "https://api3.org/",
                 icon: API3,
-                name: "API3"
+                name: "API3",
               },
               {
                 href: "https://unslashed.finance/",
                 icon: Unslashed,
-                name: "Unslashed"
+                name: "Unslashed",
               },
               {
                 href: "https://www.polkamarkets.com/",
                 icon: Polkamarkets,
-                name: "Polkamarkets"
+                name: "Polkamarkets",
               },
               {
                 href: "https://hats.finance/",
                 icon: Hats,
-                name: "Hats"
-              }
+                name: "Hats",
+              },
             ]}
           />
 

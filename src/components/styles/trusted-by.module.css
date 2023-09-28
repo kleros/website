@@ -8,3 +8,9 @@
 
 .partners > h2 {
 }
+
+.no_mobile {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

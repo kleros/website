@@ -18,13 +18,11 @@ import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
 
 import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
-import DutchX from "src/assets/images/third-party-logos/dutchx.png";
 import Gnosis from "src/assets/svgs/gnosis-mono.svg";
 import API3 from "src/assets/images/third-party-logos/api3_mono.png";
 import Unslashed from "src/assets/images/third-party-logos/unslashed.png";
 import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets-mono.png";
 import DeversifiMono from "src/assets/images/third-party-logos/deversifi-mono.png";
-import OmenMono from "src/assets/images/third-party-logos/omen-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
 import Hats from "src/assets/svgs/third-party-logos/hats/hats_text_mono.svg";
 import WindingTreeMono from "src/assets/images/third-party-logos/winding-mono.png";
