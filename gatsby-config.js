@@ -331,7 +331,10 @@ module.exports = {
       { name: "Mauricio Virues Carrera", title: "Dispute Resolution Professional", location: "Mexico", batch: 3 },
       { name: "Dr. David Lewis", title: "Corporate and Organisational Mediator", location: "USA", batch: 3 },
       { name: "Milad Mohammadi", title: "Technology Consultant", location: "USA", batch: 5 },
-      { name: "Olaleye Oladimeji", title: "Lawyer", location: "Nigeria", batch: 4 }
+      { name: "Olaleye Oladimeji", title: "Lawyer", location: "Nigeria", batch: 4 },
+      { name: "Clara Lin", title: "Lawyer", location: "China", batch: 6 },
+      { name: "Alexis Y. Zeballos", title: "Law Student", location: "Argentina", batch: 6 },
+      { name: "Inês Bragança Gaspar", title: "Lawyer", location: "Portugal", batch: 6 },
     ],
   },
 
