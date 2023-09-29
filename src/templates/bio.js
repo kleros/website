@@ -25,6 +25,9 @@ import Vargas from "src/assets/images/person/vargas.png";
 import Carrera from "src/assets/images/person/carrera.png";
 import Mohammadi from "src/assets/images/person/mohammadi.png";
 import Oladimeji from "src/assets/images/person/oladimeji.png";
+import Lin from "src/assets/images/person/lin.png";
+import Zeballos from "src/assets/images/person/zeballos.png";
+import Gaspar from "src/assets/images/person/gaspar.png";
 
 const PHOTOS = {
   Abad,
@@ -35,8 +38,10 @@ const PHOTOS = {
   Deplano,
   Duarte,
   Galindo,
+  Gaspar,
   Goldstein,
   Gudkov,
+  Lin,
   Lowther,
   Mohammadi,
   Narozhny,
@@ -46,6 +51,7 @@ const PHOTOS = {
   Sharma,
   Tineo,
   Vargas,
+  Zeballos,
   Zhao,
 };
 
