@@ -32,7 +32,7 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import POH from "../assets/svgs/poh-logo.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
-import Moderate from "../assets/svgs/moderate.png";
+import Moderate from "../assets/svgs/moderate.svg";
 import Realitio from "src/assets/images/third-party-logos/realitio.png";
 import Omen from "src/assets/images/third-party-logos/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
