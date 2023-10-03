@@ -53,6 +53,7 @@
     "Tokens": "A token list curated and categorized by Kleros.",
     "Curate": "A general purpose curated list creator.",
     "Dispute Resolver": "Create and operate disputes manually.",
+    "Moderate":"Fair and transparent moderation in your social media channels.",
     "Uniswap Ninja": "A fork of Uniswap that uses Kleros to curate the tradable tokens.",
     "Ledger": "Verified Contract-Domain Name pairings from Curate are used to provide transaction insights to Ledger Connect users",
     "Etherscan": "Verified contract address tags from Curate are used to display contract insights to Etherscan users",
