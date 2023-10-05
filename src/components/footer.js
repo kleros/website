@@ -126,7 +126,7 @@ const Footer = ({ intl }) => (
           <a className="" href="https://github.com/kleros" rel="noopener noreferrer" target="_blank">
             <Github />
           </a>
-          <a className="" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
+          <a className="" href="https://join.slack.com/t/kleros/shared_invite/zt-1y72qhz6c-~XpMPREdSvzBBg5EHaaRYw" rel="noopener noreferrer" target="_blank">
             <Slack />
           </a>
           <a className="" href="https://discord.gg/MhXQGCyHd9" rel="noopener noreferrer" target="_blank">
