@@ -69,7 +69,7 @@
     "Oracle": "Kleros can be used to resolve oracle disputes here.",
     "Proof of Humanity": "A list of people curated in a decentralized way.",
     "Gnosis": "Securely create, trade, and hold digital assets on Ethereum.",
-    "Polkamarkets": "Polkamafrkets is a Autonomous Prediction Market Protocol built for cross-chain information exchange and trading.",
+    "Polkamarkets": "Polkamafrkets is an Autonomous Prediction Market Protocol built for cross-chain information exchange and trading.",
     "Sushi": "Swap, earn, stack yields, lend, borrow, leverage all on one decentralized, community driven platform.",
     "Zerion": "Zerion is the easiest way to build and manage your entire DeFi portfolio from one place.",
     "Uniswap": "A fully decentralized protocol for automated liquidity provision on Ethereum.",
@@ -474,7 +474,7 @@
           },
           "4": {
             "q": "Is the identity of jurors revealed?",
-            "a": "Since decisions made in Kleros affect the allocation of resources, there is an incentive for parties to try to bribe or intimidate the tribunal. Anonimity is intended to protect jurors from intimidation and retaliation. It also simplifies the process of users becoming jurors and avoids the costs of identity verification. By providing a secure environment and simplifying the selection process, Kleros greatly enlarges the pool of potential jurors. This results in lower arbitration costs and the democratization of access to justice."
+            "a": "Since decisions made in Kleros affect the allocation of resources, there is an incentive for parties to try to bribe or intimidate the tribunal. Anonymity is intended to protect jurors from intimidation and retaliation. It also simplifies the process of users becoming jurors and avoids the costs of identity verification. By providing a secure environment and simplifying the selection process, Kleros greatly enlarges the pool of potential jurors. This results in lower arbitration costs and the democratization of access to justice."
           },
           "5": {
             "q": "What is Kleros token allocation?",
@@ -509,7 +509,7 @@
           },
           "4": {
             "q": "How is evidence presented and managed by the system?",
-            "a": "The way in which evidence is presented depends on the type of dispute. A freelancing dispute will require different evidence than an insurance or a payment dispute. Kleros Cooperative provides a back end for jurors to arbitrate disputes. The way in which it is built makes it possible for anyone to develop their own front end. The logic is similar to the Ethereum Wallet. The Ethereum Core Team provide a wallet to users, but anyone can build an Ethereum wallet. This means, for example, that an e-commerce platform could build a front end on which users could arbitrate disputes without leaving the platform. The front end would tap into Kleros' juror network. We expect many companies from the ecosystem to build interfaces based on our platform. To learn more, read this article about the evolution of Kleros Cooperative's ecosystem."
+            "a": "The way in which evidence is presented depends on the type of dispute. A freelancing dispute will require different evidence than an insurance or a payment dispute. Kleros Cooperative provides a back end for jurors to arbitrate disputes. The way in which it is built makes it possible for anyone to develop their own front end. The logic is similar to the Ethereum Wallet. The Ethereum Core Team provides a wallet to users, but anyone can build an Ethereum wallet. This means, for example, that an e-commerce platform could build a front end on which users could arbitrate disputes without leaving the platform. The front end would tap into Kleros' juror network. We expect many companies from the ecosystem to build interfaces based on our platform. To learn more, read this article about the evolution of Kleros Cooperative's ecosystem."
           },
           "5": {
             "q": "Since jurors are drawn from a global pool, how would you make sure that they all speak the language the dispute is called in?",
@@ -520,7 +520,7 @@
             "a": "Kleros does not have a specific way to make sure that jurors reviewed the evidence. The way to make sure that jurors act honestly is through the creation of right economic incentives. Jurors who vote randomly without reviewing the evidence are more likely to vote incoherently with the majority and lose the token they staked to be drawn. Hence, they lose money on average. Over time, this would make dishonest jurors leave the court. To learn more about how incentives work in Kleros, read the white paper."
           },
           "7": {
-            "q": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to others jurors?",
+            "q": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to other jurors?",
             "a": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete."
           },
           "8": { "q": "Are there time limits for disputes? Do jurors have to respond within a given period of time?", "a": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution." },
@@ -532,7 +532,7 @@
         "questions": {
           "1": {
             "q": "In legal systems such as the United States, judges are responsible for instructing jurors and explaining legal nuances. How does Kleros address questions of interpretation of legal terms in the contract?",
-            "a": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros was intended be used for simpler cases, where legal nuances are not as important."
+            "a": "A moderator in an online forum follows some predefined rules to decide whether a user comment violated the terms and conditions. When making decisions, jurors follow similar previously defined rules, which instruct them on how to deal with legal nuances. In early stages of the project, however, Kleros was intended to be used for simpler cases, where legal nuances are not as important."
           },
           "2": {
             "q": "Which are the main legal and regulatory hurdles in setting up Kleros?",
@@ -744,7 +744,7 @@
     },
     "section-guild": {
       "title": "The Kleros Guild of Justice",
-      "paragraph-1": "The Guild of Justice is the Kleros ambassador program. It's main objective is to gather our global community and spread the word of decentralized justice far and wide.",
+      "paragraph-1": "The Guild of Justice is the Kleros ambassador program. Its main objective is to gather our global community and spread the word of decentralized justice far and wide.",
       "paragraph-2": "The Guild is divided into two degrees, Envoys and Heralds.",
 
       "envoy": {
