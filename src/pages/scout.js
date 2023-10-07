@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -16,9 +16,6 @@ import Lightbulb from "src/assets/svgs/lightbulb.svg";
 import RightArrow from "src/assets/svgs/right-arrow.svg";
 import styles from "./styles/scout.module.css";
 import Contact from "../components/contact";
-
-const isBrowser = typeof window !== "undefined";
-const IS_MOBILE_MEDIA_QUERY = "(max-width: 900px)";
 
 const installSnap = async () => {
   try {
