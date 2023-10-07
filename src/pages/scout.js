@@ -169,7 +169,7 @@ const Rewards = () => (
     <h2>
       <FormattedMessage id="scout.community-curation.receive-rewards.description" />
     </h2>
-    <a href="https://blog.kleros.io/renewing-the-combined-incentive-program-for-curate/" rel="noopener noreferrer" target="blank" className="btn btn-secondary">
+    <a href="https://blog.kleros.io/how-to-submitting-to-the-security-metadata-registries-on-kleros-curate/" rel="noopener noreferrer" target="blank" className="btn btn-secondary">
       <FormattedMessage id="scout.community-curation.receive-rewards.button-text" />
     </a>
   </section>
