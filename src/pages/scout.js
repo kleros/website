@@ -60,8 +60,10 @@ const Header = () => (
           </a>
         </div>
         <div className={styles.headerCreditsContainer}>
-          <SecuredByKleros />
-          <AuditedByVeridise />
+          <SecuredByKleros className={styles.headerSecuredByKlerosSvg} />
+          <a href="https://f8t2x8b2.rocketcdn.me/wp-content/uploads/2023/06/VAR-Kleros-Scout.pdf" rel="noopener noreferrer" target="blank">
+            <AuditedByVeridise className={styles.headerAuditedByVeridiseSvg}/>
+          </a>
         </div>
       </div>
       <div className={styles.rightSide}>

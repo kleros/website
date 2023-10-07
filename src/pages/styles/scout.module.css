@@ -122,6 +122,7 @@
 .scout .rightArrowIcon {
   width: 24px;
   height: 24px;
+  transition: height 0.2s, width 0.2s;
 }
 
 .scout .rightArrowIcon path {
@@ -160,10 +161,23 @@
   gap: 12px;
   flex-direction: row;
   justify-content: flex-start;
+  height: 26px;
 }
 
-.scout .headerCreditsContainer svg {
+.scout .headerSecuredByKlerosSvg {
   height: 24px;
+  width: 179px;
+}
+
+.scout .headerAuditedByVeridiseSvg {
+  height: 24px;
+  width: 179px;
+  margin-bottom: 2px;
+  transition: height 0.3s;
+}
+
+.scout .headerAuditedByVeridiseSvg:hover {
+  height: 26px;
   width: 179px;
 }
 
@@ -265,6 +279,11 @@
     flex-direction: column;
     gap: 28px;
     align-items: center;
+    height: auto;
+  }
+
+  .scout .headerAuditedByVeridiseSvg {
+    margin-bottom: 0;
   }
 
   .scout .rightSide {
