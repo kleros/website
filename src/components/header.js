@@ -132,6 +132,9 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/curation">
                   <FormattedMessage id="header.curation" />
                 </Link>
+                <Link className="dropdown-item" to="/scout">
+                  <FormattedMessage id="footer.scout" />
+                </Link>
                 <Link className="dropdown-item" to="/oracle">
                   <FormattedMessage id="footer.oracle" />
                 </Link>
