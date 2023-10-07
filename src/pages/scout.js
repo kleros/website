@@ -103,9 +103,7 @@ const CommunityCurationSection = () => (
       </h2>
     </div>
     <div className={styles.curateLogoContainer}>
-      <a href="https://curate.kleros.io" rel="noopener noreferrer" target="blank">
-        <CurateLogo />
-      </a>
+      <CurateLogo />
     </div>
   </section>
 );
@@ -150,13 +148,13 @@ const CurateLists = () => (
 
 const AnchorLinks = () => (
   <div className={styles.anchorsContainer}>
-    <a href="https://docs.kleros.io/kleros-faq" rel="noopener noreferrer" target="blank">
+    <a href="https://docs.kleros.io/products/curate/kleros-scout-metamask-snaps/faqs" rel="noopener noreferrer" target="blank">
       FAQ
     </a>
-    <a href="https://docs.kleros.io/" rel="noopener noreferrer" target="blank">
+    <a href="https://docs.kleros.io/products/curate/kleros-scout-metamask-snaps/knowledge-base" rel="noopener noreferrer" target="blank">
       Knowledge Base
     </a>
-    <a href="https://t.me/kleros" rel="noopener noreferrer" target="blank">
+    <a href="https://t.me/KlerosCurate" rel="noopener noreferrer" target="blank">
       Support
     </a>
   </div>
