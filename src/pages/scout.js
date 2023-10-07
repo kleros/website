@@ -191,15 +191,6 @@ const ContactUs = () => (
 );
 
 const Scout = ({ intl }) => {
-  const [isMobile, setIsMobile] = useState(isBrowser ? window.matchMedia(IS_MOBILE_MEDIA_QUERY).matches : undefined);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.matchMedia(IS_MOBILE_MEDIA_QUERY).matches);
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "scout.seo-title" })} />
