@@ -346,7 +346,7 @@
 
     "section-hero": {
       "button-blue": "Add To Metamask",
-      "button-purple": "Open Snaps",
+      "button-purple": "View on Snaps Directory",
       "intro": "Get powerful insights with",
       "title": "Kleros Scout",
       "description": "Kleros Scout Snap pulls contract metadata from Kleros's decentralized token curated registries to provide insights to the contract you are interacting with."

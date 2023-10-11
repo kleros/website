@@ -37,7 +37,7 @@
 .scout .leftSide {
   display: flex;
   position: relative;
-  max-width: 573px;
+  width: 600px;
   flex-direction: column;
   text-align: left;
 }
@@ -80,6 +80,7 @@
   color: #fff;
   left: 10%;
   right: 10%;
+  display: none;
 }
 
 .scout .carouselContainer:hover .rightArrowIcon path {
@@ -187,7 +188,7 @@
 }
 
 .scout .communityCurationSection {
-  margin-top: calc(208px + (84 - 208) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  /* margin-top: calc(208px + (84 - 208) * (min(max(100vw, 375px), 1440px) - 375px) / 875); */
   padding-bottom: 22px;
   background-color: #fafbfc;
 }
@@ -199,6 +200,15 @@
 .scout .communityCurationDescription h2 {
   font-size: 18px;
   color: #999;
+}
+
+.scout .metamaskPopup {
+  padding-top: calc(16px + (40 - 16) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  width: calc(340px + (424 - 340) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: calc(450px + (600 - 450) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+
+  display: block;
+  margin: 0 auto;
 }
 
 .scout figcaption {
@@ -262,6 +272,7 @@
     max-width: 573px;
     flex-direction: column;
     text-align: center;
+    width: auto;
   }
 
   .scout .buttonsContainer {
@@ -272,6 +283,11 @@
   .scout .headerContent {
     padding-top: 96px;
     flex-direction: column;
+  }
+
+  .scout .purpleButtonContent {
+    display: flex;
+    font-size: 19px;
   }
 
   .scout .headerCreditsContainer {
@@ -301,6 +317,7 @@
     flex-direction: column;
     gap: 28px;
     bottom: calc(-240px + (-120 - -240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    display: none;
   }
 
   .scout .carouselDescription {
@@ -318,6 +335,6 @@
   }
 
   .scout .communityCurationSection {
-    margin-top: calc(240px + (120 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    /* margin-top: calc(240px + (120 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875); */
   }
 }

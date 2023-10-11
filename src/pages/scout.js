@@ -14,6 +14,7 @@ import CurateLogo from "src/assets/svgs/curate.svg";
 import StarRewards from "src/assets/svgs/star-rewards.svg";
 import Lightbulb from "src/assets/svgs/lightbulb.svg";
 import RightArrow from "src/assets/svgs/right-arrow.svg";
+import MetamaskPopupImage from "src/assets/images/metamask-scout.png";
 import styles from "./styles/scout.module.css";
 import Contact from "../components/contact";
 
@@ -56,13 +57,15 @@ const Header = () => (
             </div>
           </a>
           <a className="btn btn-secondary" href="https://snaps.metamask.io/snap/npm/kleros/scout-snap/" rel="noopener noreferrer" target="blank">
-            <FormattedMessage id="scout.section-hero.button-purple" />
+            <div className={styles.purpleButtonContent}>
+              <FormattedMessage id="scout.section-hero.button-purple" />
+            </div>
           </a>
         </div>
         <div className={styles.headerCreditsContainer}>
           <SecuredByKleros className={styles.headerSecuredByKlerosSvg} />
           <a href="https://f8t2x8b2.rocketcdn.me/wp-content/uploads/2023/06/VAR-Kleros-Scout.pdf" rel="noopener noreferrer" target="blank">
-            <AuditedByVeridise className={styles.headerAuditedByVeridiseSvg}/>
+            <AuditedByVeridise className={styles.headerAuditedByVeridiseSvg} />
           </a>
         </div>
       </div>
@@ -108,6 +111,12 @@ const CommunityCurationSection = () => (
       <CurateLogo />
     </div>
   </section>
+);
+
+const MetamaskPopup = () => (
+  <div className={styles.metamaskPopup}>
+    <img src={MetamaskPopupImage} />
+  </div>
 );
 
 const CurateLists = () => (
@@ -194,6 +203,7 @@ const Scout = ({ intl }) => {
       <Container className={styles.scout} fluid>
         <Header />
         <CommunityCurationSection />
+        <MetamaskPopup />
         <CurateLists />
         <AnchorLinks />
         <Rewards />
