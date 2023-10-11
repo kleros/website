@@ -51,19 +51,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           content: `summary`,
-          name: `twitter:card`,
+          name: `x:card`,
         },
         {
           content: site.siteMetadata.author,
-          name: `twitter:creator`,
+          name: `x:creator`,
         },
         {
           content: title,
-          name: `twitter:title`,
+          name: `x:title`,
         },
         {
           content: metaDescription,
-          name: `twitter:description`,
+          name: `x:description`,
         },
       ].concat(meta)}
       title={title}

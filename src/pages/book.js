@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import BookCover from "src/assets/svgs/book-cover.svg";
 import Content from "src/intl/en.json";
 import Linkedin from "src/assets/svgs/linkedin.svg";
-import Twitter from "src/assets/svgs/twitter.svg";
+import X from "src/assets/svgs/x.svg";
 import Dribble from "src/assets/svgs/dribble.svg";
 import styles from "./styles/book.module.css";
 import { Col, Container, Row } from "react-bootstrap";
@@ -164,9 +164,9 @@ const Book = ({ intl }) => (
                           <Linkedin />
                         </a>
                       )}
-                      {person.links.twitter && (
-                        <a href={person.links.twitter} rel="noopener noreferrer" target="_blank">
-                          <Twitter />
+                      {person.links.x && (
+                        <a href={person.links.x} rel="noopener noreferrer" target="_blank">
+                          <X />
                         </a>
                       )}
                       {person.links.dribble && (

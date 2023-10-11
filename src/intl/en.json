@@ -27,7 +27,8 @@
     "governance": "Governance",
     "escrow": "Escrow",
     "oracle": "Oracle",
-    "moderate": "Kleros Moderate",
+    "moderate": "Moderate",
+    "scout": "Kleros Scout",
     "career": "Careers",
     "incubator": "Incubator",
     "curate": "Curation",
@@ -345,6 +346,46 @@
       }
     },
     "call-to-action": "Join the beta"
+  },
+  "scout": {
+    "seo-title": "Kleros Scout",
+
+    "section-hero": {
+      "button-blue": "Add To Metamask",
+      "button-purple": "View on Snaps Directory",
+      "intro": "Get powerful insights with",
+      "title": "Kleros Scout",
+      "description": "Kleros Scout Snap pulls contract metadata from Kleros's decentralized token curated registries to provide insights to the contract you are interacting with."
+    },
+    "carousel": {
+      "title": "Suggest an Insight",
+      "description": "Have an insight to include but don’t have time to submit it yourself? Don’t worry, you can suggest ideas here."
+    },
+    "community-curation": {
+      "title": "Community Curated Insights",
+      "description": "Vetted submissions to the Kleros Curate registry are immediately set up on the Kleros Scout add-on on Metamask Snaps, allowing users to discover which tokens are safe, which addresses might be suspicious and which contracts are related to which domain addresses.",
+      "curate-lists-header": "Powerful insights from consolidated lists",
+      "button-text": "Open List",
+      "registries": {
+        "tokens": {
+          "title": "Tokens Registry",
+          "description": "The community-curated list of whitelisted and safe tokens that users could interact with confidently, minimizing the risk of malicious or insecure tokens."
+        },
+        "address-tags": {
+          "title": "Address Tags Registry",
+          "description": "This registry enables users to identify the trustworthiness of addresses, mitigating the potential risks associated with interacting with unknown or suspicious addresses."
+        },
+        "contract-domain-name": {
+          "title": "Contract Domain Name Registry",
+          "description": "This registry serves a critical role in preventing front-end DNS attacks. It facilitates the mapping of contracts to the domains they are known to be associated with, ensuring users are interacting with the correct contract associated with a particular domain."
+        }
+      },
+      "receive-rewards": {
+        "title": "Receive Rewards",
+        "description": "Receive rewards for every valid submission to the Curate registries.",
+        "button-text": "Learn More"
+      }
+    }
   },
   "oracle": {
     "seo-title": "Oracle",

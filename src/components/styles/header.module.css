@@ -90,8 +90,16 @@
   border: none;
 }
 
+.header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: #1e075f;
+}
+
 .header nav div div div {
-  background-color: transparent;
   opacity: 1;
   border: none;
 }
