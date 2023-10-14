@@ -132,7 +132,7 @@ const CurateLists = () => (
           text: <FormattedMessage id="scout.community-curation.registries.tokens.description" />,
           title: <FormattedMessage id="scout.community-curation.registries.tokens.title" />,
           button: {
-            href: "https://curate.kleros.io/tcr/100/0x70533554fe5c17CAf77fE530f77eAB933B92af60",
+            href: "https://curate.kleros.io/tcr/100/0xeE1502e29795Ef6C2D60F8D7120596abE3baD990",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
         },
