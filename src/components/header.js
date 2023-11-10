@@ -297,13 +297,7 @@ class Header extends React.Component {
                 <ProductBadges title="Integrations" items={integrations} />
               </Card.Body>
               <Card.Header>
-                <b>
-                  Check out the complete Kleros Partners Ecosystem{" "}
-                  <a target="_blank" href="https://kleros.world">
-                    here
-                  </a>
-                </b>
-                .
+              <b>Check out the complete Kleros Partners Ecosystem <a target="_blank" href="https://kleros.world">here</a></b>.
               </Card.Header>
             </Card>
           </Collapse>
