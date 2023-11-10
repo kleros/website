@@ -147,6 +147,9 @@ class Header extends React.Component {
                   <FormattedMessage id="footer.moderate" />
                 </Link>
               </NavDropdown>
+              <Nav.Link className="nav-link" href="https://kleros.io/industries" target="_blank" rel="noopener noreferrer">
+                Industries
+              </Nav.Link>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
               </Link>
@@ -294,7 +297,13 @@ class Header extends React.Component {
                 <ProductBadges title="Integrations" items={integrations} />
               </Card.Body>
               <Card.Header>
-                <b>Check out the complete Kleros Partners Ecosystem <a target="_blank" href="https://kleros.world">here</a></b>.
+                <b>
+                  Check out the complete Kleros Partners Ecosystem{" "}
+                  <a target="_blank" href="https://kleros.world">
+                    here
+                  </a>
+                </b>
+                .
               </Card.Header>
             </Card>
           </Collapse>
