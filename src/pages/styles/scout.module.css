@@ -67,32 +67,6 @@
   flex-wrap: wrap;
 }
 
-.scout .lightbulbAndTitleContainer {
-  display: flex;
-  gap: calc(8px + (24 - 8) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  margin-right: calc(32px + (64 - 32) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  justify-content: flex-start;
-}
-
-.scout .lightbulb {
-  width: 22px;
-  height: 32px;
-}
-
-.scout .rightArrowContainer {
-  display: flex;
-}
-
-.scout .rightArrowIcon {
-  width: 24px;
-  height: 24px;
-  transition: height 0.2s, width 0.2s;
-}
-
-.scout .rightArrowIcon path {
-  fill: #9013fe;
-}
-
 .scout .buttonsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -272,12 +246,5 @@
 
   .scout .rewardsContainer {
     padding-bottom: 64px;
-  }
-
-  .scout .lightbulbAndTitleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0;
   }
 }

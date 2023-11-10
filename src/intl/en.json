@@ -357,10 +357,6 @@
       "title": "Kleros Scout",
       "description": "Kleros Scout Snap pulls contract metadata from Kleros's decentralized token curated registries to provide insights to the contract you are interacting with."
     },
-    "carousel": {
-      "title": "Suggest an Insight",
-      "description": "Have an insight to include but don’t have time to submit it yourself? Don’t worry, you can suggest ideas here."
-    },
     "community-curation": {
       "title": "Community Curated Insights",
       "description": "Vetted submissions to the Kleros Curate registry are immediately set up on the Kleros Scout add-on on Metamask Snaps, allowing users to discover which tokens are safe, which addresses might be suspicious and which contracts are related to which domain addresses.",
