@@ -67,32 +67,6 @@
   flex-wrap: wrap;
 }
 
-.scout .carouselContainer {
-  display: flex;
-  position: absolute;
-  bottom: -40px;
-  flex-wrap: wrap;
-  border-radius: 3px;
-  align-items: center;
-  padding: 26px calc(8px + (48 - 8) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  z-index: 2;
-  background: linear-gradient(to right, #9013fe, #1e075f);
-  color: #fff;
-  left: 10%;
-  right: 10%;
-  display: none;
-}
-
-.scout .carouselContainer:hover .rightArrowIcon path {
-  fill: #fff;
-  transition: fill 0.15s ease-in-out;
-}
-
-.scout .carouselContainer:hover .rightArrowIcon {
-  width: 32px;
-  height: 32px;
-}
-
 .scout .lightbulbAndTitleContainer {
   display: flex;
   gap: calc(8px + (24 - 8) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
@@ -103,17 +77,6 @@
 .scout .lightbulb {
   width: 22px;
   height: 32px;
-}
-
-.scout .carouselTitle {
-  font-size: calc(20px + (24 - 20) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  font-weight: 600;
-}
-
-.scout .carouselDescription {
-  width: calc(200px + (464 - 200) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  margin-right: calc(120px + (380 - 120) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  text-align: left;
 }
 
 .scout .rightArrowContainer {
@@ -188,7 +151,6 @@
 }
 
 .scout .communityCurationSection {
-  /* margin-top: calc(208px + (84 - 208) * (min(max(100vw, 375px), 1440px) - 375px) / 875); */
   padding-bottom: 22px;
   background-color: #fafbfc;
 }
@@ -312,29 +274,10 @@
     padding-bottom: 64px;
   }
 
-  .scout .carouselContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    bottom: calc(-240px + (-120 - -240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-    display: none;
-  }
-
-  .scout .carouselDescription {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0;
-  }
-
   .scout .lightbulbAndTitleContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0;
-  }
-
-  .scout .communityCurationSection {
-    /* margin-top: calc(240px + (120 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875); */
   }
 }
