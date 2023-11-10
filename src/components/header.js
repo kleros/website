@@ -147,6 +147,9 @@ class Header extends React.Component {
                   <FormattedMessage id="footer.moderate" />
                 </Link>
               </NavDropdown>
+              <Nav.Link className="nav-link" href="https://kleros.io/industries" target="_blank" rel="noopener noreferrer">
+                Industries
+              </Nav.Link>
               <Link className="nav-link" to="/integrations">
                 <FormattedMessage id="header.integrations" />
               </Link>
