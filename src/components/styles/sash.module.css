@@ -45,3 +45,8 @@
 .sash .column .button {
   margin-bottom: 0px;
 }
+
+.sash .buttonsContainer {
+  display: flex;
+  flex-direction: column;
+}

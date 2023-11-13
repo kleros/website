@@ -12,8 +12,6 @@ import SecuredByKleros from "src/assets/svgs/secured-by-kleros.svg";
 import AuditedByVeridise from "src/assets/svgs/audited-by-veridise.svg";
 import CurateLogo from "src/assets/svgs/curate.svg";
 import StarRewards from "src/assets/svgs/star-rewards.svg";
-import Lightbulb from "src/assets/svgs/lightbulb.svg";
-import RightArrow from "src/assets/svgs/right-arrow.svg";
 import MetamaskPopupImage from "src/assets/images/metamask-scout.png";
 import styles from "./styles/scout.module.css";
 import Contact from "../components/contact";
@@ -73,28 +71,7 @@ const Header = () => (
         <img src={ScoutHexagonalImage} />
       </div>
     </div>
-    <SuggestionCarousel />
   </div>
-);
-
-const SuggestionCarousel = () => (
-  <a href="https://t.me/kleros" rel="noopener noreferrer" target="blank">
-    <div className={styles.carouselContainer}>
-      <div className={styles.lightbulbAndTitleContainer}>
-        <Lightbulb className={styles.lightbulb} />
-        <div className={styles.carouselTitle}>
-          <FormattedMessage id="scout.carousel.title" />
-        </div>
-      </div>
-
-      <div className={styles.carouselDescription}>
-        <FormattedMessage id="scout.carousel.description" />
-      </div>
-      <div className={styles.rightArrowContainer}>
-        <RightArrow className={styles.rightArrowIcon} />
-      </div>
-    </div>
-  </a>
 );
 
 const CommunityCurationSection = () => (
@@ -135,6 +112,10 @@ const CurateLists = () => (
             href: "https://curate.kleros.io/tcr/100/0xeE1502e29795Ef6C2D60F8D7120596abE3baD990",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
+          secondButton: {
+            href: "https://docs.google.com/forms/d/e/1FAIpQLSchZ5RBd1Y8RNpGCUGY9tZyQZSBgnN_4B9oLfKeKuer9oxGnA/viewform",
+            text: <FormattedMessage id="scout.community-curation.second-button-text" />,
+          },
         },
         {
           text: <FormattedMessage id="scout.community-curation.registries.address-tags.description" />,
@@ -143,6 +124,10 @@ const CurateLists = () => (
             href: "https://curate.kleros.io/tcr/100/0x66260C69d03837016d88c9877e61e08Ef74C59F2",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
+          secondButton: {
+            href: "https://docs.google.com/forms/d/e/1FAIpQLSdTwlrcbbPOkSCMKuUj42d_koSAEkWjMLz5hhTc5lB6aGCO9w/viewform",
+            text: <FormattedMessage id="scout.community-curation.second-button-text" />,
+          },
         },
         {
           text: <FormattedMessage id="scout.community-curation.registries.contract-domain-name.description" />,
@@ -150,6 +135,10 @@ const CurateLists = () => (
           button: {
             href: "https://curate.kleros.io/tcr/100/0x957A53A994860BE4750810131d9c876b2f52d6E1",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
+          },
+          secondButton: {
+            href: "https://docs.google.com/forms/d/e/1FAIpQLSeO32UBCpIYu3XIKGM-hLqWu51XcsSG1QRxtuycZPyS9mMtVg/viewform",
+            text: <FormattedMessage id="scout.community-curation.second-button-text" />,
           },
         },
       ]}

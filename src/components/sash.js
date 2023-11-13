@@ -16,11 +16,18 @@ const Sash = ({ style, separator, figures, className }) => (
             </figcaption>
             {figure.text && <span className={`mt-5 ${styles.text}`}>{figure.text}</span>}
           </figure>
-          {figure.button && (
-            <a className={`btn btn-${index % 2 === 0 ? "primary" : "secondary"} mt-8 ${styles.button}`} href={figure.button.href} rel="noopener noreferrer" target="blank">
-              {figure.button.text}
-            </a>
-          )}
+          <div className={styles.buttonsContainer}>
+            {figure.button ? (
+              <a className={`btn btn-primary mt-8 ${styles.button}`} href={figure.button.href} rel="noopener noreferrer" target="blank">
+                {figure.button.text}
+              </a>
+            ) : null}
+            {figure.secondButton ? (
+              <a className={`btn btn-secondary mt-2 ${styles.button}`} href={figure.secondButton.href} rel="noopener noreferrer" target="blank">
+                {figure.secondButton.text}
+              </a>
+            ) : null}
+          </div>
         </Col>
       );
 
