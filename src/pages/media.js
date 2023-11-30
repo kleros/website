@@ -150,11 +150,11 @@ const Media = ({ intl }) => (
       <section>
         <Container className="p-0" fluid>
           <Row>
-            <Col className="mt-5 w-50" md>
+            <Col className="mt-5 w-100" md>
               <VerticalCard
                 content={{
                   button: {
-                    href: "../KlerosBrandAssets.zip",
+                    href: "/KlerosBrandAssets.zip",
                     text: intl.formatMessage({
                       id: "media.section-cards.card-1.button",
                     }),
