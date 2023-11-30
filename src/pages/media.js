@@ -150,7 +150,7 @@ const Media = ({ intl }) => (
       <section>
         <Container className="p-0" fluid>
           <Row>
-            <Col className="mt-5 w-50" md>
+            <Col className="mt-5 w-100" md>
               <VerticalCard
                 content={{
                   button: {
