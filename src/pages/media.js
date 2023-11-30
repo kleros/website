@@ -154,7 +154,7 @@ const Media = ({ intl }) => (
               <VerticalCard
                 content={{
                   button: {
-                    href: "../KlerosBrandAssets.zip",
+                    href: "/KlerosBrandAssets.zip",
                     text: intl.formatMessage({
                       id: "media.section-cards.card-1.button",
                     }),
