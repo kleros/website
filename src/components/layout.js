@@ -30,9 +30,9 @@ const Layout = ({ children, omitSponsors }) => (
       <meta property="og:description" content="Kleros is a decentralized arbitration service for the disputes of the new economy." />
       <meta property="og:image" content={`https://kleros.io${MetaCard}`} />
       <meta property="og:url" content="https://kleros.io/" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="x:card" content="summary_large_image" />
       <meta property="og:site_name" content="Kleros" />
-      <meta name="twitter:image:alt" content="Kleros" />
+      <meta name="x:image:alt" content="Kleros" />
     </Helmet>
     <Header svgs={{ Court, Curate, DisputeResolver, Escrow, Linguo, Logo, Ninja, T2CR }} />
     <main>

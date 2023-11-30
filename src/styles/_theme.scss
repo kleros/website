@@ -94,11 +94,13 @@ h2 {
   font-size: var(--font-size-big);
 }
 
-.light > h1, .grey > h1 {
+.light > h1,
+.grey > h1 {
   color: var(--color-purple);
 }
 
-.light > h2, .grey > h2 {
+.light > h2,
+.grey > h2 {
   color: var(--color-gray-light);
 }
 
@@ -151,10 +153,12 @@ footer .btn {
   background: var(--color-blue);
 }
 
-.btn-secondary,
-.btn-secondary:active,
-.btn-secondary:focus {
-  background: var(--color-purple-light);
+.btn-secondary {
+  background: var(--color-purple-light) !important;
+}
+
+.btn-secondary:hover {
+  background: var(--color-purple-darker) !important;
 }
 
 hr {
@@ -180,7 +184,7 @@ section.integrations {
 }
 
 section.grey {
-  background-color: #FAFBFC;
+  background-color: #fafbfc;
 }
 
 section.light {
@@ -264,7 +268,7 @@ input::placeholder {
 .dropdown-item:hover {
   padding-left: 13.3px;
   background-color: rgba(0, 154, 255, 0.06);
-  border-left: 3px solid #009AFF;
+  border-left: 3px solid #009aff;
 }
 
 :global(.slick-dots) > li {

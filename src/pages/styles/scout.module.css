@@ -1,0 +1,250 @@
+.scout {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.scout .header {
+  position: relative;
+}
+
+.scout .headerContent {
+  display: flex;
+  height: 897px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: calc(32px + (64 - 32) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  padding: 0 calc(24px + (124 - 24) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+  padding-bottom: 160px;
+  z-index: 1;
+}
+
+.scout .headerBackground {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: calc(max(100%, 1500px));
+  max-height: 897px;
+  overflow: hidden;
+}
+
+.scout .headerBackground svg {
+  display: block;
+  height: auto;
+}
+
+.scout .leftSide {
+  display: flex;
+  position: relative;
+  width: 600px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.scout .headerIntro {
+  font-size: calc(20px + (24 - 20) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+  color: #fff;
+  margin-bottom: -8px;
+}
+
+.scout .headerTitle {
+  font-size: calc(48px + (64 - 48) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: calc(20px + (44 - 20) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+}
+
+.scout .headerDescription {
+  font-size: calc(20px + (24 - 20) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+  margin-bottom: calc(24px + (48 - 24) * (min(max(100vw, 375px), 1250px) - 375px) / 875);
+}
+
+.scout .rightSide {
+  position: relative;
+  width: calc(240px + (568 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: calc(240px + (492 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  flex-wrap: wrap;
+}
+
+.scout .buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-start;
+  margin-bottom: calc(32px + (64 - 32) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+}
+
+.scout .buttonsContainer > a {
+  margin: 0;
+}
+
+.scout .blueButtonContent {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.scout .blueButtonContent svg {
+  width: 20px;
+  height: 20px;
+  flex-direction: row;
+}
+
+.scout .headerCreditsContainer {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 26px;
+}
+
+.scout .headerSecuredByKlerosSvg {
+  height: 24px;
+  width: 179px;
+}
+
+.scout .headerAuditedByVeridiseSvg {
+  height: 24px;
+  width: 179px;
+  margin-bottom: 4px;
+  transition: height 0.3s;
+}
+
+.scout .headerAuditedByVeridiseSvg:hover {
+  height: 26px;
+  width: 179px;
+}
+
+.scout .curateLogoContainer svg {
+  width: calc(96px + (112 - 96) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: calc(96px + (128 - 96) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+}
+
+.scout .communityCurationSection {
+  padding-bottom: 22px;
+  background-color: #fafbfc;
+}
+
+.scout .communityCurationSection h1 {
+  color: #4b00b4;
+}
+
+.scout .communityCurationDescription h2 {
+  font-size: 18px;
+  color: #999;
+}
+
+.scout .metamaskPopup {
+  padding-top: calc(16px + (40 - 16) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  width: calc(340px + (424 - 340) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: calc(450px + (600 - 450) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+
+  display: block;
+  margin: 0 auto;
+}
+
+.scout figcaption {
+  padding-top: 0;
+}
+
+.scout .anchorsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  background: #fff;
+  justify-content: center;
+  padding-bottom: calc(16px + (60 - 16) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+}
+
+.scout .anchorsContainer a {
+  color: #009aff;
+}
+
+.scout .anchorsContainer a:hover {
+  text-decoration: underline;
+}
+
+.scout .sectionHeader {
+  font-size: 32px;
+  margin-bottom: calc(0px + (12 - 0) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  color: #4b00b4;
+}
+
+.scout .rewardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafbfc;
+}
+
+.scout .rewardsContainer h2 {
+  color: #999;
+}
+
+.scout .starRewardsLogo {
+  width: calc(280px + (320 - 280) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.scout .sashContainer {
+  padding-top: calc(0px + (28 - 0) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  padding-bottom: 0;
+}
+
+.scout .h1 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1180px) {
+  .scout .leftSide {
+    display: flex;
+    position: relative;
+    max-width: 573px;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+
+  .scout .buttonsContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .scout .headerContent {
+    padding-top: 96px;
+    flex-direction: column;
+  }
+
+  .scout .purpleButtonContent {
+    display: flex;
+    font-size: 19px;
+  }
+
+  .scout .headerCreditsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    height: auto;
+  }
+
+  .scout .headerAuditedByVeridiseSvg {
+    margin-bottom: 0;
+  }
+
+  .scout .rightSide {
+    position: relative;
+    width: calc(240px + (330 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    height: calc(240px + (330 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  }
+
+  .scout .rewardsContainer {
+    padding-bottom: 64px;
+  }
+}

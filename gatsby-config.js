@@ -10,7 +10,7 @@ module.exports = {
         name: "Federico Ast",
         title: "Co-founder, CEO",
         links: {
-          twitter: "https://twitter.com/federicoast",
+          x: "https://x.com/federicoast",
           linkedin: "https://www.linkedin.com/in/federicoast/",
         },
       },
@@ -19,7 +19,7 @@ module.exports = {
         name: "Clément Lesaege",
         title: "Co-founder, CTO",
         links: {
-          twitter: "https://twitter.com/clesaege",
+          x: "https://x.com/clesaege",
           linkedin: "https://www.linkedin.com/in/cl%C3%A9ment-lesaege-a326b9ab/",
           github: "https://github.com/clesaege",
         },
@@ -28,7 +28,7 @@ module.exports = {
         name: "Stuart James",
         title: "Operations Manager",
         links: {
-          twitter: "https://twitter.com/zambianastro",
+          x: "https://x.com/zambianastro",
           linkedin: "https://www.linkedin.com/in/stuart-james-588086158/",
         },
       },
@@ -36,7 +36,7 @@ module.exports = {
         name: "William George",
         title: "Research Lead",
         links: {
-          twitter: "https://twitter.com/williamhwgeorge",
+          x: "https://x.com/williamhwgeorge",
           linkedin: "https://www.linkedin.com/in/william-george-128bab148/",
         },
       },
@@ -44,7 +44,7 @@ module.exports = {
         name: "Sam Vitello",
         title: "DApp Developer",
         links: {
-          twitter: "https://twitter.com/satello3",
+          x: "https://x.com/satello3",
           linkedin: "https://www.linkedin.com/in/samvitello/",
           github: "https://github.com/satello",
         },
@@ -54,7 +54,7 @@ module.exports = {
         title: "DApp Developer",
         links: {
           linkedin: "https://www.linkedin.com/in/ferit-tuncer/",
-          twitter: "https://twitter.com/0xferittuncer",
+          x: "https://x.com/0xferittuncer",
           github: "https://github.com/ferittuncer",
         },
       },
@@ -62,7 +62,7 @@ module.exports = {
         name: "Matheus Alencar",
         title: "DApp Developer",
         links: {
-          twitter: "https://twitter.com/eccentricexit",
+          x: "https://x.com/eccentricexit",
           github: "https://github.com/eccentricexit",
         },
       },
@@ -71,7 +71,7 @@ module.exports = {
         title: "DApp Developer",
         links: {
           github: "https://github.com/hbarcelos",
-          twitter: "https://twitter.com/hbarcelos909",
+          x: "https://x.com/hbarcelos909",
           linkedin: "https://www.linkedin.com/in/henriquebarcelos/",
         },
       },
@@ -85,7 +85,7 @@ module.exports = {
         name: "Plinio Braga",
         title: "UX Design Lead",
         links: {
-          twitter: "https://twitter.com/pliniobraga_",
+          x: "https://x.com/pliniobraga_",
           linkedin: "https://www.linkedin.com/in/pliniobraga/",
           dribble: "https://dribbble.com/pliniobraga",
         },
@@ -94,7 +94,7 @@ module.exports = {
         name: "Damjan Malbasic",
         title: "Communications Lead",
         links: {
-          twitter: "https://twitter.com/flycca",
+          x: "https://x.com/flycca",
           linkedin: "https://www.linkedin.com/in/damjan-malba%C5%A1i%C4%87-103a2199/",
         },
       },
@@ -103,7 +103,7 @@ module.exports = {
         name: "Tobias Glemming",
         title: "Ambassador",
         links: {
-          twitter: "https://twitter.com/TGlemming",
+          x: "https://x.com/TGlemming",
           linkedin: "https://www.linkedin.com/in/tobiasglemming/",
         },
       },
@@ -111,7 +111,7 @@ module.exports = {
         name: "Laurence Zhang",
         title: "Ambassador",
         links: {
-          twitter: "https://twitter.com/LaurenceZhangSG",
+          x: "https://x.com/LaurenceZhangSG",
           github: "https://github.com/lanlan3322",
         },
       },
@@ -137,7 +137,7 @@ module.exports = {
       {
         name: "Lorens Huculak",
         title: "Layer 2 Entrepreneur and Fellow",
-        links: { linkedin: "https://www.linkedin.com/in/lorenshuculak/", twitter: "https://twitter.com/lorenshuculak" },
+        links: { linkedin: "https://www.linkedin.com/in/lorenshuculak/", x: "https://x.com/lorenshuculak" },
         location: "Belgium",
         batch: 3,
       },
@@ -154,14 +154,14 @@ module.exports = {
       {
         name: "Annabelle Vassallo",
         title: "Office Manager",
-        links: { linkedin: "", twitter: "" },
+        links: { linkedin: "", x: "" },
       },
       {
         name: "Shaleen Jain",
         title: "Smart Contract Developer",
         links: {
           linkedin: "https://www.linkedin.com/in/shaleen-jain/",
-          twitter: "https://twitter.com/shalzzj",
+          x: "https://x.com/shalzzj",
           github: "https://github.com/shalzz",
         },
       },
