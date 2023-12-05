@@ -377,6 +377,11 @@
       "text-2": "Imprima. Preencha (não se esqueça da frase escrita à mão no final!). Assine. Escaneie.",
       "title-3": "Envie de volta",
       "text-3": "Envie de volta para <mail>cooperative@kleros.io</mail> junto com uma cópia digital de seu passaporte / identidade nacional e com o TxID do depósito relativo à sua participação."
+    },
+    "section-reports": {
+      "title": "Confira nossos relatórios anuais.",
+      "select-label": "Selecione um ano:",
+      "download": "Download"
     }
   },
   "faq": {

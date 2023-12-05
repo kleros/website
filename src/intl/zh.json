@@ -373,6 +373,11 @@
       "text-2": "打印并填写表格(请注意最后的手写声明!) . 签名. 扫描.",
       "title-3": "发送",
       "text-3": "发送至<mail>cooperative@kleros.io</mail> ，附带护照/身份证电子版本以及股份押金转账证明."
+    },
+    "section-reports": {
+      "title": "查看我们的年度报告",
+      "select-label": "选择年份",
+      "download": "下载"
     }
   },
 

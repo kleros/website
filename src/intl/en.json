@@ -483,6 +483,11 @@
       "text-2": "Print it. Fill it in (don't forget the handwritten phrase at the end!) . Sign it. Scan it.",
       "title-3": "Send it back",
       "text-3": "Send it back to <mail>cooperative@kleros.io</mail> along with a digital copy of your passport / national ID and with the TxID of your share deposit."
+    },
+    "section-reports": {
+      "title": "Check our annual reports.",
+      "select-label": "Select a year:",
+      "download": "Download"
     }
   },
 
