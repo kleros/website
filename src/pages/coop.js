@@ -125,15 +125,19 @@ const Coop = ({ intl }) => {
           </div>
         </section>
         <section className={`light ${styles.reports}`}>
-          <h1>Check our annual reports.</h1>
-          <label for="yearSelect">Select a year:</label>
-          <select id="yearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
-            {Object.keys(ANNUAL_REPORTS).sort((a, b) => parseInt(b) - parseInt(a)).map((optionTitle) => 
-              <option value={optionTitle}>{optionTitle}</option>
-            )}
-          </select>
+          <h1>
+            <FormattedMessage id="coop.section-reports.title" />
+          </h1>
+          <label htmlFor="yearSelect">
+            <FormattedMessage id="coop.section-reports.select-label" />
+            <select id="yearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+              {Object.keys(ANNUAL_REPORTS).sort((a, b) => parseInt(b) - parseInt(a)).map((optionTitle) => 
+                <option value={optionTitle} key={optionTitle}>{optionTitle}</option>
+              )}
+            </select>
+          </label>
           <a className={`btn btn-primary mt-8 ${styles.button}`} href={`https://ipfs.kleros.io${ANNUAL_REPORTS[selectedYear]}`} rel="noopener noreferrer" target="blank">
-            Download
+            <FormattedMessage id="coop.section-reports.download" />
           </a>
         </section>
       </div>
