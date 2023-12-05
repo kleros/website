@@ -21,3 +21,28 @@
 .coop .steps > div {
   margin: 5rem 0;
 }
+
+.coop .reports > h1 {
+  margin-bottom: 64px;
+}
+
+.coop .reports > label {
+  color: var(--color-gray);
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  & > select {
+    margin-left: 16px;
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    color: var(--color-purple);
+    background-color: white;
+  }
+}
+
+.coop .reports > a {
+  display: block;
+  margin: 12px auto 0 auto !important;
+  width: max-content;
+}
+

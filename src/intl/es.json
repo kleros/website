@@ -376,6 +376,11 @@
       "text-2": "Imprímelo. Llénalo (¡no olvides la frase escrita a mano al final!) . Fírmalo. Escanéalo.",
       "title-3": "Reenvíalo.",
       "text-3": "Reenvíalo a <mail>cooperative@kleros.io</mail> junto con una copia digital de tu pasaporte/identificación nacional y con el TxID del depósito de tu participación."
+    },
+    "section-reports": {
+      "title": "Consulta nuestros resúmenes anuales.",
+      "select-label": "Seleccione un año:",
+      "download": "Descarga"
     }
   },
   "faq": {
