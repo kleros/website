@@ -28,6 +28,8 @@ import Oladimeji from "src/assets/images/person/oladimeji.png";
 import Lin from "src/assets/images/person/lin.png";
 import Zeballos from "src/assets/images/person/zeballos.png";
 import Gaspar from "src/assets/images/person/gaspar.png";
+import Tewari from "src/assets/images/person/tewari.png";
+import Poenicke from "src/assets/images/person/poenicke.png";
 
 const PHOTOS = {
   Abad,
@@ -47,8 +49,10 @@ const PHOTOS = {
   Narozhny,
   Obafemi,
   Oladimeji,
+  Poenicke,
   Scott,
   Sharma,
+  Tewari,
   Tineo,
   Vargas,
   Zeballos,
