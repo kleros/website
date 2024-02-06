@@ -44,6 +44,9 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/about">
             <FormattedMessage id="footer.about" />
           </Link>
+          <Link className="mr-3" to="/transparency">
+            <FormattedMessage id="footer.transparency" />
+          </Link>
           <Link className="mr-3" to="/coop">
             <FormattedMessage id="footer.cooperative" />
           </Link>

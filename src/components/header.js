@@ -193,6 +193,9 @@ class Header extends React.Component {
                 <Link className="dropdown-item" to="/about">
                   <FormattedMessage id="footer.about" />
                 </Link>
+                <Link className="dropdown-item" to="/transparency">
+                  <FormattedMessage id="footer.transparency" />
+                </Link>
                 <NavDropdown.Item href="https://blog.kleros.io" target="_blank" rel="noopener noreferrer">
                   <FormattedMessage id="footer.blog" />
                 </NavDropdown.Item>

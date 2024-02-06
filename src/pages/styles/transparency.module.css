@@ -1,0 +1,53 @@
+.transparency {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px auto;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 24px 12px;
+}
+
+.reportCard {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  background: #6c4675;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 32px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.newWindowSvg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+.reportHeader {
+  display: flex;
+  font-size: 1.2em;
+}
+
+.anchor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reportBody {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+}
