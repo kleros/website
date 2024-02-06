@@ -1,4 +1,4 @@
-.transparency {
+.treasury {
   display: flex;
   gap: 24px;
   flex-direction: column;
@@ -16,7 +16,8 @@
   display: flex;
   width: 80vw;
   flex-wrap: wrap;
-  background: #6c4675;
+  background: #6f42c1;
+  border: 1px solid #604260;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 24px 32px;

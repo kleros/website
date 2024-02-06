@@ -17,7 +17,7 @@
 
   "footer": {
     "about": "About",
-    "transparency": "Transparency",
+    "treasury-reports": "Treasury Reports",
     "cooperative": "Cooperative",
     "whitepaper": "White Paper",
     "yellowpaper": "Yellow Paper",
@@ -1052,7 +1052,7 @@
   "404": {
     "seo-title": "404: Not Found"
   },
-  "transparency": {
-    "seo-title": "Treasury reports"
+  "treasury-reports": {
+    "seo-title": "Treasury Reports"
   }
 }
