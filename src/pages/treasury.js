@@ -82,6 +82,22 @@ const Header = () => (
   </div>
 );
 
+const CallToAction = () => {
+  return (
+    <p className={styles.paragraph}>
+      Any questions? Please reach out on our{" "}
+      <a href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
+        Telegram group
+      </a>{" "}
+      or by DM on X or Telegram to{" "}
+      <a href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
+        @JuanSamitier
+      </a>
+      .
+    </p>
+  );
+};
+
 const MonthReport = ({ month, year, treasuryReport, riskReport }) => (
   <div className={styles.reportCard}>
     <div className={styles.reportHeader}>{`${month} ${year}`}</div>
@@ -106,17 +122,7 @@ const TreasuryReports = ({ intl }) => {
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
       <Container className={styles.treasury} fluid>
         <Header />
-        <p className={styles.paragraph}>
-          Any questions? Please reach out on our{" "}
-          <a href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
-            Telegram group
-          </a>{" "}
-          or by DM on X or Telegram to{" "}
-          <a href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
-            @JuanSamitier
-          </a>
-          .
-        </p>
+        <CallToAction />
         {MONTHS.map(({ month, year, treasuryReport, riskReport }, index) => (
           <MonthReport key={index} month={month} year={year} treasuryReport={treasuryReport} riskReport={riskReport} />
         ))}
