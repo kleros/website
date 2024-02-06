@@ -4,12 +4,19 @@
   flex-direction: column;
   align-items: center;
   margin: 24px auto;
+  padding-bottom: 24px;
 }
 
 .header {
   font-size: 32px;
   font-weight: 600;
-  margin: 24px 12px;
+  margin: 0 12px;
+  margin-top: 24px;
+}
+
+.paragraph {
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .reportCard {

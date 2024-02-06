@@ -22,7 +22,7 @@ const MONTHS = [
     month: "November",
     year: "2023",
     treasuryReport: "QmRQAJmnSXPzcG2ezt8yaFTntfNJ7iTm9jWMS17dsJKni8/November 2023.pdf",
-    riskReport: "QmSudXskv9PBtqrYs5cXPZBHvni1ukfKeTqQfoQ4WYsfCn/Kleros%20Risk%20Report%20.12-01-2023.pdf"
+    riskReport: "QmSudXskv9PBtqrYs5cXPZBHvni1ukfKeTqQfoQ4WYsfCn/Kleros%20Risk%20Report%20.12-01-2023.pdf",
   },
   {
     month: "October",
@@ -106,6 +106,17 @@ const TreasuryReports = ({ intl }) => {
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
       <Container className={styles.treasury} fluid>
         <Header />
+        <p className={styles.paragraph}>
+          Any questions? Please reach out on our{" "}
+          <a href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
+            Telegram group
+          </a>{" "}
+          or by DM on X or Telegram to{" "}
+          <a href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
+            @JuanSamitier
+          </a>
+          .
+        </p>
         {MONTHS.map(({ month, year, treasuryReport, riskReport }, index) => (
           <MonthReport key={index} month={month} year={year} treasuryReport={treasuryReport} riskReport={riskReport} />
         ))}
