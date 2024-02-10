@@ -1053,6 +1053,16 @@
     "seo-title": "404: Not Found"
   },
   "treasury-reports": {
-    "seo-title": "Treasury Reports"
+    "seo-title": "Treasury Reports",
+    "select-year-label": "Select a year:",
+    "select-month-label": "Select a month:",
+    "treasury-report": {
+      "title": "Treasury Report",
+      "description": "The Treasury report is a summary of the financial activities of the Kleros Cóoperative. It provides an overview of the portfolio, treasury allocation, and financial evolution of Kleros."
+    },
+    "risk-report": {
+      "title": "Risk Report",
+      "description": "The Risk report provides an overview of the risk profile involving the treasury of the Kleros Cóoperative."
+    }
   }
 }
