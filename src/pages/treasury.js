@@ -117,13 +117,6 @@ const TreasuryReportSelection = () => {
     }
   }, [selectedYear, availableMonths, selectedMonth]);
 
-  useEffect(() => {
-    const year = MONTHS.find((m) => m.month === selectedMonth)?.year;
-    if (year && year !== selectedYear) {
-      setSelectedYear(year);
-    }
-  }, [selectedMonth]);
-
   const getReportLink = () => {
     const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear);
     return report ? `https://ipfs.kleros.io/ipfs/${report.treasuryReport}` : "#";
@@ -180,13 +173,6 @@ const RiskReportSelection = () => {
       setSelectedMonth(availableMonths[0] || "");
     }
   }, [selectedYear, availableMonths, selectedMonth]);
-
-  useEffect(() => {
-    const year = MONTHS.find((m) => m.month === selectedMonth && m.riskReport)?.year;
-    if (year && year !== selectedYear) {
-      setSelectedYear(year);
-    }
-  }, [selectedMonth]);
 
   const getReportLink = () => {
     const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m.riskReport);
