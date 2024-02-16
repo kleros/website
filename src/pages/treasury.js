@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container } from "react-bootstrap";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/treasury.module.css";
-import NewWindowIcon from "src/assets/svgs/new-window-icon.svg";
+import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
@@ -78,54 +78,156 @@ const MONTHS = [
 
 const Header = () => (
   <div className={styles.header}>
-    <FormattedMessage id="treasury-reports.seo-title" />
+    <h1 className={styles.title}>
+      <FormattedMessage id="treasury-reports.seo-title" />
+    </h1>
+    <TreasuryReportsImage className={styles.treasuryReportsImage} />
   </div>
 );
 
-const CallToAction = () => {
+const AnyQuestions = () => {
   return (
-    <p className={styles.paragraph}>
-      Any questions? Please reach out on our{" "}
-      <a href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
-        Telegram group
-      </a>{" "}
-      or by DM on X or Telegram to{" "}
-      <a href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
-        @JuanSamitier
-      </a>
-      .
-    </p>
+    <div className={styles.anyQuestions}>
+      <h1>
+        <FormattedMessage id="treasury-reports.any-questions.header" />
+      </h1>
+      <p className={styles.paragraph}>
+        <FormattedMessage id="treasury-reports.any-questions.content" />{" "}
+        <a className={styles.anchor} href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
+          <FormattedMessage id="treasury-reports.any-questions.telegram-group" />
+        </a>{" "}
+        <FormattedMessage id="treasury-reports.any-questions.or-by-dm" />{" "}
+        <a className={styles.anchor} href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
+          <FormattedMessage id="treasury-reports.any-questions.telegram-user" />
+        </a>
+        .
+      </p>
+    </div>
   );
 };
 
-const MonthReport = ({ month, year, treasuryReport, riskReport }) => (
-  <div className={styles.reportCard}>
-    <div className={styles.reportHeader}>{`${month} ${year}`}</div>
-    <div className={styles.reportBody}>
-      {treasuryReport ? (
-        <a className={styles.anchor} href={`https://ipfs.kleros.io/ipfs/${treasuryReport}`} target="_blank" rel="noopener noreferrer">
-          Treasury Report <NewWindowIcon className={styles.newWindowSvg} />
-        </a>
-      ) : null}
-      {riskReport ? (
-        <a className={styles.anchor} href={`https://ipfs.kleros.io/ipfs/${riskReport}`} target="_blank" rel="noopener noreferrer">
-          Risk Report <NewWindowIcon className={styles.newWindowSvg} />
-        </a>
-      ) : null}
-    </div>
-  </div>
-);
+const TreasuryReportSelection = () => {
+  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedMonth, setSelectedMonth] = useState("January");
+
+  const availableYears = [...new Set(MONTHS.map((m) => m.year))].sort().reverse();
+  const availableMonths = MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month);
+
+  useEffect(() => {
+    if (!availableMonths.includes(selectedMonth)) {
+      setSelectedMonth(availableMonths[0] || "");
+    }
+  }, [selectedYear, availableMonths, selectedMonth]);
+
+  const getReportLink = () => {
+    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear);
+    return report ? `https://ipfs.kleros.io/ipfs/${report.treasuryReport}` : "#";
+  };
+
+  return (
+    <section className={styles.treasuryReport}>
+      <h1 className={styles.selectHeader}>
+        <FormattedMessage id="treasury-reports.treasury-report.title" />
+      </h1>
+      <p>
+        <FormattedMessage id="treasury-reports.treasury-report.description" />
+      </p>
+      <div className={styles.labelsContainer}>
+        <label htmlFor="yearSelect">
+          <FormattedMessage id="treasury-reports.select-year-label" />
+          <select id="yearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+            {availableYears.map((year) => (
+              <option value={year} key={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label htmlFor="monthSelect">
+          <FormattedMessage id="treasury-reports.select-month-label" />
+          <select id="monthSelect" value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+            {availableMonths.map((month) => (
+              <option value={month} key={month}>
+                {month}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
+        <FormattedMessage id="treasury-reports.download-label" />
+      </a>
+    </section>
+  );
+};
+
+const RiskReportSelection = () => {
+  const [selectedYear, setSelectedYear] = useState("2024");
+  const [selectedMonth, setSelectedMonth] = useState("January");
+
+  const availableYears = [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse();
+
+  const availableMonths = MONTHS.filter((m) => m.year === selectedYear && m.riskReport).map((m) => m.month);
+
+  useEffect(() => {
+    if (!availableMonths.includes(selectedMonth)) {
+      setSelectedMonth(availableMonths[0] || "");
+    }
+  }, [selectedYear, availableMonths, selectedMonth]);
+
+  const getReportLink = () => {
+    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m.riskReport);
+    return report ? `https://ipfs.kleros.io/ipfs/${report.riskReport}` : "#";
+  };
+
+  return (
+    <section className={styles.riskReport}>
+      <h1 className={styles.selectHeader}>
+        <FormattedMessage id="treasury-reports.risk-report.title" />
+      </h1>
+      <p>
+        <FormattedMessage id="treasury-reports.risk-report.description" />
+      </p>
+      <div className={styles.labelsContainer}>
+        <label htmlFor="riskYearSelect">
+          <FormattedMessage id="treasury-reports.select-year-label" />
+          <select id="riskYearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+            {availableYears.map((year) => (
+              <option value={year} key={year}>
+                {year}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label htmlFor="riskMonthSelect">
+          <FormattedMessage id="treasury-reports.select-month-label" />
+          <select id="riskMonthSelect" value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+            {availableMonths.map((month) => (
+              <option value={month} key={month}>
+                {month}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
+      <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
+        <FormattedMessage id="treasury-reports.download-label" />
+      </a>
+    </section>
+  );
+};
 
 const TreasuryReports = ({ intl }) => {
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
-      <Container className={styles.treasury} fluid>
+      <Container className={styles.container} fluid>
         <Header />
-        <CallToAction />
-        {MONTHS.map(({ month, year, treasuryReport, riskReport }, index) => (
-          <MonthReport key={index} month={month} year={year} treasuryReport={treasuryReport} riskReport={riskReport} />
-        ))}
+        <TreasuryReportSelection />
+        <RiskReportSelection />
+        <AnyQuestions />
       </Container>
     </Layout>
   );

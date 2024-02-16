@@ -1,61 +1,130 @@
-.treasury {
+.container {
   display: flex;
-  gap: 24px;
   flex-direction: column;
   align-items: center;
-  margin: 24px auto;
-  padding-bottom: 24px;
+}
+
+.selectHeader {
+  color: #4d00b4;
 }
 
 .header {
-  font-size: 32px;
-  font-weight: 600;
-  margin: 0 12px;
-  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  background: linear-gradient(180deg, #1e075f 21.45%, #9013fe 100%);
+}
+
+.title {
+  margin-top: 64px;
+}
+
+.treasuryReportsImage {
+  max-width: 840px;
+}
+
+.treasuryReport {
+  background: #fafbfc;
+}
+
+.riskReport {
+  background: #fff;
+}
+
+.treasuryReport,
+.riskReport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.treasuryReport > h1,
+.riskReport > h1 {
+  margin-bottom: 40px;
+}
+
+.treasuryReport > a,
+.riskReport > a {
+  display: block;
+  margin: 12px auto 0 auto !important;
+  width: max-content;
+}
+
+.treasuryReport > p,
+.riskReport > p {
+  font-size: 24px;
+  color: #999;
+  max-width: 1060px;
+  margin-bottom: 40px;
+}
+
+.treasuryReport > p {
+  max-width: 1060px;
+}
+
+.riskReport > p {
+  max-width: 740px;
+}
+
+.labelsContainer {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.labelsContainer > label {
+  color: var(--color-gray);
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  & > select {
+    margin-left: 12px;
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    color: var(--color-purple);
+    background-color: transparent;
+  }
+}
+
+.anyQuestions {
+  background: #9013fe;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 72px;
 }
 
 .paragraph {
   margin-left: 32px;
   margin-right: 32px;
-}
-
-.reportCard {
-  display: flex;
-  width: 80vw;
-  flex-wrap: wrap;
-  background: #6f42c1;
-  border: 1px solid #604260;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 24px 32px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-}
-
-.newWindowSvg {
-  width: 16px;
-  height: 16px;
-  fill: #ffffff;
-}
-
-.reportHeader {
-  display: flex;
-  font-size: 1.2em;
+  color: #fff;
 }
 
 .anchor {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  color: #fff;
+  text-decoration: underline;
 }
 
-.reportBody {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 24px;
+@media (max-width: 900px) {
+  .treasuryReport > h1,
+  .riskReport > h1 {
+    margin-bottom: 32px;
+  }
+
+  .treasuryReport > p,
+  .riskReport > p {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+
+  .labelsContainer {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
 }
