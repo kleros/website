@@ -88,15 +88,17 @@ const Header = () => (
 const AnyQuestions = () => {
   return (
     <div className={styles.anyQuestions}>
-      <h1>Any questions?</h1>
+      <h1>
+        <FormattedMessage id="treasury-reports.any-questions.header" />
+      </h1>
       <p className={styles.paragraph}>
-        Please reach out on our{" "}
+        <FormattedMessage id="treasury-reports.any-questions.content" />{" "}
         <a className={styles.anchor} href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
-          Telegram group
+          <FormattedMessage id="treasury-reports.any-questions.telegram-group" />
         </a>{" "}
-        or by DM on X or Telegram to{" "}
+        <FormattedMessage id="treasury-reports.any-questions.or-by-dm" />{" "}
         <a className={styles.anchor} href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
-          @JuanSamitier
+          <FormattedMessage id="treasury-reports.any-questions.telegram-user" />
         </a>
         .
       </p>
@@ -154,7 +156,7 @@ const TreasuryReportSelection = () => {
       </div>
 
       <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
-        Download
+        <FormattedMessage id="treasury-reports.download-label" />
       </a>
     </section>
   );
@@ -211,7 +213,7 @@ const RiskReportSelection = () => {
       </div>
 
       <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
-        Download
+        <FormattedMessage id="treasury-reports.download-label" />
       </a>
     </section>
   );

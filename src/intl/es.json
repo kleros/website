@@ -16,6 +16,7 @@
   },
   "footer": {
     "about": "Nosotros",
+    "treasury-reports": "Informes del Tesoro",
     "cooperative": "Cooperativa",
     "whitepaper": "White Paper",
     "yellowpaper": "Yellow Paper",
@@ -219,7 +220,6 @@
       "card-2-text": "Ponte en contacto con nosotros para integrar Kleros Escrow en tu proyecto.",
       "card-2-button": "Contáctanos"
     }
-
   },
   "governance": {
     "seo-title": "Governance",
@@ -272,7 +272,6 @@
       "card-3-text": "Al utilizar el módulo de gobernanza SafeSnap de Gnosis Safe junto con Kleros Court como árbitro final, cualquier DAO puede implementar su decisión de gobernanza fuera de la Blockchain sin tener que depender de ninguna parte de confianza para ejecutarlas en la Blockchain.",
       "card-3-button": "Pruebe SafeSnap"
     }
-
   },
   "oracle": {
     "seo-title": "Oracle",
@@ -987,5 +986,26 @@
   },
   "404": {
     "seo-title": "404: Not Found"
+  },
+  "treasury-reports": {
+    "seo-title": "Informes del Tesoro",
+    "select-year-label": "Seleccione un año:",
+    "select-month-label": "Seleccione un mes:",
+    "download-label": "Descargar",
+    "treasury-report": {
+      "title": "Informe del Tesoro",
+      "description": "El informe del Tesoro es un resumen de las actividades financieras de la Cooperativa Kleros. Proporciona una visión general de la cartera, la asignación del tesoro y la evolución financiera de Kleros."
+    },
+    "risk-report": {
+      "title": "Informe de Riesgo",
+      "description": "El informe de riesgo proporciona una visión general del perfil de riesgo que involucra al tesoro de la Cooperativa Kleros."
+    },
+    "any-questions": {
+      "header": "¿Alguna pregunta?",
+      "content": "Por favor, póngase en contacto con nosotros en nuestro",
+      "telegram-group": "grupo de Telegram",
+      "or-by-dm": "o por DM en X o Telegram a",
+      "telegram-user": "@JuanSamitier"
+    }
   }
 }
