@@ -10,7 +10,7 @@ const MONTHS = [
   {
     month: "January",
     year: "2024",
-    treasuryReport: "QmYkhtzmTTJBS4XsCC6FMALVHYSPkunbcnhW1RLmFAUmQM/Jan%2031%20_%20Monthly%20Portfolio%20_Snapshot_%202024%20-%20January%20%2031,%202024.pdf",
+    treasuryReport: "QmVkiXbvMzJmLas8f6CPtNcUbTjngWrNRnrYyp1XESE8eJ/Jan%2031%202024%20Treasury%20Report.pdf",
     riskReport: "QmcGNfZXh4VVwTGiYcmm6fFNb8aWPZobLgogHArcYkRXFD/31%20Jan%20Redefine%20-%20Risk%20Center.01-31-2024.pdf",
   },
   {
