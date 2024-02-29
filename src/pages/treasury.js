@@ -8,6 +8,12 @@ import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
+    month: "February",
+    year: "2024",
+    treasuryReport: "QmXme5NEwQLtY6Dg3prc9mXZiMrAzc8wA9C6P5BNcTq4Vi/FEB%202024%20-%20February%2029,%202024.pdf",
+    riskReport: "QmVcLbqveHp6v71yCNYadzwgKF1A8xHhdjJ49YxRkG8Ngj/FEBRUARY RISK REPORT Redefine - Risk Center.02-29-2024.pdf",
+  },
+  {
     month: "January",
     year: "2024",
     treasuryReport: "QmVkiXbvMzJmLas8f6CPtNcUbTjngWrNRnrYyp1XESE8eJ/Jan%2031%202024%20Treasury%20Report.pdf",
@@ -108,7 +114,7 @@ const AnyQuestions = () => {
 
 const TreasuryReportSelection = () => {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("January");
+  const [selectedMonth, setSelectedMonth] = useState("February");
 
   const availableYears = [...new Set(MONTHS.map((m) => m.year))].sort().reverse();
   const availableMonths = MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month);
@@ -164,7 +170,7 @@ const TreasuryReportSelection = () => {
 
 const RiskReportSelection = () => {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("January");
+  const [selectedMonth, setSelectedMonth] = useState("February");
 
   const availableYears = [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse();
 
