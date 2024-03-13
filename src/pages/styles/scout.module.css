@@ -62,7 +62,7 @@
 
 .scout .rightSide {
   position: relative;
-  width: calc(240x + (450 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  width: calc(200px + (450 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
   height: calc(240px + (550 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
   flex-wrap: wrap;
 }
@@ -231,7 +231,7 @@
 
   .scout .rightSide {
     position: relative;
-    width: calc(260x + (300 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    width: calc(260px + (300 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
     height: calc(260px + (450 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
   }
 
