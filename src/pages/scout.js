@@ -7,10 +7,8 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Sash from "src/components/sash";
 import ScoutBackground from "src/assets/svgs/scout-background.svg";
 import MetamaskLogo from "src/assets/svgs/metamask-logo.svg";
-import ScoutHexagonalImage from "src/assets/images/scout-hexagonal-image.png";
 import SecuredByKleros from "src/assets/svgs/secured-by-kleros.svg";
 import AuditedByVeridise from "src/assets/svgs/audited-by-veridise.svg";
-import CurateLogo from "src/assets/svgs/curate.svg";
 import StarRewards from "src/assets/svgs/star-rewards.svg";
 import MetamaskPopupImage from "src/assets/images/metamask-scout.png";
 import styles from "./styles/scout.module.css";
@@ -68,7 +66,7 @@ const Header = () => (
         </div>
       </div>
       <div className={styles.rightSide}>
-        <img src={ScoutHexagonalImage} />
+        <img src={MetamaskPopupImage} />
       </div>
     </div>
   </div>
@@ -84,23 +82,11 @@ const CommunityCurationSection = () => (
         <FormattedMessage id="scout.community-curation.description" />
       </h2>
     </div>
-    <div className={styles.curateLogoContainer}>
-      <CurateLogo />
-    </div>
   </section>
 );
 
-const MetamaskPopup = () => (
-  <div className={styles.metamaskPopup}>
-    <img src={MetamaskPopupImage} />
-  </div>
-);
-
 const CurateLists = () => (
-  <section className="light">
-    <h1 className={styles.sectionHeader}>
-      <FormattedMessage id="scout.community-curation.curate-lists-header" />
-    </h1>
+  <section className={styles.sectionLight}>
     <Sash
       as="div"
       className={styles.sashContainer}
@@ -192,7 +178,6 @@ const Scout = ({ intl }) => {
       <Container className={styles.scout} fluid>
         <Header />
         <CommunityCurationSection />
-        <MetamaskPopup />
         <CurateLists />
         <AnchorLinks />
         <Rewards />

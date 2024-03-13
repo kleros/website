@@ -62,8 +62,8 @@
 
 .scout .rightSide {
   position: relative;
-  width: calc(240px + (568 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  height: calc(240px + (492 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  width: calc(200px + (450 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  height: calc(240px + (550 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
   flex-wrap: wrap;
 }
 
@@ -119,14 +119,10 @@
   width: 179px;
 }
 
-.scout .curateLogoContainer svg {
-  width: calc(96px + (112 - 96) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  height: calc(96px + (128 - 96) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-}
-
 .scout .communityCurationSection {
-  padding-bottom: 22px;
   background-color: #fafbfc;
+  padding-top: calc(48px + (72 - 48) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  padding-bottom: calc(16px + (40 - 16) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
 }
 
 .scout .communityCurationSection h1 {
@@ -136,15 +132,6 @@
 .scout .communityCurationDescription h2 {
   font-size: 18px;
   color: #999;
-}
-
-.scout .metamaskPopup {
-  padding-top: calc(16px + (40 - 16) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  width: calc(340px + (424 - 340) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-  height: calc(450px + (600 - 450) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-
-  display: block;
-  margin: 0 auto;
 }
 
 .scout figcaption {
@@ -193,8 +180,12 @@
 }
 
 .scout .sashContainer {
-  padding-top: calc(0px + (28 - 0) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+  padding-top: 0;
   padding-bottom: 0;
+}
+
+.scout .sectionLight {
+  padding-top: 0;
 }
 
 .scout .h1 {
@@ -240,8 +231,8 @@
 
   .scout .rightSide {
     position: relative;
-    width: calc(240px + (330 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
-    height: calc(240px + (330 - 240) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    width: calc(260px + (300 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
+    height: calc(260px + (450 - 260) * (min(max(100vw, 375px), 1440px) - 375px) / 875);
   }
 
   .scout .rewardsContainer {
