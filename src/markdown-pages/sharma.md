@@ -1,7 +1,7 @@
 ---
 name: "Abeer Sharma"
 title: "International Arbitration"
-report: "https://ipfs.kleros.io/ipfs/QmaMQ6xse2o8ZqECD9gF2LWD9gVdb8h8FfVe9cmiFnKiTR"
+report: "https://cdn.kleros.link/ipfs/QmaMQ6xse2o8ZqECD9gF2LWD9gVdb8h8FfVe9cmiFnKiTR"
 ---
 
 Abeer Sharma is an alumnus of Queen Mary, University of London and the University of Delhi, with an educational background in law and humanities. Admitted to the bar in India, he practises litigation and international dispute resolution, with professional experience in four jurisdictions. A keen researcher, he is an expert in topics including international commercial and investment law, law and technology, and international dispute resolution. He has recently been awarded the Presidential Ph.D. Scholarship by Hong Kong University, where he will research dispute systems design for the electronic sports industry.

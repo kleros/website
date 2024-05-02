@@ -1,7 +1,7 @@
 ---
 name: "Eric Martin Scott"
 title: "Public Law & Cyber Security"
-report: "https://ipfs.kleros.io/ipfs/QmRQ2obhwQNmJPHYiJzLRVE2rfGBxH2qkttueHrYxWPTqf"
+report: "https://cdn.kleros.link/ipfs/QmRQ2obhwQNmJPHYiJzLRVE2rfGBxH2qkttueHrYxWPTqf"
 ---
 
 Eric graduated Cum Laude from Southern University Law Center in 2014 with a specialization in Public Law, and received a Master in Management from the Harvard University Extension School in 2009.

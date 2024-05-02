@@ -8,6 +8,12 @@ import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
+    month: "April",
+    year: "2024",
+    treasuryReport: "QmNrjnGicptR5X9T3KiLvRcHeanebrEWyycstZQ3WHc8Dy/report-treasury-2024-april.pdf",
+    riskReport: "QmX9LCZrBJbKjJURiQatJm2gj3c7x8RcZfP7jt37zmGocM/may-risk-report-.pdf",
+  },
+  {
     month: "March",
     year: "2024",
     treasuryReport: "QmavHd6pFRYHUTvmkpasjWkk2Zzq54Fb9cuqT39k3KvZC6/monthly-portfolio-snapshot-2024-april-2-2024.pdf",
@@ -133,7 +139,7 @@ const TreasuryReportSelection = () => {
 
   const getReportLink = () => {
     const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear);
-    return report ? `https://ipfs.kleros.io/ipfs/${report.treasuryReport}` : "#";
+    return report ? `https://cdn.kleros.link/ipfs/${report.treasuryReport}` : "#";
   };
 
   return (
@@ -190,7 +196,7 @@ const RiskReportSelection = () => {
 
   const getReportLink = () => {
     const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m.riskReport);
-    return report ? `https://ipfs.kleros.io/ipfs/${report.riskReport}` : "#";
+    return report ? `https://cdn.kleros.link/ipfs/${report.riskReport}` : "#";
   };
 
   return (

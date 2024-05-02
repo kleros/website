@@ -1,7 +1,7 @@
 ---
 name: "Alexis Y. Zeballos"
 title: "Law Student"
-report: "https://ipfs.kleros.io/ipfs/Qmez42XqP4vArwTVtTQkZ5eCdJsL9bVhqipy7qYvcDD3M2/AccesoALaJusticiaEnElMetaverso.pdf"
+report: "https://cdn.kleros.link/ipfs/Qmez42XqP4vArwTVtTQkZ5eCdJsL9bVhqipy7qYvcDD3M2/AccesoALaJusticiaEnElMetaverso.pdf"
 ---
 
 Alexis Zeballos is a law student at the National University of Córdoba in Argentina. Beyond his academic pursuits, he is a dedicated crypto enthusiast, sharing his expertise by teaching blockchain at various educational institutions and associations.

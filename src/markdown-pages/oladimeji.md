@@ -1,7 +1,7 @@
 ---
 name: "Olaleye Oladimeji"
 title: "Blockchain (Kleros) as a tool for transformation of legal services and justice delivery in Africa"
-report: "https://ipfs.kleros.io/ipfs/QmeCAm3JNZCGAYRGUK32DEvYVi14VR8bFzQ81njBqSEeVV/Olaleye%20Oladimeji%20-%20Kleros%20Fellowship%20Report.pdf"
+report: "https://cdn.kleros.link/ipfs/QmeCAm3JNZCGAYRGUK32DEvYVi14VR8bFzQ81njBqSEeVV/Olaleye%20Oladimeji%20-%20Kleros%20Fellowship%20Report.pdf"
 ---
 
 Olaleye Oladimeji is an International Lawyer and Associate at the African office of the International law firm Aliant Law, specialized in diverse law practice areas such as Intellectual property (IP) protection, Telecommunications, Blockchain, Finance, Oil and Gas, Aviation, Entertainment, Sports, Data Protection, Project Financing, and Real Estate.

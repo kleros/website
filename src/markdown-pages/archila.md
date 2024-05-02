@@ -1,7 +1,7 @@
 ---
 name: "Paolo Archila"
 title: "Attorney and Notary Public"
-report: "https://ipfs.kleros.io/ipfs/QmVpts6ZXSFYTQkUCWxJKJv75F3GhaehLAoJuJEpzWkLRh"
+report: "https://cdn.kleros.link/ipfs/QmVpts6ZXSFYTQkUCWxJKJv75F3GhaehLAoJuJEpzWkLRh"
 ---
 
 Paolo Archila is an attorney and notary public, a graduate from Universidad de San Carlos School of Law (Guatemala), who also studied arbitration and digital communication. Since 2013, he's been working in commercial arbitration, trademarks, copyright and patent law cases.
