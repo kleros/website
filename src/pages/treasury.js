@@ -182,7 +182,7 @@ const TreasuryReportSelection = () => {
 
 const RiskReportSelection = () => {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("March");
+  const [selectedMonth, setSelectedMonth] = useState("April");
 
   const availableYears = [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse();
 
