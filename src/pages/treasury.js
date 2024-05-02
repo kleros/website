@@ -126,7 +126,7 @@ const AnyQuestions = () => {
 
 const TreasuryReportSelection = () => {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("March");
+  const [selectedMonth, setSelectedMonth] = useState("April");
 
   const availableYears = [...new Set(MONTHS.map((m) => m.year))].sort().reverse();
   const availableMonths = MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month);
