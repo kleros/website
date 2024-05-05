@@ -185,7 +185,6 @@ const RiskReportSelection = () => {
   const [selectedMonth, setSelectedMonth] = useState("April");
 
   const availableYears = [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse();
-
   const availableMonths = MONTHS.filter((m) => m.year === selectedYear && m.riskReport).map((m) => m.month);
 
   useEffect(() => {
