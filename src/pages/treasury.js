@@ -124,7 +124,7 @@ const AnyQuestions = () => {
   );
 };
 
-const ReportSelection = ({ type, months, caption }) => {
+const ReportSelection = ({ type }) => {
   const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedMonth, setSelectedMonth] = useState("April");
 
@@ -149,17 +149,17 @@ const ReportSelection = ({ type, months, caption }) => {
   }, [selectedYear, availableMonths, selectedMonth]);
 
   const getReportLink = () => {
-    const report = months.find((m) => m.month === selectedMonth && m.year === selectedYear && m[type]);
+    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m[type]);
     return report ? `https://cdn.kleros.link/ipfs/${report[type]}` : "#";
   };
 
   return (
     <section className={styles[`${type}`]}>
       <h1 className={styles.selectHeader}>
-        <FormattedMessage id={`treasury-reports.${caption}.title`} />
+        <FormattedMessage id={`treasury-reports.${type === "treasuryReport" ? "treasury-report" : "risk-report"}.title`} />
       </h1>
       <p>
-        <FormattedMessage id={`treasury-reports.${caption}.description`} />
+        <FormattedMessage id={`treasury-reports.${type === "treasuryReport" ? "treasury-report" : "risk-report"}.description`} />
       </p>
       <div className={styles.labelsContainer}>
         <label htmlFor={`${type}YearSelect`}>
@@ -197,8 +197,8 @@ const TreasuryReports = ({ intl }) => {
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
       <Container className={styles.container} fluid>
         <Header />
-        <ReportSelection type="treasuryReport" caption="treasury-report" months={MONTHS} />
-        <ReportSelection type="riskReport" caption="risk-report" months={MONTHS} />
+        <ReportSelection type="treasuryReport" />
+        <ReportSelection type="riskReport" />
         <AnyQuestions />
       </Container>
     </Layout>
