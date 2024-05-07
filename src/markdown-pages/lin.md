@@ -1,7 +1,7 @@
 ---
 name: "Clara Lin"
 title: "Lawyer"
-report: "https://ipfs.kleros.io/ipfs/QmXkiRewnM65u3ee4tEAj9MDZFyDuNadyF6K3aDDZTyKBg/PracticalFeasibilityStudyOfKlerosInChina.pdf"
+report: "https://cdn.kleros.link/ipfs/QmXkiRewnM65u3ee4tEAj9MDZFyDuNadyF6K3aDDZTyKBg/PracticalFeasibilityStudyOfKlerosInChina.pdf"
 ---
 
 Clara Lin, a graduate of Beijing Foreign Studies University and European Master of Law and Economics, is the founder of OIOLaw, specializing in transnational law and international commerce. With expertise in legal, commercial, and investment sectors, she has expertise in consulting clients globally. Proficient in seven languages, including Russian, Spanish, and English, Clara alongside with her colleagues Kairui Luo, Qing Shi, Jingwen Ji conducted research on the feasibility of Kleros in the Chinese market during the Fellowship.

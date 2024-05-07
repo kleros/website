@@ -70,7 +70,7 @@ import * as EthereumInterface from "src/ethereum/interface";
 
 const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
 const KLEROS_LIQUID = "0x988b3a538b618c7a603e1c11ab82cd16dbe28069";
-const IPFS_GATEWAY = "https://ipfs.kleros.io";
+const IPFS_GATEWAY = "https://cdn.kleros.link";
 
 const sliderSettings = {
   dots: true,
@@ -148,7 +148,7 @@ class IndexPage extends React.Component {
       .then((disputeEvents) =>
         EthereumInterface.contractInstance("IEvidence", arbitrableAddress)
           .getPastEvents("MetaEvidence", { fromBlock: 7303699, toBlock: "latest", filter: { _metaEvidenceID: disputeEvents[0].returnValues._metaEvidenceID.toString() } })
-          .then((metaevidence) => fetch("https://ipfs.kleros.io" + metaevidence[0].returnValues._evidence))
+          .then((metaevidence) => fetch("https://cdn.kleros.link" + metaevidence[0].returnValues._evidence))
           .then((response) => response.json())
       );
 
@@ -202,7 +202,7 @@ class IndexPage extends React.Component {
             if (subcourtURI.includes("http")) {
               return fetch(subcourtURI).then((response) => response.json());
             } else {
-              return fetch("https://ipfs.kleros.io" + subcourtURI).then((response) => response.json());
+              return fetch("https://cdn.kleros.link" + subcourtURI).then((response) => response.json());
             }
           }
         })

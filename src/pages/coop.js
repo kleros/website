@@ -136,7 +136,7 @@ const Coop = ({ intl }) => {
               )}
             </select>
           </label>
-          <a className={`btn btn-primary mt-8 ${styles.button}`} href={`https://ipfs.kleros.io${ANNUAL_REPORTS[selectedYear]}`} rel="noopener noreferrer" target="blank">
+          <a className={`btn btn-primary mt-8 ${styles.button}`} href={`https://cdn.kleros.link${ANNUAL_REPORTS[selectedYear]}`} rel="noopener noreferrer" target="blank">
             <FormattedMessage id="coop.section-reports.download" />
           </a>
         </section>

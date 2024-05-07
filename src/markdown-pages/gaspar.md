@@ -1,7 +1,7 @@
 ---
 name: "Inês Bragança Gaspar"
 title: "Lawyer"
-report: "https://ipfs.kleros.io/ipfs/Qmcbmtf1GKNtf3pv8fNKZ65zmT7VZvSAfHBnhM3CAKY9BV/IntegratingKlerosOntoPlatformsTokenizingRealWorldAssetsForFinancingPurposes.pdf"
+report: "https://cdn.kleros.link/ipfs/Qmcbmtf1GKNtf3pv8fNKZ65zmT7VZvSAfHBnhM3CAKY9BV/IntegratingKlerosOntoPlatformsTokenizingRealWorldAssetsForFinancingPurposes.pdf"
 ---
 
 Inês Bragança Gaspar is a Portuguese lawyer with expertise in Web3 and Blockchain technology. She earned her LLM in European and International Law from Católica Global School of Law, focusing her Master's Thesis on the influence of blockchain on resolving commercial disputes. Inês is particularly interested in researching DeFi and decentralized justice. During her Fellowship, Inês investigated the integration of Kleros into the DeFi sector, specifically examining disputes related to the utilization of real-world assets in corporate financing.

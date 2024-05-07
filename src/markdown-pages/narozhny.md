@@ -1,7 +1,7 @@
 ---
 name: "Dmitry Narozhny"
 title: "Civil Law Attorney"
-report: "https://ipfs.kleros.io/ipfs/QmdH7vuFVATLqdsvWXBBq38fUX2jRp7tbiQ1MvBr8SDxBc"
+report: "https://cdn.kleros.link/ipfs/QmdH7vuFVATLqdsvWXBBq38fUX2jRp7tbiQ1MvBr8SDxBc"
 ---
 
 Dmitry Narozhny is a lawyer based in Russia, specializing in commercial court litigation, civil and corporate law, and bankruptcy. He is Member of the Russian Advocate Board. Dmitry is also the first graduate of the Kleros Fellowship Program.
