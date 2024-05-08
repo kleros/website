@@ -124,12 +124,23 @@ const AnyQuestions = () => {
   );
 };
 
-const TreasuryReportSelection = () => {
+const ReportSelection = ({ type }) => {
   const [selectedYear, setSelectedYear] = useState("2024");
   const [selectedMonth, setSelectedMonth] = useState("April");
 
-  const availableYears = [...new Set(MONTHS.map((m) => m.year))].sort().reverse();
-  const availableMonths = MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month);
+  const availableYears = type === "treasuryReport"
+    ? [...new Set(MONTHS.map((m) => m.year))].sort().reverse()
+    : type === "riskReport"
+      ? [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse()
+      : [];
+
+  const availableMonths = type === "treasuryReport"
+    ? MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month)
+    : type === "riskReport"
+      ? MONTHS
+        .filter((m) => m.year === selectedYear && m.riskReport)
+        .map((m) => m.month)
+      : [];
 
   useEffect(() => {
     if (!availableMonths.includes(selectedMonth)) {
@@ -138,22 +149,22 @@ const TreasuryReportSelection = () => {
   }, [selectedYear, availableMonths, selectedMonth]);
 
   const getReportLink = () => {
-    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear);
-    return report ? `https://cdn.kleros.link/ipfs/${report.treasuryReport}` : "#";
+    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m[type]);
+    return report ? `https://cdn.kleros.link/ipfs/${report[type]}` : "#";
   };
 
   return (
-    <section className={styles.treasuryReport}>
+    <section className={styles[`${type}`]}>
       <h1 className={styles.selectHeader}>
-        <FormattedMessage id="treasury-reports.treasury-report.title" />
+        <FormattedMessage id={`treasury-reports.${type === "treasuryReport" ? "treasury-report" : "risk-report"}.title`} />
       </h1>
       <p>
-        <FormattedMessage id="treasury-reports.treasury-report.description" />
+        <FormattedMessage id={`treasury-reports.${type === "treasuryReport" ? "treasury-report" : "risk-report"}.description`} />
       </p>
       <div className={styles.labelsContainer}>
-        <label htmlFor="yearSelect">
+        <label htmlFor={`${type}YearSelect`}>
           <FormattedMessage id="treasury-reports.select-year-label" />
-          <select id="yearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+          <select id={`${type}YearSelect`} value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
             {availableYears.map((year) => (
               <option value={year} key={year}>
                 {year}
@@ -161,65 +172,9 @@ const TreasuryReportSelection = () => {
             ))}
           </select>
         </label>
-        <label htmlFor="monthSelect">
+        <label htmlFor={`${type}MonthSelect`}>
           <FormattedMessage id="treasury-reports.select-month-label" />
-          <select id="monthSelect" value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
-            {availableMonths.map((month) => (
-              <option value={month} key={month}>
-                {month}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
-
-      <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
-        <FormattedMessage id="treasury-reports.download-label" />
-      </a>
-    </section>
-  );
-};
-
-const RiskReportSelection = () => {
-  const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("April");
-
-  const availableYears = [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse();
-  const availableMonths = MONTHS.filter((m) => m.year === selectedYear && m.riskReport).map((m) => m.month);
-
-  useEffect(() => {
-    if (!availableMonths.includes(selectedMonth)) {
-      setSelectedMonth(availableMonths[0] || "");
-    }
-  }, [selectedYear, availableMonths, selectedMonth]);
-
-  const getReportLink = () => {
-    const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m.riskReport);
-    return report ? `https://cdn.kleros.link/ipfs/${report.riskReport}` : "#";
-  };
-
-  return (
-    <section className={styles.riskReport}>
-      <h1 className={styles.selectHeader}>
-        <FormattedMessage id="treasury-reports.risk-report.title" />
-      </h1>
-      <p>
-        <FormattedMessage id="treasury-reports.risk-report.description" />
-      </p>
-      <div className={styles.labelsContainer}>
-        <label htmlFor="riskYearSelect">
-          <FormattedMessage id="treasury-reports.select-year-label" />
-          <select id="riskYearSelect" value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
-            {availableYears.map((year) => (
-              <option value={year} key={year}>
-                {year}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label htmlFor="riskMonthSelect">
-          <FormattedMessage id="treasury-reports.select-month-label" />
-          <select id="riskMonthSelect" value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+          <select id={`${type}MonthSelect`} value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
             {availableMonths.map((month) => (
               <option value={month} key={month}>
                 {month}
@@ -242,8 +197,8 @@ const TreasuryReports = ({ intl }) => {
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
       <Container className={styles.container} fluid>
         <Header />
-        <TreasuryReportSelection />
-        <RiskReportSelection />
+        <ReportSelection type="treasuryReport" />
+        <ReportSelection type="riskReport" />
         <AnyQuestions />
       </Container>
     </Layout>
