@@ -221,7 +221,7 @@ class IndexPage extends React.Component {
   async componentDidMount() {
     this.setState({ loading: false });
 
-    fetch("https://api.thegraph.com/subgraphs/name/salgozino/klerosboard", {
+    fetch("https://api.studio.thegraph.com/query/66145/klerosboard-mainnet/version/latest", {
       headers: {
         Accept: "*/*",
         "Content-Type": "application/json",
