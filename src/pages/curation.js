@@ -244,7 +244,7 @@ const Curation = ({ intl }) => (
                 id: 'curation.start-now.card-3-title'
               }),
               button: {
-                href: 'https://tokens.kleros.io/tokens',
+                href: 'https://tokens.kleros.io',
                 text: intl.formatMessage(
                   { id: 'curation.start-now.card-3-button' }
                 ),
