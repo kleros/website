@@ -18,6 +18,9 @@
 .sponsors .eu {
 }
 
+.sponsors .blockchain{
+}
+
 .sponsors div {
   align-self: flex-end;
 }
@@ -29,14 +32,18 @@
 }
 
 .sponsors .bpi {
-  verticalalign: middle;
+  vertical-align: middle;
 
   padding: 1rem;
 }
 
 .sponsors .euContainer {
   display: block;
-  width: 100%;
+  width: 60%;
+}
+.sponsors .blockchainGovContainer {
+  display: block;
+  width: 30%;
 }
 
 .sponsors .bpiContainer {
@@ -55,7 +62,12 @@
 
 @media (min-width: 1000px) {
   .euContainer {
-    width: 70% !important;
+    position: relative;
+    left: 10%;
+    width: 40% !important;
+  }
+  .blockchainGovContainer {
+    width: 40% !important;
   }
 
   .bpiContainer {
