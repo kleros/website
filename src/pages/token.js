@@ -13,7 +13,6 @@ import Kyber from "src/assets/images/third-party-logos/kyber.png";
 import Loopring from "src/assets/svgs/loopring.svg";
 import Guardarian from "src/assets/svgs/third-party-logos/guardarian/main.svg";
 import GateIO from "src/assets/svgs/gateio.svg";
-import OKEX from "src/assets/svgs/okex.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Attack from "src/assets/svgs/icon-thug.svg";
 import Governance from "src/assets/svgs/icon-gavel.svg";
@@ -119,9 +118,6 @@ const IndexPage = ({ intl }) => (
           </Badge>
           <Badge as="a" className={styles.badge} href="https://www.gate.io/trade/PNK_USDT" rel="noopener noreferrer" target="blank">
             <GateIO />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://www.okex.com/markets/spot-info/pnk-usdt" rel="noopener noreferrer" target="blank">
-            <OKEX />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://guardarian.com/" rel="noopener noreferrer" target="blank">
             <Guardarian />
