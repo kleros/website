@@ -845,6 +845,81 @@
       }
     }
   },
+  "moderate": {
+    "seo-title": "Kleros Moderate",
+
+    "section-hero": {
+      "h1": "Kleros Moderate"
+    },
+    "solution": {
+      "title": "Solución",
+      "paragraph": "Kleros Moderate utiliza una criptoeconomía sólida para una moderación justa y transparente en tus canales de redes sociales."
+    },
+    "sash": {
+      "title": "Cómo Funciona",
+      "first": {
+        "title": "Solicitud para prohibir a un usuario",
+        "paragraph": "Se hace una solicitud para prohibir a un usuario en un grupo de Telegram."
+      },
+      "second": {
+        "title": "Se deposita un bono",
+        "paragraph": "Se deposita un bono mínimo para apoyar la prohibición en Reality.eth."
+      },
+      "third": {
+        "title": "La prohibición puede ser impugnada",
+        "paragraph": "Si alguna de las partes considera que la prohibición es injusta, puede duplicar el bono para levantar la prohibición del miembro."
+      },
+      "fourth": {
+        "title": "En caso de disputa",
+        "paragraph": "Si el desacuerdo escala, el caso se resolverá en Kleros."
+      },
+      "fifth": {
+        "title": "Fácil de agregar evidencia",
+        "paragraph": "La evidencia se puede agregar directamente desde el grupo y se almacena de forma segura en IPFS."
+      },
+      "sixth": {
+        "title": "Decisión final",
+        "paragraph": "Kleros toma una decisión y el usuario es prohibido o se limpia su reputación."
+      }
+    },
+    "call-to-action": "Únete a la beta"
+  },
+  "scout": {
+    "seo-title": "Kleros Scout",
+
+    "section-hero": {
+      "button-blue": "Agregar a Metamask",
+      "button-purple": "Ver en el Directorio de Snaps",
+      "intro": "Obtén información valiosa con",
+      "title": "Kleros Scout",
+      "description": "Kleros Scout Snap extrae metadatos de contratos de los registros de tokens curados descentralizados de Kleros para proporcionar información sobre el contrato con el que estás interactuando."
+    },
+    "community-curation": {
+      "title": "Información Curada por la Comunidad",
+      "description": "Las presentaciones evaluadas de los siguientes registros de Kleros Curate se configuran inmediatamente en el complemento Kleros Scout en Metamask Snaps, lo que permite a los usuarios descubrir qué tokens son seguros, qué direcciones pueden ser sospechosas y qué contratos están relacionados con qué direcciones de dominio.",
+      "button-text": "Abrir Lista",
+      "second-button-text": "Sugerir un Insight",
+      "registries": {
+        "tokens": {
+          "title": "Registro de Tokens",
+          "description": "La lista curada por la comunidad de tokens permitidos y seguros con los que los usuarios pueden interactuar con confianza, minimizando el riesgo de tokens maliciosos o inseguros."
+        },
+        "address-tags": {
+          "title": "Registro de Etiquetas de Direcciones",
+          "description": "Este registro permite a los usuarios identificar la confiabilidad de las direcciones, mitigando los riesgos potenciales asociados con la interacción con direcciones desconocidas o sospechosas."
+        },
+        "contract-domain-name": {
+          "title": "Registro de Nombres de Dominio de Contratos",
+          "description": "Este registro juega un papel crítico en la prevención de ataques DNS en el front-end. Facilita el mapeo de contratos a los dominios con los que se sabe que están asociados, asegurando que los usuarios interactúan con el contrato correcto asociado con un dominio particular."
+        }
+      },
+      "receive-rewards": {
+        "title": "Recibe Recompensas",
+        "description": "Recibe recompensas por cada presentación válida en los registros de Curate.",
+        "button-text": "Saber Más"
+      }
+    }
+  },
   "career": {
     "seo-title": "Carreras",
     "section-hero": {
