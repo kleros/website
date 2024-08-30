@@ -59,7 +59,9 @@ const Moderate = ({ intl }) => {
         <span className="trapezium" />
 
         <section className="light">
-          <h2>Works with Telegram, more platforms coming soon...</h2>
+          <h2>
+            <FormattedMessage id='moderate.works-with' />
+          </h2>
           <div className={styles.worksWithLogos}>
             <TelegramLogo />
             <DiscordLogo />

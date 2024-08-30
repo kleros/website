@@ -853,7 +853,7 @@
     },
     "solution": {
       "title": "Solución",
-      "paragraph": "Kleros Moderate utiliza una criptoeconomía sólida para una moderación justa y transparente en tus canales de redes sociales."
+      "paragraph": "Kleros Moderate utiliza un sistema criptoeconómico sólido para una moderación justa y transparente en tus canales de redes sociales."
     },
     "sash": {
       "title": "Cómo Funciona",
@@ -882,7 +882,8 @@
         "paragraph": "Kleros toma una decisión y el usuario es prohibido o se limpia su reputación."
       }
     },
-    "call-to-action": "Únete a la beta"
+    "call-to-action": "Únete a la beta",
+    "works-with": "Funciona con Telegram, más plataformas próximamente..."
   },
   "scout": {
     "seo-title": "Kleros Scout",

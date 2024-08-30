@@ -346,7 +346,8 @@
         "paragraph": "Kleros makes a ruling and the user is either banned or has their reputation cleared."
       }
     },
-    "call-to-action": "Join the beta"
+    "call-to-action": "Join the beta",
+    "works-with": "Works with Telegram, more platforms coming soon..."
   },
   "scout": {
     "seo-title": "Kleros Scout",
