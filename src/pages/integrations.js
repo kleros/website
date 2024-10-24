@@ -20,7 +20,7 @@ import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
 import Gnosis from "src/assets/svgs/gnosis-mono.svg";
 import API3 from "src/assets/images/third-party-logos/api3_mono.png";
-import Unslashed from "src/assets/images/third-party-logos/unslashed.png";
+import Seer from "src/assets/svgs/seer.svg";
 import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets-mono.png";
 import DeversifiMono from "src/assets/images/third-party-logos/deversifi-mono.png";
 import Omen from "src/assets/svgs/omen_logo.svg";
@@ -114,7 +114,7 @@ const Integrations = ({ intl }) => (
             <span className={styles.helper}></span>
             <img src={DeversifiMono} alt="Deversifi" />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://uniswap.org/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://tokenlists.org/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
             <UniswapWhite />
           </Badge>
@@ -130,9 +130,9 @@ const Integrations = ({ intl }) => (
             <span className={styles.helper}></span>
             <img src={API3} alt="API3" />
           </Badge>
-          <Badge as="a" className={styles.badge} href="https://unslashed.finance/" rel="noopener noreferrer" target="blank">
+          <Badge as="a" className={styles.badge} href="https://seer.pm/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
-            <img src={Unslashed} alt="Unslashed" />
+            <Seer />
           </Badge>
           <Badge as="a" className={styles.badge} href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
             <span className={styles.helper}></span>
