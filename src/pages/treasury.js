@@ -8,6 +8,12 @@ import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
+    month: "October",
+    year: "2024",
+    treasuryReport: "QmcY5sSzwk9JJq6PHvw723CTYQTsJXgnnstrh9nUsLYD86/october-2024-monthly-portfolio-snapshot-2024-october-2024.pdf",
+    riskReport: "QmVXihH3zP46XfZZuHFpKC6oAuaFSXQBbkseDm5sQiqAVu/october-2024-risk-reports-redefine-risk-center.11-02-2024.pdf",
+  },
+  {
     month: "September",
     year: "2024",
     treasuryReport: "QmT8yqKhdPLPFfRPmr6zhfAnpVKb8yQyXRMkMcaEhnrshv/monthly-portfolio-snapshot-2024-september-2024.pdf",
@@ -156,7 +162,7 @@ const AnyQuestions = () => {
 
 const ReportSelection = ({ type }) => {
   const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("September");
+  const [selectedMonth, setSelectedMonth] = useState("October");
 
   const availableYears = type === "treasuryReport"
     ? [...new Set(MONTHS.map((m) => m.year))].sort().reverse()
