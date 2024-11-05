@@ -30,7 +30,7 @@ import Zeballos from "src/assets/images/person/zeballos.png";
 import Gaspar from "src/assets/images/person/gaspar.png";
 import Tewari from "src/assets/images/person/tewari.png";
 import Poenicke from "src/assets/images/person/poenicke.png";
-import Echeverria from "src/assets/images/person/echeverria.png";
+import Muñoz from "src/assets/images/person/muñoz.png";
 import Fiorentini from "src/assets/images/person/fiorentini.png";
 
 const PHOTOS = {
@@ -41,7 +41,6 @@ const PHOTOS = {
   Comenale,
   Deplano,
   Duarte,
-  Echeverria,
   Fiorentini,
   Galindo,
   Gaspar,
@@ -50,6 +49,7 @@ const PHOTOS = {
   Lin,
   Lowther,
   Mohammadi,
+  Muñoz,
   Narozhny,
   Obafemi,
   Oladimeji,
