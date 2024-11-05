@@ -337,7 +337,7 @@ module.exports = {
       { name: "Inês Bragança Gaspar", title: "Lawyer", location: "Portugal", batch: 6 },
       { name: "Paul Poenicke", title: "Philosopher", batch: 6 },
       { name: "Aakriti Anurag Tewari", title: "Law Student", batch: 6 },
-      { name: "Darío Echeverría Muñoz", title: "Laywer Specialist in Digital Law", batch: 7 },
+      { name: "Darío Echeverría Muñoz", title: "Lawyer Specialist in Digital Law", batch: 7 },
       { name: "Maria Angela Fiorentini", title: "Law Student", batch: 7 },
     ],
   },
