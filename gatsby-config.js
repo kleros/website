@@ -335,8 +335,10 @@ module.exports = {
       { name: "Clara Lin", title: "Lawyer", location: "China", batch: 6 },
       { name: "Alexis Y. Zeballos", title: "Law Student", location: "Argentina", batch: 6 },
       { name: "Inês Bragança Gaspar", title: "Lawyer", location: "Portugal", batch: 6 },
-      { name: "Paul Poenicke", title: "Philosopher", batch: 6},
-      { name: "Aakriti Anurag Tewari", title: "Law Student", batch: 6}
+      { name: "Paul Poenicke", title: "Philosopher", batch: 6 },
+      { name: "Aakriti Anurag Tewari", title: "Law Student", batch: 6 },
+      { name: "Darío Echeverría Muñoz", title: "Laywer Specialist in Digital Law", batch: 7 },
+      { name: "Maria Angela Fiorentini", title: "Law Student", batch: 7 },
     ],
   },
 
