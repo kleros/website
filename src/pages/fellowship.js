@@ -39,6 +39,9 @@ import Zeballos from "src/assets/images/person/zeballos.png";
 import Gaspar from "src/assets/images/person/gaspar.png";
 import Tewari from "src/assets/images/person/tewari.png";
 import Poenicke from "src/assets/images/person/poenicke.png";
+import Muñoz from "src/assets/images/person/muñoz.png";
+import Fiorentini from "src/assets/images/person/fiorentini.png";
+import Anand from "src/assets/images/person/anand.png";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
 import Slider from "react-slick";
@@ -49,12 +52,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const PHOTOS = {
   Abad,
+  Anand, 
   Archila,
   Bergolla,
   Carrera,
   Comenale,
   Deplano,
   Duarte,
+  Fiorentini,
   Galindo,
   Gaspar,
   Goldstein,
@@ -62,6 +67,7 @@ const PHOTOS = {
   Lin,
   Lowther,
   Mohammadi,
+  Muñoz,
   Narozhny,
   Obafemi,
   Oladimeji,
