@@ -138,7 +138,7 @@ const IndexPage = ({ intl }) => (
             </p>
           </div>
           <div className={styles.otcButton}>
-            <a className="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform">
+            <a className="btn btn-primary" href="mailto:contact@kleros.io?subject=OTC%20offer">
               <FormattedMessage id="token.section-otc.button" />
             </a>
           </div>
