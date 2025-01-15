@@ -95,7 +95,7 @@ const CurateLists = () => (
           text: <FormattedMessage id="scout.community-curation.registries.tokens.description" />,
           title: <FormattedMessage id="scout.community-curation.registries.tokens.title" />,
           button: {
-            href: "https://curate.kleros.io/tcr/100/0xeE1502e29795Ef6C2D60F8D7120596abE3baD990",
+            href: "https://app.klerosscout.eth.limo/#/?registry=Tokens",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
           secondButton: {
@@ -107,7 +107,7 @@ const CurateLists = () => (
           text: <FormattedMessage id="scout.community-curation.registries.address-tags.description" />,
           title: <FormattedMessage id="scout.community-curation.registries.address-tags.title" />,
           button: {
-            href: "https://curate.kleros.io/tcr/100/0x66260C69d03837016d88c9877e61e08Ef74C59F2",
+            href: "https://app.klerosscout.eth.limo/#/?registry=Single_Tags",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
           secondButton: {
@@ -119,7 +119,7 @@ const CurateLists = () => (
           text: <FormattedMessage id="scout.community-curation.registries.contract-domain-name.description" />,
           title: <FormattedMessage id="scout.community-curation.registries.contract-domain-name.title" />,
           button: {
-            href: "https://curate.kleros.io/tcr/100/0x957A53A994860BE4750810131d9c876b2f52d6E1",
+            href: "https://app.klerosscout.eth.limo/#/?registry=CDN",
             text: <FormattedMessage id="scout.community-curation.button-text" />,
           },
           secondButton: {
