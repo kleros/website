@@ -8,6 +8,11 @@ import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
+    month: "January",
+    year: "2025",
+    treasuryReport: "QmWNGmQabtTvHHPqRXzSBEMhogjydGdD4vpXEijHAEySNX/treasury-january-2025.pdf",
+  },
+  {
     month: "December",
     year: "2024",
     treasuryReport: "QmRtrLrgctXTEtHKeVrjaAguohWJrqdSTCV1STDbyjBP22/december-2024-monthly-portfolio-snapshot-2024-december-2024.pdf",
@@ -173,8 +178,10 @@ const AnyQuestions = () => {
 };
 
 const ReportSelection = ({ type }) => {
-  const [selectedYear, setSelectedYear] = useState("2024");
-  const [selectedMonth, setSelectedMonth] = useState("December");
+  const [selectedYear, setSelectedYear] = useState(type === "treasuryReport" ? "2025" : "2024");
+  const [selectedMonth, setSelectedMonth] = useState(
+    type === "treasuryReport" ? "January" : "December"
+  );
 
   const availableYears = type === "treasuryReport"
     ? [...new Set(MONTHS.map((m) => m.year))].sort().reverse()
@@ -231,7 +238,6 @@ const ReportSelection = ({ type }) => {
           </select>
         </label>
       </div>
-
       <a className={`btn btn-primary mt-8 ${styles.button}`} href={getReportLink()} rel="noopener noreferrer" target="_blank">
         <FormattedMessage id="treasury-reports.download-label" />
       </a>
