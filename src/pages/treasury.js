@@ -147,6 +147,16 @@ const MONTHS = [
   },
 ];
 
+const getLatestReport = (type) => {
+  const reports = MONTHS.filter((m) => m[type]);
+  reports.sort((a, b) => {
+    const dateA = new Date(`${a.year} ${a.month} 1`);
+    const dateB = new Date(`${b.year} ${b.month} 1`);
+    return dateB - dateA;
+  });
+  return reports[0] || {};
+};
+
 const Header = () => (
   <div className={styles.header}>
     <h1 className={styles.title}>
@@ -156,52 +166,38 @@ const Header = () => (
   </div>
 );
 
-const AnyQuestions = () => {
-  return (
-    <div className={styles.anyQuestions}>
-      <h1>
-        <FormattedMessage id="treasury-reports.any-questions.header" />
-      </h1>
-      <p className={styles.paragraph}>
-        <FormattedMessage id="treasury-reports.any-questions.content" />{" "}
-        <a className={styles.anchor} href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
-          <FormattedMessage id="treasury-reports.any-questions.telegram-group" />
-        </a>{" "}
-        <FormattedMessage id="treasury-reports.any-questions.or-by-dm" />{" "}
-        <a className={styles.anchor} href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
-          <FormattedMessage id="treasury-reports.any-questions.telegram-user" />
-        </a>
-        .
-      </p>
-    </div>
-  );
-};
+const AnyQuestions = () => (
+  <div className={styles.anyQuestions}>
+    <h1>
+      <FormattedMessage id="treasury-reports.any-questions.header" />
+    </h1>
+    <p className={styles.paragraph}>
+      <FormattedMessage id="treasury-reports.any-questions.content" />{" "}
+      <a className={styles.anchor} href="https://t.me/kleros" target="_blank" rel="noopener noreferrer">
+        <FormattedMessage id="treasury-reports.any-questions.telegram-group" />
+      </a>{" "}
+      <FormattedMessage id="treasury-reports.any-questions.or-by-dm" />{" "}
+      <a className={styles.anchor} href="https://x.com/JuanSamitier" target="_blank" rel="noopener noreferrer">
+        <FormattedMessage id="treasury-reports.any-questions.telegram-user" />
+      </a>
+      .
+    </p>
+  </div>
+);
 
 const ReportSelection = ({ type }) => {
-  const [selectedYear, setSelectedYear] = useState(type === "treasuryReport" ? "2025" : "2024");
-  const [selectedMonth, setSelectedMonth] = useState(
-    type === "treasuryReport" ? "January" : "December"
-  );
+  const latestReport = getLatestReport(type);
+  const [selectedYear, setSelectedYear] = useState(latestReport.year);
+  const [selectedMonth, setSelectedMonth] = useState(latestReport.month);
 
-  const availableYears = type === "treasuryReport"
-    ? [...new Set(MONTHS.map((m) => m.year))].sort().reverse()
-    : type === "riskReport"
-      ? [...new Set(MONTHS.filter((m) => m.riskReport).map((m) => m.year))].sort().reverse()
-      : [];
-
-  const availableMonths = type === "treasuryReport"
-    ? MONTHS.filter((m) => m.year === selectedYear).map((m) => m.month)
-    : type === "riskReport"
-      ? MONTHS
-        .filter((m) => m.year === selectedYear && m.riskReport)
-        .map((m) => m.month)
-      : [];
+  const availableYears = [...new Set(MONTHS.filter((m) => m[type]).map((m) => m.year))].sort().reverse();
+  const availableMonths = MONTHS.filter((m) => m.year === selectedYear && m[type]).map((m) => m.month);
 
   useEffect(() => {
     if (!availableMonths.includes(selectedMonth)) {
       setSelectedMonth(availableMonths[0] || "");
     }
-  }, [selectedYear, availableMonths, selectedMonth]);
+  }, [selectedYear, availableMonths]);
 
   const getReportLink = () => {
     const report = MONTHS.find((m) => m.month === selectedMonth && m.year === selectedYear && m[type]);
@@ -221,9 +217,7 @@ const ReportSelection = ({ type }) => {
           <FormattedMessage id="treasury-reports.select-year-label" />
           <select id={`${type}YearSelect`} value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
             {availableYears.map((year) => (
-              <option value={year} key={year}>
-                {year}
-              </option>
+              <option value={year} key={year}>{year}</option>
             ))}
           </select>
         </label>
@@ -231,9 +225,7 @@ const ReportSelection = ({ type }) => {
           <FormattedMessage id="treasury-reports.select-month-label" />
           <select id={`${type}MonthSelect`} value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
             {availableMonths.map((month) => (
-              <option value={month} key={month}>
-                {month}
-              </option>
+              <option value={month} key={month}>{month}</option>
             ))}
           </select>
         </label>
@@ -245,18 +237,16 @@ const ReportSelection = ({ type }) => {
   );
 };
 
-const TreasuryReports = ({ intl }) => {
-  return (
-    <Layout>
-      <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
-      <Container className={styles.container} fluid>
-        <Header />
-        <ReportSelection type="treasuryReport" />
-        <ReportSelection type="riskReport" />
-        <AnyQuestions />
-      </Container>
-    </Layout>
-  );
-};
+const TreasuryReports = ({ intl }) => (
+  <Layout>
+    <SEO lang={intl.locale} title={intl.formatMessage({ id: "treasury-reports.seo-title" })} />
+    <Container className={styles.container} fluid>
+      <Header />
+      <ReportSelection type="treasuryReport" />
+      <ReportSelection type="riskReport" />
+      <AnyQuestions />
+    </Container>
+  </Layout>
+);
 
 export default injectIntl(TreasuryReports);
