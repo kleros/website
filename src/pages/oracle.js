@@ -13,12 +13,6 @@ import HexIconKleros from 'src/assets/svgs/icon-kleros.svg';
 import OracleExample from 'src/assets/svgs/oracle-example.svg';
 import HexIconHandshake from 'src/assets/svgs/icon-handshake.svg'
 import IconOracle from "src/assets/svgs/icon-oracle.svg";
-import TrustedBy from 'src/components/trusted-by';
-import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
-import OneInch from "src/assets/images/third-party-logos/1inch-horizontal.png";
-import Nexter from "src/assets/images/third-party-logos/nexter-horizontal.png";
-import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
-import Gnosis from "src/assets/images/third-party-logos/gnosis-safe-logo.png";
 import UseCases from 'src/components/usecases-usecases.js';
 import CircleIconTrendUp from 'src/assets/svgs/circle-icon-trend-up.svg';
 import CircleIconDices from 'src/assets/svgs/circle-icon-dices.svg';
@@ -74,42 +68,6 @@ const Oracle = ({ intl }) => (
           ]}
         />
       </section>
-
-      <TrustedBy
-        className="grey"
-        partners={[
-          {
-            href: "https://1inch.io/",
-            icon: OneInch,
-            name: "1Inch",
-            mobile: true,
-          },
-          {
-            href: "https://omen.eth.link/",
-            icon: OmenSVG,
-            name: "Omen",
-            mobile: true,
-          },
-          {
-            href: "https://nexter.fi/",
-            icon: Nexter,
-            name: "Nexter",
-            mobile: true,
-          },
-          {
-            href: "https://www.polkamarkets.com/",
-            icon: Polkamarkets,
-            name: "Polkamarkets",
-            mobile: true,
-          },
-          {
-            href: "https://gnosis.io/",
-            icon: Gnosis,
-            name: "Gnosis",
-            mobile: true,
-          }
-        ]}
-      />
 
       <section className={`grey ${styles.dappImage}`}>
         <OracleExample />

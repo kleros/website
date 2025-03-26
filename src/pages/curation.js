@@ -25,14 +25,6 @@ import CircleIconPlus from '../assets/icons/plus.png';
 import { Container } from 'react-bootstrap'
 import { FormattedMessage, injectIntl } from 'gatsby-plugin-intl'
 import styles from './styles/curation.module.css'
-import TrustedBy from '../components/trusted-by';
-import Ledger from "../assets/images/third-party-logos/ledger-horizontal.png";
-import Etherscan from "../assets/images/third-party-logos/etherscan-horizontal.png";
-import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
-import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
-import Sushi from "src/assets/images/third-party-logos/sushi-horizontal.png";
-import Zerion from "../assets/images/third-party-logos/zerion/png/blue-logo-and-text-transparent.png";
-import Paraswap from "src/assets/images/third-party-logos/paraswap-horizontal.png";
 import Contact from '../components/contact';
 
 const Curation = ({ intl }) => (
@@ -79,53 +71,6 @@ const Curation = ({ intl }) => (
           ]}
         />
       </section>
-
-      <TrustedBy
-        className="grey"
-        partners={[
-          {
-            href: "https://etherscan.io",
-            icon: Etherscan,
-            name: "Etherscan",
-            mobile: true,
-          },
-          {
-            href: "https://ledger.com",
-            icon: Ledger,
-            name: "Ledger",
-            mobile: true,
-          },
-          {
-            href: "https://omen.eth.link/",
-            icon: OmenSVG,
-            name: "Omen"
-          },
-          {
-            href: "https://uniswap.org/",
-            icon: Uniswap,
-            name: "Uniswap",
-            mobile: true,
-          },
-          {
-            href: "https://sushi.com/",
-            icon: Sushi,
-            name: "Sushi",
-            mobile: true,
-          },
-          {
-            href: "https://zerion.io/",
-            icon: Zerion,
-            name: "Zerion"
-          },
-          {
-            href: "https://www.paraswap.io/",
-            icon: Paraswap,
-            name: "Paraswap",
-            mobile: true,
-          }
-          
-        ]}
-      />
 
       <section className={`grey ${styles.dappImage}`}>
         <CurationExample />

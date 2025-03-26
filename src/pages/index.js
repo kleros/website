@@ -6,44 +6,19 @@ import Sponsors from "src/components/sponsors";
 
 import DisputeCard from "src/components/dispute-card";
 import HorizontalCard from "../components/horizontal-card";
-import CardHighlight from "../components/card-highlight";
-import TrustedBy from "src/components/trusted-by";
 
 import VerticalCard from "../components/vertical-card";
 import Contact from "../components/contact";
-import { Badge, Col, Container, Row, Spinner, Button } from "react-bootstrap";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { FormattedMessage, Link, injectIntl } from "gatsby-plugin-intl";
-import OmenSVG from "src/assets/svgs/third-party-logos/omen/omen.svg";
-import RhinoFi from "src/assets/images/third-party-logos/rhinofi-horizontal.png";
 
-import Etherscan from "../assets/images/third-party-logos/etherscan-horizontal.png";
-import Unslashed from "src/assets/svgs/third-party-logos/unslashed/dark.svg";
-import Polkamarkets from "src/assets/svgs/third-party-logos/polkamarkets/dark.svg";
-import Gnosis from "src/assets/svgs/gnosis-logo.svg";
-import API3 from "src/assets/images/third-party-logos/api3/dark.png";
-import Uniswap from "src/assets/svgs/third-party-logos/uniswap/Uniswap_Lockup_Large_Black-1.svg";
 import styles from "./styles/index.module.css";
-import Court from "../assets/svgs/kleros.svg";
 import RightArrow from "../assets/svgs/right-arrow.svg";
 import Logo from "../assets/svgs/kleros-white.svg";
-import Curate from "../assets/svgs/curate.svg";
-import Escrow from "../assets/svgs/escrow.svg";
-import T2CR from "../assets/svgs/t2cr.svg";
-import Resolver from "../assets/svgs/dispute-resolver.svg";
-import Ninja from "../assets/svgs/ninja.svg";
-import Linguo from "../assets/svgs/linguo.svg";
 import Play from "src/assets/svgs/play.svg";
-import Revoke from "../assets/svgs/revoke.svg";
 import CasesDisputesEN from "src/assets/svgs/illustration-home-en.svg";
 import CasesDisputesES from "src/assets/svgs/illustration-home-es.svg";
-import ProductsIllustration from "src/assets/images/products-illustration.png";
 import Scales from "src/assets/svgs/icon-scales.svg";
-import Hats from "src/assets/svgs/third-party-logos/hats/hats_text.svg";
-import Ledger from "../assets/images/third-party-logos/ledger-horizontal.png";
-import OneInch from "../assets/images/third-party-logos/1inch-horizontal.png";
-import Zerion from "../assets/images/third-party-logos/zerion-horizontal.png";
-import Aragon from "../assets/images/third-party-logos/aragon-horizontal.png";
-import PolygonID from "../assets/images/third-party-logos/polygonid-logo.png";
 import Epsilon from "src/assets/svgs/icon-epsilon.svg";
 import Kleros from "src/assets/svgs/icon-kleros.svg";
 import Gavel from "src/assets/svgs/icon-gavel.svg";
@@ -57,7 +32,6 @@ import moderation from "src/assets/svgs/icon-moderation.svg";
 import plus from "src/assets/svgs/icon-plus.svg";
 import smallClaims from "src/assets/svgs/icon-gavel-2.svg";
 import token from "src/assets/svgs/icon-token.svg";
-import IndexHero from "src/assets/svgs/court-hero.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -362,86 +336,6 @@ class IndexPage extends React.Component {
               ]}
             />
           </section>
-
-          <TrustedBy
-            partners={[
-              {
-                href: "https://www.unn.finance/",
-                icon: Ledger,
-                name: "Ledger",
-                mobile: true,
-              },
-              {
-                href: "https://1inch.io",
-                icon: OneInch,
-                name: "1Inch",
-                mobile: true,
-              },
-              {
-                href: "https://omen.eth.link/",
-                icon: OmenSVG,
-                name: "Omen",
-              },
-              {
-                href: "https://etherscan.io/",
-                icon: Etherscan,
-                name: "Etherscan",
-                mobile: true,
-              },
-              {
-                href: "https://aragon.org/",
-                icon: Aragon,
-                name: "Aragon",
-              },
-              {
-                href: "https://www.rhino.fi",
-                icon: RhinoFi,
-                name: "Rhino.fi",
-              },
-              {
-                href: "https://polygon.technology/polygon-id",
-                icon: PolygonID,
-                name: "PolygonID",
-              },
-              {
-                href: "https://zerion.io",
-                icon: Zerion,
-                name: "Zerion",
-              },
-              {
-                href: "https://uniswap.org/",
-                icon: Uniswap,
-                name: "Uniswap",
-              },
-
-              {
-                href: "https://gnosis.io/",
-                icon: Gnosis,
-                name: "Gnosis",
-                mobile: true,
-              },
-              {
-                href: "https://api3.org/",
-                icon: API3,
-                name: "API3",
-              },
-              {
-                href: "https://unslashed.finance/",
-                icon: Unslashed,
-                name: "Unslashed",
-              },
-              {
-                href: "https://www.polkamarkets.com/",
-                icon: Polkamarkets,
-                name: "Polkamarkets",
-              },
-              {
-                href: "https://hats.finance/",
-                icon: Hats,
-                name: "Hats",
-              },
-            ]}
-          />
 
           {process.env.GATSBY_WEB3_PROVIDER_URL && (
             <section className={styles.disputes}>

@@ -18,21 +18,8 @@ import ERC1497ES from "src/assets/svgs/illustration-erc1497-es.svg";
 
 import Archon from "src/assets/svgs/archon.svg";
 import Deversifi from "src/assets/images/third-party-logos/deversifi.png";
-import Gnosis from "src/assets/svgs/gnosis-mono.svg";
-import API3 from "src/assets/images/third-party-logos/api3_mono.png";
-import Seer from "src/assets/svgs/seer.svg";
-import Polkamarkets from "src/assets/images/third-party-logos/polkamarkets-mono.png";
-import DeversifiMono from "src/assets/images/third-party-logos/deversifi-mono.png";
-import Omen from "src/assets/svgs/omen_logo.svg";
-import Hats from "src/assets/svgs/third-party-logos/hats/hats_text_mono.svg";
-import WindingTreeMono from "src/assets/images/third-party-logos/winding-mono.png";
-import CryptoUnlockedMono from "src/assets/images/third-party-logos/crypto-unlocked-mono.png";
-import RealitioMono from "src/assets/images/third-party-logos/realitio-mono.png";
-import DutchXMono from "src/assets/images/third-party-logos/dutch-mono.png";
 import Uniswap from "src/assets/svgs/uniswap.svg";
-import UniswapWhite from "src/assets/svgs/uniswap_logo.svg";
 
-import Union from "src/assets/svgs/union.svg";
 
 import ExchangeIllustrationEN from "src/assets/svgs/exchange-en.svg";
 import ExchangeIllustrationES from "src/assets/svgs/exchange-es.svg";
@@ -46,7 +33,6 @@ import BountiesIllustrationES from "src/assets/svgs/bounties-es.svg";
 import CurationIllustrationEN from "src/assets/svgs/curation-en.svg";
 import CurationIllustrationES from "src/assets/svgs/curation-es.svg";
 
-import Ninja from "src/assets/svgs/ninja-black-text.svg";
 import { Badge } from "react-bootstrap";
 import Categories from "src/intl/en.json";
 
@@ -99,49 +85,6 @@ const Integrations = ({ intl }) => (
           <a className="btn btn-secondary" href="mailto:integrations@kleros.io" rel="noopener noreferrer" target="blank">
             <FormattedMessage id="integrations.section-hero.button" />
           </a>
-        </div>
-      </section>
-      <section className={`${styles.trustedBy}`}>
-        <h2 className="text-center">
-          <FormattedMessage id="integrations.section-trusted-by" />
-        </h2>
-        <div>
-          <Badge as="a" className={styles.badge} href="https://gateway.ipfs.io/ipfs/QmbB3wA5R2PR8s87pJRSUCcBHRxAtfFtkSWmVWEcHsaFeV" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <Omen />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://deversifi.com/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={DeversifiMono} alt="Deversifi" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://tokenlists.org/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <UniswapWhite />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://www.unn.finance/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <Union />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://gnosis.io/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <Gnosis />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://api3.org/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={API3} alt="API3" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://seer.pm/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <Seer />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://www.polkamarkets.com/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <img src={Polkamarkets} alt="Polkamarkets" />
-          </Badge>
-          <Badge as="a" className={styles.badge} href="https://hats.finance/" rel="noopener noreferrer" target="blank">
-            <span className={styles.helper}></span>
-            <Hats />
-          </Badge>
         </div>
       </section>
       <section className={styles.items}>
