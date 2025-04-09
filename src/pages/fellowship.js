@@ -42,6 +42,7 @@ import Poenicke from "src/assets/images/person/poenicke.png";
 import Muñoz from "src/assets/images/person/muñoz.png";
 import Fiorentini from "src/assets/images/person/fiorentini.png";
 import Anand from "src/assets/images/person/anand.png";
+import Felices from "src/assets/images/person/felices.png";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
 import Slider from "react-slick";
@@ -59,6 +60,7 @@ const PHOTOS = {
   Comenale,
   Deplano,
   Duarte,
+  Felices,
   Fiorentini,
   Galindo,
   Gaspar,

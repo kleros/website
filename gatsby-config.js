@@ -340,6 +340,7 @@ module.exports = {
       { name: "Darío Echeverría Muñoz", title: "Lawyer Specialist in Digital Law", batch: 7 },
       { name: "Maria Angela Fiorentini", title: "Law Student", batch: 7 },
       { name: "Parul Anand", title: "Law Student", batch: 7 },
+      { name: "Jose M. Martínez Felices", title: "Governance Analyst", batch: 7 },
     ],
   },
 
