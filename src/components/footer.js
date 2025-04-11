@@ -4,7 +4,6 @@ import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Telegram from "src/assets/svgs/telegram.svg";
 import X from "src/assets/svgs/x.svg";
-import Slack from "src/assets/svgs/slack.svg";
 import Reddit from "src/assets/svgs/reddit.svg";
 import Ghost from "src/assets/svgs/ghost.svg";
 import Medium from "src/assets/svgs/medium.svg";
@@ -131,9 +130,6 @@ const Footer = ({ intl }) => (
         <Row className={styles.social}>
           <a className="" href="https://github.com/kleros" rel="noopener noreferrer" target="_blank">
             <Github />
-          </a>
-          <a className="" href="https://join.slack.com/t/kleros/shared_invite/zt-1y72qhz6c-~XpMPREdSvzBBg5EHaaRYw" rel="noopener noreferrer" target="_blank">
-            <Slack />
           </a>
           <a className="" href="https://discord.gg/MhXQGCyHd9" rel="noopener noreferrer" target="_blank">
             <Discord />
