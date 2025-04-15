@@ -65,6 +65,12 @@
   force = false
 
 [[redirects]]
+  from = "/slack"
+  to = "https://join.slack.com/t/kleros/shared_invite/zt-33tbhvg02-CTtTLxFm9wiHMyAjhyClBA"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/industries"
   to = "https://kleros.notion.site/Industry-Guides-acf664cf199242e1be7871ddd17f2b6d"
   status = 301

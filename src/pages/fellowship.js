@@ -10,6 +10,7 @@ import Github from "src/assets/svgs/github.svg";
 import Linkedin from "src/assets/svgs/linkedin.svg";
 import Telegram from "src/assets/svgs/telegram.svg";
 import X from "src/assets/svgs/x.svg";
+import Slack from "src/assets/svgs/slack.svg";
 import Reddit from "src/assets/svgs/reddit.svg";
 import Ghost from "src/assets/svgs/ghost.svg";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
@@ -241,15 +242,21 @@ const Fellowship = ({ intl, data }) => {
               <a className="g-kleros_footer__anchor" href="https://github.com/kleros" rel="noopener noreferrer" target="_blank">
                 <Github />
               </a>
+              <a className="g-kleros_footer__anchor" href="https://slack.kleros.io/" rel="noopener noreferrer" target="_blank">
+                <Slack />
+              </a>
+
               <a className="g-kleros_footer__anchor" href="https://reddit.com/r/Kleros/" rel="noopener noreferrer" target="_blank">
                 <Reddit />
               </a>
               <a className="g-kleros_footer__anchor" href="https://x.com/kleros_io?" rel="noopener noreferrer" target="_blank">
                 <X />
               </a>
+
               <a className="g-kleros_footer__anchor" href="https://blog.kleros.io/" rel="noopener noreferrer" target="_blank">
                 <Ghost />
               </a>
+
               <a className="g-kleros_footer__anchor" href="https://t.me/kleros" rel="noopener noreferrer" target="_blank">
                 <Telegram />
               </a>
