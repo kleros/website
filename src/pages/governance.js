@@ -178,7 +178,7 @@ const Governance = ({ intl }) => (
                 id: 'governance.start-now.card-3-title'
               }),
               button: {
-                href: 'https://gnosis-safe.io/app',
+                href: 'https://app.safe.global/apps/open?safe=eth:0xBF1a121A3ddd82b34f15aaE3Fa1F53E4D29dBF7B&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F',
                 text: intl.formatMessage(
                   { id: 'governance.start-now.card-3-button' }
                 ),
