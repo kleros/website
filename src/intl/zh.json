@@ -1,8 +1,8 @@
 {
   "header": {
-    "dapps": "DApps",
+    "dapps": "应用",
+    "services": "服务",
     "dapps-header": "连接到 Kleros 的 Dapps",
-    "services": "用例",
     "dapps-title": "我们的产品和系统集成",
     "integrations": "集成",
     "research": "研究",
@@ -12,7 +12,7 @@
     "about": "关于我们",
     "curation": "策展",
     "forum": "论坛",
-    "voting": "表决"
+    "voting": "投票"
   },
 
   "footer": {
@@ -22,13 +22,15 @@
     "yellowpaper": "黄皮书",
     "research": "研究",
     "pnktoken": "PNK通证",
-    "developer": "开发人员",
+    "developer": "开发文档",
     "integrations": "集成",
     "governance": "治理",
-    "oracle": "预言机",
     "escrow": "托管",
-    "curate": "策展",
+    "oracle": "预言机",
+    "moderate": "Kleros审核",
+    "career": "招聘",
     "incubator": "孵化器",
+    "curate": "策展",
     "fellowship": "研究会",
     "community": "社区",
     "blog": "博客",
@@ -38,12 +40,38 @@
     "book": "书籍",
     "faq": "常见问答",
     "subscribe-title": "订阅",
-    "subscribe-placeholder": "邮件",
+    "subscribe-placeholder": "your@email.com",
     "subscribe-button": "提交",
     "button-primary": "加入成为待选陪审员",
     "button-secondary": "成为合作伙伴",
-    "copyright": "版权",
-    "career": "职业"
+    "copyright": "版权"
+    },
+
+
+  "productDescriptions": {
+    "Court": "陪审员在这里加入法庭并裁决争议.",
+    "Escrow": "发送和接收由Kleros提供去中心化争议裁决的托管付款.",
+    "Tokens": "Kleros提供的去中心化代币列表及分类.",
+    "Curate": "创建通用策划列表.",
+    "Dispute Resolver": "手动创建和解决争议.",
+    "Uniswap Ninja": "Uniswap 的一个分叉，使用 Kleros 来管理可交易代币.",
+    "Crypto Unlocked": "预言机相关争议使用Kleros来裁决.",
+    "Reality": "使用Kleros来提供问题的最终答案.",
+    "Omen": "市场交易争议采用Kleros解决争议.",
+    "Linguo": "点对点翻译市场使用Kleros提供去中心化的验证.",
+    "Revoke": "轻松撤销您之前给予的 ERC20 转账授权.",
+    "Governor": "Kleros可用于解决治理纠纷.",
+    "Oracle": "Kleros可用于解决预言机纠纷.",
+    "Proof of Humanity": "以去中心化方式策划的人类名单.",
+    "Gnosis": "在以太坊上安全地创建、交易和持有数字资产.",
+    "Polkamarkets": "Polkamarkets是一个专为跨链信息交换和交易而构建的自主预测市场协议.",
+    "Sushi": "互换、赚取、累积收益、借贷、杠杆均在一个去中心化、社区驱动的平台上进行.",
+    "Zerion": "Zerion为构建和管理整个DeFi投资组合提供最简单的一站式服务.",
+    "Uniswap": "用于在以太坊上自动提供流动性的完全去中心化协议.",
+    "clr.fund": "Clr.fund 是一个基于以太坊，有效地将资金分配给有利于以太坊网络发展项目的公共资助平台.",
+    "Gitcoin": "以太坊公共捐款平台.",
+    "Ripio Credit": "RCN是一个通过区块链连接贷方、借款人和贷款发起人的开源全球信用网络.",
+    "Unslashed": "去中心化经济的保险平台."
   },
 
   "index": {
@@ -265,6 +293,45 @@
       "card-3-button": "试用SafeSnap"
     }
   },
+  "moderate": {
+    "seo-title": "Kleros审核",
+
+    "section-hero": {
+      "h1": "Kleros审核"
+    },
+    "solution": {
+      "title": "解决方案",
+      "paragraph": "Kleros审核使用可靠的加密经济学在您的社交媒体渠道中实现公平和透明的信息审核."
+    },
+    "sash": {
+      "title": "如何工作",
+      "first": {
+        "title": "申请禁言用户",
+        "paragraph": "在电报群中申请禁言一个用户."
+      },
+      "second": {
+        "title": "提交押金",
+        "paragraph": "提交押金支持发送禁言申请至Reality.eth"
+      },
+      "third": {
+        "title": "有争议的禁令",
+        "paragraph": "如果任何一方认为禁令不公平，他们可以提交加倍保证金来取消该会员的禁令."
+      },
+      "fourth": {
+        "title": "如果出现争议",
+        "paragraph": "如果分歧升级，案件将提交至Kleros法庭解决."
+      },
+      "fifth": {
+        "title": "顺畅的证据提交",
+        "paragraph": "证据可以直接从聊天群组中添加，并安全地存储至IPFS."
+      },
+      "sixth": {
+        "title": "最终裁决",
+        "paragraph": "Kleros法庭做出裁决，用户要么被禁止，要么恢复声誉."
+      }
+    },
+    "call-to-action": "加入集成测试"
+  },
   "oracle": {
     "seo-title": "预言机",
     "section-hero": {
@@ -321,14 +388,10 @@
     "section-2": "工作原理",
     "sash": {
       "first": {
-        "title": "单页简介",
-        "button": "下载"
-      },
-      "second": {
         "title": "白皮书",
         "button": "下载"
       },
-      "third": {
+      "second": {
         "title": "黄皮书",
         "button": "下载"
       }
@@ -356,14 +419,8 @@
       "h2": "如果你想成为合作社成员, 遵循以下步骤. 您的申请将交由其他成员审批."
     },
     "sash": {
-      "first": {
-        "title": "申请表格",
-        "button": "下载"
-      },
-      "second": {
-        "title": "状态",
-        "button": "下载"
-      }
+      "first": { "title": "申请表格", "button": "下载" },
+      "second": { "title": "状态", "button": "下载" }
     },
     "section-steps": {
       "heading": "步骤",
@@ -575,8 +632,8 @@
             "text": "Yann为Phd候选人于巴黎中央法律及经济研究院。其研究主题为: “区块链经济和法律: 去中央化司法正义机制之应用” 。于2017，Yann于一碰巧会议中意外发现区块链世界，而此科技特性(特别是去中间人参与特性) 深深改改变他的人生观点，并让他踏入区块链应用开发领域。"
           },
           "2": {
-            "name": "Name",
-            "title": "Title",
+            "name": "姓名",
+            "title": "职位",
             "text": ""
           }
         }
@@ -588,7 +645,9 @@
         "items": {
           "1": "智能合约预言机：获取现实世界的真实数值",
           "2": "去中心化的公正: 重塑数字时代的仲裁?",
-          "3": "Kleros 黄皮书 v1.0.0"
+          "3": "Kleros 黄皮书 v2.0.0",
+          "4": "当在线争议裁决遇上区块链：去中心化公正的诞生",
+          "5": "去中心化裁决：区块链在线争议解决项目对比分析"
         }
       },
       "mentions": {
@@ -636,7 +695,7 @@
       "title-download": "现在阅读"
     },
     "section-contents": {
-      "h1": "Table of Contents",
+      "h1": "目录",
       "chapters": {
         "1": {
           "title": "章节1，创世纪:当希腊乐透遇上中世纪私人法",
@@ -749,9 +808,11 @@
     "section-hero": {
       "h1": "Kleros系统集成",
       "h2": "快速，安全和经济的公正即服务.",
+      "guide": "参见系统集成指南",
       "button": "系统集成咨询"
     },
     "section-main": {
+      "usecases-title": "应用场景",
       "usecases": {
         "exchanges": {
           "nav-title": "DeFi",
@@ -779,6 +840,7 @@
           "text-2": "直接集成Kleros"
         }
       },
+      "getstarted-title": "开始集成",
       "getstarted": {
         "erc792": {
           "nav-title": "ERC 792: 仲裁智能合约标准",
@@ -807,6 +869,7 @@
     "section-contact": "立即集成"
   },
   "fellowship": {
+    "seo-title": "研究会",
     "section-hero": {
       "h1": "Kleros公正研究会",
       "h2": "该计划聚集了来自不同领域的专家，以进行Kleros的研究工作。我们的研究员与我们的核心团队积极合作，促进了去中心化公正的发展.",
