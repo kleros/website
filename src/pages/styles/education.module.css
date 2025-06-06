@@ -1,0 +1,49 @@
+.education .dappImage svg {
+    border-radius: 12px;
+  }
+  
+  .education .buttonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+
+  .education .benefits{
+    background: linear-gradient(180deg, #1E075F 0%, #9013FE 100%);
+  }
+  
+  .education .helper {
+    /* https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div */
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .education .instances {
+    font-weight: 400;
+  }
+  .education .bold {
+    font-weight: 600;
+  }
+  
+  .education .badge {
+    margin-top: 1.5rem;
+    max-width: 30rem;
+    height: 9rem;
+    background-color: white;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+  }
+  
+  .education .h1 {
+    margin-bottom: 2rem;
+  }
+
+  .education .list{
+    white-space: pre-line;
+    
+  }
+
+
+  
