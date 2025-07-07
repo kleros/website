@@ -178,7 +178,7 @@ const Governance = ({ intl }) => (
                 id: 'governance.start-now.card-3-title'
               }),
               button: {
-                href: 'https://gnosis-safe.io/app',
+                href: 'https://docs.kleros.io/integrations/types-of-integrations/1.-dispute-resolution-integration-plan/channel-partners/zodiac-integration',
                 text: intl.formatMessage(
                   { id: 'governance.start-now.card-3-button' }
                 ),
