@@ -8,6 +8,11 @@ import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
   {
+    month: "June",
+    year: "2025",
+    treasuryReport: "QmXz4BcqiXxpAcceZn7fzy38qVpTuTRVJSmxh9kkMSRUaH",
+  },
+  {
     month: "May",
     year: "2025",
     treasuryReport: "QmcwixCoWwqGP8zBwm9wum1QAEg8bNJAmktXGTfcgwgZTH/may-25-monthly-portfolio-snapshot-2024-2025-may-2025.pdf",
