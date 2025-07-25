@@ -1,0 +1,238 @@
+.contacto {
+  margin-bottom: 0;
+}
+
+.hero {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Contact Form Section */
+.contactFormSection {
+  background: var(--color-purple-faded);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.formTitle {
+  color: white !important;
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.formDescription {
+  color: var(--color-pink);
+  font-size: var(--font-size-medium);
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contactForm {
+  max-width: 100%;
+}
+
+/* Form Fields */
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  color: white;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.9rem;
+  text-align: left;
+}
+
+.required {
+  color: var(--color-red);
+}
+
+/* Input Fields */
+.formInput {
+  width: 100%;
+  background-color: var(--color-purple-faded) !important;
+  border: 1px solid var(--color-purple-light) !important;
+  border-radius: 12px !important;
+  padding: 0.6rem 1.2rem !important;
+  color: white !important;
+  font-size: var(--font-size-medium);
+  transition: border-color 0.3s ease;
+}
+
+.formInput:focus {
+  border-color: var(--color-blue) !important;
+  box-shadow: 0 0 0 2px rgba(0, 154, 255, 0.2);
+}
+
+.formInput::placeholder {
+  color: var(--color-pink) !important;
+  opacity: 0.8;
+}
+
+/* Textarea Fields */
+.formTextarea {
+  width: 100%;
+  background-color: var(--color-purple-faded) !important;
+  border: 1px solid var(--color-purple-light) !important;
+  border-radius: 12px !important;
+  padding: 0.8rem 1.2rem !important;
+  color: white !important;
+  font-size: var(--font-size-medium);
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.formTextarea:focus {
+  border-color: var(--color-blue) !important;
+  box-shadow: 0 0 0 2px rgba(0, 154, 255, 0.2);
+}
+
+.formTextarea::placeholder {
+  color: var(--color-pink) !important;
+  opacity: 0.8;
+}
+
+/* Checkbox Groups */
+.checkboxGroup {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.checkboxLabel {
+  display: block;
+  text-align: left;
+  color: var(--color-pink);
+  font-size: var(--font-size-medium);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.checkboxLabel:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.checkboxLabel input[type="checkbox"] {
+  width: auto !important;
+  margin-right: 0.75rem;
+  background-color: transparent !important;
+  border: 1px solid var(--color-purple-light) !important;
+  border-radius: 4px !important;
+  padding: 0 !important;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.checkboxLabel input[type="checkbox"]:checked {
+  background-color: var(--color-blue) !important;
+  border-color: var(--color-blue) !important;
+}
+
+.checkboxLabel input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkboxLabel span {
+  display: inline;
+  line-height: 1.4;
+}
+
+/* "Other" input field in checkbox groups */
+.otherInput {
+  margin-top: 1rem;
+}
+
+/* Form Buttons */
+.formButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.formButtons .btn {
+  min-width: 120px;
+  padding: 0.75rem 2rem;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  border-radius: 300px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.formButtons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem 0;
+    min-height: auto;
+  }
+  
+  .contactFormSection {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .formTitle {
+    font-size: var(--font-size-big);
+  }
+  
+  .checkboxGroup {
+    grid-template-columns: 1fr;
+  }
+  
+  .formButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formButtons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactFormSection {
+    padding: 1rem;
+  }
+  
+  .formInput,
+  .formTextarea {
+    padding: 0.5rem 1rem !important;
+  }
+} 
