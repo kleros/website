@@ -5,6 +5,58 @@ import { Container } from "react-bootstrap";
 import { injectIntl } from "gatsby-plugin-intl";
 import styles from "./styles/contacto.module.css";
 
+// Form data constants
+const SECTOR_OPTIONS = [
+  { value: "finanzas", label: "Finanzas / Fintech" },
+  { value: "ecommerce", label: "E-commerce" },
+  { value: "seguros", label: "Seguros" },
+  { value: "gobierno", label: "Gobierno / Justicia" },
+  { value: "juegos", label: "Juegos y metaverso" },
+  { value: "daos", label: "DAOs y Web3" },
+  { value: "freelance", label: "Contratación freelance" },
+  { value: "certificaciones", label: "Certificaciones / Validaciones" },
+];
+
+const OBJETIVO_OPTIONS = [
+  { value: "reducir-costos", label: "Reducir costos de resolución de disputas" },
+  { value: "mejorar-experiencia", label: "Mejorar la experiencia del usuario" },
+  { value: "automatizar", label: "Automatizar decisiones" },
+  { value: "regulatorio", label: "Cumplir con requisitos regulatorios" },
+  { value: "gobernanza", label: "Innovar en gobernanza" },
+];
+
+// Reusable FormField component
+const FormField = ({ id, name, type = "text", label, required = false, placeholder, rows, className }) => {
+  const isTextarea = type === "textarea";
+  const InputComponent = isTextarea ? "textarea" : "input";
+
+  return (
+    <div className={styles.formGroup}>
+      <label htmlFor={id} className={styles.formLabel}>
+        {label}
+        {required && <span className={styles.required}> *</span>}
+      </label>
+      <InputComponent type={isTextarea ? undefined : type} id={id} name={name} required={required} className={isTextarea ? styles.formTextarea : styles.formInput} placeholder={placeholder} rows={rows} />
+    </div>
+  );
+};
+
+// Reusable CheckboxGroup component
+const CheckboxGroup = ({ name, label, options, otherFieldName, otherPlaceholder }) => (
+  <div className={styles.formGroup}>
+    <label className={styles.formLabel}>{label}</label>
+    <div className={styles.checkboxGroup}>
+      {options.map(({ value, label: optionLabel }) => (
+        <label key={value} className={styles.checkboxLabel}>
+          <input type="checkbox" name={name} value={value} />
+          <span>{optionLabel}</span>
+        </label>
+      ))}
+    </div>
+    <input type="text" name={otherFieldName} className={`${styles.formInput} ${styles.otherInput}`} placeholder={otherPlaceholder} />
+  </div>
+);
+
 const Contacto = ({ intl }) => (
   <Layout>
     <SEO lang={intl.locale} title="Contacto - Implementar Kleros" />
@@ -13,185 +65,39 @@ const Contacto = ({ intl }) => (
         <div className={styles.contactFormSection}>
           <h1 className={styles.formTitle}>Formulario de Contacto – Implementar Kleros</h1>
           <p className={styles.formDescription}>
-            ¿Quieres usar Kleros para resolver disputas de forma más eficiente, transparente y accesible? 
+            ¿Quieres usar Kleros para resolver disputas de forma más eficiente, transparente y accesible?
+            <br />
+            <br />
             Completa el formulario y nuestro equipo se pondrá en contacto.
           </p>
-          
-          <form 
-            method="post" 
-            netlify-honeypot="bot-field" 
-            data-netlify="true" 
-            name="contacto-kleros"
-            className={styles.contactForm}
-          >
+
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contacto-kleros" className={styles.contactForm}>
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contacto-kleros" />
-            
-            <div className={styles.formGroup}>
-              <label htmlFor="nombre" className={styles.formLabel}>
-                1. Nombre completo <span className={styles.required}>*</span>
-              </label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
-                required 
-                className={styles.formInput}
-                placeholder="Tu nombre completo"
-              />
-            </div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="email" className={styles.formLabel}>
-                2. Correo electrónico <span className={styles.required}>*</span>
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required 
-                className={styles.formInput}
-                placeholder="tu@email.com"
-              />
-            </div>
+            <FormField id="nombre" name="nombre" label="1. Nombre completo" required placeholder="Tu nombre completo" />
 
-            <div className={styles.formGroup}>
-              <label htmlFor="organizacion" className={styles.formLabel}>
-                3. Organización o Empresa (si aplica)
-              </label>
-              <input 
-                type="text" 
-                id="organizacion" 
-                name="organizacion" 
-                className={styles.formInput}
-                placeholder="Nombre de tu organización"
-              />
-            </div>
+            <FormField id="email" name="email" type="email" label="2. Correo electrónico" required placeholder="tu@email.com" />
 
-            <div className={styles.formGroup}>
-              <label htmlFor="pais" className={styles.formLabel}>
-                4. País
-              </label>
-              <input 
-                type="text" 
-                id="pais" 
-                name="pais" 
-                className={styles.formInput}
-                placeholder="Tu país"
-              />
-            </div>
+            <FormField id="organizacion" name="organizacion" label="3. Organización o Empresa (si aplica)" placeholder="Nombre de tu organización" />
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>
-                5. ¿En qué sector estás interesado en aplicar Kleros?
-              </label>
-              <div className={styles.checkboxGroup}>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="finanzas" />
-                  <span>Finanzas / Fintech</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="ecommerce" />
-                  <span>E-commerce</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="seguros" />
-                  <span>Seguros</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="gobierno" />
-                  <span>Gobierno / Justicia</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="juegos" />
-                  <span>Juegos y metaverso</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="daos" />
-                  <span>DAOs y Web3</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="freelance" />
-                  <span>Contratación freelance</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="sector" value="certificaciones" />
-                  <span>Certificaciones / Validaciones</span>
-                </label>
-              </div>
-              <input 
-                type="text" 
-                name="sector-otro" 
-                className={styles.formInput}
-                placeholder="Otro (especificar)"
-                style={{ marginTop: '1rem' }}
-              />
-            </div>
+            <FormField id="pais" name="pais" label="4. País" placeholder="Tu país" />
 
-            <div className={styles.formGroup}>
-              <label htmlFor="disputas" className={styles.formLabel}>
-                6. ¿Qué tipo de disputas o procesos te gustaría resolver con Kleros?
-              </label>
-              <textarea 
-                id="disputas" 
-                name="disputas" 
-                rows="4"
-                className={styles.formTextarea}
-                placeholder="Describe el tipo de disputas o procesos..."
-              />
-            </div>
+            <CheckboxGroup name="sector" label="5. ¿En qué sector estás interesado en aplicar Kleros?" options={SECTOR_OPTIONS} otherFieldName="sector-otro" otherPlaceholder="Otro (especificar)" />
 
-            <div className={styles.formGroup}>
-              <label className={styles.formLabel}>
-                7. ¿Qué te interesa lograr con Kleros?
-              </label>
-              <div className={styles.checkboxGroup}>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="objetivo" value="reducir-costos" />
-                  <span>Reducir costos de resolución de disputas</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="objetivo" value="mejorar-experiencia" />
-                  <span>Mejorar la experiencia del usuario</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="objetivo" value="automatizar" />
-                  <span>Automatizar decisiones</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="objetivo" value="regulatorio" />
-                  <span>Cumplir con requisitos regulatorios</span>
-                </label>
-                <label className={styles.checkboxLabel} style={{ textAlign: 'left', display: 'block' }}>
-                  <input type="checkbox" name="objetivo" value="gobernanza" />
-                  <span>Innovar en gobernanza</span>
-                </label>
-              </div>
-              <input 
-                type="text" 
-                name="objetivo-otro" 
-                className={styles.formInput}
-                placeholder="Otro (especificar)"
-                style={{ marginTop: '1rem' }}
-              />
-            </div>
+            <FormField id="disputas" name="disputas" type="textarea" label="6. ¿Qué tipo de disputas o procesos te gustaría resolver con Kleros?" placeholder="Describe el tipo de disputas o procesos..." rows={4} />
 
-            <div className={styles.formGroup}>
-              <label htmlFor="comentarios" className={styles.formLabel}>
-                8. Comentarios o información adicional
-              </label>
-              <textarea 
-                id="comentarios" 
-                name="comentarios" 
-                rows="4"
-                className={styles.formTextarea}
-                placeholder="Cualquier información adicional que quieras compartir..."
-              />
-            </div>
+            <CheckboxGroup name="objetivo" label="7. ¿Qué te interesa lograr con Kleros?" options={OBJETIVO_OPTIONS} otherFieldName="objetivo-otro" otherPlaceholder="Otro (especificar)" />
+
+            <FormField id="comentarios" name="comentarios" type="textarea" label="8. Comentarios o información adicional" placeholder="Cualquier información adicional que quieras compartir..." rows={4} />
 
             <div className={styles.formButtons}>
-              <button type="submit" className="btn btn-primary">Enviar</button>
-              <button type="reset" className="btn btn-secondary">Limpiar</button>
+              <button type="submit" className="btn btn-primary">
+                Enviar
+              </button>
+              <button type="reset" className="btn btn-secondary">
+                Limpiar
+              </button>
             </div>
           </form>
         </div>
@@ -200,4 +106,4 @@ const Contacto = ({ intl }) => (
   </Layout>
 );
 
-export default injectIntl(Contacto); 
+export default injectIntl(Contacto);

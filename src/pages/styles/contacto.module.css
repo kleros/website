@@ -10,7 +10,7 @@
   min-height: 80vh;
 }
 
-/* Contact Form Styles */
+/* Contact Form Section */
 .contactFormSection {
   background: var(--color-purple-faded);
   border-radius: var(--border-radius);
@@ -31,7 +31,7 @@
 .formDescription {
   color: var(--color-pink);
   font-size: var(--font-size-medium);
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -40,6 +40,7 @@
   max-width: 100%;
 }
 
+/* Form Fields */
 .formGroup {
   margin-bottom: 1.5rem;
 }
@@ -49,19 +50,21 @@
   color: white;
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
+  text-align: left;
 }
 
 .required {
   color: var(--color-red);
 }
 
+/* Input Fields */
 .formInput {
   width: 100%;
   background-color: var(--color-purple-faded) !important;
-  border: 2px solid var(--color-purple-light) !important;
-  border-radius: 300px !important;
-  padding: 0.8rem 1.5rem !important;
+  border: 1px solid var(--color-purple-light) !important;
+  border-radius: 12px !important;
+  padding: 0.6rem 1.2rem !important;
   color: white !important;
   font-size: var(--font-size-medium);
   transition: border-color 0.3s ease;
@@ -77,12 +80,13 @@
   opacity: 0.8;
 }
 
+/* Textarea Fields */
 .formTextarea {
   width: 100%;
   background-color: var(--color-purple-faded) !important;
-  border: 2px solid var(--color-purple-light) !important;
-  border-radius: var(--border-radius) !important;
-  padding: 1rem 1.5rem !important;
+  border: 1px solid var(--color-purple-light) !important;
+  border-radius: 12px !important;
+  padding: 0.8rem 1.2rem !important;
   color: white !important;
   font-size: var(--font-size-medium);
   resize: vertical;
@@ -101,16 +105,17 @@
   opacity: 0.8;
 }
 
+/* Checkbox Groups */
 .checkboxGroup {
   margin-top: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 0.5rem;
 }
 
 .checkboxLabel {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: left;
   color: var(--color-pink);
   font-size: var(--font-size-medium);
   cursor: pointer;
@@ -127,7 +132,7 @@
   width: auto !important;
   margin-right: 0.75rem;
   background-color: transparent !important;
-  border: 2px solid var(--color-purple-light) !important;
+  border: 1px solid var(--color-purple-light) !important;
   border-radius: 4px !important;
   padding: 0 !important;
   height: 18px;
@@ -135,6 +140,7 @@
   min-width: 18px;
   position: relative;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .checkboxLabel input[type="checkbox"]:checked {
@@ -154,10 +160,16 @@
 }
 
 .checkboxLabel span {
-  flex: 1;
+  display: inline;
   line-height: 1.4;
 }
 
+/* "Other" input field in checkbox groups */
+.otherInput {
+  margin-top: 1rem;
+}
+
+/* Form Buttons */
 .formButtons {
   display: flex;
   gap: 1rem;
@@ -183,7 +195,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero {
     padding: 1rem 0;
@@ -221,6 +233,6 @@
   
   .formInput,
   .formTextarea {
-    padding: 0.7rem 1rem !important;
+    padding: 0.5rem 1rem !important;
   }
 } 
