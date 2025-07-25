@@ -23,11 +23,12 @@ const YELLOW_PAPERS = {
   zh: YellowPaperZH,
 };
 
-const Anchor = (intl) => ((children) => (
-  <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
-    {children}
-  </a>
-));
+const Anchor = (intl) => (children) =>
+  (
+    <a href={WHITE_PAPERS[intl.locale] || WHITE_PAPERS[intl.defaultLocale]} rel="noopener noreferrer" target="_blank">
+      {children}
+    </a>
+  );
 
 const About = ({ intl }) => (
   <Layout>
@@ -41,10 +42,32 @@ const About = ({ intl }) => (
           <FormattedMessage
             id="about.section-hero.h2"
             values={{
-              anchor: Anchor(intl)
+              anchor: Anchor(intl),
             }}
           />
         </h2>
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <label>
+            Name
+            <input type="text" name="name" id="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" id="subject" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" id="message" rows="5" />
+          </label>
+          <button type="submit">Send</button>
+          <input type="reset" value="Clear" />
+        </form>
       </section>
       <hr />
       <section>
