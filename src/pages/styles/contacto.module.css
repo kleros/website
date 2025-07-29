@@ -226,6 +226,113 @@
   }
 }
 
+/* Modal Styles */
+.modalBackdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(2px) !important;
+  opacity: 0.9 !important;
+}
+
+.modalDialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.modalContent {
+  background-color: var(--color-purple-darkest) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modalHeader {
+  background-color: transparent !important;
+  border-bottom: 0px solid var(--color-purple-light) !important;
+  padding: 1.5rem 2rem 1rem 2rem !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.modalTitle {
+  color: white !important;
+  font-size: var(--font-size-big) !important;
+  font-weight: var(--font-weight-bold) !important;
+  margin: 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.modalCloseButton {
+  background: none !important;
+  border: none !important;
+  color: var(--color-pink) !important;
+  font-size: 1.5rem !important;
+  opacity: 0.8 !important;
+  transition: all 0.3s ease !important;
+}
+
+.modalCloseButton:hover {
+  color: white !important;
+  opacity: 1 !important;
+  transform: scale(1.1);
+}
+
+.modalBody {
+  padding: 1rem 2rem !important;
+  background-color: transparent !important;
+}
+
+.modalBody p {
+  color: var(--color-pink) !important;
+  font-size: var(--font-size-medium) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
+.modalBody p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.modalFooter {
+  background-color: transparent !important;
+  border-top: 0px solid var(--color-purple-light) !important;
+  padding: 1rem 2rem 1.5rem 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.modalButton {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--color-blue) !important;
+  font-size: var(--font-size-medium) !important;
+  font-weight: var(--font-weight-bold) !important;
+  padding: 0 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: underline !important;
+  display: inline !important;
+  text-align: center !important;
+}
+
+.modalButton:hover {
+  color: white !important;
+  text-decoration: underline !important;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.modalButton:focus {
+  box-shadow: 0 0 0 3px rgba(0, 154, 255, 0.3) !important;
+  outline: none !important;
+}
+
 @media (max-width: 480px) {
   .contactFormSection {
     padding: 1rem;
@@ -234,5 +341,21 @@
   .formInput,
   .formTextarea {
     padding: 0.5rem 1rem !important;
+  }
+
+  .modalContent {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .modalHeader,
+  .modalBody,
+  .modalFooter {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .modalTitle {
+    font-size: var(--font-size-medium) !important;
   }
 } 
