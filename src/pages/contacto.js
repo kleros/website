@@ -86,7 +86,7 @@ const ConfirmationModal = ({ show, onHide }) => (
 );
 
 const Contacto = ({ intl }) => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
