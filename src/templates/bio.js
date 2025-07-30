@@ -34,6 +34,7 @@ import Muñoz from "src/assets/images/person/muñoz.png";
 import Fiorentini from "src/assets/images/person/fiorentini.png";
 import Anand from "src/assets/images/person/anand.png";
 import Felices from "src/assets/images/person/felices.png";
+import Zhuk from "src/assets/images/person/zhuk.png";
 
 const PHOTOS = {
   Abad,
@@ -65,6 +66,7 @@ const PHOTOS = {
   Vargas,
   Zeballos,
   Zhao,
+  Zhuk,
 };
 
 export default ({ data }) => {
