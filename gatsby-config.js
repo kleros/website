@@ -341,6 +341,7 @@ module.exports = {
       { name: "Maria Angela Fiorentini", title: "Law Student", batch: 7 },
       { name: "Parul Anand", title: "Law Student", batch: 7 },
       { name: "Jose M. Martínez Felices", title: "Governance Analyst", batch: 7 },
+      { name: "Alesia Zhuk", title: "Law & AI Researcher", batch: 7 },
     ],
   },
 
