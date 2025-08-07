@@ -7,6 +7,11 @@ import styles from "./styles/treasury.module.css";
 import TreasuryReportsImage from "src/assets/svgs/treasury-reports.svg";
 
 const MONTHS = [
+    {
+    month: "July",
+    year: "2025",
+    treasuryReport: "QmZbFo8cwGgdac6bNfVkd8Y5rmgSYoLgia52TRB98KX53a",
+  },
   {
     month: "June",
     year: "2025",
