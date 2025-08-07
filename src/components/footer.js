@@ -116,6 +116,9 @@ const Footer = ({ intl }) => (
           <Link className="mr-3" to="/incubator">
             <FormattedMessage id="footer.incubator" />
           </Link>
+          <Link className="mr-3" to="/education">
+            <FormattedMessage id="footer.education" />
+          </Link>
         </Col>
         <Col className="d-none d-xl-block">
           <a className="btn btn-primary d-block mx-0 mt-0" href="https://court.kleros.io">
