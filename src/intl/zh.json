@@ -14,7 +14,6 @@
     "forum": "论坛",
     "voting": "表决"
   },
-
   "footer": {
     "about": "关于我们",
     "cooperative": "合作社",
@@ -45,7 +44,6 @@
     "copyright": "版权",
     "career": "职业"
   },
-
   "index": {
     "seo-title": "主页",
     "banner": "加入Kleros评审员激励计划",
@@ -55,7 +53,6 @@
       "button-primary": "体验Kleros法庭",
       "button-secondary": "集成您的产品"
     },
-
     "sash": {
       "first": {
         "title": "点对点",
@@ -90,12 +87,10 @@
         "9": "更多"
       }
     },
-
     "section-3": {
       "h1": "公正即服务",
       "h2": "您发起维权. Kleros提供裁决."
     },
-
     "products": {
       "h1": "我们的产品和系统集成",
       "small": "*开发中的产品"
@@ -313,7 +308,6 @@
   },
   "about": {
     "seo-title": "关于",
-
     "section-hero": {
       "h1": "关于Kleros",
       "h2": "Kleros是一个开源的在线争议裁决协议，该协议使用区块链技术和众包方式公平地裁定争议。开发工作由<anchor>Coopérative Kleros</anchor>协调，这是一家在法国注册成立的法国国际合作社（SCIC）。我们所有的研究和代码开发都是开源的，任何人均可免费使用."
@@ -343,10 +337,8 @@
     },
     "section-5": "获得顶级项目的信任"
   },
-
   "coop": {
     "seo-title": "合作社",
-
     "section-hero": {
       "h1": "Kleros合作社",
       "h2": "Kleros协议开发的协调者是合作社, 注册于法国. 法人详情见 <anchor>这篇文章</anchor>."
@@ -380,15 +372,12 @@
       "download": "下载"
     }
   },
-
   "faq": {
     "seo-title": "常见问答",
-
     "section-hero": {
       "h1": "常见问答",
       "search": "搜索问题"
     },
-
     "section-faq": {
       "general": {
         "title": "常见问题",
@@ -484,10 +473,8 @@
       }
     }
   },
-
   "media": {
     "seo-title": "媒体",
-
     "section-hero": {
       "h1": "媒体",
       "button": "Kleros博客了解更多"
@@ -556,7 +543,6 @@
     },
     "section-contact": "媒体咨询"
   },
-
   "research": {
     "seo-title": "研究",
     "section-hero": {
@@ -571,10 +557,6 @@
         "title": "研究员",
         "items": {
           "1": {
-            "title": "Yann Aouidef, PhD 研究员",
-            "text": "Yann为Phd候选人于巴黎中央法律及经济研究院。其研究主题为: “区块链经济和法律: 去中央化司法正义机制之应用” 。于2017，Yann于一碰巧会议中意外发现区块链世界，而此科技特性(特别是去中间人参与特性) 深深改改变他的人生观点，并让他踏入区块链应用开发领域。"
-          },
-          "2": {
             "name": "Name",
             "title": "Title",
             "text": ""
@@ -714,7 +696,6 @@
       "title": "Kleros公正协会",
       "paragraph-1": "公正协会是Kleros的一项大使计划。 其主要目的是凝聚我们的全球社区，并在世界范围内广泛传播去中心化公正的理念.",
       "paragraph-2": "公会分为两个等级，特使和先驱.",
-
       "envoy": {
         "title": "特使",
         "paragraph": "特使在公会中的作用是充当社区建设者，管理Kleros在其地区的线上和线下活动，并增加我们社区成员的数量.",
@@ -742,7 +723,6 @@
         "button": "了解更多"
       }
     },
-
     "section-contact": "想加入公会吗？ 联系我们:"
   },
   "integrations": {
@@ -851,7 +831,10 @@
       "h2": "Kleros热情的欢迎大家的加入!",
       "button-primary": "浏览招聘职位"
     },
-    "section-mission": { "h1": "使命", "h2": "我们的使命是通过软件技术的开发提供给普通大众公正与自由." },
+    "section-mission": {
+      "h1": "使命",
+      "h2": "我们的使命是通过软件技术的开发提供给普通大众公正与自由."
+    },
     "section-culture": {
       "h1": "文化",
       "h2": "我们是一个国际化的跨学科团队，热衷于区块链技术，以及致力于实现其为法律和治理带来变革的巨大潜力.",
@@ -864,44 +847,94 @@
         "bottom-right": "热情"
       }
     },
-    "section-positions": { "h1": "职位空缺", "h2": "了解并申请我们的空缺职位." }
+    "section-positions": {
+      "h1": "职位空缺",
+      "h2": "了解并申请我们的空缺职位."
+    }
   },
   "incubator": {
     "seo-title": "孵化器",
-    "section-hero": { "h1": "Kleros 孵化器", "h2": "该计划为愿意创建与 Kleros 协议相关的项目或 Dapp 的团队提供高达 50,000 美元的资金, 可用于公司运营，租金以及旅行开支。随后会有 100 万美元的后续资金池，继续支持成功完成该计划的有前途的团队", "button-primary": "现在申请" },
-    "section-apply": { "h1": "申请资格", "h2": "所有正在构建去中心化应用程序或其他工具以促进采用 Kleros 协议的团队均有资格申请." },
+    "section-hero": {
+      "h1": "Kleros 孵化器",
+      "h2": "该计划为愿意创建与 Kleros 协议相关的项目或 Dapp 的团队提供高达 50,000 美元的资金, 可用于公司运营，租金以及旅行开支。随后会有 100 万美元的后续资金池，继续支持成功完成该计划的有前途的团队",
+      "button-primary": "现在申请"
+    },
+    "section-apply": {
+      "h1": "申请资格",
+      "h2": "所有正在构建去中心化应用程序或其他工具以促进采用 Kleros 协议的团队均有资格申请."
+    },
     "section-how-it-works": {
       "h1": "孵化方式",
       "h2": "该计划的持续时间为 12 周，在此期间，参与者将通过工作坊的方式构建具有各自特色的区块链项目.",
       "div-learn": {
         "title": "学习",
         "items": {
-          "1": { "header": "第一周", "body": "策略设计" },
-          "2": { "header": "第二周", "body": "用户调查" },
-          "3": { "header": "第三周", "body": "社区建设" },
-          "4": { "header": "第四周", "body": "界面设计" }
+          "1": {
+            "header": "第一周",
+            "body": "策略设计"
+          },
+          "2": {
+            "header": "第二周",
+            "body": "用户调查"
+          },
+          "3": {
+            "header": "第三周",
+            "body": "社区建设"
+          },
+          "4": {
+            "header": "第四周",
+            "body": "界面设计"
+          }
         }
       },
       "div-build": {
         "title": "构建",
         "items": {
-          "5": { "header": "第五周", "body": "机制设计" },
-          "6": { "header": "第六周", "body": "经济型攻击" },
-          "7": { "header": "第七周", "body": "智能合约介绍" },
-          "8": { "header": "第八周", "body": "智能合约安全" }
+          "5": {
+            "header": "第五周",
+            "body": "机制设计"
+          },
+          "6": {
+            "header": "第六周",
+            "body": "经济型攻击"
+          },
+          "7": {
+            "header": "第七周",
+            "body": "智能合约介绍"
+          },
+          "8": {
+            "header": "第八周",
+            "body": "智能合约安全"
+          }
         }
       },
       "div-grow": {
         "title": "发展",
         "items": {
-          "9": { "header": "第九周", "body": "合规风险评估" },
-          "10": { "header": "第十周", "body": "筹措资金" },
-          "11": { "header": "第十一周", "body": "项目演示" }
+          "9": {
+            "header": "第九周",
+            "body": "合规风险评估"
+          },
+          "10": {
+            "header": "第十周",
+            "body": "筹措资金"
+          },
+          "11": {
+            "header": "第十一周",
+            "body": "项目演示"
+          }
         }
       }
     },
-    "section-where": { "h1": "孵化器所在地", "h2": "孵化计划在美丽里斯本市的Block共享办公空间进行. 🇵🇹", "button-primary": "现在申请" },
-    "section-contact": { "title": "加入成为公正革命的一部分!", "button-primary": "现在申请" },
+    "section-where": {
+      "h1": "孵化器所在地",
+      "h2": "孵化计划在美丽里斯本市的Block共享办公空间进行. 🇵🇹",
+      "button-primary": "现在申请"
+    },
+    "section-contact": {
+      "title": "加入成为公正革命的一部分!",
+      "button-primary": "现在申请"
+    },
     "section-faq": {
       "1": {
         "q": "Kleros孵育器为何?",
@@ -969,7 +1002,6 @@
       }
     }
   },
-
   "bio": {
     "section-main": "下载报告",
     "section-contact": {
@@ -977,11 +1009,9 @@
       "subtitle": "有兴趣加入公正研究会? 请联系<mail>contact@kleros.io</mail>."
     }
   },
-
   "contact": {
     "title": "联系我们"
   },
-
   "404": {
     "seo-title": "404: 页面缺失"
   }

@@ -85,26 +85,6 @@ const IndexPage = ({ intl }) => (
             },
           ]}
         />
-        <hr className="" />
-        <h1 className={styles.researchersTitle}>
-          <FormattedMessage id="research.section-director.researchers.title" />
-        </h1>
-        <Sash
-          className="researchers"
-          as="div"
-          figures={[
-            {
-              icon: Aouidef,
-              text: intl.formatMessage({
-                id: "research.section-director.researchers.items.1.text",
-              }),
-              title: intl.formatMessage({
-                id: "research.section-director.researchers.items.1.title",
-              }),
-            },
-          ]}
-          separator
-        />
       </section>
       <section className={styles.papers}>
         <h1>

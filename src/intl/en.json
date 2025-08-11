@@ -14,7 +14,6 @@
     "forum": "Forum",
     "voting": "Voting"
   },
-
   "footer": {
     "about": "About",
     "treasury-reports": "Treasury Reports",
@@ -48,7 +47,6 @@
     "button-secondary": "Become a Partner",
     "copyright": "Copyright"
   },
-
   "productDescriptions": {
     "Court": "Jurors join courts and rule on disputes here.",
     "Escrow": "Send and receive escrowed payments mediated by Kleros.",
@@ -80,7 +78,6 @@
     "Ripio Credit": "RCN is an open-source global credit network that connects lenders, borrowers and loan originators on the blockchain.",
     "Unslashed": "Insurance for decentralized finance."
   },
-
   "index": {
     "seo-title": "Homepage",
     "banner": "Join Kleros Juror Incentive Program",
@@ -90,7 +87,6 @@
       "button-primary": "Try Kleros Court",
       "button-secondary": "Integrate Your Product"
     },
-
     "sash": {
       "first": {
         "title": "Peer-to-Peer",
@@ -125,12 +121,10 @@
         "9": "More"
       }
     },
-
     "section-3": {
       "h1": "Justice as a Service",
       "h2": "You send your cases. Kleros sends back a decision."
     },
-
     "products": {
       "h1": "Our Products & Integrations",
       "small": "*Product under development"
@@ -151,7 +145,6 @@
   },
   "curation": {
     "seo-title": "Curation",
-
     "section-hero": {
       "h1": "Curation",
       "h2": "Information organized by your community for your community."
@@ -184,13 +177,11 @@
         "9": "More"
       }
     },
-
     "section-3": {
       "h1": "Create Your Own List!",
       "h2": "Create your own token curated registry and put the information power in the hands of your community.",
       "button": "Learn More"
     },
-
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Integrate Kleros Curation",
@@ -206,7 +197,6 @@
   },
   "escrow": {
     "seo-title": "Escrow",
-
     "section-hero": {
       "h1": "Escrow",
       "h2": "Trade, hire and pay secured by trustless dispute resolution."
@@ -239,14 +229,12 @@
         "9": "More"
       }
     },
-
     "section-3": {
       "h1": "Secure Your Transactions With Kleros",
       "h2": "Start using Kleros Escrow to reduce counterparty risk in your online transactions.",
       "button-1": "Learn More",
       "button-2": "How to use"
     },
-
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Escrow",
@@ -259,7 +247,6 @@
   },
   "governance": {
     "seo-title": "Governance",
-
     "section-hero": {
       "h1": "Governance",
       "h2": "Streamline and secure your DAO governance by integrating Kleros Court to enable optimistic decision-making aligned with your constitution."
@@ -289,13 +276,11 @@
         "6": "More"
       }
     },
-
     "section-3": {
       "h1": "Improve your governance processes with Kleros",
       "h2": "Implement your off-chain governance decision without having to rely on any trusted party to execute them on-chain.",
       "button": "Learn More"
     },
-
     "start-now": {
       "h1": "Start Now",
       "card-1-title": "Integrate Kleros Governor",
@@ -311,7 +296,6 @@
   },
   "moderate": {
     "seo-title": "Kleros Moderate",
-
     "section-hero": {
       "h1": "Kleros Moderate"
     },
@@ -351,7 +335,6 @@
   },
   "scout": {
     "seo-title": "Kleros Scout",
-
     "section-hero": {
       "button-blue": "Add To Metamask",
       "button-purple": "View on Snaps Directory",
@@ -387,7 +370,6 @@
   },
   "oracle": {
     "seo-title": "Oracle",
-
     "section-hero": {
       "h1": "Oracle",
       "h2": "Link your product to the physical and digital world by enabling it to verify any event outcome on-chain."
@@ -434,7 +416,6 @@
   },
   "about": {
     "seo-title": "About",
-
     "section-hero": {
       "h1": "About Kleros",
       "h2": "Kleros is an open source online dispute resolution protocol which uses blockchain and crowdsourcing to fairly adjudicate disputes. Development efforts are coordinated by <anchor>Coopérative Kleros</anchor>, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. All our research and code development are open source and free for anyone to use."
@@ -460,10 +441,8 @@
     },
     "section-5": "Trusted By Top Projects"
   },
-
   "coop": {
     "seo-title": "Cooperative",
-
     "section-hero": {
       "h1": "Coopérative Kleros",
       "h2": "Development efforts for the Kleros protocol are coordinated by Coopérative Kleros, a Société Coopérative d’Intérêt Collectif (SCIC) incorporated in France. Read <anchor>this article</anchor> to learn more about the legal structure."
@@ -473,8 +452,14 @@
       "h2": "If you want to become a member of the Cooperative, follow the next steps. Your application will have to be approved by other members."
     },
     "sash": {
-      "first": { "title": "Application Form", "button": "Download" },
-      "second": { "title": "Statutes", "button": "Download" }
+      "first": {
+        "title": "Application Form",
+        "button": "Download"
+      },
+      "second": {
+        "title": "Statutes",
+        "button": "Download"
+      }
     },
     "section-steps": {
       "heading": "Steps",
@@ -491,15 +476,12 @@
       "download": "Download"
     }
   },
-
   "faq": {
     "seo-title": "FAQ",
-
     "section-hero": {
       "h1": "Frequently Asked Questions",
       "search": "Search your question"
     },
-
     "section-faq": {
       "general": {
         "title": "General",
@@ -542,7 +524,10 @@
       "jurors": {
         "title": "Jurors",
         "questions": {
-          "1": { "q": "Can appeals be managed outside of Kleros?", "a": "Yes, it’s possible to create an arbitrable smart contract which uses Kleros for solving first instance disputes and allows appeals to be handled outside of Kleros." },
+          "1": {
+            "q": "Can appeals be managed outside of Kleros?",
+            "a": "Yes, it’s possible to create an arbitrable smart contract which uses Kleros for solving first instance disputes and allows appeals to be handled outside of Kleros."
+          },
           "2": {
             "q": "Do you have sample contracts that show what type of disputes could be adjudicated by Kleros?",
             "a": "While at this point there are some sample smart contracts, this is an area that requires further development. Kleros focuses on the dispute resolution process, not on the contract drafting itself. Other companies in the ecosystem will focus on drafting contracts. In order to be arbitrable by Kleros, a smart contract needs to follow the smart contract standard we have developed. Check out our GitHub repository for more information and join our discussion on Telegram if you're interested in following the development."
@@ -567,8 +552,14 @@
             "q": "Are jurors required to provide a justification for their vote? Is the justification revealed to the disputing parties and to other jurors?",
             "a": "Yes, jurors are required to provide a justification in the form of a short text. Justification is then revealed to the disputing parties as well as to other jurors after the voting is complete."
           },
-          "8": { "q": "Are there time limits for disputes? Do jurors have to respond within a given period of time?", "a": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution." },
-          "9": { "q": "What happens to jurors who don't respond or review the evidence within the set time frame?", "a": "Jurors who don't give their ruling before the deadline are penalized by losing some of their staked tokens and by not receiving the arbitration fee." }
+          "8": {
+            "q": "Are there time limits for disputes? Do jurors have to respond within a given period of time?",
+            "a": "Yes, each subcourt has a time period within which jurors need to submit their decision. Jurors will be notified of pending cases in need of resolution."
+          },
+          "9": {
+            "q": "What happens to jurors who don't respond or review the evidence within the set time frame?",
+            "a": "Jurors who don't give their ruling before the deadline are penalized by losing some of their staked tokens and by not receiving the arbitration fee."
+          }
         }
       },
       "legal": {
@@ -586,10 +577,8 @@
       }
     }
   },
-
   "media": {
     "seo-title": "Media",
-
     "section-hero": {
       "h1": "Media",
       "button": "Learn more on Kleros Blog"
@@ -647,12 +636,17 @@
       }
     },
     "section-cards": {
-      "card-1": { "title": "Brand Assets Package", "button": "Download" },
-      "card-2": { "title": "Company Photos", "button": "Download" }
+      "card-1": {
+        "title": "Brand Assets Package",
+        "button": "Download"
+      },
+      "card-2": {
+        "title": "Company Photos",
+        "button": "Download"
+      }
     },
     "section-contact": "For Media Queries"
   },
-
   "research": {
     "seo-title": "Research",
     "section-hero": {
@@ -667,10 +661,10 @@
         "title": "Researchers",
         "items": {
           "1": {
-            "title": "Yann Aouidef, PhD Researcher",
-            "text": "Yann is a Phd candidate at the Paris Center in Law and Economics. His topic thesis is: “Economics and Law of the Blockchain: Applications To Decentralized Justice Mechanisms”. In 2017, Yann accidentally discovered the theoretic aspect of the blockchain through a conference which completely challenged him because of this technology’s characteristics (especially disintermediation) and the potential applications that would derive from it."
-          },
-          "2": { "name": "Name", "title": "Title", "text": "" }
+            "name": "Name",
+            "title": "Title",
+            "text": ""
+          }
         }
       }
     },
@@ -713,20 +707,26 @@
       }
     },
     "section-cards": {
-      "card-1": { "title": "Kleros Fellowship of Justice", "button": "Learn More" },
-      "card-2": { "title": "Kleros Book: 'Dispute Revolution'", "button": "Learn more" }
+      "card-1": {
+        "title": "Kleros Fellowship of Justice",
+        "button": "Learn More"
+      },
+      "card-2": {
+        "title": "Kleros Book: 'Dispute Revolution'",
+        "button": "Learn more"
+      }
     }
   },
   "book": {
     "seo-title": "Book",
-    "section-hero": { "title": "Kleros Book", "subtitle": "Dispute Revolution: The Kleros Handbook of Decentralized Justice.", "title-download": "Read Now" },
+    "section-hero": {
+      "title": "Kleros Book",
+      "subtitle": "Dispute Revolution: The Kleros Handbook of Decentralized Justice.",
+      "title-download": "Read Now"
+    },
     "section-contents": {
       "h1": "Table of Contents",
       "chapters": {
-        "1": {
-          "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
-          "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, we implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
-        },
         "1": {
           "title": "Chapter 1, Genesis: When Greek Lotteries Meet Medieval Private Law",
           "paragraph": "This chapter presents the two historical tenets on which Kleros’ technology is envisaged. Through in-depth interviews with three political scientists, Josiah Ober, Peter Stone and Barry Weingast, we explore the roots of decentralized justice in Athens, in medieval Europe and how sortition fits into the tradition of Western political thought. Lastly, We implement these principles in thinking of Kleros as a potential Supreme Court of the DAOs."
@@ -763,10 +763,22 @@
     },
     "sash": {
       "title": "Why Does Kleros Need a Token?",
-      "first": { "title": "Juror Incentives", "paragraph": "Users need to stake PNK in order to be drawn as jurors in disputes" },
-      "second": { "title": "Attack Protection", "paragraph": "The PNK token protects against malicious actors." },
-      "third": { "title": "Platform Governance", "paragraph": "The PNK token is used for voting in platform governance." },
-      "learnMore": { "title": " Learn more about why Kleros needs a native token.", "button": "Learn More" }
+      "first": {
+        "title": "Juror Incentives",
+        "paragraph": "Users need to stake PNK in order to be drawn as jurors in disputes"
+      },
+      "second": {
+        "title": "Attack Protection",
+        "paragraph": "The PNK token protects against malicious actors."
+      },
+      "third": {
+        "title": "Platform Governance",
+        "paragraph": "The PNK token is used for voting in platform governance."
+      },
+      "learnMore": {
+        "title": " Learn more about why Kleros needs a native token.",
+        "button": "Learn More"
+      }
     },
     "section-buy": "Where To Buy PNK",
     "section-otc": {
@@ -777,7 +789,10 @@
   },
   "community": {
     "seo-title": "Community",
-    "section-hero": { "h1": "The Kleros Community", "h2": "Kleros is a global community of people driven by legal innovation and blockchain technology." },
+    "section-hero": {
+      "h1": "The Kleros Community",
+      "h2": "Kleros is a global community of people driven by legal innovation and blockchain technology."
+    },
     "section-members": {
       "title": "Community Members Around the World",
       "telegram": "Kleros Main Telegram Group"
@@ -790,21 +805,33 @@
       "title": "The Kleros Guild of Justice",
       "paragraph-1": "The Guild of Justice is the Kleros ambassador program. Its main objective is to gather our global community and spread the word of decentralized justice far and wide.",
       "paragraph-2": "The Guild is divided into two degrees, Envoys and Heralds.",
-
       "envoy": {
         "title": "Envoys",
         "paragraph": "The role of Envoys in the Guild is to act as community builders, molding the online and offline presence of Kleros in their regions and bolstering the numbers of our community members.",
-        "activities": { "title": "Some of the activities", "items": { "1": "Creating and nurturing regional Telegram groups.", "2": "Building region-specific and general content about Kleros.", "3": "Organizing physical and online meetups." } },
+        "activities": {
+          "title": "Some of the activities",
+          "items": {
+            "1": "Creating and nurturing regional Telegram groups.",
+            "2": "Building region-specific and general content about Kleros.",
+            "3": "Organizing physical and online meetups."
+          }
+        },
         "button": "Learn More"
       },
       "herald": {
         "title": "Heralds",
         "paragraph": "The role of Heralds in the Guild is to increase the awareness of Kleros globally, fostering adoption in the legal and business worlds, as well as academia.",
-        "activities": { "title": "Some of the activities", "items": { "1": "Holding speeches at high level corporate, government and academic contexts.", "2": "Representing Kleros in local media.", "3": "Creating business development opportunities." } },
+        "activities": {
+          "title": "Some of the activities",
+          "items": {
+            "1": "Holding speeches at high level corporate, government and academic contexts.",
+            "2": "Representing Kleros in local media.",
+            "3": "Creating business development opportunities."
+          }
+        },
         "button": "Learn More"
       }
     },
-
     "section-contact": "Would you like to become a member of the Guild? Contact us:"
   },
   "integrations": {
@@ -918,7 +945,10 @@
       "h2": "Check our open positions, we're eager to meet you!",
       "button-primary": "Explore open positions"
     },
-    "section-mission": { "h1": "Mission", "h2": "Our mission is to develop software enabling access to justice and individual freedom." },
+    "section-mission": {
+      "h1": "Mission",
+      "h2": "Our mission is to develop software enabling access to justice and individual freedom."
+    },
     "section-culture": {
       "h1": "Culture",
       "h2": "We are a cross-discipline and international team passionate about blockchain and its potential to transform law and governance.",
@@ -931,7 +961,10 @@
         "bottom-right": "Passion"
       }
     },
-    "section-positions": { "h1": "Open Positions", "h2": "Check our open positions and apply below." }
+    "section-positions": {
+      "h1": "Open Positions",
+      "h2": "Check our open positions and apply below."
+    }
   },
   "incubator": {
     "seo-title": "Incubator",
@@ -940,39 +973,82 @@
       "h2": "A program that provides company building, up to $50,000 in funding, housing and travel support to teams willing to create projects or Dapps connected to the Kleros protocol. A $1M pool is available in follow-up funding for promising teams graduating from the program.",
       "button-primary": "Apply Now"
     },
-    "section-apply": { "h1": "Who Can Apply", "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol." },
+    "section-apply": {
+      "h1": "Who Can Apply",
+      "h2": "Teams who are building decentralized applications or other tools that will foster the adoption of the Kleros protocol."
+    },
     "section-how-it-works": {
       "h1": "How it Works",
       "h2": "The program has a duration of 12 weeks during which participants have a number of workshops covering different aspects of building a project in the Blockchain industry.",
       "div-learn": {
         "title": "learn",
         "items": {
-          "1": { "header": "Week 1", "body": "Strategy Design" },
-          "2": { "header": "Week 2", "body": "User Interviews" },
-          "3": { "header": "Week 3", "body": "Community Building" },
-          "4": { "header": "Week 4", "body": "UX/UI Design" }
+          "1": {
+            "header": "Week 1",
+            "body": "Strategy Design"
+          },
+          "2": {
+            "header": "Week 2",
+            "body": "User Interviews"
+          },
+          "3": {
+            "header": "Week 3",
+            "body": "Community Building"
+          },
+          "4": {
+            "header": "Week 4",
+            "body": "UX/UI Design"
+          }
         }
       },
       "div-build": {
         "title": "build",
         "items": {
-          "5": { "header": "Week 5", "body": "Mechanism Design" },
-          "6": { "header": "Week 6", "body": "Economic Attacks" },
-          "7": { "header": "Week 7", "body": "Introduction to Smart Contracts" },
-          "8": { "header": "Week 8", "body": "Smart Contract Security" }
+          "5": {
+            "header": "Week 5",
+            "body": "Mechanism Design"
+          },
+          "6": {
+            "header": "Week 6",
+            "body": "Economic Attacks"
+          },
+          "7": {
+            "header": "Week 7",
+            "body": "Introduction to Smart Contracts"
+          },
+          "8": {
+            "header": "Week 8",
+            "body": "Smart Contract Security"
+          }
         }
       },
       "div-grow": {
         "title": "grow",
         "items": {
-          "9": { "header": "Week 9", "body": "Assessing Legal Risks" },
-          "10": { "header": "Week 10", "body": "Fundraising" },
-          "11": { "header": "Week 11", "body": "Demo Day" }
+          "9": {
+            "header": "Week 9",
+            "body": "Assessing Legal Risks"
+          },
+          "10": {
+            "header": "Week 10",
+            "body": "Fundraising"
+          },
+          "11": {
+            "header": "Week 11",
+            "body": "Demo Day"
+          }
         }
       }
     },
-    "section-where": { "h1": "Where it Takes Place", "h2": "The incubation program takes place at The Block co-working space in the beautiful city of Lisbon. 🇵🇹", "button-primary": "Apply Now" },
-    "section-contact": { "title": "Be a part of the justice revolution!", "button-primary": "Apply Now" },
+    "section-where": {
+      "h1": "Where it Takes Place",
+      "h2": "The incubation program takes place at The Block co-working space in the beautiful city of Lisbon. 🇵🇹",
+      "button-primary": "Apply Now"
+    },
+    "section-contact": {
+      "title": "Be a part of the justice revolution!",
+      "button-primary": "Apply Now"
+    },
     "section-faq": {
       "1": {
         "q": "What is the Kleros Incubator?",
@@ -1040,12 +1116,13 @@
       }
     }
   },
-
   "bio": {
     "section-main": "Download the Report",
-    "section-contact": { "title": "Join Kleros Fellowship", "subtitle": "Interested in joining Kleros Fellowship? Message us via <mail>contact@kleros.io</mail>." }
+    "section-contact": {
+      "title": "Join Kleros Fellowship",
+      "subtitle": "Interested in joining Kleros Fellowship? Message us via <mail>contact@kleros.io</mail>."
+    }
   },
-
   "contact": {
     "title": "Get in Touch"
   },

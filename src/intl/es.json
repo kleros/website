@@ -114,7 +114,6 @@
   },
   "curation": {
     "seo-title": "Curation",
-
     "section-hero": {
       "h1": "Curation",
       "h2": "Información organizada por su comunidad para su comunidad."
@@ -147,13 +146,11 @@
         "9": "Más"
       }
     },
-
     "section-3": {
       "h1": "¡Crea tu propia lista!",
       "h2": "Cree su propio registro filtrado de tokens y ponga el poder de la información en manos de su comunidad.",
       "button": "Saber más"
     },
-
     "start-now": {
       "h1": "Empiece Ahora",
       "card-1-title": "Integre Kleros Curate",
@@ -169,7 +166,6 @@
   },
   "escrow": {
     "seo-title": "Escrow",
-
     "section-hero": {
       "h1": "Escrow",
       "h2": "Intercambie, contrate y pague con la garantía de una resolución de disputas descentralizada."
@@ -202,18 +198,15 @@
         "9": "Más"
       }
     },
-
     "section-3": {
       "h1": "Asegure sus transacciones con Kleros",
       "h2": "Comience a utilizar Kleros Escrow para reducir el riesgo de contraparte en sus transacciones en línea.",
       "button-1": "Saber Más",
       "button-2": "Tutorial"
     },
-
     "start-now": {
       "h1": "Empiece Ahora",
       "card-1-title": "Escrow",
-      "card-1-text": "Using Kleros Escrow, you can transact in the blockchain ecosystem for services, products, and assets using our simple solution with a level of trust not yet known outside the traditional commerce space. If a dispute happens, it will be adjudicated by crowdsourced jurors selected and incentivized by the Kleros protocol.",
       "card-1-text": "Utilizando Kleros Escrow puedes hacer transacciones en el ecosistema de la blockchain a cambio de servicios, productos, y activos utilizando nuestra simple solución que proporciona un nivel de confianza nunca antes conocido en el espacio comercial. Si una disputa ocurre, será resuelta por un jurado externo, seleccionado y incentivado por el protocolo de Kleros",
       "card-1-button": "Prueba Kleros Escrow",
       "card-2-title": "Integra Kleros Escrow",
@@ -223,7 +216,6 @@
   },
   "governance": {
     "seo-title": "Governance",
-
     "section-hero": {
       "h1": "Governance",
       "h2": "Optimice y asegure la gobernanza de su DAO integrando Kleros Court para permitir una toma de decisiones optimista alineada con su constitución."
@@ -253,13 +245,11 @@
         "6": "Más"
       }
     },
-
     "section-3": {
       "h1": "Mejore sus procesos de gobernanza con Kleros",
       "h2": "Ejecute sus decisiones de gobernanza sin tener que depender de ninguna parte confiable para su ejecución en la Blockchain.",
       "button": "Saber más"
     },
-
     "start-now": {
       "h1": "Empiece ahora",
       "card-1-title": "Integre Kleros Governor",
@@ -275,7 +265,6 @@
   },
   "oracle": {
     "seo-title": "Oracle",
-
     "section-hero": {
       "h1": "Oracle",
       "h2": "Vincule su producto al mundo físico y digital permitiendo que verifique el resultado de cualquier evento en la Blockchain."
@@ -567,10 +556,6 @@
         "title": "Investigadores",
         "items": {
           "1": {
-            "title": "Yann Aouidef, investigador",
-            "text": "Yann es estudiante de doctorado en el Paris Center in Law and Economics. Su tesis es: 'Economía y derecho del blockchain: Aplicaciones para descentralizar los sistemas de justicia'. En 2017, Yann descubrió al blockchain en una conferencia. El blockchain lo intrigó por sus características técnicas (especialmente, en relación con la desintermediación) y sus posibles aplicaciones."
-          },
-          "2": {
             "name": "Nombre",
             "title": "Título",
             "text": ""
@@ -847,7 +832,6 @@
   },
   "moderate": {
     "seo-title": "Kleros Moderate",
-
     "section-hero": {
       "h1": "Kleros Moderate"
     },
@@ -887,7 +871,6 @@
   },
   "scout": {
     "seo-title": "Kleros Scout",
-
     "section-hero": {
       "button-blue": "Agregar a Metamask",
       "button-purple": "Ver en el Directorio de Snaps",
@@ -928,7 +911,10 @@
       "h2": "Mira nuestras búsquedas abiertas. ¡Queremos conocerte!",
       "button-primary": "Explorar Posiciones Abiertas"
     },
-    "section-mission": { "h1": "Misión", "h2": "Nuestra misión es desarrollar software que facilite el acceso a la justicia y a la libertad individual." },
+    "section-mission": {
+      "h1": "Misión",
+      "h2": "Nuestra misión es desarrollar software que facilite el acceso a la justicia y a la libertad individual."
+    },
     "section-culture": {
       "h1": "Cultura",
       "h2": "Somos un equipo internacional y multidisciplinario apasionado por el blockchain y su potencial para transformar las leyes y el gobierno.",
@@ -941,7 +927,10 @@
         "bottom-right": "Pasión"
       }
     },
-    "section-positions": { "h1": "Open Positions", "h2": "Revisa nuestras búsquedas abiertas y aplica aquí abajo." }
+    "section-positions": {
+      "h1": "Open Positions",
+      "h2": "Revisa nuestras búsquedas abiertas y aplica aquí abajo."
+    }
   },
   "incubator": {
     "seo-title": "Incubadora",
@@ -950,39 +939,82 @@
       "h2": "Un programa que ofrece asesoramiento en construcción de empresas, gastos pagos y hasta $50,000 en financiamiento para equipos que quieran crear proyectos o Dapps conectados al protocolo Kleros. Un fondo de $1 millón está disponible para brindar financiamiento adicional a los equipos más prometedores que se gradúen del programa.",
       "button-primary": "Aplica Ahora"
     },
-    "section-apply": { "h1": "Quién Puede Aplicar", "h2": "Equipos que están construyendo aplicaciones descentralizadas u otras herramientas que contribuyan a incrementar la adopción del protocolo Kleros." },
+    "section-apply": {
+      "h1": "Quién Puede Aplicar",
+      "h2": "Equipos que están construyendo aplicaciones descentralizadas u otras herramientas que contribuyan a incrementar la adopción del protocolo Kleros."
+    },
     "section-how-it-works": {
       "h1": "Cómo Funciona",
       "h2": "El programa tiene una duración de 12 semanas durante las cuales los participantes tienen una serie de talleres que cubren distintos aspectos sobre la construcción de un proyecto en la industria del blockchain.",
       "div-learn": {
         "title": "Aprender",
         "items": {
-          "1": { "header": "Semana 1", "body": "Diseño de Estrategia" },
-          "2": { "header": "Semana 2", "body": "Entrevistas con Usuarios" },
-          "3": { "header": "Semana 3", "body": "Construyendo una Comunidad" },
-          "4": { "header": "Semana 4", "body": "Diseño UX/UI" }
+          "1": {
+            "header": "Semana 1",
+            "body": "Diseño de Estrategia"
+          },
+          "2": {
+            "header": "Semana 2",
+            "body": "Entrevistas con Usuarios"
+          },
+          "3": {
+            "header": "Semana 3",
+            "body": "Construyendo una Comunidad"
+          },
+          "4": {
+            "header": "Semana 4",
+            "body": "Diseño UX/UI"
+          }
         }
       },
       "div-build": {
         "title": "Construir",
         "items": {
-          "5": { "header": "Semana 5", "body": "Diseño de Mecanismos" },
-          "6": { "header": "Semana 6", "body": "Ataques Económicos" },
-          "7": { "header": "Semana 7", "body": "Introducción a los Smart Contracts" },
-          "8": { "header": "Semana 8", "body": "Seguridad en los Smart Contracts" }
+          "5": {
+            "header": "Semana 5",
+            "body": "Diseño de Mecanismos"
+          },
+          "6": {
+            "header": "Semana 6",
+            "body": "Ataques Económicos"
+          },
+          "7": {
+            "header": "Semana 7",
+            "body": "Introducción a los Smart Contracts"
+          },
+          "8": {
+            "header": "Semana 8",
+            "body": "Seguridad en los Smart Contracts"
+          }
         }
       },
       "div-grow": {
         "title": "Crecer",
         "items": {
-          "9": { "header": "Semana 9", "body": "Evaluación de Riesgos Legales" },
-          "10": { "header": "Semana 10", "body": "Conseguir Fondos" },
-          "11": { "header": "Semana 11", "body": "Demo Day" }
+          "9": {
+            "header": "Semana 9",
+            "body": "Evaluación de Riesgos Legales"
+          },
+          "10": {
+            "header": "Semana 10",
+            "body": "Conseguir Fondos"
+          },
+          "11": {
+            "header": "Semana 11",
+            "body": "Demo Day"
+          }
         }
       }
     },
-    "section-where": { "h1": "Dónde Se Desarrolla", "h2": "El programa de incubación se desarrolla en el espacio de co-working The Block en la hermosa ciudad de Lisboa. 🇵🇹", "button-primary": "Apply Now" },
-    "section-contact": { "title": "¡Sé parte de la revolución de la justicia!", "button-primary": "Aplica Ahora" },
+    "section-where": {
+      "h1": "Dónde Se Desarrolla",
+      "h2": "El programa de incubación se desarrolla en el espacio de co-working The Block en la hermosa ciudad de Lisboa. 🇵🇹",
+      "button-primary": "Apply Now"
+    },
+    "section-contact": {
+      "title": "¡Sé parte de la revolución de la justicia!",
+      "button-primary": "Aplica Ahora"
+    },
     "section-faq": {
       "1": {
         "q": "What is the Kleros Incubator?",

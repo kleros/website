@@ -569,10 +569,6 @@
         "title": "Pesquisadores",
         "items": {
           "1": {
-            "title": "Yann Aouidef, PhD Researcher",
-            "text": "Yann é doutorando no Centro de Direito e Economia de Paris. O tópico da sua tese é: “Economia e Direito na Blockchain: Aplicações a Mecanismos de Justiça Descentralizada”. Em 2017, Yann descobriu acidentalmente o aspecto teórico da blockchain por meio de uma conferência que o desafiou completamente por causa das características dessa tecnologia (especialmente desintermediação) e as aplicações potenciais que derivariam dela."
-          },
-          "2": {
             "name": "Name",
             "title": "Title",
             "text": ""
@@ -847,7 +843,6 @@
       }
     }
   },
-
   "career": {
     "seo-title": "Carreiras",
     "section-hero": {
@@ -1026,7 +1021,6 @@
       }
     }
   },
-
   "bio": {
     "section-main": "Baixe o relatório",
     "section-contact": {
