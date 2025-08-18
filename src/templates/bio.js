@@ -35,6 +35,7 @@ import Fiorentini from "src/assets/images/person/fiorentini.png";
 import Anand from "src/assets/images/person/anand.png";
 import Felices from "src/assets/images/person/felices.png";
 import Zhuk from "src/assets/images/person/zhuk.png";
+import Tronca from "src/assets/images/person/tronca.png";
 
 const PHOTOS = {
   Abad,
@@ -63,6 +64,7 @@ const PHOTOS = {
   Sharma,
   Tewari,
   Tineo,
+  Tronca,
   Vargas,
   Zeballos,
   Zhao,
