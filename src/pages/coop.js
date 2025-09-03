@@ -20,7 +20,7 @@ const ANNUAL_REPORTS = {
 };
 
 const Coop = ({ intl }) => {
-  const [selectedYear, setSelectedYear] = useState("2023");
+  const [selectedYear, setSelectedYear] = useState("2024");
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "coop.seo-title" })} />
