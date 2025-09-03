@@ -11,6 +11,7 @@ import Map from "src/assets/svgs/map.svg";
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 
 const ANNUAL_REPORTS = {
+  "2024": "/ipfs/QmWHvkiUtXDdnWEdfuZeHPotArMdj17p3aoPzrnu3CT7jd",
   "2023": "/ipfs/QmcZC1yH3ggYZuUtRJNh1e1WS987LFM6JUeB5HbiTDMSiU/Cooperative Kleros Annual Report 2023.pdf",
   "2022": "/ipfs/QmXyf7FHT3jwK6gyP8oAYfnJiLrZcTWGLCZ7h4XtGHhyt7/Cooperative Kleros Annual Report - 2022.pdf",
   "2021": "/ipfs/QmaWMYTR4zTQvENdteDZidDMGP7Qp5JS5XoSxFwyup5GhK/Cooperative Kleros Annual Report - 2021.pdf",
@@ -19,7 +20,7 @@ const ANNUAL_REPORTS = {
 };
 
 const Coop = ({ intl }) => {
-  const [selectedYear, setSelectedYear] = useState("2023");
+  const [selectedYear, setSelectedYear] = useState("2024");
   return (
     <Layout>
       <SEO lang={intl.locale} title={intl.formatMessage({ id: "coop.seo-title" })} />
