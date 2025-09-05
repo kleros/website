@@ -1090,7 +1090,76 @@
     }
   },
   "contact": {
-    "title": "Contáctanos"
+    "seo-title": "Contacto - Implementar Kleros",
+    "title": "Contáctanos",
+    "form": {
+      "title": "Formulario de Contacto – Implementar Kleros",
+      "description": "¿Quieres usar Kleros para resolver disputas de forma más eficiente, transparente y accesible?",
+      "description-2": "Completa el formulario y nuestro equipo se pondrá en contacto.",
+      "fields": {
+        "full-name": {
+          "label": "1. Nombre completo",
+          "placeholder": "Tu nombre completo"
+        },
+        "email": {
+          "label": "2. Correo electrónico",
+          "placeholder": "tu@email.com"
+        },
+        "organization": {
+          "label": "3. Organización o Empresa (si aplica)",
+          "placeholder": "Nombre de tu organización"
+        },
+        "country": {
+          "label": "4. País",
+          "placeholder": "Tu país"
+        },
+        "sector": {
+          "label": "5. ¿En qué sector estás interesado en aplicar Kleros?",
+          "other-placeholder": "Otro (especificar)"
+        },
+        "disputes": {
+          "label": "6. ¿Qué tipo de disputas o procesos te gustaría resolver con Kleros?",
+          "placeholder": "Describe el tipo de disputas o procesos..."
+        },
+        "objectives": {
+          "label": "7. ¿Qué te interesa lograr con Kleros?",
+          "other-placeholder": "Otro (especificar)"
+        },
+        "comments": {
+          "label": "8. Comentarios o información adicional",
+          "placeholder": "Cualquier información adicional que quieras compartir..."
+        }
+      },
+      "sectors": {
+        "finanzas": "Finanzas / Fintech",
+        "ecommerce": "E-commerce",
+        "seguros": "Seguros",
+        "gobierno": "Gobierno / Justicia",
+        "juegos": "Juegos y metaverso",
+        "daos": "DAOs y Web3",
+        "freelance": "Contratación freelance",
+        "certificaciones": "Certificaciones / Validaciones"
+      },
+      "objectives": {
+        "reducir-costos": "Reducir costos de resolución de disputas",
+        "mejorar-experiencia": "Mejorar la experiencia del usuario",
+        "automatizar": "Automatizar decisiones",
+        "regulatorio": "Cumplir con requisitos regulatorios",
+        "gobernanza": "Innovar en gobernanza"
+      },
+      "buttons": {
+        "submit": "Enviar",
+        "submit-loading": "Enviando...",
+        "clear": "Limpiar"
+      },
+      "modal": {
+        "title": "¡Gracias!",
+        "message": "Hemos recibido su envío del formulario.",
+        "message-2": "Nos pondremos en contacto a la brevedad.",
+        "button": "Volver a la Página de Inicio"
+      },
+      "error": "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo."
+    }
   },
   "404": {
     "seo-title": "404: Not Found"

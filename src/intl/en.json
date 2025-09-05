@@ -1124,7 +1124,76 @@
     }
   },
   "contact": {
-    "title": "Get in Touch"
+    "seo-title": "Contact - Implement Kleros",
+    "title": "Get in Touch",
+    "form": {
+      "title": "Contact Form – Implement Kleros",
+      "description": "Do you want to use Kleros to resolve disputes more efficiently, transparently, and accessibly?",
+      "description-2": "Fill out the form and our team will get in touch with you.",
+      "fields": {
+        "full-name": {
+          "label": "1. Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "2. Email Address",
+          "placeholder": "you@email.com"
+        },
+        "organization": {
+          "label": "3. Organization or Company (if applicable)",
+          "placeholder": "Name of your organization"
+        },
+        "country": {
+          "label": "4. Country",
+          "placeholder": "Your country"
+        },
+        "sector": {
+          "label": "5. In which sector are you interested in implementing Kleros?",
+          "other-placeholder": "Other (please specify)"
+        },
+        "disputes": {
+          "label": "6. What type of disputes or processes would you like to resolve with Kleros?",
+          "placeholder": "Describe the type of disputes or processes..."
+        },
+        "objectives": {
+          "label": "7. What are you looking to achieve with Kleros?",
+          "other-placeholder": "Other (please specify)"
+        },
+        "comments": {
+          "label": "8. Comments or additional information",
+          "placeholder": "Any additional information you would like to share..."
+        }
+      },
+      "sectors": {
+        "finanzas": "Finance / Fintech",
+        "ecommerce": "E-commerce",
+        "seguros": "Insurance",
+        "gobierno": "Government / Justice",
+        "juegos": "Gaming and Metaverse",
+        "daos": "DAOs and Web3",
+        "freelance": "Freelance contracting",
+        "certificaciones": "Certifications / Verification"
+      },
+      "objectives": {
+        "reducir-costos": "Reduce dispute resolution costs",
+        "mejorar-experiencia": "Improve user experience",
+        "automatizar": "Automate decision-making",
+        "regulatorio": "Comply with regulatory requirements",
+        "gobernanza": "Innovate in governance"
+      },
+      "buttons": {
+        "submit": "Submit",
+        "submit-loading": "Submitting...",
+        "clear": "Clear"
+      },
+      "modal": {
+        "title": "Thank you!",
+        "message": "We have received your form submission.",
+        "message-2": "We will get in touch shortly.",
+        "button": "Back to Homepage"
+      },
+      "error": "There was an error submitting the form. Please try again."
+    }
   },
   "404": {
     "seo-title": "404: Not Found"

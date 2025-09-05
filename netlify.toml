@@ -17,6 +17,18 @@
   force = true
 
 [[redirects]]
+  from = "/contacto"
+  to = "/es/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/en/contact"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/fr/*"
   to = "/:splat"
   status = 301
