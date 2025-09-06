@@ -217,7 +217,7 @@ module.exports = {
       },
       {
         name: "Jose Torres",
-        title: "Former Fellow atr The Legal Design Lab - Stanford University",
+        title: "Former Fellow at The Legal Design Lab - Stanford University",
         links: {},
       },
       {
