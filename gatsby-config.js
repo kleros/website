@@ -343,6 +343,8 @@ module.exports = {
       { name: "Jose M. Martínez Felices", title: "Governance Analyst", batch: 7 },
       { name: "Alesia Zhuk", title: "Law & AI Researcher", batch: 7 },
       { name: "Guenter Schramm Tronca", title: "Lawyer", batch: 7 },
+      { name: "Féliz Guerrero, Gabriela", title: "Lawyer", batch: 7 },
+      { name: "Féliz Guerrero, Julio", title: "Lawyer", batch: 7 },
     ],
   },
 

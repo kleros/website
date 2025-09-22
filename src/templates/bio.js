@@ -36,6 +36,8 @@ import Anand from "src/assets/images/person/anand.png";
 import Felices from "src/assets/images/person/felices.png";
 import Zhuk from "src/assets/images/person/zhuk.png";
 import Tronca from "src/assets/images/person/tronca.png";
+import Julio from "src/assets/images/person/julio.png";
+import Gabriela from "src/assets/images/person/gabriela.png";
 
 const PHOTOS = {
   Abad,
@@ -48,10 +50,12 @@ const PHOTOS = {
   Duarte,
   Felices,
   Fiorentini,
+  Gabriela,
   Galindo,
   Gaspar,
   Goldstein,
   Gudkov,
+  Julio,
   Lin,
   Lowther,
   Mohammadi,
