@@ -345,6 +345,8 @@ module.exports = {
       { name: "Guenter Schramm Tronca", title: "Lawyer", batch: 7 },
       { name: "Féliz Guerrero, Gabriela", title: "Lawyer", batch: 7 },
       { name: "Féliz Guerrero, Julio", title: "Lawyer", batch: 7 },
+      { name: "Tapia Gómez, Mora", title: "Lawyer", batch: 7 },
+      { name: "Brusco, Florencia", title: "Lawyer", batch: 7 },
     ],
   },
 

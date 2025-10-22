@@ -30,8 +30,10 @@ import Zeballos from "src/assets/images/person/zeballos.png";
 import Gaspar from "src/assets/images/person/gaspar.png";
 import Tewari from "src/assets/images/person/tewari.png";
 import Poenicke from "src/assets/images/person/poenicke.png";
+import Mora from "src/assets/images/person/mora.png";
 import Muñoz from "src/assets/images/person/muñoz.png";
 import Fiorentini from "src/assets/images/person/fiorentini.png";
+import Florencia from "src/assets/images/person/florencia.png";
 import Anand from "src/assets/images/person/anand.png";
 import Felices from "src/assets/images/person/felices.png";
 import Zhuk from "src/assets/images/person/zhuk.png";
@@ -50,6 +52,7 @@ const PHOTOS = {
   Duarte,
   Felices,
   Fiorentini,
+  Florencia,
   Gabriela,
   Galindo,
   Gaspar,
@@ -59,6 +62,7 @@ const PHOTOS = {
   Lin,
   Lowther,
   Mohammadi,
+  Mora,
   Muñoz,
   Narozhny,
   Obafemi,
