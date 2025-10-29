@@ -117,6 +117,11 @@ export default ({ data }) => {
                 Download the Report
               </a>
             )}
+            {frontmatter.englishReport && (
+              <a style={{ margin: "8px" }} className="btn btn-primary" href={frontmatter.englishReport} target="blank" rel="noopener noreferrer">
+                Download the Report in English
+              </a>
+            )}
             {frontmatter.spanishReport && (
               <a style={{ margin: "8px" }} className="btn btn-primary" href={frontmatter.spanishReport} target="blank" rel="noopener noreferrer">
                 Descarga el reporte en Español
@@ -144,6 +149,7 @@ export const query = graphql`
         name
         title
         report
+        englishReport
         spanishReport
         embed
         embedTitle
