@@ -32,6 +32,7 @@ import T2CR from "../assets/svgs/t2cr.svg";
 import POH from "../assets/svgs/poh-logo.svg";
 import Curate from "../assets/svgs/curate.svg";
 import DisputeResolver from "../assets/svgs/dispute-resolver.svg";
+import Moderate from "../assets/svgs/moderate.svg";
 import Realitio from "src/assets/images/third-party-logos/realitio.png";
 import Omen from "src/assets/images/third-party-logos/omen.png";
 import Linguo from "../assets/svgs/linguo.svg";
@@ -81,6 +82,7 @@ const products = [
   { name: "Tokens", href: "https://tokens.kleros.io", Icon: T2CR, target: "_blank" },
   { name: "Linguo", href: "https://linguo.kleros.io", Icon: Linguo, target: "_blank" },
   { name: "Dispute Resolver", href: "https://resolve.kleros.io", Icon: DisputeResolver, target: "_blank" },
+  { name: "Moderate", href: "https://kleros.io/moderate", Icon: Moderate, target: "_blank" },
 ];
 
 const integrations = [
