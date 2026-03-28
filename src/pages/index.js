@@ -217,7 +217,12 @@ class IndexPage extends React.Component {
       mode: "cors",
     })
       .then((r) => r.json())
-      .then((r) => this.setState({ klerosCounters: r.data.klerosCounters[0] }));
+      .then((r) => {
+        if (r.data && r.data.klerosCounters && r.data.klerosCounters[0]) {
+          this.setState({ klerosCounters: r.data.klerosCounters[0] });
+        }
+      })
+      .catch((e) => console.error("Failed to fetch Kleros counters:", e));
 
     if (!lscache.get("subcourtDetails") || !lscache.get("subcourts") || !lscache.get("subcourtsExtra")) {
       await this.getSubcourts();

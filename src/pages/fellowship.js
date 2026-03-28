@@ -14,41 +14,7 @@ import Slack from "src/assets/svgs/slack.svg";
 import Reddit from "src/assets/svgs/reddit.svg";
 import Ghost from "src/assets/svgs/ghost.svg";
 import FellowshipBadge from "src/assets/svgs/fellowship.svg";
-import Narozhny from "src/assets/images/person/narozhny.png";
-import Sharma from "src/assets/images/person/sharma.png";
-import Deplano from "src/assets/images/person/deplano.png";
-import Bergolla from "src/assets/images/person/bergolla.png";
-import Scott from "src/assets/images/person/scott.png";
-import Zhao from "src/assets/images/person/zhao.png";
-import Gudkov from "src/assets/images/person/gudkov.png";
-import Abad from "src/assets/images/person/abad.png";
-import Goldstein from "src/assets/images/person/goldstein.png";
-import Obafemi from "src/assets/images/person/obafemi.png";
-import Tineo from "src/assets/images/person/tineo.png";
-import Duarte from "src/assets/images/person/duarte.png";
-import Archila from "src/assets/images/person/archila.png";
-import Lowther from "src/assets/images/person/lowther.png";
-import Comenale from "src/assets/images/person/comenale.png";
-import Galindo from "src/assets/images/person/galindo.png";
-import Vargas from "src/assets/images/person/vargas.png";
-import Carrera from "src/assets/images/person/carrera.png";
-import Mohammadi from "src/assets/images/person/mohammadi.png";
-import Oladimeji from "src/assets/images/person/oladimeji.png";
-import Lin from "src/assets/images/person/lin.png";
-import Zeballos from "src/assets/images/person/zeballos.png";
-import Gaspar from "src/assets/images/person/gaspar.png";
-import Tewari from "src/assets/images/person/tewari.png";
-import Poenicke from "src/assets/images/person/poenicke.png";
-import Mora from "src/assets/images/person/mora.png";
-import Muñoz from "src/assets/images/person/muñoz.png";
-import Fiorentini from "src/assets/images/person/fiorentini.png";
-import Florencia from "src/assets/images/person/florencia.png";
-import Anand from "src/assets/images/person/anand.png";
-import Felices from "src/assets/images/person/felices.png";
-import Zhuk from "src/assets/images/person/zhuk.png";
-import Tronca from "src/assets/images/person/tronca.png";
-import Julio from "src/assets/images/person/julio.png";
-import Gabriela from "src/assets/images/person/gabriela.png";
+import PHOTOS from "src/components/fellow-photos";
 import Config from "../../gatsby-config.js";
 import Questions from "src/intl/en.json";
 import Slider from "react-slick";
@@ -56,44 +22,6 @@ import ArrowRight from "src/assets/svgs/arrow-button-right.svg";
 import ArrowLeft from "src/assets/svgs/arrow-button-left.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const PHOTOS = {
-  Abad,
-  Anand, 
-  Archila,
-  Bergolla,
-  Carrera,
-  Comenale,
-  Deplano,
-  Duarte,
-  Felices,
-  Fiorentini,
-  Florencia,
-  Gabriela,
-  Galindo,
-  Gaspar,
-  Goldstein,
-  Gudkov,
-  Julio,
-  Lin,
-  Lowther,
-  Mohammadi,
-  Mora,
-  Muñoz,
-  Narozhny,
-  Obafemi,
-  Oladimeji,
-  Poenicke,
-  Scott,
-  Sharma,
-  Tewari,
-  Tineo,
-  Tronca,
-  Vargas,
-  Zeballos,
-  Zhao,
-  Zhuk,
-};
 
 const Arrow = ({ onClick, left, right }) => (
   <div
